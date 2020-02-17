@@ -1,7 +1,7 @@
 import React from "react";
 
 export default {
-  title: "Design System|Forms"
+  title: "Design System|Input Components/Switch"
 };
 
 export const FormDefault = () => (
