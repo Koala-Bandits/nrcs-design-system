@@ -1,0 +1,17 @@
+/////////////////////////////////////////////////////////////
+// CUSTOM BOOTSTRAP THEME FOR nrcs-style
+// MAIN SCSS ENTRY POINT
+/////////////////////////////////////////////////////////////
+
+// Bootstrap Functions
+// @import "~bootstrap/functions";
+
+// Custom Bootstrap theme via overrides '~bootstrap/scss/_variables.scss'
+@import "variables.scss";
+
+// Style additions and customizations
+// @import "nrcs-style/button.scss";
+// @import "nrcs-style/growl.scss";
+
+// Import Bootstrap and its default variables LAST
+@import "~bootstrap/scss/bootstrap.scss";
