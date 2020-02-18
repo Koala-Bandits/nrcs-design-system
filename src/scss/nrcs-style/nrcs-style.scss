@@ -9,9 +9,12 @@
 // Custom Bootstrap theme via overrides '~bootstrap/scss/_variables.scss'
 @import "variables.scss";
 
-// Style additions and customizations
-// @import "nrcs-style/button.scss";
-// @import "nrcs-style/growl.scss";
-
-// Import Bootstrap and its default variables LAST
+// Import Bootstrap and its default variables AFTER our variable modifications
 @import "~bootstrap/scss/bootstrap.scss";
+
+// Style additions and customizations
+@import "nrcs-style/buttons.scss";
+// @import "nrcs-style/growl.scss";
+@import "nrcs-style/mdi-icons.scss";
+@import "nrcs-style/alert.scss";
+@import "nrcs-style/close.scss";

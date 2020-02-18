@@ -30,6 +30,17 @@ export const ButtonsDefault = () => (
     <Button color="link" size="sm">
       Flat
     </Button>
+
+    <h2>Disabled</h2>
+    <Button color="primary" aria-disabled="true" disabled>
+      Primary
+    </Button>
+    <Button outline color="primary" aria-disabled="true" disabled>
+      Secondary
+    </Button>
+    <Button color="link" aria-disabled="true" disabled>
+      Flat
+    </Button>
   </div>
 );
 
@@ -40,15 +51,15 @@ export const ButtonsWithIcons = () => (
     <h2>Default</h2>
 
     <Button color="primary">
-      <Icon path={mdiAccount} size={1} />
+      <Icon path={mdiAccount} />
       Primary
     </Button>
     <Button outline color="primary">
-      <Icon path={mdiAccount} size={1} />
+      <Icon path={mdiAccount} />
       Secondary
     </Button>
     <Button color="link">
-      <Icon path={mdiAccount} size={1} />
+      <Icon path={mdiAccount} />
       Flat
     </Button>
 
@@ -63,6 +74,21 @@ export const ButtonsWithIcons = () => (
       Secondary and more
     </Button>
     <Button color="link" size="sm">
+      <Icon path={mdiAccount} size={0.8} />
+      Flat
+    </Button>
+
+    <h2>Disabled</h2>
+
+    <Button color="primary" size="sm" aria-disabled="true" disabled>
+      <Icon path={mdiAccount} size={0.8} />
+      Primary
+    </Button>
+    <Button outline color="primary" size="sm" aria-disabled="true" disabled>
+      <Icon path={mdiAccount} size={0.8} />
+      Secondary and more
+    </Button>
+    <Button color="link" size="sm" aria-disabled="true" disabled>
       <Icon path={mdiAccount} size={0.8} />
       Flat
     </Button>

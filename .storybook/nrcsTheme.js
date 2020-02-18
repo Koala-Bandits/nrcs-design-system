@@ -5,5 +5,6 @@ export default create({
 
   brandTitle: "StoryBook - NRCS Design System",
   brandUrl: "https://github.com/Koala-Bandits/nrcs-design-system",
-  brandImage: "https://placehold.it/350x150"
+  // brandImage: "https://placehold.it/350x150"
+  brandImage: "/images/KoalaBanditsClrzdSm.png"
 });

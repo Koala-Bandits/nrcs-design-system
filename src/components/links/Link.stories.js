@@ -9,7 +9,7 @@ export default {
 export const LinksDefault = () => (
   <div>
     <h1>Links - Default</h1>
-    <a href="#">This is a default link</a> - it links somewhere WITHIN our app.
+    <a href="#">This is a link</a> - it links somewhere INSIDE our app.
     <p></p>
     <a href="#">
       This is an external link <Icon path={mdiOpenInNew} size={0.8} />

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import { action } from "@storybook/addon-actions";
-import { Alert } from "reactstrap";
+import { Alert, Container, Row, Col } from "reactstrap";
 import Icon from "@mdi/react";
 import {
   mdiInformation,
@@ -74,47 +74,87 @@ export const AlertsWithIcons = () => (
     <h1>Alerts - with Icons</h1>
 
     <Alert color="primary">
-      <Icon path={mdiInformation} size={1} />
-      This is an <strong>info</strong> alert with{" "}
-      <a href="#" className="alert-link">
-        an example link
-      </a>
-      . Give it a click if you like.
+      <Container className="m-0">
+        <Row>
+          <Col xs="auto" className="p-0 pr-2">
+            <Icon path={mdiInformation} />
+          </Col>
+          <Col className="p-0">
+            This is an <strong>info</strong> alert with{" "}
+            <a href="#" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </Col>
+        </Row>
+      </Container>
     </Alert>
     <Alert color="success">
-      <Icon path={mdiCheckCircle} size={1} />
-      This is a <strong>success</strong> alert with{" "}
-      <a href="#" className="alert-link">
-        an example link
-      </a>
-      . Give it a click if you like.
+      <Container className="m-0">
+        <Row>
+          <Col xs="auto" className="p-0 pr-2">
+            <Icon path={mdiCheckCircle} />
+          </Col>
+          <Col className="p-0">
+            This is a <strong>success</strong> alert with{" "}
+            <a href="#" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </Col>
+        </Row>
+      </Container>
     </Alert>
     <Alert color="danger">
-      <Icon path={mdiAlertCircle} size={1} />
-      This is a <strong>error</strong> alert with{" "}
-      <a href="#" className="alert-link">
-        an example link
-      </a>
-      . Give it a click if you like.
+      <Container className="m-0">
+        <Row>
+          <Col xs="auto" className="p-0 pr-2">
+            <Icon path={mdiAlertCircle} />
+          </Col>
+          <Col className="p-0">
+            This is a <strong>error</strong> alert with{" "}
+            <a href="#" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </Col>
+        </Row>
+      </Container>
     </Alert>
     <Alert color="warning">
-      <Icon path={mdiAlert} size={1} />
-      This is a <strong>warning</strong> alert with{" "}
-      <a href="#" className="alert-link">
-        an example link
-      </a>
-      . Give it a click if you like.
+      <Container className="m-0">
+        <Row>
+          <Col xs="auto" className="p-0 pr-2">
+            <Icon path={mdiAlert} />
+          </Col>
+          <Col className="p-0">
+            This is a <strong>warning</strong> alert with{" "}
+            <a href="#" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </Col>
+        </Row>
+      </Container>
     </Alert>
     <hr />
     <Alert color="warning">
-      <Icon path={mdiAlert} size={1} />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+      <Container className="m-0">
+        <Row>
+          <Col xs="auto" className="p-0 pr-2">
+            <Icon path={mdiAlert} />
+          </Col>
+          <Col className="p-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Col>
+        </Row>
+      </Container>
     </Alert>
   </div>
 );
@@ -129,8 +169,16 @@ export const AlertsDismissable = () => {
 
       <h2>Dismissable</h2>
       <Alert color="warning" isOpen={visible} toggle={onDismiss}>
-        <Icon path={mdiAlert} size={1} />
-        This is a dismissable warning alert with. Go ahead, dismiss me!
+        <Container className="m-0">
+          <Row>
+            <Col xs="auto" className="p-0 pr-2">
+              <Icon path={mdiAlert} />
+            </Col>
+            <Col className="p-0">
+              This is a dismissable warning alert with. Go ahead, dismiss me!
+            </Col>
+          </Row>
+        </Container>
       </Alert>
     </div>
   );

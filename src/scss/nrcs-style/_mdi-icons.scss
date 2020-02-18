@@ -1,0 +1,73 @@
+/////////////////////////////////////////////////////////////
+// Styles for use of MDI Icons in the NRCS Design System
+/////////////////////////////////////////////////////////////
+
+// Defaults
+// base icon size for Bootstrap 16px base font size ~= 1.5rem
+// 1.5rem = 24x24
+// size={1.3} ~= 32x32
+// size={0.8} ~= 19x19
+svg {
+  width: 1.5rem; // 24x24
+  fill: $gray-800; // default color
+}
+
+// For <Stack className="custom-class">
+// svg.custom-class {
+//     // First layer (behind)
+//     path:nth-child(1) {
+//       fill: blue;
+//     }
+//     // Second layer (infront)
+//     path:nth-child(2) {
+//       fill: red;
+//     }
+//   }
+
+$primary-dark: theme-color-level("primary", 3);
+
+// Buttons with Icons
+.btn svg {
+  //   vertical-align: top;
+  margin-right: 0.25rem;
+  margin-top: -0.25rem;
+}
+
+.btn-primary svg,
+.btn-outline-primary:active svg {
+  fill: #fff !important;
+}
+
+.btn-outline-primary:hover svg {
+  fill: $primary-dark;
+}
+
+.btn-outline-primary svg,
+.btn-link svg {
+  fill: $primary;
+}
+
+// Alerts with Icons
+.alert svg {
+  vertical-align: top;
+  // margin-top: -0.25rem;
+}
+.alert-heading svg {
+  top: -0.125rem;
+  position: relative;
+  margin-right: 0.25rem;
+}
+@each $color, $value in $theme-colors {
+  .alert-#{$color} svg {
+    // fill: theme-color-level($color, $alert-color-level);
+    fill: theme-color-level($color, 9);
+  }
+}
+
+// Links (anchors) with Icons
+a svg {
+  fill: $link-color;
+}
+a:hover svg {
+  fill: $primary-dark; // ?? this correct
+}

@@ -1,4 +1,6 @@
-// NRCS-Style Bootstrap Overrides
+/////////////////////////////////////////////////////////////
+// NRCS-Style Bootstrap _variables.scss Overrides
+/////////////////////////////////////////////////////////////
 
 ////////////////////////////
 // Color System
@@ -59,7 +61,7 @@ $green: #199c38; // $green: #28a745 !default;
 //
 // Settings for the `<body>` element.
 $body-bg: #fafafa; //$body-bg: $white !default;
-$body-color: gray("900"); //$gray-900 !default; // BASE FONT COLOR
+$body-color: #222; //gray("900"); //$gray-900 !default; // BASE FONT COLOR
 
 ////////////////////////////
 // Links
