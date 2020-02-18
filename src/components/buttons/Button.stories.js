@@ -15,20 +15,20 @@ export const ButtonsDefault = () => (
 
     <h2>Default</h2>
     <Button color="primary">Primary</Button>
-    <Button outline color="secondary">
+    <Button outline color="primary">
       Secondary
     </Button>
-    <Button color="link">Link</Button>
+    <Button color="link">Flat</Button>
 
     <h2>Small</h2>
     <Button color="primary" size="sm">
       Primary
     </Button>
-    <Button outline color="secondary" size="sm">
+    <Button outline color="primary" size="sm">
       Secondary
     </Button>
     <Button color="link" size="sm">
-      Link
+      Flat
     </Button>
   </div>
 );
@@ -43,13 +43,13 @@ export const ButtonsWithIcons = () => (
       <Icon path={mdiAccount} size={1} />
       Primary
     </Button>
-    <Button outline color="secondary">
+    <Button outline color="primary">
       <Icon path={mdiAccount} size={1} />
       Secondary
     </Button>
     <Button color="link">
       <Icon path={mdiAccount} size={1} />
-      Link
+      Flat
     </Button>
 
     <h2>Small</h2>
@@ -58,13 +58,13 @@ export const ButtonsWithIcons = () => (
       <Icon path={mdiAccount} size={0.8} />
       Primary
     </Button>
-    <Button outline color="secondary" size="sm">
+    <Button outline color="primary" size="sm">
       <Icon path={mdiAccount} size={0.8} />
       Secondary and more
     </Button>
     <Button color="link" size="sm">
       <Icon path={mdiAccount} size={0.8} />
-      Link
+      Flat
     </Button>
   </div>
 );

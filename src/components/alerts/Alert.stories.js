@@ -105,6 +105,17 @@ export const AlertsWithIcons = () => (
       </a>
       . Give it a click if you like.
     </Alert>
+    <hr />
+    <Alert color="warning">
+      <Icon path={mdiAlert} size={1} />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </Alert>
   </div>
 );
 
@@ -131,7 +142,7 @@ export const AlertsContent = () => (
 
     <Alert color="success">
       <h4 className="alert-heading">
-        <Icon path={mdiCheckCircle} size={1.5} />
+        <Icon path={mdiCheckCircle} size={1.3} />
         Well done!
       </h4>
       <p>
