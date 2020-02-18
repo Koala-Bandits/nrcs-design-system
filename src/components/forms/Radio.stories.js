@@ -1,49 +1,59 @@
 import React from "react";
+import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
 
 export default {
   title: "Design System|Input Components/Radio"
 };
 
-export const FormDefault = () => (
+export const RadioDefault = () => (
   <div>
-    <h1>Form - Default</h1>
-    To do... example vertical layout form with top-aligned labels.
+    <h1>Radios</h1>
+
+    <h2>Default Custom</h2>
+    <FormGroup>
+      <Label for="exampleRadio">Radio Label</Label>
+      <CustomInput
+        type="radio"
+        id="exampleCustomRadio"
+        label="Check this custom radio"
+      />
+      <CustomInput type="radio" id="exampleCustomRadio2" label="Or this one" />
+      <CustomInput
+        type="radio"
+        id="exampleCustomRadio3"
+        label="But not this disabled one"
+        disabled
+      />
+      <CustomInput
+        type="radio"
+        id="exampleCustomRadio4"
+        label="Can't click this label to check!"
+        htmlFor="exampleCustomRadio4_X"
+        disabled
+      />
+    </FormGroup>
+
+    <h2>Inline Custom</h2>
+    <FormGroup>
+      <Label for="exampleRadio">Inline Label</Label>
+      <div>
+        <CustomInput
+          type="radio"
+          id="exampleCustomInline"
+          label="An inline custom input"
+          inline
+        />
+        <CustomInput
+          type="radio"
+          id="exampleCustomInline2"
+          label="and another one"
+          inline
+        />
+      </div>
+    </FormGroup>
   </div>
 );
 
-export const FormHorizontal = () => (
-  <div>
-    <h1>Form - Horizontal</h1>
-    To do... example horizontal layout form with left-aligned labels.
-  </div>
-);
-
-export const FormInline = () => (
-  <div>
-    <h1>Form - Inline</h1>
-    To do... example horizontal layout form with left-aligned labels.
-  </div>
-);
-
-export const FormInputGroup = () => (
-  <div>
-    <h1>Form - InputGroup</h1>
-    To do... various input grouping examples.
-  </div>
-);
-
-FormDefault.story = {
-  name: "Form - Default"
-};
-
-FormHorizontal.story = {
-  name: "Form - Horizontal"
-};
-
-FormInline.story = {
-  name: "Form - Inline"
-};
-
-FormInputGroup.story = {
-  name: "Form - Input Group"
+RadioDefault.story = {
+  name: "Radio - Default"
 };

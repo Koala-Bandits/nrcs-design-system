@@ -1,49 +1,71 @@
 import React from "react";
+import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
 
 export default {
   title: "Design System|Input Components/Checkbox"
 };
 
-export const FormDefault = () => (
+export const CheckboxDefault = () => (
   <div>
-    <h1>Form - Default</h1>
-    To do... example vertical layout form with top-aligned labels.
+    <h1>Checkboxes</h1>
+
+    <h2>Default Custom</h2>
+    <FormGroup>
+      <Label for="exampleCheckbox">Checkbox Label</Label>
+      <CustomInput
+        type="checkbox"
+        id="exampleCustomCheckbox"
+        label="Check this custom checkbox"
+      />
+      <CustomInput
+        type="checkbox"
+        id="exampleCustomCheckbox2"
+        label="Or this one"
+      />
+      <CustomInput
+        type="checkbox"
+        id="exampleCustomCheckbox3"
+        label="But not this disabled one"
+        disabled
+      />
+      <CustomInput
+        type="checkbox"
+        id="exampleCustomCheckbox4"
+        label="Can't click this label to check!"
+        htmlFor="exampleCustomCheckbox4_X"
+        disabled
+      />
+    </FormGroup>
+
+    <h2>Inline Custom</h2>
+    <FormGroup>
+      <Label for="exampleCheckbox">Inline Label</Label>
+      <div>
+        <CustomInput
+          type="checkbox"
+          id="exampleCustomInline"
+          label="An inline custom input"
+          inline
+        />
+        <CustomInput
+          type="checkbox"
+          id="exampleCustomInline2"
+          label="and another one"
+          inline
+        />
+      </div>
+    </FormGroup>
+
+    <h2>Indeterminate Custom</h2>
+    <a
+      href="https://getbootstrap.com/docs/4.4/components/forms/#checkboxes-and-radios-1"
+      _target="blank"
+    >
+      To Do...
+    </a>
   </div>
 );
 
-export const FormHorizontal = () => (
-  <div>
-    <h1>Form - Horizontal</h1>
-    To do... example horizontal layout form with left-aligned labels.
-  </div>
-);
-
-export const FormInline = () => (
-  <div>
-    <h1>Form - Inline</h1>
-    To do... example horizontal layout form with left-aligned labels.
-  </div>
-);
-
-export const FormInputGroup = () => (
-  <div>
-    <h1>Form - InputGroup</h1>
-    To do... various input grouping examples.
-  </div>
-);
-
-FormDefault.story = {
-  name: "Form - Default"
-};
-
-FormHorizontal.story = {
-  name: "Form - Horizontal"
-};
-
-FormInline.story = {
-  name: "Form - Inline"
-};
-
-FormInputGroup.story = {
-  name: "Form - Input Group"
+CheckboxDefault.story = {
+  name: "Checkbox - Default"
 };

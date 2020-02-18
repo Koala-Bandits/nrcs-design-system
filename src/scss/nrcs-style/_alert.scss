@@ -2,10 +2,10 @@
 // Override styles for use Alerts in the NRCS Design System
 /////////////////////////////////////////////////////////////
 
-// Make text black
-// .alert {
-//   color: $black !important;
-// }
+// Make text
+.alert {
+  color: $body-color !important;
+}
 
 .alert-link {
   color: $primary !important;

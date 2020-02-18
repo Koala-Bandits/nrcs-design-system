@@ -10,4 +10,4 @@ import "!style-loader!css-loader!sass-loader!../src/scss/nrcs-design-system.scss
 // Global decorator
 import React from "react";
 import { addDecorator } from "@storybook/react";
-addDecorator(storyFn => <div class="container-fluid">{storyFn()}</div>);
+addDecorator(storyFn => <div className="container-fluid">{storyFn()}</div>);
