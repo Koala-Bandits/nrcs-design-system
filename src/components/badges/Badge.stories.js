@@ -1,5 +1,4 @@
 import React from "react";
-import { action } from "@storybook/addon-actions";
 import { Badge } from "reactstrap";
 // import Icon from "@mdi/react";
 // import { mdiAccount } from "@mdi/js";

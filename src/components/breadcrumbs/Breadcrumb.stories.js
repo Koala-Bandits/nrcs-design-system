@@ -1,5 +1,4 @@
 import React from "react";
-import { action } from "@storybook/addon-actions";
 import { Breadcrumb, BreadcrumbItem } from "reactstrap";
 import Icon from "@mdi/react";
 import { mdiAccount, mdiHome, mdiFormatListBulleted } from "@mdi/js";
