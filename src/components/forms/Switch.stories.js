@@ -1,49 +1,64 @@
 import React from "react";
+import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
 
 export default {
   title: "Design System|Input Components/Switch"
 };
 
-export const FormDefault = () => (
+export const SwitchDefault = () => (
   <div>
-    <h1>Form - Default</h1>
-    To do... example vertical layout form with top-aligned labels.
+    <h1>Switches</h1>
+
+    <h2>Default Custom</h2>
+    <FormGroup>
+      <Label for="exampleCheckbox">Switch Label</Label>
+      <CustomInput
+        type="switch"
+        id="exampleCustomSwitch"
+        name="customSwitch"
+        label="Turn on this custom switch"
+      />
+      <CustomInput
+        type="switch"
+        id="exampleCustomSwitch2"
+        name="customSwitch"
+        label="Or this one"
+      />
+      <CustomInput
+        type="switch"
+        id="exampleCustomSwitch3"
+        label="But not this disabled one"
+        disabled
+      />
+      <CustomInput
+        type="switch"
+        id="exampleCustomSwitch4"
+        label="Can't click this label to turn on!"
+        htmlFor="exampleCustomSwitch4_X"
+        disabled
+      />
+    </FormGroup>
+
+    <h2>Inline Custom</h2>
+    <FormGroup>
+      <CustomInput
+        type="switch"
+        id="exampleCustomSwitchI"
+        name="customSwitch"
+        label="Turn on this custom switch"
+        inline
+      />
+      <CustomInput
+        type="switch"
+        id="exampleCustomSwitchI2"
+        name="customSwitch"
+        label="Or this one"
+        inline
+      />
+    </FormGroup>
   </div>
 );
 
-export const FormHorizontal = () => (
-  <div>
-    <h1>Form - Horizontal</h1>
-    To do... example horizontal layout form with left-aligned labels.
-  </div>
-);
-
-export const FormInline = () => (
-  <div>
-    <h1>Form - Inline</h1>
-    To do... example horizontal layout form with left-aligned labels.
-  </div>
-);
-
-export const FormInputGroup = () => (
-  <div>
-    <h1>Form - InputGroup</h1>
-    To do... various input grouping examples.
-  </div>
-);
-
-FormDefault.story = {
-  name: "Form - Default"
-};
-
-FormHorizontal.story = {
-  name: "Form - Horizontal"
-};
-
-FormInline.story = {
-  name: "Form - Inline"
-};
-
-FormInputGroup.story = {
-  name: "Form - Input Group"
+SwitchDefault.story = {
+  name: "Switch - Default"
 };

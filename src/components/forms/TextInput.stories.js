@@ -1,49 +1,108 @@
 import React from "react";
+import { Form, FormGroup, FormText, Label, Input } from "reactstrap";
 
 export default {
   title: "Design System|Input Components/Text Input"
 };
 
-export const FormDefault = () => (
+export const RangeDefault = () => (
   <div>
-    <h1>Form - Default</h1>
-    To do... example vertical layout form with top-aligned labels.
+    <h1>Text Inputs</h1>
+
+    <h2>Text Input Types</h2>
+    <FormGroup>
+      <Label for="exampleEmail">Plain Text (Static)</Label>
+      <Input plaintext value="Some plain text/ static value" />
+    </FormGroup>
+    <FormGroup>
+      <Label for="exampleEmail">Email</Label>
+      <Input
+        type="email"
+        name="email"
+        id="exampleEmail"
+        placeholder="with a placeholder"
+      />
+    </FormGroup>
+    <FormGroup>
+      <Label for="examplePassword">Password</Label>
+      <Input
+        type="password"
+        name="password"
+        id="examplePassword"
+        placeholder="password placeholder"
+      />
+    </FormGroup>
+    <FormGroup>
+      <Label for="exampleUrl">Url</Label>
+      <Input
+        type="url"
+        name="url"
+        id="exampleUrl"
+        placeholder="url placeholder"
+      />
+    </FormGroup>
+    <FormGroup>
+      <Label for="exampleNumber">Number</Label>
+      <Input
+        type="number"
+        name="number"
+        id="exampleNumber"
+        placeholder="number placeholder"
+      />
+    </FormGroup>
+    <FormGroup>
+      <Label for="exampleDatetime">Datetime</Label>
+      <Input
+        type="datetime"
+        name="datetime"
+        id="exampleDatetime"
+        placeholder="datetime placeholder"
+      />
+    </FormGroup>
+    <FormGroup>
+      <Label for="exampleDate">Date</Label>
+      <Input
+        type="date"
+        name="date"
+        id="exampleDate"
+        placeholder="date placeholder"
+      />
+    </FormGroup>
+    <FormGroup>
+      <Label for="exampleTime">Time</Label>
+      <Input
+        type="time"
+        name="time"
+        id="exampleTime"
+        placeholder="time placeholder"
+      />
+    </FormGroup>
+    <FormGroup>
+      <Label for="exampleColor">Color</Label>
+      <Input
+        type="color"
+        name="color"
+        id="exampleColor"
+        placeholder="color placeholder"
+      />
+    </FormGroup>
+    <FormGroup>
+      <Label for="exampleSearch">Search</Label>
+      <Input
+        type="search"
+        name="search"
+        id="exampleSearch"
+        placeholder="search placeholder"
+      />
+    </FormGroup>
+
+    <FormGroup>
+      <Label for="exampleText">Text Area</Label>
+      <Input type="textarea" name="text" id="exampleText" />
+    </FormGroup>
   </div>
 );
 
-export const FormHorizontal = () => (
-  <div>
-    <h1>Form - Horizontal</h1>
-    To do... example horizontal layout form with left-aligned labels.
-  </div>
-);
-
-export const FormInline = () => (
-  <div>
-    <h1>Form - Inline</h1>
-    To do... example horizontal layout form with left-aligned labels.
-  </div>
-);
-
-export const FormInputGroup = () => (
-  <div>
-    <h1>Form - InputGroup</h1>
-    To do... various input grouping examples.
-  </div>
-);
-
-FormDefault.story = {
-  name: "Form - Default"
-};
-
-FormHorizontal.story = {
-  name: "Form - Horizontal"
-};
-
-FormInline.story = {
-  name: "Form - Inline"
-};
-
-FormInputGroup.story = {
-  name: "Form - Input Group"
+RangeDefault.story = {
+  name: "Text Input - Default"
 };
