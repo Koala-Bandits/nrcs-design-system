@@ -12,7 +12,8 @@ export const LinksDefault = () => (
     <a href="#">This is a link</a> - it links somewhere INSIDE our app.
     <p></p>
     <a href="#">
-      This is an external link <Icon path={mdiOpenInNew} size={0.8} />
+      This is an external link{" "}
+      <Icon className="mdi" path={mdiOpenInNew} size={0.8} />
     </a>{" "}
     - it links somewhere OUTSIDE of our app. We use the 'open in new' icon to
     indicate it's external.

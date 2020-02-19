@@ -51,45 +51,45 @@ export const ButtonsWithIcons = () => (
     <h2>Default</h2>
 
     <Button color="primary">
-      <Icon path={mdiAccount} />
+      <Icon className="mdi" path={mdiAccount} />
       Primary
     </Button>
     <Button outline color="primary">
-      <Icon path={mdiAccount} />
+      <Icon className="mdi" path={mdiAccount} />
       Secondary
     </Button>
     <Button color="link">
-      <Icon path={mdiAccount} />
+      <Icon className="mdi" path={mdiAccount} />
       Flat
     </Button>
 
     <h2>Small</h2>
 
     <Button color="primary" size="sm">
-      <Icon path={mdiAccount} size={0.8} />
+      <Icon className="mdi" path={mdiAccount} size={0.8} />
       Primary
     </Button>
     <Button outline color="primary" size="sm">
-      <Icon path={mdiAccount} size={0.8} />
+      <Icon className="mdi" path={mdiAccount} size={0.8} />
       Secondary and more
     </Button>
     <Button color="link" size="sm">
-      <Icon path={mdiAccount} size={0.8} />
+      <Icon className="mdi" path={mdiAccount} size={0.8} />
       Flat
     </Button>
 
     <h2>Disabled</h2>
 
     <Button color="primary" size="sm" aria-disabled="true" disabled>
-      <Icon path={mdiAccount} size={0.8} />
+      <Icon className="mdi" path={mdiAccount} size={0.8} />
       Primary
     </Button>
     <Button outline color="primary" size="sm" aria-disabled="true" disabled>
-      <Icon path={mdiAccount} size={0.8} />
+      <Icon className="mdi" path={mdiAccount} size={0.8} />
       Secondary and more
     </Button>
     <Button color="link" size="sm" aria-disabled="true" disabled>
-      <Icon path={mdiAccount} size={0.8} />
+      <Icon className="mdi" path={mdiAccount} size={0.8} />
       Flat
     </Button>
   </div>

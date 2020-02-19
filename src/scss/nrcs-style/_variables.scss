@@ -239,12 +239,12 @@ $link-color: #0068ad; //theme-color("primary") !default;
 // $line-height-lg: 1.5 !default;
 // $line-height-sm: 1.5 !default;
 
-// $border-width: 1px !default;
-// $border-color: $gray-300 !default;
+$border-width: 1px !default;
+$border-color: $gray-500; // $gray-300 !default;
 
-// $border-radius: 0.25rem !default;
-// $border-radius-lg: 0.3rem !default;
-// $border-radius-sm: 0.2rem !default;
+$border-radius: 0.25rem !default;
+$border-radius-lg: 0.3rem !default;
+$border-radius-sm: 0.2rem !default;
 
 // $rounded-pill: 50rem !default;
 
@@ -291,15 +291,15 @@ $font-family-sans-serif: Roboto, "Helvetica Neue", Arial, "Noto Sans",
 // $font-family-base: $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-// $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
-// $font-size-lg: $font-size-base * 1.25 !default;
-// $font-size-sm: $font-size-base * 0.875 !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * 0.875 !default;
 
-// $font-weight-lighter: lighter !default;
-// $font-weight-light: 300 !default;
-// $font-weight-normal: 400 !default;
-// $font-weight-bold: 700 !default;
-// $font-weight-bolder: bolder !default;
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
 
 // $font-weight-base: $font-weight-normal !default;
 // $line-height-base: 1.5 !default;
@@ -331,9 +331,9 @@ $font-family-sans-serif: Roboto, "Helvetica Neue", Arial, "Noto Sans",
 // $lead-font-size: $font-size-base * 1.25 !default;
 // $lead-font-weight: 300 !default;
 
-// $small-font-size: 80% !default;
+$small-font-size: 80% !default;
 
-// $text-muted: $gray-600 !default;
+$text-muted: $gray-600 !default;
 
 // $blockquote-small-color: $gray-600 !default;
 // $blockquote-small-font-size: $small-font-size !default;
@@ -438,7 +438,7 @@ $font-family-sans-serif: Roboto, "Helvetica Neue", Arial, "Noto Sans",
 
 // $btn-border-width: $input-btn-border-width !default;
 
-// $btn-font-weight: $font-weight-normal !default;
+// $btn-font-weight: $font-weight-bold; //$font-weight-normal !default;
 // $btn-box-shadow: inset 0 1px 0 rgba($white, 0.15), 0 1px 1px rgba($black, 0.075) !default;
 // $btn-focus-width: $input-btn-focus-width !default;
 // $btn-focus-box-shadow: $input-btn-focus-box-shadow !default;
@@ -963,10 +963,10 @@ $input-border-color: $gray-700;
 // // Badges
 
 // $badge-font-size: 75% !default;
-// $badge-font-weight: $font-weight-bold !default;
+$badge-font-weight: $font-weight-normal; // $font-weight-bold !default;
 // $badge-padding-y: 0.25em !default;
 // $badge-padding-x: 0.4em !default;
-// $badge-border-radius: $border-radius !default;
+$badge-border-radius: $border-radius-sm; // $border-radius !default;
 
 // $badge-transition: $btn-transition !default;
 // $badge-focus-width: $input-btn-focus-width !default;

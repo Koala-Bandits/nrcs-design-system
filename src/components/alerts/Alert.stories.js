@@ -76,7 +76,7 @@ export const AlertsWithIcons = () => (
       <Container className="m-0">
         <Row>
           <Col xs="auto" className="p-0 pr-2">
-            <Icon path={mdiInformation} />
+            <Icon className="mdi" path={mdiInformation} />
           </Col>
           <Col className="p-0">
             This is an <strong>info</strong> alert with{" "}
@@ -92,7 +92,7 @@ export const AlertsWithIcons = () => (
       <Container className="m-0">
         <Row>
           <Col xs="auto" className="p-0 pr-2">
-            <Icon path={mdiCheckCircle} />
+            <Icon className="mdi" path={mdiCheckCircle} />
           </Col>
           <Col className="p-0">
             This is a <strong>success</strong> alert with{" "}
@@ -108,7 +108,7 @@ export const AlertsWithIcons = () => (
       <Container className="m-0">
         <Row>
           <Col xs="auto" className="p-0 pr-2">
-            <Icon path={mdiAlertCircle} />
+            <Icon className="mdi" path={mdiAlertCircle} />
           </Col>
           <Col className="p-0">
             This is a <strong>error</strong> alert with{" "}
@@ -124,7 +124,7 @@ export const AlertsWithIcons = () => (
       <Container className="m-0">
         <Row>
           <Col xs="auto" className="p-0 pr-2">
-            <Icon path={mdiAlert} />
+            <Icon className="mdi" path={mdiAlert} />
           </Col>
           <Col className="p-0">
             This is a <strong>warning</strong> alert with{" "}
@@ -141,7 +141,7 @@ export const AlertsWithIcons = () => (
       <Container className="m-0">
         <Row>
           <Col xs="auto" className="p-0 pr-2">
-            <Icon path={mdiAlert} />
+            <Icon className="mdi" path={mdiAlert} />
           </Col>
           <Col className="p-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -171,7 +171,7 @@ export const AlertsDismissable = () => {
         <Container className="m-0">
           <Row>
             <Col xs="auto" className="p-0 pr-2">
-              <Icon path={mdiAlert} />
+              <Icon className="mdi" path={mdiAlert} />
             </Col>
             <Col className="p-0">
               This is a dismissable warning alert with. Go ahead, dismiss me!
@@ -189,7 +189,7 @@ export const AlertsContent = () => (
 
     <Alert color="success">
       <h4 className="alert-heading">
-        <Icon path={mdiCheckCircle} size={1.3} />
+        <Icon className="mdi" path={mdiCheckCircle} size={1.3} />
         Well done!
       </h4>
       <p>

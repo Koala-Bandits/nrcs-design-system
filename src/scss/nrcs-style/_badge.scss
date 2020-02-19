@@ -1,0 +1,20 @@
+/////////////////////////////////////////////////////////////
+// Override Badge component styles for NRCS Design System
+/////////////////////////////////////////////////////////////
+
+// Make text darker and non-colorized for 508
+.badge {
+  color: $body-color !important;
+  border: $alert-border-width solid transparent;
+}
+
+// Use same coloring as Alerts for Badges in NRCS DS, taken from ~/bootstrap/scss/_Alert.scss
+@each $color, $value in $theme-colors {
+  .badge-#{$color} {
+    @include alert-variant(
+      theme-color-level($color, $alert-bg-level),
+      theme-color-level($color, $alert-border-level),
+      theme-color-level($color, $alert-color-level)
+    );
+  }
+}

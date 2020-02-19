@@ -37,19 +37,19 @@ export const BreadcrumbsIcons = () => (
     <div>
       <Breadcrumb tag="nav" listTag="div">
         <BreadcrumbItem tag="a" href="#">
-          <Icon path={mdiHome} size={1} />
+          <Icon className="mdi" path={mdiHome} size={1} />
           Home
         </BreadcrumbItem>
         <BreadcrumbItem tag="a" href="#">
-          <Icon path={mdiAccount} size={1} />
+          <Icon className="mdi" path={mdiAccount} size={1} />
           Library
         </BreadcrumbItem>
         <BreadcrumbItem tag="a" href="#">
-          <Icon path={mdiFormatListBulleted} size={1} />
+          <Icon className="mdi" path={mdiFormatListBulleted} size={1} />
           Data
         </BreadcrumbItem>
         <BreadcrumbItem active tag="span">
-          <Icon path={mdiAccount} size={1} />
+          <Icon className="mdi" path={mdiAccount} size={1} />
           Bootstrap
         </BreadcrumbItem>
       </Breadcrumb>

@@ -29,6 +29,12 @@ $primary-dark: theme-color-level("primary", 3);
   pointer-events: none;
 }
 
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary.dropdown-toggle {
+  background-color: $primary-dark;
+}
+
 // LINK
 .btn-link {
   color: $primary;
