@@ -7,5 +7,8 @@ import nrcsTheme from "./nrcsTheme";
 // });
 
 addons.setConfig({
-  theme: nrcsTheme
+  theme: nrcsTheme,
+
+  showPanel: false,
+  panelPosition: "bottom"
 });

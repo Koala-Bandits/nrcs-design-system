@@ -5,7 +5,7 @@ import Icon from "@mdi/react";
 import { mdiAccount, mdiHome, mdiFormatListBulleted } from "@mdi/js";
 
 export default {
-  title: "Design System|Components/Breadcrumbs"
+  title: "Components|/Breadcrumbs"
 };
 
 export const BreadcrumbsDefault = () => (

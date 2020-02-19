@@ -2,7 +2,7 @@ import React from "react";
 import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
 
 export default {
-  title: "Design System|Input Components/File Browser"
+  title: "Components|Inputs/File Browser"
 };
 
 export const FileBrowserDefault = () => (

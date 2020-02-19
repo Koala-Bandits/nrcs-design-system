@@ -1,7 +1,7 @@
 import React from "react";
 
 export default {
-  title: "Design System|Input Components/Multi-Select"
+  title: "Components|Inputs/Text Area"
 };
 
 export const FormDefault = () => (

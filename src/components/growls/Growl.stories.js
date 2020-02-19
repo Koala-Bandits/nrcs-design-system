@@ -1,7 +1,7 @@
 import React from "react";
 
 export default {
-  title: "Design System|Components/Growls"
+  title: "Components|/Growls"
 };
 
 export const Growls = () => (

@@ -1,7 +1,7 @@
 import React from "react";
 
 export default {
-  title: "Design System|Input Components/Date Picker"
+  title: "Components|Inputs/Search"
 };
 
 export const FormDefault = () => (

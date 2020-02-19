@@ -5,7 +5,7 @@ import { Badge } from "reactstrap";
 // import { mdiAccount } from "@mdi/js";
 
 export default {
-  title: "Design System|Components/Badges"
+  title: "Components|/Badges"
 };
 
 export const BadgesDefault = () => (

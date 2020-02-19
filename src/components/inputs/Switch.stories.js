@@ -2,7 +2,7 @@ import React from "react";
 import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
 
 export default {
-  title: "Design System|Input Components/Switch"
+  title: "Components|Inputs/Switch"
 };
 
 export const SwitchDefault = () => (

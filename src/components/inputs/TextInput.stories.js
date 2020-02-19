@@ -2,7 +2,7 @@ import React from "react";
 import { Form, FormGroup, FormText, Label, Input } from "reactstrap";
 
 export default {
-  title: "Design System|Input Components/Text Input"
+  title: "Components|Inputs/Text Input"
 };
 
 export const RangeDefault = () => (
