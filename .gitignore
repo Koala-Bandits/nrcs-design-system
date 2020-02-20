@@ -11,6 +11,9 @@
 # production
 /build
 
+# storybook static site, we deploy this to our github pages separately
+/storybook-static
+
 # misc
 .DS_Store
 .env.local

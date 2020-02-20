@@ -70,6 +70,9 @@ export const Color = () => (
         <div class="col-md-4">
           <div class="p-3 mb-3 bg-dark text-white docs-color-swatch">
             Dark (gray-900) #212529
+            <p>
+              <small>Default text color</small>
+            </p>
           </div>
         </div>
       </div>
@@ -80,19 +83,25 @@ export const Color = () => (
     <div className="container">
       <div class="row mb-3">
         <div class="col-md-12">
-          <div class="p-3 docs-gray-100">100 Default BACKGROUND color</div>
+          <div class="p-3 docs-gray-100">100 - Default BACKGROUND color</div>
 
-          <div class="p-3 docs-gray-200">200</div>
+          <div class="p-3 docs-gray-200">
+            200 - Default HOVER for menus and row selections
+          </div>
 
           <div class="p-3 docs-gray-300">300</div>
 
           <div class="p-3 docs-gray-400">400</div>
 
-          <div class="p-3 docs-gray-500">500</div>
+          <div class="p-3 docs-gray-500">
+            500 - Defaults BORDERS other than inputs
+          </div>
 
           <div class="p-3 docs-gray-600 text-white">600</div>
 
-          <div class="p-3 docs-gray-700 text-white">700</div>
+          <div class="p-3 docs-gray-700 text-white">
+            700 - Default ICON and INPUT border colors
+          </div>
 
           <div class="p-3 docs-gray-800 text-white">800</div>
 

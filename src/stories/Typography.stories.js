@@ -9,7 +9,7 @@ export const Typography = () => (
     <h1>Typography</h1>
 
     <p className="col-md-8">
-      <strong>Typeface:</strong>
+      <strong>Typeface</strong>
       <br />
       NRCS uses Google's open source{" "}
       <strong>
@@ -20,9 +20,9 @@ export const Typography = () => (
           Roboto
         </a>
       </strong>{" "}
-      is a widely used font that we use for its legibility and familiarity paird
-      with MDI icons. It's high legible and works well for our data heavy
-      applications.
+      font. It is a widely used font that we like for its legibility and
+      familiarity paired with MDI icons. It's highly legible and works well for
+      our data-heavy applications.
     </p>
 
     <div className="col docs-typeface mt-5">

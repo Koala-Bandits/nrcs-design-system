@@ -20,7 +20,7 @@ export const About = () => (
         <a href="https://koala-bandits.github.io/nrcs-style/" target="_blank">
           nrcs-style
         </a>{" "}
-        produced for our partners NRCS.{" "}
+        produced for our partners at NRCS.{" "}
       </strong>
     </p>
 
@@ -100,7 +100,7 @@ export const About = () => (
             href="https://github.com/Koala-Bandits/nrcs-design-system"
             target="_blank"
           >
-            ReactStrap source
+            source
           </a>{" "}
           for this project can serve as an example implementation and start to
           components.
