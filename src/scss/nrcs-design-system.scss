@@ -8,6 +8,79 @@
 
 // Additional styles for 'nrcs-design-system' documentation
 
+h1 {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1.25rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.85rem;
+}
+
+///////////////////////////
+// DOCS MISC
+
+// COLOR
+.docs-color-swatch {
+  min-height: 150px;
+}
+.docs-color-primaryoutline {
+  color: $primary;
+  border: 1px $primary solid;
+  background-color: $white;
+}
+.docs-gray-100 {
+  background-color: $gray-100;
+  border-top: 1px $gray-200 solid;
+  border-right: 1px $gray-200 solid;
+  border-left: 1px $gray-200 solid;
+}
+.docs-gray-200 {
+  background-color: $gray-200;
+}
+.docs-gray-300 {
+  background-color: $gray-300;
+}
+.docs-gray-400 {
+  background-color: $gray-400;
+}
+.docs-gray-500 {
+  background-color: $gray-500;
+}
+.docs-gray-600 {
+  background-color: $gray-600;
+}
+.docs-gray-700 {
+  background-color: $gray-700;
+}
+.docs-gray-800 {
+  background-color: $gray-800;
+}
+.docs-gray-900 {
+  background-color: $gray-900;
+}
+
+// Typography
+.docs-typeface p {
+  margin: 0;
+}
+.docs-text-big {
+  font-size: 5rem;
+}
+.docs-text-fallback {
+  font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 // MISC/TEMPORARY
 button + button {
   margin-left: 0.5rem;

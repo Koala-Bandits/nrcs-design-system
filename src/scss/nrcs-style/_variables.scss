@@ -38,6 +38,7 @@ $grays: map-merge(
 );
 
 $blue: #205493; // #007bff !default;
+$blue-link: #0068ad; // FPAC link color
 
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
@@ -75,7 +76,7 @@ $colors: map-merge(
 $primary: $blue !default;
 $secondary: $gray-600 !default;
 $success: $green !default;
-$info: $cyan !default;
+$info: $blue-link; // $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;

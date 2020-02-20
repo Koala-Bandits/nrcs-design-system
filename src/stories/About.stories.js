@@ -6,16 +6,52 @@ export default {
 
 export const About = () => (
   <div>
-    <h1>About</h1>
+    <h1>NRCS Design System</h1>
 
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+      <strong>
+        A design system using{" "}
+        <a href="https://koala-bandits.github.io/nrcs-style/" target="_blank">
+          nrcs-style
+        </a>{" "}
+        produced for our partners NRCS.{" "}
+        <span className="text-danger">
+          ** BETA: CURRENTLY UNDER DEVELOPMENT AND INCOMPLETE **
+        </span>
+      </strong>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          Inspired by{" "}
+          <a
+            href="http://usda-fsa.github.io/fsa-design-system/"
+            target="_blank"
+          >
+            FPAC Design System
+          </a>{" "}
+          and its inherent roots from the{" "}
+          <a href="https://designsystem.digital.gov/" target="_blank">
+            U.S. Web Design System
+          </a>
+          . If you are here working on a project with FPAC or its related
+          organizations, it is suggested you consider starting with these design
+          systems.
+        </li>
+        <li>
+          Designed with clean simple styles with high color contrast for
+          accessibilty and to provide solutions for large scale applications.
+        </li>
+        <li>
+          Provides color, typography, iconography, components, examples and
+          documentation for how to use them.
+        </li>
+        <li>
+          The intent is to provide a solution for our development teams to
+          converge upon for consistent implementation in design and style.
+        </li>
+      </ul>
     </p>
   </div>
 );

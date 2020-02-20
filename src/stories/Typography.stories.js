@@ -8,7 +8,95 @@ export const Typography = () => (
   <div>
     <h1>Typography</h1>
 
-    <h1>h1. heading</h1>
+    <p className="col-md-8">
+      <strong>Typeface:</strong>
+      <br />
+      NRCS uses Google's open source{" "}
+      <strong>
+        <a
+          href="https://fonts.google.com/specimen/Roboto?selection.family=Roboto"
+          target="_blank"
+        >
+          Roboto
+        </a>
+      </strong>{" "}
+      is a widely used font that we use for its legibility and familiarity paird
+      with MDI icons. It's high legible and works well for our data heavy
+      applications.
+    </p>
+
+    <div className="col docs-typeface mt-5">
+      <div className="row mb-5">
+        <div className="col">
+          <div className="row">
+            <div className="col">
+              <strong>Default</strong>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-auto docs-text-big">Aa</div>
+            <div className="col">
+              <p>abcdefghijklmnopqrstuvwxyz</p>
+              <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+              <p>1234567890</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col font-weight-light">
+          <div className="row">
+            <div className="col">
+              <strong>Light</strong>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-auto docs-text-big">Aa</div>
+            <div className="col">
+              <p>abcdefghijklmnopqrstuvwxyz</p>
+              <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+              <p>1234567890</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col font-weight-bold">
+          <div className="row">
+            <div className="col">
+              <strong>Bold</strong>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-auto docs-text-big">Aa</div>
+            <div className="col">
+              <p>abcdefghijklmnopqrstuvwxyz</p>
+              <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+              <p>1234567890</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col docs-text-fallback">
+          <div className="row">
+            <div className="col">
+              <strong>Fallback (Helvetica)</strong>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-auto docs-text-big">Aa</div>
+            <div className="col">
+              <p>abcdefghijklmnopqrstuvwxyz</p>
+              <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+              <p>1234567890</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <h1 className="border-0">h1. heading</h1>
     <h2>h2. heading</h2>
     <h3>h3. heading</h3>
     <h4>h4. heading</h4>

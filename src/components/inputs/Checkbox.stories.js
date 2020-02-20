@@ -59,7 +59,7 @@ export const CheckboxDefault = () => (
     <h2>Indeterminate Custom</h2>
     <a
       href="https://getbootstrap.com/docs/4.4/components/forms/#checkboxes-and-radios-1"
-      _target="blank"
+      target="_blank"
     >
       To Do...
     </a>
