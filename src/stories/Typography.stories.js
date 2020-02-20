@@ -130,6 +130,13 @@ export const Typography = () => (
       <em>This line rendered as italicized text.</em>
     </p>
     <p>
+      This line of text is how{" "}
+      <a href="https://www.spacetelescope.org/images/archive/top100/">
+        a link to something
+      </a>{" "}
+      renders.
+    </p>
+    <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
