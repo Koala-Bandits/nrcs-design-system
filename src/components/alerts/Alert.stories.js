@@ -9,7 +9,7 @@ import {
 } from "@mdi/js";
 
 export default {
-  title: "Components|/Alerts"
+  title: "Components|Alerts"
 };
 
 export const AlertsDefault = () => (

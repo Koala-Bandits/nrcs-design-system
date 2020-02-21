@@ -70,7 +70,8 @@ $primary-dark: theme-color-level("primary", 3);
 // }
 
 // Links (anchors) with Icons
-a svg {
+a svg,
+a .mdi {
   fill: $link-color;
 }
 a:hover svg {

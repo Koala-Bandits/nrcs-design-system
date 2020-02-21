@@ -5,7 +5,7 @@ import Icon from "@mdi/react";
 import { mdiAccount } from "@mdi/js";
 
 export default {
-  title: "Components|/Buttons"
+  title: "Components|Buttons"
   // component: PrimaryButton
 };
 

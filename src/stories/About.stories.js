@@ -42,11 +42,11 @@ export const About = () => (
           it is suggested you consider starting with these design systems.
         </li>
         <li>
-          Designed with clean simple styles with high color contrast for
-          accessibilty and to provide solutions for large scale applications.
+          Designed with clean simple styles, high color contrast for
+          accessibilty, and to provide solutions for large scale applications.
         </li>
         <li>
-          Provides color, typography, iconography, components, examples and
+          Provides color, typography, iconography, components and examples with
           documentation for how to use them.
         </li>
         <li>
@@ -63,10 +63,10 @@ export const About = () => (
             href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"
             target="_blank"
           >
-            Bootstrap
-          </a>{" "}
-          theme. Therefore all components can refer to Bootstrap for
-          documentation for{" "}
+            Bootstrap{" "}
+          </a>
+          theme. Therefore all components can refer to Bootstrap documentation
+          for{" "}
           <a
             href="https://getbootstrap.com/docs/4.4/components/"
             target="_blank"

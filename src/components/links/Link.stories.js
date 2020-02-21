@@ -3,7 +3,7 @@ import Icon from "@mdi/react";
 import { mdiOpenInNew } from "@mdi/js";
 
 export default {
-  title: "Components|/Links (anchors)"
+  title: "Components|Links (anchors)"
 };
 
 export const LinksDefault = () => (

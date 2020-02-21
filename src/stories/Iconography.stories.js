@@ -29,7 +29,7 @@ export const Iconography = () => (
       <li>Default size={1} or 24px, 18px for smaller sized components</li>
       <li>Default icon color: $gray-700 gray</li>
       <li>Action/Clickable icon color: $primary blue</li>
-      <li>To get these default, icons should include the "mdi" class</li>
+      <li>To get these defaults, icons should include the "mdi" class</li>
     </ul>
 
     <Icon className="mdi" path={mdiInformation} />

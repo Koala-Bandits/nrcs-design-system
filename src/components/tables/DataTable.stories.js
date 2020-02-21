@@ -9,7 +9,7 @@ import React, { useState } from "react";
 // } from "@mdi/js";
 
 export default {
-  title: "Components|/Data Table"
+  title: "Components|Data Table"
 };
 
 export const DataTableDefault = () => (
