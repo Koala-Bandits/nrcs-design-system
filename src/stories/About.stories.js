@@ -63,15 +63,14 @@ export const About = () => (
             href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"
             target="_blank"
           >
-            Bootstrap{" "}
-          </a>
-          theme. Therefore all components can refer to Bootstrap documentation
-          for{" "}
+            Bootstrap
+          </a>{" "}
+          theme. Therefore all users can refer to Bootstrap documentation for{" "}
           <a
             href="https://getbootstrap.com/docs/4.4/components/"
             target="_blank"
           >
-            styles
+            component styles
           </a>
           ,{" "}
           <a

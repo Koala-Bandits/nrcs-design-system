@@ -14,7 +14,7 @@ export const Color = () => (
           <div class="p-3 mb-3 bg-primary text-white docs-color-swatch">
             Primary #205493
             <p>
-              <small>Header, Primary buttons, actions, and controls.</small>
+              <small>Header, primary buttons, actions and controls</small>
             </p>
           </div>
         </div>
@@ -30,9 +30,9 @@ export const Color = () => (
 
         <div class="col-md-4">
           <div class="p-3 mb-3 bg-secondary text-white docs-color-swatch">
-            Secondary{" "}
+            Secondary #236430{" "}
             <p>
-              <small>(not used)</small>
+              <small>FPAC green</small>
             </p>
           </div>
         </div>
@@ -58,6 +58,9 @@ export const Color = () => (
         <div class="col-md-4">
           <div class="p-3 mb-3 bg-info text-white docs-color-swatch">
             Info #0068ad
+            <p>
+              <small>Links, information icons</small>
+            </p>
           </div>
         </div>
 
