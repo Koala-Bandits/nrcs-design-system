@@ -86,10 +86,23 @@
 // }
 .nav-tabs .nav-link {
   border-top: 4px solid transparent;
+  font-weight: $font-weight-bold;
 }
 .nav-tabs .nav-link:hover,
 .nav-tabs .nav-link:focus {
   border-color: $gray-500; // #e9ecef #e9ecef #adb5bd
+}
+
+.nav-tabs.flex-column .nav-link {
+  border: 1px solid $gray-500;
+  border-left: 4px solid transparent;
+}
+.nav-tabs.flex-column .nav-link:hover,
+.nav-tabs.flex-column .nav-link:focus {
+  border-left: 4px solid $gray-500;
+}
+.nav-tabs.flex-column .nav-link.active {
+  border-left: 4px solid $primary !important;
 }
 
 //

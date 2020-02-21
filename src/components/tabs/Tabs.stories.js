@@ -10,8 +10,8 @@ import {
   Col
 } from "reactstrap";
 import classnames from "classnames";
-// import Icon from "@mdi/react";
-// import { mdiAccount } from "@mdi/js";
+import Icon from "@mdi/react";
+import { mdiCheckCircle } from "@mdi/js";
 
 export default {
   title: "Components|Tabs (Nav)"
@@ -70,6 +70,7 @@ export const TabsDefault = () => {
               toggle("4");
             }}
           >
+            <Icon className="mdi" path={mdiCheckCircle} color="green" />
             Tabby Tab Tab
           </NavLink>
         </NavItem>
@@ -104,6 +105,85 @@ export const TabsDefault = () => {
           </Row>
         </TabPane>
       </TabContent>
+
+      <h2>Vertical Tabs</h2>
+      <Row>
+        <Col sm="4">
+          <Nav vertical tabs>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "10" })}
+                href="#"
+                onClick={() => {
+                  toggle("10");
+                }}
+              >
+                Tabby Tab Tab
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "11" })}
+                href="#"
+                onClick={() => {
+                  toggle("11");
+                }}
+              >
+                <Icon className="mdi" path={mdiCheckCircle} color="green" />
+                Tabby Tab Tab
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "12" })}
+                href="#"
+                onClick={() => {
+                  toggle("12");
+                }}
+              >
+                Tabby Tab Tab
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink disabled href="#">
+                Disabled Link
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Col>
+        <Col sm="8">
+          <TabContent activeTab={activeTab}>
+            <TabPane tabId="10">
+              <Row>
+                <Col sm="12">
+                  <h4>Tab 1 Contents</h4>
+                </Col>
+              </Row>
+            </TabPane>
+            <TabPane tabId="11">
+              <Row>
+                <Col sm="12">
+                  <h4>Tab 2 Contents</h4>
+                </Col>
+              </Row>
+            </TabPane>
+            <TabPane tabId="12">
+              <Row>
+                <Col sm="12">
+                  <h4>Tab 3 Contents</h4>
+                </Col>
+              </Row>
+            </TabPane>
+            <TabPane tabId="13">
+              <Row>
+                <Col sm="12">
+                  <h4>Tab 4 Contents</h4>
+                </Col>
+              </Row>
+            </TabPane>
+          </TabContent>
+        </Col>
+      </Row>
     </div>
   );
 };

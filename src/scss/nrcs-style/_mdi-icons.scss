@@ -61,6 +61,13 @@ $primary-dark: theme-color-level("primary", 3);
   margin-right: 0.25rem;
 }
 
+// Tabs with icons via Nav
+.nav-link svg {
+  vertical-align: top;
+  // margin-top: -0.25rem;
+  margin-right: 0.25rem;
+}
+
 // Default Bootstrap colorizing of text in alerts for icons too..
 // @each $color, $value in $theme-colors {
 //   .alert-#{$color} svg {

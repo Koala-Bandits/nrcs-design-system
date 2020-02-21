@@ -39,6 +39,7 @@ $grays: map-merge(
 
 $blue: #205493; // #007bff !default;
 $blue-link: #0068ad; // FPAC link color
+$fpac-green: #236430; // FPAC primary green
 
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
@@ -744,7 +745,7 @@ $input-border-color: $gray-700;
 
 $nav-tabs-border-color: $border-color; // $gray-300 !default;
 // $nav-tabs-border-width: $border-width !default;
-// $nav-tabs-border-radius: $border-radius !default;
+// $nav-tabs-border-radius: 0.25rem; // $border-radius !default;
 // $nav-tabs-link-hover-border-color: $gray-200 $gray-200 $nav-tabs-border-color !default;
 // $nav-tabs-link-active-color: $gray-700 !default;
 $nav-tabs-link-active-bg: $body-bg !default;
