@@ -6,7 +6,7 @@ export default {
 
 export const Accessibility = () => (
   <div>
-    <h1>Accessibility</h1>
+    <h1 className="docs">Accessibility</h1>
 
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 class VisualStyle extends React.Component {
   render() {
-    return <h1>VisualStyle</h1>
+    return <h1 className="docs">VisualStyle</h1>;
   }
 }
 
-export default VisualStyle
+export default VisualStyle;

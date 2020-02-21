@@ -9,7 +9,7 @@ export default {
 
 export const BreadcrumbsDefault = () => (
   <div>
-    <h1>Badges - Default</h1>
+    <h1 className="docs">Badges - Default</h1>
 
     <div>
       <Breadcrumb tag="nav" listTag="div">
@@ -32,7 +32,7 @@ export const BreadcrumbsDefault = () => (
 
 export const BreadcrumbsIcons = () => (
   <div>
-    <h1>Breadcrumbs - with Icons</h1>
+    <h1 className="docs">Breadcrumbs - with Icons</h1>
 
     <div>
       <Breadcrumb tag="nav" listTag="div">

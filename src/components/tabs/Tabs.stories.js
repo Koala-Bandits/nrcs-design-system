@@ -26,7 +26,7 @@ export const TabsDefault = () => {
 
   return (
     <div>
-      <h1>Tabs - Default</h1>
+      <h1 className="docs">Tabs - Default</h1>
 
       <Nav tabs>
         <NavItem>
@@ -106,7 +106,7 @@ export const TabsDefault = () => {
         </TabPane>
       </TabContent>
 
-      <h2>Vertical Tabs</h2>
+      <h2 className="docs">Vertical Tabs</h2>
       <Row>
         <Col sm="4">
           <Nav vertical tabs>

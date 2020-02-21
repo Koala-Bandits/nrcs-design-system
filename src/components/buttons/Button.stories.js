@@ -11,16 +11,16 @@ export default {
 
 export const ButtonsDefault = () => (
   <div>
-    <h1>Buttons</h1>
+    <h1 className="docs">Buttons</h1>
 
-    <h2>Default</h2>
+    <h2 className="docs">Default</h2>
     <Button color="primary">Primary</Button>
     <Button outline color="primary">
       Secondary
     </Button>
     <Button color="link">Flat</Button>
 
-    <h2>Small</h2>
+    <h2 className="docs">Small</h2>
     <Button color="primary" size="sm">
       Primary
     </Button>
@@ -31,7 +31,7 @@ export const ButtonsDefault = () => (
       Flat
     </Button>
 
-    <h2>Disabled</h2>
+    <h2 className="docs">Disabled</h2>
     <Button color="primary" aria-disabled="true" disabled>
       Primary
     </Button>
@@ -46,9 +46,9 @@ export const ButtonsDefault = () => (
 
 export const ButtonsWithIcons = () => (
   <div>
-    <h1>Buttons</h1>
+    <h1 className="docs">Buttons</h1>
 
-    <h2>Default</h2>
+    <h2 className="docs">Default</h2>
 
     <Button color="primary">
       <Icon className="mdi" path={mdiAccount} />
@@ -63,7 +63,7 @@ export const ButtonsWithIcons = () => (
       Flat
     </Button>
 
-    <h2>Small</h2>
+    <h2 className="docs">Small</h2>
 
     <Button color="primary" size="sm">
       <Icon className="mdi" path={mdiAccount} size={0.8} />
@@ -78,7 +78,7 @@ export const ButtonsWithIcons = () => (
       Flat
     </Button>
 
-    <h2>Disabled</h2>
+    <h2 className="docs">Disabled</h2>
 
     <Button color="primary" size="sm" aria-disabled="true" disabled>
       <Icon className="mdi" path={mdiAccount} size={0.8} />
@@ -97,7 +97,7 @@ export const ButtonsWithIcons = () => (
 
 export const ButtonsTypical = () => (
   <div>
-    <h1>Buttons - Typical Usage</h1>
+    <h1 className="docs">Buttons - Typical Usage</h1>
     To do... show a content area card/modal, (cancel, tertiary, action) right
     aligned.
   </div>
@@ -105,7 +105,7 @@ export const ButtonsTypical = () => (
 
 export const ButtonsFooter = () => (
   <div>
-    <h1>Buttons - Footer</h1>
+    <h1 className="docs">Buttons - Footer</h1>
     To do... typical button usage, but in box with top-border, used in CART and
     to be used in CD. This will complement our 'ContentHeadings' with a bottom
     border/underline.

@@ -6,7 +6,7 @@ export default {
 
 export const Typography = () => (
   <div>
-    <h1>Typography</h1>
+    <h1 className="docs">Typography</h1>
 
     <p className="col-md-8">
       <strong>Typeface</strong>
@@ -96,7 +96,7 @@ export const Typography = () => (
 
     <hr />
 
-    <h1 className="border-0">h1. heading</h1>
+    <h1>h1. heading</h1>
     <h2>h2. heading</h2>
     <h3>h3. heading</h3>
     <h4>h4. heading</h4>

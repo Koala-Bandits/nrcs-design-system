@@ -6,7 +6,7 @@ export default {
 
 export const About = () => (
   <div>
-    <h1>NRCS Design System</h1>
+    <h1 className="docs">NRCS Design System</h1>
 
     <p>
       <span className="text-danger">

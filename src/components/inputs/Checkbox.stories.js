@@ -7,9 +7,9 @@ export default {
 
 export const CheckboxDefault = () => (
   <div>
-    <h1>Checkboxes</h1>
+    <h1 className="docs">Checkboxes</h1>
 
-    <h2>Default Custom</h2>
+    <h2 className="docs">Default Custom</h2>
     <FormGroup>
       <Label for="exampleCheckbox">Checkbox Label</Label>
       <CustomInput
@@ -37,7 +37,7 @@ export const CheckboxDefault = () => (
       />
     </FormGroup>
 
-    <h2>Inline Custom</h2>
+    <h2 className="docs">Inline Custom</h2>
     <FormGroup>
       <Label for="exampleCheckbox">Inline Label</Label>
       <div>
@@ -56,7 +56,7 @@ export const CheckboxDefault = () => (
       </div>
     </FormGroup>
 
-    <h2>Indeterminate Custom</h2>
+    <h2 className="docs">Indeterminate Custom</h2>
     <a
       href="https://getbootstrap.com/docs/4.4/components/forms/#checkboxes-and-radios-1"
       target="_blank"

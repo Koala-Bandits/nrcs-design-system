@@ -9,7 +9,7 @@ export default {
 
 export const BadgesDefault = () => (
   <div>
-    <h1>Badges - Default</h1>
+    <h1 className="docs">Badges - Default</h1>
 
     <Badge color="primary">Primary</Badge>
     <Badge color="secondary">Secondary</Badge>
@@ -53,7 +53,7 @@ export const BadgesDefault = () => (
 
 export const BadgesPills = () => (
   <div>
-    <h1>Badges - Pills</h1>
+    <h1 className="docs">Badges - Pills</h1>
 
     <Badge color="primary" pill>
       Primary
@@ -112,19 +112,19 @@ export const BadgesPills = () => (
 
 export const BadgesIcons = () => (
   <div>
-    <h1>Badges - Pills</h1>
+    <h1 className="docs">Badges - Pills</h1>
     To Do...
   </div>
 );
 
 export const BadgesHeadings = () => (
   <div>
-    <h1>Badges - Headings</h1>
+    <h1 className="docs">Badges - Headings</h1>
 
-    <h1>
+    <h1 className="docs">
       Heading <Badge color="secondary">New</Badge>
     </h1>
-    <h2>
+    <h2 className="docs">
       Heading <Badge color="secondary">New</Badge>
     </h2>
     <h3>

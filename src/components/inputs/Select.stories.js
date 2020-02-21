@@ -7,9 +7,9 @@ export default {
 
 export const SelectDefault = () => (
   <div>
-    <h1>Select</h1>
+    <h1 className="docs">Select</h1>
 
-    <h2>Default Custom</h2>
+    <h2 className="docs">Default Custom</h2>
     <FormGroup>
       <Label for="exampleCheckbox">Select Label</Label>
       <CustomInput type="select" id="exampleCustomSelect" name="customSelect">
@@ -22,7 +22,7 @@ export const SelectDefault = () => (
       </CustomInput>
     </FormGroup>
 
-    <h2>Disabled</h2>
+    <h2 className="docs">Disabled</h2>
     <FormGroup>
       <Label for="exampleCustomSelectDisabled">
         Custom Select Disabled Label
@@ -46,9 +46,9 @@ export const SelectDefault = () => (
 
 export const SelectMulti = () => (
   <div>
-    <h1>Multiple Select</h1>
+    <h1 className="docs">Multiple Select</h1>
 
-    <h2>Default Custom</h2>
+    <h2 className="docs">Default Custom</h2>
     <FormGroup>
       <Label for="exampleCustomMutlipleSelect">Custom Multiple Select</Label>
       <CustomInput
@@ -66,7 +66,7 @@ export const SelectMulti = () => (
       </CustomInput>
     </FormGroup>
 
-    <h2>Disabled</h2>
+    <h2 className="docs">Disabled</h2>
     <FormGroup>
       <Label for="exampleCustomMutlipleSelectDisabled">
         Custom Multiple Select Disabled

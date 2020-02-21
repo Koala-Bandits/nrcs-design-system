@@ -14,7 +14,7 @@ export default {
 
 export const AlertsDefault = () => (
   <div>
-    <h1>Alerts - Default</h1>
+    <h1 className="docs">Alerts - Default</h1>
 
     <Alert color="primary">
       This is an <strong>info</strong> alert with{" "}
@@ -66,7 +66,7 @@ export const AlertsDefault = () => (
       . Give it a click if you like.
     </Alert> */}
 
-    <h2>Alerts - FPAC Style</h2>
+    <h2 className="docs">Alerts - FPAC Style</h2>
 
     <p>To see how it works/looks (TBD)...</p>
 
@@ -103,7 +103,7 @@ export const AlertsDefault = () => (
 
 export const AlertsWithIcons = () => (
   <div>
-    <h1>Alerts - with Icons</h1>
+    <h1 className="docs">Alerts - with Icons</h1>
 
     <Alert color="primary">
       <Container className="m-0">
@@ -189,7 +189,7 @@ export const AlertsWithIcons = () => (
       </Container>
     </Alert>
 
-    <h2>Alerts - FPAC Style</h2>
+    <h2 className="docs">Alerts - FPAC Style</h2>
 
     <p>To see how it works/looks (TBD)...</p>
 
@@ -285,7 +285,7 @@ export const AlertsDismissable = () => {
 
   return (
     <div>
-      <h1>Alerts - Dismissable</h1>
+      <h1 className="docs">Alerts - Dismissable</h1>
 
       <Alert color="warning" isOpen={visible} toggle={onDismiss}>
         <Container className="m-0">
@@ -300,7 +300,7 @@ export const AlertsDismissable = () => {
         </Container>
       </Alert>
 
-      <h2>Alerts - FPAC Style</h2>
+      <h2 className="docs">Alerts - FPAC Style</h2>
 
       <p>To see how it works/looks (TBD)...</p>
 
@@ -327,7 +327,7 @@ export const AlertsDismissable = () => {
 
 export const AlertsContent = () => (
   <div>
-    <h1>Alerts - with Content</h1>
+    <h1 className="docs">Alerts - with Content</h1>
 
     <Alert color="success">
       <h4 className="alert-heading">
@@ -346,7 +346,7 @@ export const AlertsContent = () => (
       </p>
     </Alert>
 
-    <h2>Alerts - FPAC Style</h2>
+    <h2 className="docs">Alerts - FPAC Style</h2>
 
     <p>To see how it works/looks (TBD)...</p>
 

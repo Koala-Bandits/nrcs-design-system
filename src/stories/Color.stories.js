@@ -6,7 +6,7 @@ export default {
 
 export const Color = () => (
   <div className="docs-color">
-    <h1>Color</h1>
+    <h1 className="docs">Color</h1>
 
     <div className="container">
       <div class="row">
@@ -81,7 +81,7 @@ export const Color = () => (
       </div>
     </div>
 
-    <h2>Grays</h2>
+    <h2 className="docs">Grays</h2>
 
     <div className="container">
       <div class="row mb-3">

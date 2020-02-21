@@ -13,7 +13,7 @@ export default {
 
 export const Iconography = () => (
   <div>
-    <h1>Iconography</h1>
+    <h1 className="docs">Iconography</h1>
 
     <p>
       NRCS Design System is using the{" "}

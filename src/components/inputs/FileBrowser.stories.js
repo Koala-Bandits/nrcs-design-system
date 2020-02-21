@@ -7,9 +7,9 @@ export default {
 
 export const FileBrowserDefault = () => (
   <div>
-    <h1>File Browser</h1>
+    <h1 className="docs">File Browser</h1>
 
-    <h2>Default Custom</h2>
+    <h2 className="docs">Default Custom</h2>
     <FormGroup>
       <Label for="exampleCustomFileBrowser">File Browser Defaul Label</Label>
       <CustomInput
@@ -31,7 +31,7 @@ export const FileBrowserDefault = () => (
       />
     </FormGroup>
 
-    <h2>Disabled</h2>
+    <h2 className="docs">Disabled</h2>
     <FormGroup>
       <Label for="exampleCustomFileBrowser">File Browser Disabled Label</Label>
       <CustomInput

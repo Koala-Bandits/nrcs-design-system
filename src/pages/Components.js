@@ -7,7 +7,7 @@ class Components extends React.Component {
   render() {
     return (
       <div>
-        <h1>Components</h1>
+        <h1 className="docs">Components</h1>
         <button type="button" class="btn btn-primary">
           Primary
         </button>

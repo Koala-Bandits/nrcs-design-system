@@ -8,17 +8,16 @@
 
 // Additional styles for 'nrcs-design-system' documentation
 
-h1 {
+h1.docs {
   border-bottom: 1px solid $border-color;
   padding-bottom: 0.25rem;
   margin-bottom: 1.25rem;
 }
-
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2.docs,
+h3.docs,
+h4.docs,
+h5.docs,
+h6.docs {
   margin-top: 1.5rem;
 }
 

@@ -6,28 +6,28 @@ export default {
 
 export const FormDefault = () => (
   <div>
-    <h1>Form - Default</h1>
+    <h1 className="docs">Form - Default</h1>
     To do... example vertical layout form with top-aligned labels.
   </div>
 );
 
 export const FormHorizontal = () => (
   <div>
-    <h1>Form - Horizontal</h1>
+    <h1 className="docs">Form - Horizontal</h1>
     To do... example horizontal layout form with left-aligned labels.
   </div>
 );
 
 export const FormInline = () => (
   <div>
-    <h1>Form - Inline</h1>
+    <h1 className="docs">Form - Inline</h1>
     To do... example horizontal layout form with left-aligned labels.
   </div>
 );
 
 export const FormInputGroup = () => (
   <div>
-    <h1>Form - InputGroup</h1>
+    <h1 className="docs">Form - InputGroup</h1>
     To do... various input grouping examples.
   </div>
 );

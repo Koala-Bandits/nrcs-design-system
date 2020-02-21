@@ -14,7 +14,7 @@ export default {
 
 export const TablesDefault = () => (
   <div>
-    <h1>Tables - Default</h1>
+    <h1 className="docs">Tables - Default</h1>
     <p>
       To Do... FPAC style table with gray header, no zebra, horiz. lines, light
       gray hover, light blue selection w/ bold styles.
@@ -24,7 +24,7 @@ export const TablesDefault = () => (
 
 export const TablesAlt = () => (
   <div>
-    <h1>Table - Alternate</h1>
+    <h1 className="docs">Table - Alternate</h1>
 
     <p>
       To Do... FPAC style table with no header and/or no boxed border for use in
