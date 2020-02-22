@@ -21,8 +21,8 @@ export const Typography = () => (
         </a>
       </strong>{" "}
       font. It is a widely used font that we like for its legibility and
-      familiarity paired with MDI icons. It's highly legible and works well for
-      our data-heavy applications.
+      familiarity paired with MDI icons. It works well for our data-heavy
+      applications across browsers and devices.
     </p>
 
     <div className="col docs-typeface mt-5">

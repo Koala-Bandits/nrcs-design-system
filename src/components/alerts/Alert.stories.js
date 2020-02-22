@@ -16,6 +16,39 @@ export const AlertsDefault = () => (
   <div>
     <h1 className="docs">Alerts - Default</h1>
 
+    <Alert className="alert-fpac" color="primary">
+      This is an <strong>info</strong> alert with{" "}
+      <a href="#" className="alert-link">
+        an example link
+      </a>
+      . Give it a click if you like.
+    </Alert>
+    <Alert className="alert-fpac" color="success">
+      This is a <strong>success</strong> alert with{" "}
+      <a href="#" className="alert-link">
+        an example link
+      </a>
+      . Give it a click if you like.
+    </Alert>
+    <Alert className="alert-fpac" color="danger">
+      This is a <strong>error</strong> alert with{" "}
+      <a href="#" className="alert-link">
+        an example link
+      </a>
+      . Give it a click if you like.
+    </Alert>
+    <Alert className="alert-fpac" color="warning">
+      This is a <strong>warning</strong> alert with{" "}
+      <a href="#" className="alert-link">
+        an example link
+      </a>
+      . Give it a click if you like.
+    </Alert>
+
+    <h2 className="docs">Alerts - Alternate</h2>
+
+    <p>To see how it works/looks (TBD)...</p>
+
     <Alert color="primary">
       This is an <strong>info</strong> alert with{" "}
       <a href="#" className="alert-link">
@@ -65,45 +98,100 @@ export const AlertsDefault = () => (
       </a>
       . Give it a click if you like.
     </Alert> */}
-
-    <h2 className="docs">Alerts - FPAC Style</h2>
-
-    <p>To see how it works/looks (TBD)...</p>
-
-    <Alert className="alert-fpac" color="primary">
-      This is an <strong>info</strong> alert with{" "}
-      <a href="#" className="alert-link">
-        an example link
-      </a>
-      . Give it a click if you like.
-    </Alert>
-    <Alert className="alert-fpac" color="success">
-      This is a <strong>success</strong> alert with{" "}
-      <a href="#" className="alert-link">
-        an example link
-      </a>
-      . Give it a click if you like.
-    </Alert>
-    <Alert className="alert-fpac" color="danger">
-      This is a <strong>error</strong> alert with{" "}
-      <a href="#" className="alert-link">
-        an example link
-      </a>
-      . Give it a click if you like.
-    </Alert>
-    <Alert className="alert-fpac" color="warning">
-      This is a <strong>warning</strong> alert with{" "}
-      <a href="#" className="alert-link">
-        an example link
-      </a>
-      . Give it a click if you like.
-    </Alert>
   </div>
 );
 
 export const AlertsWithIcons = () => (
   <div>
     <h1 className="docs">Alerts - with Icons</h1>
+
+    <Alert className="alert-fpac" color="primary">
+      <Container className="m-0">
+        <Row>
+          <Col xs="auto" className="p-0 pr-2">
+            <Icon className="mdi" path={mdiInformation} />
+          </Col>
+          <Col className="p-0">
+            This is an <strong>info</strong> alert with{" "}
+            <a href="#" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </Col>
+        </Row>
+      </Container>
+    </Alert>
+    <Alert className="alert-fpac" color="success">
+      <Container className="m-0">
+        <Row>
+          <Col xs="auto" className="p-0 pr-2">
+            <Icon className="mdi" path={mdiCheckCircle} />
+          </Col>
+          <Col className="p-0">
+            This is a <strong>success</strong> alert with{" "}
+            <a href="#" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </Col>
+        </Row>
+      </Container>
+    </Alert>
+    <Alert className="alert-fpac" color="danger">
+      <Container className="m-0">
+        <Row>
+          <Col xs="auto" className="p-0 pr-2">
+            <Icon className="mdi" path={mdiAlertCircle} />
+          </Col>
+          <Col className="p-0">
+            This is a <strong>error</strong> alert with{" "}
+            <a href="#" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </Col>
+        </Row>
+      </Container>
+    </Alert>
+    <Alert className="alert-fpac" color="warning">
+      <Container className="m-0">
+        <Row>
+          <Col xs="auto" className="p-0 pr-2">
+            <Icon className="mdi" path={mdiAlert} />
+          </Col>
+          <Col className="p-0">
+            This is a <strong>warning</strong> alert with{" "}
+            <a href="#" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </Col>
+        </Row>
+      </Container>
+    </Alert>
+    <hr />
+    <Alert className="alert-fpac" color="warning">
+      <Container className="m-0">
+        <Row>
+          <Col xs="auto" className="p-0 pr-2">
+            <Icon className="mdi" path={mdiAlert} />
+          </Col>
+          <Col className="p-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Col>
+        </Row>
+      </Container>
+    </Alert>
+
+    <h2 className="docs">Alerts - Alternate</h2>
+
+    <p>To see how it works/looks (TBD)...</p>
 
     <Alert color="primary">
       <Container className="m-0">
@@ -188,94 +276,6 @@ export const AlertsWithIcons = () => (
         </Row>
       </Container>
     </Alert>
-
-    <h2 className="docs">Alerts - FPAC Style</h2>
-
-    <p>To see how it works/looks (TBD)...</p>
-
-    <Alert className="alert-fpac" color="primary">
-      <Container className="m-0">
-        <Row>
-          <Col xs="auto" className="p-0 pr-2">
-            <Icon className="mdi" path={mdiInformation} />
-          </Col>
-          <Col className="p-0">
-            This is an <strong>info</strong> alert with{" "}
-            <a href="#" className="alert-link">
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Col>
-        </Row>
-      </Container>
-    </Alert>
-    <Alert className="alert-fpac" color="success">
-      <Container className="m-0">
-        <Row>
-          <Col xs="auto" className="p-0 pr-2">
-            <Icon className="mdi" path={mdiCheckCircle} />
-          </Col>
-          <Col className="p-0">
-            This is a <strong>success</strong> alert with{" "}
-            <a href="#" className="alert-link">
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Col>
-        </Row>
-      </Container>
-    </Alert>
-    <Alert className="alert-fpac" color="danger">
-      <Container className="m-0">
-        <Row>
-          <Col xs="auto" className="p-0 pr-2">
-            <Icon className="mdi" path={mdiAlertCircle} />
-          </Col>
-          <Col className="p-0">
-            This is a <strong>error</strong> alert with{" "}
-            <a href="#" className="alert-link">
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Col>
-        </Row>
-      </Container>
-    </Alert>
-    <Alert className="alert-fpac" color="warning">
-      <Container className="m-0">
-        <Row>
-          <Col xs="auto" className="p-0 pr-2">
-            <Icon className="mdi" path={mdiAlert} />
-          </Col>
-          <Col className="p-0">
-            This is a <strong>warning</strong> alert with{" "}
-            <a href="#" className="alert-link">
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Col>
-        </Row>
-      </Container>
-    </Alert>
-    <hr />
-    <Alert className="alert-fpac" color="warning">
-      <Container className="m-0">
-        <Row>
-          <Col xs="auto" className="p-0 pr-2">
-            <Icon className="mdi" path={mdiAlert} />
-          </Col>
-          <Col className="p-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Col>
-        </Row>
-      </Container>
-    </Alert>
   </div>
 );
 
@@ -287,7 +287,12 @@ export const AlertsDismissable = () => {
     <div>
       <h1 className="docs">Alerts - Dismissable</h1>
 
-      <Alert color="warning" isOpen={visible} toggle={onDismiss}>
+      <Alert
+        className="alert-fpac"
+        color="warning"
+        isOpen={visible}
+        toggle={onDismiss}
+      >
         <Container className="m-0">
           <Row>
             <Col xs="auto" className="p-0 pr-2">
@@ -300,16 +305,11 @@ export const AlertsDismissable = () => {
         </Container>
       </Alert>
 
-      <h2 className="docs">Alerts - FPAC Style</h2>
+      <h2 className="docs">Alerts - Alternate</h2>
 
       <p>To see how it works/looks (TBD)...</p>
 
-      <Alert
-        className="alert-fpac"
-        color="warning"
-        isOpen={visible}
-        toggle={onDismiss}
-      >
+      <Alert color="warning" isOpen={visible} toggle={onDismiss}>
         <Container className="m-0">
           <Row>
             <Col xs="auto" className="p-0 pr-2">
@@ -329,7 +329,7 @@ export const AlertsContent = () => (
   <div>
     <h1 className="docs">Alerts - with Content</h1>
 
-    <Alert color="success">
+    <Alert className="alert-fpac" color="success">
       <h4 className="alert-heading">
         <Icon className="mdi" path={mdiCheckCircle} size={1.3} />
         Well done!
@@ -346,11 +346,11 @@ export const AlertsContent = () => (
       </p>
     </Alert>
 
-    <h2 className="docs">Alerts - FPAC Style</h2>
+    <h2 className="docs">Alerts - Alternate</h2>
 
     <p>To see how it works/looks (TBD)...</p>
 
-    <Alert className="alert-fpac" color="success">
+    <Alert color="success">
       <h4 className="alert-heading">
         <Icon className="mdi" path={mdiCheckCircle} size={1.3} />
         Well done!

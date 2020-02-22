@@ -43,3 +43,8 @@ $primary-dark: theme-color-level("primary", 3);
 .btn-link:hover {
   color: $primary-dark;
 }
+
+.btn-link:disabled,
+.btn-link.disabled {
+  color: $primary;
+}
