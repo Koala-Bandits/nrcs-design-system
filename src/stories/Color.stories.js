@@ -67,6 +67,9 @@ export const Color = () => (
         <div class="col-md-4">
           <div class="p-3 mb-3 bg-light text-dark border docs-color-swatch">
             Light (gray-100) #f8f9fa
+            <p>
+              <small>Background</small>
+            </p>
           </div>
         </div>
 
