@@ -9,12 +9,12 @@ import React, { useState } from "react";
 // } from "@mdi/js";
 
 export default {
-  title: "Components|Data Table"
+  title: "Components|Tables"
 };
 
 export const DataTableDefault = () => (
   <div>
-    <h1 className="docs">Data Table - Default</h1>
+    <h1 className="docs">Table - Complex</h1>
     <p>
       To Do... FPAC style table with gray header, no zebra, horiz. lines, light
       gray hover, light blue selection w/ bold styles...
@@ -28,5 +28,5 @@ export const DataTableDefault = () => (
 );
 
 DataTableDefault.story = {
-  name: "Data Table - Default"
+  name: "Tables - Complex"
 };
