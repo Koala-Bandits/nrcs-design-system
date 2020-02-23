@@ -1,0 +1,19 @@
+/////////////////////////////////////////////////////////////
+// Override styles of Tables in the NRCS Design System
+/////////////////////////////////////////////////////////////
+
+.table thead th {
+  border-bottom: $border-width solid $table-border-color;
+}
+
+.table {
+  border-left: $border-width solid $table-border-color;
+  border-right: $border-width solid $table-border-color;
+  border-bottom: $border-width solid $table-border-color;
+}
+
+.table-alt {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
