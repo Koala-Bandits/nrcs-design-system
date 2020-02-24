@@ -1,12 +1,8 @@
 import React, { useState } from "react";
+import { Table } from "reactstrap";
 // import { Alert, Container, Row, Col } from "reactstrap";
-// import Icon from "@mdi/react";
-// import {
-//   mdiInformation,
-//   mdiAlert,
-//   mdiAlertCircle,
-//   mdiCheckCircle
-// } from "@mdi/js";
+import Icon from "@mdi/react";
+import { mdiDotsVertical } from "@mdi/js";
 
 export default {
   title: "Components|Tables"
@@ -24,6 +20,96 @@ export const DataTableDefault = () => (
       badge-labels, actions menu, and upper responsive layout for table ations
       and paging controls all integrated as a suggested implementation.
     </p>
+
+    <Table hover>
+      <caption>List of rental car inventory</caption>
+      <thead className="thead-light">
+        <tr>
+          <th>[]</th>
+          <th>Type</th>
+          <th>Make</th>
+          <th>Model</th>
+          <th>Notes</th>
+          <th>Last Modified</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>icon</td>
+          <td>Ford</td>
+          <td>F150</td>
+          <td>Includes tow-hitch, cargo rack.</td>
+          <td>timestamp</td>
+          <td>badge</td>
+          <td>
+            <Icon className="mdi" path={mdiDotsVertical} />
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>icon</td>
+          <td>Ford</td>
+          <td>F150</td>
+          <td>Includes tow-hitch, cargo rack.</td>
+          <td>timestamp</td>
+          <td>badge</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>icon</td>
+          <td>Ford</td>
+          <td>F150</td>
+          <td>Includes tow-hitch, cargo rack.</td>
+          <td>timestamp</td>
+          <td>badge</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>icon</td>
+          <td>Ford</td>
+          <td>F150</td>
+          <td>Includes tow-hitch, cargo rack.</td>
+          <td>timestamp</td>
+          <td>badge</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>icon</td>
+          <td>Ford</td>
+          <td>F150</td>
+          <td>Includes tow-hitch, cargo rack.</td>
+          <td>timestamp</td>
+          <td>badge</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>icon</td>
+          <td>Ford</td>
+          <td>F150</td>
+          <td>Includes tow-hitch, cargo rack.</td>
+          <td>timestamp</td>
+          <td>badge</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>icon</td>
+          <td>Ford</td>
+          <td>F150</td>
+          <td>Includes tow-hitch, cargo rack.</td>
+          <td>timestamp</td>
+          <td>badge</td>
+          <td>...</td>
+        </tr>
+      </tbody>
+    </Table>
   </div>
 );
 

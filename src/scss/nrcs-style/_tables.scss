@@ -17,3 +17,8 @@
   border-right: none;
   border-bottom: none;
 }
+.table-alt thead th {
+  //   border-top: 2 * $border-width solid $table-border-color;
+  //   border-bottom: 2 * $border-width solid $table-border-color;
+  border-top: none;
+}
