@@ -8,6 +8,7 @@ module.exports = {
     // "@storybook/addon-actions",
     "@storybook/addon-links",
     "@storybook/addon-storysource",
-    "@storybook/preset-scss"
+    "@storybook/preset-scss",
+    "@storybook/addon-viewport/register"
   ]
 };
