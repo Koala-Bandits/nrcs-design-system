@@ -32,7 +32,7 @@ $primary-dark: theme-color-level("primary", 3);
 .btn svg,
 .breadcrumb svg {
   //   vertical-align: top;
-  margin-right: 0.25rem;
+  // margin-right: 0.25rem; // Doesn't work for icons on the right (dropdown, next etc.)
   margin-top: -0.25rem;
 }
 

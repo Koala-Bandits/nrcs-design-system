@@ -2,7 +2,12 @@ import React from "react";
 // import { action } from "@storybook/addon-actions";
 import { Button } from "reactstrap";
 import Icon from "@mdi/react";
-import { mdiAccount } from "@mdi/js";
+import {
+  mdiAccount,
+  mdiChevronRight,
+  mdiChevronLeft,
+  mdiChevronDown
+} from "@mdi/js";
 
 export default {
   title: "Components|Buttons"
@@ -51,45 +56,69 @@ export const ButtonsWithIcons = () => (
     <h2 className="docs">Default</h2>
 
     <Button color="primary">
-      <Icon className="mdi" path={mdiAccount} />
+      <Icon className="mdi mr-1" path={mdiAccount} />
       Primary
     </Button>
     <Button outline color="primary">
-      <Icon className="mdi" path={mdiAccount} />
+      <Icon className="mdi mr-1" path={mdiAccount} />
       Secondary
     </Button>
+    <Button outline color="primary">
+      <Icon className="mdi mr-1" path={mdiChevronLeft} />
+      Previous
+    </Button>
+    <Button outline color="primary">
+      Next
+      <Icon className="mdi ml-1" path={mdiChevronRight} />
+    </Button>
+    <Button outline color="primary">
+      Dropdown
+      <Icon className="mdi ml-1" path={mdiChevronDown} />
+    </Button>
     <Button color="link">
-      <Icon className="mdi" path={mdiAccount} />
+      <Icon className="mdi mr-1" path={mdiAccount} />
       Flat
     </Button>
 
     <h2 className="docs">Small</h2>
 
     <Button color="primary" size="sm">
-      <Icon className="mdi" path={mdiAccount} size={0.8} />
+      <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Primary
     </Button>
     <Button outline color="primary" size="sm">
-      <Icon className="mdi" path={mdiAccount} size={0.8} />
-      Secondary and more
+      <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+      Secondary
+    </Button>
+    <Button outline color="primary" size="sm">
+      <Icon className="mdi mr-1" path={mdiChevronLeft} size={0.8} />
+      Previous
+    </Button>
+    <Button outline color="primary" size="sm">
+      Next
+      <Icon className="mdi ml-1" path={mdiChevronRight} size={0.8} />
+    </Button>
+    <Button outline color="primary" size="sm">
+      Dropdown
+      <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
     </Button>
     <Button color="link" size="sm">
-      <Icon className="mdi" path={mdiAccount} size={0.8} />
+      <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Flat
     </Button>
 
     <h2 className="docs">Disabled</h2>
 
     <Button color="primary" size="sm" aria-disabled="true" disabled>
-      <Icon className="mdi" path={mdiAccount} size={0.8} />
+      <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Primary
     </Button>
     <Button outline color="primary" size="sm" aria-disabled="true" disabled>
-      <Icon className="mdi" path={mdiAccount} size={0.8} />
+      <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Secondary and more
     </Button>
     <Button color="link" size="sm" aria-disabled="true" disabled>
-      <Icon className="mdi" path={mdiAccount} size={0.8} />
+      <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Flat
     </Button>
   </div>
