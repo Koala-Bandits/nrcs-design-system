@@ -15,7 +15,7 @@ export default {
 };
 
 export const ButtonsDefault = () => (
-  <div>
+  <div className="docs-btn">
     <h1 className="docs">Buttons</h1>
 
     <h2 className="docs">Default</h2>
@@ -50,7 +50,7 @@ export const ButtonsDefault = () => (
 );
 
 export const ButtonsWithIcons = () => (
-  <div>
+  <div className="docs-btn">
     <h1 className="docs">Buttons</h1>
 
     <h2 className="docs">Default</h2>

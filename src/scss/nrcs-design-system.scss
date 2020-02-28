@@ -81,9 +81,10 @@ li {
 }
 
 // MISC/TEMPORARY
-button + button {
+.docs-btn button + button {
   margin-left: 0.5rem;
 }
+
 .badge + .badge {
   margin-left: 0.5rem;
 }
