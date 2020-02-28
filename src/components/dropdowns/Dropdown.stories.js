@@ -63,7 +63,6 @@ export const DropdownDefault = () => {
           <ButtonDropdown
             isOpen={primarySplitDropdownOpen}
             toggle={togglePrimarySplit}
-            className="dropdown"
           >
             <Button color="primary">Primary Split</Button>
             <DropdownToggle color="primary" className="rounded-right">
@@ -129,6 +128,105 @@ export const DropdownDefault = () => {
               <DropdownItem>Bar Action</DropdownItem>
               <DropdownItem>Quo Action</DropdownItem>
             </DropdownMenu>
+          </Dropdown>
+        </Col>
+      </Row>
+
+      <h2 className="docs">Small</h2>
+
+      <Row xs="1" sm="3" md="5">
+        <Col className="mb-3">
+          <Dropdown size="sm">
+            <DropdownToggle color="primary">
+              Dropdown
+              <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
+            </DropdownToggle>
+          </Dropdown>
+        </Col>
+        <Col className="mb-3">
+          <ButtonDropdown size="sm">
+            <Button color="primary">Primary Split</Button>
+            <DropdownToggle color="primary" className="rounded-right">
+              <Icon className="mdi" path={mdiChevronDown} size={0.8} />
+            </DropdownToggle>
+          </ButtonDropdown>
+        </Col>
+        <Col className="mb-3">
+          <Dropdown size="sm">
+            <DropdownToggle outline color="primary">
+              Dropdown
+              <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
+            </DropdownToggle>
+          </Dropdown>
+        </Col>
+        <Col className="mb-3">
+          <ButtonDropdown size="sm">
+            <Button outline color="primary">
+              Seondary Split
+            </Button>
+            <DropdownToggle outline color="primary" className="rounded-right">
+              <Icon className="mdi" path={mdiChevronDown} size={0.8} />
+            </DropdownToggle>
+          </ButtonDropdown>
+        </Col>
+        <Col className="mb-3">
+          <Dropdown size="sm">
+            <DropdownToggle color="link">
+              <Icon className="mdi ml-1" path={mdiDotsVertical} size={0.8} />
+            </DropdownToggle>
+          </Dropdown>
+        </Col>
+      </Row>
+
+      <h2 className="docs">Disabled</h2>
+
+      <Row xs="1" sm="3" md="5">
+        <Col className="mb-3">
+          <Dropdown>
+            <DropdownToggle color="primary" disabled>
+              Dropdown
+              <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
+            </DropdownToggle>
+          </Dropdown>
+        </Col>
+        <Col className="mb-3">
+          <ButtonDropdown>
+            <Button color="primary" disabled>
+              Primary Split
+            </Button>
+            <DropdownToggle color="primary" className="rounded-right" disabled>
+              <Icon className="mdi" path={mdiChevronDown} size={0.8} />
+            </DropdownToggle>
+          </ButtonDropdown>
+        </Col>
+        <Col className="mb-3">
+          <Dropdown>
+            <DropdownToggle outline color="primary" disabled>
+              Dropdown
+              <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
+            </DropdownToggle>
+          </Dropdown>
+        </Col>
+        <Col className="mb-3">
+          <ButtonDropdown>
+            <Button outline color="primary" disabled>
+              Seondary Split
+            </Button>
+            <DropdownToggle
+              outline
+              color="primary"
+              className="rounded-right"
+              disabled
+            >
+              <Icon className="mdi" path={mdiChevronDown} size={0.8} />
+            </DropdownToggle>
+          </ButtonDropdown>
+        </Col>
+        <Col className="mb-3">
+          <Dropdown>
+            <DropdownToggle color="link" disabled>
+              <Icon className="mdi ml-1" path={mdiDotsVertical} size={0.8} />
+            </DropdownToggle>
           </Dropdown>
         </Col>
       </Row>
