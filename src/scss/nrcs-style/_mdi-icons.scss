@@ -76,6 +76,14 @@ $primary-dark: theme-color-level("primary", 3);
 //   }
 // }
 
+// Breadcrumbs
+.breadcrumb-item svg {
+  margin-right: 0.25rem;
+}
+.breadcrumb-item.active {
+  color: $gray-700;
+}
+
 // Links (anchors) with Icons
 a svg,
 a .mdi {
