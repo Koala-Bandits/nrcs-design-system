@@ -1,6 +1,6 @@
 import React from "react";
 // import { action } from "@storybook/addon-actions";
-import { Button } from "reactstrap";
+import { Button, Row, Col, Card, CardBody } from "reactstrap";
 import Icon from "@mdi/react";
 import {
   mdiAccount,
@@ -19,31 +19,46 @@ export const ButtonsDefault = () => (
     <h1 className="docs">Buttons</h1>
 
     <h2 className="docs">Default</h2>
-    <Button color="primary">Primary</Button>
-    <Button outline color="primary">
-      Secondary
-    </Button>
-    <Button color="link">Flat</Button>
-
-    <h2 className="docs">Small</h2>
-    <Button color="primary" size="sm">
+    <Button className="btn-sm-block" color="primary">
       Primary
     </Button>
-    <Button outline color="primary" size="sm">
+    <Button className="btn-sm-block" outline color="primary">
       Secondary
     </Button>
-    <Button color="link" size="sm">
+    <Button className="btn-sm-block" color="link">
+      Flat
+    </Button>
+
+    <h2 className="docs">Small</h2>
+    <Button className="btn-sm-block" color="primary" size="sm">
+      Primary
+    </Button>
+    <Button className="btn-sm-block" outline color="primary" size="sm">
+      Secondary
+    </Button>
+    <Button className="btn-sm-block" color="link" size="sm">
       Flat
     </Button>
 
     <h2 className="docs">Disabled</h2>
-    <Button color="primary" aria-disabled="true" disabled>
+    <Button
+      className="btn-sm-block"
+      color="primary"
+      aria-disabled="true"
+      disabled
+    >
       Primary
     </Button>
-    <Button outline color="primary" aria-disabled="true" disabled>
+    <Button
+      className="btn-sm-block"
+      outline
+      color="primary"
+      aria-disabled="true"
+      disabled
+    >
       Secondary
     </Button>
-    <Button color="link" aria-disabled="true" disabled>
+    <Button className="btn-sm-block" color="link" aria-disabled="true" disabled>
       Flat
     </Button>
   </div>
@@ -55,80 +70,154 @@ export const ButtonsWithIcons = () => (
 
     <h2 className="docs">Default</h2>
 
-    <Button color="primary">
+    <Button className="btn-sm-block" color="primary">
       <Icon className="mdi mr-1" path={mdiAccount} />
       Primary
     </Button>
-    <Button outline color="primary">
+    <Button className="btn-sm-block" outline color="primary">
       <Icon className="mdi mr-1" path={mdiAccount} />
       Secondary
     </Button>
-    <Button outline color="primary">
+    <Button className="btn-sm-block" outline color="primary">
       <Icon className="mdi mr-1" path={mdiChevronLeft} />
       Previous
     </Button>
-    <Button outline color="primary">
+    <Button className="btn-sm-block" outline color="primary">
       Next
       <Icon className="mdi ml-1" path={mdiChevronRight} />
     </Button>
-    <Button outline color="primary">
+    <Button className="btn-sm-block" outline color="primary">
       Dropdown
       <Icon className="mdi ml-1" path={mdiChevronDown} />
     </Button>
-    <Button color="link">
+    <Button className="btn-sm-block" color="link">
       <Icon className="mdi mr-1" path={mdiAccount} />
       Flat
     </Button>
 
     <h2 className="docs">Small</h2>
 
-    <Button color="primary" size="sm">
+    <Button className="btn-sm-block" color="primary" size="sm">
       <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Primary
     </Button>
-    <Button outline color="primary" size="sm">
+    <Button className="btn-sm-block" outline color="primary" size="sm">
       <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Secondary
     </Button>
-    <Button outline color="primary" size="sm">
+    <Button className="btn-sm-block" outline color="primary" size="sm">
       <Icon className="mdi mr-1" path={mdiChevronLeft} size={0.8} />
       Previous
     </Button>
-    <Button outline color="primary" size="sm">
+    <Button className="btn-sm-block" outline color="primary" size="sm">
       Next
       <Icon className="mdi ml-1" path={mdiChevronRight} size={0.8} />
     </Button>
-    <Button outline color="primary" size="sm">
+    <Button className="btn-sm-block" outline color="primary" size="sm">
       Dropdown
       <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
     </Button>
-    <Button color="link" size="sm">
+    <Button className="btn-sm-block" color="link" size="sm">
       <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Flat
     </Button>
 
     <h2 className="docs">Disabled</h2>
 
-    <Button color="primary" size="sm" aria-disabled="true" disabled>
+    <Button
+      className="btn-sm-block"
+      color="primary"
+      size="sm"
+      aria-disabled="true"
+      disabled
+    >
       <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Primary
     </Button>
-    <Button outline color="primary" size="sm" aria-disabled="true" disabled>
+    <Button
+      className="btn-sm-block"
+      outline
+      color="primary"
+      size="sm"
+      aria-disabled="true"
+      disabled
+    >
       <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Secondary and more
     </Button>
-    <Button color="link" size="sm" aria-disabled="true" disabled>
+    <Button
+      className="btn-sm-block"
+      color="link"
+      size="sm"
+      aria-disabled="true"
+      disabled
+    >
       <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Flat
     </Button>
   </div>
 );
 
-export const ButtonsTypical = () => (
-  <div>
+export const ButtonsPosition = () => (
+  <div className="docs-btn">
     <h1 className="docs">Buttons - Typical Usage</h1>
-    To do... show a content area card/modal, (cancel, tertiary, action) right
-    aligned.
+
+    <Row>
+      <Col>
+        <Card>
+          <CardBody>
+            Buttons are typically <strong>RIGHT-JUSTIFIED</strong> in their
+            container with a few exceptions, and should always follow the
+            ordering of:
+            <br />
+            <strong>
+              Dismissive first, Alternates in the middle, Primary action on the
+              right.
+            </strong>
+            <hr />
+            <div className="text-right">
+              <Button className="btn-sm-block" outline color="primary">
+                Dismissive
+              </Button>
+              <Button className="btn-sm-block" outline color="primary">
+                Secondary
+              </Button>
+              <Button className="btn-sm-block" outline color="primary">
+                Secondary
+              </Button>
+              <Button className="btn-sm-block" color="primary">
+                Primary
+              </Button>
+            </div>
+          </CardBody>
+        </Card>
+      </Col>
+    </Row>
+
+    <Row className="mt-3">
+      <Col>
+        <Card>
+          <CardBody>
+            Here's another example:
+            <hr />
+            <div className="text-right">
+              <Button className="btn-sm-block" outline color="primary">
+                Cancel
+              </Button>
+              <Button className="btn-sm-block" outline color="primary">
+                Export
+              </Button>
+              <Button className="btn-sm-block" outline color="primary">
+                Print
+              </Button>
+              <Button className="btn-sm-block" color="primary">
+                Save
+              </Button>
+            </div>
+          </CardBody>
+        </Card>
+      </Col>
+    </Row>
   </div>
 );
 
@@ -149,8 +238,8 @@ ButtonsWithIcons.story = {
   name: "Buttons - with Icons"
 };
 
-ButtonsTypical.story = {
-  name: "Buttons - Typical Usage"
+ButtonsPosition.story = {
+  name: "Buttons - Positioning"
 };
 
 ButtonsFooter.story = {

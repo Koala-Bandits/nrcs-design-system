@@ -48,3 +48,13 @@ $primary-dark: theme-color-level("primary", 3);
 .btn-link.disabled {
   color: $primary;
 }
+
+// BLOCK and 100% width to stack buttons on small screens
+@include media-breakpoint-down(sm) {
+  .btn-sm-block {
+    display: block;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-bottom: 0.5rem;
+  }
+}
