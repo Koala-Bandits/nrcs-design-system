@@ -19,38 +19,33 @@ export const ButtonsDefault = () => (
     <h1 className="docs">Buttons</h1>
 
     <h2 className="docs">Default</h2>
-    <Button className="btn-sm-block" color="primary">
+    <Button className="btn-main" color="primary">
       Primary
     </Button>
-    <Button className="btn-sm-block" outline color="primary">
+    <Button className="btn-main" outline color="primary">
       Secondary
     </Button>
-    <Button className="btn-sm-block" color="link">
+    <Button className="btn-main" color="link">
       Flat
     </Button>
 
     <h2 className="docs">Small</h2>
-    <Button className="btn-sm-block" color="primary" size="sm">
+    <Button className="btn-main" color="primary" size="sm">
       Primary
     </Button>
-    <Button className="btn-sm-block" outline color="primary" size="sm">
+    <Button className="btn-main" outline color="primary" size="sm">
       Secondary
     </Button>
-    <Button className="btn-sm-block" color="link" size="sm">
+    <Button className="btn-main" color="link" size="sm">
       Flat
     </Button>
 
     <h2 className="docs">Disabled</h2>
-    <Button
-      className="btn-sm-block"
-      color="primary"
-      aria-disabled="true"
-      disabled
-    >
+    <Button className="btn-main" color="primary" aria-disabled="true" disabled>
       Primary
     </Button>
     <Button
-      className="btn-sm-block"
+      className="btn-main"
       outline
       color="primary"
       aria-disabled="true"
@@ -58,7 +53,7 @@ export const ButtonsDefault = () => (
     >
       Secondary
     </Button>
-    <Button className="btn-sm-block" color="link" aria-disabled="true" disabled>
+    <Button className="btn-main" color="link" aria-disabled="true" disabled>
       Flat
     </Button>
   </div>
@@ -70,54 +65,54 @@ export const ButtonsWithIcons = () => (
 
     <h2 className="docs">Default</h2>
 
-    <Button className="btn-sm-block" color="primary">
+    <Button className="btn-main" color="primary">
       <Icon className="mdi mr-1" path={mdiAccount} />
       Primary
     </Button>
-    <Button className="btn-sm-block" outline color="primary">
+    <Button className="btn-main" outline color="primary">
       <Icon className="mdi mr-1" path={mdiAccount} />
       Secondary
     </Button>
-    <Button className="btn-sm-block" outline color="primary">
+    <Button className="btn-main" outline color="primary">
       <Icon className="mdi mr-1" path={mdiChevronLeft} />
       Previous
     </Button>
-    <Button className="btn-sm-block" outline color="primary">
+    <Button className="btn-main" outline color="primary">
       Next
       <Icon className="mdi ml-1" path={mdiChevronRight} />
     </Button>
-    <Button className="btn-sm-block" outline color="primary">
+    <Button className="btn-main" outline color="primary">
       Dropdown
       <Icon className="mdi ml-1" path={mdiChevronDown} />
     </Button>
-    <Button className="btn-sm-block" color="link">
+    <Button className="btn-main" color="link">
       <Icon className="mdi mr-1" path={mdiAccount} />
       Flat
     </Button>
 
     <h2 className="docs">Small</h2>
 
-    <Button className="btn-sm-block" color="primary" size="sm">
+    <Button className="btn-main" color="primary" size="sm">
       <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Primary
     </Button>
-    <Button className="btn-sm-block" outline color="primary" size="sm">
+    <Button className="btn-main" outline color="primary" size="sm">
       <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Secondary
     </Button>
-    <Button className="btn-sm-block" outline color="primary" size="sm">
+    <Button className="btn-main" outline color="primary" size="sm">
       <Icon className="mdi mr-1" path={mdiChevronLeft} size={0.8} />
       Previous
     </Button>
-    <Button className="btn-sm-block" outline color="primary" size="sm">
+    <Button className="btn-main" outline color="primary" size="sm">
       Next
       <Icon className="mdi ml-1" path={mdiChevronRight} size={0.8} />
     </Button>
-    <Button className="btn-sm-block" outline color="primary" size="sm">
+    <Button className="btn-main" outline color="primary" size="sm">
       Dropdown
       <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
     </Button>
-    <Button className="btn-sm-block" color="link" size="sm">
+    <Button className="btn-main" color="link" size="sm">
       <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Flat
     </Button>
@@ -125,7 +120,7 @@ export const ButtonsWithIcons = () => (
     <h2 className="docs">Disabled</h2>
 
     <Button
-      className="btn-sm-block"
+      className="btn-main"
       color="primary"
       size="sm"
       aria-disabled="true"
@@ -135,7 +130,7 @@ export const ButtonsWithIcons = () => (
       Primary
     </Button>
     <Button
-      className="btn-sm-block"
+      className="btn-main"
       outline
       color="primary"
       size="sm"
@@ -146,7 +141,7 @@ export const ButtonsWithIcons = () => (
       Secondary and more
     </Button>
     <Button
-      className="btn-sm-block"
+      className="btn-main"
       color="link"
       size="sm"
       aria-disabled="true"
@@ -160,32 +155,35 @@ export const ButtonsWithIcons = () => (
 
 export const ButtonsPosition = () => (
   <div className="docs-btn">
-    <h1 className="docs">Buttons - Typical Usage</h1>
+    <h1 className="docs">Buttons - Positioning</h1>
 
     <Row>
       <Col>
         <Card>
           <CardBody>
-            Buttons are typically <strong>RIGHT-JUSTIFIED</strong> in their
-            container with a few exceptions, and should always follow the
-            ordering of:
-            <br />
-            <strong>
-              Dismissive first, Alternates in the middle, Primary action on the
-              right.
-            </strong>
+            <p>
+              Buttons are typically <strong>RIGHT-JUSTIFIED</strong> in their
+              container with a few exceptions, and should always follow the
+              ordering of:
+              <br />
+              <strong>
+                Dismissive first, Alternates in the middle, Primary action on
+                the right.
+              </strong>
+            </p>
+            <p>On small screens, buttons stack as blocks with 100% width.</p>
             <hr />
             <div className="text-right">
-              <Button className="btn-sm-block" outline color="primary">
+              <Button className="btn-main" outline color="primary">
                 Dismissive
               </Button>
-              <Button className="btn-sm-block" outline color="primary">
+              <Button className="btn-main" outline color="primary">
                 Secondary
               </Button>
-              <Button className="btn-sm-block" outline color="primary">
+              <Button className="btn-main" outline color="primary">
                 Secondary
               </Button>
-              <Button className="btn-sm-block" color="primary">
+              <Button className="btn-main" color="primary">
                 Primary
               </Button>
             </div>
@@ -201,16 +199,16 @@ export const ButtonsPosition = () => (
             Here's another example:
             <hr />
             <div className="text-right">
-              <Button className="btn-sm-block" outline color="primary">
+              <Button className="btn-main" outline color="primary">
                 Cancel
               </Button>
-              <Button className="btn-sm-block" outline color="primary">
+              <Button className="btn-main" outline color="primary">
                 Export
               </Button>
-              <Button className="btn-sm-block" outline color="primary">
+              <Button className="btn-main" outline color="primary">
                 Print
               </Button>
-              <Button className="btn-sm-block" color="primary">
+              <Button className="btn-main" color="primary">
                 Save
               </Button>
             </div>

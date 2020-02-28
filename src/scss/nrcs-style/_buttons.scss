@@ -4,6 +4,21 @@
 
 $primary-dark: theme-color-level("primary", 3);
 
+// MAIN buttons Dismmisive, Alternate, Save (no other input use cases etc.)
+// get min width
+.btn-main {
+  min-width: 4.5rem; // ~72px;
+}
+// BLOCK and 100% width to stack buttons on small screens for MAIN buttons only
+@include media-breakpoint-down(sm) {
+  .btn-main {
+    display: block;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-bottom: 0.5rem;
+  }
+}
+
 // SOLID
 .btn-primary:hover {
   background-color: $primary-dark;
@@ -47,14 +62,4 @@ $primary-dark: theme-color-level("primary", 3);
 .btn-link:disabled,
 .btn-link.disabled {
   color: $primary;
-}
-
-// BLOCK and 100% width to stack buttons on small screens
-@include media-breakpoint-down(sm) {
-  .btn-sm-block {
-    display: block;
-    width: 100%;
-    margin-left: 0 !important;
-    margin-bottom: 0.5rem;
-  }
 }
