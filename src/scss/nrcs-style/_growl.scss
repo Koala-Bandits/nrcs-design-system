@@ -15,11 +15,12 @@
 
 .growl-top-center {
   display: flex !important;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 // hack for now, prolly need to rework:
-.growl-top-center .toast {
+.growl-top-center .toast:first-child {
   margin-top: 16px;
 }
 
