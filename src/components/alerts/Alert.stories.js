@@ -16,7 +16,7 @@ export const AlertsDefault = () => (
   <div>
     <h1 className="docs">Alerts - Default</h1>
 
-    <Alert className="alert-fpac" color="primary">
+    <Alert className="alert-fpac" color="info">
       This is an <strong>info</strong> alert with{" "}
       <a href="#" className="alert-link">
         an example link
@@ -49,7 +49,7 @@ export const AlertsDefault = () => (
 
     <p>To see how it works/looks (TBD)...</p>
 
-    <Alert color="primary">
+    <Alert color="info">
       This is an <strong>info</strong> alert with{" "}
       <a href="#" className="alert-link">
         an example link
@@ -105,7 +105,7 @@ export const AlertsWithIcons = () => (
   <div>
     <h1 className="docs">Alerts - with Icons</h1>
 
-    <Alert className="alert-fpac" color="primary">
+    <Alert className="alert-fpac" color="info">
       <Container className="m-0">
         <Row>
           <Col xs="auto" className="p-0 pr-2">
@@ -193,7 +193,7 @@ export const AlertsWithIcons = () => (
 
     <p>To see how it works/looks (TBD)...</p>
 
-    <Alert color="primary">
+    <Alert color="info">
       <Container className="m-0">
         <Row>
           <Col xs="auto" className="p-0 pr-2">

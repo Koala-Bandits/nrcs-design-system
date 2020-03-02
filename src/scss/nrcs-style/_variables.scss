@@ -40,7 +40,7 @@ $grays: map-merge(
 // NRCS
 $fpac-blue: #205493; // FPAC secondary (our primary) blue
 $fpac-green: #236430; // FPAC primary green (our secondary or "primary-alt") blue
-$blue-link: #0068ad; // FPAC link color
+// #0068ad; // FPAC link color
 
 $blue: $fpac-blue; // #007bff !default;
 $indigo: #6610f2 !default;
@@ -49,7 +49,10 @@ $pink: #e83e8c !default;
 $red: #b70f0a; //#dc3545 !default;
 $orange: #ff7f00; //#fd7e14 !default;
 $yellow: #fdb81e; //107 !default;
-$green: #199c38; // #28a745 !default;
+
+// $green: #199c38; // abitrarily picked. Boostrap: #28a745 !default;
+$green: lighten($fpac-green, 10%); // NRCS success green
+
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
@@ -76,7 +79,7 @@ $colors: map-merge(
 $primary: $blue !default;
 $secondary: $fpac-green; // $gray-600 !default;
 $success: $green !default;
-$info: $blue-link; // $cyan !default;
+$info: lighten($blue, 10%); // $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
@@ -183,7 +186,7 @@ $body-color: $gray-900; //$gray-900 !default;
 // //
 // // Style anchor elements.
 
-$link-color: #0068ad; //theme-color("primary") !default;
+// $link-color: theme-color("primary") !default;
 // $link-decoration: none !default;
 // $link-hover-color: darken($link-color, 15%) !default;
 // $link-hover-decoration: underline !default;
