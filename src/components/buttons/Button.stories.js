@@ -162,9 +162,9 @@ export const ButtonsPosition = () => (
         <Card>
           <CardBody>
             <p>
-              Buttons are typically <strong>RIGHT-JUSTIFIED</strong> in their
+              Buttons are typically <strong>right-justified</strong> in their
               container with a few exceptions, and should always follow the
-              ordering of:
+              following order:
               <br />
               <strong>
                 Dismissive first, Alternates in the middle, Primary action on

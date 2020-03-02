@@ -40,6 +40,23 @@ export const ModalDefault = () => {
         <Col>
           <Card>
             <CardBody>
+              <p>
+                <strong>Modals!</strong>
+              </p>
+              <p>
+                For now, let's keep it simple. Modals have a header, body, and
+                footer with main buttons in the suggested layout of
+                right-justified, dismissive, alternate, and primary.
+              </p>
+              <p>
+                From a design perspective, we avoid modal-on-modal scenarios and
+                prefer only 1 modal at a time for a simpler experience.
+              </p>
+              <p>
+                For accessibility, focus moves to the modal on open, and when
+                closed moves back to the action that invoked it.
+              </p>
+
               <Button className="btn-main" color="primary" onClick={toggleSm}>
                 Small
               </Button>

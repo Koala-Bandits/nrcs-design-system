@@ -1,0 +1,29 @@
+/////////////////////////////////////////////////////////////
+// Styles for 'Growl' component in the NRCS Design System
+/////////////////////////////////////////////////////////////
+
+.growl {
+  position: relative;
+  min-height: 200px;
+}
+
+.growl-top-right {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.growl-top-center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+// hack for now, prolly need to rework:
+.growl-top-center .toast {
+  margin-top: 16px;
+}
+
+// remove padding from bottom of Alert
+.growl .alert {
+  margin-bottom: 0;
+}
