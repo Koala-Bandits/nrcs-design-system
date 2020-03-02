@@ -48,7 +48,10 @@ export const Growls = () => {
         Growls will stack, and since they are build with our Alerts, can be
         static, dissmisable, with or without an icon or content.
       </p>
-      <p>Growls can optionally 'autohide' after a 'delay.'</p>
+      <p>
+        Growls can optionally 'autohide' after a 'delay.' (INCOMPLETE NOT
+        WORKING)
+      </p>
 
       <Row>
         <Col>

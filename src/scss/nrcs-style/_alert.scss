@@ -18,3 +18,34 @@
   border-bottom: 0;
   border-width: 4px;
 }
+
+// 4px left, 1px rest...
+// @each $color, $value in $theme-colors {
+//   .alert-#{$color} {
+//     @include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-color-level));
+//   }
+// }
+// .alert-success {
+//   border-top: 1px solid $success;
+//   border-right: 1px solid $success;
+//   border-bottom: 1px solid $success;
+//   border-left: 4px solid $success;
+// }
+// .alert-warning {
+//   border-top: 1px solid $warning;
+//   border-right: 1px solid $warning;
+//   border-bottom: 1px solid $warning;
+//   border-left: 4px solid $warning;
+// }
+// .alert-info {
+//   border-top: 1px solid $info;
+//   border-right: 1px solid $info;
+//   border-bottom: 1px solid $info;
+//   border-left: 4px solid $info;
+// }
+// .alert-danger {
+//   border-top: 1px solid $danger;
+//   border-right: 1px solid $danger;
+//   border-bottom: 1px solid $danger;
+//   border-left: 4px solid $danger;
+// }
