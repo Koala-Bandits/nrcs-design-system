@@ -22,3 +22,7 @@
   //   border-bottom: 2 * $border-width solid $table-border-color;
   border-top: none;
 }
+
+.table-active {
+  font-weight: $font-weight-bold;
+}

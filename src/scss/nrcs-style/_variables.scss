@@ -10,7 +10,7 @@
 // Color system
 
 $white: #fff !default;
-$gray-100: #f8f9fa !default; //-> #fafafa ?
+$gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -18,7 +18,7 @@ $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
-$gray-900: #212529 !default; //-> #222 ?
+$gray-900: #212529 !default;
 $black: #000 !default;
 
 $grays: () !default;
@@ -39,7 +39,7 @@ $grays: map-merge(
 
 // NRCS
 $fpac-blue: #205493; // FPAC secondary (our primary) blue
-$fpac-green: #236430; // FPAC primary green (our secondary or "primary-alt") blue
+$fpac-green: #236430; // FPAC primary green (our secondary)
 // #0068ad; // FPAC link color
 
 $blue: $fpac-blue; // #007bff !default;
@@ -50,8 +50,7 @@ $red: #b70f0a; //#dc3545 !default;
 $orange: #ff7f00; //#fd7e14 !default;
 $yellow: #fdb81e; //107 !default;
 
-// $green: #199c38; // abitrarily picked. Boostrap: #28a745 !default;
-$green: lighten($fpac-green, 10%); // NRCS success green
+$green: lighten($fpac-green, 10%); // NRCS success green based on FPAC green
 
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
@@ -79,14 +78,15 @@ $colors: map-merge(
 $primary: $blue !default;
 $secondary: $fpac-green; // $gray-600 !default;
 $success: $green !default;
-$info: lighten($blue, 10%); // $cyan !default;
+
+$info: lighten($blue, 10%); // NRCS info color based on FPAC primary blue
+
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-800 !default;
 
 $theme-colors: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
     "primary": $primary,
@@ -132,11 +132,11 @@ $theme-colors: map-merge(
 // $enable-validation-icons: true !default;
 // $enable-deprecation-messages: true !default;
 
-// // // Spacing
-// // //
-// // // Control the default styling of most Bootstrap elements by modifying these
-// // // variables. Mostly focused on spacing.
-// // // You can add more entries to the $spacers map, should you need more variation.
+// // Spacing
+// //
+// // Control the default styling of most Bootstrap elements by modifying these
+// // variables. Mostly focused on spacing.
+// // You can add more entries to the $spacers map, should you need more variation.
 
 // $spacer: 1rem !default;
 // $spacers: () !default;
@@ -228,9 +228,9 @@ $body-color: $gray-900; //$gray-900 !default;
 
 // // @include _assert-ascending($container-max-widths, "$container-max-widths");
 
-// // // Grid columns
-// // //
-// // // Set the number of columns and specify the width of the gutters.
+// // Grid columns
+// //
+// // Set the number of columns and specify the width of the gutters.
 
 // // $grid-columns:                12 !default;
 // // $grid-gutter-width:           30px !default;
@@ -256,8 +256,13 @@ $border-radius-sm: 0.2rem !default;
 // $box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
 // $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
 
-// $component-active-color: $white !default;
-// $component-active-bg: theme-color("primary") !default;
+//$component-active-color: $white !default;
+//$component-active-bg: theme-color("primary") !default;
+$selection-active-color: $body-color;
+$selection-active-bg: lighten(
+  $blue,
+  50%
+); // NRCS info color based on FPAC primary blue
 
 // // $caret-width:                 .3em !default;
 // // $caret-vertical-align:        $caret-width * .85 !default;
@@ -369,9 +374,11 @@ $text-muted: $gray-600 !default;
 // $table-color: $body-color !default;
 // $table-bg: null !default;
 // $table-accent-bg: rgba($black, 0.05) !default;
+
 // $table-hover-color: $table-color !default;
-// $table-hover-bg: rgba($black, 0.075) !default;
-// $table-active-bg: $table-hover-bg !default;
+
+$table-hover-bg: $gray-200; // rgba($black, 0.075) !default;
+$table-active-bg: $selection-active-bg; // $table-hover-bg !default;
 
 // $table-border-width: $border-width !default;
 // $table-border-color: $border-color !default;
@@ -822,11 +829,10 @@ $nav-tabs-link-active-border-color: $primary $border-color
 // $dropdown-box-shadow: 0 0.5rem 1rem rgba($black, 0.175) !default;
 
 // $dropdown-link-color: $gray-900 !default;
-// $dropdown-link-hover-color: darken($gray-900, 5%) !default;
-// $dropdown-link-hover-bg: $gray-100 !default;
-
-// $dropdown-link-active-color: $component-active-color !default;
-// $dropdown-link-active-bg: $component-active-bg !default;
+$dropdown-link-hover-color: $body-color; // darken($gray-900, 5%) !default;
+$dropdown-link-hover-bg: $gray-200; // $gray-100 !default;
+$dropdown-link-active-color: $selection-active-color; // $component-active-color !default;
+$dropdown-link-active-bg: $selection-active-bg; // $component-active-bg !default;
 
 // $dropdown-link-disabled-color: $gray-600 !default;
 

@@ -87,6 +87,14 @@ export const Color = () => (
           </div>
         </div>
         <div className="col-md-4">
+          <div className="p-3 mb-3 docs-color-active docs-color-swatch">
+            Active #c1d7f1
+            <p>
+              <small>50% lighter than Primary blue</small>
+            </p>
+          </div>
+        </div>
+        <div className="col-md-4">
           <div className="p-3 mb-3 docs-color-black text-white border docs-color-swatch">
             Black #000
             <p>
@@ -94,7 +102,6 @@ export const Color = () => (
             </p>
           </div>
         </div>
-
         <div className="col-md-4">
           <div className="p-3 mb-3 bg-white text-dark docs-color-swatch">
             White #fff

@@ -35,6 +35,9 @@ li {
 // .docs-color-focus {
 
 // }
+.docs-color-active {
+  background-color: $selection-active-bg;
+}
 .docs-color-swatch {
   min-height: 150px;
 }
