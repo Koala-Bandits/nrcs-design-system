@@ -25,8 +25,11 @@ export const Iconography = () => (
       which is a superset of the Google Material Icons.
     </p>
     <ul>
-      <li>Currently implemented as SVG icons</li>
-      <li>Default size={1} or 24px, 18px for smaller sized components</li>
+      <li>Implemented as SVG icons on this site an in examples</li>
+      <li>
+        Default <code>size={"{1}"}</code> or 24px, <code>size={"{0.8}"}</code>{" "}
+        18px for smaller sized components
+      </li>
       <li>Default icon color: $gray-700 gray</li>
       <li>Action/Clickable icon color: $primary blue</li>
       <li>To get these defaults, icons should include the "mdi" class</li>
