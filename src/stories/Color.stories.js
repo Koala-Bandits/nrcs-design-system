@@ -106,6 +106,14 @@ export const Color = () => (
             </p>
           </div>
         </div>
+        <div className="col-md-4">
+          <div className="p-3 mb-3 bg-white text-dark docs-color-swatch">
+            Focus Outline #TO-DO
+            <p>
+              <small>Focus indicator outline/highlight for accessibility</small>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -133,7 +141,8 @@ export const Color = () => (
           <div className="p-3 docs-gray-600 text-white">600</div>
 
           <div className="p-3 docs-gray-700 text-white">
-            700 - Default ICON and INPUT border colors
+            700 - Default ICON and INPUT border colors for accessibilty (high
+            contrast)
           </div>
 
           <div className="p-3 docs-gray-800 text-white">800</div>
