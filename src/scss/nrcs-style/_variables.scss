@@ -259,10 +259,7 @@ $border-radius-sm: 0.2rem !default;
 //$component-active-color: $white !default;
 //$component-active-bg: theme-color("primary") !default;
 $selection-active-color: $body-color;
-$selection-active-bg: lighten(
-  $blue,
-  50%
-); // NRCS info color based on FPAC primary blue
+$selection-active-bg: #d4e2f2; // same as Alert BG, or: lighten($blue,50%); // NRCS info color based on FPAC primary blue
 
 // // $caret-width:                 .3em !default;
 // // $caret-vertical-align:        $caret-width * .85 !default;

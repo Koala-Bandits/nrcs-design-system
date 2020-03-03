@@ -88,9 +88,9 @@ export const Color = () => (
         </div>
         <div className="col-md-4">
           <div className="p-3 mb-3 docs-color-active docs-color-swatch">
-            Active #c1d7f1
+            Active #d4e2f2
             <p>
-              <small>50% lighter than Primary blue</small>
+              <small>Same as Info Alert bg</small>
             </p>
           </div>
         </div>
