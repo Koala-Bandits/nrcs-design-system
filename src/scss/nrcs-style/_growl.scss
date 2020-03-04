@@ -14,9 +14,15 @@
 }
 
 .growl-top-center {
+  // blurry issue?
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
   display: flex !important;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 

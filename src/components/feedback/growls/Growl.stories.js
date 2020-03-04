@@ -37,7 +37,7 @@ export const Growls = () => {
   const toggleCntGrowl = () => setShowCntGrowl(!showCntGrowl);
 
   return (
-    <div className="docs-btn">
+    <div aria-live="polite" aria-atomic="true" className="docs-btn">
       <h1 className="docs">Growls</h1>
 
       <p>
@@ -86,102 +86,99 @@ export const Growls = () => {
         </Col>
       </Row>
 
-      {/* Wrap */}
-      <div aria-live="polite" aria-atomic="true" className="growl mt-3 border">
-        {/* Position it */}
-        <div className="growl-top-right">
-          {/* Then put toasts within */}
-          <Toast isOpen={show}>
-            <ToastHeader toggle={toggle}>Toast title</ToastHeader>
-            <ToastBody>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </ToastBody>
-          </Toast>
-          <Toast isOpen={showGrowl}>
-            <Alert
-              className="alert-fpac"
-              color="warning"
-              isOpen={true}
-              toggle={toggleGrowl}
-            >
-              <Container className="m-0">
-                <Row>
-                  <Col xs="auto" className="p-0 pr-2">
-                    <Icon className="mdi" path={mdiAlert} />
-                  </Col>
-                  <Col className="p-0">
-                    This is a dismissable warning Growl with. Go ahead, dismiss
-                    me!
-                  </Col>
-                </Row>
-              </Container>
-            </Alert>
-          </Toast>
-          <Toast isOpen={showAltGrowl}>
-            <Alert color="warning" isOpen={true} toggle={toggleAltGrowl}>
-              <Container className="m-0">
-                <Row>
-                  <Col xs="auto" className="p-0 pr-2">
-                    <Icon className="mdi" path={mdiAlert} />
-                  </Col>
-                  <Col className="p-0">
-                    This is a dismissable warning Growl with. Go ahead, dismiss
-                    me!
-                  </Col>
-                </Row>
-              </Container>
-            </Alert>
-          </Toast>
-          <Toast isOpen={showAutoGrowl} data-autohide={true}>
-            <Alert
-              className="alert-fpac"
-              color="warning"
-              isOpen={true}
-              toggle={toggleAutoGrowl}
-            >
-              <Container className="m-0">
-                <Row>
-                  <Col xs="auto" className="p-0 pr-2">
-                    <Icon className="mdi" path={mdiAlert} />
-                  </Col>
-                  <Col className="p-0">
-                    This is a dismissable warning Growl that will automatically
-                    hide after a brief delay. NOT WORKING - WORK IN PROGRESS
-                  </Col>
-                </Row>
-              </Container>
-            </Alert>
-          </Toast>
-        </div>
-        {/* Position it */}
-        <div className="growl-top-center">
-          <Toast isOpen={showCntGrowl} className="growl-top-center">
-            <Alert
-              className="alert-fpac"
-              color="warning"
-              isOpen={true}
-              toggle={toggleCntGrowl}
-            >
-              <Container className="m-0">
-                <Row>
-                  <Col xs="auto" className="p-0 pr-2">
-                    <Icon className="mdi" path={mdiAlert} />
-                  </Col>
-                  <Col className="p-0">
-                    This is a centered dismissable warning Growl with. Go ahead,
-                    dismiss me!
-                  </Col>
-                </Row>
-              </Container>
-            </Alert>
-          </Toast>
-        </div>
+      {/* Position it */}
+      <div className="growl growl-top-right">
+        {/* Then put toasts within */}
+        <Toast isOpen={show}>
+          <ToastHeader toggle={toggle}>Toast title</ToastHeader>
+          <ToastBody>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </ToastBody>
+        </Toast>
+        <Toast isOpen={showGrowl}>
+          <Alert
+            className="alert-fpac"
+            color="warning"
+            isOpen={true}
+            toggle={toggleGrowl}
+          >
+            <Container className="m-0">
+              <Row>
+                <Col xs="auto" className="p-0 pr-2">
+                  <Icon className="mdi" path={mdiAlert} />
+                </Col>
+                <Col className="p-0">
+                  This is a dismissable warning Growl with. Go ahead, dismiss
+                  me!
+                </Col>
+              </Row>
+            </Container>
+          </Alert>
+        </Toast>
+        <Toast isOpen={showAltGrowl}>
+          <Alert color="warning" isOpen={true} toggle={toggleAltGrowl}>
+            <Container className="m-0">
+              <Row>
+                <Col xs="auto" className="p-0 pr-2">
+                  <Icon className="mdi" path={mdiAlert} />
+                </Col>
+                <Col className="p-0">
+                  This is a dismissable warning Growl with. Go ahead, dismiss
+                  me!
+                </Col>
+              </Row>
+            </Container>
+          </Alert>
+        </Toast>
+        <Toast isOpen={showAutoGrowl} data-autohide={true}>
+          <Alert
+            className="alert-fpac"
+            color="warning"
+            isOpen={true}
+            toggle={toggleAutoGrowl}
+          >
+            <Container className="m-0">
+              <Row>
+                <Col xs="auto" className="p-0 pr-2">
+                  <Icon className="mdi" path={mdiAlert} />
+                </Col>
+                <Col className="p-0">
+                  This is a dismissable warning Growl that will automatically
+                  hide after a brief delay. NOT WORKING - WORK IN PROGRESS
+                </Col>
+              </Row>
+            </Container>
+          </Alert>
+        </Toast>
+      </div>
+      {/* Position it */}
+      <div className="growl growl-top-center">
+        <Toast isOpen={showCntGrowl}>
+          <Alert
+            className="alert-fpac"
+            color="warning"
+            isOpen={true}
+            toggle={toggleCntGrowl}
+          >
+            <Container className="m-0">
+              <Row>
+                <Col xs="auto" className="p-0 pr-2">
+                  <Icon className="mdi" path={mdiAlert} />
+                </Col>
+                <Col className="p-0">
+                  This is a centered dismissable warning Growl with. Go ahead,
+                  dismiss me!
+                </Col>
+              </Row>
+            </Container>
+          </Alert>
+        </Toast>
       </div>
     </div>
   );
