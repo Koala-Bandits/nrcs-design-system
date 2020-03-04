@@ -14,7 +14,7 @@ export default {
 
 export const AlertsDefault = () => (
   <div>
-    <h1 className="docs">Alerts - Default</h1>
+    <h1 className="docs">Inline Alerts - Default</h1>
 
     <Alert color="info">
       This is an <strong>info</strong> alert with{" "}
@@ -49,7 +49,7 @@ export const AlertsDefault = () => (
 
 export const AlertsWithIcons = () => (
   <div>
-    <h1 className="docs">Alerts - with Icons</h1>
+    <h1 className="docs">Inline Alerts - with Icons</h1>
 
     <Alert color="info">
       <Container className="m-0">
@@ -143,7 +143,7 @@ export const AlertsDismissable = () => {
 
   return (
     <div>
-      <h1 className="docs">Alerts - Dismissable</h1>
+      <h1 className="docs">Inline Alerts - Dismissable</h1>
 
       <Alert color="warning" isOpen={visible} toggle={onDismiss}>
         <Container className="m-0">
@@ -163,7 +163,7 @@ export const AlertsDismissable = () => {
 
 export const AlertsContent = () => (
   <div>
-    <h1 className="docs">Alerts - with Content</h1>
+    <h1 className="docs">Inline Alerts - with Content</h1>
 
     <Alert color="success">
       <h4 className="alert-heading">
@@ -185,17 +185,17 @@ export const AlertsContent = () => (
 );
 
 AlertsDefault.story = {
-  name: "Alerts - Default"
+  name: "Inline Alerts - Default"
 };
 
 AlertsWithIcons.story = {
-  name: "Alerts - with Icons"
+  name: "Inline Alerts - with Icons"
 };
 
 AlertsDismissable.story = {
-  name: "Alerts - Dismissable"
+  name: "Inline Alerts - Dismissable"
 };
 
 AlertsContent.story = {
-  name: "Alerts - with Content"
+  name: "Inline Alerts - with Content"
 };

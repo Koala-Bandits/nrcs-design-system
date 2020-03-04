@@ -50,7 +50,7 @@ export const Growls = () => {
         consistent location.
       </p>
       <p>
-        Growls will stack, and since they are build with our Alerts, can be
+        Growls will stack, and since they are built with our Alerts, can be
         static, dissmisable, with or without an icon or content.
       </p>
       <p>
