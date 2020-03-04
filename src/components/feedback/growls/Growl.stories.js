@@ -62,17 +62,17 @@ export const Growls = () => {
         <Col>
           <Card>
             <CardBody>
-              <Button color="primary" onClick={toggle}>
+              {/* <Button color="primary" onClick={toggle}>
                 Show Toast
-              </Button>
+              </Button> */}
 
               <Button color="primary" onClick={toggleGrowl}>
                 Show Growl
               </Button>
 
-              <Button color="primary" onClick={toggleAltGrowl}>
+              {/* <Button color="primary" onClick={toggleAltGrowl}>
                 Show Alt Growl
-              </Button>
+              </Button> */}
 
               <Button color="primary" onClick={toggleAutoGrowl}>
                 Show Auto-Hide Growl
