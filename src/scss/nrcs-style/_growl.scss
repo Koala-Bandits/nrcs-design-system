@@ -16,7 +16,7 @@
 .growl-top-center {
   // blurry issue?
   position: absolute;
-  top: 0;
+  top: 16px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -24,10 +24,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
-
-.growl-top-center .toast:first-child {
-  margin-top: 16px;
 }
 
 // remove padding from bottom of Alert

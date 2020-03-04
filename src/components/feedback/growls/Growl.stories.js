@@ -29,12 +29,14 @@ export const Growls = () => {
   const [showAltGrowl, setShowAltGrowl] = useState(false);
   const [showAutoGrowl, setShowAutoGrowl] = useState(false);
   const [showCntGrowl, setShowCntGrowl] = useState(false);
+  const [showCntGrowl2, setShowCntGrowl2] = useState(false);
 
   const toggle = () => setShow(!show);
   const toggleGrowl = () => setShowGrowl(!showGrowl);
   const toggleAltGrowl = () => setShowAltGrowl(!showAltGrowl);
   const toggleAutoGrowl = () => setShowAutoGrowl(!showAutoGrowl);
   const toggleCntGrowl = () => setShowCntGrowl(!showCntGrowl);
+  const toggleCntGrowl2 = () => setShowCntGrowl2(!showCntGrowl2);
 
   return (
     <div aria-live="polite" aria-atomic="true" className="docs-btn">
@@ -80,6 +82,10 @@ export const Growls = () => {
 
               <Button color="primary" onClick={toggleCntGrowl}>
                 Show Top-Center Growl
+              </Button>
+
+              <Button color="primary" onClick={toggleCntGrowl2}>
+                Show Top-Center Growl 2
               </Button>
             </CardBody>
           </Card>
@@ -165,6 +171,26 @@ export const Growls = () => {
             color="warning"
             isOpen={true}
             toggle={toggleCntGrowl}
+          >
+            <Container className="m-0">
+              <Row>
+                <Col xs="auto" className="p-0 pr-2">
+                  <Icon className="mdi" path={mdiAlert} />
+                </Col>
+                <Col className="p-0">
+                  This is a centered dismissable warning Growl with. Go ahead,
+                  dismiss me!
+                </Col>
+              </Row>
+            </Container>
+          </Alert>
+        </Toast>
+        <Toast isOpen={showCntGrowl2}>
+          <Alert
+            className="alert-fpac"
+            color="warning"
+            isOpen={true}
+            toggle={toggleCntGrowl2}
           >
             <Container className="m-0">
               <Row>
