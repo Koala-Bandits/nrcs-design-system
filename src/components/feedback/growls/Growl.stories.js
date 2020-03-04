@@ -20,7 +20,7 @@ import {
 } from "@mdi/js";
 
 export default {
-  title: "Components|Growls"
+  title: "Components|Feedback/Growls"
 };
 
 export const Growls = () => {
@@ -41,8 +41,13 @@ export const Growls = () => {
       <h1 className="docs">Growls</h1>
 
       <p>
-        Growls are 'Alerts' wrapped in a 'Toast', and we prefer to call them a
+        Growls are 'Alerts' wrapped in a 'Toast', and we like to call them a
         'Growl' because it's fun.
+      </p>
+      <p>
+        <strong>Growls are generally preferrable over Inline Alerts</strong> as
+        they don't disturb or pop-into a layout, they overlay on top in a
+        consistent location.
       </p>
       <p>
         Growls will stack, and since they are build with our Alerts, can be

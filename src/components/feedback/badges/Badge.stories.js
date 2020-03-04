@@ -4,7 +4,7 @@ import { Badge } from "reactstrap";
 // import { mdiAccount } from "@mdi/js";
 
 export default {
-  title: "Components|Badges"
+  title: "Components|Feedback/Badges"
 };
 
 export const BadgesDefault = () => (
@@ -111,13 +111,6 @@ export const BadgesPills = () => (
   </div>
 );
 
-export const BadgesIcons = () => (
-  <div>
-    <h1 className="docs">Badges - Pills</h1>
-    To Do...
-  </div>
-);
-
 export const BadgesHeadings = () => (
   <div>
     <h1 className="docs">Badges - Headings</h1>
@@ -149,10 +142,6 @@ BadgesDefault.story = {
 
 BadgesPills.story = {
   name: "Badges - Pills"
-};
-
-BadgesIcons.story = {
-  name: "Badges - Icons"
 };
 
 BadgesHeadings.story = {

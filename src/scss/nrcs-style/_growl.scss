@@ -28,3 +28,13 @@
 .growl .alert {
   margin-bottom: 0;
 }
+
+// 4px left, 1px rest...
+@each $color, $value in $theme-colors {
+  .growl .alert-#{$color} {
+    border-top: 1px solid theme-color($color);
+    border-right: 1px solid theme-color($color);
+    border-bottom: 1px solid theme-color($color);
+    border-left: 4px solid theme-color($color);
+  }
+}

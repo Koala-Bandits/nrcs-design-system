@@ -19,8 +19,20 @@
   }
 }
 
+// @each $color, $value in $theme-colors {
+//   .alert-#{$color} {
+//     // border-top: 1px solid theme-color($color);
+//     // border-right: 1px solid theme-color($color);
+//     // border-bottom: 1px solid theme-color($color);
+//     border-top: 0;
+//     border-right: 0;
+//     border-bottom: 0;
+//     border-left: 4px solid theme-color($color);
+//   }
+// }
+
 .badge-fpac {
-  border-radius: 2px;
+  // border-radius: 2px;
   border-top: 0;
   border-right: 0;
   border-bottom: 0;
