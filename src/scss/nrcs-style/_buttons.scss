@@ -50,16 +50,17 @@ $primary-dark: theme-color-level("primary", 3);
   background-color: $primary-dark;
 }
 
-// LINK
+// FLAT (LINK)
 .btn-link {
   color: $primary;
 }
 
 .btn-link:hover {
   color: $primary-dark;
+  background-color: $gray-200;
 }
 
-.btn-link:disabled,
-.btn-link.disabled {
-  color: $primary;
+// ICON (LINK)
+.btn-icon {
+  padding: 0.25rem;
 }

@@ -6,7 +6,12 @@ import {
   mdiAccount,
   mdiChevronRight,
   mdiChevronLeft,
-  mdiChevronDown
+  mdiChevronDown,
+  mdiPlusBox,
+  mdiPencil,
+  mdiContentCopy,
+  mdiContentPaste,
+  mdiDelete
 } from "@mdi/js";
 
 export default {
@@ -90,6 +95,22 @@ export const ButtonsWithIcons = () => (
       Flat
     </Button>
 
+    <Button className="btn-icon" color="link">
+      <Icon className="mdi" path={mdiPlusBox} />
+    </Button>
+    <Button className="btn-icon" color="link">
+      <Icon className="mdi" path={mdiPencil} />
+    </Button>
+    <Button className="btn-icon" color="link">
+      <Icon className="mdi" path={mdiContentCopy} />
+    </Button>
+    <Button className="btn-icon" color="link">
+      <Icon className="mdi" path={mdiContentPaste} />
+    </Button>
+    <Button className="btn-icon" color="link">
+      <Icon className="mdi" path={mdiDelete} />
+    </Button>
+
     <h2 className="docs">Small</h2>
 
     <Button className="btn-main" color="primary" size="sm">
@@ -115,6 +136,22 @@ export const ButtonsWithIcons = () => (
     <Button className="btn-main" color="link" size="sm">
       <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Flat
+    </Button>
+
+    <Button className="btn-icon" color="link">
+      <Icon className="mdi" path={mdiPlusBox} size={0.8} />
+    </Button>
+    <Button className="btn-icon" color="link">
+      <Icon className="mdi" path={mdiPencil} size={0.8} />
+    </Button>
+    <Button className="btn-icon" color="link">
+      <Icon className="mdi" path={mdiContentCopy} size={0.8} />
+    </Button>
+    <Button className="btn-icon" color="link">
+      <Icon className="mdi" path={mdiContentPaste} size={0.8} />
+    </Button>
+    <Button className="btn-icon" color="link">
+      <Icon className="mdi" path={mdiDelete} size={0.8} />
     </Button>
 
     <h2 className="docs">Disabled</h2>
@@ -149,6 +186,22 @@ export const ButtonsWithIcons = () => (
     >
       <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
       Flat
+    </Button>
+
+    <Button className="btn-icon" color="link" aria-disabled="true" disabled>
+      <Icon className="mdi" path={mdiPlusBox} size={0.8} />
+    </Button>
+    <Button className="btn-icon" color="link" aria-disabled="true" disabled>
+      <Icon className="mdi" path={mdiPencil} size={0.8} />
+    </Button>
+    <Button className="btn-icon" color="link" aria-disabled="true" disabled>
+      <Icon className="mdi" path={mdiContentCopy} size={0.8} />
+    </Button>
+    <Button className="btn-icon" color="link" aria-disabled="true" disabled>
+      <Icon className="mdi" path={mdiContentPaste} size={0.8} />
+    </Button>
+    <Button className="btn-icon" color="link" aria-disabled="true" disabled>
+      <Icon className="mdi" path={mdiDelete} size={0.8} />
     </Button>
   </div>
 );
