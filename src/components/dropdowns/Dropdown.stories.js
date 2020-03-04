@@ -123,8 +123,8 @@ export const DropdownDefault = () => {
             </Col>
             <Col className="mb-3">
               <Dropdown isOpen={flatDropdownOpen} toggle={toggleFlat}>
-                <DropdownToggle color="link">
-                  <Icon className="mdi ml-1" path={mdiDotsVertical} />
+                <DropdownToggle className="btn-icon" color="link">
+                  <Icon className="mdi" path={mdiDotsVertical} />
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem header>Header</DropdownItem>
@@ -186,12 +186,8 @@ export const DropdownDefault = () => {
             </Col>
             <Col className="mb-3">
               <Dropdown size="sm">
-                <DropdownToggle color="link">
-                  <Icon
-                    className="mdi ml-1"
-                    path={mdiDotsVertical}
-                    size={0.8}
-                  />
+                <DropdownToggle className="btn-icon" color="link">
+                  <Icon className="mdi" path={mdiDotsVertical} size={0.8} />
                 </DropdownToggle>
               </Dropdown>
             </Col>
@@ -251,12 +247,8 @@ export const DropdownDefault = () => {
             </Col>
             <Col className="mb-3">
               <Dropdown>
-                <DropdownToggle color="link" disabled>
-                  <Icon
-                    className="mdi ml-1"
-                    path={mdiDotsVertical}
-                    size={0.8}
-                  />
+                <DropdownToggle className="btn-icon" color="link" disabled>
+                  <Icon className="mdi" path={mdiDotsVertical} size={0.8} />
                 </DropdownToggle>
               </Dropdown>
             </Col>
