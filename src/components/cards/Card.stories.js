@@ -34,7 +34,7 @@ export const CardDefault = () => (
     <h2 className="docs">Basic Muted</h2>
 
     <Card className="card-muted" style={{ "max-width": "500px" }}>
-      <CardBody>This is some text within a card body.</CardBody>
+      <CardBody>This is some text within a muted card body.</CardBody>
     </Card>
 
     <h2 className="docs">Kitchen Sink Card</h2>
