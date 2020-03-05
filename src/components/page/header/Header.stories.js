@@ -7,10 +7,10 @@ export default {
 };
 
 export const Base = () => (
-  <div className="bg-primary">
-    <div className="container text-white pt-5 h1">
-      <a href="/home">
-        HOME<small>vBETA</small>
+  <div className="nrcs-header">
+    <div className="container header-title">
+      <a href="/home" title="Home" aria-label="Home">
+        NRCS Design System <span className="header-subtitle">| vBETA</span>
       </a>
     </div>
   </div>

@@ -128,7 +128,7 @@ $theme-colors: map-merge(
 // $enable-grid-classes: true !default;
 // $enable-pointer-cursor-for-buttons: true !default;
 // $enable-print-styles: true !default;
-// $enable-responsive-font-sizes: false !default;
+$enable-responsive-font-sizes: true; //false !default;
 // $enable-validation-icons: true !default;
 // $enable-deprecation-messages: true !default;
 

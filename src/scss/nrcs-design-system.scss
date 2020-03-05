@@ -97,3 +97,26 @@ li {
 .badge + .badge {
   margin-left: 0.5rem;
 }
+
+// Page Header & Footer components
+.nrcs-header {
+  background-color: $primary;
+  color: $white;
+  font-weight: $font-weight-light;
+
+  padding-top: 2.5em;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  .header-title {
+    font-size: $h1-font-size;
+  }
+
+  .header-subtitle {
+    font-size: $h4-font-size;
+    color: rgba(255, 255, 255, 0.5) !important; // 'text-white-50'
+  }
+}
