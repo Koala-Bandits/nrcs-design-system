@@ -68,7 +68,11 @@ export const Growls = () => {
                 Show Toast
               </Button> */}
 
-              <Button color="primary" onClick={toggleGrowl}>
+              <Button
+                className="btn-main"
+                color="primary"
+                onClick={toggleGrowl}
+              >
                 Show Growl
               </Button>
 
@@ -76,15 +80,27 @@ export const Growls = () => {
                 Show Alt Growl
               </Button> */}
 
-              <Button color="primary" onClick={toggleAutoGrowl}>
+              <Button
+                className="btn-main"
+                color="primary"
+                onClick={toggleAutoGrowl}
+              >
                 Show Auto-Hide Growl
               </Button>
 
-              <Button color="primary" onClick={toggleCntGrowl}>
+              <Button
+                className="btn-main"
+                color="primary"
+                onClick={toggleCntGrowl}
+              >
                 Show Top-Center Growl
               </Button>
 
-              <Button color="primary" onClick={toggleCntGrowl2}>
+              <Button
+                className="btn-main"
+                color="primary"
+                onClick={toggleCntGrowl2}
+              >
                 Show Top-Center Growl 2
               </Button>
             </CardBody>
