@@ -8,7 +8,7 @@ export const Typography = () => (
   <div>
     <h1 className="docs">Typography</h1>
 
-    <p className="col-md-8">
+    <p className="col-sm-12 col-md-8">
       <strong>Typeface</strong>
       <br />
       NRCS uses Google's open source{" "}
@@ -100,13 +100,6 @@ export const Typography = () => (
     <h2>h2. heading (responsive sizing)</h2>
     <h3>h3. heading (responsive sizing)</h3>
     <h4>h4. heading (responsive sizing)</h4>
-    <h5>h5. heading</h5>
-    <h6>h6. heading</h6>
-
-    <h1 className="h1">h1. heading (static sizing)</h1>
-    <h2 className="h2">h2. heading (static sizing)</h2>
-    <h3 className="h3">h3. heading (static sizing)</h3>
-    <h4 className="h4">h4. heading (static sizing)</h4>
     <h5>h5. heading</h5>
     <h6>h6. heading</h6>
 
