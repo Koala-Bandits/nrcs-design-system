@@ -4,8 +4,8 @@ export default {
   title: "Design System|Accessibility"
 };
 
-export const Accessibility = () => (
-  <div>
+export const AccessibilityStory = () => (
+  <div className="container">
     <h1 className="docs">Accessibility</h1>
 
     <p>

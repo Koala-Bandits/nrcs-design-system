@@ -5,6 +5,6 @@ import nrcsTheme from "./nrcsTheme";
 addons.setConfig({
   theme: nrcsTheme,
 
-  showPanel: false,
+  showPanel: true,
   panelPosition: "bottom"
 });

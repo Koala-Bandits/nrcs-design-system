@@ -4,8 +4,8 @@ export default {
   title: "Design System|Typography"
 };
 
-export const Typography = () => (
-  <div>
+export const TypographyStory = () => (
+  <div className="container">
     <h1 className="docs">Typography</h1>
 
     <p className="col-sm-12 col-md-8">

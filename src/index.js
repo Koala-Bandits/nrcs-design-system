@@ -6,11 +6,12 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./scss/nrcs-design-system.scss";
 
 // Pages
-//import App from './App';
-import About from "./pages/About.js";
-import VisualStyle from "./pages/VisualStyle.js";
-import Components from "./pages/Components.js";
-import Color from "./pages/Color.js";
+import About from "./pages/About";
+import Color from "./pages/Color";
+import Typography from "./pages/Typography";
+import Iconography from "./pages/Iconography";
+import Accessibility from "./pages/Accessibility";
+import KitchenSink from "./pages/KitchenSink";
 
 import * as serviceWorker from "./serviceWorker";
 
@@ -28,10 +29,12 @@ const routing = (
   <Router>
     <div>
       <Switch>
-        <Route exact path="/color" component={Color} />
         <Route exact path="/about" component={About} />
-        <Route exact path="/components" component={Components} />
-        <Route path="/visual-style" component={VisualStyle} />
+        <Route exact path="/color" component={Color} />
+        <Route exact path="/typography" component={Typography} />
+        <Route exact path="/iconography" component={Iconography} />
+        <Route exact path="/accessibility" component={Accessibility} />
+        <Route exact path="/kitchen-sink" component={KitchenSink} />
         <Route path="/" component={About} />
       </Switch>
     </div>

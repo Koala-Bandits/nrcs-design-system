@@ -11,8 +11,8 @@ export default {
   title: "Design System|Iconography"
 };
 
-export const Iconography = () => (
-  <div>
+export const IconographyStory = () => (
+  <div className="container">
     <h1 className="docs">Iconography</h1>
 
     <p>

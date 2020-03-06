@@ -17,7 +17,7 @@ export const HeaderNrcsDesignSystem = ({ ...rest }) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className="mb-3">
       <HeaderNrcs />
       <NavbarNrcs>
         <NavbarBrand href="/">Koala Bandits</NavbarBrand>
@@ -31,23 +31,30 @@ export const HeaderNrcsDesignSystem = ({ ...rest }) => {
               <NavLink href="/color">Color</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Typography</NavLink>
+              <NavLink href="/typography">Typography</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Iconography</NavLink>
+              <NavLink href="/iconography">Iconography</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Accessibility</NavLink>
+              <NavLink href="/accessibility">Accessibility</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Kitchen Sink</NavLink>
+              <NavLink href="/kitchen-sink">Kitchen Sink</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Storybook</NavLink>
+              <NavLink href="/storybook" target="_blank">
+                Storybook
+              </NavLink>
             </NavItem>
-            <NavLink>
-              <NavItem href="#">GitHub</NavItem>
-            </NavLink>
+            <NavItem>
+              <NavLink
+                href="https://github.com/Koala-Bandits/nrcs-design-system"
+                target="_blank"
+              >
+                GitHub
+              </NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </NavbarNrcs>

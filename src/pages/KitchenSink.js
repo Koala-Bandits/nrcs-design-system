@@ -3,7 +3,7 @@ import React from "react";
 import Icon from "@mdi/react";
 import { mdiAccount } from "@mdi/js";
 
-class Components extends React.Component {
+class KitchenSink extends React.Component {
   render() {
     return (
       <div>
@@ -52,4 +52,4 @@ class Components extends React.Component {
   }
 }
 
-export default Components;
+export default KitchenSink;
