@@ -144,14 +144,14 @@ export const Growls = () => {
           </Alert>
         </Toast>
         <Toast isOpen={showAltGrowl}>
-          <Alert color="warning" isOpen={true} toggle={toggleAltGrowl}>
+          <Alert color="success" isOpen={true} toggle={toggleAltGrowl}>
             <Container className="m-0">
               <Row>
                 <Col xs="auto" className="p-0 pr-2">
                   <Icon className="mdi" path={mdiAlert} />
                 </Col>
                 <Col className="p-0">
-                  This is a dismissable warning Growl with. Go ahead, dismiss
+                  This is a dismissable success Growl with. Go ahead, dismiss
                   me!
                 </Col>
               </Row>
@@ -161,7 +161,7 @@ export const Growls = () => {
         <Toast isOpen={showAutoGrowl} data-autohide={true}>
           <Alert
             className="alert-fpac"
-            color="warning"
+            color="info"
             isOpen={true}
             toggle={toggleAutoGrowl}
           >
@@ -171,8 +171,8 @@ export const Growls = () => {
                   <Icon className="mdi" path={mdiAlert} />
                 </Col>
                 <Col className="p-0">
-                  This is a dismissable warning Growl that will automatically
-                  hide after a brief delay. NOT WORKING - WORK IN PROGRESS
+                  This is a dismissable info Growl that will automatically hide
+                  after a brief delay. NOT WORKING - WORK IN PROGRESS
                 </Col>
               </Row>
             </Container>
@@ -184,7 +184,7 @@ export const Growls = () => {
         <Toast isOpen={showCntGrowl}>
           <Alert
             className="alert-fpac"
-            color="warning"
+            color="danger"
             isOpen={true}
             toggle={toggleCntGrowl}
           >
@@ -194,7 +194,7 @@ export const Growls = () => {
                   <Icon className="mdi" path={mdiAlert} />
                 </Col>
                 <Col className="p-0">
-                  This is a centered dismissable warning Growl with. Go ahead,
+                  This is a centered dismissable error Growl with. Go ahead,
                   dismiss me!
                 </Col>
               </Row>
