@@ -20,7 +20,6 @@ export const HeaderNrcsDesignSystem = ({ ...rest }) => {
     <div className="mb-3">
       <HeaderNrcs />
       <NavbarNrcs>
-        <NavbarBrand href="/">Koala Bandits</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
