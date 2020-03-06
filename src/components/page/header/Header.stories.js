@@ -31,7 +31,7 @@ export const StoryHeaderFPAC = () => {
 export const StoryHeaderCD = () => {
   return (
     <div>
-      <h1 className="docs">Header - NRCS</h1>
+      <h1 className="docs">Header - CD</h1>
       <p>
         CD Header is uses primary blue, smaller, and vertically centered items.
         It is also responsive in sizing.

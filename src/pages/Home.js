@@ -10,10 +10,13 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
+  NavbarText,
+  Button
 } from "reactstrap";
-import { HeaderNrcs } from "./../components/page/header/HeaderNrcs";
-import { NavbarNrcs } from "./../components/page/header/NavbarNrcs";
+import { HeaderNrcs } from "components/page/header/HeaderNrcs";
+import { NavbarNrcs } from "components/page/header/NavbarNrcs";
+import Icon from "@mdi/react";
+import { mdiGithubCircle } from "@mdi/js";
 
 class Home extends React.Component {
   constructor(props) {
@@ -34,24 +37,31 @@ class Home extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href="#">NavLink 1</NavLink>
+                <NavLink href="#">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">NavLink 2</NavLink>
+                <NavLink href="#">Color</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="#">Typography</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">Iconography</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">Accessibility</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">Kitchen Sink</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">Storybook</NavLink>
+              </NavItem>
             </Nav>
-            <NavbarText>Simple Text</NavbarText>
+            <NavLink className="btn-main text-white" color="link">
+              <Icon className="mdi mr-1" path={mdiGithubCircle} />
+              GitHub
+            </NavLink>
           </Collapse>
         </NavbarNrcs>
       </div>
