@@ -6,7 +6,7 @@ export const NavbarFpac = ({ ...rest }) => (
     <Container>
       <Navbar
         className="pl-0 pr-0"
-        color="primary"
+        color="secondary"
         dark
         expand="md"
         {...rest}
