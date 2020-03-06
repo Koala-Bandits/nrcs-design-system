@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   Collapse,
-  Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
@@ -13,12 +12,14 @@ import {
   DropdownItem,
   NavbarText
 } from "reactstrap";
+import { NavbarNrcs } from "./NavbarNrcs";
+import { NavbarFpac } from "./NavbarFpac";
 
 export default {
   title: "Page Components|Header"
 };
 
-export const NavbarNRCS = () => {
+export const StoryNavbarNRCS = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -31,7 +32,7 @@ export const NavbarNRCS = () => {
         page headers and main navigation.
       </p>
 
-      <Navbar color="primary" dark expand="md">
+      <NavbarNrcs>
         <NavbarBrand href="/">Koala Bandits</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -56,12 +57,12 @@ export const NavbarNRCS = () => {
           </Nav>
           <NavbarText>Simple Text</NavbarText>
         </Collapse>
-      </Navbar>
+      </NavbarNrcs>
     </div>
   );
 };
 
-export const NavbarFPAC = () => {
+export const StoryNavbarFPAC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -74,7 +75,7 @@ export const NavbarFPAC = () => {
         page headers and main navigation.
       </p>
 
-      <Navbar color="secondary" dark expand="md">
+      <NavbarFpac>
         <NavbarBrand href="/">Koala Bandits</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -99,15 +100,15 @@ export const NavbarFPAC = () => {
           </Nav>
           <NavbarText>Simple Text</NavbarText>
         </Collapse>
-      </Navbar>
+      </NavbarFpac>
     </div>
   );
 };
 
-NavbarNRCS.story = {
+StoryNavbarNRCS.story = {
   name: "Navbar - NRCS"
 };
 
-NavbarFPAC.story = {
+StoryNavbarFPAC.story = {
   name: "Navbar - FPAC"
 };

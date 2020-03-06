@@ -99,14 +99,36 @@ li {
 }
 
 // Page Header
+// Specifics:
 .fpac-header {
   background-color: $secondary;
 }
 .nrcs-header {
   background-color: $primary;
 }
+.cd-header {
+  background-color: $primary;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
 .nrcs-header,
 .fpac-header {
+  .header-title {
+    padding-top: 5.5rem;
+    @include media-breakpoint-down(sm) {
+      padding-top: 3.5rem;
+    }
+  }
+}
+// All header types share this:
+.nrcs-header,
+.fpac-header,
+.cd-header {
   color: $white;
 
   a {
@@ -116,10 +138,6 @@ li {
 
   .header-title {
     font-weight: $font-weight-light;
-    padding-top: 5.5rem;
-    @include media-breakpoint-down(sm) {
-      padding-top: 3.5rem;
-    }
   }
 
   .header-subtitle {

@@ -1,33 +1,27 @@
 import React from "react";
 
+import { HeaderNrcs } from "./HeaderNrcs";
+import { HeaderFpac } from "./HeaderFpac";
+import { HeaderCD } from "./HeaderCD";
+
 export default {
   title: "Page Components|Header"
 };
 
-export const HeaderNRCS = () => (
-  <div className="nrcs-header">
-    <div className="container header-title h1">
-      <a href="/home" title="Home" aria-label="Home">
-        NRCS Design System <span className="header-subtitle">| BETA</span>
-      </a>
-    </div>
-  </div>
-);
+export const StoryHeaderNRCS = () => <HeaderNrcs />;
 
-export const HeaderFPAC = () => (
-  <div className="fpac-header">
-    <div className="container header-title h1">
-      <a href="/home" title="Home" aria-label="Home">
-        NRCS Design System <span className="header-subtitle">| FPAC green</span>
-      </a>
-    </div>
-  </div>
-);
+export const StoryHeaderFPAC = () => <HeaderFpac />;
 
-HeaderNRCS.story = {
+export const StoryHeaderCD = () => <HeaderCD />;
+
+StoryHeaderNRCS.story = {
   name: "Header - NRCS"
 };
 
-HeaderFPAC.story = {
+StoryHeaderFPAC.story = {
   name: "Header - FPAC"
+};
+
+StoryHeaderCD.story = {
+  name: "Header - CD"
 };
