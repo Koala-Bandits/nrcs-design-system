@@ -4,8 +4,8 @@ export default {
   title: "Design System|About"
 };
 
-export const About = () => (
-  <div>
+export const AboutStory = () => (
+  <div className="container">
     <h1 className="docs">NRCS Design System</h1>
 
     <p>

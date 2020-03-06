@@ -4,8 +4,8 @@ export default {
   title: "Design System|Color"
 };
 
-export const Color = () => (
-  <div className="docs-color">
+export const ColorStory = () => (
+  <div className="container docs-color">
     <h1 className="docs">Color</h1>
 
     <div className="container">

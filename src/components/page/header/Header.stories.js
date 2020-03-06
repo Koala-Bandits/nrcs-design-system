@@ -1,6 +1,7 @@
 import React from "react";
 
 import { HeaderNrcs } from "./HeaderNrcs";
+import { HeaderNrcsDesignSystem } from "./HeaderNrcsDesignSystem";
 import { HeaderFpac } from "./HeaderFpac";
 import { HeaderCD } from "./HeaderCD";
 
@@ -14,6 +15,19 @@ export const StoryHeaderNRCS = () => {
       <h1 className="docs">Header - NRCS</h1>
       <p>NRCS Header is uses primary blue and is responsive in sizing.</p>
       <HeaderNrcs />
+    </div>
+  );
+};
+
+export const StoryHeaderNRCSDesignSystem = () => {
+  return (
+    <div>
+      <h1 className="docs">Header - NRCS Design System</h1>
+      <p>
+        This is the complete header for the NRCS Design System website. It uses
+        a HeaderNrcs with a NavbarNrcs
+      </p>
+      <HeaderNrcsDesignSystem />
     </div>
   );
 };
@@ -43,6 +57,10 @@ export const StoryHeaderCD = () => {
 
 StoryHeaderNRCS.story = {
   name: "Header - NRCS"
+};
+
+StoryHeaderNRCSDesignSystem.story = {
+  name: "Header - NRCS Design System"
 };
 
 StoryHeaderFPAC.story = {

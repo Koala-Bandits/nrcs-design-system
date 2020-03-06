@@ -7,9 +7,10 @@ import "./scss/nrcs-design-system.scss";
 
 // Pages
 //import App from './App';
-import Home from "./pages/Home.js";
+import About from "./pages/About.js";
 import VisualStyle from "./pages/VisualStyle.js";
 import Components from "./pages/Components.js";
+import Color from "./pages/Color.js";
 
 import * as serviceWorker from "./serviceWorker";
 
@@ -27,9 +28,11 @@ const routing = (
   <Router>
     <div>
       <Switch>
+        <Route exact path="/color" component={Color} />
+        <Route exact path="/about" component={About} />
         <Route exact path="/components" component={Components} />
         <Route path="/visual-style" component={VisualStyle} />
-        <Route path="/" component={Home} />
+        <Route path="/" component={About} />
       </Switch>
     </div>
   </Router>
