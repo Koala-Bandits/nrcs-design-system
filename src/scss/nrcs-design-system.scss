@@ -98,13 +98,16 @@ li {
   margin-left: 0.5rem;
 }
 
-// Page Header & Footer components
+// Page Header
+.fpac-header {
+  background-color: $secondary;
+}
 .nrcs-header {
   background-color: $primary;
+}
+.nrcs-header,
+.fpac-header {
   color: $white;
-  font-weight: $font-weight-light;
-
-  padding-top: 2.5em;
 
   a {
     color: $white;
@@ -112,7 +115,11 @@ li {
   }
 
   .header-title {
-    font-size: $h1-font-size;
+    font-weight: $font-weight-light;
+    padding-top: 5.5rem;
+    @include media-breakpoint-down(sm) {
+      padding-top: 3.5rem;
+    }
   }
 
   .header-subtitle {
