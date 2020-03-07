@@ -1,12 +1,12 @@
 import React from "react";
 
 export default {
-  title: "Design System|Accessibility"
+  title: "Design System|Kitchen Sink"
 };
 
-export const AccessibilityStory = () => (
+export const KitchenSinkStory = () => (
   <div className="container">
-    <h1 className="docs">Accessibility</h1>
+    <h1 className="docs">Kitchen Sink</h1>
 
     <p>
       <span className="text-danger">** Under Construction **</span>

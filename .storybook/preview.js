@@ -23,6 +23,7 @@ const loadStories = () => {
     require("../src/stories/Color.stories.js"),
     require("../src/stories/Typography.stories.js"),
     require("../src/stories/Iconography.stories.js"),
+    require("../src/stories/KitchenSink.stories.js"),
     require("../src/stories/Accessibility.stories.js")
   ];
   const req = require.context("../src/components", true, /\.stories\.js$/);
