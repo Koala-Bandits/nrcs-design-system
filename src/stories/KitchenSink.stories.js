@@ -7,18 +7,22 @@ export default {
 
 const allStories = getStorybook();
 
+// Bit of a hack for now to just get the components:
+let componentStories = [];
+allStories.forEach(stories => {
+  if (stories.kind.startsWith("Components")) {
+    componentStories.push(stories);
+  }
+});
+
 export const KitchenSinkStory = () => (
-  <div className="container">
+  <div>
     <h1 className="docs">Kitchen Sink</h1>
 
-    <p>
-      <span className="text-danger">
-        This following is every story in our Storybook rendered in succession.
-      </span>
-    </p>
+    <p>This following is all components rendered in succession.</p>
 
     <>
-      {allStories.map(stories => {
+      {componentStories.map(stories => {
         return (
           <>
             {" "}
