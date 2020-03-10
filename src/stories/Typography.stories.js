@@ -1,4 +1,5 @@
 import React from "react";
+import { Row, Col, Card, CardBody, CardText } from "reactstrap";
 
 export default {
   title: "Design System|Typography"
@@ -26,74 +27,84 @@ export const TypographyStory = () => (
       applications across browsers and devices.
     </p>
 
-    <div className="col docs-typeface mt-5">
-      <div className="row mb-5">
-        <div className="col">
-          <div className="row">
-            <div className="col">
-              <strong>Default</strong>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-auto docs-text-big">Aa</div>
-            <div className="col">
-              <p>abcdefghijklmnopqrstuvwxyz</p>
-              <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-              <p>1234567890</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="col font-weight-light">
-          <div className="row">
-            <div className="col">
-              <strong>Light</strong>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-auto docs-text-big">Aa</div>
-            <div className="col">
-              <p>abcdefghijklmnopqrstuvwxyz</p>
-              <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-              <p>1234567890</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="col font-weight-bold">
-          <div className="row">
-            <div className="col">
-              <strong>Bold</strong>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-auto docs-text-big">Aa</div>
-            <div className="col">
-              <p>abcdefghijklmnopqrstuvwxyz</p>
-              <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-              <p>1234567890</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col docs-text-fallback">
-          <div className="row">
-            <div className="col">
-              <strong>Fallback (Helvetica)</strong>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-auto docs-text-big">Aa</div>
-            <div className="col">
-              <p>abcdefghijklmnopqrstuvwxyz</p>
-              <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-              <p>1234567890</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Row xs="1" sm="2" md="3">
+      <Col className="mb-3">
+        <Card>
+          <CardBody className="docs-typeface">
+            <Row>
+              <Col>
+                <strong>Default</strong>
+              </Col>
+            </Row>
+            <Row>
+              <div className="col-auto docs-text-big">Aa</div>
+              <div className="col">
+                <p>abcdefghijklmnopqrstuvwxyz</p>
+                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p>1234567890</p>
+              </div>
+            </Row>
+          </CardBody>
+        </Card>
+      </Col>
+      <Col className="mb-3">
+        <Card>
+          <CardBody className="docs-typeface font-weight-light">
+            <Row>
+              <Col>
+                <strong>Light</strong>
+              </Col>
+            </Row>
+            <Row>
+              <div className="col-auto docs-text-big">Aa</div>
+              <div className="col">
+                <p>abcdefghijklmnopqrstuvwxyz</p>
+                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p>1234567890</p>
+              </div>
+            </Row>
+          </CardBody>
+        </Card>
+      </Col>
+      <Col className="mb-3">
+        <Card>
+          <CardBody className="docs-typeface font-weight-bold">
+            <Row>
+              <Col>
+                <strong>Bold</strong>
+              </Col>
+            </Row>
+            <Row>
+              <div className="col-auto docs-text-big">Aa</div>
+              <div className="col">
+                <p>abcdefghijklmnopqrstuvwxyz</p>
+                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p>1234567890</p>
+              </div>
+            </Row>
+          </CardBody>
+        </Card>
+      </Col>
+      <Col className="mb-3">
+        <Card>
+          <CardBody className="docs-typeface docs-text-fallback">
+            <Row>
+              <Col>
+                <strong>Fallback (Helvetica)</strong>
+              </Col>
+            </Row>
+            <Row>
+              <div className="col-auto docs-text-big">Aa</div>
+              <div className="col">
+                <p>abcdefghijklmnopqrstuvwxyz</p>
+                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p>1234567890</p>
+              </div>
+            </Row>
+          </CardBody>
+        </Card>
+      </Col>
+    </Row>
 
     <hr />
 
