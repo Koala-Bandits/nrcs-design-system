@@ -213,6 +213,7 @@ export const IconographyStory = () => {
         />
         <IconCard icon={mdiHome} name="mdiHome" text="" />
         <IconCard icon={mdiImport} name="mdiImport" text="" />
+        <IconCard icon={mdiInformation} name="mdiInformation" text="" />
         <IconCard icon={mdiLayers} name="mdiLayers" text="" />
         <IconCard icon={mdiLock} name="mdiLock" text="" />
         <IconCard icon={mdiLockOpenOutline} name="mdiLockOpenOutline" text="" />
