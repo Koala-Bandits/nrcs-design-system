@@ -73,7 +73,7 @@ export const IconographyStory = () => {
           <Row className="no-gutters">
             <Col
               sm="4"
-              className="d-flex align-items-center justify-content-center border-right"
+              className="d-flex align-items-center justify-content-center p-4"
             >
               <Icon className="mdi" path={props.icon} size={1.3} />
               <Icon className="mdi" path={props.icon} size={1} />
@@ -81,7 +81,7 @@ export const IconographyStory = () => {
             </Col>
             <Col sm="8">
               <CardBody>
-                <h5 className="card-title">{props.name}</h5>
+                <h6 className="card-title">{props.name}</h6>
                 <p className="card-text">{props.text}</p>
               </CardBody>
             </Col>
@@ -141,23 +141,7 @@ export const IconographyStory = () => {
         For the best user experience, the icons listed here should be used
         consistently for the purposes described.
       </p>
-      <Row xs="2" sm="3">
-        <IconCard
-          icon={mdiInformation}
-          name="mdiInformation"
-          text="This is a text"
-        />
-        <IconCard
-          icon={mdiInformation}
-          name="mdiInformation"
-          text="This is a text"
-        />
-        <IconCard
-          icon={mdiInformation}
-          name="mdiInformation"
-          text="This is a text"
-        />
-
+      <Row xs="1" sm="3">
         <IconCard
           icon={mdiAccount}
           name="mdiAccount"
