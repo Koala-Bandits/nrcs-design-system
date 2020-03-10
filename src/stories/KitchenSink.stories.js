@@ -19,7 +19,10 @@ export const KitchenSinkStory = () => (
   <div>
     <h1 className="docs">Kitchen Sink</h1>
 
-    <p>This following is all components rendered in succession.</p>
+    <p>
+      This following is all components rendered in succession. Note, performance
+      may be slow...
+    </p>
 
     <>
       {componentStories.map(stories => {
