@@ -60,6 +60,7 @@ export const CheckboxDefault = () => (
     <a
       href="https://getbootstrap.com/docs/4.4/components/forms/#checkboxes-and-radios-1"
       target="_blank"
+      rel="nopener noreferrer"
     >
       To Do...
     </a>

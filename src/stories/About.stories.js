@@ -17,7 +17,11 @@ export const AboutStory = () => (
     <p>
       <strong>
         A design system using{" "}
-        <a href="https://koala-bandits.github.io/nrcs-style/" target="_blank">
+        <a
+          href="https://koala-bandits.github.io/nrcs-style/"
+          target="_blank"
+          rel="nopener noreferrer"
+        >
           nrcs-style
         </a>{" "}
         produced for our partners at NRCS.{" "}
@@ -31,11 +35,16 @@ export const AboutStory = () => (
           <a
             href="http://usda-fsa.github.io/fsa-design-system/"
             target="_blank"
+            rel="nopener noreferrer"
           >
             FPAC Design System
           </a>{" "}
           and its inherent roots from the{" "}
-          <a href="https://designsystem.digital.gov/" target="_blank">
+          <a
+            href="https://designsystem.digital.gov/"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
             U.S. Web Design System
           </a>
           . If you are working on a project with FPAC or its related agencies,
@@ -55,13 +64,18 @@ export const AboutStory = () => (
         </li>
         <li>
           The NRCS Design System is based on{" "}
-          <a href="https://koala-bandits.github.io/nrcs-style/" target="_blank">
+          <a
+            href="https://koala-bandits.github.io/nrcs-style/"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
             nrcs-style
           </a>{" "}
           which is a custom{" "}
           <a
             href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"
             target="_blank"
+            rel="nopener noreferrer"
           >
             Bootstrap
           </a>{" "}
@@ -69,6 +83,7 @@ export const AboutStory = () => (
           <a
             href="https://getbootstrap.com/docs/4.4/components/"
             target="_blank"
+            rel="nopener noreferrer"
           >
             component styles
           </a>
@@ -76,6 +91,7 @@ export const AboutStory = () => (
           <a
             href="https://getbootstrap.com/docs/4.4/layout/overview/"
             target="_blank"
+            rel="nopener noreferrer"
           >
             layouts
           </a>
@@ -83,6 +99,7 @@ export const AboutStory = () => (
           <a
             href="https://getbootstrap.com/docs/4.4/utilities/"
             target="_blank"
+            rel="nopener noreferrer"
           >
             utilities
           </a>
@@ -91,13 +108,18 @@ export const AboutStory = () => (
         </li>
         <li>
           This site is built with React, StoryBook, using{" "}
-          <a href="https://reactstrap.github.io/" target="_blank">
+          <a
+            href="https://reactstrap.github.io/"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
             ReactStrap
           </a>
           . The{" "}
           <a
             href="https://github.com/Koala-Bandits/nrcs-design-system"
             target="_blank"
+            rel="nopener noreferrer"
           >
             source
           </a>{" "}

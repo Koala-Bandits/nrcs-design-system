@@ -42,7 +42,11 @@ export const HeaderNrcsDesignSystem = ({ ...rest }) => {
               <NavLink href="/kitchen-sink">Kitchen Sink</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/storybook" target="_blank">
+              <NavLink
+                href="/storybook"
+                target="_blank"
+                rel="nopener noreferrer"
+              >
                 Storybook
               </NavLink>
             </NavItem>
@@ -50,6 +54,7 @@ export const HeaderNrcsDesignSystem = ({ ...rest }) => {
               <NavLink
                 href="https://github.com/Koala-Bandits/nrcs-design-system"
                 target="_blank"
+                rel="nopener noreferrer"
               >
                 GitHub
               </NavLink>

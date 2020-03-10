@@ -81,8 +81,8 @@ export const IconographyStory = () => {
             </Col>
             <Col sm="8">
               <CardBody>
-                <h5 class="card-title">{props.name}</h5>
-                <p class="card-text">{props.text}</p>
+                <h5 className="card-title">{props.name}</h5>
+                <p className="card-text">{props.text}</p>
               </CardBody>
             </Col>
           </Row>
@@ -98,7 +98,11 @@ export const IconographyStory = () => {
       <p>
         NRCS Design System is using the{" "}
         <strong>
-          <a href="https://materialdesignicons.com/" target="_blank">
+          <a
+            href="https://materialdesignicons.com/"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
             Materia Design (Community) Icons
           </a>
         </strong>{" "}
@@ -121,6 +125,7 @@ export const IconographyStory = () => {
           <a
             href="https://dev.materialdesignicons.com/getting-started"
             target="_blank"
+            rel="nopener noreferrer"
           >
             MDI Getting Started documentation.
           </a>

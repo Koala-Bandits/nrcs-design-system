@@ -16,6 +16,7 @@ export const TypographyStory = () => (
         <a
           href="https://fonts.google.com/specimen/Roboto?selection.family=Roboto"
           target="_blank"
+          rel="nopener noreferrer"
         >
           Roboto
         </a>
