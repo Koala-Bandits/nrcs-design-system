@@ -9,7 +9,7 @@ export const AccessibilityStory = () => (
     <h1 className="docs">Accessibility</h1>
 
     <p>
-      <span className="text-danger">** Under Construction **</span>
+      <span className="text-danger">** Under construction.. **</span>
     </p>
   </div>
 );

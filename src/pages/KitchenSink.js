@@ -11,7 +11,12 @@ class KitchenSink extends React.Component {
     return (
       <div>
         <HeaderNrcsDesignSystem />
-        <KitchenSinkStory />
+        <div className="container">
+          <h1 className="docs">Kitchen Sink</h1>
+          <p>
+            <span className="text-danger">** Under construction... **</span>
+          </p>
+        </div>
       </div>
     );
   }
