@@ -16,6 +16,9 @@ export const HeaderNrcsDesignSystem = ({ ...rest }) => {
 
   const toggle = () => setIsOpen(!isOpen);
 
+  // hack for now:
+  const pathname = window.location.pathname;
+
   return (
     <div className="mb-3">
       <HeaderNrcs />
@@ -24,22 +27,78 @@ export const HeaderNrcsDesignSystem = ({ ...rest }) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/about">About</NavLink>
+              <NavLink
+                className={
+                  pathname === "/nrcs-design-system/about"
+                    ? "active"
+                    : pathname === "/nrcs-design-system/"
+                    ? "active"
+                    : pathname === "/"
+                    ? "active"
+                    : null
+                }
+                href="/nrcs-design-system/about"
+              >
+                About
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/color">Color</NavLink>
+              <NavLink
+                className={
+                  pathname === "/nrcs-design-system/color" ? "active" : null
+                }
+                href="/nrcs-design-system/color"
+              >
+                Color
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/typography">Typography</NavLink>
+              <NavLink
+                className={
+                  pathname === "/nrcs-design-system/typography"
+                    ? "active"
+                    : null
+                }
+                href="/nrcs-design-system/typography"
+              >
+                Typography
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/iconography">Iconography</NavLink>
+              <NavLink
+                className={
+                  pathname === "/nrcs-design-system/iconography"
+                    ? "active"
+                    : null
+                }
+                href="/nrcs-design-system/iconography"
+              >
+                Iconography
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/accessibility">Accessibility</NavLink>
+              <NavLink
+                className={
+                  pathname === "/nrcs-design-system/accessibility"
+                    ? "active"
+                    : null
+                }
+                href="/nrcs-design-system/accessibility"
+              >
+                Accessibility
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/kitchen-sink">Kitchen Sink</NavLink>
+              <NavLink
+                className={
+                  pathname === "/nrcs-design-system/kitchen-sink"
+                    ? "active"
+                    : null
+                }
+                href="/nrcs-design-system/kitchen-sink"
+              >
+                Kitchen Sink
+              </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
