@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "@mdi/react";
-import { Row, Col, Card, CardBody, CardText } from "reactstrap";
+import { Row, Col, Card, CardBody, CardText, Table } from "reactstrap";
 import {
   mdiAccount,
   mdiAccountCircle,
@@ -91,6 +91,20 @@ export const IconographyStory = () => {
     );
   }
 
+  function IconRow(props) {
+    return (
+      <tr>
+        <td>
+          <Icon className="mdi" path={props.icon} size={1.3} />
+          <Icon className="mdi" path={props.icon} size={1} />
+          <Icon className="mdi" path={props.icon} size={0.8} />
+        </td>
+        <td>{props.name}</td>
+        <td>{props.text}</td>
+      </tr>
+    );
+  }
+
   return (
     <div className="container">
       <h1 className="docs">Iconography</h1>
@@ -141,6 +155,131 @@ export const IconographyStory = () => {
         For the best user experience, the icons listed here should be used
         consistently for the purposes described.
       </p>
+      <Row>
+        <Table className="table-alt">
+          <thead>
+            <tr>
+              <th>Icon</th>
+              <th>Icon Name</th>
+              <th>Usage Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <IconRow
+              icon={mdiAccount}
+              name="mdiAccount"
+              text="User account, user preferences."
+            />
+
+            <IconRow
+              icon={mdiAccountCircle}
+              name="mdiAccountCircle"
+              text="Alternate user account, user preferences."
+            />
+            <IconRow
+              icon={mdiAccountCog}
+              name="mdiAccountCircle"
+              text="User account preferences, settings."
+            />
+            <IconRow
+              icon={mdiAccountMultiple}
+              name="mdiAccountMultiple"
+              text="Users, clients, people."
+            />
+            <IconRow icon={mdiBell} name="mdiBell" text="" />
+            <IconRow icon={mdiCalendar} name="mdiCalendar" text="" />
+            <IconRow icon={mdiCheck} name="mdiCheck" text="" />
+            <IconRow icon={mdiCheckCircle} name="mdiCheckCircle" text="" />
+            <IconRow
+              icon={mdiCheckCircleOutline}
+              name="mdiCheckCircleOutline"
+              text=""
+            />
+            <IconRow
+              icon={mdiCheckboxMarked}
+              name="mdiCheckboxMarked"
+              text=""
+            />
+            <IconRow icon={mdiChevronDown} name="mdiChevronDown" text="" />
+            <IconRow icon={mdiChevronRight} name="mdiChevronRight" text="" />
+            <IconRow
+              icon={mdiChevronDoubleDown}
+              name="mdiChevronDoubleDown"
+              text=""
+            />
+            <IconRow
+              icon={mdiChevronDoubleUp}
+              name="mdiChevronDoubleUp"
+              text=""
+            />
+            <IconRow icon={mdiClose} name="mdiClose" text="" />
+            <IconRow icon={mdiCloseCircle} name="mdiCloseCircle" text="" />
+            <IconRow
+              icon={mdiCloseCircleOutline}
+              name="mdiCloseCircleOutline"
+              text=""
+            />
+            <IconRow icon={mdiClockOutline} name="mdiClockOutline" text="" />
+            {/* <IconRow icon={mdiCog} name="mdiCog" text="" /> */}
+            <IconRow icon={mdiContentCopy} name="mdiContentCopy" text="" />
+            <IconRow icon={mdiContentCut} name="mdiContentCut" text="" />
+            <IconRow icon={mdiContentPaste} name="mdiContentPaste" text="" />
+            <IconRow icon={mdiCursorDefault} name="mdiCursorDefault" text="" />
+            <IconRow icon={mdiCursorPointer} name="mdiCursorPointer" text="" />
+            <IconRow icon={mdiDelete} name="mdiDelete" text="" />
+            <IconRow icon={mdiDotsVertical} name="mdiDotsVertical" text="" />
+            <IconRow
+              icon={mdiDotsVerticalCircle}
+              name="mdiDotsVerticalCircle"
+              text=""
+            />
+            <IconRow icon={mdiExport} name="mdiExport" text="" />
+            <IconRow icon={mdiEye} name="mdiEye" text="" />
+            <IconRow icon={mdiFilter} name="mdiFilter" text="" />
+            <IconRow icon={mdiHelpCircle} name="mdiHelpCircle" text="" />
+            <IconRow
+              icon={mdiHelpCircleOutline}
+              name="mdiHelpCircleOutline"
+              text=""
+            />
+            <IconRow icon={mdiHome} name="mdiHome" text="" />
+            <IconRow icon={mdiImport} name="mdiImport" text="" />
+            <IconRow icon={mdiInformation} name="mdiInformation" text="" />
+            <IconRow icon={mdiLayers} name="mdiLayers" text="" />
+            <IconRow icon={mdiLock} name="mdiLock" text="" />
+            <IconRow
+              icon={mdiLockOpenOutline}
+              name="mdiLockOpenOutline"
+              text=""
+            />
+            <IconRow icon={mdiLogin} name="mdiLogin" text="" />
+            <IconRow icon={mdiLogout} name="mdiLogout" text="" />
+            <IconRow icon={mdiMagnify} name="mdiMagnify" text="" />
+            <IconRow icon={mdiMenu} name="mdiMenu" text="" />
+            <IconRow icon={mdiMenuDown} name="mdiMenuDown" text="" />
+            <IconRow icon={mdiMenuRight} name="mdiMenuRight" text="" />
+            <IconRow icon={mdiMinusBox} name="mdiMinusBox" text="" />
+            <IconRow
+              icon={mdiMinusBoxOutline}
+              name="mdiMinusBoxOutline"
+              text=""
+            />
+            <IconRow icon={mdiMinusCircle} name="mdiMinusCircle" text="" />
+            <IconRow
+              icon={mdiMinusCircleOutline}
+              name="mdiMinusCircleOutline"
+              text=""
+            />
+            <IconRow icon={mdiOpenInNew} name="mdiOpenInNew" text="" />
+            <IconRow icon={mdiPen} name="mdiPen" text="" />
+            <IconRow icon={mdiPencil} name="mdiPencil" text="" />
+            <IconRow icon={mdiPlus} name="mdiPlus" text="" />
+            <IconRow icon={mdiPlusBox} name="mdiPlusBox" text="" />
+            <IconRow icon={mdiRefresh} name="mdiRefresh" text="" />
+            <IconRow icon={mdiWrench} name="mdiWrench" text="" />
+          </tbody>
+        </Table>
+      </Row>
       <Row xs="1" sm="3">
         <IconCard
           icon={mdiAccount}
