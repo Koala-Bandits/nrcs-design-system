@@ -10,7 +10,7 @@ export default {
 
 export const DataTableDefault = () => (
   <div>
-    <h1 className="docs">Table - Complex</h1>
+    <h2 className="docs">Table - Complex</h2>
     <p>
       To Do... FPAC style table with gray header, no zebra, horiz. lines, light
       gray hover, light blue selection w/ bold styles...

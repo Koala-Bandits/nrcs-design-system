@@ -21,9 +21,9 @@ export default {
 
 export const ButtonsDefault = () => (
   <div className="docs-btn">
-    <h1 className="docs">Buttons</h1>
+    <h2 className="docs">Buttons</h2>
 
-    <h2 className="docs">Default</h2>
+    <h3 className="docs">Default</h3>
     <Button className="btn-main" color="primary">
       Primary
     </Button>
@@ -34,7 +34,7 @@ export const ButtonsDefault = () => (
       Flat
     </Button>
 
-    <h2 className="docs">Small</h2>
+    <h3 className="docs">Small</h3>
     <Button className="btn-main" color="primary" size="sm">
       Primary
     </Button>
@@ -45,7 +45,7 @@ export const ButtonsDefault = () => (
       Flat
     </Button>
 
-    <h2 className="docs">Disabled</h2>
+    <h3 className="docs">Disabled</h3>
     <Button className="btn-main" color="primary" aria-disabled="true" disabled>
       Primary
     </Button>
@@ -66,9 +66,9 @@ export const ButtonsDefault = () => (
 
 export const ButtonsWithIcons = () => (
   <div className="docs-btn">
-    <h1 className="docs">Buttons</h1>
+    <h2 className="docs">Buttons - with Icons</h2>
 
-    <h2 className="docs">Default</h2>
+    <h3 className="docs">Default</h3>
 
     <Button className="btn-main" color="primary">
       <Icon className="mdi mr-1" path={mdiAccount} />
@@ -111,7 +111,7 @@ export const ButtonsWithIcons = () => (
       <Icon className="mdi" path={mdiDelete} />
     </Button>
 
-    <h2 className="docs">Small</h2>
+    <h3 className="docs">Small</h3>
 
     <Button className="btn-main" color="primary" size="sm">
       <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
@@ -154,7 +154,7 @@ export const ButtonsWithIcons = () => (
       <Icon className="mdi" path={mdiDelete} size={0.8} />
     </Button>
 
-    <h2 className="docs">Disabled</h2>
+    <h3 className="docs">Disabled</h3>
 
     <Button
       className="btn-main"
@@ -208,7 +208,7 @@ export const ButtonsWithIcons = () => (
 
 export const ButtonsPosition = () => (
   <div className="docs-btn">
-    <h1 className="docs">Buttons - Positioning</h1>
+    <h2 className="docs">Buttons - Positioning</h2>
 
     <Row>
       <Col>
@@ -274,7 +274,7 @@ export const ButtonsPosition = () => (
 
 export const ButtonsFooter = () => (
   <div>
-    <h1 className="docs">Buttons - Footer</h1>
+    <h2 className="docs">Buttons - Footer</h2>
     To do... typical button usage, but in box with top-border, used in CART and
     to be used in CD. This will complement our 'ContentHeadings' with a bottom
     border/underline.

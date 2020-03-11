@@ -8,16 +8,16 @@ export default {
 
 export const ContentHeaderDefault = () => (
   <div>
-    <h1 className="docs">Content Header</h1>
+    <h2 className="docs">Content Header</h2>
 
     <p>
       Your basic HTML header tags with an underline and 100% width to expand
       across it's container.
     </p>
 
-    <h1 className="border-bottom w-100 pb-1">h1. Content Header</h1>
+    <h3 className="border-bottom w-100 pb-1">h1. Content Header</h3>
     <p></p>
-    <h2 className="border-bottom w-100 pb-1">h2. Content Header</h2>
+    <h3 className="border-bottom w-100 pb-1">h2. Content Header</h3>
     <p></p>
     <h3 className="border-bottom w-100 pb-1">h3. Content Header</h3>
     <p></p>
@@ -31,7 +31,7 @@ export const ContentHeaderDefault = () => (
 
 export const ContentHeaderIcons = () => (
   <div>
-    <h1 className="docs">Content Header</h1>
+    <h2 className="docs">Content Header</h2>
 
     <p>
       Your basic HTML header tags with an underline and 100% width to expand
@@ -43,23 +43,23 @@ export const ContentHeaderIcons = () => (
       </strong>
     </p>
 
-    <h1 className="border-bottom w-100 pb-1">
+    <h3 className="border-bottom w-100 pb-1">
       h1. Content Header
       <span className="float-right">
         <Icon className="mdi" className="mdi" path={mdiHuman} />
         <Icon className="mdi" path={mdiHelpCircle} />
         <Icon className="mdi" path={mdiCloseCircle} />
       </span>
-    </h1>
+    </h3>
     <p></p>
-    <h2 className="border-bottom w-100 pb-1">
+    <h3 className="border-bottom w-100 pb-1">
       h2. Content Header
       <span className="float-right">
         <Icon className="mdi" path={mdiHuman} />
         <Icon className="mdi" path={mdiHelpCircle} />
         <Icon className="mdi" path={mdiCloseCircle} />
       </span>
-    </h2>
+    </h3>
     <p></p>
     <h3 className="border-bottom w-100 pb-1">
       h3. Content Header

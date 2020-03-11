@@ -15,7 +15,7 @@ export default {
 
 export const TablesDefault = () => (
   <div>
-    <h1 className="docs">Tables - Default</h1>
+    <h2 className="docs">Tables - Default</h2>
 
     <Table>
       <thead className="thead-light">
@@ -48,7 +48,7 @@ export const TablesDefault = () => (
       </tbody>
     </Table>
 
-    <h2>Small</h2>
+    <h3>Small</h3>
 
     <Table className="table-sm">
       <thead className="thead-light">
@@ -85,7 +85,7 @@ export const TablesDefault = () => (
 
 export const TablesAlt = () => (
   <div>
-    <h1 className="docs">Table - Alternate</h1>
+    <h2 className="docs">Table - Alternate</h2>
 
     <Table className="table-alt">
       <thead>
@@ -118,7 +118,7 @@ export const TablesAlt = () => (
       </tbody>
     </Table>
 
-    <h2>Small</h2>
+    <h3>Small</h3>
 
     <Table className="table-alt table-sm">
       <thead>

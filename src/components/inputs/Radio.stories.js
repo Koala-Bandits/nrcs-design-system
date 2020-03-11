@@ -7,9 +7,9 @@ export default {
 
 export const RadioDefault = () => (
   <div>
-    <h1 className="docs">Radios</h1>
+    <h2 className="docs">Radios</h2>
 
-    <h2 className="docs">Default Custom</h2>
+    <h3 className="docs">Default Custom</h3>
     <FormGroup>
       <Label for="exampleRadio">Radio Label</Label>
       <CustomInput
@@ -33,7 +33,7 @@ export const RadioDefault = () => (
       />
     </FormGroup>
 
-    <h2 className="docs">Inline Custom</h2>
+    <h3 className="docs">Inline Custom</h3>
     <FormGroup>
       <Label for="exampleRadio">Inline Label</Label>
       <div>

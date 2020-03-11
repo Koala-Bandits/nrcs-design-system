@@ -40,7 +40,7 @@ export const Growls = () => {
 
   return (
     <div aria-live="polite" aria-atomic="true" className="docs-btn">
-      <h1 className="docs">Growls</h1>
+      <h2 className="docs">Growls</h2>
 
       <p>
         Growls are 'Alerts' wrapped in a 'Toast', and we like to call them a

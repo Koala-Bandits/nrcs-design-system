@@ -19,27 +19,27 @@ export default {
 
 export const CardDefault = () => (
   <div className="pb-4">
-    <h1 className="docs">Card - Default</h1>
+    <h2 className="docs">Card - Default</h2>
     <p>
       Cards are a versatile container that we can use to frame or group a
       section of content, create blocks etc.
     </p>
 
-    <h2 className="docs">Basic White</h2>
+    <h3 className="docs">Basic White</h3>
 
-    <Card style={{ "max-width": "500px" }}>
+    <Card style={{ maxWidth: 500 }}>
       <CardBody>This is some text within a card body.</CardBody>
     </Card>
 
-    <h2 className="docs">Basic Muted</h2>
+    <h3 className="docs">Basic Muted</h3>
 
-    <Card className="card-muted" style={{ "max-width": "500px" }}>
+    <Card className="card-muted" style={{ maxWidth: 500 }}>
       <CardBody>This is some text within a muted card body.</CardBody>
     </Card>
 
-    <h2 className="docs">Kitchen Sink Card</h2>
+    <h3 className="docs">Kitchen Sink Card</h3>
 
-    <Card style={{ "max-width": "340px" }}>
+    <Card style={{ maxWidth: 340 }}>
       <CardHeader className="h5">Card Header</CardHeader>
       <CardImg
         top

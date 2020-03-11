@@ -40,7 +40,7 @@ export const DropdownDefault = () => {
 
   return (
     <div>
-      <h1 className="docs">Dropdown - Default</h1>
+      <h2 className="docs">Dropdown - Default</h2>
 
       <Card>
         <CardBody>
@@ -141,7 +141,7 @@ export const DropdownDefault = () => {
         </CardBody>
       </Card>
 
-      <h2 className="docs">Small</h2>
+      <h3 className="docs">Small</h3>
 
       <Card>
         <CardBody>
@@ -195,7 +195,7 @@ export const DropdownDefault = () => {
         </CardBody>
       </Card>
 
-      <h2 className="docs">Disabled</h2>
+      <h3 className="docs">Disabled</h3>
 
       <Card>
         <CardBody>

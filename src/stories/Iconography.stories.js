@@ -280,7 +280,7 @@ export const IconographyStory = () => {
           </tbody>
         </Table>
       </Row>
-      <Row xs="1" sm="3">
+      {/* <Row xs="1" sm="2">
         <IconCard
           icon={mdiAccount}
           name="mdiAccount"
@@ -328,7 +328,7 @@ export const IconographyStory = () => {
           text=""
         />
         <IconCard icon={mdiClockOutline} name="mdiClockOutline" text="" />
-        {/* <IconCard icon={mdiCog} name="mdiCog" text="" /> */}
+        <IconCard icon={mdiCog} name="mdiCog" text="" />
         <IconCard icon={mdiContentCopy} name="mdiContentCopy" text="" />
         <IconCard icon={mdiContentCut} name="mdiContentCut" text="" />
         <IconCard icon={mdiContentPaste} name="mdiContentPaste" text="" />
@@ -377,7 +377,7 @@ export const IconographyStory = () => {
         <IconCard icon={mdiPlusBox} name="mdiPlusBox" text="" />
         <IconCard icon={mdiRefresh} name="mdiRefresh" text="" />
         <IconCard icon={mdiWrench} name="mdiWrench" text="" />
-      </Row>
+      </Row> */}
     </div>
   );
 };

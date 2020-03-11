@@ -26,7 +26,7 @@ export const StoryNavbarNRCS = () => {
 
   return (
     <div>
-      <h1 className="docs">Navbar - NRCS</h1>
+      <h2 className="docs">Navbar - NRCS</h2>
       <p>
         This is a basic navbar. This is used as the navigation (mobile menu) for
         page headers and main navigation.
@@ -69,7 +69,7 @@ export const StoryNavbarFPAC = () => {
 
   return (
     <div>
-      <h1 className="docs">Navbar - FPAC</h1>
+      <h2 className="docs">Navbar - FPAC</h2>
       <p>
         This is a basic navbar. This is used as the navigation (mobile menu) for
         page headers and main navigation.

@@ -7,15 +7,15 @@ export default {
 
 export const RangeDefault = () => (
   <div>
-    <h1 className="docs">Range</h1>
+    <h2 className="docs">Range</h2>
 
-    <h2 className="docs">Default Custom</h2>
+    <h3 className="docs">Default Custom</h3>
     <FormGroup>
       <Label for="exampleCustomRange">Custom Range Label</Label>
       <CustomInput type="range" id="exampleCustomRange" name="customRange" />
     </FormGroup>
 
-    <h2 className="docs">Disabled</h2>
+    <h3 className="docs">Disabled</h3>
     <FormGroup>
       <Label for="exampleCustomRange">Disabled Range Label</Label>
       <CustomInput

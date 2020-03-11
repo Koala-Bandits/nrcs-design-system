@@ -14,7 +14,7 @@ export default {
 
 export const AlertsDefault = () => (
   <div>
-    <h1 className="docs">Inline Alerts - Default</h1>
+    <h2 className="docs">Inline Alerts - Default</h2>
 
     <Alert color="info">
       This is an <strong>info</strong> alert with{" "}
@@ -49,7 +49,7 @@ export const AlertsDefault = () => (
 
 export const AlertsWithIcons = () => (
   <div>
-    <h1 className="docs">Inline Alerts - with Icons</h1>
+    <h2 className="docs">Inline Alerts - with Icons</h2>
 
     <Alert color="info">
       <Container className="m-0">
@@ -143,7 +143,7 @@ export const AlertsDismissable = () => {
 
   return (
     <div>
-      <h1 className="docs">Inline Alerts - Dismissable</h1>
+      <h2 className="docs">Inline Alerts - Dismissable</h2>
 
       <Alert color="warning" isOpen={visible} toggle={onDismiss}>
         <Container className="m-0">
@@ -163,7 +163,7 @@ export const AlertsDismissable = () => {
 
 export const AlertsContent = () => (
   <div>
-    <h1 className="docs">Inline Alerts - with Content</h1>
+    <h2 className="docs">Inline Alerts - with Content</h2>
 
     <Alert color="success">
       <h4 className="alert-heading">

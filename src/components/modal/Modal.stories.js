@@ -34,7 +34,7 @@ export const ModalDefault = () => {
 
   return (
     <div className="docs-btn">
-      <h1 className="docs">Modal - Default</h1>
+      <h2 className="docs">Modal - Default</h2>
 
       <Row>
         <Col>

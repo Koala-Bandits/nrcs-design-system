@@ -7,9 +7,9 @@ export default {
 
 export const SwitchDefault = () => (
   <div>
-    <h1 className="docs">Switches</h1>
+    <h2 className="docs">Switches</h2>
 
-    <h2 className="docs">Default Custom</h2>
+    <h3 className="docs">Default Custom</h3>
     <FormGroup>
       <Label for="exampleCheckbox">Switch Label</Label>
       <CustomInput
@@ -39,7 +39,7 @@ export const SwitchDefault = () => (
       />
     </FormGroup>
 
-    <h2 className="docs">Inline Custom</h2>
+    <h3 className="docs">Inline Custom</h3>
     <FormGroup>
       <CustomInput
         type="switch"

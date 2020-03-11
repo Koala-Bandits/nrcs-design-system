@@ -14,7 +14,7 @@ export default {
 
 export const BannersDefault = () => (
   <div>
-    <h1 className="docs">Banners - Default</h1>
+    <h2 className="docs">Banners - Default</h2>
     <p>
       Banners are square Alerts, and used under a dialog header or container
       header, 100% width edge-to-edge.
@@ -53,7 +53,7 @@ export const BannersDefault = () => (
 
 export const BannersWithIcons = () => (
   <div>
-    <h1 className="docs">Banners - with Icons</h1>
+    <h2 className="docs">Banners - with Icons</h2>
     <p>
       Banners are square Alerts, and used under a dialog header or container
       header, 100% width edge-to-edge.
@@ -151,7 +151,7 @@ export const BannersDismissable = () => {
 
   return (
     <div>
-      <h1 className="docs">Banners - Dismissable</h1>
+      <h2 className="docs">Banners - Dismissable</h2>
       <p>
         Banners are square Alerts, and used under a dialog header or container
         header, 100% width edge-to-edge.
@@ -180,7 +180,7 @@ export const BannersDismissable = () => {
 
 export const BannersContent = () => (
   <div>
-    <h1 className="docs">Banners - with Content</h1>
+    <h2 className="docs">Banners - with Content</h2>
     <p>
       Banners are square Alerts, and used under a dialog header or container
       header, 100% width edge-to-edge.
