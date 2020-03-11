@@ -26,15 +26,15 @@ WebFont.load({
 // Routing via react-router
 // A <Switch> looks through its children <Route>s and renders the first one that matches the current URL.
 const routing = (
-  <Router>
+  <Router basename="/nrcs-design-system">
     <div>
       <Switch>
-        <Route exact path="/about" component={About} />
-        <Route exact path="/color" component={Color} />
-        <Route exact path="/typography" component={Typography} />
-        <Route exact path="/iconography" component={Iconography} />
-        <Route exact path="/accessibility" component={Accessibility} />
-        <Route exact path="/kitchen-sink" component={KitchenSink} />
+        <Route path="/about" component={About} />
+        <Route path="/color" component={Color} />
+        <Route path="/typography" component={Typography} />
+        <Route path="/iconography" component={Iconography} />
+        <Route path="/accessibility" component={Accessibility} />
+        <Route path="/kitchen-sink" component={KitchenSink} />
         <Route path="/" component={About} />
       </Switch>
     </div>
