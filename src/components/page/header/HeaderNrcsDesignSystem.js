@@ -43,7 +43,7 @@ export const HeaderNrcsDesignSystem = ({ ...rest }) => {
             </NavItem>
             <NavItem>
               <NavLink
-                href="/storybook"
+                href="https://koala-bandits.github.io/nrcs-design-system-storybook"
                 target="_blank"
                 rel="nopener noreferrer"
               >
