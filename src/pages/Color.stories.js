@@ -8,155 +8,148 @@ export const ColorStory = () => (
   <div className="container docs-color">
     <h1 className="docs">Color</h1>
 
-    <div className="container">
-      <div className="row">
-        <div className="col-md-4">
-          <div className="p-3 mb-3 bg-primary text-white docs-color-swatch">
-            Primary #205493
-            <p>
-              <small>
-                FPAC blue - Header, primary buttons, actions and controls
-              </small>
-            </p>
-          </div>
-        </div>
+    <p>Color desc text... to do.</p>
 
-        <div className="col-md-4">
-          <div className="p-3 mb-3 docs-color-primaryoutline docs-color-swatch">
-            Primary Outline #205493, bg: #fff/white
-            <p>
-              <small>Secondary buttons</small>
-            </p>
-          </div>
-        </div>
+    <h3 className="docs">Base Palette</h3>
 
-        <div className="col-md-4">
-          <div className="p-3 mb-3 bg-secondary text-white docs-color-swatch">
-            Secondary #236430{" "}
-            <p>
-              <small>FPAC green</small>
-            </p>
-          </div>
+    <div className="row">
+      <div className="col-md-4">
+        <div className="p-3 mb-3 bg-dark text-white docs-color-swatch">
+          Dark (gray-900) #212529
+          <p>
+            <small>Default text color</small>
+          </p>
         </div>
+      </div>
+      <div className="col-md-4">
+        <div className="p-3 mb-3 bg-light text-dark border docs-color-swatch">
+          Light (gray-100) #f8f9fa
+          <p>
+            <small>Background</small>
+          </p>
+        </div>
+      </div>
 
-        <div className="col-md-4">
-          <div className="p-3 mb-3 bg-success text-white docs-color-swatch">
-            Success #308a42
-            <p>
-              <small>10% lighter than Secondary green</small>
-            </p>
-          </div>
-        </div>
-
-        <div className="col-md-4">
-          <div className="p-3 mb-3 bg-danger text-white docs-color-swatch">
-            Danger #b70f0a
-          </div>
-        </div>
-
-        <div className="col-md-4">
-          <div className="p-3 mb-3 bg-warning text-dark docs-color-swatch">
-            Warning #fdb81e
-          </div>
-        </div>
-
-        <div className="col-md-4">
-          <div className="p-3 mb-3 bg-info text-white docs-color-swatch">
-            Info #296cbd
-            <p>
-              <small>10% lighter than Primary blue</small>
-            </p>
-          </div>
-        </div>
-
-        <div className="col-md-4">
-          <div className="p-3 mb-3 bg-light text-dark border docs-color-swatch">
-            Light (gray-100) #f8f9fa
-            <p>
-              <small>Background</small>
-            </p>
-          </div>
-        </div>
-
-        <div className="col-md-4">
-          <div className="p-3 mb-3 bg-dark text-white docs-color-swatch">
-            Dark (gray-900) #212529
-            <p>
-              <small>Default text color</small>
-            </p>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="p-3 mb-3 docs-color-active docs-color-swatch">
-            Active #d4e2f2
-            <p>
-              <small>Same as Info Alert bg</small>
-            </p>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="p-3 mb-3 docs-color-black text-white border docs-color-swatch">
-            Black #000
-            <p>
-              <small>(not really used)</small>
-            </p>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="p-3 mb-3 bg-white text-dark docs-color-swatch">
-            White #fff
-            <p>
-              <small>
-                Text and background of Card, Outline Buttons, and other
-                components
-              </small>
-            </p>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="p-3 mb-3 bg-white text-dark docs-color-swatch">
-            Focus Outline #TO-DO
-            <p>
-              <small>Focus indicator outline/highlight for accessibility</small>
-            </p>
-          </div>
+      <div className="col-md-4">
+        <div className="p-3 mb-3 bg-white text-dark docs-color-swatch">
+          White #fff
+          <p>
+            <small>
+              Text and background of Card, Outline Buttons, and other components
+            </small>
+          </p>
         </div>
       </div>
     </div>
 
-    <h2 className="docs">Grays</h2>
+    <h3 className="docs">Color Palette</h3>
 
-    <div className="container">
-      <div className="row mb-3">
-        <div className="col-md-12">
-          <div className="p-3 docs-gray-100">
-            100 - Default BACKGROUND color
-          </div>
+    <div className="row">
+      <div className="col-md-4">
+        <div className="p-3 mb-3 bg-primary text-white docs-color-swatch">
+          Primary #205493
+          <p>
+            <small>
+              FPAC blue - Header, primary buttons, actions and controls
+            </small>
+          </p>
+        </div>
+      </div>
+      <div className="col-md-4">
+        <div className="p-3 mb-3 bg-secondary text-white docs-color-swatch">
+          Secondary #236430{" "}
+          <p>
+            <small>FPAC green</small>
+          </p>
+        </div>
+      </div>
+      <div className="col-md-4">
+        <div className="p-3 mb-3 docs-color-primaryoutline docs-color-swatch">
+          Primary Outline #205493, bg: #fff/white
+          <p>
+            <small>Secondary buttons</small>
+          </p>
+        </div>
+      </div>
+    </div>
 
-          <div className="p-3 docs-gray-200">
-            200 - Default HOVER for menus and row selections
-          </div>
+    <h3 className="docs">Accent Palette</h3>
+    <div className="row">
+      <div className="col-md-4 mb-3">
+        <div className="p-3 bg-info text-white docs-color-swatch">
+          Information #296cbd
+          <p>
+            <small>10% lighter than Primary blue</small>
+          </p>
+        </div>
+        <div className="p-3 alert-info">
+          Information Bacground / Active Highlight
+        </div>
+      </div>
 
-          <div className="p-3 docs-gray-300">300</div>
+      <div className="col-md-4 mb-3">
+        <div className="p-3 bg-success text-white docs-color-swatch">
+          Success #308a42
+          <p>
+            <small>10% lighter than Secondary green</small>
+          </p>
+        </div>
+        <div className="p-3 alert-success">Successs Bacground</div>
+      </div>
 
-          <div className="p-3 docs-gray-400">400</div>
+      <div className="col-md-4 mb-3">
+        <div className="p-3 bg-danger text-white docs-color-swatch">
+          Danger #b70f0a
+        </div>
+        <div className="p-3 alert-danger">Danger Bacground</div>
+      </div>
 
-          <div className="p-3 docs-gray-500">
-            500 - Defaults BORDERS other than inputs
-          </div>
+      <div className="col-md-4 mb-3">
+        <div className="p-3 bg-warning text-dark docs-color-swatch">
+          Warning #fdb81e
+        </div>
+        <div className="p-3 alert-warning">Danger Bacground</div>
+      </div>
 
-          <div className="p-3 docs-gray-600 text-white">600</div>
+      <div className="col-md-4">
+        <div className="p-3 mb-3 bg-white text-dark docs-color-swatch">
+          Focus Outline #TO-DO
+          <p>
+            <small>Focus indicator outline/highlight for accessibility</small>
+          </p>
+        </div>
+      </div>
+    </div>
 
-          <div className="p-3 docs-gray-700 text-white">
-            700 - Default ICON and INPUT border colors for accessibilty (high
-            contrast)
-          </div>
+    <h3 className="docs">Grays</h3>
 
-          <div className="p-3 docs-gray-800 text-white">800</div>
+    <div className="row mb-3">
+      <div className="col-md-12">
+        <div className="p-3 docs-gray-100">100 - Default BACKGROUND color</div>
 
-          <div className="p-3 docs-gray-900 text-white">
-            900 - Default TEXT color
-          </div>
+        <div className="p-3 docs-gray-200">
+          200 - Default HOVER for menus and row selections
+        </div>
+
+        <div className="p-3 docs-gray-300">300</div>
+
+        <div className="p-3 docs-gray-400">400</div>
+
+        <div className="p-3 docs-gray-500">
+          500 - Defaults BORDERS other than inputs
+        </div>
+
+        <div className="p-3 docs-gray-600 text-white">600</div>
+
+        <div className="p-3 docs-gray-700 text-white">
+          700 - Default ICON and INPUT border colors for accessibilty (high
+          contrast)
+        </div>
+
+        <div className="p-3 docs-gray-800 text-white">800</div>
+
+        <div className="p-3 docs-gray-900 text-white">
+          900 - Default TEXT color
         </div>
       </div>
     </div>
