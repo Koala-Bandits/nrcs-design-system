@@ -8,7 +8,22 @@ export const ColorStory = () => (
   <div className="container docs-color">
     <h1 className="docs">Color</h1>
 
-    <p>Color desc text... to do.</p>
+    <p>
+      The NRCS Color Palette is anchored on around the USDA/FPAC Primary Geen
+      and Secondary Blue colors and goal of providing warmth and trust while
+      meeting strict 508 requirements of high color contrast.
+    </p>
+    <p>
+      Several NRCS applications currently use Blue as the primary color. So this
+      design system simply swaps the Blue for our Primary and the Green for our
+      Secondary while sticking very close to FPAC gray tertiary and accent
+      colors.
+    </p>
+    <p>
+      Newer projects that are just getting started, especially if public facing,
+      should consider using the Green as the Primary color and you'll see that
+      we provide header components that use it as an option.
+    </p>
 
     <h3 className="docs">Base Palette</h3>
 
