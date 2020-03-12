@@ -9,8 +9,8 @@ export const ColorStory = () => (
     <h1 className="docs">Color</h1>
 
     <p>
-      The NRCS Color Palette is anchored on around the USDA/FPAC Primary Geen
-      and Secondary Blue colors and goal of providing warmth and trust while
+      The NRCS Color Palette is anchored around the USDA/FPAC Primary Geen and
+      Secondary Blue colors and their goal of providing warmth and trust while
       meeting strict 508 requirements of high color contrast.
     </p>
     <p>
@@ -98,7 +98,7 @@ export const ColorStory = () => (
           </p>
         </div>
         <div className="p-3 alert-info">
-          Information Bacground / Active Highlight
+          Information Background / Active Highlight
         </div>
       </div>
 
@@ -109,21 +109,21 @@ export const ColorStory = () => (
             <small>10% lighter than Secondary green</small>
           </p>
         </div>
-        <div className="p-3 alert-success">Successs Bacground</div>
+        <div className="p-3 alert-success">Successs Background</div>
       </div>
 
       <div className="col-md-4 mb-3">
         <div className="p-3 bg-danger text-white docs-color-swatch">
           Danger #b70f0a
         </div>
-        <div className="p-3 alert-danger">Danger Bacground</div>
+        <div className="p-3 alert-danger">Danger Background</div>
       </div>
 
       <div className="col-md-4 mb-3">
         <div className="p-3 bg-warning text-dark docs-color-swatch">
           Warning #fdb81e
         </div>
-        <div className="p-3 alert-warning">Danger Bacground</div>
+        <div className="p-3 alert-warning">Danger Background</div>
       </div>
 
       <div className="col-md-4">

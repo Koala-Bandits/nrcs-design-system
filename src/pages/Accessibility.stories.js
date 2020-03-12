@@ -9,16 +9,52 @@ export const AccessibilityStory = () => (
     <h1 className="docs">Accessibility</h1>
 
     <p>
-      NRCS has 508 requirements for web applications that are quite strict and
-      generally aims for <strong>Level AA</strong> and{" "}
+      NRCS has accessibility requirements for web applications that are quite
+      strict and generally aims for <strong>Level AA</strong> and{" "}
       <strong>Level AAA</strong> standards.
     </p>
     <p>
       In our design system, our components and examples are coded with
-      accessibility <mark>(BETA - still largely a work in progress)</mark>
-      in mind to provide good examples for developers. However, it is still{" "}
+      accessibility <mark>(BETA - still largely a work in progress)</mark> in
+      mind to provide good examples for developers. However, it is still{" "}
       <strong>the developer's responsibility</strong> to produce accesssible
-      work.
+      work by testing for keyboard navigation using a screen reader (
+      <strong>
+        <a href="https://www.freedomscientific.com/products/software/jaws/">
+          JAWS
+        </a>
+      </strong>
+      ,{" "}
+      <strong>
+        <a href="https://www.nvaccess.org/download/">NVDA</a>
+      </strong>
+      ,{" "}
+      <strong>
+        <a href="https://chrome.google.com/webstore/detail/chromevox-classic-extensi/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en">
+          VOX
+        </a>
+      </strong>{" "}
+      or similar), checking for structure and syntax (
+      <strong>
+        <a href="https://wave.webaim.org/extension/">WAVE</a>
+      </strong>
+      ,{" "}
+      <strong>
+        <a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en">
+          Accessibility Dev Tools
+        </a>
+      </strong>
+      ,{" "}
+      <strong>
+        <a href="https://khan.github.io/tota11y/">Tota11y</a>
+      </strong>
+      ,{" "}
+      <strong>
+        <a href="https://webaim.org/resources/contrastchecker/">
+          contrast checker
+        </a>
+      </strong>
+      ), and be mindful of page work flow.
     </p>
     <h3>Guidelines</h3>
     <p>
