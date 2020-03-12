@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
 export const HeaderFpac = ({ ...rest }) => (
-  <Row className="fpac-header">
+  <Container fluid className="fpac-header p-0">
     <Container className="header-title h1 mb-0">
       <Row>
         <Col>
@@ -13,5 +13,5 @@ export const HeaderFpac = ({ ...rest }) => (
         </Col>
       </Row>
     </Container>
-  </Row>
+  </Container>
 );

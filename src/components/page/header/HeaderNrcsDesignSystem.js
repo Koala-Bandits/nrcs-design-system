@@ -20,7 +20,7 @@ export const HeaderNrcsDesignSystem = ({ ...rest }) => {
   const pathname = window.location.pathname;
 
   return (
-    <div className="mb-3">
+    <div className="mb-5">
       <HeaderNrcs />
       <NavbarNrcs>
         <NavbarToggler onClick={toggle} />

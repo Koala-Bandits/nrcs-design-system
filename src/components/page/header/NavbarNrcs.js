@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Navbar } from "reactstrap";
 
 export const NavbarNrcs = ({ ...rest }) => (
-  <Row className="bg-primary">
+  <Container fluid className="bg-primary p-0">
     <Container>
       <Navbar
         className="pl-0 pr-0"
@@ -12,5 +12,5 @@ export const NavbarNrcs = ({ ...rest }) => (
         {...rest}
       />
     </Container>
-  </Row>
+  </Container>
 );

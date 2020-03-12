@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
 export const HeaderNrcs = ({ ...rest }) => (
-  <Row className="nrcs-header">
+  <Container fluid className="nrcs-header p-0">
     <Container className="header-title h1 mb-0">
       <Row>
         <Col>
@@ -12,5 +12,5 @@ export const HeaderNrcs = ({ ...rest }) => (
         </Col>
       </Row>
     </Container>
-  </Row>
+  </Container>
 );
