@@ -1,6 +1,6 @@
 import React from "react";
 import { HeaderNrcsDesignSystem } from "components/page/header/HeaderNrcsDesignSystem";
-import { AboutStory } from "stories/About.stories";
+import { AboutStory } from "pages/About.stories";
 
 class About extends React.Component {
   constructor(props) {

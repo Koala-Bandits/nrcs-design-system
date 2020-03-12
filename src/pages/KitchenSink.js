@@ -1,6 +1,6 @@
 import React from "react";
 import { HeaderNrcsDesignSystem } from "components/page/header/HeaderNrcsDesignSystem";
-import { KitchenSinkStory } from "stories/KitchenSink.stories";
+import { KitchenSinkStory } from "pages/KitchenSink.stories";
 
 class KitchenSink extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from "react";
 import { HeaderNrcsDesignSystem } from "components/page/header/HeaderNrcsDesignSystem";
-import { ColorStory } from "stories/Color.stories";
+import { ColorStory } from "pages/Color.stories";
 
 class Color extends React.Component {
   constructor(props) {
