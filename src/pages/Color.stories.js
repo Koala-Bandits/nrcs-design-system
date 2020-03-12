@@ -50,7 +50,7 @@ export const ColorStory = () => (
           White #fff
           <p>
             <small>
-              Text and background of Card, Outline Buttons, and other components
+              Background of Card, Outline Buttons, and other components
             </small>
           </p>
         </div>

@@ -21,9 +21,9 @@ h6.docs {
   margin-top: 1.5rem;
 }
 
-li {
-  margin-bottom: 0.85rem;
-}
+// li {
+//   margin-bottom: 0.85rem;
+// }
 
 ///////////////////////////
 // DOCS MISC
@@ -151,5 +151,38 @@ li {
 
   .header-subtitle {
     color: rgba(255, 255, 255, 0.5) !important; // 'text-white-50'
+  }
+}
+// Page Footer
+.fpac-footer {
+  color: $white;
+  background-color: $gray-600;
+}
+.fpac-footer .col {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.fpac-footer .nav-link,
+.fpac-footer a {
+  color: $white;
+  padding: 0.25rem 0.25rem 0.25rem 0;
+}
+.fpac-footer .nav-link:hover,
+.fpac-footer a:hover {
+  text-decoration: underline;
+}
+.fpac-footer-header,
+.fpac-footer-header-secondary {
+  font-size: 20px;
+}
+.fpac-footer-secondary {
+  border-left: 1px solid rgba(255, 255, 255, 0.5); // 'text-white-50'
+
+  @include media-breakpoint-up(md) {
+    padding-left: 3rem;
+  }
+  @include media-breakpoint-down(sm) {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5); // 'text-white-50'
   }
 }

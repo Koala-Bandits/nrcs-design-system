@@ -15,21 +15,11 @@ export const AboutStory = () => (
     </p>
 
     <p>
-      <strong>
-        A design system using{" "}
-        <a
-          href="https://koala-bandits.github.io/nrcs-style/"
-          target="_blank"
-          rel="nopener noreferrer"
-        >
-          nrcs-style
-        </a>{" "}
-        produced for our partners at NRCS.{" "}
-      </strong>
+      <strong>A design system produced for our partners at NRCS.</strong>
     </p>
     <ul>
       <li>
-        Inspired by{" "}
+        An adaptation of the{" "}
         <a
           href="http://usda-fsa.github.io/fsa-design-system/"
           target="_blank"
