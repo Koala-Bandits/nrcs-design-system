@@ -6,7 +6,7 @@ export const HeaderNrcs = ({ ...rest }) => (
     <Container className="header-title h1 mb-0">
       <Row>
         <Col>
-          <a href="/home" title="Home" aria-label="Home">
+          <a href="/nrcs-design-system/" title="Home" aria-label="Home">
             NRCS Design System <span className="header-subtitle">| BETA</span>
           </a>
         </Col>

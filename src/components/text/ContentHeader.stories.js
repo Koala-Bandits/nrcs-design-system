@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  ContentHeaderH1,
+  ContentHeaderH2,
+  ContentHeaderH3,
+  ContentHeaderH4,
+  ContentHeaderH5,
+  ContentHeaderH6
+} from "./ContentHeader";
 import Icon from "@mdi/react";
 import { mdiHelpCircle, mdiCloseCircle, mdiHuman } from "@mdi/js";
 
@@ -15,17 +23,17 @@ export const ContentHeaderDefault = () => (
       across it's container.
     </p>
 
-    <h3 className="border-bottom w-100 pb-1">h1. Content Header</h3>
+    <ContentHeaderH1>h1. Content Header</ContentHeaderH1>
     <p></p>
-    <h3 className="border-bottom w-100 pb-1">h2. Content Header</h3>
+    <ContentHeaderH2>h1. Content Header</ContentHeaderH2>
     <p></p>
-    <h3 className="border-bottom w-100 pb-1">h3. Content Header</h3>
+    <ContentHeaderH3>h1. Content Header</ContentHeaderH3>
     <p></p>
-    <h4 className="border-bottom w-100 pb-1">h4. Content Header</h4>
+    <ContentHeaderH4>h1. Content Header</ContentHeaderH4>
     <p></p>
-    <h5 className="border-bottom w-100 pb-1">h5. Content Header</h5>
+    <ContentHeaderH5>h1. Content Header</ContentHeaderH5>
     <p></p>
-    <h6 className="border-bottom w-100 pb-1">h6. Content Header</h6>
+    <ContentHeaderH6>h1. Content Header</ContentHeaderH6>
   </div>
 );
 
@@ -43,59 +51,32 @@ export const ContentHeaderIcons = () => (
       </strong>
     </p>
 
-    <h3 className="border-bottom w-100 pb-1">
+    <ContentHeaderH1>
       h1. Content Header
       <span className="float-right">
         <Icon className="mdi" className="mdi" path={mdiHuman} />
         <Icon className="mdi" path={mdiHelpCircle} />
         <Icon className="mdi" path={mdiCloseCircle} />
       </span>
-    </h3>
+    </ContentHeaderH1>
     <p></p>
-    <h3 className="border-bottom w-100 pb-1">
+    <ContentHeaderH2>
       h2. Content Header
       <span className="float-right">
-        <Icon className="mdi" path={mdiHuman} />
+        <Icon className="mdi" className="mdi" path={mdiHuman} />
         <Icon className="mdi" path={mdiHelpCircle} />
         <Icon className="mdi" path={mdiCloseCircle} />
       </span>
-    </h3>
+    </ContentHeaderH2>
     <p></p>
-    <h3 className="border-bottom w-100 pb-1">
+    <ContentHeaderH3>
       h3. Content Header
       <span className="float-right">
-        <Icon className="mdi" path={mdiHuman} />
+        <Icon className="mdi" className="mdi" path={mdiHuman} />
         <Icon className="mdi" path={mdiHelpCircle} />
         <Icon className="mdi" path={mdiCloseCircle} />
       </span>
-    </h3>
-    {/*<p></p>
-     <h4 className="border-bottom w-100 pb-1">
-      h4. Content Header
-      <span className="float-right">
-        <Icon className="mdi" path={mdiHuman} size={1} />
-        <Icon className="mdi" path={mdiHelpCircle} size={1} />
-        <Icon className="mdi" path={mdiCloseCircle} size={1} />
-      </span>
-    </h4>
-    <p></p>
-    <h5 className="border-bottom w-100 pb-1">
-      h5. Content Header
-      <span className="float-right">
-        <Icon className="mdi" path={mdiHuman} size={0.9} />
-        <Icon className="mdi" path={mdiHelpCircle} size={0.9} />
-        <Icon className="mdi" path={mdiCloseCircle} size={0.9} />
-      </span>
-    </h5>
-    <p></p>
-    <h6 className="border-bottom w-100 pb-1">
-      h6. Content Header
-      <span className="float-right">
-        <Icon className="mdi" path={mdiHuman} size={0.7} />
-        <Icon className="mdi" path={mdiHelpCircle} size={0.7} />
-        <Icon className="mdi" path={mdiCloseCircle} size={0.7} />
-      </span>
-    </h6> */}
+    </ContentHeaderH3>
   </div>
 );
 

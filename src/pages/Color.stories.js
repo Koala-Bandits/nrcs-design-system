@@ -10,14 +10,14 @@ export const ColorStory = () => (
 
     <p>
       The NRCS Color Palette is anchored around the USDA/FPAC Primary Geen and
-      Secondary Blue colors and their goal of providing meeting strict 508
-      requirements of high color contrast.
+      Secondary Blue colors and their goal of meeting strict 508 requirements of
+      high color contrast.
     </p>
     <p>
-      Several NRCS applications currently use Blue as the primary color. So this
-      design system simply swaps the Blue for our Primary and the Green for our
-      Secondary. NRCS gray tertiary and accent colors are adjusted to slightly
-      to match the coolness of the blue as primary.
+      Several NRCS applications currently use Blue as the primary color coming
+      from their water theme. So this design system simply swaps the Blue for
+      our Primary and the Green for our Secondary. NRCS gray tertiary and accent
+      colors are adjusted slightly to match the coolness of the blue as primary.
     </p>
     <p>
       New projects, especially if public facing, should consider using the Green
@@ -109,21 +109,27 @@ export const ColorStory = () => (
             <small>10% lighter than Secondary green</small>
           </p>
         </div>
-        <div className="p-3 alert-success">Successs Background</div>
+        <div className="p-3 alert alert-banner alert-success">
+          Successs Background
+        </div>
       </div>
 
       <div className="col-md-4 mb-3">
         <div className="p-3 bg-danger text-white docs-color-swatch">
           Danger #b70f0a
         </div>
-        <div className="p-3 alert-danger">Danger Background</div>
+        <div className="p-3 alert alert-banner alert-danger">
+          Danger Background
+        </div>
       </div>
 
       <div className="col-md-4 mb-3">
         <div className="p-3 bg-warning text-dark docs-color-swatch">
           Warning #fdb81e
         </div>
-        <div className="p-3 alert-warning">Danger Background</div>
+        <div className="p-3 alert alert-banner alert-warning">
+          Danger Background
+        </div>
       </div>
 
       <div className="col-md-4">
