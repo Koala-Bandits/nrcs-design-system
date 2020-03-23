@@ -785,8 +785,8 @@ $nav-tabs-link-active-border-color: $primary $border-color
 // $navbar-toggler-font-size: $font-size-lg !default;
 // $navbar-toggler-border-radius: $btn-border-radius !default;
 
-// $navbar-dark-color: rgba($white, 0.5) !default;
-// $navbar-dark-hover-color: rgba($white, 0.75) !default;
+$navbar-dark-color: rgba($white, 0.75); // rgba($white, 0.5) !default;
+$navbar-dark-hover-color: $white; // rgba($white, 0.75) !default;
 // $navbar-dark-active-color: $white !default;
 // $navbar-dark-disabled-color: rgba($white, 0.25) !default;
 // $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
