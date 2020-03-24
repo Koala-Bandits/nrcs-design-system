@@ -20,21 +20,25 @@ export const AboutStory = () => (
     <ul>
       <li>
         An adaptation of the{" "}
-        <a
-          href="http://usda-fsa.github.io/fsa-design-system/"
-          target="_blank"
-          rel="nopener noreferrer"
-        >
-          FPAC Design System
-        </a>{" "}
+        <strong>
+          <a
+            href="http://usda-fsa.github.io/fsa-design-system/"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
+            FPAC Design System
+          </a>
+        </strong>{" "}
         and its inherent roots from the{" "}
-        <a
-          href="https://designsystem.digital.gov/"
-          target="_blank"
-          rel="nopener noreferrer"
-        >
-          U.S. Web Design System
-        </a>
+        <strong>
+          <a
+            href="https://designsystem.digital.gov/"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
+            U.S. Web Design System
+          </a>
+        </strong>
         . If you are working on a project with FPAC or its related agencies, it
         is suggested you consider starting with these design systems.
       </li>
@@ -51,66 +55,70 @@ export const AboutStory = () => (
         converge upon for consistent implementation in design and style.
       </li>
       <li>
-        The NRCS Design System is based on{" "}
-        <a
-          href="https://koala-bandits.github.io/nrcs-style/"
-          target="_blank"
-          rel="nopener noreferrer"
-        >
-          nrcs-style
-        </a>{" "}
-        which is a custom{" "}
-        <a
-          href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"
-          target="_blank"
-          rel="nopener noreferrer"
-        >
-          Bootstrap
-        </a>{" "}
+        The NRCS Design System is based on a custom{" "}
+        <strong>
+          <a
+            href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
+            Bootstrap
+          </a>
+        </strong>{" "}
         theme. Therefore all users can refer to Bootstrap documentation for{" "}
-        <a
-          href="https://getbootstrap.com/docs/4.4/components/"
-          target="_blank"
-          rel="nopener noreferrer"
-        >
-          component styles
-        </a>
+        <strong>
+          <a
+            href="https://getbootstrap.com/docs/4.4/components/"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
+            component styles
+          </a>
+        </strong>
         ,{" "}
-        <a
-          href="https://getbootstrap.com/docs/4.4/layout/overview/"
-          target="_blank"
-          rel="nopener noreferrer"
-        >
-          layouts
-        </a>
+        <strong>
+          <a
+            href="https://getbootstrap.com/docs/4.4/layout/overview/"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
+            layouts
+          </a>
+        </strong>
         , and{" "}
-        <a
-          href="https://getbootstrap.com/docs/4.4/utilities/"
-          target="_blank"
-          rel="nopener noreferrer"
-        >
-          utilities
-        </a>
+        <strong>
+          <a
+            href="https://getbootstrap.com/docs/4.4/utilities/"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
+            utilities
+          </a>
+        </strong>
         . It's recommended that all styles are done through Bootstrap clasess
         and keep hand-written CSS to a minimum.
       </li>
       <li>
         This site is built with React, StoryBook, using{" "}
-        <a
-          href="https://reactstrap.github.io/"
-          target="_blank"
-          rel="nopener noreferrer"
-        >
-          ReactStrap
-        </a>
+        <strong>
+          <a
+            href="https://reactstrap.github.io/"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
+            ReactStrap
+          </a>
+        </strong>
         . The{" "}
-        <a
-          href="https://github.com/Koala-Bandits/nrcs-design-system"
-          target="_blank"
-          rel="nopener noreferrer"
-        >
-          source
-        </a>{" "}
+        <strong>
+          <a
+            href="https://github.com/Koala-Bandits/nrcs-design-system"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
+            source
+          </a>
+        </strong>{" "}
         for this project can serve as an example implementation and start to
         components.
       </li>
