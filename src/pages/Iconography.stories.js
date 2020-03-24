@@ -2,6 +2,10 @@ import React from "react";
 import Icon from "@mdi/react";
 import { Row, Col, Card, CardBody, CardText, Table } from "reactstrap";
 import {
+  ContentHeaderH1,
+  ContentHeaderH2
+} from "components/text/ContentHeader";
+import {
   mdiAccount,
   mdiAccountCircle,
   mdiAccountCog,
@@ -116,7 +120,7 @@ export const IconographyStory = () => {
 
   return (
     <div className="container">
-      <h1 className="docs">Iconography</h1>
+      <ContentHeaderH1>Iconography</ContentHeaderH1>
 
       <p>
         NRCS Design System is using the{" "}
@@ -159,263 +163,273 @@ export const IconographyStory = () => {
 
       <code>{iconExampleText}</code>
 
-      <h2 className="mt-4">Legend (most commonly used)</h2>
+      <ContentHeaderH2>Legend (most commonly used)</ContentHeaderH2>
       <p>
         For the best user experience, the icons listed here should be used
         consistently for the purposes described.
       </p>
       <Row>
-        <Table className="table-alt">
-          <thead>
-            <tr>
-              <th>Icon</th>
-              <th>Icon Name</th>
-              <th>Usage Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <IconRow
-              icon={mdiAccount}
-              name="mdiAccount"
-              text="User account, user preferences"
-            />
-            <IconRow
-              icon={mdiAccountCircle}
-              name="mdiAccountCircle"
-              text="Alternate user account, user preferences"
-            />
-            <IconRow
-              icon={mdiAccountCog}
-              name="mdiAccountCircle"
-              text="User account preferences, settings"
-            />
-            <IconRow
-              icon={mdiAccountMultiple}
-              name="mdiAccountMultiple"
-              text="Users, clients, people"
-            />
-            <IconRow
-              icon={mdiAlert}
-              name="mdiAlert"
-              text="Warning alerts (growls, messaging), caution"
-            />
-            <IconRow
-              icon={mdiAlertCircle}
-              name="mdiAlertCircle"
-              text="Error alerts (growls, messaging, validation), danger"
-            />
-            <IconRow
-              icon={mdiBell}
-              name="mdiBell"
-              text="Notifications (not alerts)"
-            />
-            <IconRow
-              icon={mdiBellOutline}
-              name="mdiBellOutline"
-              text="Notifications (not alerts) alternate"
-            />
-            <IconRow
-              icon={mdiCalendar}
-              name="mdiCalendar"
-              text="Calendar and date pickers"
-            />
-            <IconRow
-              icon={mdiCalendarBlank}
-              name="mdiCalendarBlank"
-              text="Calendar and date pickers"
-            />
-            <IconRow
-              icon={mdiCheck}
-              name="mdiCheck"
-              text="Used as an idication of selection, choice, included"
-            />
-            <IconRow
-              icon={mdiCheckCircle}
-              name="mdiCheckCircle"
-              text="Success alerts and status, complete"
-            />
-            <IconRow
-              icon={mdiCheckCircleOutline}
-              name="mdiCheckCircleOutline"
-              text="Success, complete, status alternate"
-            />
-            <IconRow
-              icon={mdiCheckboxMarked}
-              name="mdiCheckboxMarked"
-              text="Used to show checked status, inclusion, or selection (careful: not a checkbox)"
-            />
-            <IconRow
-              icon={mdiChevronDown}
-              name="mdiChevronDown"
-              text="Open for dropdowns and menus, open state for expansions"
-            />
-            <IconRow
-              icon={mdiChevronLeft}
-              name="mdiChevronLeft"
-              text="Previous, back"
-            />
-            <IconRow
-              icon={mdiChevronRight}
-              name="mdiChevronRight"
-              text="Next, indicator"
-            />
-            <IconRow
-              icon={mdiChevronDoubleDown}
-              name="mdiChevronDoubleDown"
-              text="Expand-all"
-            />
-            <IconRow
-              icon={mdiChevronDoubleUp}
-              name="mdiChevronDoubleUp"
-              text="Collapse-all"
-            />
-            <IconRow icon={mdiClose} name="mdiClose" text="Close" />
-            <IconRow
-              icon={mdiCloseCircle}
-              name="mdiCloseCircle"
-              text="Remove from list (non-permanent)"
-            />
-            <IconRow
-              icon={mdiCloseCircleOutline}
-              name="mdiCloseCircleOutline"
-              text="Remove alternate"
-            />
-            <IconRow
-              icon={mdiClockOutline}
-              name="mdiClockOutline"
-              text="Clock, time, in-progress status"
-            />
-            {/* <IconRow icon={mdiCog} name="mdiCog" text="" /> */}
-            <IconRow icon={mdiContentCopy} name="mdiContentCopy" text="Copy" />
-            <IconRow icon={mdiContentCut} name="mdiContentCut" text="Cut" />
-            <IconRow
-              icon={mdiContentPaste}
-              name="mdiContentPaste"
-              text="Paste"
-            />
-            <IconRow
-              icon={mdiCursorDefault}
-              name="mdiCursorDefault"
-              text="Cursor default"
-            />
-            <IconRow
-              icon={mdiCursorMove}
-              name="mdiCursorMove"
-              text="Cursor move, pan"
-            />
-            <IconRow
-              icon={mdiCursorPointer}
-              name="mdiCursorPointer"
-              text="Cursor pointer, selection"
-            />
-            <IconRow
-              icon={mdiCursorText}
-              name="mdiCursorText"
-              text="Cursor text"
-            />
-            <IconRow
-              icon={mdiDelete}
-              name="mdiDelete"
-              text="Delete permanently"
-            />
-            <IconRow
-              icon={mdiDotsVertical}
-              name="mdiDotsVertical"
-              text="Actions, menu"
-            />
-            <IconRow
-              icon={mdiDotsVerticalCircle}
-              name="mdiDotsVerticalCircle"
-              text="Actions, menu alternate"
-            />
-            <IconRow icon={mdiDownload} name="mdiDownload" text="Download" />
-            <IconRow
-              icon={mdiExport}
-              name="mdiExport"
-              text="Export data, files"
-            />
-            <IconRow icon={mdiEye} name="mdiEye" text="View, preview" />
-            <IconRow icon={mdiFilter} name="mdiFilter" text="Filter" />
-            <IconRow icon={mdiHelpCircle} name="mdiHelpCircle" text="Help" />
-            <IconRow
-              icon={mdiHelpCircleOutline}
-              name="mdiHelpCircleOutline"
-              text="Help alternate, contextual"
-            />
-            <IconRow icon={mdiHome} name="mdiHome" text="Home, homepage" />
-            <IconRow
-              icon={mdiImport}
-              name="mdiImport"
-              text="Import data, files"
-            />
-            <IconRow
-              icon={mdiInformation}
-              name="mdiInformation"
-              text="Information alerts (growls and messaging)"
-            />
-            <IconRow icon={mdiLayers} name="mdiLayers" text="Layers" />
-            <IconRow icon={mdiLock} name="mdiLock" text="Locked" />
-            <IconRow
-              icon={mdiLockOpenOutline}
-              name="mdiLockOpenOutline"
-              text="Unlocked"
-            />
-            <IconRow icon={mdiLogin} name="mdiLogin" text="Login" />
-            <IconRow icon={mdiLogout} name="mdiLogout" text="Logout" />
-            <IconRow icon={mdiMagnify} name="mdiMagnify" text="Search" />
-            <IconRow
-              icon={mdiMapMarker}
-              name="mdiMapMarker"
-              text="Map marker, point, pin"
-            />
-            <IconRow
-              icon={mdiMenu}
-              name="mdiMenu"
-              text="Menu, mobile menu toggle"
-            />
-            <IconRow icon={mdiMenuDown} name="mdiMenuDown" text="Node open" />
-            <IconRow
-              icon={mdiMenuRight}
-              name="mdiMenuRight"
-              text="Node closed"
-            />
-            <IconRow
-              icon={mdiMinusBox}
-              name="mdiMinusBox"
-              text="Indeterminate"
-            />
-            <IconRow
-              icon={mdiMinusBoxOutline}
-              name="mdiMinusBoxOutline"
-              text="Indeterminate alternate"
-            />
-            <IconRow
-              icon={mdiMinusCircle}
-              name="mdiMinusCircle"
-              text="Not started, unavailable"
-            />
-            <IconRow
-              icon={mdiMinusCircleOutline}
-              name="mdiMinusCircleOutline"
-              text="Not started, unavailable"
-            />
-            <IconRow
-              icon={mdiOpenInNew}
-              name="mdiOpenInNew"
-              text="Open in new window (external links)"
-            />
-            <IconRow icon={mdiPen} name="mdiPen" text="Sign, signature" />
-            <IconRow icon={mdiPencil} name="mdiPencil" text="Edit" />
-            <IconRow icon={mdiPlus} name="mdiPlus" text="Add new" />
-            <IconRow icon={mdiPlusBox} name="mdiPlusBox" text="Add new" />
-            <IconRow
-              icon={mdiRefresh}
-              name="mdiRefresh"
-              text="Refresh, reload"
-            />
-            <IconRow icon={mdiWrench} name="mdiWrench" text="Admin, support" />
-          </tbody>
-        </Table>
+        <Col>
+          <Table className="table-alt">
+            <thead>
+              <tr>
+                <th>Icon</th>
+                <th>Icon Name</th>
+                <th>Usage Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <IconRow
+                icon={mdiAccount}
+                name="mdiAccount"
+                text="User account, user preferences"
+              />
+              <IconRow
+                icon={mdiAccountCircle}
+                name="mdiAccountCircle"
+                text="Alternate user account, user preferences"
+              />
+              <IconRow
+                icon={mdiAccountCog}
+                name="mdiAccountCircle"
+                text="User account preferences, settings"
+              />
+              <IconRow
+                icon={mdiAccountMultiple}
+                name="mdiAccountMultiple"
+                text="Users, clients, people"
+              />
+              <IconRow
+                icon={mdiAlert}
+                name="mdiAlert"
+                text="Warning alerts (growls, messaging), caution"
+              />
+              <IconRow
+                icon={mdiAlertCircle}
+                name="mdiAlertCircle"
+                text="Error alerts (growls, messaging, validation), danger"
+              />
+              <IconRow
+                icon={mdiBell}
+                name="mdiBell"
+                text="Notifications (not alerts)"
+              />
+              <IconRow
+                icon={mdiBellOutline}
+                name="mdiBellOutline"
+                text="Notifications (not alerts) alternate"
+              />
+              <IconRow
+                icon={mdiCalendar}
+                name="mdiCalendar"
+                text="Calendar and date pickers"
+              />
+              <IconRow
+                icon={mdiCalendarBlank}
+                name="mdiCalendarBlank"
+                text="Calendar and date pickers"
+              />
+              <IconRow
+                icon={mdiCheck}
+                name="mdiCheck"
+                text="Used as an idication of selection, choice, included"
+              />
+              <IconRow
+                icon={mdiCheckCircle}
+                name="mdiCheckCircle"
+                text="Success alerts and status, complete"
+              />
+              <IconRow
+                icon={mdiCheckCircleOutline}
+                name="mdiCheckCircleOutline"
+                text="Success, complete, status alternate"
+              />
+              <IconRow
+                icon={mdiCheckboxMarked}
+                name="mdiCheckboxMarked"
+                text="Used to show checked status, inclusion, or selection (careful: not a checkbox)"
+              />
+              <IconRow
+                icon={mdiChevronDown}
+                name="mdiChevronDown"
+                text="Open for dropdowns and menus, open state for expansions"
+              />
+              <IconRow
+                icon={mdiChevronLeft}
+                name="mdiChevronLeft"
+                text="Previous, back"
+              />
+              <IconRow
+                icon={mdiChevronRight}
+                name="mdiChevronRight"
+                text="Next, indicator"
+              />
+              <IconRow
+                icon={mdiChevronDoubleDown}
+                name="mdiChevronDoubleDown"
+                text="Expand-all"
+              />
+              <IconRow
+                icon={mdiChevronDoubleUp}
+                name="mdiChevronDoubleUp"
+                text="Collapse-all"
+              />
+              <IconRow icon={mdiClose} name="mdiClose" text="Close" />
+              <IconRow
+                icon={mdiCloseCircle}
+                name="mdiCloseCircle"
+                text="Remove from list (non-permanent)"
+              />
+              <IconRow
+                icon={mdiCloseCircleOutline}
+                name="mdiCloseCircleOutline"
+                text="Remove alternate"
+              />
+              <IconRow
+                icon={mdiClockOutline}
+                name="mdiClockOutline"
+                text="Clock, time, in-progress status"
+              />
+              {/* <IconRow icon={mdiCog} name="mdiCog" text="" /> */}
+              <IconRow
+                icon={mdiContentCopy}
+                name="mdiContentCopy"
+                text="Copy"
+              />
+              <IconRow icon={mdiContentCut} name="mdiContentCut" text="Cut" />
+              <IconRow
+                icon={mdiContentPaste}
+                name="mdiContentPaste"
+                text="Paste"
+              />
+              <IconRow
+                icon={mdiCursorDefault}
+                name="mdiCursorDefault"
+                text="Cursor default"
+              />
+              <IconRow
+                icon={mdiCursorMove}
+                name="mdiCursorMove"
+                text="Cursor move, pan"
+              />
+              <IconRow
+                icon={mdiCursorPointer}
+                name="mdiCursorPointer"
+                text="Cursor pointer, selection"
+              />
+              <IconRow
+                icon={mdiCursorText}
+                name="mdiCursorText"
+                text="Cursor text"
+              />
+              <IconRow
+                icon={mdiDelete}
+                name="mdiDelete"
+                text="Delete permanently"
+              />
+              <IconRow
+                icon={mdiDotsVertical}
+                name="mdiDotsVertical"
+                text="Actions, menu"
+              />
+              <IconRow
+                icon={mdiDotsVerticalCircle}
+                name="mdiDotsVerticalCircle"
+                text="Actions, menu alternate"
+              />
+              <IconRow icon={mdiDownload} name="mdiDownload" text="Download" />
+              <IconRow
+                icon={mdiExport}
+                name="mdiExport"
+                text="Export data, files"
+              />
+              <IconRow icon={mdiEye} name="mdiEye" text="View, preview" />
+              <IconRow icon={mdiFilter} name="mdiFilter" text="Filter" />
+              <IconRow icon={mdiHelpCircle} name="mdiHelpCircle" text="Help" />
+              <IconRow
+                icon={mdiHelpCircleOutline}
+                name="mdiHelpCircleOutline"
+                text="Help alternate, contextual"
+              />
+              <IconRow icon={mdiHome} name="mdiHome" text="Home, homepage" />
+              <IconRow
+                icon={mdiImport}
+                name="mdiImport"
+                text="Import data, files"
+              />
+              <IconRow
+                icon={mdiInformation}
+                name="mdiInformation"
+                text="Information alerts (growls and messaging)"
+              />
+              <IconRow icon={mdiLayers} name="mdiLayers" text="Layers" />
+              <IconRow icon={mdiLock} name="mdiLock" text="Locked" />
+              <IconRow
+                icon={mdiLockOpenOutline}
+                name="mdiLockOpenOutline"
+                text="Unlocked"
+              />
+              <IconRow icon={mdiLogin} name="mdiLogin" text="Login" />
+              <IconRow icon={mdiLogout} name="mdiLogout" text="Logout" />
+              <IconRow icon={mdiMagnify} name="mdiMagnify" text="Search" />
+              <IconRow
+                icon={mdiMapMarker}
+                name="mdiMapMarker"
+                text="Map marker, point, pin"
+              />
+              <IconRow
+                icon={mdiMenu}
+                name="mdiMenu"
+                text="Menu, mobile menu toggle"
+              />
+              <IconRow icon={mdiMenuDown} name="mdiMenuDown" text="Node open" />
+              <IconRow
+                icon={mdiMenuRight}
+                name="mdiMenuRight"
+                text="Node closed"
+              />
+              <IconRow
+                icon={mdiMinusBox}
+                name="mdiMinusBox"
+                text="Indeterminate"
+              />
+              <IconRow
+                icon={mdiMinusBoxOutline}
+                name="mdiMinusBoxOutline"
+                text="Indeterminate alternate"
+              />
+              <IconRow
+                icon={mdiMinusCircle}
+                name="mdiMinusCircle"
+                text="Not started, unavailable"
+              />
+              <IconRow
+                icon={mdiMinusCircleOutline}
+                name="mdiMinusCircleOutline"
+                text="Not started, unavailable"
+              />
+              <IconRow
+                icon={mdiOpenInNew}
+                name="mdiOpenInNew"
+                text="Open in new window (external links)"
+              />
+              <IconRow icon={mdiPen} name="mdiPen" text="Sign, signature" />
+              <IconRow icon={mdiPencil} name="mdiPencil" text="Edit" />
+              <IconRow icon={mdiPlus} name="mdiPlus" text="Add new" />
+              <IconRow icon={mdiPlusBox} name="mdiPlusBox" text="Add new" />
+              <IconRow
+                icon={mdiRefresh}
+                name="mdiRefresh"
+                text="Refresh, reload"
+              />
+              <IconRow
+                icon={mdiWrench}
+                name="mdiWrench"
+                text="Admin, support"
+              />
+            </tbody>
+          </Table>
+        </Col>
       </Row>
       {/* <Row xs="1" sm="2">
         <IconCard

@@ -1,4 +1,8 @@
 import React from "react";
+import {
+  ContentHeaderH1,
+  ContentHeaderH2
+} from "components/text/ContentHeader";
 
 export default {
   title: "Design System|Color"
@@ -6,7 +10,7 @@ export default {
 
 export const ColorStory = () => (
   <div className="container docs-color">
-    <h1 className="docs">Color</h1>
+    <ContentHeaderH1>Color</ContentHeaderH1>
 
     <p>
       The NRCS Color Palette is anchored around the USDA/FPAC Primary Geen and
@@ -25,7 +29,7 @@ export const ColorStory = () => (
       use it as an option.
     </p>
 
-    <h3 className="docs">Base Palette</h3>
+    <ContentHeaderH2>Base Palette</ContentHeaderH2>
 
     <div className="row">
       <div className="col-md-4">
@@ -57,7 +61,7 @@ export const ColorStory = () => (
       </div>
     </div>
 
-    <h3 className="docs">Color Palette</h3>
+    <ContentHeaderH2>Color Palette</ContentHeaderH2>
 
     <div className="row">
       <div className="col-md-4">
@@ -88,7 +92,8 @@ export const ColorStory = () => (
       </div>
     </div>
 
-    <h3 className="docs">Accent Palette</h3>
+    <ContentHeaderH2>Accent Palette</ContentHeaderH2>
+
     <div className="row">
       <div className="col-md-4 mb-3">
         <div className="p-3 bg-info text-white docs-color-swatch">
@@ -142,7 +147,7 @@ export const ColorStory = () => (
       </div>
     </div>
 
-    <h3 className="docs">Grays</h3>
+    <ContentHeaderH2>Grays</ContentHeaderH2>
 
     <div className="row mb-3">
       <div className="col-md-12">

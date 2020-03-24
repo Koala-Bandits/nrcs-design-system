@@ -1,5 +1,9 @@
 import React from "react";
 import { Row, Col, Card, CardBody, CardText } from "reactstrap";
+import {
+  ContentHeaderH1,
+  ContentHeaderH2
+} from "components/text/ContentHeader";
 
 export default {
   title: "Design System|Typography"
@@ -7,11 +11,15 @@ export default {
 
 export const TypographyStory = () => (
   <div className="container">
-    <h1 className="docs">Typography</h1>
+    <ContentHeaderH1>Typography</ContentHeaderH1>
 
-    <p className="col-sm-12 col-md-8">
-      <strong>Typeface</strong>
-      <br />
+    <p>
+      Clear and consistent headings, highly legible body paragraphs, clear
+      labels, and easy-to-use input fields.
+    </p>
+
+    <ContentHeaderH2>Typeface</ContentHeaderH2>
+    <p>
       NRCS uses Google's open source{" "}
       <strong>
         <a
@@ -22,12 +30,12 @@ export const TypographyStory = () => (
           Roboto
         </a>
       </strong>{" "}
-      font. It is a widely used font that we like for its legibility and
-      familiarity paired with MDI icons. It works well for our data-heavy
-      applications across browsers and devices.
+      font. It is one of the suggested fonts from the U.S. Web Design System and
+      is widely used for its legibility and familiarity paired with MDI icons.
+      It works well for our data-heavy applications across browsers and devices.
     </p>
 
-    <Row xs="1" sm="2" md="3">
+    <Row xs="1" sm="2" md="3" className="mb-3">
       <Col className="mb-3">
         <Card>
           <CardBody className="docs-typeface">
@@ -106,7 +114,7 @@ export const TypographyStory = () => (
       </Col>
     </Row>
 
-    <hr />
+    <ContentHeaderH2>Headings</ContentHeaderH2>
 
     <h1>h1. heading (responsive sizing)</h1>
     <h2>h2. heading (responsive sizing)</h2>
@@ -115,6 +123,18 @@ export const TypographyStory = () => (
     <h5>h5. heading</h5>
     <h6>h6. heading</h6>
 
+    <ContentHeaderH2>Paragraph</ContentHeaderH2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+
+    <ContentHeaderH2>Text Elements</ContentHeaderH2>
     <p>
       You can use the mark tag to <mark>highlight</mark> text.
     </p>
@@ -147,15 +167,6 @@ export const TypographyStory = () => (
         a link to something
       </a>{" "}
       renders.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
     </p>
   </div>
 );
