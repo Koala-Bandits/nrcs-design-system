@@ -16,13 +16,19 @@ If you are working on a project with FPAC or its related agencies, it is suggest
 
 ## Quick Start Guide
 
-`git clone https://github.com/Koala-Bandits/nrcs-design-system.git`
+### `git clone https://github.com/Koala-Bandits/nrcs-design-system.git`
 
-`npm install`
+### `npm install`
 
-`npm start` - to build and run the NRCS Design System web application for development
+Install application dependencies
 
-`npm run storybook` - to build and run the NRCS Design System StoryBook application for development
+### `npm start` 
+
+Build and run the NRCS Design System web application for development
+
+### `npm run storybook`
+
+Build and run the NRCS Design System StoryBook application for development
 
 ## Available Scripts
 
