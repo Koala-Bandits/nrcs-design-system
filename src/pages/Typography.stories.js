@@ -4,6 +4,8 @@ import {
   ContentHeaderH1,
   ContentHeaderH2
 } from "components/text/ContentHeader";
+import Icon from "@mdi/react";
+import { mdiOpenInNew } from "@mdi/js";
 
 export default {
   title: "Design System|Typography"
@@ -144,6 +146,12 @@ export const TypographyStory = () => (
         a link to something
       </a>{" "}
       renders.
+    </p>
+    <p>
+      <a href="#">
+        This is an external link{" "}
+        <Icon className="mdi" path={mdiOpenInNew} size={0.8} />
+      </a>
     </p>
     <p>
       <b>b element</b>
