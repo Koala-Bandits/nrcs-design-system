@@ -136,30 +136,7 @@ export const TypographyStory = () => (
     </p>
     <ContentHeaderH2>Text Elements</ContentHeaderH2>
     <p>
-      You can use the mark tag to <mark>highlight</mark> text.
-    </p>
-    <p>
-      <del>This line of text is meant to be treated as deleted text.</del>
-    </p>
-    <p>
-      <s>This line of text is meant to be treated as no longer accurate.</s>
-    </p>
-    <p>
-      <ins>
-        This line of text is meant to be treated as an addition to the document.
-      </ins>
-    </p>
-    <p>
-      <u>This line of text will render as underlined</u>
-    </p>
-    <p>
-      <small>This line of text is meant to be treated as fine print.</small>
-    </p>
-    <p>
-      <strong>This line rendered as bold text.</strong>
-    </p>
-    <p>
-      <em>This line rendered as italicized text.</em>
+      <abbr title="Abbreviation">abbr</abbr>
     </p>
     <p>
       This line of text is how{" "}
@@ -168,6 +145,72 @@ export const TypographyStory = () => (
       </a>{" "}
       renders.
     </p>
+    <p>
+      <b>b element</b>
+    </p>
+    <p>
+      <cite>cite element</cite>
+    </p>
+    <p>
+      <code>code element</code>
+    </p>
+    <p>
+      <del>This line of text is meant to be treated as deleted text.</del>
+    </p>
+    <p>
+      <dfn title="Title text">dfn element</dfn>
+    </p>
+    <p>
+      <em>em element</em>
+    </p>
+    <p>
+      <em>This line rendered as italicized text.</em>
+    </p>
+    <p>
+      <ins>
+        This line of text is meant to be treated as an addition to the document.
+      </ins>
+    </p>
+    <p>
+      <kbd>kbd element</kbd>
+    </p>
+    <p>
+      You can use the mark tag to <mark>highlight</mark> text.
+    </p>
+    <p>
+      <q>q element</q>
+    </p>
+    <p>
+      <samp>samp element</samp>
+    </p>
+    <p>
+      <small>This line of text is meant to be treated as fine print.</small>
+    </p>
+    <p>
+      <s>This line of text is meant to be treated as no longer accurate.</s>
+    </p>
+    <p>
+      <span>span element</span>
+    </p>
+    <p>
+      <strong>strong element: rendered as bold text.</strong>
+    </p>
+    <p>
+      This is a <sub>sub element</sub> in a sentence.
+    </p>
+    <p>
+      This is a <sup>sup element</sup> in an sentence.
+    </p>
+    <p>
+      <time datetime="2005-05-15 19:00">time element</time>
+    </p>
+    <p>
+      <u>This line of text will render as underlined</u>
+    </p>
+    <p>
+      <var>var element</var>
+    </p>
+
     <ContentHeaderH2>List</ContentHeaderH2>
     <ul>
       <li>List item one</li>
@@ -180,7 +223,7 @@ export const TypographyStory = () => (
       <li>List item two</li>
       <li>List item three</li>
     </ol>
-    <ContentHeaderH2>Numbered List</ContentHeaderH2>
+    <ContentHeaderH2>Inline List</ContentHeaderH2>
     <ul class="list-inline">
       <li class="list-inline-item">Lorem ipsum</li>
       <li class="list-inline-item">Phasellus iaculis</li>
@@ -221,37 +264,43 @@ export const TypographyStory = () => (
         </dl>
       </dd>
     </dl>
+
     <ContentHeaderH2>Responsive Font Sizing</ContentHeaderH2>
-    Is enabled by default via the <code>
-      $enable-responsive-font-sizes
-    </code>{" "}
-    Sass variable. You can turn it off if you want to. It mostly affects header
-    sizing.
+
+    <p>
+      Is enabled by default via the <code>$enable-responsive-font-sizes</code>{" "}
+      Sass variable. You can turn it off if you want to. It mostly affects
+      header sizing.
+    </p>
+
     <ContentHeaderH2>Text Utilities</ContentHeaderH2>
-    Since NRCS Design System is Bootstrap based, documentation for utilities to
-    change text alignment, transform, style, weight, and color, see{" "}
-    <a href="https://getbootstrap.com/docs/4.4/utilities/text/">
-      text utilities
-    </a>{" "}
-    and{" "}
-    <a href="https://getbootstrap.com/docs/4.4/utilities/colors/">
-      color utilities
-    </a>{" "}
-    links.
-    <ContentHeaderH2>Text Utilities</ContentHeaderH2>
-    Use{" "}
-    <a href="https://getbootstrap.com/docs/4.4/utilities/text/">
-      text utilities
-    </a>{" "}
-    to align things like this:
-    <blockquote class="card blockquote text-center">
-      <p class="mb-0">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-        erat a ante.
-      </p>
-      <footer class="blockquote-footer">
-        Someone famous in <cite title="Source Title">Source Title</cite>
-      </footer>
-    </blockquote>
+    <p>
+      Since NRCS Design System is Bootstrap based, documentation for utilities
+      to change text alignment, transform, style, weight, and color, see{" "}
+      <a href="https://getbootstrap.com/docs/4.4/utilities/text/">
+        text utilities
+      </a>{" "}
+      and{" "}
+      <a href="https://getbootstrap.com/docs/4.4/utilities/colors/">
+        color utilities
+      </a>{" "}
+      links.
+    </p>
+    <p>
+      Use{" "}
+      <a href="https://getbootstrap.com/docs/4.4/utilities/text/">
+        text utilities
+      </a>{" "}
+      to align things like this:
+      <blockquote class="card blockquote text-center">
+        <p class="mb-0">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          posuere erat a ante.
+        </p>
+        <footer class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </footer>
+      </blockquote>
+    </p>
   </div>
 );
