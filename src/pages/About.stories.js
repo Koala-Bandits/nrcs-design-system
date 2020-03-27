@@ -45,8 +45,8 @@ export const AboutStory = () => (
     </p>
     <p>
       A resource with specifics and expanded documentation meant as a compliment
-      to the FPAC Design System documentation, all to support current needs of
-      coordination efforts at NRCS.
+      to the FPAC Design System documentation, all to support the current needs
+      of coordinated efforts building apps at NRCS.
     </p>
     <p>
       If you are working on a project with FPAC or its related agencies, it is
