@@ -136,11 +136,13 @@ export const IconographyStory = () => {
         which is a superset of the Google Material Icons.
       </p>
       <ul>
-        <li>Implemented as SVG icons on this site an in examples</li>
+        <li>Typical sizes used are 18, 24 (default), and 32px</li>
         <li>
-          Default <code>size={"{1}"}</code> or 24px, <code>size={"{0.8}"}</code>{" "}
-          18px for smaller sized components
+          For SVG usage, sizes are <code>size={"{1}"}</code> or ~24px (default),{" "}
+          <code>size={"{0.8}"}</code>
+          ~18px for smaller sized components
         </li>
+        <li>Implemented as SVG icons on this site an in examples</li>
         <li>Default icon color: $gray-700 gray</li>
         <li>Action/Clickable icon color: $primary blue</li>
         <li>
