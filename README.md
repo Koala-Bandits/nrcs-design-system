@@ -2,7 +2,7 @@
 
 A design system produced for our partners at NRCS.
 
-An adaptation of the FPAC Design System and its inherent roots from the U.S. Web Design System
+An adaptation of the [FPAC Design System](http://usda-fsa.github.io/fsa-design-system/) and its inherent roots from the U.S. Web Design System
 
 A resource with specifics and expanded documentation meant as a compliment to the FPAC Design System documentation, all to support the current needs of coordinated efforts building apps at NRCS.
 
