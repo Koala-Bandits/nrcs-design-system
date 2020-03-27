@@ -8,7 +8,7 @@ export const AccessibilityStory = () => (
   <div className="container">
     <h1 className="docs">Accessibility</h1>
 
-    <p>
+    <p class="lead">
       NRCS has accessibility requirements for web applications that are quite
       strict and generally aims for <strong>Level AA</strong> and{" "}
       <strong>Level AAA</strong> standards.

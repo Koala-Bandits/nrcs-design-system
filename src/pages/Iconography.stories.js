@@ -122,7 +122,7 @@ export const IconographyStory = () => {
     <div className="container">
       <ContentHeaderH1>Iconography</ContentHeaderH1>
 
-      <p>
+      <p class="lead">
         NRCS Design System is using the{" "}
         <strong>
           <a
