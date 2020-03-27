@@ -13,7 +13,7 @@ export const TypographyStory = () => (
   <div className="container">
     <ContentHeaderH1>Typography</ContentHeaderH1>
 
-    <p>
+    <p class="lead">
       Clear and consistent headings, highly legible body paragraphs, clear
       labels, and easy-to-use input fields.
     </p>

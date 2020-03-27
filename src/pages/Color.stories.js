@@ -12,7 +12,7 @@ export const ColorStory = () => (
   <div className="container docs-color">
     <ContentHeaderH1>Color</ContentHeaderH1>
 
-    <p>
+    <p class="lead">
       The NRCS Color Palette is anchored around the USDA/FPAC Primary Geen and
       Secondary Blue colors and their goal of meeting strict 508 requirements of
       high color contrast.

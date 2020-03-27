@@ -1,4 +1,8 @@
 import React from "react";
+import {
+  ContentHeaderH1,
+  ContentHeaderH2
+} from "components/text/ContentHeader";
 
 export default {
   title: "Design System|About"
@@ -6,42 +10,49 @@ export default {
 
 export const AboutStory = () => (
   <div className="container">
-    <h1 className="docs">NRCS Design System</h1>
+    <ContentHeaderH1>NRCS Design System</ContentHeaderH1>
 
-    <p>
+    <p class="lead">
       <span className="text-danger">
         ** BETA: CURRENTLY UNDER DEVELOPMENT AND INCOMPLETE **
       </span>
     </p>
-
-    <p>
+    <p class="lead">
       <strong>A design system produced for our partners at NRCS.</strong>
     </p>
+
+    <p>
+      An adaptation of the{" "}
+      <strong>
+        <a
+          href="http://usda-fsa.github.io/fsa-design-system/"
+          target="_blank"
+          rel="nopener noreferrer"
+        >
+          FPAC Design System
+        </a>
+      </strong>{" "}
+      and its inherent roots from the{" "}
+      <strong>
+        <a
+          href="https://designsystem.digital.gov/"
+          target="_blank"
+          rel="nopener noreferrer"
+        >
+          U.S. Web Design System
+        </a>
+      </strong>
+    </p>
+    <p>
+      A resource with specifics and expanded documentation meant as a compliment
+      to the FPAC Design System documentation, all to support current needs of
+      coordination efforts at NRCS.
+    </p>
+    <p>
+      If you are working on a project with FPAC or its related agencies, it is
+      suggested you consider starting FPAC design system first.
+    </p>
     <ul>
-      <li>
-        An adaptation of the{" "}
-        <strong>
-          <a
-            href="http://usda-fsa.github.io/fsa-design-system/"
-            target="_blank"
-            rel="nopener noreferrer"
-          >
-            FPAC Design System
-          </a>
-        </strong>{" "}
-        and its inherent roots from the{" "}
-        <strong>
-          <a
-            href="https://designsystem.digital.gov/"
-            target="_blank"
-            rel="nopener noreferrer"
-          >
-            U.S. Web Design System
-          </a>
-        </strong>
-        . If you are working on a project with FPAC or its related agencies, it
-        is suggested you consider starting with these design systems.
-      </li>
       <li>
         Designed with clean simple styles, high color contrast for accessibilty,
         and to provide solutions for large scale applications.

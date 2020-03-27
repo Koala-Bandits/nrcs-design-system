@@ -25,15 +25,15 @@ export const ContentHeaderDefault = () => (
 
     <ContentHeaderH1>h1. Content Header</ContentHeaderH1>
     <p></p>
-    <ContentHeaderH2>h1. Content Header</ContentHeaderH2>
+    <ContentHeaderH2>h2. Content Header</ContentHeaderH2>
     <p></p>
-    <ContentHeaderH3>h1. Content Header</ContentHeaderH3>
+    <ContentHeaderH3>h3. Content Header</ContentHeaderH3>
     <p></p>
-    <ContentHeaderH4>h1. Content Header</ContentHeaderH4>
+    <ContentHeaderH4>h4. Content Header</ContentHeaderH4>
     <p></p>
-    <ContentHeaderH5>h1. Content Header</ContentHeaderH5>
+    <ContentHeaderH5>h5. Content Header</ContentHeaderH5>
     <p></p>
-    <ContentHeaderH6>h1. Content Header</ContentHeaderH6>
+    <ContentHeaderH6>h6. Content Header</ContentHeaderH6>
   </div>
 );
 
