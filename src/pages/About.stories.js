@@ -50,7 +50,7 @@ export const AboutStory = () => (
     </p>
     <p>
       If you are working on a project with FPAC or its related agencies, it is
-      suggested you consider starting FPAC design system first.
+      suggested you consider starting with the FPAC design system first.
     </p>
     <ul>
       <li>
