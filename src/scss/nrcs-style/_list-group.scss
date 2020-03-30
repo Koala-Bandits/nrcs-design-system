@@ -10,6 +10,12 @@ a:hover.list-group-item {
   // border-left: 4px solid theme-color("info");
 }
 
+.list-group-flush {
+  .list-group-item:not(.active) {
+    background-color: transparent;
+  }
+}
+
 .list-group-borderless {
   .list-group-item {
     background-color: transparent;

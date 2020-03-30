@@ -98,7 +98,7 @@ export const ListGroupStory = () => (
         Cras justo odio
       </ListGroupItem>
       <ListGroupItem active tag="a" href="#" action>
-        Dapibus ac facilisis in
+        Dapibus ac facilisis in (active/selected)
       </ListGroupItem>
       <ListGroupItem tag="a" href="#" action>
         Morbi leo risus
@@ -117,7 +117,7 @@ export const ListGroupStory = () => (
         Cras justo odio
       </ListGroupItem>
       <ListGroupItem active tag="button" action>
-        Dapibus ac facilisis in
+        Dapibus ac facilisis in (active/selected)
       </ListGroupItem>
       <ListGroupItem tag="button" action>
         Morbi leo risus
