@@ -11,7 +11,7 @@ export default {
 };
 
 export const ListGroupStory = () => (
-  <div>
+  <div className="mb-4">
     <ContentHeaderH2>Default (Card Style)</ContentHeaderH2>
 
     <p>Used by itself as a card in layout for list or selection.</p>
@@ -84,8 +84,8 @@ export const ListGroupStory = () => (
       <ListGroupItem>Yet another basic item</ListGroupItem>
     </ListGroup>
 
-    <ContentHeaderH2>Links and Buttons</ContentHeaderH2>
-    <h3>Links </h3>
+    <ContentHeaderH2>Flush with Links</ContentHeaderH2>
+
     <p>
       Be sure to{" "}
       <strong>
@@ -93,7 +93,8 @@ export const ListGroupStory = () => (
       </strong>
       .
     </p>
-    <ListGroup style={{ maxWidth: 500 }}>
+
+    <ListGroup flush style={{ maxWidth: 500 }}>
       <ListGroupItem tag="a" href="#" action>
         Cras justo odio
       </ListGroupItem>
@@ -110,8 +111,28 @@ export const ListGroupStory = () => (
         Vestibulum at eros (disabled)
       </ListGroupItem>
     </ListGroup>
-    <p />
-    <h3>Buttons </h3>
+
+    <ContentHeaderH2>Borderless with Links</ContentHeaderH2>
+
+    <ListGroup className="list-group-borderless" style={{ maxWidth: 500 }}>
+      <ListGroupItem tag="a" href="#" action>
+        Cras justo odio
+      </ListGroupItem>
+      <ListGroupItem active tag="a" href="#" action>
+        Dapibus ac facilisis in (active/selected)
+      </ListGroupItem>
+      <ListGroupItem tag="a" href="#" action>
+        Morbi leo risus
+      </ListGroupItem>
+      <ListGroupItem tag="a" href="#" action>
+        Porta ac consectetur ac
+      </ListGroupItem>
+      <ListGroupItem disabled tag="a" href="#" action>
+        Vestibulum at eros (disabled)
+      </ListGroupItem>
+    </ListGroup>
+
+    <ContentHeaderH2>Default with Buttons</ContentHeaderH2>
     <ListGroup style={{ maxWidth: 500 }}>
       <ListGroupItem tag="button" action>
         Cras justo odio
