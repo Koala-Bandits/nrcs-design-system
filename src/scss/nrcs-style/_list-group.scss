@@ -7,7 +7,7 @@ a:hover.list-group-item {
 
 .list-group-item.active {
   font-weight: $font-weight-bold;
-  border-left: 4px solid theme-color("info");
+  // border-left: 4px solid theme-color("info");
 }
 
 .list-group-borderless {

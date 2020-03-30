@@ -6,13 +6,15 @@ import {
 } from "components/text/ContentHeader";
 
 export default {
-  title: "Components|List Group"
+  title: "Components|List Groups"
   // component: PrimaryButton
 };
 
 export const ListGroupStory = () => (
   <div>
-    <ContentHeaderH2>Basic</ContentHeaderH2>
+    <ContentHeaderH2>Default (Card Style)</ContentHeaderH2>
+
+    <p>Used by itself as a card in layout for list or selection.</p>
 
     <ListGroup style={{ maxWidth: 500 }}>
       <ListGroupItem>Cras justo odio</ListGroupItem>
@@ -26,6 +28,11 @@ export const ListGroupStory = () => (
 
     <ContentHeaderH2>Flush</ContentHeaderH2>
 
+    <p>
+      A "flush" ListGroup is typically used in a sidebar (left) for secondary
+      app navigation, see tabs stories for examples with as a tab controller.
+    </p>
+
     <ListGroup flush style={{ maxWidth: 500 }}>
       <ListGroupItem>Cras justo odio</ListGroupItem>
       <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
@@ -37,6 +44,10 @@ export const ListGroupStory = () => (
     </ListGroup>
 
     <ContentHeaderH2>Borderless</ContentHeaderH2>
+
+    <p>
+      Often used as a sidebar (right) for in-page sub-navigation via Scrollspy.
+    </p>
 
     <ListGroup className="list-group-borderless" style={{ maxWidth: 500 }}>
       <ListGroupItem>Cras justo odio</ListGroupItem>
