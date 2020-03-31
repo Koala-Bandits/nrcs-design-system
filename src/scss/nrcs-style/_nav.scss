@@ -1,157 +1,67 @@
-// Base class
-//
-// Kickstart any navigation component with a set of style resets. Works with
-// `<nav>`s, `<ul>`s or `<ol>`s.
-
-// .nav {
-//   display: flex;
-//   flex-wrap: wrap;
-//   padding-left: 0;
-//   margin-bottom: 0;
-//   list-style: none;
-// }
-
-// .nav-link {
-//   display: block;
-//   padding: $nav-link-padding-y $nav-link-padding-x;
-
-//   @include hover-focus() {
-//     text-decoration: none;
-//   }
-
-//   // Disabled state lightens text
-//   &.disabled {
-//     color: $nav-link-disabled-color;
-//     pointer-events: none;
-//     cursor: default;
-//   }
-// }
-.nav-link {
+.nav-link,
+.nav-link:hover,
+.nav-link:focus {
+  color: $body-color;
   text-decoration: none;
+  // font-weight: $font-weight-bold;
+}
+.nav-link.active {
+  font-weight: $font-weight-bold;
 }
 
 //
 // Tabs
 //
 
-// .nav-tabs {
-//   border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+//
+// NRCS default tab style 'tabs'
+//
 
-//   .nav-item {
-//     margin-bottom: -$nav-tabs-border-width;
-//   }
-
-//   .nav-link {
-//     border: $nav-tabs-border-width solid transparent;
-//     @include border-top-radius($nav-tabs-border-radius);
-
-//     @include hover-focus() {
-//       border-color: $nav-tabs-link-hover-border-color;
-//     }
-
-//     &.disabled {
-//       color: $nav-link-disabled-color;
-//       background-color: transparent;
-//       border-color: transparent;
-//     }
-//   }
-
-//   .nav-link.active,
-//   .nav-item.show .nav-link {
-//     color: $nav-tabs-link-active-color;
-//     background-color: $nav-tabs-link-active-bg;
-//     border-color: $nav-tabs-link-active-border-color;
-//   }
-
-//   .dropdown-menu {
-//     // Make dropdown border overlap tab border
-//     margin-top: -$nav-tabs-border-width;
-//     // Remove the top rounded corners here since there is a hard edge above the menu
-//     @include border-top-radius(0);
-//   }
-// }
-
-///////////
-// .nav-tabs {
-//   .nav-link {
-//     border-top: 4px transparent !important;
-//   }
-
-//   .nav-link.active,
-//   .nav-item.show .nav-link {
-//     border-top: 4px solid $primary !important;
-//   }
-
-//   .nav-link:hover,
-//   .nav-link:focus {
-//     border-top: 4px solid $gray-300 !important;
-//   }
-// }
 .nav-tabs .nav-link {
   border-top: 4px solid transparent;
-  font-weight: $font-weight-bold;
 }
 .nav-tabs .nav-link:hover,
 .nav-tabs .nav-link:focus {
-  border-color: $gray-500; // #e9ecef #e9ecef #adb5bd
+  border-color: $border-color;
+  border-top: 4px solid $gray-600;
 }
 
-.nav-tabs.flex-column .nav-link {
-  border: 1px solid $gray-500;
+//
+// FPAC underline style
+//
+ul.nav-fpac {
+  border-bottom: 1px solid $border-color;
+}
+.nav-fpac .nav-link {
+  border-bottom: 4px solid transparent;
+}
+.nav-fpac .nav-link:hover,
+.nav-fpac .nav-link:focus {
+  border-bottom: 4px solid $gray-600;
+}
+.nav-fpac .nav-link.active {
+  color: $body-color;
+  border-bottom: 4px solid $primary;
+  font-weight: $font-weight-bold;
+}
+
+//
+// FPAC vertical line style
+//
+ul.nav-fpac.flex-column {
+  border-bottom: 0;
+  border-right: 1px solid $border-color;
+}
+.nav-fpac.flex-column .nav-link {
+  border-bottom: 0;
   border-left: 4px solid transparent;
 }
-.nav-tabs.flex-column .nav-link:hover,
-.nav-tabs.flex-column .nav-link:focus {
-  border-left: 4px solid $gray-500;
+.nav-fpac.flex-column .nav-link:hover,
+.nav-fpac.flex-column .nav-link:focus {
+  border-left: 4px solid $gray-600;
 }
-.nav-tabs.flex-column .nav-link.active {
+ul.nav-fpac.flex-column .nav-link.active {
+  // color: $body-color;
   border-left: 4px solid $primary !important;
+  font-weight: $font-weight-bold;
 }
-
-//
-// Pills
-//
-
-// .nav-pills {
-//   .nav-link {
-//     @include border-radius($nav-pills-border-radius);
-//   }
-
-//   .nav-link.active,
-//   .show > .nav-link {
-//     color: $nav-pills-link-active-color;
-//     background-color: $nav-pills-link-active-bg;
-//   }
-// }
-
-//
-// Justified variants
-//
-
-// .nav-fill {
-//   .nav-item {
-//     flex: 1 1 auto;
-//     text-align: center;
-//   }
-// }
-
-// .nav-justified {
-//   .nav-item {
-//     flex-basis: 0;
-//     flex-grow: 1;
-//     text-align: center;
-//   }
-// }
-
-// Tabbable tabs
-//
-// Hide tabbable panes to start, show them when `.active`
-
-// .tab-content {
-//   > .tab-pane {
-//     display: none;
-//   }
-//   > .active {
-//     display: block;
-//   }
-// }

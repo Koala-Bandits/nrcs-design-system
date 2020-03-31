@@ -186,9 +186,9 @@ $body-color: $gray-900; //$gray-900 !default;
 // //
 // // Style anchor elements.
 
-// $link-color: theme-color("primary") !default;
+$link-color: $primary; // theme-color("primary") !default;
 $link-decoration: underline; // none !default;
-// $link-hover-color: darken($link-color, 15%) !default;
+$link-hover-color: darken($link-color, 15%) !default;
 // $link-hover-decoration: underline !default;
 // // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 // $emphasized-link-hover-darken-percentage: 15% !default;
@@ -755,7 +755,7 @@ $nav-tabs-border-color: $border-color; // $gray-300 !default;
 // $nav-tabs-border-width: $border-width !default;
 // $nav-tabs-border-radius: 0.25rem; // $border-radius !default;
 // $nav-tabs-link-hover-border-color: $gray-200 $gray-200 $nav-tabs-border-color !default;
-// $nav-tabs-link-active-color: $gray-700 !default;
+$nav-tabs-link-active-color: $selection-active-color; // $gray-700 !default;
 $nav-tabs-link-active-bg: $body-bg !default;
 $nav-tabs-link-active-border-color: $primary $border-color
   $nav-tabs-link-active-bg !important; // $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
@@ -1077,10 +1077,10 @@ $list-group-active-bg: $selection-active-bg; // $component-active-bg !default;
 // $list-group-disabled-color: $gray-600 !default;
 // $list-group-disabled-bg: $list-group-bg !default;
 
-// $list-group-action-color: $gray-700 !default;
-$list-group-action-hover-color: $selection-active-color; //$list-group-action-color !default;
+$list-group-action-color: $link-color; // $gray-700 !default;
+$list-group-action-hover-color: $link-hover-color; //$list-group-action-color !default;
 
-// $list-group-action-active-color: $body-color !default;
+$list-group-action-active-color: $link-color; // $body-color !default;
 // $list-group-action-active-bg: $gray-200 !default;
 
 // // Image thumbnails

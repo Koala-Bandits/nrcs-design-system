@@ -9,6 +9,7 @@ import {
   Row,
   Col
 } from "reactstrap";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 import classnames from "classnames";
 import Icon from "@mdi/react";
 import { mdiCheckCircle } from "@mdi/js";
@@ -17,7 +18,7 @@ export default {
   title: "Components|Tabs (Nav)"
 };
 
-export const TabsDefault = () => {
+export const TabsStory = () => {
   const [activeTab, setActiveTab] = useState("1");
 
   const toggle = tab => {
@@ -26,7 +27,9 @@ export const TabsDefault = () => {
 
   return (
     <div>
-      <h2 className="docs">Tabs - Default</h2>
+      <ContentHeaderH2>Tabs</ContentHeaderH2>
+
+      <h3 className="mt-4 mb-4">Default Horizontal </h3>
 
       <Nav tabs>
         <NavItem>
@@ -64,14 +67,14 @@ export const TabsDefault = () => {
         </NavItem>
         <NavItem>
           <NavLink
+            disabled
             className={classnames({ active: activeTab === "4" })}
             href="#"
             onClick={() => {
               toggle("4");
             }}
           >
-            <Icon className="mdi" path={mdiCheckCircle} color="green" />
-            Tabby Tab Tab
+            Disabled Tab
           </NavLink>
         </NavItem>
       </Nav>
@@ -143,43 +146,189 @@ export const TabsDefault = () => {
         </TabPane>
       </TabContent>
 
-      <h3 className="docs">Vertical Tabs</h3>
-      <p>work in progress...</p>
+      <h3 className="mt-4 mb-4">Default - justified fill</h3>
+      <Nav tabs justified>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === "1" })}
+            href="#"
+            onClick={() => {
+              toggle("1");
+            }}
+          >
+            Tab1
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === "2" })}
+            href="#"
+            onClick={() => {
+              toggle("2");
+            }}
+          >
+            Moar Tabs
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === "3" })}
+            href="#"
+            onClick={() => {
+              toggle("3");
+            }}
+          >
+            Tab Me!
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            disabled
+            className={classnames({ active: activeTab === "4" })}
+            href="#"
+            onClick={() => {
+              toggle("4");
+            }}
+          >
+            Disabled Tab
+          </NavLink>
+        </NavItem>
+      </Nav>
+
+      <h3 className="mt-4 mb-4">FPAC underline style</h3>
+      <Nav className="nav-fpac">
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === "1" })}
+            href="#"
+            onClick={() => {
+              toggle("1");
+            }}
+          >
+            Tab1
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === "2" })}
+            href="#"
+            onClick={() => {
+              toggle("2");
+            }}
+          >
+            Moar Tabs
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === "3" })}
+            href="#"
+            onClick={() => {
+              toggle("3");
+            }}
+          >
+            Tab Me!
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            disabled
+            className={classnames({ active: activeTab === "4" })}
+            href="#"
+            onClick={() => {
+              toggle("4");
+            }}
+          >
+            Disabled Tab
+          </NavLink>
+        </NavItem>
+      </Nav>
+
+      <h3 className="mt-4 mb-4">FPAC underline style - justified fill</h3>
+      <Nav className="nav-fpac" justified>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === "1" })}
+            href="#"
+            onClick={() => {
+              toggle("1");
+            }}
+          >
+            Tab1
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === "2" })}
+            href="#"
+            onClick={() => {
+              toggle("2");
+            }}
+          >
+            Moar Tabs
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === "3" })}
+            href="#"
+            onClick={() => {
+              toggle("3");
+            }}
+          >
+            Tab Me!
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            disabled
+            className={classnames({ active: activeTab === "4" })}
+            href="#"
+            onClick={() => {
+              toggle("4");
+            }}
+          >
+            Disabled Tab
+          </NavLink>
+        </NavItem>
+      </Nav>
+
+      <ContentHeaderH2>Vertical</ContentHeaderH2>
+      <p>Similar to a List Group, but w/ subtle differences as Navs.</p>
       <Row>
         <Col sm="4">
-          <Nav vertical tabs>
+          <Nav className="nav-fpac" vertical>
             <NavItem>
               <NavLink
-                className={classnames({ active: activeTab === "10" })}
+                className={classnames({ active: activeTab === "1" })}
                 href="#"
                 onClick={() => {
-                  toggle("10");
+                  toggle("1");
                 }}
               >
-                Tabby Tab Tab
+                Tab1
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                className={classnames({ active: activeTab === "11" })}
+                className={classnames({ active: activeTab === "2" })}
                 href="#"
                 onClick={() => {
-                  toggle("11");
+                  toggle("2");
                 }}
               >
-                <Icon className="mdi" path={mdiCheckCircle} color="green" />
-                Tabby Tab Tab
+                Moar Tabs
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                className={classnames({ active: activeTab === "12" })}
+                className={classnames({ active: activeTab === "3" })}
                 href="#"
                 onClick={() => {
-                  toggle("12");
+                  toggle("3");
                 }}
               >
-                Tabby Tab Tab
+                Tab Me!
               </NavLink>
             </NavItem>
             <NavItem>
@@ -191,7 +340,7 @@ export const TabsDefault = () => {
         </Col>
         <Col sm="8">
           <TabContent activeTab={activeTab}>
-            <TabPane tabId="10">
+            <TabPane tabId="1">
               <Row>
                 <Col sm="12">
                   <p>
@@ -210,7 +359,7 @@ export const TabsDefault = () => {
                 </Col>
               </Row>
             </TabPane>
-            <TabPane tabId="11">
+            <TabPane tabId="2">
               <Row>
                 <Col sm="12">
                   <p>
@@ -225,7 +374,7 @@ export const TabsDefault = () => {
                 </Col>
               </Row>
             </TabPane>
-            <TabPane tabId="12">
+            <TabPane tabId="3">
               <Row>
                 <Col sm="12">
                   <p>
@@ -236,7 +385,7 @@ export const TabsDefault = () => {
                 </Col>
               </Row>
             </TabPane>
-            <TabPane tabId="13">
+            <TabPane tabId="4">
               <Row>
                 <Col sm="12">
                   <p>
@@ -259,6 +408,6 @@ export const TabsDefault = () => {
   );
 };
 
-TabsDefault.story = {
+TabsStory.story = {
   name: "Tabs - Default"
 };
