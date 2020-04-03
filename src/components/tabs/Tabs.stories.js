@@ -7,9 +7,14 @@ import {
   NavLink,
   Button,
   Row,
-  Col
+  Col,
+  Card,
+  CardBody
 } from "reactstrap";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import {
+  ContentHeaderH2,
+  ContentHeaderH3
+} from "components/text/ContentHeader";
 import classnames from "classnames";
 import Icon from "@mdi/react";
 import { mdiCheckCircle } from "@mdi/js";
@@ -29,269 +34,288 @@ export const TabsStory = () => {
     <div>
       <ContentHeaderH2>Tabs</ContentHeaderH2>
 
-      <h3 className="mt-4 mb-4">Default Horizontal </h3>
+      <h3 className="mt-4 mb-3">Default Horizontal </h3>
 
-      <Nav tabs>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "1" })}
-            href="#"
-            onClick={() => {
-              toggle("1");
-            }}
-          >
-            Tab1
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "2" })}
-            href="#"
-            onClick={() => {
-              toggle("2");
-            }}
-          >
-            Moar Tabs
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "3" })}
-            href="#"
-            onClick={() => {
-              toggle("3");
-            }}
-          >
-            Tab Me!
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            disabled
-            className={classnames({ active: activeTab === "4" })}
-            href="#"
-            onClick={() => {
-              toggle("4");
-            }}
-          >
-            Disabled Tab
-          </NavLink>
-        </NavItem>
-      </Nav>
-      <TabContent activeTab={activeTab}>
-        <TabPane tabId="1">
-          <Row>
-            <Col sm="12" className="p-3">
-              <p>
-                Marsupials are any members of the mammalian infraclass
-                Marsupialia. All extant marsupials are endemic to Australasia
-                and the Americas. A distinctive characteristic common to these
-                species is that most of the young are carried in a pouch.
-              </p>
-            </Col>
-          </Row>
-        </TabPane>
-        <TabPane tabId="2">
-          <Row>
-            <Col sm="12" className="p-3">
-              <p>
-                The koala or, inaccurately, koala bear[a] (Phascolarctos
-                cinereus) is an arboreal herbivorous marsupial native to
-                Australia. It is the only extant representative of the family
-                Phascolarctidae and its closest living relatives are the
-                wombats, which comprise the family Vombatidae. The koala is
-                found in coastal areas of the mainland's eastern and southern
-                regions, inhabiting Queensland, New South Wales, Victoria, and
-                South Australia. It is easily recognisable by its stout,
-                tailless body and large head with round, fluffy ears and large,
-                spoon-shaped nose. The koala has a body length of 60–85 cm
-                (24–33 in) and weighs 4–15 kg (9–33 lb). Fur colour ranges from
-                silver grey to chocolate brown. Koalas from the northern
-                populations are typically smaller and lighter in colour than
-                their counterparts further south.
-              </p>
-            </Col>
-          </Row>
-        </TabPane>
-        <TabPane tabId="3">
-          <Row>
-            <Col sm="12" className="p-3">
-              <p>
-                The Atlantic jackknife clam, Ensis leei,[1] also known as the
-                bamboo clam, American jackknife clam or razor clam, is a large
-                edible marine bivalve mollusc found on the North American
-                Atlantic coast, from Canada to South Carolina. The species has
-                also been introduced to Europe. The name "razor clam" is also
-                used to refer to different species such as the Pacific razor
-                clam (Siliqua patula) or Razor shell (Ensis magnus).
-              </p>
-            </Col>
-          </Row>
-        </TabPane>
-        <TabPane tabId="4">
-          <Row>
-            <Col sm="12" className="p-3">
-              <p>
-                Wrens are a family of brown passerine birds in the predominantly
-                New World family Troglodytidae. The family includes 88 species
-                divided into 19 genera. Only the Eurasian wren occurs in the Old
-                World, where, in Anglophone regions, it is commonly known simply
-                as the "wren", as it is the originator of the name. The name
-                wren has been applied to other, unrelated birds, particularly
-                the New Zealand wrens (Acanthisittidae) and the Australian wrens
-                (Maluridae).
-              </p>
-            </Col>
-          </Row>
-        </TabPane>
-      </TabContent>
+      <Card>
+        <CardBody>
+          <Nav tabs>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "1" })}
+                href="#"
+                onClick={() => {
+                  toggle("1");
+                }}
+              >
+                Tab1
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "2" })}
+                href="#"
+                onClick={() => {
+                  toggle("2");
+                }}
+              >
+                Moar Tabs
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                disabled
+                className={classnames({ active: activeTab === "4" })}
+                href="#"
+                onClick={() => {
+                  toggle("4");
+                }}
+              >
+                Disabled Tab
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "3" })}
+                href="#"
+                onClick={() => {
+                  toggle("3");
+                }}
+              >
+                Tab Me!
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent activeTab={activeTab}>
+            <TabPane tabId="1">
+              <Row>
+                <Col sm="12" className="p-3">
+                  <p>
+                    Marsupials are any members of the mammalian infraclass
+                    Marsupialia. All extant marsupials are endemic to
+                    Australasia and the Americas. A distinctive characteristic
+                    common to these species is that most of the young are
+                    carried in a pouch.
+                  </p>
+                </Col>
+              </Row>
+            </TabPane>
+            <TabPane tabId="2">
+              <Row>
+                <Col sm="12" className="p-3">
+                  <p>
+                    The koala or, inaccurately, koala bear[a] (Phascolarctos
+                    cinereus) is an arboreal herbivorous marsupial native to
+                    Australia. It is the only extant representative of the
+                    family Phascolarctidae and its closest living relatives are
+                    the wombats, which comprise the family Vombatidae. The koala
+                    is found in coastal areas of the mainland's eastern and
+                    southern regions, inhabiting Queensland, New South Wales,
+                    Victoria, and South Australia. It is easily recognisable by
+                    its stout, tailless body and large head with round, fluffy
+                    ears and large, spoon-shaped nose. The koala has a body
+                    length of 60–85 cm (24–33 in) and weighs 4–15 kg (9–33 lb).
+                    Fur colour ranges from silver grey to chocolate brown.
+                    Koalas from the northern populations are typically smaller
+                    and lighter in colour than their counterparts further south.
+                  </p>
+                </Col>
+              </Row>
+            </TabPane>
+            <TabPane tabId="3">
+              <Row>
+                <Col sm="12" className="p-3">
+                  <p>
+                    The Atlantic jackknife clam, Ensis leei,[1] also known as
+                    the bamboo clam, American jackknife clam or razor clam, is a
+                    large edible marine bivalve mollusc found on the North
+                    American Atlantic coast, from Canada to South Carolina. The
+                    species has also been introduced to Europe. The name "razor
+                    clam" is also used to refer to different species such as the
+                    Pacific razor clam (Siliqua patula) or Razor shell (Ensis
+                    magnus).
+                  </p>
+                </Col>
+              </Row>
+            </TabPane>
+            <TabPane tabId="4">
+              <Row>
+                <Col sm="12" className="p-3">
+                  <p>
+                    Wrens are a family of brown passerine birds in the
+                    predominantly New World family Troglodytidae. The family
+                    includes 88 species divided into 19 genera. Only the
+                    Eurasian wren occurs in the Old World, where, in Anglophone
+                    regions, it is commonly known simply as the "wren", as it is
+                    the originator of the name. The name wren has been applied
+                    to other, unrelated birds, particularly the New Zealand
+                    wrens (Acanthisittidae) and the Australian wrens
+                    (Maluridae).
+                  </p>
+                </Col>
+              </Row>
+            </TabPane>
+          </TabContent>
+        </CardBody>
+      </Card>
 
-      <h3 className="mt-4 mb-4">Default - justified fill</h3>
-      <Nav tabs justified>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "1" })}
-            href="#"
-            onClick={() => {
-              toggle("1");
-            }}
-          >
-            Tab1
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "2" })}
-            href="#"
-            onClick={() => {
-              toggle("2");
-            }}
-          >
-            Moar Tabs
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "3" })}
-            href="#"
-            onClick={() => {
-              toggle("3");
-            }}
-          >
-            Tab Me!
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            disabled
-            className={classnames({ active: activeTab === "4" })}
-            href="#"
-            onClick={() => {
-              toggle("4");
-            }}
-          >
-            Disabled Tab
-          </NavLink>
-        </NavItem>
-      </Nav>
+      <h3 className="mt-4 mb-3">Default - justified fill</h3>
+      <Card>
+        <CardBody>
+          <Nav tabs justified>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "1" })}
+                href="#"
+                onClick={() => {
+                  toggle("1");
+                }}
+              >
+                Tab1
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "2" })}
+                href="#"
+                onClick={() => {
+                  toggle("2");
+                }}
+              >
+                Moar Tabs
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                disabled
+                className={classnames({ active: activeTab === "4" })}
+                href="#"
+                onClick={() => {
+                  toggle("4");
+                }}
+              >
+                Disabled Tab
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "3" })}
+                href="#"
+                onClick={() => {
+                  toggle("3");
+                }}
+              >
+                Tab Me!
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </CardBody>
+      </Card>
 
-      <h3 className="mt-4 mb-4">FPAC underline style</h3>
-      <Nav className="nav-fpac">
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "1" })}
-            href="#"
-            onClick={() => {
-              toggle("1");
-            }}
-          >
-            Tab1
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "2" })}
-            href="#"
-            onClick={() => {
-              toggle("2");
-            }}
-          >
-            Moar Tabs
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "3" })}
-            href="#"
-            onClick={() => {
-              toggle("3");
-            }}
-          >
-            Tab Me!
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            disabled
-            className={classnames({ active: activeTab === "4" })}
-            href="#"
-            onClick={() => {
-              toggle("4");
-            }}
-          >
-            Disabled Tab
-          </NavLink>
-        </NavItem>
-      </Nav>
+      <h3 className="mt-4 mb-3">FPAC underline style</h3>
+      <Card>
+        <CardBody>
+          <Nav className="nav-fpac">
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "1" })}
+                href="#"
+                onClick={() => {
+                  toggle("1");
+                }}
+              >
+                Tab1
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "2" })}
+                href="#"
+                onClick={() => {
+                  toggle("2");
+                }}
+              >
+                Moar Tabs
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                disabled
+                className={classnames({ active: activeTab === "4" })}
+                href="#"
+                onClick={() => {
+                  toggle("4");
+                }}
+              >
+                Disabled Tab
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "3" })}
+                href="#"
+                onClick={() => {
+                  toggle("3");
+                }}
+              >
+                Tab Me!
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </CardBody>
+      </Card>
 
-      <h3 className="mt-4 mb-4">FPAC underline style - justified fill</h3>
-      <Nav className="nav-fpac" justified>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "1" })}
-            href="#"
-            onClick={() => {
-              toggle("1");
-            }}
-          >
-            Tab1
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "2" })}
-            href="#"
-            onClick={() => {
-              toggle("2");
-            }}
-          >
-            Moar Tabs
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "3" })}
-            href="#"
-            onClick={() => {
-              toggle("3");
-            }}
-          >
-            Tab Me!
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            disabled
-            className={classnames({ active: activeTab === "4" })}
-            href="#"
-            onClick={() => {
-              toggle("4");
-            }}
-          >
-            Disabled Tab
-          </NavLink>
-        </NavItem>
-      </Nav>
+      <h3 className="mt-4 mb-3">FPAC underline style - justified fill</h3>
+      <Card>
+        <CardBody>
+          <Nav className="nav-fpac" justified>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "1" })}
+                href="#"
+                onClick={() => {
+                  toggle("1");
+                }}
+              >
+                Tab1
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "2" })}
+                href="#"
+                onClick={() => {
+                  toggle("2");
+                }}
+              >
+                Moar Tabs
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                disabled
+                className={classnames({ active: activeTab === "4" })}
+                href="#"
+                onClick={() => {
+                  toggle("4");
+                }}
+              >
+                Disabled Tab
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: activeTab === "3" })}
+                href="#"
+                onClick={() => {
+                  toggle("3");
+                }}
+              >
+                Tab Me!
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </CardBody>
+      </Card>
 
       <ContentHeaderH2>Vertical</ContentHeaderH2>
       <p>Similar to a List Group, but w/ subtle differences as Navs.</p>
@@ -321,6 +345,11 @@ export const TabsStory = () => {
               </NavLink>
             </NavItem>
             <NavItem>
+              <NavLink disabled href="#">
+                Disabled Link
+              </NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink
                 className={classnames({ active: activeTab === "3" })}
                 href="#"
@@ -329,11 +358,6 @@ export const TabsStory = () => {
                 }}
               >
                 Tab Me!
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink disabled href="#">
-                Disabled Link
               </NavLink>
             </NavItem>
           </Nav>
