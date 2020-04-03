@@ -15,6 +15,12 @@
   border-radius: 0;
 }
 
+.alert-message {
+  background-color: transparent !important;
+  padding-left: 0;
+  border-left: 0 !important;
+}
+
 // 4px left, 1px rest...
 // @each $color, $value in $theme-colors {
 //   .alert-#{$color} {
@@ -30,5 +36,9 @@
     border-right: 0;
     border-bottom: 0;
     border-left: 4px solid theme-color($color);
+  }
+
+  .alert-message.alert-#{$color} svg {
+    fill: theme-color($color);
   }
 }

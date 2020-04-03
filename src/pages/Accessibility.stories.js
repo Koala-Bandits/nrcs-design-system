@@ -10,8 +10,15 @@ export const AccessibilityStory = () => (
 
     <p class="lead">
       NRCS has accessibility requirements for web applications that are quite
-      strict and generally aims for <strong>Level AA</strong> and{" "}
+      strict and generally aims for <strong>Level AA</strong> and sometimes{" "}
       <strong>Level AAA</strong> standards.
+    </p>
+    <p>
+      As FPAC states, the goal of accessibility is to build digital products
+      that are usable by everyone, not just to meet minimum standards. We focus
+      on building accessibility into every step of a project, from design to
+      each sprint review. Employing accessibility best practices improves the
+      user experience of all users.
     </p>
     <p>
       In our design system, our components and examples are coded with

@@ -8,7 +8,8 @@ import {
   Row,
   Col,
   Card,
-  CardBody
+  CardBody,
+  CustomInput
 } from "reactstrap";
 
 export default {
@@ -143,6 +144,29 @@ export const ModalDefault = () => {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
+          <Row className="mt-5 ml-3">
+            <Col xs="4">
+              <CustomInput
+                type="checkbox"
+                id="radioPermitObtained"
+                label="Permit Obtained"
+              />
+            </Col>
+            <Col xs="4">
+              <CustomInput
+                type="checkbox"
+                id="radioConsulationComp"
+                label="Consulation Completed"
+              />
+            </Col>
+            <Col xs="4">
+              <CustomInput
+                type="checkbox"
+                id="radioOtherActionComp"
+                label="Other Action Completed"
+              />
+            </Col>
+          </Row>
         </ModalBody>
         <ModalFooter>
           <Button outline color="primary" onClick={toggleLg}>
