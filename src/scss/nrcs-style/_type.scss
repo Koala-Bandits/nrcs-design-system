@@ -35,6 +35,7 @@ h5,
 // for form inputs and in general
 label {
   font-weight: $font-weight-bold;
+  color: $gray-700; // same as table headers
 }
 // but not checkboxes and radios
 .custom-checkbox label,

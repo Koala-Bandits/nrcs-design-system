@@ -16,21 +16,21 @@
 //
 // NRCS default tab style 'tabs'
 //
-ul.nav-tabs {
-  // no-wrap, and horizontal scrolling for small devices
-  flex-wrap: nowrap;
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
+// ul.nav-tabs {
+//   // no-wrap, and horizontal scrolling for small devices
+//   flex-wrap: nowrap;
+//   white-space: nowrap;
+//   overflow-x: auto;
+//   overflow-y: hidden;
 
-  // for ios momentum scrolling
-  -webkit-overflow-scrolling: touch;
+//   // for ios momentum scrolling
+//   -webkit-overflow-scrolling: touch;
 
-  // hide scrollbar on webkit browsers
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
-}
+//   // hide scrollbar on webkit browsers
+//   // &::-webkit-scrollbar {
+//   //   display: none;
+//   // }
+// }
 
 .nav-tabs .nav-link {
   border-top: 4px solid transparent;
