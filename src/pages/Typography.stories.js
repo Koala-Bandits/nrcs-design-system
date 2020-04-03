@@ -39,9 +39,7 @@ export const TypographyStory = () => (
         <Card>
           <CardBody className="docs-typeface">
             <Row>
-              <Col>
-                <strong>Default</strong>
-              </Col>
+              <Col>Default</Col>
             </Row>
             <Row>
               <div className="col-auto docs-text-big">Aa</div>
@@ -58,9 +56,7 @@ export const TypographyStory = () => (
         <Card>
           <CardBody className="docs-typeface font-weight-light">
             <Row>
-              <Col>
-                <strong>Light</strong>
-              </Col>
+              <Col>Light</Col>
             </Row>
             <Row>
               <div className="col-auto docs-text-big">Aa</div>
@@ -77,9 +73,7 @@ export const TypographyStory = () => (
         <Card>
           <CardBody className="docs-typeface font-weight-bold">
             <Row>
-              <Col>
-                <strong>Bold</strong>
-              </Col>
+              <Col>Bold</Col>
             </Row>
             <Row>
               <div className="col-auto docs-text-big">Aa</div>
@@ -96,9 +90,7 @@ export const TypographyStory = () => (
         <Card>
           <CardBody className="docs-typeface docs-text-fallback">
             <Row>
-              <Col>
-                <strong>Fallback (Helvetica)</strong>
-              </Col>
+              <Col>Fallback (Helvetica)</Col>
             </Row>
             <Row>
               <div className="col-auto docs-text-big">Aa</div>
@@ -181,6 +173,12 @@ export const TypographyStory = () => (
     </p>
     <p>
       <kbd>kbd element</kbd>
+    </p>
+    <p>
+      <label>
+        label element: bold for most things except checkboxes, radios, and
+        switches
+      </label>
     </p>
     <p>
       You can use the mark tag to <mark>highlight</mark> text.

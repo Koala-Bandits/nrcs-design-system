@@ -103,5 +103,5 @@ export const MessagesWithIcons = () => (
 );
 
 MessagesWithIcons.story = {
-  name: "Inline Messages - with Icons"
+  name: "Inline Messages"
 };

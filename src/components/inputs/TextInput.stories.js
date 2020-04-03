@@ -7,11 +7,10 @@ export default {
 
 export const RangeDefault = () => (
   <div>
-    <h2 className="docs">Text Inputs</h2>
+    <h2 className="docs">Text Inputs by Type</h2>
 
-    <h3 className="docs">Text Input Types</h3>
     <FormGroup>
-      <Label for="exampleEmail">Plain Text (Static)</Label>
+      <Label for="exampleEmail">Plain Text (Static, Metadata)</Label>
       <Input plaintext value="Some plain text/ static value" />
     </FormGroup>
     <FormGroup>

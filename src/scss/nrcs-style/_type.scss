@@ -28,6 +28,21 @@ h5,
   font-weight: $font-weight-bold;
 }
 
+//
+// Labels
+//
+
+// for form inputs and in general
+label {
+  font-weight: $font-weight-bold;
+}
+// but not checkboxes and radios
+.custom-checkbox label,
+.custom-radio label,
+.custom-switch label {
+  font-weight: $font-weight-normal;
+}
+
 // .lead {
 //   @include font-size($lead-font-size);
 //   font-weight: $lead-font-weight;
