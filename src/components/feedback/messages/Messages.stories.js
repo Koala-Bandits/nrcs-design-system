@@ -23,7 +23,7 @@ export const MessagesWithIcons = () => (
             <Icon className="mdi" path={mdiInformation} />
           </Col>
           <Col className="p-0">
-            This is an <strong>info</strong> alert with{" "}
+            This is an <strong>info</strong> message with{" "}
             <a href="#" className="alert-link">
               an example link
             </a>
@@ -39,7 +39,7 @@ export const MessagesWithIcons = () => (
             <Icon className="mdi" path={mdiCheckCircle} />
           </Col>
           <Col className="p-0">
-            This is a <strong>success</strong> alert with{" "}
+            This is a <strong>success</strong> message with{" "}
             <a href="#" className="alert-link">
               an example link
             </a>
@@ -55,7 +55,7 @@ export const MessagesWithIcons = () => (
             <Icon className="mdi" path={mdiAlertCircle} />
           </Col>
           <Col className="p-0">
-            This is a <strong>error</strong> alert with{" "}
+            This is a <strong>error</strong> message with{" "}
             <a href="#" className="alert-link">
               an example link
             </a>
@@ -71,7 +71,7 @@ export const MessagesWithIcons = () => (
             <Icon className="mdi" path={mdiAlert} />
           </Col>
           <Col className="p-0">
-            This is a <strong>warning</strong> alert with{" "}
+            This is a <strong>warning</strong> message with{" "}
             <a href="#" className="alert-link">
               an example link
             </a>

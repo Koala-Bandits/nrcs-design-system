@@ -11,7 +11,9 @@ import {
   mdiAccountCog,
   mdiAccountMultiple,
   mdiAlert,
+  mdiAlertOutline,
   mdiAlertCircle,
+  mdiAlertCircleOutline,
   mdiBell,
   mdiBellOutline,
   mdiCalendar,
@@ -182,18 +184,18 @@ export const IconographyStory = () => {
             </thead>
             <tbody>
               <IconRow
-                icon={mdiAccount}
-                name="mdiAccount"
+                icon={mdiAccountCircle}
+                name="mdiAccountCircle"
                 text="User account, user preferences"
               />
               <IconRow
-                icon={mdiAccountCircle}
-                name="mdiAccountCircle"
+                icon={mdiAccount}
+                name="mdiAccount"
                 text="Alternate user account, user preferences"
               />
               <IconRow
                 icon={mdiAccountCog}
-                name="mdiAccountCircle"
+                name="mdiAccountCog"
                 text="User account preferences, settings"
               />
               <IconRow
@@ -207,9 +209,19 @@ export const IconographyStory = () => {
                 text="Warning alerts (growls, messaging), caution"
               />
               <IconRow
+                icon={mdiAlertOutline}
+                name="mdiAlertOutline"
+                text="Alternate Warning alerts (subdued), caution"
+              />
+              <IconRow
                 icon={mdiAlertCircle}
                 name="mdiAlertCircle"
                 text="Error alerts (growls, messaging, validation), danger"
+              />
+              <IconRow
+                icon={mdiAlertCircleOutline}
+                name="mdiAlertCircleOutline"
+                text="Alternate (subdued) Error alerts, danger"
               />
               <IconRow
                 icon={mdiBell}
