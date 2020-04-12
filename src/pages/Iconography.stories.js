@@ -110,9 +110,9 @@ export const IconographyStory = () => {
     return (
       <tr>
         <td>
-          <Icon className="mdi" path={props.icon} size={1.3} />
+          <Icon className="mdi" path={props.icon} size={1.33} />
           <Icon className="mdi" path={props.icon} size={1} />
-          <Icon className="mdi" path={props.icon} size={0.8} />
+          <Icon className="mdi" path={props.icon} size={0.75} />
         </td>
         <td>{props.name}</td>
         <td>{props.text}</td>
@@ -124,7 +124,7 @@ export const IconographyStory = () => {
     <div className="container">
       <ContentHeaderH1>Iconography</ContentHeaderH1>
 
-      <p class="lead">
+      <p className="lead">
         NRCS Design System is using the{" "}
         <strong>
           <a
@@ -138,17 +138,16 @@ export const IconographyStory = () => {
         which is a superset of the Google Material Icons.
       </p>
       <ul>
-        <li>Typical sizes used are 18, 24 (default), and 32px</li>
         <li>
-          For SVG usage, sizes are <code>size={"{1}"}</code> or ~24px (default),{" "}
-          <code>size={"{0.8}"}</code>
-          ~18px for smaller sized components
+          NRCS Design System is using SVG MDI icons with a base font size of{" "}
+          <code>size={"{1}"}</code> for 24px or 1.5 rem. For small components,{" "}
+          <code>size={"{0.8}"}</code> gives 19px, and{" "}
+          <code>size={"{1.3}"}</code> for a large ~31px icon.
         </li>
-        <li>Implemented as SVG icons on this site an in examples</li>
-        <li>Default icon color: $gray-700 gray</li>
+        <li>Default icon color: $gray-800 gray</li>
         <li>Action/Clickable icon color: $primary blue</li>
         <li>
-          To get these defaults, use of icons should include the "mdi" class
+          To get these defaults, use of icons should include the "mdi" CSS class
         </li>
         <li>
           For more information on properties, ways of importing and using them
