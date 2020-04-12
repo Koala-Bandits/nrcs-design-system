@@ -15,8 +15,8 @@ export const TypographyStory = () => (
   <div className="container">
     <ContentHeaderH1>Typography</ContentHeaderH1>
     <p class="lead">
-      Clear and consistent headings, highly legible body paragraphs, clear
-      labels, and easy-to-use input fields.
+      Clear and flexible headings, highly legible body paragraphs, distinct
+      labels, easy-to-use and high contrast input fields for accessibility.
     </p>
     <ContentHeaderH2>Typeface</ContentHeaderH2>
     <p>
