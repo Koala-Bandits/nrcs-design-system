@@ -455,7 +455,7 @@ $table-active-bg: $selection-active-bg; // $table-hover-bg !default;
 // $btn-disabled-opacity: 0.65 !default;
 // $btn-active-box-shadow: inset 0 3px 5px rgba($black, 0.125) !default;
 
-// $btn-link-disabled-color: $gray-600 !default;
+$btn-link-disabled-color: $primary; // $gray-600 !default;
 
 // $btn-block-spacing-y: 0.5rem !default;
 
