@@ -9,17 +9,17 @@
 
 // Color system
 
-$white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black: #000 !default;
+$white: #fff;
+$gray-100: #fafafa; // background
+$gray-200: #f0f0f0; // footer, table header, hover
+$gray-300: #e8e8e8;
+$gray-400: #d8d8d8;
+$gray-500: #b8b8b8; // borders/dividers
+$gray-600: #888888; // input borders
+$gray-700: #686868; // input labels, table header text, disabled input text
+$gray-800: #484848; // icons default
+$gray-900: #282828; // text
+$black: #000;
 
 $grays: () !default;
 $grays: map-merge(
@@ -492,7 +492,7 @@ $label-margin-bottom: 0.25rem; // 0.5rem !default;
 // $input-disabled-bg: $gray-200 !default;
 
 $input-color: $body-color; //$gray-700 !default;
-$input-border-color: $border-color; // $gray-400 !default;
+$input-border-color: $gray-600; // $gray-400 !default;
 // $input-border-width: $input-btn-border-width !default;
 // $input-box-shadow: inset 0 1px 1px rgba($black, 0.075) !default;
 
@@ -623,7 +623,7 @@ $input-border-color: $border-color; // $gray-400 !default;
 // $custom-select-font-weight: $input-font-weight !default;
 // $custom-select-line-height: $input-line-height !default;
 // $custom-select-color: $input-color !default;
-// $custom-select-disabled-color: $gray-600 !default;
+$custom-select-disabled-color: $gray-700; // $gray-600 !default;
 // $custom-select-bg: $input-bg !default;
 // $custom-select-disabled-bg: $gray-200 !default;
 // $custom-select-bg-size: 8px 10px !default; // In pixels because image dimensions

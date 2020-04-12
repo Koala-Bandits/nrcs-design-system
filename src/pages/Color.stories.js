@@ -21,7 +21,7 @@ export const ColorStory = () => (
       Several NRCS applications currently use Blue as the primary color coming
       from their water theme. So this design system simply swaps the Blue for
       our Primary and the Green for our Secondary. NRCS gray tertiary and accent
-      colors are adjusted slightly to match the coolness of the blue as primary.
+      colors are adjusted slightly from FPAC.
     </p>
     <p>
       New projects, especially if public facing, should consider using the Green
@@ -33,8 +33,8 @@ export const ColorStory = () => (
 
     <div className="row">
       <div className="col-md-4">
-        <div className="p-3 mb-3 bg-dark text-white docs-color-swatch">
-          Dark (gray-900) #212529
+        <div className="p-3 mb-3 docs-gray-900 text-white docs-color-swatch">
+          Dark (gray-900) #282828
           <p>
             <small>Default text color</small>
           </p>
@@ -42,7 +42,7 @@ export const ColorStory = () => (
       </div>
       <div className="col-md-4">
         <div className="p-3 mb-3 bg-light text-dark border docs-color-swatch">
-          Light (gray-100) #f8f9fa
+          Light (gray-100) #fafafa
           <p>
             <small>Background</small>
           </p>
@@ -151,31 +151,63 @@ export const ColorStory = () => (
 
     <div className="row mb-3">
       <div className="col-md-12">
-        <div className="p-3 docs-gray-100">100 - Default BACKGROUND color</div>
+        <div className="p-3 docs-gray-100">
+          $gray-100 #fafafa
+          <p>
+            <small>BACKGROUND</small>
+          </p>
+        </div>
 
         <div className="p-3 docs-gray-200">
-          200 - Default HOVER for menus and row selections
+          $gray-200 #f0f0f0
+          <p>
+            <small>
+              HOVER for menus and row selections, table header background
+            </small>
+          </p>
         </div>
 
-        <div className="p-3 docs-gray-300">300</div>
+        <div className="p-3 docs-gray-300">$gray-300 #e8e8e8</div>
 
-        <div className="p-3 docs-gray-400">400</div>
+        <div className="p-3 docs-gray-400">$gray-400 #d8d8d8</div>
 
         <div className="p-3 docs-gray-500">
-          500 - Defaults BORDERS other than inputs
+          $gray-500 #b8b8b8
+          <p>
+            <small>BORDERS/DIVIDERS other than inputs</small>
+          </p>
         </div>
 
-        <div className="p-3 docs-gray-600 text-white">600</div>
+        <div className="p-3 docs-gray-600 text-white">
+          $gray-600 #888888
+          <p>
+            <small>
+              INPUT BORDERS for strong color contrast, disabled text
+            </small>
+          </p>
+        </div>
 
         <div className="p-3 docs-gray-700 text-white">
-          700 - Default ICON and INPUT border colors for accessibilty (high
-          contrast)
+          $gray-700 #686868
+          <p>
+            <small>
+              LABELS of inputs and table headers, disabled input text
+            </small>
+          </p>
         </div>
 
-        <div className="p-3 docs-gray-800 text-white">800</div>
+        <div className="p-3 docs-gray-800 text-white">
+          $gray-800 #484848
+          <p>
+            <small>ICONS</small>
+          </p>
+        </div>
 
         <div className="p-3 docs-gray-900 text-white">
-          900 - Default TEXT color
+          $gray-900 #282828
+          <p>
+            <small>Default TEXT color</small>
+          </p>
         </div>
       </div>
     </div>
