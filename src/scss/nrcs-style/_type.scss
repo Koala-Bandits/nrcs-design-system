@@ -41,6 +41,7 @@ label {
 .custom-checkbox label,
 .custom-radio label,
 .custom-switch label {
+  color: $body-color;
   font-weight: $font-weight-normal;
 }
 
