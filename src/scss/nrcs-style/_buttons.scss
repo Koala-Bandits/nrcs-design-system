@@ -53,11 +53,13 @@ $primary-dark: theme-color-level("primary", 3);
 // FLAT (LINK)
 .btn-link {
   color: $primary;
+  text-decoration: none;
 }
 
 .btn-link:hover {
   color: $primary-dark;
   background-color: $gray-200;
+  text-decoration: none;
 }
 
 // ICON (LINK)
