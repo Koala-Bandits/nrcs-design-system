@@ -157,10 +157,12 @@ h6.docs {
 .fpac-footer {
   color: $white;
   background-color: $gray-600;
+  margin-top: 3rem;
 }
-.fpac-footer .col {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.fpac-footer div[class^="col"],
+div[class*=" col"] {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .fpac-footer .nav-link,
 .fpac-footer a {
@@ -173,16 +175,18 @@ h6.docs {
 }
 .fpac-footer-header,
 .fpac-footer-header-secondary {
-  font-size: 20px;
+  font-size: 19px;
+  // font-weight: $font-weight-normal;
 }
 .fpac-footer-secondary {
   border-left: 1px solid rgba(255, 255, 255, 0.5); // 'text-white-50'
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     padding-left: 3rem;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     border-left: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.5); // 'text-white-50'
+    padding-top: 2rem;
   }
 }

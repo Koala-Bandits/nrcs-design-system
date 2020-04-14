@@ -29,8 +29,8 @@ export const ListGroupStory = () => (
     <ContentHeaderH2>Flush</ContentHeaderH2>
 
     <p>
-      A "flush" ListGroup is typically used in a sidebar (left) for secondary
-      app navigation, see tabs stories for examples with as a tab controller.
+      A "flush" ListGroup could be used in a sidebar (left) for secondary app
+      navigation as an alternate to vertical tabs.
     </p>
 
     <ListGroup flush style={{ maxWidth: 500 }}>
@@ -113,6 +113,11 @@ export const ListGroupStory = () => (
     </ListGroup>
 
     <ContentHeaderH2>Borderless with Links</ContentHeaderH2>
+
+    <p>
+      Default use of in-page sidebar (right) navigation using Scrollspy. Similar
+      to Vertial Tabs with subtle differences as a list component.
+    </p>
 
     <ListGroup className="list-group-borderless" style={{ maxWidth: 500 }}>
       <ListGroupItem tag="a" href="#" action>

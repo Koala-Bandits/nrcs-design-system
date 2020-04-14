@@ -297,7 +297,11 @@ export const TabsStory = () => {
       </Nav>
 
       <ContentHeaderH2>Vertical</ContentHeaderH2>
-      <p>Similar to a List Group, but w/ subtle differences as Navs.</p>
+      <p>
+        Vertical Tabs are go to component for sidebar (left) as a sub-navigation
+        of pages. Similar to a List Group, but w/ subtle differences as Nav
+        components.
+      </p>
       <Row>
         <Col sm="4">
           <Nav className="nav-fpac" vertical>

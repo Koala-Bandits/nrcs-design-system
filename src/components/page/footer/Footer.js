@@ -5,17 +5,17 @@ export const Footer = ({ ...rest }) => (
   <Container fluid className="fpac-footer">
     <Container className="p-3">
       <Row>
-        <Col>
-          <h4 className="fpac-footer-header">Column 1</h4>
+        <Col xs="12" sm="4" lg="3">
+          <h4 className="fpac-footer-header">App Links</h4>
           <Nav vertical>
             <NavItem>
-              <NavLink href="#">Link</NavLink>
+              <NavLink href="#">About App</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Link</NavLink>
+              <NavLink href="#">Handbook</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Another Link</NavLink>
+              <NavLink href="#">Site Map</NavLink>
             </NavItem>
             <NavItem>
               <NavLink disabled href="#">
@@ -24,17 +24,17 @@ export const Footer = ({ ...rest }) => (
             </NavItem>
           </Nav>
         </Col>
-        <Col>
-          <h4 className="fpac-footer-header">Column 2</h4>
+        <Col xs="12" sm="4" lg="3">
+          <h4 className="fpac-footer-header">Agency Guidelines</h4>
           <Nav vertical>
             <NavItem>
-              <NavLink href="#">Link</NavLink>
+              <NavLink href="#">Notices</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Link</NavLink>
+              <NavLink href="#">Handbooks</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Another Link</NavLink>
+              <NavLink href="#">Forms</NavLink>
             </NavItem>
             <NavItem>
               <NavLink disabled href="#">
@@ -43,41 +43,41 @@ export const Footer = ({ ...rest }) => (
             </NavItem>
           </Nav>
         </Col>
-        <Col>
-          <h4 className="fpac-footer-header">Column 3</h4>
+        <Col xs="12" sm="4" lg="3">
+          <h4 className="fpac-footer-header">Resources</h4>
           <Nav vertical>
             <NavItem>
               <NavLink href="#">Link</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Link</NavLink>
+              <NavLink href="#">Policies and Links</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#">Another Link</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink disabled href="#">
-                Disabled Link
-              </NavLink>
+              <NavItem>
+                <NavLink href="#">NRCS.gov</NavLink>
+              </NavItem>
             </NavItem>
           </Nav>
         </Col>
-        <Col className="fpac-footer-secondary">
-          <h4 className="fpac-footer-header">Column 3</h4>
+        <Col xs="12" sm="12" lg="3" className="fpac-footer-secondary">
+          <h4 className="fpac-footer-header">Contact Us</h4>
           <Nav vertical>
             <NavItem>
-              <NavLink href="#">Link</NavLink>
+              <NavLink href="#">Help</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Link</NavLink>
+              <NavLink href="#">Support / Phone / Email</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Another Link</NavLink>
+              <NavLink href="#">NRCS.gov</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink disabled href="#">
-                Disabled Link
-              </NavLink>
+              <NavItem>
+                <NavLink href="#">USDA.gov</NavLink>
+              </NavItem>
             </NavItem>
           </Nav>
         </Col>

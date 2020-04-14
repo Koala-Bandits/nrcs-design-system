@@ -1,6 +1,7 @@
 import React from "react";
 import { HeaderNrcsDesignSystem } from "components/page/header/HeaderNrcsDesignSystem";
 import { KitchenSinkStory } from "pages/KitchenSink.stories";
+import { FooterNrcsDesignSystem } from "components/page/footer/FooterNrcsDesignSystem.js";
 
 class KitchenSink extends React.Component {
   constructor(props) {
@@ -20,6 +21,7 @@ class KitchenSink extends React.Component {
             </span>
           </p>
         </div>
+        <FooterNrcsDesignSystem />
       </div>
     );
   }
