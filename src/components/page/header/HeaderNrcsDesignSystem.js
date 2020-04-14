@@ -6,7 +6,11 @@ import {
   Nav,
   NavItem,
   NavLink,
-  NavbarText
+  NavbarText,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
 } from "reactstrap";
 import { HeaderNrcs } from "components/page/header/HeaderNrcs";
 import { NavbarNrcs } from "components/page/header/NavbarNrcs";
@@ -44,60 +48,30 @@ export const HeaderNrcsDesignSystem = ({ ...rest }) => {
             </NavItem>
             <NavItem>
               <NavLink
-                className={
-                  pathname === "/nrcs-design-system/color" ? "active" : null
-                }
-                href="/nrcs-design-system/color"
+                className={pathname.includes("visual-style") ? "active" : null}
+                href="/nrcs-design-system/visual-style"
               >
-                Color
+                Visual Style
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className={pathname.includes("guides") ? "active" : null}
+                href="/nrcs-design-system/guides"
+              >
+                Guides
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
                 className={
-                  pathname === "/nrcs-design-system/typography"
+                  pathname === "/nrcs-design-system/components"
                     ? "active"
                     : null
                 }
-                href="/nrcs-design-system/typography"
+                href="/nrcs-design-system/components"
               >
-                Typography
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                className={
-                  pathname === "/nrcs-design-system/iconography"
-                    ? "active"
-                    : null
-                }
-                href="/nrcs-design-system/iconography"
-              >
-                Iconography
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                className={
-                  pathname === "/nrcs-design-system/accessibility"
-                    ? "active"
-                    : null
-                }
-                href="/nrcs-design-system/accessibility"
-              >
-                Accessibility
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                className={
-                  pathname === "/nrcs-design-system/kitchen-sink"
-                    ? "active"
-                    : null
-                }
-                href="/nrcs-design-system/kitchen-sink"
-              >
-                Kitchen Sink
+                Components
               </NavLink>
             </NavItem>
             <NavItem>

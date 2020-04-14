@@ -98,6 +98,10 @@ h6.docs {
   margin-left: 0.5rem;
 }
 
+.nav-card a:not(:hover) {
+  text-decoration: none;
+}
+
 // Page Header
 // Specifics:
 .fpac-header {

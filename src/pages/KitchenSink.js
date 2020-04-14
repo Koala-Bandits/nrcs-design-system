@@ -1,7 +1,7 @@
 import React from "react";
 import { HeaderNrcsDesignSystem } from "components/page/header/HeaderNrcsDesignSystem";
-import { KitchenSinkStory } from "pages/KitchenSink.stories";
-import { FooterNrcsDesignSystem } from "components/page/footer/FooterNrcsDesignSystem.js";
+import { KitchenSinkStory } from "./KitchenSink.stories";
+import { FooterNrcsDesignSystem } from "components/page/footer/FooterNrcsDesignSystem";
 
 class KitchenSink extends React.Component {
   constructor(props) {

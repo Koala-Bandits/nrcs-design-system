@@ -1,9 +1,9 @@
 import React from "react";
 import { HeaderNrcsDesignSystem } from "components/page/header/HeaderNrcsDesignSystem";
-import { TypographyStory } from "pages/Typography.stories";
-import { FooterNrcsDesignSystem } from "components/page/footer/FooterNrcsDesignSystem.js";
+import { ColorStory } from "./Color.stories";
+import { FooterNrcsDesignSystem } from "components/page/footer/FooterNrcsDesignSystem";
 
-class Typography extends React.Component {
+class Color extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -12,11 +12,11 @@ class Typography extends React.Component {
     return (
       <div>
         <HeaderNrcsDesignSystem />
-        <TypographyStory />
+        <ColorStory />
         <FooterNrcsDesignSystem />
       </div>
     );
   }
 }
 
-export default Typography;
+export default Color;

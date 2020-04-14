@@ -20,11 +20,14 @@ import { configure } from "@storybook/react";
 const loadStories = () => {
   const allExports = [
     require("../src/pages/About.stories.js"),
-    require("../src/pages/Color.stories.js"),
-    require("../src/pages/Typography.stories.js"),
-    require("../src/pages/Iconography.stories.js"),
+    require("../src/pages/VisualStyle.stories.js"),
+    require("../src/pages/visual-style/Color.stories.js"),
+    require("../src/pages/visual-style/Typography.stories.js"),
+    require("../src/pages/visual-style/Iconography.stories.js"),
+    require("../src/pages/Components.stories.js"),
     // require("../src/pages/KitchenSink.stories.js"),
-    require("../src/pages/Accessibility.stories.js")
+    require("../src/pages/Guides.stories.js"),
+    require("../src/pages/guides/Accessibility.stories.js")
   ];
   const req = require.context("../src/components", true, /\.stories\.js$/);
   req.keys().forEach(fname => allExports.push(req(fname)));

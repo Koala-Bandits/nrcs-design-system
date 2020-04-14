@@ -1,9 +1,9 @@
 import React from "react";
 import { HeaderNrcsDesignSystem } from "components/page/header/HeaderNrcsDesignSystem";
-import { IconographyStory } from "pages/Iconography.stories";
-import { FooterNrcsDesignSystem } from "components/page/footer/FooterNrcsDesignSystem.js";
+import { TypographyStory } from "./Typography.stories";
+import { FooterNrcsDesignSystem } from "components/page/footer/FooterNrcsDesignSystem";
 
-class Iconography extends React.Component {
+class Typography extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -12,11 +12,11 @@ class Iconography extends React.Component {
     return (
       <div>
         <HeaderNrcsDesignSystem />
-        <IconographyStory />
+        <TypographyStory />
         <FooterNrcsDesignSystem />
       </div>
     );
   }
 }
 
-export default Iconography;
+export default Typography;

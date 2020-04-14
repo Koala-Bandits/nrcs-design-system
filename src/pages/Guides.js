@@ -1,9 +1,9 @@
 import React from "react";
 import { HeaderNrcsDesignSystem } from "components/page/header/HeaderNrcsDesignSystem";
-import { ColorStory } from "pages/Color.stories";
-import { FooterNrcsDesignSystem } from "components/page/footer/FooterNrcsDesignSystem.js";
+import { GuidesStory } from "./Guides.stories";
+import { FooterNrcsDesignSystem } from "components/page/footer/FooterNrcsDesignSystem";
 
-class Color extends React.Component {
+class Guides extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -12,11 +12,11 @@ class Color extends React.Component {
     return (
       <div>
         <HeaderNrcsDesignSystem />
-        <ColorStory />
+        <GuidesStory />
         <FooterNrcsDesignSystem />
       </div>
     );
   }
 }
 
-export default Color;
+export default Guides;

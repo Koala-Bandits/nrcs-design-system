@@ -1,9 +1,9 @@
 import React from "react";
 import { HeaderNrcsDesignSystem } from "components/page/header/HeaderNrcsDesignSystem";
-import { AboutStory } from "pages/About.stories";
+import { ComponentsStory } from "./Components.stories";
 import { FooterNrcsDesignSystem } from "components/page/footer/FooterNrcsDesignSystem";
 
-class About extends React.Component {
+class Components extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -12,11 +12,11 @@ class About extends React.Component {
     return (
       <div>
         <HeaderNrcsDesignSystem />
-        <AboutStory />
+        <ComponentsStory />
         <FooterNrcsDesignSystem />
       </div>
     );
   }
 }
 
-export default About;
+export default Components;

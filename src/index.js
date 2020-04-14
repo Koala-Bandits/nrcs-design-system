@@ -7,11 +7,18 @@ import "./scss/nrcs-design-system.scss";
 
 // Pages
 import About from "./pages/About";
-import Color from "./pages/Color";
-import Typography from "./pages/Typography";
-import Iconography from "./pages/Iconography";
-import Accessibility from "./pages/Accessibility";
-import KitchenSink from "./pages/KitchenSink";
+// -- Visual Style
+import VisualStyle from "./pages/VisualStyle";
+import Color from "./pages/visual-style/Color";
+import Typography from "./pages/visual-style/Typography";
+import Iconography from "./pages/visual-style/Iconography";
+// -- Components
+import Components from "./pages/Components";
+// -- Guides
+import Guides from "./pages/Guides";
+import Accessibility from "./pages/guides/Accessibility";
+// TODO: grid and layout
+// TODO: utilities
 
 import * as serviceWorker from "./serviceWorker";
 
@@ -25,16 +32,19 @@ WebFont.load({
 
 // Routing via react-router
 // A <Switch> looks through its children <Route>s and renders the first one that matches the current URL.
+// 'exact' does just what it says to for nested routes
 const routing = (
   <Router basename="/nrcs-design-system">
     <div>
       <Switch>
         <Route path="/about" component={About} />
-        <Route path="/color" component={Color} />
-        <Route path="/typography" component={Typography} />
-        <Route path="/iconography" component={Iconography} />
-        <Route path="/accessibility" component={Accessibility} />
-        <Route path="/kitchen-sink" component={KitchenSink} />
+        <Route exact path="/visual-style" component={VisualStyle} />
+        <Route path="/visual-style/color" component={Color} />
+        <Route path="/visual-style/typography" component={Typography} />
+        <Route path="/visual-style/iconography" component={Iconography} />
+        <Route path="/components" component={Components} />
+        <Route exact path="/guides" component={Guides} />
+        <Route path="/guides/accessibility" component={Accessibility} />
         <Route path="/" component={About} />
       </Switch>
     </div>
