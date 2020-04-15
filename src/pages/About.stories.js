@@ -66,48 +66,9 @@ export const AboutStory = () => (
         converge upon for consistent implementation in design and style.
       </li>
       <li>
-        The NRCS Design System is based on a custom{" "}
-        <strong>
-          <a
-            href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"
-            target="_blank"
-            rel="nopener noreferrer"
-          >
-            Bootstrap
-          </a>
-        </strong>{" "}
-        theme. Therefore all users can refer to Bootstrap documentation for{" "}
-        <strong>
-          <a
-            href="https://getbootstrap.com/docs/4.4/components/"
-            target="_blank"
-            rel="nopener noreferrer"
-          >
-            component styles
-          </a>
-        </strong>
-        ,{" "}
-        <strong>
-          <a
-            href="https://getbootstrap.com/docs/4.4/layout/overview/"
-            target="_blank"
-            rel="nopener noreferrer"
-          >
-            layouts
-          </a>
-        </strong>
-        , and{" "}
-        <strong>
-          <a
-            href="https://getbootstrap.com/docs/4.4/utilities/"
-            target="_blank"
-            rel="nopener noreferrer"
-          >
-            utilities
-          </a>
-        </strong>
-        . It's recommended that all styles are done through Bootstrap clasess
-        and keep hand-written CSS to a minimum.
+        Provides a complete scalable UI component library. It covers
+        implementations of most all FPAC components, a few others provided by
+        Reactstrap, as well as some custom complex components.
       </li>
       <li>
         This site is built with React, StoryBook, using{" "}
@@ -130,8 +91,8 @@ export const AboutStory = () => (
             source
           </a>
         </strong>{" "}
-        for this project can serve as an example implementation and start to
-        components.
+        for this project can serve as an example implementation and application
+        skeleton.
       </li>
     </ul>
   </div>

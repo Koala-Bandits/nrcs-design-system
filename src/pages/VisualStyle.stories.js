@@ -18,9 +18,9 @@ export const VisualStyleStory = () => (
 
     <p class="lead">
       NRCS Design System is comprised of the following visual assets for
-      consistent design (styles) presentation across NRCS applications. Explore
-      each section for details.
+      consistent design (styles) presentation across NRCS applications.{" "}
     </p>
+    <p>Explore each section for details.</p>
 
     <Row xs="1" sm="2" md="3">
       <Col className="nav-card mb-3">

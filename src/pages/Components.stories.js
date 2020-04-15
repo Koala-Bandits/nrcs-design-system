@@ -16,10 +16,13 @@ export const ComponentsStory = () => (
     <ContentHeaderH1>Components</ContentHeaderH1>
 
     <p className="lead">
-      NRCS Design System provides a complete scalable UI component library. The
-      Kitchen Sink provides a quick overview of the most common components. View
-      our Storybook for a complete list of components with tools to view the
-      code and test at multiple responsive breakpoints.
+      NRCS Design System provides a complete scalable UI component library. It
+      covers implementations of most all FPAC components, a few others provided
+      by Reactstrap, as well as some custom complex components.
+    </p>
+    <p>
+      View our Storybook for a complete list of components with tools to view
+      the code and test at multiple responsive breakpoints.
     </p>
 
     <Row xs="1" sm="2" md="3">
@@ -45,7 +48,7 @@ export const ComponentsStory = () => (
         <p>
           The NRCS Design System website and components are built with React and
           Reactstrap (Bootstrap) under the hood. Component documentation links
-          for these frameworks are provide as it's useful to understand what
+          for these frameworks are provided as it's useful to understand what
           other options, props, and utilities are available to you if the NRCS
           Design System components don't quite have what you need.
         </p>
