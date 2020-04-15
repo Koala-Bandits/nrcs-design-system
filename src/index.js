@@ -17,7 +17,8 @@ import Components from "./pages/Components";
 // -- Guides
 import Guides from "./pages/Guides";
 import Accessibility from "./pages/guides/Accessibility";
-// TODO: grid and layout
+import GridAndLayout from "./pages/guides/GridAndLayout";
+
 // TODO: utilities
 
 import * as serviceWorker from "./serviceWorker";
@@ -45,6 +46,7 @@ const routing = (
         <Route path="/components" component={Components} />
         <Route exact path="/guides" component={Guides} />
         <Route path="/guides/accessibility" component={Accessibility} />
+        <Route path="/guides/grid-and-layout" component={GridAndLayout} />
         <Route path="/" component={About} />
       </Switch>
     </div>
