@@ -15,15 +15,19 @@ export const GridAndLayoutStory = () => (
   <div className="container">
     <ContentHeaderH1>Grids</ContentHeaderH1>
 
+    <p className="lead">
+      Since the NRCS Design System is built with Reactstrap under the hood, all
+      layouts are based off of the Bootstrap 12-Column grid system.
+    </p>
     <p>
-      Since the NRCS Design System is built with Reactstrap under the hood. All
-      layouts are based off of the Bootstrap 12-Column grid system. The most
-      common layouts are shown below in this guide for convenience. More complex
-      layouts including varying stacking order, hiding and showing at different
-      breakpoints can all be done. Follow their documentation for details
-      (Reactstrap documentation on layout is limited as they assume familiarity
-      with the Bootstrap grid. The Bootstrap grid documentation is much more
-      thorough for learning purposes.)
+      The most common layouts are shown below in this guide for convenience.
+    </p>
+    <p>
+      More complex layouts including varying stacking order, hiding and showing
+      at different breakpoints can all be done. Follow their documentation for
+      details (Reactstrap documentation on layout is limited as they assume
+      familiarity with the Bootstrap grid. The Bootstrap grid documentation is
+      much more thorough for learning purposes.)
     </p>
 
     <Row xs="1" sm="2" md="3">
