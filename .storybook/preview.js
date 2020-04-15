@@ -27,7 +27,14 @@ const loadStories = () => {
     require("../src/pages/Components.stories.js"),
     require("../src/pages/Guides.stories.js"),
     require("../src/pages/guides/Accessibility.stories.js"),
-    require("../src/pages/guides/GridAndLayout.stories.js")
+    require("../src/pages/guides/GridAndLayout.stories.js"),
+
+    // WCIS Stories
+    require("../src/wcis/HeaderWcis.stories.js"),
+    require("../src/wcis/FooterWcis.stories.js"),
+    require("../src/wcis/Dashboard.stories.js"),
+    require("../src/wcis/Profiles.stories.js"),
+    require("../src/wcis/Configuration.stories.js")
   ];
   const req = require.context("../src/components", true, /\.stories\.js$/);
   req.keys().forEach(fname => allExports.push(req(fname)));
