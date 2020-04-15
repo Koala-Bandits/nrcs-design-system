@@ -21,6 +21,11 @@ export const GridAndLayoutStory = () => (
     </p>
     <p>
       The most common layouts are shown below in this guide for convenience.
+      View our{" "}
+      <a href="https://koala-bandits.github.io/nrcs-design-system-storybook">
+        <strong>Storybook</strong>
+      </a>{" "}
+      for quick and easy access to copy-n-paste code examples.
     </p>
     <p>
       More complex layouts including varying stacking order, hiding and showing
