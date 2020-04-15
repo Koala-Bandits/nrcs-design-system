@@ -40,14 +40,16 @@ export const ComponentsStory = () => (
       </Col>
     </Row>
     <Row>
-      <ContentHeaderH2>External References</ContentHeaderH2>
-      <p>
-        The NRCS Design System website and components are built with React and
-        Reactstrap (Bootstrap) under the hood. Component documentation links for
-        these frameworks are provide as it's useful to understand what other
-        options, props, and utilities are available to you if the NRCS Design
-        System components don't quite have what you need.
-      </p>
+      <Col>
+        <ContentHeaderH2>External References</ContentHeaderH2>
+        <p>
+          The NRCS Design System website and components are built with React and
+          Reactstrap (Bootstrap) under the hood. Component documentation links
+          for these frameworks are provide as it's useful to understand what
+          other options, props, and utilities are available to you if the NRCS
+          Design System components don't quite have what you need.
+        </p>
+      </Col>
     </Row>
     <Row xs="1" sm="2" md="3">
       <Col className="nav-card mb-3">

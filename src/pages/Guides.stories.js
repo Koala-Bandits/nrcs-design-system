@@ -37,7 +37,7 @@ export const GuidesStory = () => (
           <Card>
             <CardBody className="h5 mb-0">
               <Icon className="mdi mr-1" path={mdiGrid} size={1.3} />
-              Grids and Layout
+              Grid and Layout
             </CardBody>
           </Card>
         </a>
