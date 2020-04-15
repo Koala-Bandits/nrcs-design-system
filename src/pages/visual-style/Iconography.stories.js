@@ -75,7 +75,7 @@ import {
 } from "@mdi/js";
 
 export default {
-  title: "Design System|Iconography"
+  title: "Design System|Visual Style/Iconography"
 };
 
 export const IconographyStory = () => {

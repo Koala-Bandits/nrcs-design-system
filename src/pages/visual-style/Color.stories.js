@@ -5,7 +5,7 @@ import {
 } from "components/text/ContentHeader";
 
 export default {
-  title: "Design System|Color"
+  title: "Design System|Visual Style/Color"
 };
 
 export const ColorStory = () => (

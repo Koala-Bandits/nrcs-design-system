@@ -8,7 +8,7 @@ import Icon from "@mdi/react";
 import { mdiOpenInNew } from "@mdi/js";
 
 export default {
-  title: "Design System|Typography"
+  title: "Design System|Visual Style/Typography"
 };
 
 export const TypographyStory = () => (

@@ -1,7 +1,7 @@
 import React from "react";
 
 export default {
-  title: "Components|Form Examples/Form"
+  title: "Components|Forms/Form Examples"
 };
 
 export const FormDefault = () => (

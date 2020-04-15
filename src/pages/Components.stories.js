@@ -1,12 +1,11 @@
 import React from "react";
-import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
-import Icon from "@mdi/react";
-import { mdiOpenInNew, mdiBootstrap, mdiReact } from "@mdi/js";
-
+import { Card, CardBody, Row, Col } from "reactstrap";
 import {
   ContentHeaderH1,
   ContentHeaderH2
 } from "components/text/ContentHeader";
+import Icon from "@mdi/react";
+import { mdiOpenInNew, mdiBootstrap, mdiReact } from "@mdi/js";
 
 export default {
   title: "Design System|Components"
@@ -90,7 +89,7 @@ export const ComponentsStory = () => (
       </span>
       <ContentHeaderH2>Page Components</ContentHeaderH2>
       <span className="text-danger">
-        ** Under construction... soon to be a display of core components as an
+        ** Under construction... soon to be a display of page components as an
         overview. For now, see our Storybook for all components. **
       </span>
     </Row>

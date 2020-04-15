@@ -10,8 +10,8 @@ export const RangeDefault = () => (
     <h2 className="docs">Text Inputs by Type</h2>
 
     <FormGroup>
-      <Label for="exampleEmail">Plain Text (Static, Metadata)</Label>
-      <Input plaintext value="Some plain text/ static value" />
+      <Label for="exampleEmail">Read Only (Static, Metadata)</Label>
+      <Input plaintext value="Some plain text static value" />
     </FormGroup>
     <FormGroup>
       <Label for="exampleEmail">Email</Label>

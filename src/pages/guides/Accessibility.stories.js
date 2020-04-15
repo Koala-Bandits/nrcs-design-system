@@ -1,7 +1,7 @@
 import React from "react";
 
 export default {
-  title: "Design System|Accessibility"
+  title: "Design System|Guides/Accessibility"
 };
 
 export const AccessibilityStory = () => (
