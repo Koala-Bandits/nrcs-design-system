@@ -23,7 +23,7 @@ import Components from "./pages/Components";
 import Guides from "./pages/Guides";
 import Accessibility from "./pages/guides/Accessibility";
 import GridAndLayout from "./pages/guides/GridAndLayout";
-// TODO: utilities
+import Utilities from "./pages/guides/Utilities";
 
 // Main Application Root Component
 //
@@ -46,6 +46,7 @@ function App() {
         <Route exact path="/guides" component={Guides} />
         <Route path="/guides/accessibility" component={Accessibility} />
         <Route path="/guides/grid-and-layout" component={GridAndLayout} />
+        <Route path="/guides/utilities" component={Utilities} />
         <Route path="/" component={About} />
       </Switch>
       <FooterNrcsDesignSystem />
