@@ -1,25 +1,14 @@
+// index.js - React Application Entry Point
+
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-// Styles
+// Application Styles via NRCS Design System Bootstrap theme
 import "./scss/nrcs-design-system.scss";
 
-// Pages
-import About from "./pages/About";
-// -- Visual Style
-import VisualStyle from "./pages/VisualStyle";
-import Color from "./pages/visual-style/Color";
-import Typography from "./pages/visual-style/Typography";
-import Iconography from "./pages/visual-style/Iconography";
-// -- Components
-import Components from "./pages/Components";
-// -- Guides
-import Guides from "./pages/Guides";
-import Accessibility from "./pages/guides/Accessibility";
-import GridAndLayout from "./pages/guides/GridAndLayout";
-
-// TODO: utilities
+// Main Application Root Component
+import App from "./App";
 
 import * as serviceWorker from "./serviceWorker";
 
@@ -31,28 +20,17 @@ WebFont.load({
   }
 });
 
-// Routing via react-router
-// A <Switch> looks through its children <Route>s and renders the first one that matches the current URL.
-// 'exact' does just what it says to for nested routes
+// Enable routing via react-router wrapping <App /> in <Router>
+// Routes are then defined in the main application component
 const routing = (
   <Router basename="/nrcs-design-system">
     <div>
-      <Switch>
-        <Route path="/about" component={About} />
-        <Route exact path="/visual-style" component={VisualStyle} />
-        <Route path="/visual-style/color" component={Color} />
-        <Route path="/visual-style/typography" component={Typography} />
-        <Route path="/visual-style/iconography" component={Iconography} />
-        <Route path="/components" component={Components} />
-        <Route exact path="/guides" component={Guides} />
-        <Route path="/guides/accessibility" component={Accessibility} />
-        <Route path="/guides/grid-and-layout" component={GridAndLayout} />
-        <Route path="/" component={About} />
-      </Switch>
+      <App />
     </div>
   </Router>
 );
 
+// Renders our main application component to 'root' div
 ReactDOM.render(routing, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
