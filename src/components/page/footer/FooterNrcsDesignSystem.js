@@ -6,6 +6,7 @@ export const FooterNrcsDesignSystem = ({ ...rest }) => (
     <Container className="p-3">
       <Row>
         <Col xs="12" sm="4" lg="3">
+          <h4 className="fpac-footer-header">Design System</h4>
           <Nav vertical>
             <NavItem>
               <NavLink href="https://koala-bandits.github.io/nrcs-design-system/about">
@@ -20,7 +21,7 @@ export const FooterNrcsDesignSystem = ({ ...rest }) => (
           </Nav>
         </Col>
         <Col xs="12" sm="4" lg="3">
-          <h4 className="fpac-footer-header">Design System</h4>
+          <h4 className="fpac-footer-header">Documentation</h4>
           <Nav vertical>
             <NavItem>
               <NavLink href="/nrcs-design-system/visual-style">
