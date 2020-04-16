@@ -38,7 +38,7 @@ class About extends React.Component {
               target="_blank"
               rel="nopener noreferrer"
             >
-              U.S. Web Design System
+              U.S. Web Design System.
             </a>
           </strong>
         </p>

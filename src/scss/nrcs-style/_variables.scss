@@ -345,7 +345,7 @@ $text-muted: $gray-600 !default;
 // $blockquote-small-font-size: $small-font-size !default;
 // $blockquote-font-size: $font-size-base * 1.25 !default;
 
-// $hr-border-color: rgba($black, 0.1) !default;
+$hr-border-color: $border-color; // rgba($black, 0.1) !default;
 // $hr-border-width: $border-width !default;
 
 // $mark-padding: 0.2em !default;

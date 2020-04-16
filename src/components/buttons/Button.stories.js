@@ -1,5 +1,12 @@
 import React from "react";
 import { Button, Row, Col, Card, CardBody } from "reactstrap";
+import {
+  PrimaryButton,
+  SecondaryButton,
+  FlatButton,
+  ButtonSet,
+  ButtonFooter
+} from "components/buttons/Buttons";
 import Icon from "@mdi/react";
 import {
   mdiAccount,
@@ -15,197 +22,222 @@ import {
 
 export default {
   title: "Components|Buttons"
-  // component: PrimaryButton
 };
 
-export const ButtonsDefault = () => (
+export const ButtonsDefaultStory = () => (
   <div className="docs-btn">
     <h2 className="docs">Buttons</h2>
+    <p className="lead">
+      Keeping things simple with 3 button types: Primary, Secondary, and Flat.
+    </p>
+    <p>
+      Button components are wrapped Reactstrap buttons with some additional
+      style classes for NRCS Design System.
+    </p>
+    <p>
+      <strong>Note:</strong> wrap buttons the{" "}
+      <strong>
+        <code>ButtonSet</code>
+      </strong>{" "}
+      component to provide consistent spacing of groups of buttons.
+    </p>
 
     <h3 className="docs">Default</h3>
-    <Button className="btn-main" color="primary">
-      Primary
-    </Button>
-    <Button className="btn-main" outline color="primary">
-      Secondary
-    </Button>
-    <Button className="btn-main" color="link">
-      Flat
-    </Button>
+    <ButtonSet>
+      <PrimaryButton>Primary</PrimaryButton>
+      <SecondaryButton>Secondary</SecondaryButton>
+      <FlatButton>Flat</FlatButton>
+    </ButtonSet>
 
     <h3 className="docs">Small</h3>
-    <Button className="btn-main" color="primary" size="sm">
-      Primary
-    </Button>
-    <Button className="btn-main" outline color="primary" size="sm">
-      Secondary
-    </Button>
-    <Button className="btn-main" color="link" size="sm">
-      Flat
-    </Button>
+    <ButtonSet>
+      <PrimaryButton size="sm">Primary</PrimaryButton>
+      <SecondaryButton size="sm">Secondary</SecondaryButton>
+      <FlatButton size="sm">Flat</FlatButton>
+    </ButtonSet>
 
     <h3 className="docs">Disabled</h3>
-    <Button className="btn-main" color="primary" aria-disabled="true" disabled>
-      Primary
-    </Button>
-    <Button
-      className="btn-main"
-      outline
-      color="primary"
-      aria-disabled="true"
-      disabled
-    >
-      Secondary
-    </Button>
-    <Button className="btn-main" color="link" aria-disabled="true" disabled>
-      Flat
-    </Button>
+    <ButtonSet>
+      <PrimaryButton aria-disabled="true" disabled>
+        Primary
+      </PrimaryButton>
+      <SecondaryButton aria-disabled="true" disabled>
+        Secondary
+      </SecondaryButton>
+      <FlatButton aria-disabled="true" disabled>
+        Flat
+      </FlatButton>
+    </ButtonSet>
   </div>
 );
 
-export const ButtonsWithIcons = () => (
+export const ButtonsWithIconsStory = () => (
   <div className="docs-btn">
     <h2 className="docs">Buttons - with Icons</h2>
+    <p className="lead">
+      Examples of how to add and use Icons to our button components.
+    </p>
+    <p>
+      <strong>Note:</strong> the use of a{" "}
+      <strong>
+        <code>ButtonSet</code>
+      </strong>{" "}
+      component to provide consistent spacing of groups of buttons as well as a
+      few CSS classes for spacing of Icons with buttons.
+    </p>
 
     <h3 className="docs">Default</h3>
 
-    <Button className="btn-main" color="primary">
-      <Icon className="mdi mr-1" path={mdiAccount} />
-      Primary
-    </Button>
-    <Button className="btn-main" outline color="primary">
-      <Icon className="mdi mr-1" path={mdiAccount} />
-      Secondary
-    </Button>
-    <Button className="btn-main" outline color="primary">
-      <Icon className="mdi mr-1" path={mdiChevronLeft} />
-      Previous
-    </Button>
-    <Button className="btn-main" outline color="primary">
-      Next
-      <Icon className="mdi ml-1" path={mdiChevronRight} />
-    </Button>
-    <Button className="btn-main" outline color="primary">
-      Dropdown
-      <Icon className="mdi ml-1" path={mdiChevronDown} />
-    </Button>
-    <Button className="btn-main" color="link">
-      <Icon className="mdi mr-1" path={mdiAccount} />
-      Flat
-    </Button>
+    <ButtonSet>
+      <PrimaryButton>
+        <Icon className="mdi mr-1" path={mdiAccount} />
+        Primary
+      </PrimaryButton>
+      <SecondaryButton>
+        <Icon className="mdi mr-1" path={mdiAccount} />
+        Secondary
+      </SecondaryButton>
+      <SecondaryButton>
+        <Icon className="mdi mr-1" path={mdiChevronLeft} />
+        Previous
+      </SecondaryButton>
+      <SecondaryButton>
+        Next
+        <Icon className="mdi ml-1" path={mdiChevronRight} />
+      </SecondaryButton>
+      <SecondaryButton>
+        Dropdown
+        <Icon className="mdi ml-1" path={mdiChevronDown} />
+      </SecondaryButton>
+      <FlatButton>
+        <Icon className="mdi mr-1" path={mdiAccount} />
+        Flat
+      </FlatButton>
 
-    <Button className="btn-icon" color="link">
-      <Icon className="mdi" path={mdiPlusBox} />
-    </Button>
-    <Button className="btn-icon" color="link">
-      <Icon className="mdi" path={mdiPencil} />
-    </Button>
-    <Button className="btn-icon" color="link">
-      <Icon className="mdi" path={mdiContentCopy} />
-    </Button>
-    <Button className="btn-icon" color="link">
-      <Icon className="mdi" path={mdiContentPaste} />
-    </Button>
-    <Button className="btn-icon" color="link">
-      <Icon className="mdi" path={mdiDelete} />
-    </Button>
+      <FlatButton className="btn-icon">
+        <Icon className="mdi" path={mdiPlusBox} />
+      </FlatButton>
+      <FlatButton className="btn-icon">
+        <Icon className="mdi" path={mdiPencil} />
+      </FlatButton>
+      <FlatButton className="btn-icon">
+        <Icon className="mdi" path={mdiContentCopy} />
+      </FlatButton>
+      <FlatButton className="btn-icon">
+        <Icon className="mdi" path={mdiContentPaste} />
+      </FlatButton>
+      <FlatButton className="btn-icon">
+        <Icon className="mdi" path={mdiDelete} />
+      </FlatButton>
+    </ButtonSet>
 
     <h3 className="docs">Small</h3>
 
-    <Button className="btn-main" color="primary" size="sm">
-      <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
-      Primary
-    </Button>
-    <Button className="btn-main" outline color="primary" size="sm">
-      <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
-      Secondary
-    </Button>
-    <Button className="btn-main" outline color="primary" size="sm">
-      <Icon className="mdi mr-1" path={mdiChevronLeft} size={0.8} />
-      Previous
-    </Button>
-    <Button className="btn-main" outline color="primary" size="sm">
-      Next
-      <Icon className="mdi ml-1" path={mdiChevronRight} size={0.8} />
-    </Button>
-    <Button className="btn-main" outline color="primary" size="sm">
-      Dropdown
-      <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
-    </Button>
-    <Button className="btn-main" color="link" size="sm">
-      <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
-      Flat
-    </Button>
+    <ButtonSet>
+      <PrimaryButton size="sm">
+        <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+        Primary
+      </PrimaryButton>
+      <SecondaryButton size="sm">
+        <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+        Secondary
+      </SecondaryButton>
+      <SecondaryButton size="sm">
+        <Icon className="mdi mr-1" path={mdiChevronLeft} size={0.8} />
+        Previous
+      </SecondaryButton>
+      <SecondaryButton size="sm">
+        Next
+        <Icon className="mdi ml-1" path={mdiChevronRight} size={0.8} />
+      </SecondaryButton>
+      <SecondaryButton size="sm">
+        Dropdown
+        <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
+      </SecondaryButton>
+      <FlatButton size="sm">
+        <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+        Flat
+      </FlatButton>
 
-    <Button className="btn-icon" color="link">
-      <Icon className="mdi" path={mdiPlusBox} size={0.8} />
-    </Button>
-    <Button className="btn-icon" color="link">
-      <Icon className="mdi" path={mdiPencil} size={0.8} />
-    </Button>
-    <Button className="btn-icon" color="link">
-      <Icon className="mdi" path={mdiContentCopy} size={0.8} />
-    </Button>
-    <Button className="btn-icon" color="link">
-      <Icon className="mdi" path={mdiContentPaste} size={0.8} />
-    </Button>
-    <Button className="btn-icon" color="link">
-      <Icon className="mdi" path={mdiDelete} size={0.8} />
-    </Button>
+      <FlatButton className="btn-icon">
+        <Icon className="mdi" path={mdiPlusBox} size={0.8} />
+      </FlatButton>
+      <FlatButton className="btn-icon">
+        <Icon className="mdi" path={mdiPencil} size={0.8} />
+      </FlatButton>
+      <FlatButton className="btn-icon">
+        <Icon className="mdi" path={mdiContentCopy} size={0.8} />
+      </FlatButton>
+      <FlatButton className="btn-icon">
+        <Icon className="mdi" path={mdiContentPaste} size={0.8} />
+      </FlatButton>
+      <FlatButton className="btn-icon">
+        <Icon className="mdi" path={mdiDelete} size={0.8} />
+      </FlatButton>
+    </ButtonSet>
 
     <h3 className="docs">Disabled</h3>
 
-    <Button
-      className="btn-main"
-      color="primary"
-      size="sm"
-      aria-disabled="true"
-      disabled
-    >
-      <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
-      Primary
-    </Button>
-    <Button
-      className="btn-main"
-      outline
-      color="primary"
-      size="sm"
-      aria-disabled="true"
-      disabled
-    >
-      <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
-      Secondary and more
-    </Button>
-    <Button
-      className="btn-main"
-      color="link"
-      size="sm"
-      aria-disabled="true"
-      disabled
-    >
-      <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
-      Flat
-    </Button>
+    <ButtonSet>
+      <PrimaryButton size="sm" aria-disabled="true" disabled>
+        <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+        Primary
+      </PrimaryButton>
+      <SecondaryButton size="sm" aria-disabled="true" disabled>
+        <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+        Secondary
+      </SecondaryButton>
+      <FlatButton size="sm" aria-disabled="true" disabled>
+        <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+        Flat
+      </FlatButton>
 
-    <Button className="btn-icon" color="link" aria-disabled="true" disabled>
-      <Icon className="mdi" path={mdiPlusBox} size={0.8} />
-    </Button>
-    <Button className="btn-icon" color="link" aria-disabled="true" disabled>
-      <Icon className="mdi" path={mdiPencil} size={0.8} />
-    </Button>
-    <Button className="btn-icon" color="link" aria-disabled="true" disabled>
-      <Icon className="mdi" path={mdiContentCopy} size={0.8} />
-    </Button>
-    <Button className="btn-icon" color="link" aria-disabled="true" disabled>
-      <Icon className="mdi" path={mdiContentPaste} size={0.8} />
-    </Button>
-    <Button className="btn-icon" color="link" aria-disabled="true" disabled>
-      <Icon className="mdi" path={mdiDelete} size={0.8} />
-    </Button>
+      <FlatButton className="btn-icon" aria-disabled="true" disabled>
+        <Icon className="mdi" path={mdiPlusBox} size={0.8} />
+      </FlatButton>
+      <FlatButton className="btn-icon" aria-disabled="true" disabled>
+        <Icon className="mdi" path={mdiPencil} size={0.8} />
+      </FlatButton>
+      <FlatButton className="btn-icon" aria-disabled="true" disabled>
+        <Icon className="mdi" path={mdiContentCopy} size={0.8} />
+      </FlatButton>
+      <FlatButton className="btn-icon" aria-disabled="true" disabled>
+        <Icon className="mdi" path={mdiContentPaste} size={0.8} />
+      </FlatButton>
+      <FlatButton className="btn-icon" aria-disabled="true" disabled>
+        <Icon className="mdi" path={mdiDelete} size={0.8} />
+      </FlatButton>
+    </ButtonSet>
   </div>
 );
 
-export const ButtonsPosition = () => (
+export const ButtonSetStory = () => (
+  <div>
+    <h2 className="docs">ButtonSet</h2>
+    <p class="lead">
+      <strong>
+        Wrap buttons with the <code>ButtonSet</code> component to provide
+        consistent spacing of groups of buttons.
+      </strong>
+    </p>
+    <p>View the source of all these button component examples...</p>
+  </div>
+);
+
+// TODO - not currently used.
+// export const ButtonFooterStory = () => (
+//   <div>
+//     <h2 className="docs">ButtonFooter</h2>
+//     <p class="lead">
+//       <strong>
+//         Wrap buttons in a <code>ButtonFooter</code> component to provide a
+//         container with consistent spacing for buttons.
+//       </strong>
+//     </p>
+//   </div>
+// );
+
+export const ButtonsPositionStory = () => (
   <div className="docs-btn">
     <h2 className="docs">Buttons - Positioning</h2>
 
@@ -226,18 +258,12 @@ export const ButtonsPosition = () => (
             <p>On small screens, buttons stack as blocks with 100% width.</p>
             <hr />
             <div className="text-right">
-              <Button className="btn-main" outline color="primary">
-                Dismissive
-              </Button>
-              <Button className="btn-main" outline color="primary">
-                Secondary
-              </Button>
-              <Button className="btn-main" outline color="primary">
-                Secondary
-              </Button>
-              <Button className="btn-main" color="primary">
-                Primary
-              </Button>
+              <ButtonSet>
+                <SecondaryButton>Dismissive</SecondaryButton>
+                <SecondaryButton>Secondary</SecondaryButton>
+                <SecondaryButton>Secondary</SecondaryButton>
+                <PrimaryButton>Primary</PrimaryButton>
+              </ButtonSet>
             </div>
           </CardBody>
         </Card>
@@ -251,18 +277,12 @@ export const ButtonsPosition = () => (
             Here's another example:
             <hr />
             <div className="text-right">
-              <Button className="btn-main" outline color="primary">
-                Cancel
-              </Button>
-              <Button className="btn-main" outline color="primary">
-                Export
-              </Button>
-              <Button className="btn-main" outline color="primary">
-                Print
-              </Button>
-              <Button className="btn-main" color="primary">
-                Save
-              </Button>
+              <ButtonSet>
+                <SecondaryButton>Cancel</SecondaryButton>
+                <SecondaryButton>Export</SecondaryButton>
+                <SecondaryButton>Print</SecondaryButton>
+                <PrimaryButton>Save</PrimaryButton>
+              </ButtonSet>
             </div>
           </CardBody>
         </Card>
@@ -271,27 +291,22 @@ export const ButtonsPosition = () => (
   </div>
 );
 
-export const ButtonsFooter = () => (
-  <div>
-    <h2 className="docs">Buttons - Footer</h2>
-    To do... typical button usage, but in box with top-border, used in CART and
-    to be used in CD. This will complement our 'ContentHeadings' with a bottom
-    border/underline.
-  </div>
-);
-
-ButtonsDefault.story = {
-  name: "Buttons - Default"
+ButtonsDefaultStory.story = {
+  name: "Buttons"
 };
 
-ButtonsWithIcons.story = {
+ButtonsWithIconsStory.story = {
   name: "Buttons - with Icons"
 };
 
-ButtonsPosition.story = {
-  name: "Buttons - Positioning"
+ButtonSetStory.story = {
+  name: "ButtonSet"
 };
 
-ButtonsFooter.story = {
-  name: "Buttons - Content Footer"
+// ButtonFooterStory.story = {
+//   name: "ButtonFooter"
+// };
+
+ButtonsPositionStory.story = {
+  name: "Button Positioning"
 };
