@@ -10,7 +10,7 @@ class Accessibility extends React.Component {
       <div className="container">
         <h1 className="docs">Accessibility</h1>
 
-        <p class="lead">
+        <p className="lead">
           NRCS has accessibility requirements for web applications that are
           quite strict and generally aims for <strong>Level AA</strong> and
           sometimes <strong>Level AAA</strong> standards.

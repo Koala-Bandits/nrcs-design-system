@@ -214,7 +214,7 @@ export const ButtonsWithIconsStory = () => (
 export const ButtonSetStory = () => (
   <div>
     <h2 className="docs">ButtonSet</h2>
-    <p class="lead">
+    <p className="lead">
       <strong>
         Wrap buttons with the <code>ButtonSet</code> component to provide
         consistent spacing of groups of buttons.
@@ -228,7 +228,7 @@ export const ButtonSetStory = () => (
 // export const ButtonFooterStory = () => (
 //   <div>
 //     <h2 className="docs">ButtonFooter</h2>
-//     <p class="lead">
+//     <p className="lead">
 //       <strong>
 //         Wrap buttons in a <code>ButtonFooter</code> component to provide a
 //         container with consistent spacing for buttons.

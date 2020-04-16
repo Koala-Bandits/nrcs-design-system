@@ -16,7 +16,7 @@ class Typography extends React.Component {
     return (
       <div className="container">
         <ContentHeaderH1>Typography</ContentHeaderH1>
-        <p class="lead">
+        <p className="lead">
           Clear and flexible headings, highly legible body paragraphs, distinct
           labels, easy-to-use and high contrast input fields for accessibility.
         </p>
@@ -125,7 +125,7 @@ class Typography extends React.Component {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <ContentHeaderH2>Lead</ContentHeaderH2>
-        <p class="lead">
+        <p className="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -234,20 +234,20 @@ class Typography extends React.Component {
           <li>List item three</li>
         </ol>
         <ContentHeaderH2>Inline List</ContentHeaderH2>
-        <ul class="list-inline">
-          <li class="list-inline-item">Lorem ipsum</li>
-          <li class="list-inline-item">Phasellus iaculis</li>
-          <li class="list-inline-item">Nulla volutpat</li>
+        <ul className="list-inline">
+          <li className="list-inline-item">Lorem ipsum</li>
+          <li className="list-inline-item">Phasellus iaculis</li>
+          <li className="list-inline-item">Nulla volutpat</li>
         </ul>
         <ContentHeaderH2>Description List</ContentHeaderH2>
-        <dl class="row">
-          <dt class="col-sm-3">Description lists</dt>
-          <dd class="col-sm-9">
+        <dl className="row">
+          <dt className="col-sm-3">Description lists</dt>
+          <dd className="col-sm-9">
             A description list is perfect for defining terms.
           </dd>
 
-          <dt class="col-sm-3">Euismod</dt>
-          <dd class="col-sm-9">
+          <dt className="col-sm-3">Euismod</dt>
+          <dd className="col-sm-9">
             <p>
               Vestibulum id ligula porta felis euismod semper eget lacinia odio
               sem nec elit.
@@ -255,22 +255,24 @@ class Typography extends React.Component {
             <p>Donec id elit non mi porta gravida at eget metus.</p>
           </dd>
 
-          <dt class="col-sm-3">Malesuada porta</dt>
-          <dd class="col-sm-9">
+          <dt className="col-sm-3">Malesuada porta</dt>
+          <dd className="col-sm-9">
             Etiam porta sem malesuada magna mollis euismod.
           </dd>
 
-          <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-          <dd class="col-sm-9">
+          <dt className="col-sm-3 text-truncate">
+            Truncated term is truncated
+          </dt>
+          <dd className="col-sm-9">
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
             nibh, ut fermentum massa justo sit amet risus.
           </dd>
 
-          <dt class="col-sm-3">Nesting</dt>
-          <dd class="col-sm-9">
-            <dl class="row">
-              <dt class="col-sm-4">Nested definition list</dt>
-              <dd class="col-sm-8">
+          <dt className="col-sm-3">Nesting</dt>
+          <dd className="col-sm-9">
+            <dl className="row">
+              <dt className="col-sm-4">Nested definition list</dt>
+              <dd className="col-sm-8">
                 Aenean posuere, tortor sed cursus feugiat, nunc augue blandit
                 nunc.
               </dd>
@@ -306,12 +308,12 @@ class Typography extends React.Component {
             text utilities
           </a>{" "}
           to align things like this:
-          <blockquote class="card blockquote text-center">
-            <p class="mb-0">
+          <blockquote className="card blockquote text-center">
+            <p className="mb-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               posuere erat a ante.
             </p>
-            <footer class="blockquote-footer">
+            <footer className="blockquote-footer">
               Someone famous in <cite title="Source Title">Source Title</cite>
             </footer>
           </blockquote>

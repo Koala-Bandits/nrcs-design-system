@@ -11,12 +11,12 @@ class About extends React.Component {
       <div className="container">
         <ContentHeaderH1>NRCS Design System</ContentHeaderH1>
 
-        <p class="lead">
+        <p className="lead">
           <span className="text-danger">
             ** BETA: CURRENTLY UNDER DEVELOPMENT AND INCOMPLETE **
           </span>
         </p>
-        <p class="lead">
+        <p className="lead">
           <strong>A design system produced for our partners at NRCS.</strong>
         </p>
 

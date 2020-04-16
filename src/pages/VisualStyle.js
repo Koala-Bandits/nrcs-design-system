@@ -18,7 +18,7 @@ class VisualStyle extends React.Component {
       <div className="container">
         <ContentHeaderH1>Visual Style</ContentHeaderH1>
 
-        <p class="lead">
+        <p className="lead">
           NRCS Design System is comprised of the following visual assets for
           consistent design (styles) presentation across NRCS applications.{" "}
         </p>
