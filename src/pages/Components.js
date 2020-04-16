@@ -27,7 +27,7 @@ class Components extends React.Component {
           view the code and test at multiple responsive breakpoints.
         </p>
 
-        <Row xs="1" sm="2" md="3">
+        <Row sm="1" md="2">
           <Col className="nav-card mb-3">
             <a
               href="https://koala-bandits.github.io/nrcs-design-system-storybook"
@@ -57,7 +57,7 @@ class Components extends React.Component {
             </p>
           </Col>
         </Row>
-        <Row xs="1" sm="2" md="3">
+        <Row sm="1" md="2">
           <Col className="nav-card mb-3">
             <a
               href="https://reactstrap.github.io/components/"

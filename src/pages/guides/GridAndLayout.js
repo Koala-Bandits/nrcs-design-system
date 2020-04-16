@@ -38,10 +38,10 @@ class GridAndLayout extends React.Component {
           purposes.)
         </p>
 
-        <Row xs="1" sm="2" md="3">
+        <Row sm="1" md="2">
           <Col className="nav-card mb-3">
             <a
-              href="https://getbootstrap.com/docs/4.4/layout/grid/"
+              href="https://reactstrap.github.io/components/layout/"
               target="_blank"
               rel="nopener noreferrer"
             >

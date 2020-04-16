@@ -24,7 +24,7 @@ class VisualStyle extends React.Component {
         </p>
         <p>Explore each section for details.</p>
 
-        <Row xs="1" sm="2" md="3">
+        <Row sm="1" md="2">
           <Col className="nav-card mb-3">
             <a href="/nrcs-design-system/visual-style/color">
               <Card>
