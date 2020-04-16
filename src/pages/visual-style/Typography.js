@@ -212,7 +212,7 @@ class Typography extends React.Component {
           This is a <sup>sup element</sup> in an sentence.
         </p>
         <p>
-          <time datetime="2005-05-15 19:00">time element</time>
+          <time dateTime="2005-05-15 19:00">time element</time>
         </p>
         <p>
           <u>This line of text will render as underlined</u>
@@ -302,22 +302,24 @@ class Typography extends React.Component {
           </a>{" "}
           links.
         </p>
-        <p>
-          Use{" "}
-          <a href="https://getbootstrap.com/docs/4.4/utilities/text/">
-            text utilities
-          </a>{" "}
-          to align things like this:
-          <blockquote className="card blockquote text-center">
-            <p className="mb-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              posuere erat a ante.
-            </p>
-            <footer className="blockquote-footer">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </footer>
-          </blockquote>
-        </p>
+        <Row>
+          <Col>
+            Use{" "}
+            <a href="https://getbootstrap.com/docs/4.4/utilities/text/">
+              text utilities
+            </a>{" "}
+            to align things like this:
+            <blockquote className="card blockquote text-center">
+              <p className="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                posuere erat a ante.
+              </p>
+              <footer className="blockquote-footer">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </footer>
+            </blockquote>
+          </Col>
+        </Row>
       </div>
     );
   }
