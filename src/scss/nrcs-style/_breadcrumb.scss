@@ -1,3 +1,6 @@
 a.breadcrumb-item {
   text-decoration: none;
 }
+a.breadcrumb-item:hover {
+  text-decoration: underline;
+}

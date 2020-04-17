@@ -1108,8 +1108,8 @@ $list-group-action-active-color: $link-color; // $body-color !default;
 // $breadcrumb-margin-bottom: 1rem !default;
 
 // $breadcrumb-bg: $gray-200 !default;
-// $breadcrumb-divider-color: $gray-600 !default;
-// $breadcrumb-active-color: $gray-600 !default;
+$breadcrumb-divider-color: $body-color; // $gray-600 !default;
+$breadcrumb-active-color: $body-color !important; // $gray-600 !default;
 // $breadcrumb-divider: quote("/") !default;
 
 // $breadcrumb-border-radius: $border-radius !default;
