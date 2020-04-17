@@ -11,6 +11,7 @@ import {
   Card,
   CardBody
 } from "reactstrap";
+import { PrimaryButton, ButtonSet } from "components/buttons/Buttons";
 import Icon from "@mdi/react";
 import {
   mdiInformation,
@@ -67,42 +68,43 @@ export const Growls = () => {
               {/* <Button color="primary" onClick={toggle}>
                 Show Toast
               </Button> */}
+              <ButtonSet>
+                <PrimaryButton
+                  className="btn-main"
+                  color="primary"
+                  onClick={toggleGrowl}
+                >
+                  Show Growl
+                </PrimaryButton>
 
-              <Button
-                className="btn-main"
-                color="primary"
-                onClick={toggleGrowl}
-              >
-                Show Growl
-              </Button>
-
-              {/* <Button color="primary" onClick={toggleAltGrowl}>
+                {/* <Button color="primary" onClick={toggleAltGrowl}>
                 Show Alt Growl
               </Button> */}
 
-              <Button
-                className="btn-main"
-                color="primary"
-                onClick={toggleAutoGrowl}
-              >
-                Show Auto-Hide Growl
-              </Button>
+                <PrimaryButton
+                  className="btn-main"
+                  color="primary"
+                  onClick={toggleAutoGrowl}
+                >
+                  Show Auto-Hide Growl
+                </PrimaryButton>
 
-              <Button
-                className="btn-main"
-                color="primary"
-                onClick={toggleCntGrowl}
-              >
-                Show Top-Center Growl
-              </Button>
+                <PrimaryButton
+                  className="btn-main"
+                  color="primary"
+                  onClick={toggleCntGrowl}
+                >
+                  Show Top-Center Growl
+                </PrimaryButton>
 
-              <Button
-                className="btn-main"
-                color="primary"
-                onClick={toggleCntGrowl2}
-              >
-                Show Top-Center Growl 2
-              </Button>
+                <PrimaryButton
+                  className="btn-main"
+                  color="primary"
+                  onClick={toggleCntGrowl2}
+                >
+                  Show Top-Center Growl 2
+                </PrimaryButton>
+              </ButtonSet>
             </CardBody>
           </Card>
         </Col>

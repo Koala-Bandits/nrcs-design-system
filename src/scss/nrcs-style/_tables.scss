@@ -22,6 +22,9 @@
   //   border-bottom: 2 * $border-width solid $table-border-color;
   border-top: none;
 }
+.table-alt tr {
+  background-color: transparent;
+}
 
 .table-active {
   font-weight: $font-weight-bold;

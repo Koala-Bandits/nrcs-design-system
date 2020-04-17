@@ -369,7 +369,7 @@ $hr-border-color: $border-color; // rgba($black, 0.1) !default;
 // $table-cell-padding-sm: 0.3rem !default;
 
 // $table-color: $body-color !default;
-// $table-bg: null !default;
+$table-bg: $white; // null !default;
 // $table-accent-bg: rgba($black, 0.05) !default;
 
 // $table-hover-color: $table-color !default;
