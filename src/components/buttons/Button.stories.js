@@ -1,5 +1,12 @@
 import React from "react";
-import { Button, Row, Col, Card, CardBody } from "reactstrap";
+import {
+  ButtonGroup,
+  ButtonToolbar,
+  Row,
+  Col,
+  Card,
+  CardBody
+} from "reactstrap";
 import {
   PrimaryButton,
   SecondaryButton,
@@ -35,11 +42,11 @@ export const ButtonsDefaultStory = () => (
       style classes for NRCS Design System.
     </p>
     <p>
-      <strong>Note:</strong> wrap buttons the{" "}
+      <strong>Tip:</strong> wrap buttons with the{" "}
       <strong>
         <code>ButtonSet</code>
       </strong>{" "}
-      component to provide consistent spacing of groups of buttons.
+      component to provide consistent equal spacing of a set of buttons.
     </p>
 
     <h3 className="docs">Default</h3>
@@ -224,18 +231,92 @@ export const ButtonSetStory = () => (
   </div>
 );
 
-// TODO - not currently used.
-// export const ButtonFooterStory = () => (
-//   <div>
-//     <h2 className="docs">ButtonFooter</h2>
-//     <p className="lead">
-//       <strong>
-//         Wrap buttons in a <code>ButtonFooter</code> component to provide a
-//         container with consistent spacing for buttons.
-//       </strong>
-//     </p>
-//   </div>
-// );
+export const ButtonGroupStory = () => (
+  <div>
+    <h2 className="docs">Button Groups</h2>
+    <p className="lead">
+      <strong>
+        Use a ButtonGroup to create a button-bar, search-bar, toolbar, page-bar
+        etc.
+      </strong>
+    </p>
+    <p>
+      These are used to create our file-browser & search form components for
+      example.
+    </p>
+
+    <Row>
+      <Col>
+        <h3>Default</h3>
+        <ButtonGroup>
+          <PrimaryButton>Left</PrimaryButton>
+          <PrimaryButton>Middle</PrimaryButton>
+          <PrimaryButton>Right</PrimaryButton>
+        </ButtonGroup>
+
+        <h3 className="mt-3">Small</h3>
+        <ButtonGroup size="sm">
+          <PrimaryButton>Left</PrimaryButton>
+          <PrimaryButton>Middle</PrimaryButton>
+          <PrimaryButton>Right</PrimaryButton>
+        </ButtonGroup>
+
+        <h3 className="mt-3">Vertical</h3>
+        <ButtonGroup vertical>
+          <PrimaryButton>Left</PrimaryButton>
+          <PrimaryButton>Middle</PrimaryButton>
+          <PrimaryButton>Right</PrimaryButton>
+        </ButtonGroup>
+
+        <h3 className="mt-3">Toolbar</h3>
+        <ButtonToolbar>
+          <ButtonGroup>
+            <PrimaryButton>This</PrimaryButton>
+            <PrimaryButton>That</PrimaryButton>
+            <PrimaryButton>There</PrimaryButton>
+          </ButtonGroup>
+          <ButtonGroup className="ml-3">
+            <PrimaryButton>One</PrimaryButton>
+            <PrimaryButton>Two</PrimaryButton>
+            <PrimaryButton>Three</PrimaryButton>
+          </ButtonGroup>
+        </ButtonToolbar>
+      </Col>
+    </Row>
+  </div>
+);
+
+export const ButtonFooterStory = () => (
+  <div>
+    <h2 className="docs">ButtonFooter</h2>
+    <p className="lead">
+      <strong>
+        Wrap buttons in a <code>ButtonFooter</code> component to provide a
+        container with consistent spacing for buttons with a 1px top border by
+        default.
+      </strong>
+      <p>Works well to finish off forms, cards, or other input blocks.</p>
+    </p>
+    <Row className="mt-3">
+      <Col>
+        <Card>
+          <CardBody>
+            Buttons wrapped in a ButtonSet for consistent spacing wrapped in a
+            ButtonFooter.
+            <ButtonFooter className="text-right">
+              <ButtonSet>
+                <SecondaryButton>Cancel</SecondaryButton>
+                <SecondaryButton>Export</SecondaryButton>
+                <SecondaryButton>Print</SecondaryButton>
+                <PrimaryButton>Save</PrimaryButton>
+              </ButtonSet>
+            </ButtonFooter>
+          </CardBody>
+        </Card>
+      </Col>
+    </Row>
+  </div>
+);
 
 export const ButtonsPositionStory = () => (
   <div className="docs-btn">
@@ -274,16 +355,60 @@ export const ButtonsPositionStory = () => (
       <Col>
         <Card>
           <CardBody>
-            Here's another example:
-            <hr />
-            <div className="text-right">
+            Suggested and most common example:
+            <ButtonFooter className="text-right">
               <ButtonSet>
                 <SecondaryButton>Cancel</SecondaryButton>
                 <SecondaryButton>Export</SecondaryButton>
                 <SecondaryButton>Print</SecondaryButton>
                 <PrimaryButton>Save</PrimaryButton>
               </ButtonSet>
-            </div>
+            </ButtonFooter>
+          </CardBody>
+        </Card>
+      </Col>
+    </Row>
+
+    <Row className="mt-3">
+      <Col>
+        <Card>
+          <CardBody>
+            On the left...
+            <p>
+              {" "}
+              Left justified is less preferred, but works for large pages or for
+              reasons to keep buttons in close proximity to say a left sidebar.
+            </p>
+            <ButtonFooter>
+              <ButtonSet>
+                <SecondaryButton>Cancel</SecondaryButton>
+                <SecondaryButton>Export</SecondaryButton>
+                <SecondaryButton>Print</SecondaryButton>
+                <PrimaryButton>Save</PrimaryButton>
+              </ButtonSet>
+            </ButtonFooter>
+          </CardBody>
+        </Card>
+      </Col>
+    </Row>
+    <Row className="mt-3">
+      <Col>
+        <Card>
+          <CardBody>
+            Sometimes a split scenario makes sense.
+            <ButtonFooter>
+              <Row>
+                <Col xs="12" sm="6" className="mt-0 mb-0">
+                  <ButtonSet>
+                    <SecondaryButton>Back</SecondaryButton>
+                    <SecondaryButton>Next</SecondaryButton>
+                  </ButtonSet>
+                </Col>
+                <Col xs="12" sm="6" className="text-right mt-0 mb-0">
+                  <PrimaryButton>Save</PrimaryButton>
+                </Col>
+              </Row>
+            </ButtonFooter>
           </CardBody>
         </Card>
       </Col>
@@ -303,9 +428,13 @@ ButtonSetStory.story = {
   name: "ButtonSet"
 };
 
-// ButtonFooterStory.story = {
-//   name: "ButtonFooter"
-// };
+ButtonGroupStory.story = {
+  name: "Button Groups"
+};
+
+ButtonFooterStory.story = {
+  name: "ButtonFooter"
+};
 
 ButtonsPositionStory.story = {
   name: "Button Positioning"

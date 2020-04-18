@@ -37,6 +37,12 @@ export const CardDefault = () => (
       <CardBody>This is some text within a muted card body.</CardBody>
     </Card>
 
+    <h3 className="docs">Transparent</h3>
+
+    <Card className="bg-transparent" style={{ maxWidth: 500 }}>
+      <CardBody>Blend in with the background.</CardBody>
+    </Card>
+
     <h3 className="docs">Kitchen Sink Card</h3>
 
     <Card style={{ maxWidth: 340 }}>

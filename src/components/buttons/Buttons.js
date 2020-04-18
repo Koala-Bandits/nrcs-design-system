@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "reactstrap";
+import { Button, Row, Col } from "reactstrap";
 
 export class PrimaryButton extends React.Component {
   render() {
@@ -37,8 +37,21 @@ export class ButtonSet extends React.Component {
   }
 }
 
-export class ButtonFooter extends React.Component {
-  render() {
-    return <div className="p-3">{this.props.children}</div>;
-  }
-}
+export const ButtonFooter = ({ className, children }) => (
+  <div className={`pt-3 pb-3 mt-3 border-top ${className}`}>{children}</div>
+);
+
+// export class ButtonFooter extends React.Component {
+//   render() {
+//     let className = "pt-3 pb-3 mt-3 border-top";
+//     if (this.props.className) {
+//       className += " " + this.props.className;
+//     }
+
+//     return (
+//       <div className={{ className }} {...this.props}>
+//         {this.props.children}
+//       </div>
+//     );
+//   }
+// }
