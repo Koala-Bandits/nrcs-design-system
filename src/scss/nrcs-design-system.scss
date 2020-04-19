@@ -163,10 +163,12 @@ h6.docs {
   background-color: $gray-600;
   margin-top: 3rem;
 }
-.fpac-footer div[class^="col"],
-div[class*=" col"] {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.fpac-footer {
+  div[class^="col"],
+  div[class*=" col"] {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 .fpac-footer .nav-link,
 .fpac-footer a {

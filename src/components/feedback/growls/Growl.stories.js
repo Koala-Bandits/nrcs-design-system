@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   Alert,
-  Button,
   Toast,
   ToastBody,
   ToastHeader,
@@ -69,39 +68,21 @@ export const Growls = () => {
                 Show Toast
               </Button> */}
               <ButtonSet>
-                <PrimaryButton
-                  className="btn-main"
-                  color="primary"
-                  onClick={toggleGrowl}
-                >
-                  Show Growl
-                </PrimaryButton>
+                <PrimaryButton onClick={toggleGrowl}>Show Growl</PrimaryButton>
 
                 {/* <Button color="primary" onClick={toggleAltGrowl}>
                 Show Alt Growl
               </Button> */}
 
-                <PrimaryButton
-                  className="btn-main"
-                  color="primary"
-                  onClick={toggleAutoGrowl}
-                >
+                <PrimaryButton onClick={toggleAutoGrowl}>
                   Show Auto-Hide Growl
                 </PrimaryButton>
 
-                <PrimaryButton
-                  className="btn-main"
-                  color="primary"
-                  onClick={toggleCntGrowl}
-                >
+                <PrimaryButton onClick={toggleCntGrowl}>
                   Show Top-Center Growl
                 </PrimaryButton>
 
-                <PrimaryButton
-                  className="btn-main"
-                  color="primary"
-                  onClick={toggleCntGrowl2}
-                >
+                <PrimaryButton onClick={toggleCntGrowl2}>
                   Show Top-Center Growl 2
                 </PrimaryButton>
               </ButtonSet>

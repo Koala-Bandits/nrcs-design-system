@@ -8,7 +8,6 @@ import {
   CardTitle,
   CardSubtitle,
   CardLink,
-  Button,
   ListGroup,
   ListGroupItem
 } from "reactstrap";
