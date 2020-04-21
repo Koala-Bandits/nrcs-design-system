@@ -6,7 +6,7 @@ export const HeaderWcis = ({ ...rest }) => (
     <Container className="header-title h1 mb-0">
       <Row>
         <Col>
-          <a href="/wcis/" title="Home" aria-label="Home">
+          <a href="/" title="Home" aria-label="Home">
             Snotel Auto Validation Tool{" "}
             <span className="header-subtitle">| BETA</span>
           </a>

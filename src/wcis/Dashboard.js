@@ -1,7 +1,6 @@
 import React from "react";
-import { HeaderWcisApp } from "./HeaderWcisApp";
-import { DashboardStory } from "./Dashboard.stories";
-import { FooterWcis } from "./FooterWcis";
+import { Card, CardBody, Row, Col } from "reactstrap";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 class Dashboard extends React.Component {
   constructor(props) {
@@ -10,10 +9,16 @@ class Dashboard extends React.Component {
 
   render() {
     return (
-      <div>
-        <HeaderWcisApp />
-        <DashboardStory />
-        <FooterWcis />
+      <div className="container">
+        <ContentHeaderH1>Dashboard</ContentHeaderH1>
+
+        <Row>
+          <Col>
+            <Card className="card-muted">
+              <CardBody className="text-center">CONTENT</CardBody>
+            </Card>
+          </Col>
+        </Row>
       </div>
     );
   }

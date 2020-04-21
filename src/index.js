@@ -1,14 +1,14 @@
+// index.js - React Application Entry Point
+
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
-// Styles
+// Application Styles via NRCS Design System Bootstrap theme
 import "./scss/nrcs-design-system.scss";
 
-// Pages
-import Dashboard from "./wcis/Dashboard";
-import Profiles from "./wcis/Profiles";
-import Configuration from "./wcis/Configuration";
+// Main Application Root Component
+import App from "./App";
 
 import * as serviceWorker from "./serviceWorker";
 
@@ -20,23 +20,17 @@ WebFont.load({
   }
 });
 
-// Routing via react-router
-// A <Switch> looks through its children <Route>s and renders the first one that matches the current URL.
-// 'exact' does just what it says to for nested routes
+// Enable routing via react-router wrapping <App /> in <Router>
+// Routes are then defined in the main application component
 const routing = (
   <Router basename="/wcis">
     <div>
-      <Switch>
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/profiles" component={Profiles} />
-        <Route path="/configuration" component={Configuration} />
-        {/* <Route exact path="/visual-style" component={VisualStyle} /> */}
-        <Route path="/" component={Dashboard} />
-      </Switch>
+      <App />
     </div>
   </Router>
 );
 
+// Renders our main application component to 'root' div
 ReactDOM.render(routing, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change

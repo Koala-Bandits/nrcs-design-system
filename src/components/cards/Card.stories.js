@@ -8,7 +8,6 @@ import {
   CardTitle,
   CardSubtitle,
   CardLink,
-  Button,
   ListGroup,
   ListGroupItem
 } from "reactstrap";
@@ -35,6 +34,12 @@ export const CardDefault = () => (
 
     <Card className="card-muted" style={{ maxWidth: 500 }}>
       <CardBody>This is some text within a muted card body.</CardBody>
+    </Card>
+
+    <h3 className="docs">Transparent</h3>
+
+    <Card className="bg-transparent" style={{ maxWidth: 500 }}>
+      <CardBody>Blend in with the background.</CardBody>
     </Card>
 
     <h3 className="docs">Kitchen Sink Card</h3>

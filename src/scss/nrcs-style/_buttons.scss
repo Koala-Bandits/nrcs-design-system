@@ -19,6 +19,11 @@ $primary-dark: theme-color-level("primary", 3);
   }
 }
 
+// BUTTON SET for spacing of buttons consistently
+.btn-set button + button {
+  margin-left: 0.5rem;
+}
+
 // SOLID
 .btn-primary:hover {
   background-color: $primary-dark;

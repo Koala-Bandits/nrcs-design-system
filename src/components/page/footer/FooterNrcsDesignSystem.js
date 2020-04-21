@@ -15,25 +15,27 @@ export const FooterNrcsDesignSystem = ({ ...rest }) => (
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/Koala-Bandits/nrcs-design-system">
-                GitHub - Contribute!
+                GitHub
               </NavLink>
             </NavItem>
           </Nav>
         </Col>
         <Col xs="12" sm="4" lg="3">
-          <h4 className="fpac-footer-header">Guides</h4>
+          <h4 className="fpac-footer-header">Documentation</h4>
           <Nav vertical>
             <NavItem>
-              <NavLink href="#">Visual Style</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://koala-bandits.github.io/nrcs-design-system/kitchen-sink">
-                Kitchen Sink
+              <NavLink href="/nrcs-design-system/visual-style">
+                Visual Style
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://koala-bandits.github.io/nrcs-design-system-storybook">
-                Storybook
+              <NavLink href="http://localhost:3000/nrcs-design-system/guides">
+                Guides
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="http://localhost:3000/nrcs-design-system/components">
+                Components
               </NavLink>
             </NavItem>
           </Nav>

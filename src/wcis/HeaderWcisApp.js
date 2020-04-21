@@ -33,15 +33,13 @@ export const HeaderWcisApp = ({ ...rest }) => {
             <NavItem>
               <NavLink
                 className={
-                  pathname === "/wcis/dashboard"
-                    ? "active"
-                    : pathname === "/wcis/"
+                  pathname === "/dashboard"
                     ? "active"
                     : pathname === "/"
                     ? "active"
                     : null
                 }
-                href="/wcis/dashboard"
+                href="/dashboard"
               >
                 Dashboard
               </NavLink>
@@ -49,7 +47,7 @@ export const HeaderWcisApp = ({ ...rest }) => {
             <NavItem>
               <NavLink
                 className={pathname.includes("visual-style") ? "active" : null}
-                href="/wcis/profiles"
+                href="/profiles"
               >
                 Profiles
               </NavLink>
@@ -57,7 +55,7 @@ export const HeaderWcisApp = ({ ...rest }) => {
             <NavItem>
               <NavLink
                 className={pathname.includes("guides") ? "active" : null}
-                href="/wcis/configuration"
+                href="/configuration"
               >
                 Configuration
               </NavLink>

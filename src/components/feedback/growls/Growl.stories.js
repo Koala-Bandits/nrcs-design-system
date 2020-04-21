@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   Alert,
-  Button,
   Toast,
   ToastBody,
   ToastHeader,
@@ -11,6 +10,7 @@ import {
   Card,
   CardBody
 } from "reactstrap";
+import { PrimaryButton, ButtonSet } from "components/buttons/Buttons";
 import Icon from "@mdi/react";
 import {
   mdiInformation,
@@ -31,7 +31,9 @@ export const Growls = () => {
   const [showCntGrowl, setShowCntGrowl] = useState(false);
   const [showCntGrowl2, setShowCntGrowl2] = useState(false);
 
-  const toggle = () => setShow(!show);
+  const toggle = () => {
+    setShow(!show);
+  };
   const toggleGrowl = () => setShowGrowl(!showGrowl);
   const toggleAltGrowl = () => setShowAltGrowl(!showAltGrowl);
   const toggleAutoGrowl = () => setShowAutoGrowl(!showAutoGrowl);
@@ -67,42 +69,25 @@ export const Growls = () => {
               {/* <Button color="primary" onClick={toggle}>
                 Show Toast
               </Button> */}
+              <ButtonSet>
+                <PrimaryButton onClick={toggleGrowl}>Show Growl</PrimaryButton>
 
-              <Button
-                className="btn-main"
-                color="primary"
-                onClick={toggleGrowl}
-              >
-                Show Growl
-              </Button>
-
-              {/* <Button color="primary" onClick={toggleAltGrowl}>
+                {/* <Button color="primary" onClick={toggleAltGrowl}>
                 Show Alt Growl
               </Button> */}
 
-              <Button
-                className="btn-main"
-                color="primary"
-                onClick={toggleAutoGrowl}
-              >
-                Show Auto-Hide Growl
-              </Button>
+                <PrimaryButton onClick={toggleAutoGrowl}>
+                  Show Auto-Hide Growl
+                </PrimaryButton>
 
-              <Button
-                className="btn-main"
-                color="primary"
-                onClick={toggleCntGrowl}
-              >
-                Show Top-Center Growl
-              </Button>
+                <PrimaryButton onClick={toggleCntGrowl}>
+                  Show Top-Center Growl
+                </PrimaryButton>
 
-              <Button
-                className="btn-main"
-                color="primary"
-                onClick={toggleCntGrowl2}
-              >
-                Show Top-Center Growl 2
-              </Button>
+                <PrimaryButton onClick={toggleCntGrowl2}>
+                  Show Top-Center Growl 2
+                </PrimaryButton>
+              </ButtonSet>
             </CardBody>
           </Card>
         </Col>
@@ -111,7 +96,7 @@ export const Growls = () => {
       {/* Position it */}
       <div className="growl growl-top-right">
         {/* Then put toasts within */}
-        <Toast isOpen={show}>
+        <Toast id="toast1" isOpen={show}>
           <ToastHeader toggle={toggle}>Toast title</ToastHeader>
           <ToastBody>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

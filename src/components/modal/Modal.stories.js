@@ -11,6 +11,7 @@ import {
   CardBody,
   CustomInput
 } from "reactstrap";
+import { PrimaryButton, ButtonSet } from "components/buttons/Buttons";
 
 export default {
   title: "Components|Modal"
@@ -57,33 +58,50 @@ export const ModalDefault = () => {
                 For accessibility, focus moves to the modal on open, and when
                 closed moves back to the action that invoked it.
               </p>
-
-              <Button className="btn-main" color="primary" onClick={toggleSm}>
-                Small
-              </Button>
-              <Button className="btn-main" color="primary" onClick={toggle}>
-                Default
-              </Button>
-              <Button className="btn-main" color="primary" onClick={toggleLg}>
-                Large
-              </Button>
-              <Button className="btn-main" color="primary" onClick={toggleXl}>
-                X Large
-              </Button>
-              <Button
-                className="btn-main"
-                color="primary"
-                onClick={toggleScroll}
-              >
-                Scroll
-              </Button>
-              <Button
-                className="btn-main"
-                color="primary"
-                onClick={toggleBscroll}
-              >
-                Body Scroll
-              </Button>
+              <ButtonSet>
+                <PrimaryButton
+                  className="btn-main"
+                  color="primary"
+                  onClick={toggleSm}
+                >
+                  Small
+                </PrimaryButton>
+                <PrimaryButton
+                  className="btn-main"
+                  color="primary"
+                  onClick={toggle}
+                >
+                  Default
+                </PrimaryButton>
+                <PrimaryButton
+                  className="btn-main"
+                  color="primary"
+                  onClick={toggleLg}
+                >
+                  Large
+                </PrimaryButton>
+                <PrimaryButton
+                  className="btn-main"
+                  color="primary"
+                  onClick={toggleXl}
+                >
+                  X Large
+                </PrimaryButton>
+                <PrimaryButton
+                  className="btn-main"
+                  color="primary"
+                  onClick={toggleScroll}
+                >
+                  Scroll
+                </PrimaryButton>
+                <PrimaryButton
+                  className="btn-main"
+                  color="primary"
+                  onClick={toggleBscroll}
+                >
+                  Body Scroll
+                </PrimaryButton>
+              </ButtonSet>
             </CardBody>
           </Card>
         </Col>

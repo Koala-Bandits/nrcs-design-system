@@ -28,6 +28,7 @@ const loadStories = () => {
     require("../src/pages/Guides.stories.js"),
     require("../src/pages/guides/Accessibility.stories.js"),
     require("../src/pages/guides/GridAndLayout.stories.js"),
+    require("../src/pages/guides/Utilities.stories.js"),
 
     // WCIS Stories
     require("../src/wcis/HeaderWcis.stories.js"),

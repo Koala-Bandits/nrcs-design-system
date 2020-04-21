@@ -345,7 +345,7 @@ $text-muted: $gray-600 !default;
 // $blockquote-small-font-size: $small-font-size !default;
 // $blockquote-font-size: $font-size-base * 1.25 !default;
 
-// $hr-border-color: rgba($black, 0.1) !default;
+$hr-border-color: $border-color; // rgba($black, 0.1) !default;
 // $hr-border-width: $border-width !default;
 
 // $mark-padding: 0.2em !default;
@@ -369,7 +369,7 @@ $text-muted: $gray-600 !default;
 // $table-cell-padding-sm: 0.3rem !default;
 
 // $table-color: $body-color !default;
-// $table-bg: null !default;
+$table-bg: $white; // null !default;
 // $table-accent-bg: rgba($black, 0.05) !default;
 
 // $table-hover-color: $table-color !default;
@@ -1108,8 +1108,8 @@ $list-group-action-active-color: $link-color; // $body-color !default;
 // $breadcrumb-margin-bottom: 1rem !default;
 
 // $breadcrumb-bg: $gray-200 !default;
-// $breadcrumb-divider-color: $gray-600 !default;
-// $breadcrumb-active-color: $gray-600 !default;
+$breadcrumb-divider-color: $body-color; // $gray-600 !default;
+$breadcrumb-active-color: $body-color !important; // $gray-600 !default;
 // $breadcrumb-divider: quote("/") !default;
 
 // $breadcrumb-border-radius: $border-radius !default;
