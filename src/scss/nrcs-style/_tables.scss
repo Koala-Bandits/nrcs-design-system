@@ -16,14 +16,12 @@
   border-left: none;
   border-right: none;
   border-bottom: none;
+  background-color: transparent;
 }
 .table-alt thead th {
   //   border-top: 2 * $border-width solid $table-border-color;
   //   border-bottom: 2 * $border-width solid $table-border-color;
   border-top: none;
-}
-.table-alt tr {
-  background-color: transparent;
 }
 
 .table-active {

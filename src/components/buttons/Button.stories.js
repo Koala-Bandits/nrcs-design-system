@@ -269,13 +269,18 @@ export const ButtonGroupStory = () => (
         </ButtonGroup>
 
         <h3 className="mt-3">Toolbar</h3>
-        <ButtonToolbar>
-          <ButtonGroup>
+        <p>
+          Combine sets of button groups into button toolbars for more complex
+          components. Use utility classes as needed to space out groups,
+          buttons, and more.
+        </p>
+        <ButtonToolbar role="toolbar" aria-label="Toolbar with button groups">
+          <ButtonGroup role="group" aria-label="First group">
             <PrimaryButton>This</PrimaryButton>
             <PrimaryButton>That</PrimaryButton>
             <PrimaryButton>There</PrimaryButton>
           </ButtonGroup>
-          <ButtonGroup className="ml-3">
+          <ButtonGroup className="ml-3" role="group" aria-label="Second group">
             <PrimaryButton>One</PrimaryButton>
             <PrimaryButton>Two</PrimaryButton>
             <PrimaryButton>Three</PrimaryButton>

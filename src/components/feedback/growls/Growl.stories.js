@@ -31,7 +31,7 @@ export const Growls = () => {
   const [showCntGrowl, setShowCntGrowl] = useState(false);
   const [showCntGrowl2, setShowCntGrowl2] = useState(false);
 
-  const toggle = () => setShow(!show);
+  const toggle = () => {setShow(!show);
   const toggleGrowl = () => setShowGrowl(!showGrowl);
   const toggleAltGrowl = () => setShowAltGrowl(!showAltGrowl);
   const toggleAutoGrowl = () => setShowAutoGrowl(!showAutoGrowl);
@@ -94,7 +94,7 @@ export const Growls = () => {
       {/* Position it */}
       <div className="growl growl-top-right">
         {/* Then put toasts within */}
-        <Toast isOpen={show}>
+        <Toast id="toast1" isOpen={show}>
           <ToastHeader toggle={toggle}>Toast title</ToastHeader>
           <ToastBody>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
