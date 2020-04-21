@@ -31,7 +31,9 @@ export const Growls = () => {
   const [showCntGrowl, setShowCntGrowl] = useState(false);
   const [showCntGrowl2, setShowCntGrowl2] = useState(false);
 
-  const toggle = () => {setShow(!show);
+  const toggle = () => {
+    setShow(!show);
+  };
   const toggleGrowl = () => setShowGrowl(!showGrowl);
   const toggleAltGrowl = () => setShowAltGrowl(!showAltGrowl);
   const toggleAutoGrowl = () => setShowAutoGrowl(!showAutoGrowl);
