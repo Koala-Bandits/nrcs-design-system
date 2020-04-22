@@ -1,7 +1,7 @@
 // App.js - Main Application Root Component
 
 import React from "react";
-import { BrowserRouter as Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Data Store for Global State Management via React Hooks + Context API
 import { StateProvider } from "./appStore.js";
@@ -11,7 +11,7 @@ import { HeaderNrcsDesignSystem } from "components/page/header/HeaderNrcsDesignS
 import { FooterNrcsDesignSystem } from "components/page/footer/FooterNrcsDesignSystem";
 
 // Application Modal and Growl global components
-// TODO
+import { ToastProvider } from "components/feedback/growls/toastProvider.js";
 
 // Application Pages
 import About from "./pages/About";
@@ -31,7 +31,7 @@ import Utilities from "./pages/guides/Utilities";
 // Main Application Root Component
 //
 // Routing via react-router
-// A <Switch> looks through its children <Route>s and renders the first one that matches the current URL.
+// A <Switch> looks through its children <Route>s and renders the first one that matches the current URL
 // 'exact' does just what it says to for nested routes
 //
 // Application page routes/switches are wrapped in our header & footer
@@ -39,21 +39,25 @@ function App() {
   return (
     <div>
       <StateProvider>
-        <HeaderNrcsDesignSystem />
-        <Switch>
-          <Route path="/about" component={About} />
-          <Route exact path="/visual-style" component={VisualStyle} />
-          <Route path="/visual-style/color" component={Color} />
-          <Route path="/visual-style/typography" component={Typography} />
-          <Route path="/visual-style/iconography" component={Iconography} />
-          <Route path="/components" component={Components} />
-          <Route exact path="/guides" component={Guides} />
-          <Route path="/guides/accessibility" component={Accessibility} />
-          <Route path="/guides/grid-and-layout" component={GridAndLayout} />
-          <Route path="/guides/utilities" component={Utilities} />
-          <Route path="/" component={About} />
-        </Switch>
-        <FooterNrcsDesignSystem />
+        <ToastProvider>
+          <HeaderNrcsDesignSystem />
+          <Router basename="/nrcs-design-system">
+            <Switch>
+              <Route path="/about" component={About} />
+              <Route exact path="/visual-style" component={VisualStyle} />
+              <Route path="/visual-style/color" component={Color} />
+              <Route path="/visual-style/typography" component={Typography} />
+              <Route path="/visual-style/iconography" component={Iconography} />
+              <Route path="/components" component={Components} />
+              <Route exact path="/guides" component={Guides} />
+              <Route path="/guides/accessibility" component={Accessibility} />
+              <Route path="/guides/grid-and-layout" component={GridAndLayout} />
+              <Route path="/guides/utilities" component={Utilities} />
+              <Route path="/" component={About} />
+            </Switch>
+          </Router>
+          <FooterNrcsDesignSystem />
+        </ToastProvider>
       </StateProvider>
     </div>
   );

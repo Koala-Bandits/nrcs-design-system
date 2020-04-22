@@ -11,40 +11,56 @@ import {
   CardBody
 } from "reactstrap";
 import { PrimaryButton, ButtonSet } from "components/buttons/Buttons";
-import Icon from "@mdi/react";
-import {
-  mdiInformation,
-  mdiAlert,
-  mdiAlertCircle,
-  mdiCheckCircle
-} from "@mdi/js";
+import Growl from "components/feedback/growls/Growl";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
+
+// hook for apllication wide Growls
+import useToast from "components/feedback/growls/useToast";
 
 export default {
   title: "Components|Feedback/Growls"
 };
 
-export const Growls = () => {
-  const [show, setShow] = useState(false);
-  const [showGrowl, setShowGrowl] = useState(false);
-  const [showAltGrowl, setShowAltGrowl] = useState(false);
-  const [showAutoGrowl, setShowAutoGrowl] = useState(false);
-  const [showCntGrowl, setShowCntGrowl] = useState(false);
-  const [showCntGrowl2, setShowCntGrowl2] = useState(false);
+function UseGrowlsExample() {
+  const toast = useToast();
+  const showInfoToast = () =>
+    toast.add("info", "Warning Growl created from component using hook!");
+  const showSuccessToast = () =>
+    toast.add("success", "Error Growl created from component using hook!");
+  const showWarningToast = () =>
+    toast.add("warning", "Warning Growl created from component using hook!");
+  const showErrorToast = () =>
+    toast.add("danger", "Error Growl created from component using hook!");
 
-  const toggle = () => {
-    setShow(!show);
+  return (
+    <ButtonSet>
+      <PrimaryButton onClick={showInfoToast}>Add Info Growl</PrimaryButton>
+      <PrimaryButton onClick={showSuccessToast}>
+        Add Success Growl
+      </PrimaryButton>
+      <PrimaryButton onClick={showWarningToast}>
+        Add Warning Growl
+      </PrimaryButton>
+      <PrimaryButton onClick={showErrorToast}>Add Error Growl</PrimaryButton>
+    </ButtonSet>
+  );
+}
+
+export const GrowlsStory = () => {
+  const [showGrowl, setShowGrowl] = useState(false);
+  const openGrowl = () => {
+    setShowGrowl(true);
+    let t = setTimeout(() => setShowGrowl(false), 5000);
   };
-  const toggleGrowl = () => setShowGrowl(!showGrowl);
-  const toggleAltGrowl = () => setShowAltGrowl(!showAltGrowl);
-  const toggleAutoGrowl = () => setShowAutoGrowl(!showAutoGrowl);
-  const toggleCntGrowl = () => setShowCntGrowl(!showCntGrowl);
-  const toggleCntGrowl2 = () => setShowCntGrowl2(!showCntGrowl2);
+  const closeGrowl = () => {
+    setShowGrowl(false);
+  };
 
   return (
     <div aria-live="polite" aria-atomic="true" className="docs-btn">
-      <h2 className="docs">Growls</h2>
+      <ContentHeaderH1>Growls</ContentHeaderH1>
 
-      <p>
+      <p className="lead">
         Growls are 'Alerts' wrapped in a 'Toast', and we like to call them a
         'Growl' because it's fun.
       </p>
@@ -58,36 +74,43 @@ export const Growls = () => {
         static, dissmisable, with or without an icon or content.
       </p>
       <p>
-        Growls can optionally 'autohide' after a 'delay.' (INCOMPLETE NOT
-        WORKING)
+        Growls can 'autohide' after a 'delay' using a timeout to toggle closed.
       </p>
 
       <Row>
         <Col>
           <Card>
             <CardBody>
-              {/* <Button color="primary" onClick={toggle}>
-                Show Toast
-              </Button> */}
-              <ButtonSet>
-                <PrimaryButton onClick={toggleGrowl}>Show Growl</PrimaryButton>
+              <h2>Manual Example</h2>
+              <p>
+                This is a local static Growl component that exists in DOM and is
+                manually toggled open and closed.
+              </p>
+              <PrimaryButton onClick={openGrowl}>Show Growl</PrimaryButton>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
 
-                {/* <Button color="primary" onClick={toggleAltGrowl}>
-                Show Alt Growl
-              </Button> */}
-
-                <PrimaryButton onClick={toggleAutoGrowl}>
-                  Show Auto-Hide Growl
-                </PrimaryButton>
-
-                <PrimaryButton onClick={toggleCntGrowl}>
-                  Show Top-Center Growl
-                </PrimaryButton>
-
-                <PrimaryButton onClick={toggleCntGrowl2}>
-                  Show Top-Center Growl 2
-                </PrimaryButton>
-              </ButtonSet>
+      <Row className="mt-3">
+        <Col>
+          <Card>
+            <CardBody>
+              <h2>Preferred Global Example</h2>
+              <p>
+                NRCS Design System website uses a 'Toast Provider' and custom
+                React Hook 'useToast' for application wide notification
+                management. This manages an array of Growls that appear and
+                automatically remove from the DOM after a delay.
+              </p>
+              <p>
+                This allows any component to add a growl without manual setup.
+              </p>
+              <p>
+                The Growl component has a timeout built in and will
+                automatically hide after 5 seconds when called via our hook.
+              </p>
+              <UseGrowlsExample />
             </CardBody>
           </Card>
         </Col>
@@ -96,117 +119,15 @@ export const Growls = () => {
       {/* Position it */}
       <div className="growl growl-top-right">
         {/* Then put toasts within */}
-        <Toast id="toast1" isOpen={show}>
-          <ToastHeader toggle={toggle}>Toast title</ToastHeader>
-          <ToastBody>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </ToastBody>
-        </Toast>
-        <Toast isOpen={showGrowl}>
-          <Alert
-            className="alert-fpac"
-            color="warning"
-            isOpen={true}
-            toggle={toggleGrowl}
-          >
-            <Container className="m-0">
-              <Row>
-                <Col xs="auto" className="p-0 pr-2">
-                  <Icon className="mdi" path={mdiAlert} />
-                </Col>
-                <Col className="p-0">
-                  This is a dismissable warning Growl with. Go ahead, dismiss
-                  me!
-                </Col>
-              </Row>
-            </Container>
-          </Alert>
-        </Toast>
-        <Toast isOpen={showAltGrowl}>
-          <Alert color="success" isOpen={true} toggle={toggleAltGrowl}>
-            <Container className="m-0">
-              <Row>
-                <Col xs="auto" className="p-0 pr-2">
-                  <Icon className="mdi" path={mdiAlert} />
-                </Col>
-                <Col className="p-0">
-                  This is a dismissable success Growl with. Go ahead, dismiss
-                  me!
-                </Col>
-              </Row>
-            </Container>
-          </Alert>
-        </Toast>
-        <Toast isOpen={showAutoGrowl} data-autohide={true}>
-          <Alert
-            className="alert-fpac"
-            color="info"
-            isOpen={true}
-            toggle={toggleAutoGrowl}
-          >
-            <Container className="m-0">
-              <Row>
-                <Col xs="auto" className="p-0 pr-2">
-                  <Icon className="mdi" path={mdiAlert} />
-                </Col>
-                <Col className="p-0">
-                  This is a dismissable info Growl that will automatically hide
-                  after a brief delay. NOT WORKING - WORK IN PROGRESS
-                </Col>
-              </Row>
-            </Container>
-          </Alert>
-        </Toast>
-      </div>
-      {/* Position it */}
-      <div className="growl growl-top-center">
-        <Toast isOpen={showCntGrowl}>
-          <Alert
-            className="alert-fpac"
-            color="danger"
-            isOpen={true}
-            toggle={toggleCntGrowl}
-          >
-            <Container className="m-0">
-              <Row>
-                <Col xs="auto" className="p-0 pr-2">
-                  <Icon className="mdi" path={mdiAlert} />
-                </Col>
-                <Col className="p-0">
-                  This is a centered dismissable error Growl with. Go ahead,
-                  dismiss me!
-                </Col>
-              </Row>
-            </Container>
-          </Alert>
-        </Toast>
-        <Toast isOpen={showCntGrowl2}>
-          <Alert
-            className="alert-fpac"
-            color="warning"
-            isOpen={true}
-            toggle={toggleCntGrowl2}
-          >
-            <Container className="m-0">
-              <Row>
-                <Col xs="auto" className="p-0 pr-2">
-                  <Icon className="mdi" path={mdiAlert} />
-                </Col>
-                <Col className="p-0">
-                  This is a centered dismissable warning Growl with. Go ahead,
-                  dismiss me!
-                </Col>
-              </Row>
-            </Container>
-          </Alert>
-        </Toast>
+        <Growl isOpen={showGrowl} color="warning" toggle={closeGrowl}>
+          This is a <strong>warning</strong> Growl that was shown manually in
+          this component. It will close automatically after 5 seconds.
+        </Growl>
       </div>
     </div>
   );
+};
+
+GrowlsStory.story = {
+  name: "Growls"
 };
