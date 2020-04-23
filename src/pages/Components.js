@@ -13,10 +13,8 @@ import useToast from "components/feedback/growls/useToast";
 
 function Components() {
   const toast = useToast();
-  const showWarningToast = () =>
-    toast.add("warning", "Warning Toast created from child component!");
-  const showErrorToast = () =>
-    toast.add("danger", "Error Toast created from child component!");
+  const showWarningToast = () => toast.add("warning", "Warning Growl: test!");
+  const showErrorToast = () => toast.add("danger", "Error Growl: oh noes!");
 
   return (
     <div className="container">
@@ -99,20 +97,9 @@ function Components() {
           ** Under construction... soon to be a display of core components as an
           overview. For now, see our Storybook for all components. **
         </p>
-        {/* <br />
-        <br />
-        <PrimaryButton
-          onClick={() =>
-            addToast("Some content to go here...", {
-              appearance: "error",
-              autoDismiss: true
-            })
-          }
-        >
-          Add Toast
-        </PrimaryButton> */}
-        <PrimaryButton onClick={showWarningToast}>Add Toast</PrimaryButton>
-        <PrimaryButton onClick={showErrorToast}>Add Toast</PrimaryButton>
+
+        <PrimaryButton onClick={showWarningToast}>Add Growl</PrimaryButton>
+        <PrimaryButton onClick={showErrorToast}>Add Growl</PrimaryButton>
 
         <ContentHeaderH2>Page Components</ContentHeaderH2>
         <span className="text-danger">

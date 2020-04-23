@@ -6,9 +6,7 @@ import {
   ToastHeader,
   Container,
   Row,
-  Col,
-  Card,
-  CardBody
+  Col
 } from "reactstrap";
 import Icon from "@mdi/react";
 import {

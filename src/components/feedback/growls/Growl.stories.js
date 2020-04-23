@@ -11,10 +11,10 @@ import {
   CardBody
 } from "reactstrap";
 import { PrimaryButton, ButtonSet } from "components/buttons/Buttons";
-import Growl from "components/feedback/growls/Growl";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
+import Growl from "components/feedback/growls/Growl";
 
-// hook for apllication wide Growls
+// hook for application growls
 import useToast from "components/feedback/growls/useToast";
 
 export default {
@@ -24,13 +24,22 @@ export default {
 function UseGrowlsExample() {
   const toast = useToast();
   const showInfoToast = () =>
-    toast.add("info", "Warning Growl created from component using hook!");
+    toast.add(
+      "info",
+      "Information Growl: for events of lower relative importance, or for generic use."
+    );
   const showSuccessToast = () =>
-    toast.add("success", "Error Growl created from component using hook!");
+    toast.add(
+      "success",
+      "Success Growl: for reporting of a successful end of an operation or action."
+    );
   const showWarningToast = () =>
-    toast.add("warning", "Warning Growl created from component using hook!");
+    toast.add(
+      "warning",
+      "Warning Growl: for events that require user attention."
+    );
   const showErrorToast = () =>
-    toast.add("danger", "Error Growl created from component using hook!");
+    toast.add("danger", "Error (danger) Growl: When things go wrong.");
 
   return (
     <ButtonSet>
@@ -81,22 +90,7 @@ export const GrowlsStory = () => {
         <Col>
           <Card>
             <CardBody>
-              <h2>Manual Example</h2>
-              <p>
-                This is a local static Growl component that exists in DOM and is
-                manually toggled open and closed.
-              </p>
-              <PrimaryButton onClick={openGrowl}>Show Growl</PrimaryButton>
-            </CardBody>
-          </Card>
-        </Col>
-      </Row>
-
-      <Row className="mt-3">
-        <Col>
-          <Card>
-            <CardBody>
-              <h2>Preferred Global Example</h2>
+              <h2>Application/Global Example</h2>
               <p>
                 NRCS Design System website uses a 'Toast Provider' and custom
                 React Hook 'useToast' for application wide notification
@@ -116,9 +110,24 @@ export const GrowlsStory = () => {
         </Col>
       </Row>
 
+      <Row className="mt-3">
+        <Col>
+          <Card>
+            <CardBody>
+              <h2>Manual/Local Example</h2>
+              <p>
+                This is a local static Growl component that exists in DOM and is
+                manually toggled open and closed.
+              </p>
+              <PrimaryButton onClick={openGrowl}>Show Growl</PrimaryButton>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+
       {/* Position it */}
       <div className="growl growl-top-right">
-        {/* Then put toasts within */}
+        {/* Then put growl within */}
         <Growl isOpen={showGrowl} color="warning" toggle={closeGrowl}>
           This is a <strong>warning</strong> Growl that was shown manually in
           this component. It will close automatically after 5 seconds.
