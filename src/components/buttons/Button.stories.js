@@ -166,19 +166,19 @@ export const ButtonsWithIconsStory = () => (
         Flat
       </FlatButton>
 
-      <FlatButton className="btn-icon">
+      <FlatButton size="sm" className="btn-icon">
         <Icon className="mdi" path={mdiPlusBox} size={0.8} />
       </FlatButton>
-      <FlatButton className="btn-icon">
+      <FlatButton size="sm" className="btn-icon">
         <Icon className="mdi" path={mdiPencil} size={0.8} />
       </FlatButton>
-      <FlatButton className="btn-icon">
+      <FlatButton size="sm" className="btn-icon">
         <Icon className="mdi" path={mdiContentCopy} size={0.8} />
       </FlatButton>
-      <FlatButton className="btn-icon">
+      <FlatButton size="sm" className="btn-icon">
         <Icon className="mdi" path={mdiContentPaste} size={0.8} />
       </FlatButton>
-      <FlatButton className="btn-icon">
+      <FlatButton size="sm" className="btn-icon">
         <Icon className="mdi" path={mdiDelete} size={0.8} />
       </FlatButton>
     </ButtonSet>
@@ -199,19 +199,19 @@ export const ButtonsWithIconsStory = () => (
         Flat
       </FlatButton>
 
-      <FlatButton className="btn-icon" aria-disabled="true" disabled>
+      <FlatButton size="sm" className="btn-icon" aria-disabled="true" disabled>
         <Icon className="mdi" path={mdiPlusBox} size={0.8} />
       </FlatButton>
-      <FlatButton className="btn-icon" aria-disabled="true" disabled>
+      <FlatButton size="sm" className="btn-icon" aria-disabled="true" disabled>
         <Icon className="mdi" path={mdiPencil} size={0.8} />
       </FlatButton>
-      <FlatButton className="btn-icon" aria-disabled="true" disabled>
+      <FlatButton size="sm" className="btn-icon" aria-disabled="true" disabled>
         <Icon className="mdi" path={mdiContentCopy} size={0.8} />
       </FlatButton>
-      <FlatButton className="btn-icon" aria-disabled="true" disabled>
+      <FlatButton size="sm" className="btn-icon" aria-disabled="true" disabled>
         <Icon className="mdi" path={mdiContentPaste} size={0.8} />
       </FlatButton>
-      <FlatButton className="btn-icon" aria-disabled="true" disabled>
+      <FlatButton size="sm" className="btn-icon" aria-disabled="true" disabled>
         <Icon className="mdi" path={mdiDelete} size={0.8} />
       </FlatButton>
     </ButtonSet>
