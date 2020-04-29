@@ -140,8 +140,8 @@ class Color extends React.Component {
           </div>
 
           <div className="col-md-4">
-            <div className="p-3 mb-3 bg-white text-dark docs-color-swatch">
-              Focus Outline #TO-DO
+            <div className="p-3 mb-3 bg-white text-dark docs-color-swatch focus">
+              Focus rgba(#009afa, 0.75)
               <p>
                 <small>
                   Focus indicator outline/highlight for accessibility

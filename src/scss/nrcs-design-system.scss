@@ -21,10 +21,6 @@ h6.docs {
   margin-top: 1.5rem;
 }
 
-// li {
-//   margin-bottom: 0.85rem;
-// }
-
 ///////////////////////////
 // DOCS MISC
 
@@ -89,11 +85,7 @@ h6.docs {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-// MISC/TEMPORARY
-// .docs-btn button + button {
-//   margin-left: 0.5rem;
-// }
-
+// temporary hack
 .badge + .badge {
   margin-left: 0.5rem;
 }
@@ -195,4 +187,15 @@ h6.docs {
     border-top: 1px solid rgba(255, 255, 255, 0.5); // 'text-white-50'
     padding-top: 2rem;
   }
+}
+
+// 508 Highlighting
+// 508 highlight
+:focus,
+.focus {
+  outline: 3px solid $input-btn-focus-color;
+}
+
+a:focus {
+  outline-offset: 2px;
 }

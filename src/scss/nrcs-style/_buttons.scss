@@ -67,6 +67,11 @@ $primary-dark: theme-color-level("primary", 3);
   text-decoration: none;
 }
 
+.btn-link:focus,
+.btn-link.focus {
+  text-decoration: none;
+}
+
 // ICON (LINK)
 .btn-icon {
   padding: 0.25rem;
