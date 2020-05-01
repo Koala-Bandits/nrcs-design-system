@@ -16,6 +16,7 @@ export const CheckboxDefault = () => (
         type="checkbox"
         id="exampleCustomCheckbox"
         label="Check this custom checkbox"
+        checked
       />
       <CustomInput
         type="checkbox"
@@ -46,6 +47,7 @@ export const CheckboxDefault = () => (
           id="exampleCustomInline"
           label="An inline custom input"
           inline
+          checked
         />
         <CustomInput
           type="checkbox"
