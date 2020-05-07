@@ -3,6 +3,7 @@
 /////////////////////////////////////////////////////////////
 
 $primary-dark: theme-color-level("primary", 3);
+$primary-darker: theme-color-level("primary", 7);
 
 // MAIN buttons Dismmisive, Alternate, Save (no other input use cases etc.)
 // get min width
@@ -25,8 +26,15 @@ $primary-dark: theme-color-level("primary", 3);
 }
 
 // SOLID
+// hover
 .btn-primary:hover {
   background-color: $primary-dark;
+}
+// active
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: $primary-darker;
 }
 .btn.disabled,
 .btn:disabled {
@@ -39,6 +47,7 @@ $primary-dark: theme-color-level("primary", 3);
 .btn-outline-secondary {
   background-color: $white;
 }
+// hover
 .btn-outline-primary:hover {
   color: $primary-dark;
   background-color: $gray-200;
@@ -48,11 +57,11 @@ $primary-dark: theme-color-level("primary", 3);
   cursor: not-allowed;
   pointer-events: none;
 }
-
+// active
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
-  background-color: $primary-dark;
+  background-color: $primary-darker;
 }
 
 // FLAT (LINK)
