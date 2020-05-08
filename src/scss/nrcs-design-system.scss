@@ -39,6 +39,18 @@ h6.docs {
   border: 1px $primary solid;
   background-color: $white;
 }
+.docs-color-primary-dark {
+  background-color: $primary-dark;
+}
+.docs-color-primary-darker {
+  background-color: $primary-darker;
+}
+.docs-color-secondary-dark {
+  background-color: $secondary-dark;
+}
+.docs-color-secondary-darker {
+  background-color: $secondary-darker;
+}
 .docs-gray-100 {
   background-color: $gray-100;
   border-top: 1px $gray-200 solid;

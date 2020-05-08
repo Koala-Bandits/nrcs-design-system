@@ -37,12 +37,19 @@ $grays: map-merge(
   $grays
 );
 
-// NRCS
+//////// NRCS additions
 $fpac-blue: #205493; // FPAC secondary (our primary) blue
 $fpac-green: #236430; // FPAC primary green (our secondary)
 // #0068ad; // FPAC link color
 $fpac-focus: #009afa; // for 508 focus only to stand out over other blues
+// used in buttons, icons, for hover/active states to match closely to FPAC states:
+$primary-dark: #184070; // = theme-color-level("primary", 3);
+$primary-darker: #0e2541; // = theme-color-level("primary", 7);
+$secondary-dark: #1b4c24; // = theme-color-level("secondary", 3);
+$secondary-darker: #0f2c15; // = theme-color-level("seondary", 7);
+////////
 
+// Color palate
 $blue: $fpac-blue; // #007bff !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
@@ -50,9 +57,7 @@ $pink: #e83e8c !default;
 $red: #b70f0a; //#dc3545 !default;
 $orange: #ff7f00; //#fd7e14 !default;
 $yellow: #fdb81e; //107 !default;
-
 $green: lighten($fpac-green, 10%); // NRCS success green based on FPAC green
-
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
@@ -76,12 +81,11 @@ $colors: map-merge(
   $colors
 );
 
+// Color vars
 $primary: $blue !default;
 $secondary: $fpac-green; // $gray-600 !default;
 $success: $green !default;
-
 $info: lighten($blue, 10%); // NRCS info color based on FPAC primary blue
-
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;

@@ -2,9 +2,6 @@
 // Override styles of Buttons in NRCS Design System
 /////////////////////////////////////////////////////////////
 
-$primary-dark: theme-color-level("primary", 3);
-$primary-darker: theme-color-level("primary", 7);
-
 // MAIN buttons Dismmisive, Alternate, Save (no other input use cases etc.)
 // get min width
 .btn-main {
