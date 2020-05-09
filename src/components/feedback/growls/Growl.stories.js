@@ -74,8 +74,10 @@ export const GrowlsStory = () => {
         'Growl' because it's fun.
       </p>
       <p>
-        <strong>Growls are generally preferrable over Inline Alerts</strong> as
-        they don't disturb or pop-into a layout, they overlay on top in a
+        <strong>
+          Growls are generally preferrable over Banners or Inline Alerts
+        </strong>{" "}
+        as they don't disturb or pop-into a layout, they overlay on top in a
         consistent location.
       </p>
       <p>

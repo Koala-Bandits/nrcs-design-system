@@ -241,8 +241,7 @@ export const ButtonGroupStory = () => (
   <div>
     <h2 className="docs">Button Groups</h2>
     <p className="lead">
-      Use a ButtonGroup to create a button-bar, search-bar, toolbar, page-bar
-      etc.
+      Use a ButtonGroup to create a button-bar, search-bar, toolbar, page-bar.
     </p>
 
     <Row>

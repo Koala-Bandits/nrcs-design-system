@@ -1,7 +1,5 @@
 import React from "react";
 import { Badge } from "reactstrap";
-// import Icon from "@mdi/react";
-// import { mdiAccount } from "@mdi/js";
 
 export default {
   title: "Components|Feedback/Badges"
@@ -10,7 +8,10 @@ export default {
 export const BadgesDefault = () => (
   <div>
     <h2 className="docs">Badges - Default</h2>
-
+    <p className="lead">
+      Badges are versatile and often used in a table 'status' column cells, or
+      next to a form input or label or heading.
+    </p>
     <Badge className="badge-fpac" color="primary">
       Primary
     </Badge>
@@ -115,10 +116,10 @@ export const BadgesHeadings = () => (
   <div>
     <h2 className="docs">Badges - Headings</h2>
 
-    <h3 className="docs">
+    <h3>
       Heading <Badge color="secondary">New</Badge>
     </h3>
-    <h3 className="docs">
+    <h3>
       Heading <Badge color="secondary">New</Badge>
     </h3>
     <h3>

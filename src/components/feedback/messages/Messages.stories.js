@@ -15,7 +15,11 @@ export default {
 export const MessagesWithIcons = () => (
   <div>
     <h2 className="docs">Inline Messages - with Icons</h2>
-
+    <p className="lead">
+      Info messages are awesome little helpers. Used selectively with short
+      concise messaging can provide help, explaination, or instruction to users
+      for blocks of content.
+    </p>
     <Alert className="alert-message" color="info">
       <Container className="m-0">
         <Row>

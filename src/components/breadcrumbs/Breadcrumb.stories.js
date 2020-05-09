@@ -20,10 +20,10 @@ export const BreadcrumbsDefault = () => (
           Library
         </BreadcrumbItem>
         <BreadcrumbItem tag="a" href="#">
-          Data
+          Science Fiction
         </BreadcrumbItem>
         <BreadcrumbItem active tag="span">
-          Bootstrap
+          Isaac Asimov
         </BreadcrumbItem>
       </Breadcrumb>
     </div>
@@ -46,11 +46,11 @@ export const BreadcrumbsIcons = () => (
         </BreadcrumbItem>
         <BreadcrumbItem tag="a" href="#">
           <Icon className="mdi" path={mdiFormatListBulleted} size={1} />
-          Data
+          Science Fiction
         </BreadcrumbItem>
         <BreadcrumbItem active tag="span">
           <Icon className="mdi" path={mdiAccount} size={1} />
-          Bootstrap
+          Isaac Asimov
         </BreadcrumbItem>
       </Breadcrumb>
     </div>

@@ -15,6 +15,10 @@ export default {
 export const AlertsDefault = () => (
   <div>
     <h2 className="docs">Inline Alerts - Default</h2>
+    <p className="lead">
+      Inine Alerts are used for drawing attention to a specific block of
+      content.{" "}
+    </p>
 
     <Alert color="info">
       This is an <strong>info</strong> alert with{" "}
@@ -50,7 +54,10 @@ export const AlertsDefault = () => (
 export const AlertsWithIcons = () => (
   <div>
     <h2 className="docs">Inline Alerts - with Icons</h2>
-
+    <p className="lead">
+      Inine Alerts are used for drawing attention to a specific block of
+      content.{" "}
+    </p>
     <Alert color="info">
       <Container className="m-0">
         <Row>

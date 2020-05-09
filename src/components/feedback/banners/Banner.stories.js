@@ -15,9 +15,9 @@ export default {
 export const BannersDefault = () => (
   <div>
     <h2 className="docs">Banners - Default</h2>
-    <p>
-      Banners are square Alerts, and used under a dialog header or container
-      header, 100% width edge-to-edge.
+    <p className="lead">
+      Banner Alerts are used under a ModalHeader or ContenHeader 100% width
+      edge-to-edge when Growls are not practical.
     </p>
 
     <Alert className="alert-banner" color="info">
@@ -54,7 +54,7 @@ export const BannersDefault = () => (
 export const BannersWithIcons = () => (
   <div>
     <h2 className="docs">Banners - with Icons</h2>
-    <p>
+    <p className="lead">
       Banners are square Alerts, and used under a dialog header or container
       header, 100% width edge-to-edge.
     </p>
