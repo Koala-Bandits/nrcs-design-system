@@ -222,12 +222,18 @@ export const ButtonSetStory = () => (
   <div>
     <h2 className="docs">ButtonSet</h2>
     <p className="lead">
-      <strong>
-        Wrap buttons with the <code>ButtonSet</code> component to provide
-        consistent spacing of groups of buttons.
-      </strong>
+      Wrap buttons with the <code>ButtonSet</code> component to provide
+      consistent spacing of groups of buttons.
     </p>
-    <p>View the source of all these button component examples...</p>
+    <Card>
+      <CardBody>
+        <ButtonSet>
+          <SecondaryButton>Cancel</SecondaryButton>
+          <SecondaryButton>Export</SecondaryButton>
+          <PrimaryButton>Save</PrimaryButton>
+        </ButtonSet>
+      </CardBody>
+    </Card>
   </div>
 );
 
@@ -235,14 +241,8 @@ export const ButtonGroupStory = () => (
   <div>
     <h2 className="docs">Button Groups</h2>
     <p className="lead">
-      <strong>
-        Use a ButtonGroup to create a button-bar, search-bar, toolbar, page-bar
-        etc.
-      </strong>
-    </p>
-    <p>
-      These are used to create our file-browser & search form components for
-      example.
+      Use a ButtonGroup to create a button-bar, search-bar, toolbar, page-bar
+      etc.
     </p>
 
     <Row>
@@ -295,13 +295,11 @@ export const ButtonFooterStory = () => (
   <div>
     <h2 className="docs">ButtonFooter</h2>
     <p className="lead">
-      <strong>
-        Wrap buttons in a <code>ButtonFooter</code> component to provide a
-        container with consistent spacing for buttons with a 1px top border by
-        default.
-      </strong>
-      <p>Works well to finish off forms, cards, or other input blocks.</p>
+      Wrap buttons in a <code>ButtonFooter</code> component to provide a
+      container with consistent spacing for buttons with a 1px top border by
+      default.
     </p>
+    <p>Works well to finish off forms, cards, or other input blocks.</p>
     <Row className="mt-3">
       <Col>
         <Card>
@@ -329,6 +327,10 @@ export const ButtonsPositionStory = () => (
 
     <Row>
       <Col>
+        <p className="lead">
+          Being consistent in the ordering of buttons improves UX and is
+          important for acessibility.
+        </p>
         <Card>
           <CardBody>
             <p>
@@ -341,7 +343,9 @@ export const ButtonsPositionStory = () => (
                 the right.
               </strong>
             </p>
-            <p>On small screens, buttons stack as blocks with 100% width.</p>
+            <p>
+              On small screens, buttons can stack as blocks with 100% width.
+            </p>
             <hr />
             <div className="text-right">
               <ButtonSet>
