@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge } from "reactstrap";
+import { Badge } from "./Badge";
 
 export default {
   title: "Components|Feedback/Badges"
@@ -12,34 +12,6 @@ export const BadgesDefault = () => (
       Badges are versatile and often used in a table 'status' column cells, or
       next to a form input or label or heading.
     </p>
-    <Badge className="badge-fpac" color="primary">
-      Primary
-    </Badge>
-    <Badge className="badge-fpac" color="secondary">
-      Secondary
-    </Badge>
-    <Badge className="badge-fpac" color="success">
-      Success
-    </Badge>
-    <Badge className="badge-fpac" color="danger">
-      Danger
-    </Badge>
-    <Badge className="badge-fpac" color="warning">
-      Warning
-    </Badge>
-    <Badge className="badge-fpac" color="info">
-      Info
-    </Badge>
-    <Badge className="badge-fpac" color="light">
-      Light
-    </Badge>
-    <Badge className="badge-fpac" color="dark">
-      Dark
-    </Badge>
-
-    <h2 className="mt-4">Alerts - Alternate</h2>
-
-    <p>To see how it works/looks (TBD)...</p>
 
     <Badge color="primary">Primary</Badge>
     <Badge color="secondary">Secondary</Badge>
@@ -49,41 +21,39 @@ export const BadgesDefault = () => (
     <Badge color="info">Info</Badge>
     <Badge color="light">Light</Badge>
     <Badge color="dark">Dark</Badge>
+
+    <h3 className="mt-4">Badges - Alternate Style</h3>
+
+    <Badge alt color="primary">
+      Primary
+    </Badge>
+    <Badge alt color="secondary">
+      Secondary
+    </Badge>
+    <Badge alt color="success">
+      Success
+    </Badge>
+    <Badge alt color="danger">
+      Danger
+    </Badge>
+    <Badge alt color="warning">
+      Warning
+    </Badge>
+    <Badge alt color="info">
+      Info
+    </Badge>
+    <Badge alt color="light">
+      Light
+    </Badge>
+    <Badge alt color="dark">
+      Dark
+    </Badge>
   </div>
 );
 
 export const BadgesPills = () => (
   <div>
-    <h2 className="docs">Badges - Pills</h2>
-
-    <Badge className="badge-fpac" color="primary" pill>
-      Primary
-    </Badge>
-    <Badge className="badge-fpac" color="secondary" pill>
-      Secondary
-    </Badge>
-    <Badge className="badge-fpac" color="success" pill>
-      Success
-    </Badge>
-    <Badge className="badge-fpac" color="danger" pill>
-      Danger
-    </Badge>
-    <Badge className="badge-fpac" color="warning" pill>
-      Warning
-    </Badge>
-    <Badge className="badge-fpac" color="info" pill>
-      Info
-    </Badge>
-    <Badge className="badge-fpac" color="light" pill>
-      Light
-    </Badge>
-    <Badge className="badge-fpac" color="dark" pill>
-      Dark
-    </Badge>
-
-    <h2 className="mt-4">Alerts - Alternate</h2>
-
-    <p>To see how it works/looks (TBD)...</p>
+    <h3>Badges - Pills</h3>
 
     <Badge color="primary" pill>
       Primary
@@ -109,12 +79,41 @@ export const BadgesPills = () => (
     <Badge color="dark" pill>
       Dark
     </Badge>
+
+    <h3 className="mt-4">Badges - Pills Alternate Style</h3>
+
+    <p>To see how it works/looks (TBD)...</p>
+
+    <Badge alt color="primary" pill>
+      Primary
+    </Badge>
+    <Badge alt color="secondary" pill>
+      Secondary
+    </Badge>
+    <Badge alt color="success" pill>
+      Success
+    </Badge>
+    <Badge alt color="danger" pill>
+      Danger
+    </Badge>
+    <Badge alt color="warning" pill>
+      Warning
+    </Badge>
+    <Badge alt color="info" pill>
+      Info
+    </Badge>
+    <Badge alt color="light" pill>
+      Light
+    </Badge>
+    <Badge alt color="dark" pill>
+      Dark
+    </Badge>
   </div>
 );
 
 export const BadgesHeadings = () => (
   <div>
-    <h2 className="docs">Badges - Headings</h2>
+    <h3>Badges - Headings</h3>
 
     <h3>
       Heading <Badge color="secondary">New</Badge>
