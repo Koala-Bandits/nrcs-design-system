@@ -14,6 +14,7 @@ import {
   ButtonSet,
   ButtonFooter
 } from "components/buttons/Buttons";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 import Icon from "@mdi/react";
 import {
   mdiAccount,
@@ -33,7 +34,7 @@ export default {
 
 export const ButtonsDefaultStory = () => (
   <div className="docs-btn">
-    <h2 className="docs">Buttons</h2>
+    <ContentHeaderH2>Buttons</ContentHeaderH2>
     <p className="lead">
       Keeping things simple with 3 button types: Primary, Secondary, and Flat.
     </p>
@@ -80,7 +81,7 @@ export const ButtonsDefaultStory = () => (
 
 export const ButtonsWithIconsStory = () => (
   <div className="docs-btn">
-    <h2 className="docs">Buttons - with Icons</h2>
+    <ContentHeaderH2>Buttons - with Icons</ContentHeaderH2>
     <p className="lead">
       Examples of how to add and use Icons to our button components.
     </p>
@@ -220,7 +221,7 @@ export const ButtonsWithIconsStory = () => (
 
 export const ButtonSetStory = () => (
   <div>
-    <h2 className="docs">ButtonSet</h2>
+    <ContentHeaderH2>ButtonSet</ContentHeaderH2>
     <p className="lead">
       Wrap buttons with the <code>ButtonSet</code> component to provide
       consistent spacing of groups of buttons.
@@ -239,7 +240,7 @@ export const ButtonSetStory = () => (
 
 export const ButtonGroupStory = () => (
   <div>
-    <h2 className="docs">Button Groups</h2>
+    <ContentHeaderH2>Button Groups</ContentHeaderH2>
     <p className="lead">
       Use a ButtonGroup to create a button-bar, search-bar, toolbar, page-bar.
     </p>
@@ -292,7 +293,7 @@ export const ButtonGroupStory = () => (
 
 export const ButtonFooterStory = () => (
   <div>
-    <h2 className="docs">ButtonFooter</h2>
+    <ContentHeaderH2>ButtonFooter</ContentHeaderH2>
     <p className="lead">
       Wrap buttons in a <code>ButtonFooter</code> component to provide a
       container with consistent spacing for buttons with a 1px top border by
@@ -322,7 +323,7 @@ export const ButtonFooterStory = () => (
 
 export const ButtonsPositionStory = () => (
   <div className="docs-btn">
-    <h2 className="docs">Buttons - Positioning</h2>
+    <ContentHeaderH2>Buttons - Positioning</ContentHeaderH2>
 
     <Row>
       <Col>

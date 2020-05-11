@@ -8,7 +8,13 @@ import {
   mdiCheckCircle
 } from "@mdi/js";
 
-export const Banner = ({ color, noIcon, dismissable, children, ...rest }) => {
+export const AlertBanner = ({
+  color,
+  noIcon,
+  dismissable,
+  children,
+  ...rest
+}) => {
   let icon;
   if (!noIcon) {
     switch (color) {
