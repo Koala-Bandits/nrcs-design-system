@@ -1,5 +1,7 @@
 import React from "react";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
+import { Alert } from "components/feedback/alerts/Alert";
+import { AlertMessage } from "components/feedback/messages/AlertMessage";
 
 class About extends React.Component {
   constructor(props) {
@@ -10,16 +12,12 @@ class About extends React.Component {
     return (
       <div className="container">
         <ContentHeaderH1>NRCS Design System</ContentHeaderH1>
-
-        <p className="lead">
-          <span className="text-danger">
-            ** BETA: CURRENTLY UNDER DEVELOPMENT AND INCOMPLETE **
-          </span>
-        </p>
+        <Alert color="warning">
+          Warning: currently under development and incomplete.
+        </Alert>
         <p className="lead">
           <strong>A design system produced for our partners at NRCS.</strong>
         </p>
-
         <p>
           An adaptation of the{" "}
           <strong>
@@ -42,14 +40,39 @@ class About extends React.Component {
             </a>
           </strong>
         </p>
+        <h3>FPAC Baseline</h3>
+
         <p>
-          A resource with specifics and expanded documentation meant as a
-          compliment to the FPAC Design System documentation, all to support the
-          current needs of coordinated efforts building apps at NRCS.
+          The FPAC Design System is absoluetly fantastic and thorough. It
+          provides good style and guidance for core components with some
+          flexibility of those components giving consumers some choice.
         </p>
-        <p>
+        <AlertMessage color="info">
           If you are working on a project with FPAC or its related agencies, it
           is suggested you consider starting with the FPAC design system first.
+        </AlertMessage>
+        <p>
+          It is adequate by itself for a small web site or application. Though
+          it doesn't claim to provide everything one might need, for example
+          there are no complex components like DataTables or Trees for complex
+          applications, nor does it provide iconography.
+        </p>
+        <p>
+          It is also based on the 'fsa-style' SASS library which requires
+          consumers to incorporate into their own implementation or framework.
+        </p>
+        <h3>NRCS Adaptation</h3>
+        <p>
+          Several of our projects with NRCS are large, either GIS applications
+          and/or complex process management systems. NRCS had need for a design
+          system with dedicated choices in components, additional complex
+          components, and integrated iconography together.
+        </p>
+        <p>
+          Since many of our teams and projects currently use Bootstrap SASS by
+          itself or with React/Reactrap and already have established UI
+          component libraries, it made sense to align our current styles and
+          components to FPAC in the form of this NRCS Design System.
         </p>
         <ul>
           <li>
