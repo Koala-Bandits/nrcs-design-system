@@ -15,7 +15,6 @@ import {
   ButtonFooter
 } from "components/buttons/Buttons";
 import { ContentHeaderH2 } from "components/text/ContentHeader";
-import Icon from "@mdi/react";
 import {
   mdiAccount,
   mdiChevronRight,
@@ -83,138 +82,109 @@ export const ButtonsWithIconsStory = () => (
   <div className="docs-btn">
     <ContentHeaderH2>Buttons - with Icons</ContentHeaderH2>
     <p className="lead">
-      Examples of how to add and use Icons to our button components.
-    </p>
-    <p>
-      <strong>Note:</strong> the use of a{" "}
-      <strong>
-        <code>ButtonSet</code>
-      </strong>{" "}
-      component to provide consistent spacing of groups of buttons as well as a
-      few CSS classes for spacing of Icons with buttons.
+      Easily add icons to buttons by passing one into the <code>iconLeft</code>,{" "}
+      <code>iconRight</code>, or <code>iconOnly</code> property.
     </p>
 
     <h3 className="docs">Default</h3>
 
     <ButtonSet>
-      <PrimaryButton>
-        <Icon className="mdi mr-1" path={mdiAccount} />
-        Primary
-      </PrimaryButton>
-      <SecondaryButton>
-        <Icon className="mdi mr-1" path={mdiAccount} />
-        Secondary
-      </SecondaryButton>
-      <SecondaryButton>
-        <Icon className="mdi mr-1" path={mdiChevronLeft} />
-        Previous
-      </SecondaryButton>
-      <SecondaryButton>
-        Next
-        <Icon className="mdi ml-1" path={mdiChevronRight} />
-      </SecondaryButton>
-      <SecondaryButton>
-        Dropdown
-        <Icon className="mdi ml-1" path={mdiChevronDown} />
-      </SecondaryButton>
-      <FlatButton>
-        <Icon className="mdi mr-1" path={mdiAccount} />
-        Flat
-      </FlatButton>
+      <PrimaryButton iconLeft={mdiAccount}>Primary</PrimaryButton>
+      <SecondaryButton iconLeft={mdiAccount}>Secondary</SecondaryButton>
+      <SecondaryButton iconLeft={mdiChevronLeft}>Previous</SecondaryButton>
+      <SecondaryButton iconRight={mdiChevronRight}>Next</SecondaryButton>
+      <SecondaryButton iconRight={mdiChevronDown}>Dropdown</SecondaryButton>
+      <FlatButton iconLeft={mdiAccount}>Flat</FlatButton>
 
-      <FlatButton className="btn-icon">
-        <Icon className="mdi" path={mdiPlusBox} />
-      </FlatButton>
-      <FlatButton className="btn-icon">
-        <Icon className="mdi" path={mdiPencil} />
-      </FlatButton>
-      <FlatButton className="btn-icon">
-        <Icon className="mdi" path={mdiContentCopy} />
-      </FlatButton>
-      <FlatButton className="btn-icon">
-        <Icon className="mdi" path={mdiContentPaste} />
-      </FlatButton>
-      <FlatButton className="btn-icon">
-        <Icon className="mdi" path={mdiDelete} />
-      </FlatButton>
+      <FlatButton iconOnly={mdiPlusBox} />
+      <FlatButton iconOnly={mdiPencil} />
+      <FlatButton iconOnly={mdiContentCopy} />
+      <FlatButton iconOnly={mdiContentPaste} />
+      <FlatButton iconOnly={mdiDelete} />
     </ButtonSet>
 
     <h3 className="docs">Small</h3>
 
     <ButtonSet>
-      <PrimaryButton size="sm">
-        <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+      <PrimaryButton size="sm" iconLeft={mdiAccount}>
         Primary
       </PrimaryButton>
-      <SecondaryButton size="sm">
-        <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+      <SecondaryButton size="sm" iconLeft={mdiAccount}>
         Secondary
       </SecondaryButton>
-      <SecondaryButton size="sm">
-        <Icon className="mdi mr-1" path={mdiChevronLeft} size={0.8} />
+      <SecondaryButton size="sm" iconLeft={mdiChevronLeft}>
         Previous
       </SecondaryButton>
-      <SecondaryButton size="sm">
+      <SecondaryButton size="sm" iconRight={mdiChevronRight}>
         Next
-        <Icon className="mdi ml-1" path={mdiChevronRight} size={0.8} />
       </SecondaryButton>
-      <SecondaryButton size="sm">
+      <SecondaryButton size="sm" iconRight={mdiChevronDown}>
         Dropdown
-        <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
       </SecondaryButton>
-      <FlatButton size="sm">
-        <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+      <FlatButton size="sm" iconLeft={mdiAccount}>
         Flat
       </FlatButton>
 
-      <FlatButton size="sm" className="btn-icon">
-        <Icon className="mdi" path={mdiPlusBox} size={0.8} />
-      </FlatButton>
-      <FlatButton size="sm" className="btn-icon">
-        <Icon className="mdi" path={mdiPencil} size={0.8} />
-      </FlatButton>
-      <FlatButton size="sm" className="btn-icon">
-        <Icon className="mdi" path={mdiContentCopy} size={0.8} />
-      </FlatButton>
-      <FlatButton size="sm" className="btn-icon">
-        <Icon className="mdi" path={mdiContentPaste} size={0.8} />
-      </FlatButton>
-      <FlatButton size="sm" className="btn-icon">
-        <Icon className="mdi" path={mdiDelete} size={0.8} />
-      </FlatButton>
+      <FlatButton size="sm" iconOnly={mdiPlusBox} />
+      <FlatButton size="sm" iconOnly={mdiPencil} />
+      <FlatButton size="sm" iconOnly={mdiContentCopy} />
+      <FlatButton size="sm" iconOnly={mdiContentPaste} />
+      <FlatButton size="sm" iconOnly={mdiDelete} />
     </ButtonSet>
 
     <h3 className="docs">Disabled</h3>
 
     <ButtonSet>
-      <PrimaryButton size="sm" aria-disabled="true" disabled>
-        <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+      <PrimaryButton
+        size="sm"
+        iconLeft={mdiAccount}
+        aria-disabled="true"
+        disabled
+      >
         Primary
       </PrimaryButton>
-      <SecondaryButton size="sm" aria-disabled="true" disabled>
-        <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+      <SecondaryButton
+        size="sm"
+        iconLeft={mdiAccount}
+        aria-disabled="true"
+        disabled
+      >
         Secondary
       </SecondaryButton>
-      <FlatButton size="sm" aria-disabled="true" disabled>
-        <Icon className="mdi mr-1" path={mdiAccount} size={0.8} />
+      <FlatButton size="sm" iconLeft={mdiAccount} aria-disabled="true" disabled>
         Flat
       </FlatButton>
 
-      <FlatButton size="sm" className="btn-icon" aria-disabled="true" disabled>
-        <Icon className="mdi" path={mdiPlusBox} size={0.8} />
-      </FlatButton>
-      <FlatButton size="sm" className="btn-icon" aria-disabled="true" disabled>
-        <Icon className="mdi" path={mdiPencil} size={0.8} />
-      </FlatButton>
-      <FlatButton size="sm" className="btn-icon" aria-disabled="true" disabled>
-        <Icon className="mdi" path={mdiContentCopy} size={0.8} />
-      </FlatButton>
-      <FlatButton size="sm" className="btn-icon" aria-disabled="true" disabled>
-        <Icon className="mdi" path={mdiContentPaste} size={0.8} />
-      </FlatButton>
-      <FlatButton size="sm" className="btn-icon" aria-disabled="true" disabled>
-        <Icon className="mdi" path={mdiDelete} size={0.8} />
-      </FlatButton>
+      <FlatButton
+        size="sm"
+        iconOnly={mdiPlusBox}
+        aria-disabled="true"
+        disabled
+      />
+      <FlatButton
+        size="sm"
+        iconOnly={mdiPencil}
+        aria-disabled="true"
+        disabled
+      />
+      <FlatButton
+        size="sm"
+        iconOnly={mdiContentCopy}
+        aria-disabled="true"
+        disabled
+      />
+      <FlatButton
+        size="sm"
+        iconOnly={mdiContentPaste}
+        aria-disabled="true"
+        disabled
+      />
+      <FlatButton
+        size="sm"
+        iconOnly={mdiDelete}
+        aria-disabled="true"
+        disabled
+      />
     </ButtonSet>
   </div>
 );

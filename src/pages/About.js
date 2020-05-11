@@ -58,7 +58,7 @@ class About extends React.Component {
           applications, nor does it provide iconography.
         </p>
         <p>
-          It is also based on the 'fsa-style' SASS library which requires
+          It is also based on the 'fsa-style' CSS styles which requires
           consumers to incorporate into their own implementation or framework.
         </p>
         <h3>NRCS Adaptation</h3>
@@ -69,10 +69,10 @@ class About extends React.Component {
           components, and integrated iconography together.
         </p>
         <p>
-          Since many of our teams and projects currently use Bootstrap SASS by
-          itself or with React/Reactrap and already have established UI
-          component libraries, it made sense to align our current styles and
-          components to FPAC in the form of this NRCS Design System.
+          Since many of our teams and projects currently use Bootstrap by itself
+          or with React/Reactrap and already have established UI component
+          libraries, it made sense to align our current styles and components to
+          FPAC in the form of this NRCS Design System.
         </p>
         <ul>
           <li>
