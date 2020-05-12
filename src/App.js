@@ -22,6 +22,7 @@ import Typography from "./pages/visual-style/Typography";
 import Iconography from "./pages/visual-style/Iconography";
 // -- Components
 import Components from "./pages/Components";
+import KitchenSink from "./pages/KitchenSink";
 // -- Guides
 import Guides from "./pages/Guides";
 import Accessibility from "./pages/guides/Accessibility";
@@ -48,7 +49,8 @@ function App() {
               <Route path="/visual-style/color" component={Color} />
               <Route path="/visual-style/typography" component={Typography} />
               <Route path="/visual-style/iconography" component={Iconography} />
-              <Route path="/components" component={Components} />
+              <Route exact path="/components" component={Components} />
+              <Route path="/components/kitchen-sink" component={KitchenSink} />
               <Route exact path="/guides" component={Guides} />
               <Route path="/guides/accessibility" component={Accessibility} />
               <Route path="/guides/grid-and-layout" component={GridAndLayout} />

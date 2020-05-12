@@ -29,6 +29,7 @@ const loadStories = () => {
     require("../src/pages/visual-style/Typography.stories.js"),
     require("../src/pages/visual-style/Iconography.stories.js"),
     require("../src/pages/Components.stories.js"),
+    // require("../src/pages/KitchenSink.stories.js"),
     require("../src/pages/Guides.stories.js"),
     require("../src/pages/guides/Accessibility.stories.js"),
     require("../src/pages/guides/GridAndLayout.stories.js"),

@@ -5,9 +5,9 @@ export default {
   title: "Components|Feedback/Alert Messages"
 };
 
-export const MessagesWithIcons = () => (
+export const MessagesDefault = () => (
   <div>
-    <h2 className="docs">Alert Messages - with Icons</h2>
+    <h2 className="docs">Alert Messages</h2>
     <p className="lead">
       Alert messages are awesome little helpers. Used selectively with short
       concise messaging can provide help, explaination, or instruction to users
@@ -15,28 +15,28 @@ export const MessagesWithIcons = () => (
     </p>
     <AlertMessage color="info">
       This is an <strong>info</strong> alert message with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
     </AlertMessage>
     <AlertMessage color="success">
       This is a <strong>success</strong> alert message with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
     </AlertMessage>
     <AlertMessage color="danger">
       This is a <strong>error</strong> alert message with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
     </AlertMessage>
     <AlertMessage color="warning">
       This is a <strong>warning</strong> alert message with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
@@ -54,6 +54,6 @@ export const MessagesWithIcons = () => (
   </div>
 );
 
-MessagesWithIcons.story = {
+MessagesDefault.story = {
   name: "Alert Messages"
 };

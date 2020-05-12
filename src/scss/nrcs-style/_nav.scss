@@ -73,18 +73,21 @@ ul.nav-fpac {
 //
 ul.nav-fpac.flex-column {
   border-bottom: 0;
-  border-right: 1px solid $border-color;
+  // border-right: 1px solid $border-color;
 }
 .nav-fpac.flex-column .nav-link {
-  border-bottom: 0;
-  border-left: 4px solid transparent;
+  padding-left: 0.5rem;
+  border-bottom: 1px solid $border-color;
+  // border-left: 4px solid transparent;
 }
 .nav-fpac.flex-column .nav-link:hover,
 .nav-fpac.flex-column .nav-link:focus {
-  border-left: 4px solid $gray-600;
+  // border-left: 4px solid $gray-600;
+  background-color: $gray-200;
 }
 ul.nav-fpac.flex-column .nav-link.active {
   // color: $body-color;
-  border-left: 4px solid $primary !important;
+  // border-left: 4px solid $primary !important;
   font-weight: $font-weight-bold;
+  background-color: #d4e2f2;
 }

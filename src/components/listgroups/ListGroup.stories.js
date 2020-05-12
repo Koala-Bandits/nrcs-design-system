@@ -12,7 +12,7 @@ export default {
 
 export const ListGroupStory = () => (
   <div className="mb-4">
-    <ContentHeaderH2>Default (Card Style)</ContentHeaderH2>
+    <ContentHeaderH2>List Group - Default (Card Style)</ContentHeaderH2>
 
     <p>Used by itself as a card in layout for list or selection.</p>
 

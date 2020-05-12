@@ -6,7 +6,7 @@ import {
 } from "components/text/ContentHeader";
 import { PrimaryButton } from "components/buttons/Buttons";
 import Icon from "@mdi/react";
-import { mdiOpenInNew, mdiBootstrap, mdiReact } from "@mdi/js";
+import { mdiOpenInNew, mdiBootstrap, mdiPuzzle, mdiReact } from "@mdi/js";
 
 // hook for apllication wide Growls
 import useToast from "components/feedback/growls/useToast";
@@ -25,12 +25,22 @@ function Components() {
         covers implementations of most all FPAC components, a few others
         provided by Reactstrap, as well as some custom complex components.
       </p>
+      <p>View out Kitchen Sink for a quick overview of core components.</p>
       <p>
         View our Storybook for a complete list of components with tools to view
         the code and test at multiple responsive breakpoints.
       </p>
-
       <Row sm="1" md="2">
+        <Col className="nav-card mb-3">
+          <a href="/nrcs-design-system/components/kitchen-sink">
+            <Card>
+              <CardBody className="h5 mb-0">
+                <Icon className="mdi mr-1" path={mdiPuzzle} size={1.3} />
+                Kitchen Sink
+              </CardBody>
+            </Card>
+          </a>
+        </Col>
         <Col className="nav-card mb-3">
           <a
             href="https://koala-bandits.github.io/nrcs-design-system-storybook"
@@ -90,22 +100,6 @@ function Components() {
             </Card>
           </a>
         </Col>
-      </Row>
-      <Row>
-        <ContentHeaderH2>Core Components</ContentHeaderH2>
-        <p className="text-danger">
-          ** Under construction... soon to be a display of core components as an
-          overview. For now, see our Storybook for all components. **
-        </p>
-
-        <PrimaryButton onClick={showWarningToast}>Add Growl</PrimaryButton>
-        <PrimaryButton onClick={showErrorToast}>Add Growl</PrimaryButton>
-
-        <ContentHeaderH2>Page Components</ContentHeaderH2>
-        <span className="text-danger">
-          ** Under construction... soon to be a display of page components as an
-          overview. For now, see our Storybook for all components. **
-        </span>
       </Row>
     </div>
   );

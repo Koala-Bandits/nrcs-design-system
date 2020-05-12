@@ -281,7 +281,7 @@ export const ModalDefault = () => {
       </Modal>
 
       {/* Body Scroll */}
-      <Modal isOpen={modalBscroll} toggle={toggleBscroll} scrollable="true">
+      <Modal isOpen={modalBscroll} toggle={toggleBscroll} scrollable>
         <ModalHeader toggle={toggleBscroll}>Body Scroll Modal</ModalHeader>
         <ModalBody>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

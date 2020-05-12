@@ -8,10 +8,6 @@ import Icon from "@mdi/react";
 import { mdiOpenInNew, mdiBootstrap, mdiReact } from "@mdi/js";
 
 class GridAndLayout extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="container">

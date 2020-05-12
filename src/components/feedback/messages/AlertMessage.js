@@ -12,9 +12,6 @@ export const AlertMessage = ({ color, children, ...rest }) => {
   let icon;
 
   switch (color) {
-    case "info":
-      icon = mdiInformation;
-      break;
     case "warning":
       icon = mdiAlert;
       break;
@@ -23,6 +20,10 @@ export const AlertMessage = ({ color, children, ...rest }) => {
       break;
     case "success":
       icon = mdiCheckCircle;
+      break;
+    default:
+    case "info":
+      icon = mdiInformation;
       break;
   }
 

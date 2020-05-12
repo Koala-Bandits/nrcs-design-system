@@ -63,14 +63,14 @@ class About extends React.Component {
         </p>
         <h3>NRCS Adaptation</h3>
         <p>
-          Several of our projects with NRCS are large, either GIS applications
-          and/or complex process management systems. NRCS had need for a design
-          system with dedicated choices in components, additional complex
-          components, and integrated iconography together.
+          Several of our projects with NRCS are large GIS applications or
+          complex process management systems. NRCS had need for a design system
+          with dedicated choices in components, additional complex components,
+          and integrated iconography together.
         </p>
         <p>
-          Since many of our teams and projects currently use Bootstrap by itself
-          or with React/Reactrap and already have established UI component
+          Since many of our teams and projects currently use Bootstrap in some
+          way or with React/Reactrap and already have established UI component
           libraries, it made sense to align our current styles and components to
           FPAC in the form of this NRCS Design System.
         </p>

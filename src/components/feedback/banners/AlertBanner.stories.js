@@ -17,28 +17,28 @@ export const BannersDefault = () => (
 
     <AlertBanner color="info">
       This is an <strong>info</strong> banner with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
     </AlertBanner>
     <AlertBanner color="success">
       This is a <strong>success</strong> banner with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
     </AlertBanner>
     <AlertBanner color="danger">
       This is a <strong>error</strong> banner with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
     </AlertBanner>
     <AlertBanner color="warning">
       This is a <strong>warning</strong> banner with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
@@ -46,7 +46,7 @@ export const BannersDefault = () => (
   </div>
 );
 
-export const BannersWithIcons = () => (
+export const BannersNoIcon = () => (
   <div>
     <h3>Alert Banners - No Icon</h3>
     <p>
@@ -57,7 +57,7 @@ export const BannersWithIcons = () => (
 
     <AlertBanner color="info" noIcon>
       This is an <strong>info</strong> banner with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
@@ -74,7 +74,7 @@ export const BannersDismissable = () => {
       </p>
       <AlertBanner color="info" dismissable>
         This is a dismissable <strong>banner</strong> banner with{" "}
-        <a href="#" className="alert-link">
+        <a href="/#" className="alert-link">
           an example link
         </a>
         . Go ahead, make me go away.
@@ -116,7 +116,7 @@ BannersDefault.story = {
   name: "Alert Banners - Default"
 };
 
-BannersWithIcons.story = {
+BannersNoIcon.story = {
   name: "Alert Banners - No Icon"
 };
 

@@ -18,9 +18,6 @@ export const AlertBanner = ({
   let icon;
   if (!noIcon) {
     switch (color) {
-      case "info":
-        icon = mdiInformation;
-        break;
       case "warning":
         icon = mdiAlert;
         break;
@@ -29,6 +26,10 @@ export const AlertBanner = ({
         break;
       case "success":
         icon = mdiCheckCircle;
+        break;
+      default:
+      case "info":
+        icon = mdiInformation;
         break;
     }
   }
@@ -43,7 +44,7 @@ export const AlertBanner = ({
         className="alert-banner"
         color={color}
         isOpen={visible}
-        toggle={dismissable ? onDismiss : ""}
+        toggle={dismissable ? onDismiss : undefined}
         {...rest}
       >
         <Container className="m-0">

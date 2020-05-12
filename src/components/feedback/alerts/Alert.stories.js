@@ -17,28 +17,28 @@ export const AlertsDefault = () => (
 
     <Alert color="info">
       This is an <strong>info</strong> alert with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
     </Alert>
     <Alert color="success">
       This is a <strong>success</strong> alert with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
     </Alert>
     <Alert color="danger">
       This is a <strong>error</strong> alert with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
     </Alert>
     <Alert color="warning">
       This is a <strong>warning</strong> alert with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
@@ -58,7 +58,7 @@ export const AlertsNoIcon = () => (
 
     <Alert color="info" noIcon>
       This is an <strong>info</strong> alert with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
@@ -77,7 +77,7 @@ export const AlertsDismissable = () => {
 
       <Alert color="info" dismissable>
         This is an <strong>info</strong> alert with{" "}
-        <a href="#" className="alert-link">
+        <a href="/#" className="alert-link">
           an example link
         </a>
         . Give it a click if you like.

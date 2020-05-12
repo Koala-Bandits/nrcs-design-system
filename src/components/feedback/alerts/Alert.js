@@ -12,9 +12,6 @@ export const Alert = ({ color, noIcon, dismissable, children, ...rest }) => {
   let icon;
   if (!noIcon) {
     switch (color) {
-      case "info":
-        icon = mdiInformation;
-        break;
       case "warning":
         icon = mdiAlert;
         break;
@@ -23,6 +20,10 @@ export const Alert = ({ color, noIcon, dismissable, children, ...rest }) => {
         break;
       case "success":
         icon = mdiCheckCircle;
+        break;
+      default:
+      case "info":
+        icon = mdiInformation;
         break;
     }
   }
@@ -36,7 +37,7 @@ export const Alert = ({ color, noIcon, dismissable, children, ...rest }) => {
       <RsAlert
         color={color}
         isOpen={visible}
-        toggle={dismissable ? onDismiss : ""}
+        toggle={dismissable ? onDismiss : undefined}
         {...rest}
       >
         <Container className="m-0">
