@@ -1,9 +1,6 @@
 import React from "react";
-import { Button, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-import {
-  ContentHeaderH1,
-  ContentHeaderH2
-} from "components/text/ContentHeader";
+import { ListGroup, ListGroupItem } from "reactstrap";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|List Groups"

@@ -1,12 +1,9 @@
 import React from "react";
-import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
+import { Card, CardBody, Row, Col } from "reactstrap";
 import Icon from "@mdi/react";
 import { mdiPalette, mdiFormatText, mdiVectorSquare } from "@mdi/js";
 
-import {
-  ContentHeaderH1,
-  ContentHeaderH2
-} from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 class VisualStyle extends React.Component {
   constructor(props) {

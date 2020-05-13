@@ -1,15 +1,5 @@
 import React, { useState } from "react";
-import {
-  Alert,
-  Toast,
-  ToastBody,
-  ToastHeader,
-  Container,
-  Row,
-  Col,
-  Card,
-  CardBody
-} from "reactstrap";
+import { Row, Col, Card, CardBody } from "reactstrap";
 import { PrimaryButton, ButtonSet } from "components/buttons/Buttons";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import Growl from "components/feedback/growls/Growl";
