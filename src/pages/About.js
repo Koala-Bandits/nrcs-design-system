@@ -40,33 +40,13 @@ class About extends React.Component {
             </a>
           </strong>
         </p>
-        <h3>FPAC Baseline</h3>
 
-        <p>
-          The FPAC Design System is absoluetly fantastic and thorough. It
-          provides good style and guidance for core components with some
-          flexibility of those components giving consumers some choice.
-        </p>
-        <AlertMessage color="info">
-          If you are working on a project with FPAC or its related agencies, it
-          is suggested you consider starting with the FPAC design system first.
-        </AlertMessage>
-        <p>
-          It is adequate by itself for a small web site or application. Though
-          it doesn't claim to provide everything one might need, for example
-          there are no complex components like DataTables or Trees for complex
-          applications, nor does it provide iconography.
-        </p>
-        <p>
-          It is also based on the 'fsa-style' CSS styles which requires
-          consumers to incorporate into their own implementation or framework.
-        </p>
         <h3>NRCS Adaptation</h3>
         <p>
-          Several of our projects with NRCS are large GIS applications or
-          complex process management systems. NRCS had need for a design system
-          with dedicated choices in components, additional complex components,
-          and integrated iconography together.
+          Several of our projects are large GIS applications or complex process
+          management systems. NRCS had need for a design system with dedicated
+          choices in components, additional complex components, and integrated
+          iconography together.
         </p>
         <p>
           Since many of our teams and projects currently use Bootstrap in some
@@ -88,9 +68,9 @@ class About extends React.Component {
             converge upon for consistent implementation in design and style.
           </li>
           <li>
-            Provides a complete scalable UI component library. It covers
-            implementations of most all FPAC components, a few others provided
-            by Reactstrap, as well as some custom complex components.
+            Provides a scalable UI component library. It covers implementations
+            of most all FPAC components, a few others provided by Reactstrap, as
+            well as some custom complex components.
           </li>
           <li>
             This site is built with React, StoryBook, using{" "}
