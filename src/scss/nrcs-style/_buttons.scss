@@ -24,7 +24,8 @@
 
 // SOLID
 // hover
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary.hover {
   background-color: $primary-dark;
 }
 // active
@@ -45,7 +46,8 @@
   background-color: $white;
 }
 // hover
-.btn-outline-primary:hover {
+.btn-outline-primary:hover,
+.btn-outline-primary.hover {
   color: $primary-dark;
   background-color: $gray-200;
 }
@@ -67,7 +69,8 @@
   text-decoration: none;
 }
 
-.btn-link:hover {
+.btn-link:hover,
+.btn-link.hover {
   color: $primary-dark;
   background-color: $gray-200;
   text-decoration: none;

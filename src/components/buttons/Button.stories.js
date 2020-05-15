@@ -63,6 +63,27 @@ export const ButtonsDefaultStory = () => (
       <FlatButton size="sm">Flat</FlatButton>
     </ButtonSet>
 
+    <h3 className="docs">Hover State</h3>
+    <ButtonSet>
+      <PrimaryButton className="hover">Primary</PrimaryButton>
+      <SecondaryButton className="hover">Secondary</SecondaryButton>
+      <FlatButton className="hover">Flat</FlatButton>
+    </ButtonSet>
+
+    <h3 className="docs">Active State</h3>
+    <ButtonSet>
+      <PrimaryButton className="active">Primary</PrimaryButton>
+      <SecondaryButton className="active">Secondary</SecondaryButton>
+      <FlatButton className="active">Flat</FlatButton>
+    </ButtonSet>
+
+    <h3 className="docs">Focus State</h3>
+    <ButtonSet>
+      <PrimaryButton className="focus">Primary</PrimaryButton>
+      <SecondaryButton className="focus">Secondary</SecondaryButton>
+      <FlatButton className="focus">Flat</FlatButton>
+    </ButtonSet>
+
     <h3 className="docs">Disabled</h3>
     <ButtonSet>
       <PrimaryButton aria-disabled="true" disabled>
