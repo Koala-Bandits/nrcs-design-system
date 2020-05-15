@@ -32,7 +32,10 @@ function Components() {
       </p>
       <Row sm="1" md="2">
         <Col className="nav-card mb-3">
-          <a href="/nrcs-design-system/components/kitchen-sink">
+          <a
+            className="btn btn-link d-block text-left p-0"
+            href="/nrcs-design-system/components/kitchen-sink"
+          >
             <Card>
               <CardBody className="h5 mb-0">
                 <Icon className="mdi mr-1" path={mdiPuzzle} size={1.3} />
@@ -43,6 +46,7 @@ function Components() {
         </Col>
         <Col className="nav-card mb-3">
           <a
+            className="btn btn-link d-block text-left p-0"
             href="https://koala-bandits.github.io/nrcs-design-system-storybook"
             target="_blank"
             rel="nopener noreferrer"
@@ -72,6 +76,7 @@ function Components() {
       <Row sm="1" md="2">
         <Col className="nav-card mb-3">
           <a
+            className="btn btn-link d-block text-left p-0"
             href="https://reactstrap.github.io/components/"
             target="_blank"
             rel="nopener noreferrer"
@@ -87,6 +92,7 @@ function Components() {
         </Col>
         <Col className="nav-card mb-3">
           <a
+            className="btn btn-link d-block text-left p-0"
             href="https://getbootstrap.com/docs/4.4/components/"
             target="_blank"
             rel="nopener noreferrer"

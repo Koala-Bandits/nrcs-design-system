@@ -23,7 +23,10 @@ class VisualStyle extends React.Component {
 
         <Row sm="1" md="2">
           <Col className="nav-card mb-3">
-            <a href="/nrcs-design-system/visual-style/color">
+            <a
+              className="btn btn-link d-block text-left p-0"
+              href="/nrcs-design-system/visual-style/color"
+            >
               <Card>
                 <CardBody className="h5 mb-0">
                   <Icon className="mdi mr-1" path={mdiPalette} size={1.3} />
@@ -33,7 +36,10 @@ class VisualStyle extends React.Component {
             </a>
           </Col>
           <Col className="nav-card mb-3">
-            <a href="/nrcs-design-system/visual-style/typography">
+            <a
+              className="btn btn-link d-block text-left p-0"
+              href="/nrcs-design-system/visual-style/typography"
+            >
               <Card>
                 <CardBody className="h5 mb-0">
                   <Icon className="mdi mr-1" path={mdiFormatText} size={1.3} />
@@ -43,7 +49,10 @@ class VisualStyle extends React.Component {
             </a>
           </Col>
           <Col className="nav-card mb-3">
-            <a href="/nrcs-design-system/visual-style/iconography">
+            <a
+              className="btn btn-link d-block text-left p-0"
+              href="/nrcs-design-system/visual-style/iconography"
+            >
               <Card>
                 <CardBody className="h5 mb-0">
                   <Icon

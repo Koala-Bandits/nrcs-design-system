@@ -22,7 +22,10 @@ class Guides extends React.Component {
 
         <Row sm="1" md="2">
           <Col className="nav-card mb-3">
-            <a href="/nrcs-design-system/guides/accessibility">
+            <a
+              className="btn btn-link d-block text-left p-0"
+              href="/nrcs-design-system/guides/accessibility"
+            >
               <Card>
                 <CardBody className="h5 mb-0">
                   <Icon className="mdi mr-1" path={mdiHuman} size={1.3} />
@@ -32,7 +35,10 @@ class Guides extends React.Component {
             </a>
           </Col>
           <Col className="nav-card mb-3">
-            <a href="/nrcs-design-system/guides/grid-and-layout">
+            <a
+              className="btn btn-link d-block text-left p-0"
+              href="/nrcs-design-system/guides/grid-and-layout"
+            >
               <Card>
                 <CardBody className="h5 mb-0">
                   <Icon className="mdi mr-1" path={mdiGrid} size={1.3} />
@@ -42,7 +48,10 @@ class Guides extends React.Component {
             </a>
           </Col>
           <Col className="nav-card mb-3">
-            <a href="/nrcs-design-system/guides/utilities">
+            <a
+              className="btn btn-link d-block text-left p-0"
+              href="/nrcs-design-system/guides/utilities"
+            >
               <Card>
                 <CardBody className="h5 mb-0">
                   <Icon

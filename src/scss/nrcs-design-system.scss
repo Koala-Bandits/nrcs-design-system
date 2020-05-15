@@ -201,9 +201,16 @@ h6.docs {
 // 508 Highlighting
 :focus,
 .focus {
-  outline: 3px solid $input-btn-focus-color;
+  outline: 3px auto $input-btn-focus-color;
 }
+// a:focus {
+//   outline-offset: 3px;
+// }
 
-a:focus {
-  outline-offset: 2px;
+////// UTILITIES
+
+// Used for when you have stacking elements which have overlapping borders/outlines
+// You can use this class to moementarily 'elevate' an element on focus to be sure the 508 outline shows
+.elevate-on-focus:focus {
+  z-index: 10;
 }
