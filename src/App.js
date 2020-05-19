@@ -17,6 +17,10 @@ import { ToastProvider } from "components/feedback/growls/toastProvider.js";
 import Dashboard from "./wcis/Dashboard";
 import Profiles from "./wcis/Profiles";
 import Configuration from "./wcis/Configuration";
+import ExcludeElements from "./wcis/configuration/ExcludeElements";
+import ElementConfiguration from "./wcis/configuration/ElementConfiguration";
+import SensorConfiguration from "./wcis/configuration/SensorConfiguration";
+import TemporaryDeactivation from "./wcis/configuration/TemporaryDeactivation";
 
 // Main Application Root Component
 //
@@ -36,6 +40,26 @@ function App() {
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/profiles" component={Profiles} />
               <Route exact path="/configuration" component={Configuration} />
+              <Route
+                exact
+                path="/configuration/exclude-elements"
+                component={ExcludeElements}
+              />
+              <Route
+                exact
+                path="/configuration/element-configuration"
+                component={ElementConfiguration}
+              />
+              <Route
+                exact
+                path="/configuration/sensor-configuration"
+                component={SensorConfiguration}
+              />
+              <Route
+                exact
+                path="/configuration/temporary-deactivation"
+                component={TemporaryDeactivation}
+              />
               {/* <Route exact path="/visual-style" component={VisualStyle} /> */}
               <Route exact path="/" component={Dashboard} />
             </Switch>
