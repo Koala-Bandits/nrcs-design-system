@@ -37,11 +37,19 @@ $grays: map-merge(
   $grays
 );
 
-// NRCS
+//////// NRCS additions
 $fpac-blue: #205493; // FPAC secondary (our primary) blue
 $fpac-green: #236430; // FPAC primary green (our secondary)
 // #0068ad; // FPAC link color
+$fpac-focus: #009afa; // for 508 focus only to stand out over other blues
+// used in buttons, icons, for hover/active states to match closely to FPAC states:
+$primary-dark: #184070; // = theme-color-level("primary", 3);
+$primary-darker: #0e2541; // = theme-color-level("primary", 7);
+$secondary-dark: #1b4c24; // = theme-color-level("secondary", 3);
+$secondary-darker: #0f2c15; // = theme-color-level("seondary", 7);
+////////
 
+// Color palate
 $blue: $fpac-blue; // #007bff !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
@@ -49,9 +57,7 @@ $pink: #e83e8c !default;
 $red: #b70f0a; //#dc3545 !default;
 $orange: #ff7f00; //#fd7e14 !default;
 $yellow: #fdb81e; //107 !default;
-
 $green: lighten($fpac-green, 10%); // NRCS success green based on FPAC green
-
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
@@ -75,12 +81,11 @@ $colors: map-merge(
   $colors
 );
 
+// Color vars
 $primary: $blue !default;
 $secondary: $fpac-green; // $gray-600 !default;
 $success: $green !default;
-
 $info: lighten($blue, 10%); // NRCS info color based on FPAC primary blue
-
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
@@ -256,8 +261,8 @@ $border-radius-sm: 0.2rem !default;
 // $box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
 // $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
 
-//$component-active-color: $white !default;
-//$component-active-bg: theme-color("primary") !default;
+// $component-active-color: $white !default;
+// $component-active-bg: theme-color("primary") !default;
 $selection-active-color: $body-color;
 $selection-active-bg: #d4e2f2; // same as Alert BG, or: lighten($blue,50%); // NRCS info color based on FPAC primary blue
 
@@ -407,11 +412,12 @@ $table-active-bg: $selection-active-bg; // $table-hover-bg !default;
 // $input-btn-font-size: $font-size-base !default;
 // $input-btn-line-height: $line-height-base !default;
 
-// $input-btn-focus-width: 0.2rem !default;
-
-// $input-btn-focus-color: rgba($component-active-bg, 0.25) !default;
-
-// $input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+$input-btn-focus-width: 0.15rem; //0.2rem !default;
+$input-btn-focus-color: rgba(
+  $fpac-focus,
+  0.75
+); // rgba($component-active-bg, 0.25) !default;
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color; // !default;
 
 // $input-btn-padding-y-sm: 0.25rem !default;
 // $input-btn-padding-x-sm: 0.5rem !default;
@@ -443,7 +449,7 @@ $table-active-bg: $selection-active-bg; // $table-hover-bg !default;
 
 // $btn-padding-y-lg: $input-btn-padding-y-lg !default;
 // $btn-padding-x-lg: $input-btn-padding-x-lg !default;
-// $btn-font-size-lg: $input-btn-font-size-lg !default;
+// $btn-font-size-lg: $input-btn-font-size-lg !default;s
 // $btn-line-height-lg: $input-btn-line-height-lg !default;
 
 // $btn-border-width: $input-btn-border-width !default;
@@ -451,7 +457,7 @@ $table-active-bg: $selection-active-bg; // $table-hover-bg !default;
 // $btn-font-weight: $font-weight-bold; //$font-weight-normal !default;
 // $btn-box-shadow: inset 0 1px 0 rgba($white, 0.15), 0 1px 1px rgba($black, 0.075) !default;
 // $btn-focus-width: $input-btn-focus-width !default;
-// $btn-focus-box-shadow: $input-btn-focus-box-shadow !default;
+$btn-focus-box-shadow: $input-btn-focus-box-shadow !important; //$input-btn-focus-box-shadow !default;
 // $btn-disabled-opacity: 0.65 !default;
 // $btn-active-box-shadow: inset 0 3px 5px rgba($black, 0.125) !default;
 
@@ -501,7 +507,7 @@ $input-border-color: $gray-600; // $gray-400 !default;
 // $input-border-radius-sm: $border-radius-sm !default;
 
 // $input-focus-bg: $input-bg !default;
-// $input-focus-border-color: lighten($component-active-bg, 25%) !default;
+// $input-focus-border-color: $fpac-focus; //lighten($component-active-bg, 25%) !default;
 // $input-focus-color: $input-color !default;
 // $input-focus-width: $input-btn-focus-width !default;
 // $input-focus-box-shadow: $input-btn-focus-box-shadow !default;

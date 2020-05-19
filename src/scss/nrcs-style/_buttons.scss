@@ -2,8 +2,6 @@
 // Override styles of Buttons in NRCS Design System
 /////////////////////////////////////////////////////////////
 
-$primary-dark: theme-color-level("primary", 3);
-
 // MAIN buttons Dismmisive, Alternate, Save (no other input use cases etc.)
 // get min width
 .btn-main {
@@ -25,8 +23,16 @@ $primary-dark: theme-color-level("primary", 3);
 }
 
 // SOLID
-.btn-primary:hover {
+// hover
+.btn-primary:hover,
+.btn-primary.hover {
   background-color: $primary-dark;
+}
+// active
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: $primary-darker;
 }
 .btn.disabled,
 .btn:disabled {
@@ -39,7 +45,9 @@ $primary-dark: theme-color-level("primary", 3);
 .btn-outline-secondary {
   background-color: $white;
 }
-.btn-outline-primary:hover {
+// hover
+.btn-outline-primary:hover,
+.btn-outline-primary.hover {
   color: $primary-dark;
   background-color: $gray-200;
 }
@@ -48,11 +56,11 @@ $primary-dark: theme-color-level("primary", 3);
   cursor: not-allowed;
   pointer-events: none;
 }
-
+// active
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
-  background-color: $primary-dark;
+  background-color: $primary-darker;
 }
 
 // FLAT (LINK)
@@ -61,9 +69,15 @@ $primary-dark: theme-color-level("primary", 3);
   text-decoration: none;
 }
 
-.btn-link:hover {
+.btn-link:hover,
+.btn-link.hover {
   color: $primary-dark;
   background-color: $gray-200;
+  text-decoration: none;
+}
+
+.btn-link:focus,
+.btn-link.focus {
   text-decoration: none;
 }
 

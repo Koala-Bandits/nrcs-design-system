@@ -1,5 +1,7 @@
 import React from "react";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
+import { Alert } from "components/feedback/alerts/Alert";
+import { AlertMessage } from "components/feedback/messages/AlertMessage";
 
 class About extends React.Component {
   constructor(props) {
@@ -10,16 +12,12 @@ class About extends React.Component {
     return (
       <div className="container">
         <ContentHeaderH1>NRCS Design System</ContentHeaderH1>
-
-        <p className="lead">
-          <span className="text-danger">
-            ** BETA: CURRENTLY UNDER DEVELOPMENT AND INCOMPLETE **
-          </span>
-        </p>
+        <Alert color="warning">
+          Warning: currently under development and incomplete.
+        </Alert>
         <p className="lead">
           <strong>A design system produced for our partners at NRCS.</strong>
         </p>
-
         <p>
           An adaptation of the{" "}
           <strong>
@@ -42,14 +40,19 @@ class About extends React.Component {
             </a>
           </strong>
         </p>
+
+        <h3>NRCS Adaptation</h3>
         <p>
-          A resource with specifics and expanded documentation meant as a
-          compliment to the FPAC Design System documentation, all to support the
-          current needs of coordinated efforts building apps at NRCS.
+          Several of our projects are large GIS applications or complex process
+          management systems. NRCS had need for a design system with dedicated
+          choices in components, additional complex components, and integrated
+          iconography together.
         </p>
         <p>
-          If you are working on a project with FPAC or its related agencies, it
-          is suggested you consider starting with the FPAC design system first.
+          Since many of our teams and projects currently use Bootstrap in some
+          way or with React/Reactrap and already have established UI component
+          libraries, it made sense to align our current styles and components to
+          FPAC in the form of this NRCS Design System.
         </p>
         <ul>
           <li>
@@ -65,9 +68,9 @@ class About extends React.Component {
             converge upon for consistent implementation in design and style.
           </li>
           <li>
-            Provides a complete scalable UI component library. It covers
-            implementations of most all FPAC components, a few others provided
-            by Reactstrap, as well as some custom complex components.
+            Provides a scalable UI component library. It covers implementations
+            of most all FPAC components, a few others provided by Reactstrap, as
+            well as some custom complex components.
           </li>
           <li>
             This site is built with React, StoryBook, using{" "}

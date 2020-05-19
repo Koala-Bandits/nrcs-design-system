@@ -18,10 +18,16 @@ export class ContentHeaderH2 extends React.Component {
   }
 }
 
+// export const ContentHeaderH3 = ({ className, children }) => (
+//   <h3 className={`border-bottom w-100 pb-1 mt-4 mb-3 ${className}`}>
+//     {children}
+//   </h3>
+// );
+
 export class ContentHeaderH3 extends React.Component {
   render() {
     return (
-      <h3 className="border-bottom w-100 pb-1 mt-4 mb-3">
+      <h3 className="border-bottom w-100 pb-1 mt-4 mb-3" {...this.props}>
         {this.props.children}
       </h3>
     );

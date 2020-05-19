@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "@mdi/react";
-import { Row, Col, Card, CardBody, CardText, Table } from "reactstrap";
+import { Row, Col, Card, CardBody, Table } from "reactstrap";
 import {
   ContentHeaderH1,
   ContentHeaderH2
@@ -31,7 +31,7 @@ import {
   mdiCloseCircle,
   mdiCloseCircleOutline,
   mdiClockOutline,
-  mdiCog,
+  // mdiCog,
   mdiContentCopy,
   mdiContentCut,
   mdiContentPaste,

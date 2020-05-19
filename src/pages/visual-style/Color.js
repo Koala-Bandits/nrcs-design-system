@@ -105,7 +105,22 @@ class Color extends React.Component {
               </p>
             </div>
             <div className="p-3 alert-info">
-              Information Background / Active Highlight
+              Information Background #d4e2f2
+              <p>
+                <small>Also active highlight for Dropdowns</small>
+              </p>
+            </div>
+            <div className="p-3 text-white docs-color-primary-dark">
+              Primary Dark #184070
+              <p>
+                <small>Button, icon, and link HOVER</small>
+              </p>
+            </div>
+            <div className="p-3 text-white docs-color-primary-darker">
+              Primary Darker #0e2541
+              <p>
+                <small>Button ACTIVE</small>
+              </p>
             </div>
           </div>
 
@@ -116,8 +131,14 @@ class Color extends React.Component {
                 <small>10% lighter than Secondary green</small>
               </p>
             </div>
-            <div className="p-3 alert alert-banner alert-success">
-              Successs Background
+            <div className="p-3 alert-banner alert-success">
+              Success Background #d6e8d9
+            </div>
+            <div className="p-3 text-white docs-color-secondary-dark">
+              Secondary Dark #1b4c24
+            </div>
+            <div className="p-3 text-white docs-color-secondary-darker">
+              Secondary Darker #0f2c15
             </div>
           </div>
 
@@ -126,7 +147,7 @@ class Color extends React.Component {
               Danger #b70f0a
             </div>
             <div className="p-3 alert alert-banner alert-danger">
-              Danger Background
+              Danger Background #f1cfce
             </div>
           </div>
 
@@ -135,13 +156,13 @@ class Color extends React.Component {
               Warning #fdb81e
             </div>
             <div className="p-3 alert alert-banner alert-warning">
-              Danger Background
+              Danger Background #fff1d2
             </div>
           </div>
 
           <div className="col-md-4">
-            <div className="p-3 mb-3 bg-white text-dark docs-color-swatch">
-              Focus Outline #TO-DO
+            <div className="p-3 mb-3 bg-white text-dark docs-color-swatch focus">
+              Focus rgba(#009afa, 0.75)
               <p>
                 <small>
                   Focus indicator outline/highlight for accessibility

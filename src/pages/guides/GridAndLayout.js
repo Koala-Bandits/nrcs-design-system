@@ -8,10 +8,6 @@ import Icon from "@mdi/react";
 import { mdiOpenInNew, mdiBootstrap, mdiReact } from "@mdi/js";
 
 class GridAndLayout extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="container">
@@ -85,12 +81,12 @@ class GridAndLayout extends React.Component {
 
         <h3 className="h5 mt-4 mb-3">2-Column Stacking</h3>
         <Row>
-          <Col xs="12" md="8">
+          <Col xs="12" md="8" className="mb-3">
             <Card className="card-muted">
               <CardBody className="text-center">CONTENT A</CardBody>
             </Card>
           </Col>
-          <Col xs="12" md="4">
+          <Col xs="12" md="4" className="mb-3">
             <Card className="card-muted">
               <CardBody className="text-center">CONTENT B</CardBody>
             </Card>
@@ -99,17 +95,17 @@ class GridAndLayout extends React.Component {
 
         <h3 className="h5 mt-4 mb-3">3-Column Stacking</h3>
         <Row>
-          <Col xs="6" sm="4">
+          <Col xs="6" sm="4" className="mb-3">
             <Card className="card-muted">
               <CardBody className="text-center">CONTENT A</CardBody>
             </Card>
           </Col>
-          <Col xs="6" sm="4">
+          <Col xs="6" sm="4" className="mb-3">
             <Card className="card-muted">
               <CardBody className="text-center">CONTENT B</CardBody>
             </Card>
           </Col>
-          <Col xs="12" sm="4">
+          <Col xs="12" sm="4" className="mb-3">
             <Card className="card-muted">
               <CardBody className="text-center">CONTENT C</CardBody>
             </Card>

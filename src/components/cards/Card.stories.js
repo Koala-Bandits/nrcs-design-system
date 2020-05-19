@@ -19,9 +19,9 @@ export default {
 export const CardDefault = () => (
   <div className="pb-4">
     <h2 className="docs">Card - Default</h2>
-    <p>
+    <p className="lead">
       Cards are a versatile container that we can use to frame or group a
-      section of content, create blocks etc.
+      section of content, create blocks.
     </p>
 
     <h3 className="docs">Basic White</h3>

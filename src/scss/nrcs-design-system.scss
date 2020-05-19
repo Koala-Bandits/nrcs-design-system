@@ -21,10 +21,6 @@ h6.docs {
   margin-top: 1.5rem;
 }
 
-// li {
-//   margin-bottom: 0.85rem;
-// }
-
 ///////////////////////////
 // DOCS MISC
 
@@ -32,9 +28,6 @@ h6.docs {
 .docs-color-black {
   background-color: $black;
 }
-// .docs-color-focus {
-
-// }
 .docs-color-active {
   background-color: $selection-active-bg;
 }
@@ -45,6 +38,18 @@ h6.docs {
   color: $primary;
   border: 1px $primary solid;
   background-color: $white;
+}
+.docs-color-primary-dark {
+  background-color: $primary-dark;
+}
+.docs-color-primary-darker {
+  background-color: $primary-darker;
+}
+.docs-color-secondary-dark {
+  background-color: $secondary-dark;
+}
+.docs-color-secondary-darker {
+  background-color: $secondary-darker;
 }
 .docs-gray-100 {
   background-color: $gray-100;
@@ -89,11 +94,7 @@ h6.docs {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-// MISC/TEMPORARY
-// .docs-btn button + button {
-//   margin-left: 0.5rem;
-// }
-
+// temporary hack
 .badge + .badge {
   margin-left: 0.5rem;
 }
@@ -195,4 +196,21 @@ h6.docs {
     border-top: 1px solid rgba(255, 255, 255, 0.5); // 'text-white-50'
     padding-top: 2rem;
   }
+}
+
+// 508 Highlighting
+:focus,
+.focus {
+  outline: 3px auto $input-btn-focus-color;
+}
+// a:focus {
+//   outline-offset: 3px;
+// }
+
+////// UTILITIES
+
+// Used for when you have stacking elements which have overlapping borders/outlines
+// You can use this class to moementarily 'elevate' an element on focus to be sure the 508 outline shows
+.elevate-on-focus:focus {
+  z-index: 10;
 }

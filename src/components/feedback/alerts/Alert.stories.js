@@ -1,45 +1,44 @@
-import React, { useState } from "react";
-import { Alert, Container, Row, Col } from "reactstrap";
+import React from "react";
 import Icon from "@mdi/react";
-import {
-  mdiInformation,
-  mdiAlert,
-  mdiAlertCircle,
-  mdiCheckCircle
-} from "@mdi/js";
+import { mdiCheckCircle } from "@mdi/js";
+import { Alert } from "./Alert";
 
 export default {
-  title: "Components|Feedback/Inline Alerts"
+  title: "Components|Feedback/Alerts"
 };
 
 export const AlertsDefault = () => (
   <div>
-    <h2 className="docs">Inline Alerts - Default</h2>
+    <h2 className="docs">Alerts - Default</h2>
+    <p className="lead">
+      Inine Alerts are used for drawing attention to a specific block of
+      content.{" "}
+    </p>
 
     <Alert color="info">
       This is an <strong>info</strong> alert with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
     </Alert>
     <Alert color="success">
       This is a <strong>success</strong> alert with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
     </Alert>
     <Alert color="danger">
       This is a <strong>error</strong> alert with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
     </Alert>
     <Alert color="warning">
       This is a <strong>warning</strong> alert with{" "}
-      <a href="#" className="alert-link">
+      <a href="/#" className="alert-link">
         an example link
       </a>
       . Give it a click if you like.
@@ -47,115 +46,41 @@ export const AlertsDefault = () => (
   </div>
 );
 
-export const AlertsWithIcons = () => (
+export const AlertsNoIcon = () => (
   <div>
-    <h2 className="docs">Inline Alerts - with Icons</h2>
+    <h3>Alerts - no Icon</h3>
 
-    <Alert color="info">
-      <Container className="m-0">
-        <Row>
-          <Col xs="auto" className="p-0 pr-2">
-            <Icon className="mdi" path={mdiInformation} />
-          </Col>
-          <Col className="p-0">
-            This is an <strong>info</strong> alert with{" "}
-            <a href="#" className="alert-link">
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Col>
-        </Row>
-      </Container>
-    </Alert>
-    <Alert color="success">
-      <Container className="m-0">
-        <Row>
-          <Col xs="auto" className="p-0 pr-2">
-            <Icon className="mdi" path={mdiCheckCircle} />
-          </Col>
-          <Col className="p-0">
-            This is a <strong>success</strong> alert with{" "}
-            <a href="#" className="alert-link">
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Col>
-        </Row>
-      </Container>
-    </Alert>
-    <Alert color="danger">
-      <Container className="m-0">
-        <Row>
-          <Col xs="auto" className="p-0 pr-2">
-            <Icon className="mdi" path={mdiAlertCircle} />
-          </Col>
-          <Col className="p-0">
-            This is a <strong>error</strong> alert with{" "}
-            <a href="#" className="alert-link">
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Col>
-        </Row>
-      </Container>
-    </Alert>
-    <Alert color="warning">
-      <Container className="m-0">
-        <Row>
-          <Col xs="auto" className="p-0 pr-2">
-            <Icon className="mdi" path={mdiAlert} />
-          </Col>
-          <Col className="p-0">
-            This is a <strong>warning</strong> alert with{" "}
-            <a href="#" className="alert-link">
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Col>
-        </Row>
-      </Container>
-    </Alert>
-    <hr />
-    <Alert color="warning">
-      <Container className="m-0">
-        <Row>
-          <Col xs="auto" className="p-0 pr-2">
-            <Icon className="mdi" path={mdiAlert} />
-          </Col>
-          <Col className="p-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Col>
-        </Row>
-      </Container>
+    <p>
+      Alerts come with icons by default as it aids in accessibility (color blind
+      individuals). If you really want to remove the icon you can do so using
+      the <code>noIcon</code> prop.
+    </p>
+
+    <Alert color="info" noIcon>
+      This is an <strong>info</strong> alert with{" "}
+      <a href="/#" className="alert-link">
+        an example link
+      </a>
+      . Give it a click if you like.
     </Alert>
   </div>
 );
 
 export const AlertsDismissable = () => {
-  const [visible, setVisible] = useState(true);
-  const onDismiss = () => setVisible(false);
-
   return (
     <div>
-      <h2 className="docs">Inline Alerts - Dismissable</h2>
+      <h3>Inline Alerts - Dismissable</h3>
 
-      <Alert color="warning" isOpen={visible} toggle={onDismiss}>
-        <Container className="m-0">
-          <Row>
-            <Col xs="auto" className="p-0 pr-2">
-              <Icon className="mdi" path={mdiAlert} />
-            </Col>
-            <Col className="p-0">
-              This is a dismissable warning alert with. Go ahead, dismiss me!
-            </Col>
-          </Row>
-        </Container>
+      <p>
+        Use the <code>dismissable</code> property to make an Alert dismissable.
+      </p>
+
+      <Alert color="info" dismissable>
+        This is an <strong>info</strong> alert with{" "}
+        <a href="/#" className="alert-link">
+          an example link
+        </a>
+        . Give it a click if you like.
       </Alert>
     </div>
   );
@@ -163,9 +88,15 @@ export const AlertsDismissable = () => {
 
 export const AlertsContent = () => (
   <div>
-    <h2 className="docs">Inline Alerts - with Content</h2>
+    <h3>Alerts - with Content</h3>
 
-    <Alert color="success">
+    <p>
+      In rare cases you may want more control of content in an Alert. In this
+      example, we use <code>noIcon</code> to remove the default icon and do our
+      own thang...
+    </p>
+
+    <Alert color="success" noIcon>
       <h4 className="alert-heading">
         <Icon className="mdi" path={mdiCheckCircle} size={1.3} />
         Well done!
@@ -185,17 +116,17 @@ export const AlertsContent = () => (
 );
 
 AlertsDefault.story = {
-  name: "Inline Alerts - Default"
+  name: "Alerts - Default"
 };
 
-AlertsWithIcons.story = {
-  name: "Inline Alerts - with Icons"
+AlertsNoIcon.story = {
+  name: "Alerts - No Icon"
 };
 
 AlertsDismissable.story = {
-  name: "Inline Alerts - Dismissable"
+  name: "Alerts - Dismissable"
 };
 
 AlertsContent.story = {
-  name: "Inline Alerts - with Content"
+  name: "Alerts - with Content"
 };

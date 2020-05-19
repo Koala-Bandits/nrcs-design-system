@@ -26,14 +26,11 @@ $icon-default-color: $gray-800;
 //     }
 //   }
 
-$primary-dark: theme-color-level("primary", 3);
-
 // Buttons with Icons
 .btn svg,
 .breadcrumb svg {
-  //   vertical-align: top;
-  // margin-right: 0.25rem; // Doesn't work for icons on the right (dropdown, next etc.)
-  margin-top: -0.25rem;
+  vertical-align: middle;
+  margin-top: -0.125rem;
 }
 
 .btn-primary svg,
@@ -41,13 +38,18 @@ $primary-dark: theme-color-level("primary", 3);
   fill: #fff !important;
 }
 
-.btn-outline-primary:hover svg {
+.btn-outline-primary:hover svg,
+.btn-link:hover svg {
   fill: $primary-dark;
 }
 
 .btn-outline-primary svg,
 .btn-link svg {
   fill: $primary;
+}
+
+.btn-icon svg {
+  vertical-align: middle;
 }
 
 // Alerts with Icons

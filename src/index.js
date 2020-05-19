@@ -2,7 +2,6 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
 
 // Application Styles via NRCS Design System Bootstrap theme
 import "./scss/nrcs-design-system.scss";
@@ -20,18 +19,11 @@ WebFont.load({
   }
 });
 
-// Enable routing via react-router wrapping <App /> in <Router>
-// Routes are then defined in the main application component
-const routing = (
-  <Router basename="/wcis">
-    <div>
-      <App />
-    </div>
-  </Router>
-);
+const nrcsDSApp = <App />;
 
 // Renders our main application component to 'root' div
-ReactDOM.render(routing, document.getElementById("root"));
+ReactDOM.render(nrcsDSApp, document.getElementById("root"));
+// ReactDOM.render(<AppWithToastProvider />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
