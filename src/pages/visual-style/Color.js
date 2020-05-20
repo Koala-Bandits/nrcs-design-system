@@ -104,7 +104,7 @@ class Color extends React.Component {
                 <small>10% lighter than Primary blue</small>
               </p>
             </div>
-            <div className="p-3 alert-info">
+            <div className="p-3 alert alert-banner alert-info mb-0">
               Information Background #d4e2f2
               <p>
                 <small>Also active highlight for Dropdowns</small>
@@ -131,7 +131,7 @@ class Color extends React.Component {
                 <small>10% lighter than Secondary green</small>
               </p>
             </div>
-            <div className="p-3 alert-banner alert-success">
+            <div className="p-3 alert alert-banner alert-success mb-0">
               Success Background #d6e8d9
             </div>
             <div className="p-3 text-white docs-color-secondary-dark">
