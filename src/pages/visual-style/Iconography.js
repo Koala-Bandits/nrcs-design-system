@@ -43,13 +43,13 @@ import {
   mdiDotsVertical,
   mdiDotsVerticalCircle,
   mdiDownload,
-  mdiExport,
   mdiEye,
+  mdiFileExport,
+  mdiFileImport,
   mdiFilter,
   mdiHelpCircle,
   mdiHelpCircleOutline,
   mdiHome,
-  mdiImport,
   mdiInformation,
   mdiLayers,
   mdiLock,
@@ -358,8 +358,8 @@ class Iconography extends React.Component {
                   text="Download"
                 />
                 <IconRow
-                  icon={mdiExport}
-                  name="mdiExport"
+                  icon={mdiFileExport}
+                  name="mdiFileExport"
                   text="Export data, files"
                 />
                 <IconRow icon={mdiEye} name="mdiEye" text="View, preview" />
@@ -376,8 +376,8 @@ class Iconography extends React.Component {
                 />
                 <IconRow icon={mdiHome} name="mdiHome" text="Home, homepage" />
                 <IconRow
-                  icon={mdiImport}
-                  name="mdiImport"
+                  icon={mdiFileImport}
+                  name="mdiFileImport"
                   text="Import data, files"
                 />
                 <IconRow
