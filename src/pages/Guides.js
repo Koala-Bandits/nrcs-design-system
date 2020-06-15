@@ -20,7 +20,7 @@ class Guides extends React.Component {
           styles that are inherent within the NRCS Design System.
         </p>
 
-        <Row sm="1" md="2">
+        <Row xs="1" md="2">
           <Col className="nav-card mb-3">
             <a
               className="btn btn-link d-block text-left p-0"

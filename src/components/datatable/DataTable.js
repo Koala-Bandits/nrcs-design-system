@@ -11,6 +11,19 @@ import { FlatButton } from "components/buttons/Buttons";
 import { mdiDotsVertical, mdiExport, mdiPlusBox, mdiTrashCan } from "@mdi/js";
 
 export const DataTable = ({ children, ...rest }) => {
+  //// props
+  // data []
+  // columns []
+  // sort (per column)?
+
+  // selection = single/multiple
+  // page-size = 25 or ...
+  // column-picker
+  // actions = {}
+
+  // actions-menu example?
+  // search filter example?
+
   return (
     <div>
       <Row className="mb-1 align-items-center">

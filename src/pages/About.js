@@ -1,7 +1,9 @@
 import React from "react";
+import { Card, CardBody, Row, Col } from "reactstrap";
+import Icon from "@mdi/react";
+import { mdiPalette, mdiPuzzle, mdiHuman } from "@mdi/js";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { Alert } from "components/feedback/alerts/Alert";
-import { AlertMessage } from "components/feedback/messages/AlertMessage";
 
 class About extends React.Component {
   constructor(props) {
@@ -97,6 +99,73 @@ class About extends React.Component {
             application skeleton.
           </li>
         </ul>
+
+        <Row xs="1" md="2">
+          <Col className="nav-card mb-3">
+            <a
+              className="btn btn-link d-block text-left p-0"
+              href="/nrcs-design-system/visual-style"
+            >
+              <Card>
+                <CardBody className="mb-0">
+                  <Row>
+                    <Col xs="auto" className="pr-0">
+                      <Icon className="mdi mr-1" path={mdiPalette} size={1.3} />
+                    </Col>
+                    <Col className="p-0">
+                      <span className="h5 mb-0">Visual Style</span>
+                      <p className="mb-0">Color, Typography, and Iconography</p>
+                    </Col>
+                  </Row>
+                </CardBody>
+              </Card>
+            </a>
+          </Col>
+          <Col className="nav-card mb-3">
+            <a
+              className="btn btn-link d-block text-left p-0"
+              href="/nrcs-design-system/guides"
+            >
+              <Card>
+                <CardBody className="mb-0">
+                  <Row>
+                    <Col xs="auto" className="pr-0">
+                      <Icon className="mdi mr-1" path={mdiHuman} size={1.3} />
+                    </Col>
+                    <Col className="p-0">
+                      <span className="h5 mb-0">Guides</span>
+                      <p className="mb-0">
+                        Accessibilty, Grid and Layout, Utilities
+                      </p>
+                    </Col>
+                  </Row>
+                </CardBody>
+              </Card>
+            </a>
+          </Col>
+          <Col className="nav-card mb-3">
+            <a
+              className="btn btn-link d-block text-left p-0"
+              href="/nrcs-design-system/components"
+            >
+              <Card>
+                <CardBody className="mb-0">
+                  <Row>
+                    <Col xs="auto" className="pr-0">
+                      <Icon className="mdi mr-1" path={mdiPuzzle} size={1.3} />
+                    </Col>
+                    <Col className="p-0">
+                      <span className="h5 mb-0">Components</span>
+                      <p className="mb-0">
+                        Kitchen Sink, Page Examples, References
+                      </p>
+                    </Col>
+                  </Row>
+                </CardBody>
+              </Card>
+            </a>
+          </Col>
+        </Row>
       </div>
     );
   }

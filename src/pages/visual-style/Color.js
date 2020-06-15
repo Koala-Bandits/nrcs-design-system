@@ -207,7 +207,8 @@ class Color extends React.Component {
               $gray-600 #888888
               <p>
                 <small>
-                  INPUT BORDERS for strong color contrast, disabled text
+                  INPUT BORDERS for strong color contrast, placeholder input
+                  text
                 </small>
               </p>
             </div>
@@ -216,7 +217,8 @@ class Color extends React.Component {
               $gray-700 #686868
               <p>
                 <small>
-                  LABELS of inputs and table headers, disabled input text
+                  LABELS of inputs and table headers, helper text, disabled
+                  input text
                 </small>
               </p>
             </div>

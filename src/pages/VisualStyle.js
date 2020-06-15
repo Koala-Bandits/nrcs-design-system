@@ -21,7 +21,7 @@ class VisualStyle extends React.Component {
         </p>
         <p>Explore each section for details.</p>
 
-        <Row sm="1" md="2">
+        <Row xs="1" md="2">
           <Col className="nav-card mb-3">
             <a
               className="btn btn-link d-block text-left p-0"

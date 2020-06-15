@@ -30,7 +30,7 @@ function Components() {
         View our Storybook for a complete list of components with tools to view
         the code and test at multiple responsive breakpoints.
       </p>
-      <Row sm="1" md="2">
+      <Row xs="1" md="2">
         <Col className="nav-card mb-3">
           <a
             className="btn btn-link d-block text-left p-0"
@@ -73,7 +73,7 @@ function Components() {
           </p>
         </Col>
       </Row>
-      <Row sm="1" md="2">
+      <Row xs="1" md="2">
         <Col className="nav-card mb-3">
           <a
             className="btn btn-link d-block text-left p-0"
