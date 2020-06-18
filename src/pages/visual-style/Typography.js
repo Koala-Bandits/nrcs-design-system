@@ -113,7 +113,7 @@ class Typography extends React.Component {
           All our components and typography supports both a{" "}
           <strong>default 16px base</strong> and a more compact{" "}
           <strong>small 14px base</strong> scaling via either a{" "}
-          <code>size="small"</code> size attribute or <code>"*-small"</code> CSS
+          <code>size="sm"</code> size attribute or <code>"*-sm"</code> CSS
           class.
         </p>
         <p>
