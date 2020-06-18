@@ -20,9 +20,10 @@ export const ContentHeaderDefault = () => (
 
     <p>
       Your basic HTML header tags with an underline and 100% width to expand
-      across it's container.
+      across it's container. Supports both Default and Small typography scales.
     </p>
 
+    <h3>Default</h3>
     <ContentHeaderH1>h1. Content Header</ContentHeaderH1>
     <p></p>
     <ContentHeaderH2>h2. Content Header</ContentHeaderH2>
@@ -34,6 +35,19 @@ export const ContentHeaderDefault = () => (
     <ContentHeaderH5>h5. Content Header</ContentHeaderH5>
     <p></p>
     <ContentHeaderH6>h6. Content Header</ContentHeaderH6>
+
+    <h3 className="mt-4">Small</h3>
+    <ContentHeaderH1 size="sm">h1. Content Header</ContentHeaderH1>
+    <p></p>
+    <ContentHeaderH2 size="sm">h2. Content Header</ContentHeaderH2>
+    <p></p>
+    <ContentHeaderH3 size="sm">h3. Content Header</ContentHeaderH3>
+    <p></p>
+    <ContentHeaderH4 size="sm">h4. Content Header</ContentHeaderH4>
+    <p></p>
+    <ContentHeaderH5 size="sm">h5. Content Header</ContentHeaderH5>
+    <p></p>
+    <ContentHeaderH6 size="sm">h6. Content Header</ContentHeaderH6>
   </div>
 );
 

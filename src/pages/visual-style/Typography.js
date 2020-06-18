@@ -126,14 +126,14 @@ class Typography extends React.Component {
           variable.
         </p>
 
-        <h3>Default: 16px base</h3>
+        <h3>Default: 16px (1rem) base</h3>
         <p>
           Default typography scale is 16px for accessibility and easily reading.
           We typically suggest and design with default scale for public facing
           websites and applications that are limited in complexity.
         </p>
 
-        <h3>Small: 14px base</h3>
+        <h3>Small: 14px (0.875rem) base</h3>
         <p>
           Use the small typography scale at 14px for a more compact presentation
           that we use often with more complex, internal GIS web applications and
@@ -199,7 +199,7 @@ class Typography extends React.Component {
             </p>
           </Col>
           <Col xs="12" md="6" className="mb-3">
-            <ContentHeaderH2>Lead</ContentHeaderH2>
+            <ContentHeaderH2>Lead (Small)</ContentHeaderH2>
             <p className="lead-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
