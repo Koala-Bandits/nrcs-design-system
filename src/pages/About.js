@@ -157,7 +157,7 @@ class About extends React.Component {
                     <Col className="p-0">
                       <span className="h5 mb-0">Components</span>
                       <p className="mb-0">
-                        Kitchen Sink, Page Examples, References
+                        Kitchen Sink, Page Examples, External References
                       </p>
                     </Col>
                   </Row>

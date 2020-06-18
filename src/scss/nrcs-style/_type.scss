@@ -28,6 +28,33 @@ h5,
   font-weight: $font-weight-bold;
 }
 
+// Small 14px alternative sizing
+.h1-sm {
+  @include font-size($h1-font-size * 0.875);
+}
+.h2-sm {
+  @include font-size($h2-font-size * 0.875);
+}
+.h3-sm {
+  @include font-size($h3-font-size * 0.875);
+}
+.h4-sm {
+  @include font-size($h4-font-size * 0.875);
+}
+.h5-sm {
+  @include font-size($h5-font-size * 0.875);
+}
+.h6-sm {
+  @include font-size($h6-font-size * 0.875);
+}
+
+//
+// Paragraphs / Text
+//
+.p-sm {
+  font-size: $font-size-sm;
+}
+
 //
 // Labels
 //
@@ -49,6 +76,10 @@ label {
 //   @include font-size($lead-font-size);
 //   font-weight: $lead-font-weight;
 // }
+.lead-sm {
+  @include font-size($lead-font-size * 0.875);
+  font-weight: $lead-font-weight;
+}
 
 // // Type display classes
 // .display-1 {
@@ -102,6 +133,10 @@ label {
 // //
 // // Lists
 // //
+
+.list-sm {
+  @include font-size($font-size-base * 0.875);
+}
 
 // .list-unstyled {
 //   @include list-unstyled();
