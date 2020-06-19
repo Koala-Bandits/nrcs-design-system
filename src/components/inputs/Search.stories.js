@@ -10,14 +10,11 @@ import {
   Row,
   Col
 } from "reactstrap";
-
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 import { PrimaryButton, FlatButton } from "components/buttons/Buttons";
-
+import Search from "components/inputs/Search";
 import Icon from "@mdi/react";
 import { mdiMagnify } from "@mdi/js";
-
-//component
-import Search from "components/inputs/Search";
 
 export default {
   title: "Components|Inputs/Search"
@@ -31,7 +28,7 @@ export const SearchDefault = () => {
 
   return (
     <div>
-      <h2 className="docs">Search - Default</h2>
+      <ContentHeaderH2>Search - Default</ContentHeaderH2>
       Basic search field.
       <Row>
         <Col sm="12" md="6">

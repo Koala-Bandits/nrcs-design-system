@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "@mdi/react";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 import { mdiOpenInNew } from "@mdi/js";
 
 export default {
@@ -8,7 +9,7 @@ export default {
 
 export const LinksDefault = () => (
   <div>
-    <h2 className="docs">Links - Default</h2>
+    <ContentHeaderH2>Links - Default</ContentHeaderH2>
     <a href="/#">This is a link</a> - it links somewhere INSIDE our app.
     <p></p>
     <a href="/#">

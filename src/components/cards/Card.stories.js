@@ -11,6 +11,7 @@ import {
   ListGroup,
   ListGroupItem
 } from "reactstrap";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Cards"
@@ -18,31 +19,31 @@ export default {
 
 export const CardDefault = () => (
   <div className="pb-4">
-    <h2 className="docs">Card - Default</h2>
+    <ContentHeaderH2>Card - Default</ContentHeaderH2>
     <p className="lead">
       Cards are a versatile container that we can use to frame or group a
       section of content, create blocks.
     </p>
 
-    <h3 className="docs">Basic White</h3>
+    <h3 className="mt-4">Basic White</h3>
 
     <Card style={{ maxWidth: 500 }}>
       <CardBody>This is some text within a card body.</CardBody>
     </Card>
 
-    <h3 className="docs">Basic Muted</h3>
+    <h3 className="mt-4">Basic Muted</h3>
 
     <Card className="card-muted" style={{ maxWidth: 500 }}>
       <CardBody>This is some text within a muted card body.</CardBody>
     </Card>
 
-    <h3 className="docs">Transparent</h3>
+    <h3 className="mt-4">Transparent</h3>
 
     <Card className="bg-transparent" style={{ maxWidth: 500 }}>
       <CardBody>Blend in with the background.</CardBody>
     </Card>
 
-    <h3 className="docs">Kitchen Sink Card</h3>
+    <h3 className="mt-4">Kitchen Sink Card</h3>
 
     <Card style={{ maxWidth: 340 }}>
       <CardHeader className="h5">Card Header</CardHeader>

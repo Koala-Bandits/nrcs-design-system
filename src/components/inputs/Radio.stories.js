@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Inputs/Radio"
@@ -7,9 +8,9 @@ export default {
 
 export const RadioDefault = () => (
   <div>
-    <h2 className="docs">Radios</h2>
+    <ContentHeaderH2>Radios</ContentHeaderH2>
 
-    <h3 className="docs">Default Custom</h3>
+    <h3 className="mt-4">Default Custom</h3>
     <FormGroup>
       <Label for="exampleRadio">Radio Label</Label>
       <CustomInput
@@ -33,7 +34,7 @@ export const RadioDefault = () => (
       />
     </FormGroup>
 
-    <h3 className="docs">Inline Custom</h3>
+    <h3 className="mt-4">Inline Custom</h3>
     <FormGroup>
       <Label for="exampleRadio">Inline Label</Label>
       <div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Breadcrumb, BreadcrumbItem } from "reactstrap";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 import Icon from "@mdi/react";
 import { mdiAccount, mdiHome, mdiFormatListBulleted } from "@mdi/js";
 
@@ -9,7 +10,7 @@ export default {
 
 export const BreadcrumbsDefault = () => (
   <div>
-    <h2 className="docs">Breadcrumbs</h2>
+    <ContentHeaderH2>Breadcrumbs</ContentHeaderH2>
 
     <div>
       <Breadcrumb tag="nav" listTag="div">
@@ -32,7 +33,7 @@ export const BreadcrumbsDefault = () => (
 
 export const BreadcrumbsIcons = () => (
   <div>
-    <h2 className="docs">Breadcrumbs - with Icons</h2>
+    <ContentHeaderH2>Breadcrumbs - with Icons</ContentHeaderH2>
 
     <div>
       <Breadcrumb tag="nav" listTag="div">

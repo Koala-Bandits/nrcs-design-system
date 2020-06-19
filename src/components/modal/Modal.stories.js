@@ -11,6 +11,7 @@ import {
   CardBody,
   CustomInput
 } from "reactstrap";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 import { PrimaryButton, ButtonSet } from "components/buttons/Buttons";
 
 export default {
@@ -36,7 +37,7 @@ export const ModalDefault = () => {
 
   return (
     <div className="docs-btn">
-      <h2 className="docs">Modal - Default</h2>
+      <ContentHeaderH2>Modal - Default</ContentHeaderH2>
 
       <Row>
         <Col>

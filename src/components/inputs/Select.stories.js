@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Inputs/Select"
@@ -7,9 +8,9 @@ export default {
 
 export const SelectDefault = () => (
   <div>
-    <h2 className="docs">Select</h2>
+    <ContentHeaderH2>Select</ContentHeaderH2>
 
-    <h3 className="docs">Default Custom</h3>
+    <h3 className="mt-4">Default Custom</h3>
     <FormGroup>
       <Label for="exampleCheckbox">Select Label</Label>
       <CustomInput type="select" id="exampleCustomSelect" name="customSelect">
@@ -22,7 +23,7 @@ export const SelectDefault = () => (
       </CustomInput>
     </FormGroup>
 
-    <h3 className="docs">Disabled</h3>
+    <h3 className="mt-4">Disabled</h3>
     <FormGroup>
       <Label for="exampleCustomSelectDisabled">
         Custom Select Disabled Label
@@ -46,9 +47,9 @@ export const SelectDefault = () => (
 
 export const SelectMulti = () => (
   <div>
-    <h2 className="docs">Multiple Select</h2>
+    <ContentHeaderH2>Multiple Select</ContentHeaderH2>
 
-    <h3 className="docs">Default Custom</h3>
+    <h3 className="mt-4">Default Custom</h3>
     <FormGroup>
       <Label for="exampleCustomMutlipleSelect">Custom Multiple Select</Label>
       <CustomInput
@@ -66,7 +67,7 @@ export const SelectMulti = () => (
       </CustomInput>
     </FormGroup>
 
-    <h3 className="docs">Disabled</h3>
+    <h3 className="mt-4">Disabled</h3>
     <FormGroup>
       <Label for="exampleCustomMutlipleSelectDisabled">
         Custom Multiple Select Disabled

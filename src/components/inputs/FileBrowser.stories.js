@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Inputs/File Browser"
@@ -7,9 +8,9 @@ export default {
 
 export const FileBrowserDefault = () => (
   <div>
-    <h2 className="docs">File Browser</h2>
+    <ContentHeaderH2>File Browser</ContentHeaderH2>
 
-    <h3 className="docs">Default Custom</h3>
+    <h3 className="mt-4">Default Custom</h3>
     <FormGroup>
       <Label for="exampleCustomFileBrowser">File Browser Defaul Label</Label>
       <CustomInput
@@ -31,7 +32,7 @@ export const FileBrowserDefault = () => (
       />
     </FormGroup>
 
-    <h3 className="docs">Disabled</h3>
+    <h3 className="mt-4">Disabled</h3>
     <FormGroup>
       <Label for="exampleCustomFileBrowser">File Browser Disabled Label</Label>
       <CustomInput

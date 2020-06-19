@@ -1,5 +1,6 @@
 import React from "react";
 import { Badge } from "./Badge";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Feedback/Badges"
@@ -7,7 +8,7 @@ export default {
 
 export const BadgesDefault = () => (
   <div>
-    <h2 className="docs">Badges - Default</h2>
+    <ContentHeaderH2>Badges - Default</ContentHeaderH2>
     <p className="lead">
       Badges are versatile and often used in a table 'status' column cells, or
       next to a form input or label or heading.

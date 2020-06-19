@@ -49,42 +49,42 @@ export const ButtonsDefaultStory = () => (
       component to provide consistent equal spacing of a set of buttons.
     </p>
 
-    <h3 className="docs">Default</h3>
+    <h3 className="mt-4">Default</h3>
     <ButtonSet>
       <PrimaryButton>Primary</PrimaryButton>
       <SecondaryButton>Secondary</SecondaryButton>
       <FlatButton>Flat</FlatButton>
     </ButtonSet>
 
-    <h3 className="docs">Small</h3>
+    <h3 className="mt-4">Small</h3>
     <ButtonSet>
       <PrimaryButton size="sm">Primary</PrimaryButton>
       <SecondaryButton size="sm">Secondary</SecondaryButton>
       <FlatButton size="sm">Flat</FlatButton>
     </ButtonSet>
 
-    <h3 className="docs">Hover State</h3>
+    <h3 className="mt-4">Hover State</h3>
     <ButtonSet>
       <PrimaryButton className="hover">Primary</PrimaryButton>
       <SecondaryButton className="hover">Secondary</SecondaryButton>
       <FlatButton className="hover">Flat</FlatButton>
     </ButtonSet>
 
-    <h3 className="docs">Active State</h3>
+    <h3 className="mt-4">Active State</h3>
     <ButtonSet>
       <PrimaryButton className="active">Primary</PrimaryButton>
       <SecondaryButton className="active">Secondary</SecondaryButton>
       <FlatButton className="active">Flat</FlatButton>
     </ButtonSet>
 
-    <h3 className="docs">Focus State</h3>
+    <h3 className="mt-4">Focus State</h3>
     <ButtonSet>
       <PrimaryButton className="focus">Primary</PrimaryButton>
       <SecondaryButton className="focus">Secondary</SecondaryButton>
       <FlatButton className="focus">Flat</FlatButton>
     </ButtonSet>
 
-    <h3 className="docs">Disabled</h3>
+    <h3 className="mt-4">Disabled</h3>
     <ButtonSet>
       <PrimaryButton aria-disabled="true" disabled>
         Primary
@@ -107,7 +107,7 @@ export const ButtonsWithIconsStory = () => (
       <code>iconRight</code>, or <code>iconOnly</code> property.
     </p>
 
-    <h3 className="docs">Default</h3>
+    <h3 className="mt-4">Default</h3>
 
     <ButtonSet>
       <PrimaryButton iconLeft={mdiAccount}>Primary</PrimaryButton>
@@ -124,7 +124,7 @@ export const ButtonsWithIconsStory = () => (
       <FlatButton iconOnly={mdiDelete} />
     </ButtonSet>
 
-    <h3 className="docs">Small</h3>
+    <h3 className="mt-4">Small</h3>
 
     <ButtonSet>
       <PrimaryButton size="sm" iconLeft={mdiAccount}>
@@ -153,7 +153,7 @@ export const ButtonsWithIconsStory = () => (
       <FlatButton size="sm" iconOnly={mdiDelete} />
     </ButtonSet>
 
-    <h3 className="docs">Disabled</h3>
+    <h3 className="mt-4">Disabled</h3>
 
     <ButtonSet>
       <PrimaryButton

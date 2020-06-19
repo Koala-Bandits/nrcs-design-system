@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Table } from "reactstrap";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 // import { Alert, Container, Row, Col } from "reactstrap";
 // import Icon from "@mdi/react";
 // import {
@@ -15,7 +16,7 @@ export default {
 
 export const TablesDefault = () => (
   <div>
-    <h2 className="docs">Tables - Default</h2>
+    <ContentHeaderH2>Tables - Default</ContentHeaderH2>
 
     <Table>
       <thead className="thead-light">
@@ -85,7 +86,7 @@ export const TablesDefault = () => (
 
 export const TablesAlt = () => (
   <div>
-    <h2 className="docs mt-4">Table - Alternate</h2>
+    <ContentHeaderH2 className="mt-4">Table - Alternate</ContentHeaderH2>
 
     <Table className="table-alt">
       <thead>

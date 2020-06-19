@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Inputs/Checkbox"
@@ -7,9 +8,9 @@ export default {
 
 export const CheckboxDefault = () => (
   <div>
-    <h2 className="docs">Checkboxes</h2>
+    <ContentHeaderH2>Checkboxes</ContentHeaderH2>
 
-    <h3 className="docs">Default Custom</h3>
+    <h3 className="mt-4">Default Custom</h3>
     <FormGroup>
       <Label for="exampleCheckbox">Checkbox Label</Label>
       <CustomInput
@@ -38,7 +39,7 @@ export const CheckboxDefault = () => (
       />
     </FormGroup>
 
-    <h3 className="docs">Inline Custom</h3>
+    <h3 className="mt-4">Inline Custom</h3>
     <FormGroup>
       <Label for="exampleCheckbox">Inline Label</Label>
       <div>
@@ -58,7 +59,7 @@ export const CheckboxDefault = () => (
       </div>
     </FormGroup>
 
-    <h3 className="docs">Indeterminate Custom</h3>
+    <h3 className="mt-4">Indeterminate Custom</h3>
     <a
       href="https://getbootstrap.com/docs/4.4/components/forms/#checkboxes-and-radios-1"
       target="_blank"

@@ -1,4 +1,5 @@
 import React from "react";
+import { ContentHeaderH2 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Inputs/Date Picker"
@@ -6,28 +7,28 @@ export default {
 
 export const FormDefault = () => (
   <div>
-    <h2 className="docs">Form - Default</h2>
+    <ContentHeaderH2>Form - Default</ContentHeaderH2>
     To do... example vertical layout form with top-aligned labels.
   </div>
 );
 
 export const FormHorizontal = () => (
   <div>
-    <h2 className="docs">Form - Horizontal</h2>
+    <ContentHeaderH2>Form - Horizontal</ContentHeaderH2>
     To do... example horizontal layout form with left-aligned labels.
   </div>
 );
 
 export const FormInline = () => (
   <div>
-    <h2 className="docs">Form - Inline</h2>
+    <ContentHeaderH2>Form - Inline</ContentHeaderH2>
     To do... example horizontal layout form with left-aligned labels.
   </div>
 );
 
 export const FormInputGroup = () => (
   <div>
-    <h2 className="docs">Form - InputGroup</h2>
+    <ContentHeaderH2>Form - InputGroup</ContentHeaderH2>
     To do... various input grouping examples.
   </div>
 );
