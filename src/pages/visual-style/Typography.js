@@ -110,20 +110,20 @@ class Typography extends React.Component {
         </Row>
         <ContentHeaderH2>Sizes & Scaling</ContentHeaderH2>
         <p>
-          All our components and typography supports both a{" "}
+          Components and typography support both a{" "}
           <strong>default 16px base</strong> and a more compact{" "}
           <strong>small 14px base</strong> scaling via either a{" "}
           <code>size="sm"</code> size attribute or <code>"*-sm"</code> CSS
           class.
         </p>
         <p>
-          This also gives designers flexibility to have a few text scales on
-          hand to use with common elements.
+          This gives designers flexibility to have a few text scales on hand to
+          use with common elements.
         </p>
         <p>
-          Note however, being based on Bootstrap a developer can scale the whole
-          typography system as needed via the <code>$font-size-base</code>{" "}
-          variable.
+          Being based on Bootstrap a developer can scale the whole typography
+          system as needed via the <code>$font-size-base</code> and other SCSS{" "}
+          variables.
         </p>
 
         <h3>Default: 16px (1rem) base</h3>

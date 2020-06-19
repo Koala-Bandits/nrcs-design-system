@@ -117,8 +117,8 @@ class Utilities extends React.Component {
                   rel="nopener noreferrer"
                 >
                   sizing
-                </a>
-                Use carefully as these can break flex and{" "}
+                </a>{" "}
+                - Use carefully as these can break flex based containers/layouts
               </li>
               <li>
                 <a

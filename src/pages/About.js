@@ -14,12 +14,12 @@ class About extends React.Component {
     return (
       <div className="container">
         <ContentHeaderH1>NRCS Design System</ContentHeaderH1>
-        <Alert color="warning">
-          Warning: currently under development and incomplete.
-        </Alert>
         <p className="lead">
           <strong>A design system produced for our partners at NRCS.</strong>
         </p>
+        <Alert color="warning">
+          Warning: currently under development and incomplete.
+        </Alert>
         <p>
           An adaptation of the{" "}
           <strong>
@@ -51,28 +51,33 @@ class About extends React.Component {
           iconography together.
         </p>
         <p>
-          Since many of our teams and projects currently use Bootstrap in some
-          way or with React/Reactrap and already have established UI component
-          libraries, it made sense to align our current styles and components to
-          FPAC in the form of this NRCS Design System.
+          Since many of our teams and existing projects currently use Bootstrap
+          in some way or with React/Reactrap and already have established UI
+          component libraries, it made sense to align our current styles and
+          components to FPAC in the form of this NRCS Design System.
         </p>
         <ul>
           <li>
-            Designed with clean simple styles, high color contrast for
-            accessibilty, and to provide solutions for large scale applications.
+            Designed with clean simple styles, high color contrast, and
+            accessible components for accessibilty.
           </li>
           <li>
             Provides color, typography, iconography, components and examples
             with documentation for how to use them.
           </li>
           <li>
+            Provides solutions for the gammut of small websites to large scale
+            applications.
+          </li>
+          <li>
             The intent is to provide a solution for our development teams to
             converge upon for consistent implementation in design and style.
           </li>
           <li>
-            Provides a scalable UI component library. It covers implementations
-            of most all FPAC components, a few others provided by Reactstrap, as
-            well as some custom complex components.
+            Provides a scalable UI component library with two typography scales
+            out-of-the-box. It covers implementations of most all FPAC
+            components, a few others provided by Reactstrap, as well as some
+            custom complex components.
           </li>
           <li>
             This site is built with React, StoryBook, using{" "}

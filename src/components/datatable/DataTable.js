@@ -14,12 +14,12 @@ export const DataTable = ({ children, ...rest }) => {
   //// props
   // data []
   // columns []
+  // buttons [] ?
   // sort (per column)?
-
   // selection = single/multiple
   // page-size = 25 or ...
   // column-picker
-  // actions = {}
+  // row-actions = {} ?
 
   // actions-menu example?
   // search filter example?
