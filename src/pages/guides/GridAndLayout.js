@@ -34,7 +34,7 @@ class GridAndLayout extends React.Component {
           purposes.)
         </p>
 
-        <Row sm="1" md="2">
+        <Row xs="1" md="2">
           <Col className="nav-card mb-3">
             <a
               href="https://reactstrap.github.io/components/layout/"
@@ -42,10 +42,22 @@ class GridAndLayout extends React.Component {
               rel="nopener noreferrer"
             >
               <Card>
-                <CardBody className="h5 mb-0">
-                  <Icon className="mdi mr-1" path={mdiReact} size={1.3} />
-                  Reactstrap Layout
-                  <Icon className="mdi ml-1" path={mdiOpenInNew} size={0.8} />
+                <CardBody className="mb-0">
+                  <Row>
+                    <Col xs="auto" className="pr-0">
+                      <Icon className="mdi mr-1" path={mdiReact} size={1.3} />
+                    </Col>
+                    <Col className="p-0 d-flex align-items-center">
+                      <span className="h5 mb-0">
+                        Reactstrap Layout
+                        <Icon
+                          className="mdi ml-1"
+                          path={mdiOpenInNew}
+                          size={0.8}
+                        />
+                      </span>
+                    </Col>
+                  </Row>
                 </CardBody>
               </Card>
             </a>
@@ -57,10 +69,26 @@ class GridAndLayout extends React.Component {
               rel="nopener noreferrer"
             >
               <Card>
-                <CardBody className="h5 mb-0">
-                  <Icon className="mdi mr-1" path={mdiBootstrap} size={1.3} />
-                  Bootstrap 12-Column Grid
-                  <Icon className="mdi ml-1" path={mdiOpenInNew} size={0.8} />
+                <CardBody className="mb-0">
+                  <Row>
+                    <Col xs="auto" className="pr-0">
+                      <Icon
+                        className="mdi mr-1"
+                        path={mdiBootstrap}
+                        size={1.3}
+                      />
+                    </Col>
+                    <Col className="p-0 d-flex align-items-center">
+                      <span className="h5 mb-0">
+                        Bootstrap 12-Column Grid
+                        <Icon
+                          className="mdi ml-1"
+                          path={mdiOpenInNew}
+                          size={0.8}
+                        />
+                      </span>
+                    </Col>
+                  </Row>
                 </CardBody>
               </Card>
             </a>
@@ -79,7 +107,21 @@ class GridAndLayout extends React.Component {
           </Col>
         </Row>
 
-        <h3 className="h5 mt-4 mb-3">2-Column Stacking</h3>
+        <h3 className="h5 mt-4 mb-3">2-Column Stacking 6/6 (50% / 50%)</h3>
+        <Row>
+          <Col xs="12" md="6" className="mb-3">
+            <Card className="card-muted">
+              <CardBody className="text-center">CONTENT A</CardBody>
+            </Card>
+          </Col>
+          <Col xs="12" md="6" className="mb-3">
+            <Card className="card-muted">
+              <CardBody className="text-center">CONTENT B</CardBody>
+            </Card>
+          </Col>
+        </Row>
+
+        <h3 className="h5 mt-4 mb-3">2-Column Stacking 8/4 (66% / 33%)</h3>
         <Row>
           <Col xs="12" md="8" className="mb-3">
             <Card className="card-muted">

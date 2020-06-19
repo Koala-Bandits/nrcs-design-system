@@ -52,10 +52,22 @@ function Components() {
             rel="nopener noreferrer"
           >
             <Card>
-              <CardBody className="h5 mb-0">
-                <Icon className="mdi mr-1" path={mdiReact} size={1.3} />
-                Storybook
-                <Icon className="mdi ml-1" path={mdiOpenInNew} size={0.8} />
+              <CardBody className="mb-0">
+                <Row>
+                  <Col xs="auto" className="pr-0">
+                    <Icon className="mdi mr-1" path={mdiReact} size={1.3} />
+                  </Col>
+                  <Col className="p-0">
+                    <span className="h5 mb-0">
+                      Storybook
+                      <Icon
+                        className="mdi ml-1"
+                        path={mdiOpenInNew}
+                        size={0.8}
+                      />
+                    </span>
+                  </Col>
+                </Row>
               </CardBody>
             </Card>
           </a>
@@ -82,10 +94,22 @@ function Components() {
             rel="nopener noreferrer"
           >
             <Card>
-              <CardBody className="h5 mb-0">
-                <Icon className="mdi mr-1" path={mdiReact} size={1.3} />
-                Reactstrap Components
-                <Icon className="mdi ml-1" path={mdiOpenInNew} size={0.8} />
+              <CardBody className="mb-0">
+                <Row>
+                  <Col xs="auto" className="pr-0">
+                    <Icon className="mdi mr-1" path={mdiReact} size={1.3} />
+                  </Col>
+                  <Col className="p-0">
+                    <span className="h5 mb-0">
+                      Reactstrap Components
+                      <Icon
+                        className="mdi ml-1"
+                        path={mdiOpenInNew}
+                        size={0.8}
+                      />
+                    </span>
+                  </Col>
+                </Row>
               </CardBody>
             </Card>
           </a>
@@ -99,9 +123,21 @@ function Components() {
           >
             <Card>
               <CardBody className="h5 mb-0">
-                <Icon className="mdi mr-1" path={mdiBootstrap} size={1.3} />
-                Bootstrap Components
-                <Icon className="mdi ml-1" path={mdiOpenInNew} size={0.8} />
+                <Row>
+                  <Col xs="auto" className="pr-0">
+                    <Icon className="mdi mr-1" path={mdiBootstrap} size={1.3} />
+                  </Col>
+                  <Col className="p-0">
+                    <span className="h5 mb-0">
+                      Bootstrap Components
+                      <Icon
+                        className="mdi ml-1"
+                        path={mdiOpenInNew}
+                        size={0.8}
+                      />
+                    </span>
+                  </Col>
+                </Row>
               </CardBody>
             </Card>
           </a>
