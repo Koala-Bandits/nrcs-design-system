@@ -48,7 +48,7 @@ export const AlertsDefault = () => (
 
 export const AlertsNoIcon = () => (
   <div>
-    <h3>Alerts - no Icon</h3>
+    <h3 className="mt-4">Alerts - no Icon</h3>
 
     <p>
       Alerts come with icons by default as it aids in accessibility (color blind
@@ -69,7 +69,7 @@ export const AlertsNoIcon = () => (
 export const AlertsDismissable = () => {
   return (
     <div>
-      <h3>Inline Alerts - Dismissable</h3>
+      <h3 className="mt-4">Inline Alerts - Dismissable</h3>
 
       <p>
         Use the <code>dismissable</code> property to make an Alert dismissable.
@@ -88,7 +88,7 @@ export const AlertsDismissable = () => {
 
 export const AlertsContent = () => (
   <div>
-    <h3>Alerts - with Content</h3>
+    <h3 className="mt-4">Alerts - with Content</h3>
 
     <p>
       In rare cases you may want more control of content in an Alert. In this

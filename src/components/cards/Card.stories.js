@@ -49,7 +49,7 @@ export const CardDefault = () => (
       <CardImg
         top
         width="100%"
-        src="./images/KoalaBanditsClrzdSm.png"
+        src="../images/KoalaBanditsClrzdSm.png"
         alt="Card image caption"
       />
       <CardBody>

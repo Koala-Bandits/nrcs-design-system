@@ -48,7 +48,7 @@ export const BannersDefault = () => (
 
 export const BannersNoIcon = () => (
   <div>
-    <h3>Alert Banners - No Icon</h3>
+    <h3 className="mt-4">Alert Banners - No Icon</h3>
     <p>
       Alert banners come with icons by default as it aids in accessibility
       (color blind individuals). If you really want to remove the icon you can
@@ -68,7 +68,7 @@ export const BannersNoIcon = () => (
 export const BannersDismissable = () => {
   return (
     <div>
-      <h3>Alert Banners - Dismissable</h3>
+      <h3 className="mt-4">Alert Banners - Dismissable</h3>
       <p>
         Use the <code>dismissable</code> property to make a Banner dismissable.
       </p>
@@ -85,7 +85,7 @@ export const BannersDismissable = () => {
 
 export const BannersContent = () => (
   <div>
-    <h3>Alert Banners - with Content</h3>
+    <h3 className="mt-4">Alert Banners - with Content</h3>
 
     <p>
       In rare cases you may want more control of content in a Banner. In this

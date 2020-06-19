@@ -48,7 +48,7 @@ export const TablesDefault = () => (
       </tbody>
     </Table>
 
-    <h3>Small</h3>
+    <h3 className="mt-4">Small</h3>
 
     <Table className="table-sm">
       <thead className="thead-light">
@@ -85,7 +85,7 @@ export const TablesDefault = () => (
 
 export const TablesAlt = () => (
   <div>
-    <h2 className="docs">Table - Alternate</h2>
+    <h2 className="docs mt-4">Table - Alternate</h2>
 
     <Table className="table-alt">
       <thead>
@@ -118,7 +118,7 @@ export const TablesAlt = () => (
       </tbody>
     </Table>
 
-    <h3>Small</h3>
+    <h3 className="mt-4">Small</h3>
 
     <Table className="table-alt table-sm">
       <thead>
