@@ -25,7 +25,12 @@ h4,
 .h4,
 h5,
 .h5 {
-  font-weight: $font-weight-bold;
+  // font-weight: 500; //$font-weight-bold;
+}
+
+h6,
+.h6 {
+  text-transform: uppercase;
 }
 
 // Small 14px alternative sizing

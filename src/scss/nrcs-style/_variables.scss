@@ -319,6 +319,7 @@ $font-weight-bolder: bolder !default;
 // $font-weight-base: $font-weight-normal !default;
 // $line-height-base: 1.5 !default;
 
+// Bootstrap defaults
 // $h1-font-size: $font-size-base * 2.5 !default;
 // $h2-font-size: $font-size-base * 2 !default;
 // $h3-font-size: $font-size-base * 1.75 !default;
@@ -326,9 +327,25 @@ $font-weight-bolder: bolder !default;
 // $h5-font-size: $font-size-base * 1.25 !default;
 // $h6-font-size: $font-size-base !default;
 
+// Major 2nds (increments of 1.125)
+// $h1-font-size: $font-size-base * 1.802;
+// $h2-font-size: $font-size-base * 1.602;
+// $h3-font-size: $font-size-base * 1.424;
+// $h4-font-size: $font-size-base * 1.266;
+// $h5-font-size: $font-size-base * 1.125;
+// $h6-font-size: $font-size-base;
+
+// Minor 3rd (increments of 1.2)
+$h1-font-size: $font-size-base * 2.488;
+$h2-font-size: $font-size-base * 2.074;
+$h3-font-size: $font-size-base * 1.728;
+$h4-font-size: $font-size-base * 1.44;
+$h5-font-size: $font-size-base * 1.2;
+$h6-font-size: $font-size-base;
+
 // $headings-margin-bottom: $spacer / 2 !default;
 // $headings-font-family: null !default;
-// $headings-font-weight: 500 !default;
+$headings-font-weight: 400; // 500 !default;
 // $headings-line-height: 1.2 !default;
 // $headings-color: null !default;
 
