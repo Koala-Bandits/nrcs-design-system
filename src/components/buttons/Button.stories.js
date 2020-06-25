@@ -240,23 +240,23 @@ export const ButtonGroupStory = () => (
       <Col>
         <h3>Default</h3>
         <ButtonGroup>
-          <PrimaryButton>Left</PrimaryButton>
-          <PrimaryButton>Middle</PrimaryButton>
-          <PrimaryButton>Right</PrimaryButton>
+          <SecondaryButton>Left</SecondaryButton>
+          <SecondaryButton>Middle</SecondaryButton>
+          <SecondaryButton>Right</SecondaryButton>
         </ButtonGroup>
 
         <h3 className="mt-3">Small</h3>
         <ButtonGroup size="sm">
-          <PrimaryButton>Left</PrimaryButton>
-          <PrimaryButton>Middle</PrimaryButton>
-          <PrimaryButton>Right</PrimaryButton>
+          <SecondaryButton>Left</SecondaryButton>
+          <SecondaryButton>Middle</SecondaryButton>
+          <SecondaryButton>Right</SecondaryButton>
         </ButtonGroup>
 
         <h3 className="mt-3">Vertical</h3>
         <ButtonGroup vertical>
-          <PrimaryButton>Left</PrimaryButton>
-          <PrimaryButton>Middle</PrimaryButton>
-          <PrimaryButton>Right</PrimaryButton>
+          <SecondaryButton>Left</SecondaryButton>
+          <SecondaryButton>Middle</SecondaryButton>
+          <SecondaryButton>Right</SecondaryButton>
         </ButtonGroup>
 
         <h3 className="mt-3">Toolbar</h3>
@@ -267,9 +267,9 @@ export const ButtonGroupStory = () => (
         </p>
         <ButtonToolbar role="toolbar" aria-label="Toolbar with button groups">
           <ButtonGroup role="group" aria-label="First group">
-            <PrimaryButton>This</PrimaryButton>
-            <PrimaryButton>That</PrimaryButton>
-            <PrimaryButton>There</PrimaryButton>
+            <SecondaryButton>This</SecondaryButton>
+            <SecondaryButton>That</SecondaryButton>
+            <SecondaryButton>There</SecondaryButton>
           </ButtonGroup>
           <ButtonGroup className="ml-3" role="group" aria-label="Second group">
             <PrimaryButton>One</PrimaryButton>
