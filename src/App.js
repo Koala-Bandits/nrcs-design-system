@@ -42,22 +42,33 @@ function App() {
       <StateProvider>
         <ToastProvider>
           <HeaderNrcsDesignSystem />
-          <Router basename="/nrcs-design-system">
-            <Switch>
-              <Route path="/about" component={About} />
-              <Route exact path="/visual-style" component={VisualStyle} />
-              <Route path="/visual-style/color" component={Color} />
-              <Route path="/visual-style/typography" component={Typography} />
-              <Route path="/visual-style/iconography" component={Iconography} />
-              <Route exact path="/components" component={Components} />
-              <Route path="/components/kitchen-sink" component={KitchenSink} />
-              <Route exact path="/guides" component={Guides} />
-              <Route path="/guides/accessibility" component={Accessibility} />
-              <Route path="/guides/grid-and-layout" component={GridAndLayout} />
-              <Route path="/guides/utilities" component={Utilities} />
-              <Route path="/" component={About} />
-            </Switch>
-          </Router>
+          <main id="main-content" tabIndex="-1">
+            <Router basename="/nrcs-design-system">
+              <Switch>
+                <Route path="/about" component={About} />
+                <Route exact path="/visual-style" component={VisualStyle} />
+                <Route path="/visual-style/color" component={Color} />
+                <Route path="/visual-style/typography" component={Typography} />
+                <Route
+                  path="/visual-style/iconography"
+                  component={Iconography}
+                />
+                <Route exact path="/components" component={Components} />
+                <Route
+                  path="/components/kitchen-sink"
+                  component={KitchenSink}
+                />
+                <Route exact path="/guides" component={Guides} />
+                <Route path="/guides/accessibility" component={Accessibility} />
+                <Route
+                  path="/guides/grid-and-layout"
+                  component={GridAndLayout}
+                />
+                <Route path="/guides/utilities" component={Utilities} />
+                <Route path="/" component={About} />
+              </Switch>
+            </Router>
+          </main>
           <FooterNrcsDesignSystem />
         </ToastProvider>
       </StateProvider>

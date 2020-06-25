@@ -29,7 +29,12 @@ export const HeaderNrcsDesignSystem = ({ ...rest }) => {
       <NavbarNrcs>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav
+            id="primary-navigation"
+            aria-label="Primary navigation"
+            className="mr-auto"
+            navbar
+          >
             <NavItem>
               <NavLink
                 className={
