@@ -14,16 +14,7 @@ export const BadgesDefault = () => (
       next to a form input or label or heading.
     </p>
 
-    <Badge color="primary">Primary</Badge>
-    <Badge color="secondary">Secondary</Badge>
-    <Badge color="success">Success</Badge>
-    <Badge color="danger">Danger</Badge>
-    <Badge color="warning">Warning</Badge>
-    <Badge color="info">Info</Badge>
-    <Badge color="light">Light</Badge>
-    <Badge color="dark">Dark</Badge>
-
-    <h3 className="mt-4">Badges - Alternate Style</h3>
+    <h3 className="mt-4">Badges - Default</h3>
 
     <Badge alt color="primary">
       Primary
@@ -49,41 +40,22 @@ export const BadgesDefault = () => (
     <Badge alt color="dark">
       Dark
     </Badge>
+
+    <h3 className="mt-4">Badges - Alternate "Chip" Style</h3>
+    <Badge color="primary">Primary</Badge>
+    <Badge color="secondary">Secondary</Badge>
+    <Badge color="success">Success</Badge>
+    <Badge color="danger">Danger</Badge>
+    <Badge color="warning">Warning</Badge>
+    <Badge color="info">Info</Badge>
+    <Badge color="light">Light</Badge>
+    <Badge color="dark">Dark</Badge>
   </div>
 );
 
 export const BadgesPills = () => (
   <div>
     <h3 className="mt-4">Badges - Pills</h3>
-
-    <Badge color="primary" pill>
-      Primary
-    </Badge>
-    <Badge color="secondary" pill>
-      Secondary
-    </Badge>
-    <Badge color="success" pill>
-      Success
-    </Badge>
-    <Badge color="danger" pill>
-      Danger
-    </Badge>
-    <Badge color="warning" pill>
-      Warning
-    </Badge>
-    <Badge color="info" pill>
-      Info
-    </Badge>
-    <Badge color="light" pill>
-      Light
-    </Badge>
-    <Badge color="dark" pill>
-      Dark
-    </Badge>
-
-    <h3 className="mt-4">Badges - Pills Alternate Style</h3>
-
-    <p>To see how it works/looks (TBD)...</p>
 
     <Badge alt color="primary" pill>
       Primary
@@ -107,6 +79,33 @@ export const BadgesPills = () => (
       Light
     </Badge>
     <Badge alt color="dark" pill>
+      Dark
+    </Badge>
+
+    <h3 className="mt-4">Badges - Pills Alternate "Chip" Styles</h3>
+
+    <Badge color="primary" pill>
+      Primary
+    </Badge>
+    <Badge color="secondary" pill>
+      Secondary
+    </Badge>
+    <Badge color="success" pill>
+      Success
+    </Badge>
+    <Badge color="danger" pill>
+      Danger
+    </Badge>
+    <Badge color="warning" pill>
+      Warning
+    </Badge>
+    <Badge color="info" pill>
+      Info
+    </Badge>
+    <Badge color="light" pill>
+      Light
+    </Badge>
+    <Badge color="dark" pill>
       Dark
     </Badge>
   </div>
