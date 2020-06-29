@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { Table } from "reactstrap";
 import {
   Row,
@@ -10,19 +10,50 @@ import {
 import { FlatButton } from "components/buttons/Buttons";
 import { mdiDotsVertical, mdiExport, mdiPlusBox, mdiTrashCan } from "@mdi/js";
 
-export const DataTable = ({ children, ...rest }) => {
+export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
   //// props
   // data []
   // columns []
+  // -- sort (per column)?
+
   // buttons [] ?
-  // sort (per column)?
   // selection = single/multiple
   // page-size = 25 or ...
   // column-picker
-  // row-actions = {} ?
+  // caption
 
   // actions-menu example?
   // search filter example?
+
+  // which column we are sorting on, with direction
+  // const [sort, setSort] = useState(sortProp || {});
+
+  // row-actions = {} ?
+
+  // TABLE HEADER via COLUMNS
+  var cols = [];
+  for (const [index, col] of columns.entries()) {
+    // if selection
+    // if (!col.hasOwnProperty(visible) || col.visible) {
+    //   if (col.sort) {
+    //     cols.push(<th key={index}>{value} SORT</th>);
+    //   } else {
+    //     cols.push(<th key={index}>{value}</th>);
+    //   }
+    // }
+    cols.push(<th key={index}>{col.header}</th>);
+  }
+
+  // TABLE ROWS via adjustedData
+  const filterAndSortData = () => {
+    // To do
+  };
+
+  // the data filtered and sorted, if needed
+  // const adjustedData = useMemo(
+  //   () => filterAndSortData(data, filters, onSearch, sort),
+  //   [data, filters, onSearch, sort]
+  // );
 
   return (
     <div>
@@ -64,14 +95,14 @@ export const DataTable = ({ children, ...rest }) => {
       </Row>
       <Table>
         <thead className="thead-light">
-          <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-          </tr>
+          <tr>{cols}</tr>
         </thead>
         <tbody>
+          <tr>
+            <td className="text-muted" colsspan={cols.length}>
+              No data...
+            </td>
+          </tr>
           <tr>
             <th scope="row">1</th>
             <td>Mark</td>

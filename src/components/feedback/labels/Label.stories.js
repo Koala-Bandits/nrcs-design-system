@@ -30,7 +30,7 @@ export const LabelsDefault = () => (
     <Label color="dark">Dark</Label>
 
     <p className="mt-4">
-      Example status labels of <Label color="success">Complete</Label> or{" "}
+      Example status labels of <Label color="success">Complete</Label> or
       <Label color="dark">Not Started</Label>
     </p>
 
