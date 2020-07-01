@@ -1,6 +1,10 @@
-a.breadcrumb-item {
+.breadcrumb-sm ol {
+  padding: 0.5rem 0.75rem;
+}
+
+li.breadcrumb-item a {
   text-decoration: none;
 }
-a.breadcrumb-item:hover {
+li.breadcrumb-item a:hover {
   text-decoration: underline;
 }

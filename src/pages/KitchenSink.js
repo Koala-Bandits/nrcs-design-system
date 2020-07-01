@@ -29,7 +29,7 @@ import { MessagesDefault } from "components/feedback/messages/AlertMessage.stori
 import {
   BreadcrumbsDefault,
   BreadcrumbsIcons
-} from "components/breadcrumbs/Breadcrumb.stories.js";
+} from "components/breadcrumbs/Breadcrumbs.stories.js";
 import {
   ButtonsDefaultStory,
   ButtonsWithIconsStory,
@@ -67,24 +67,29 @@ function KitchenSink() {
   };
 
   const cmpnts = [
-    "Alerts",
-    "AlertBanners",
-    "AlertMessages",
-    "Badge",
     "Breadcrumb",
     "Buttons",
     "Card",
     "ContentHeader",
     "Dropdowns",
     "Expansions",
-    "Growls",
-    "Label",
     "Links",
     "ListGroup",
     "Modal",
     "Tables",
     "Tabs"
   ];
+
+  const feedback = [
+    "Alerts",
+    "AlertBanners",
+    "AlertMessages",
+    "Badge",
+    "Growls",
+    "Label"
+  ];
+
+  const inputs = [];
 
   return (
     <div className="container">
@@ -102,7 +107,40 @@ function KitchenSink() {
                 Overview
               </NavLink>
             </NavItem>
+            <h3 className="mt-4">Components</h3>
             {cmpnts.map(cmpnt => {
+              return (
+                <NavItem key={cmpnt}>
+                  <NavLink
+                    className={activeTab === cmpnt ? "active" : ""}
+                    href="#"
+                    onClick={() => {
+                      toggle(cmpnt);
+                    }}
+                  >
+                    {cmpnt}
+                  </NavLink>
+                </NavItem>
+              );
+            })}
+            <h3 className="mt-4">Feedback</h3>
+            {feedback.map(cmpnt => {
+              return (
+                <NavItem key={cmpnt}>
+                  <NavLink
+                    className={activeTab === cmpnt ? "active" : ""}
+                    href="#"
+                    onClick={() => {
+                      toggle(cmpnt);
+                    }}
+                  >
+                    {cmpnt}
+                  </NavLink>
+                </NavItem>
+              );
+            })}
+            <h3 className="mt-4">Inputs</h3>
+            {inputs.map(cmpnt => {
               return (
                 <NavItem key={cmpnt}>
                   <NavLink
