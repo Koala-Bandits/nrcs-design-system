@@ -39,6 +39,7 @@ import {
   ButtonsPositionStory
 } from "components/buttons/Button.stories.js";
 import { CardDefault } from "components/cards/Card.stories.js";
+import { CheckboxDefault } from "components/inputs/Checkbox.stories.js";
 import {
   ContentHeaderDefault,
   ContentHeaderIcons
@@ -89,7 +90,7 @@ function KitchenSink() {
     "Label"
   ];
 
-  const inputs = [];
+  const inputs = ["Checkbox"];
 
   return (
     <div className="container">
@@ -202,6 +203,11 @@ function KitchenSink() {
             <TabPane tabId="Card">
               <CardDefault />
             </TabPane>
+
+            <TabPane tabId="Checkbox">
+              <CheckboxDefault />
+            </TabPane>
+
             <TabPane tabId="ContentHeader">
               <ContentHeaderDefault />
               <ContentHeaderIcons />

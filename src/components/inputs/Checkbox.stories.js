@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
+import { Checkbox } from "components/inputs/Checkbox";
 import { ContentHeaderH2 } from "components/text/ContentHeader";
 
 export default {
@@ -13,28 +14,27 @@ export const CheckboxDefault = () => (
     <h3 className="mt-4">Default Custom</h3>
     <FormGroup>
       <Label for="exampleCheckbox">Checkbox Label</Label>
-      <CustomInput
+      <Checkbox
         type="checkbox"
         id="exampleCustomCheckbox"
         label="Check this custom checkbox"
         checked
       />
-      <CustomInput
+      <Checkbox
         type="checkbox"
         id="exampleCustomCheckbox2"
         label="Or this one"
       />
-      <CustomInput
+      <Checkbox
         type="checkbox"
         id="exampleCustomCheckbox3"
         label="But not this disabled one"
         disabled
       />
-      <CustomInput
+      <Checkbox
         type="checkbox"
         id="exampleCustomCheckbox4"
         label="Can't click this label to check!"
-        htmlFor="exampleCustomCheckbox4_X"
         disabled
       />
     </FormGroup>
@@ -43,14 +43,14 @@ export const CheckboxDefault = () => (
     <FormGroup>
       <Label for="exampleCheckbox">Inline Label</Label>
       <div>
-        <CustomInput
+        <Checkbox
           type="checkbox"
           id="exampleCustomInline"
           label="An inline custom input"
           inline
           checked
         />
-        <CustomInput
+        <Checkbox
           type="checkbox"
           id="exampleCustomInline2"
           label="and another one"
@@ -60,13 +60,19 @@ export const CheckboxDefault = () => (
     </FormGroup>
 
     <h3 className="mt-4">Indeterminate Custom</h3>
-    <a
-      href="https://getbootstrap.com/docs/4.4/components/forms/#checkboxes-and-radios-1"
-      target="_blank"
-      rel="nopener noreferrer"
-    >
-      To Do...
-    </a>
+    <Checkbox
+      type="checkbox"
+      id="exampleIndCustomCheckbox2"
+      label="Or this one"
+      indeterminate
+    />
+    <Checkbox
+      type="checkbox"
+      id="exampleIndCustomCheckbox3"
+      label="But not this disabled one"
+      disabled
+      indeterminate
+    />
   </div>
 );
 
