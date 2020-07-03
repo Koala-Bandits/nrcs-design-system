@@ -21,7 +21,7 @@ function Growl({ isOpen, toggle, color, children, remove }) {
   removeRef.current = remove;
 
   useEffect(() => {
-    const duration = 5000;
+    const duration = 55000;
     const id = setTimeout(() => {
       if (removeRef.current) {
         removeRef.current();

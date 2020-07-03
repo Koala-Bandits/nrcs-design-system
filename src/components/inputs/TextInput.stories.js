@@ -54,12 +54,12 @@ export const RangeDefault = () => (
           <FormText>With some extra helper text</FormText>
         </FormGroup>
         <FormGroup>
-          <Label for="exampleDefaultEditableText">Disabled</Label>
+          <Label for="exampleDefaultEditableTextDisabled">Disabled</Label>
           <Input
             disabled
             type="text"
             name="text"
-            id="exampleDefaultEditableText"
+            id="exampleDefaultEditableTextDisabled"
             placeholder="with a placeholder"
           />
         </FormGroup>
@@ -107,11 +107,11 @@ export const RangeDefault = () => (
       <Col xs="12" md="6">
         <h3 className="mb-3">Types</h3>
         <FormGroup>
-          <Label for="exampleDefaultText">Default Text</Label>
+          <Label for="exampleDefaultTextType">Default Text</Label>
           <Input
             type="text"
             name="text"
-            id="exampleDefaultText"
+            id="exampleDefaultTextType"
             placeholder="with a placeholder"
           />
         </FormGroup>

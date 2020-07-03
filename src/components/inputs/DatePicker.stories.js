@@ -1,50 +1,93 @@
 import React from "react";
+import {
+  Form,
+  FormFeedback,
+  FormGroup,
+  FormText,
+  Label,
+  Input,
+  Row,
+  Col
+} from "reactstrap";
 import { ContentHeaderH2 } from "components/text/ContentHeader";
-
 export default {
-  title: "Components|Inputs/Date Picker"
+  title: "Components|Inputs/DatePicker"
 };
 
-export const FormDefault = () => (
+export const DatePickerDefault = () => (
   <div>
-    <ContentHeaderH2>Form - Default</ContentHeaderH2>
-    To do... example vertical layout form with top-aligned labels.
+    <ContentHeaderH2>DatePicker - Default</ContentHeaderH2>
+
+    <Row>
+      <Col xs="12" md="6">
+        <h3 className="mb-3">Sizes</h3>
+        <FormGroup>
+          <Label for="exampleDatePicker">Date</Label>
+          <Input
+            type="date"
+            name="date"
+            id="exampleDatePicker"
+            placeholder="date placeholder"
+          />
+        </FormGroup>
+        <FormGroup>
+          <Label for="exampleDatePickerSmall">Date</Label>
+          <Input
+            type="date"
+            name="date"
+            id="exampleDatePickerSmall"
+            placeholder="date placeholder"
+            size="sm"
+          />
+        </FormGroup>
+
+        <h3 className="mb-3">States</h3>
+        <FormGroup>
+          <Label for="exampleDatePickerDefault">Default Editable</Label>
+          <Input
+            type="date"
+            name="date"
+            id="exampleDatePickerDefault"
+            placeholder="date placeholder"
+          />
+        </FormGroup>
+        <FormGroup>
+          <Label for="exampleDatePickerDisabled">Disabled</Label>
+          <Input
+            type="date"
+            name="date"
+            id="exampleDatePickerDisabled"
+            placeholder="date placeholder"
+            disabled
+          />
+        </FormGroup>
+        <FormGroup>
+          <Label for="exampleDatePickerDisabled">Valid</Label>
+          <Input
+            valid
+            type="date"
+            name="date"
+            id="exampleDatePickerDisabled"
+            placeholder="date placeholder"
+          />
+          <FormFeedback valid>Awesome yo!</FormFeedback>
+        </FormGroup>
+        <FormGroup>
+          <Label for="exampleDatePickerDisabled">Invalid</Label>
+          <Input
+            invalid
+            type="date"
+            name="date"
+            id="exampleDatePickerDisabled"
+            placeholder="date placeholder"
+          />
+          <FormFeedback>You messed that up man!</FormFeedback>
+        </FormGroup>
+      </Col>
+    </Row>
   </div>
 );
 
-export const FormHorizontal = () => (
-  <div>
-    <ContentHeaderH2>Form - Horizontal</ContentHeaderH2>
-    To do... example horizontal layout form with left-aligned labels.
-  </div>
-);
-
-export const FormInline = () => (
-  <div>
-    <ContentHeaderH2>Form - Inline</ContentHeaderH2>
-    To do... example horizontal layout form with left-aligned labels.
-  </div>
-);
-
-export const FormInputGroup = () => (
-  <div>
-    <ContentHeaderH2>Form - InputGroup</ContentHeaderH2>
-    To do... various input grouping examples.
-  </div>
-);
-
-FormDefault.story = {
-  name: "Form - Default"
-};
-
-FormHorizontal.story = {
-  name: "Form - Horizontal"
-};
-
-FormInline.story = {
-  name: "Form - Inline"
-};
-
-FormInputGroup.story = {
-  name: "Form - Input Group"
+DatePickerDefault.story = {
+  name: "Date Picker - Default"
 };

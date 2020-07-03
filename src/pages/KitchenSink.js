@@ -44,7 +44,9 @@ import {
   ContentHeaderDefault,
   ContentHeaderIcons
 } from "components/text/ContentHeader.stories.js";
+import { DatePickerDefault } from "components/inputs/DatePicker.stories";
 import { DropdownDefault } from "components/dropdowns/Dropdown.stories.js";
+import { FileBrowserDefault } from "components/inputs/FileBrowser.stories.js";
 import { GrowlsStory } from "components/feedback/growls/Growl.stories.js";
 import {
   LabelsDefault,
@@ -55,6 +57,7 @@ import { ListGroupStory } from "components/listgroups/ListGroup.stories.js";
 import { ModalDefault } from "components/modal/Modal.stories.js";
 import { TablesDefault, TablesAlt } from "components/tables/Table.stories.js";
 import { TabsStory } from "components/tabs/Tabs.stories.js";
+import { TimePickerDefault } from "components/inputs/TimePicker.stories";
 
 // hook for apllication wide Growls
 import useToast from "components/feedback/growls/useToast";
@@ -90,7 +93,7 @@ function KitchenSink() {
     "Label"
   ];
 
-  const inputs = ["Checkbox"];
+  const inputs = ["Checkbox", "DatePicker", "FileBrowser", "TimePicker"];
 
   return (
     <div className="container">
@@ -203,17 +206,21 @@ function KitchenSink() {
             <TabPane tabId="Card">
               <CardDefault />
             </TabPane>
-
             <TabPane tabId="Checkbox">
               <CheckboxDefault />
             </TabPane>
-
             <TabPane tabId="ContentHeader">
               <ContentHeaderDefault />
               <ContentHeaderIcons />
             </TabPane>
+            <TabPane tabId="DatePicker">
+              <DatePickerDefault />
+            </TabPane>
             <TabPane tabId="Dropdowns">
               <DropdownDefault />
+            </TabPane>
+            <TabPane tabId="FileBrowser">
+              <FileBrowserDefault />
             </TabPane>
             <TabPane tabId="Growls">
               <GrowlsStory />
@@ -237,6 +244,9 @@ function KitchenSink() {
             </TabPane>
             <TabPane tabId="Tabs">
               <TabsStory />
+            </TabPane>
+            <TabPane tabId="TimePicker">
+              <TimePickerDefault />
             </TabPane>
           </TabContent>
         </Col>

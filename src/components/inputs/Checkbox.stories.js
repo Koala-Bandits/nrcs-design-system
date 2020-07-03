@@ -63,13 +63,13 @@ export const CheckboxDefault = () => (
     <Checkbox
       type="checkbox"
       id="exampleIndCustomCheckbox2"
-      label="Or this one"
+      label="Who knows checkbox 1"
       indeterminate
     />
     <Checkbox
       type="checkbox"
       id="exampleIndCustomCheckbox3"
-      label="But not this disabled one"
+      label="Indeterminate and you can't do anything about it"
       disabled
       indeterminate
     />
