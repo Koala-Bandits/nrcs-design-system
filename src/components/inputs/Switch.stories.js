@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Inputs/Switch"
@@ -8,7 +8,7 @@ export default {
 
 export const SwitchDefault = () => (
   <div>
-    <ContentHeaderH2>Switches</ContentHeaderH2>
+    <ContentHeaderH1>Switches</ContentHeaderH1>
 
     <h3 className="mt-4">Default Custom</h3>
     <FormGroup>

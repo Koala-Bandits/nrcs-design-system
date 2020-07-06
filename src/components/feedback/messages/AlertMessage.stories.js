@@ -1,5 +1,5 @@
 import React from "react";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { AlertMessage } from "./AlertMessage";
 
 export default {
@@ -8,7 +8,7 @@ export default {
 
 export const MessagesDefault = () => (
   <div>
-    <ContentHeaderH2>Alert Messages</ContentHeaderH2>
+    <ContentHeaderH1>Alert Messages</ContentHeaderH1>
     <p className="lead">
       Alert messages are awesome little helpers. Used selectively with short
       concise messaging can provide help, explaination, or instruction to users

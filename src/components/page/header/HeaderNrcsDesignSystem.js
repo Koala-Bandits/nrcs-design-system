@@ -69,11 +69,7 @@ export const HeaderNrcsDesignSystem = ({ ...rest }) => {
             </NavItem>
             <NavItem>
               <NavLink
-                className={
-                  pathname === "/nrcs-design-system/components"
-                    ? "active"
-                    : null
-                }
+                className={pathname.includes("components") ? "active" : null}
                 href="/nrcs-design-system/components"
               >
                 Components

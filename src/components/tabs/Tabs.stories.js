@@ -5,17 +5,14 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Button,
   Row,
   Col
 } from "reactstrap";
 import {
-  ContentHeaderH2,
-  ContentHeaderH3
+  ContentHeaderH1,
+  ContentHeaderH2
 } from "components/text/ContentHeader";
 import classnames from "classnames";
-import Icon from "@mdi/react";
-import { mdiCheckCircle } from "@mdi/js";
 
 export default {
   title: "Components|Tabs (Nav)"
@@ -30,7 +27,7 @@ export const TabsStory = () => {
 
   return (
     <div>
-      <ContentHeaderH2>Tabs</ContentHeaderH2>
+      <ContentHeaderH1>Tabs</ContentHeaderH1>
 
       <h3 className="mt-4 mb-3">Default Horizontal </h3>
 

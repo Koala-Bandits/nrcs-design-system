@@ -10,7 +10,7 @@ import {
   Row,
   Col
 } from "reactstrap";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { PrimaryButton, FlatButton } from "components/buttons/Buttons";
 import Search from "components/inputs/Search";
 import Icon from "@mdi/react";
@@ -28,7 +28,7 @@ export const SearchDefault = () => {
 
   return (
     <div>
-      <ContentHeaderH2>Search - Default</ContentHeaderH2>
+      <ContentHeaderH1>Search - Default</ContentHeaderH1>
       Basic search field.
       <Row>
         <Col sm="12" md="6">
@@ -57,14 +57,14 @@ export const SearchDefault = () => {
           <h3>Small</h3>
 
           <InputGroup>
-            <Input size="sm" />
+            <Input bsSize="sm" />
             <InputGroupAddon addonType="append">
               <PrimaryButton size="sm">Search</PrimaryButton>
             </InputGroupAddon>
           </InputGroup>
           <p>Icon only</p>
           <InputGroup>
-            <Input size="sm" />
+            <Input bsSize="sm" />
             <InputGroupAddon addonType="append">
               <PrimaryButton size="sm" className="btn-icon">
                 <Icon className="mdi" path={mdiMagnify} size={0.8} />

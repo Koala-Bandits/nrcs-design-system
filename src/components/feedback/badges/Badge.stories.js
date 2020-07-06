@@ -1,6 +1,6 @@
 import React from "react";
 import { Badge } from "./Badge";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Feedback/Badges"
@@ -8,7 +8,7 @@ export default {
 
 export const BadgesDefault = () => (
   <div>
-    <ContentHeaderH2>Badges - Default</ContentHeaderH2>
+    <ContentHeaderH1>Badges - Default</ContentHeaderH1>
     <p className="lead">
       Badges are used as indicators of an update or action items that have yet
       to be completed.

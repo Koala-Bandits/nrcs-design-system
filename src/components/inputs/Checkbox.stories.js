@@ -1,7 +1,7 @@
 import React from "react";
-import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
+import { FormGroup, Label } from "reactstrap";
 import { Checkbox } from "components/inputs/Checkbox";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Inputs/Checkbox"
@@ -9,7 +9,7 @@ export default {
 
 export const CheckboxDefault = () => (
   <div>
-    <ContentHeaderH2>Checkboxes</ContentHeaderH2>
+    <ContentHeaderH1>Checkboxes</ContentHeaderH1>
 
     <h3 className="mt-4">Default Custom</h3>
     <FormGroup>

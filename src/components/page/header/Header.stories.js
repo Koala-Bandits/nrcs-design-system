@@ -1,5 +1,5 @@
 import React from "react";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { HeaderNrcs } from "./HeaderNrcs";
 import { HeaderNrcsDesignSystem } from "./HeaderNrcsDesignSystem";
 import { HeaderFpac } from "./HeaderFpac";
@@ -12,7 +12,7 @@ export default {
 export const StoryHeaderNRCS = () => {
   return (
     <div>
-      <ContentHeaderH2>Header - NRCS</ContentHeaderH2>
+      <ContentHeaderH1>Header - NRCS</ContentHeaderH1>
       <p>NRCS Header is uses primary blue and is responsive in sizing.</p>
       <HeaderNrcs />
     </div>
@@ -22,7 +22,7 @@ export const StoryHeaderNRCS = () => {
 export const StoryHeaderNRCSDesignSystem = () => {
   return (
     <div>
-      <ContentHeaderH2>Header - NRCS Design System</ContentHeaderH2>
+      <ContentHeaderH1>Header - NRCS Design System</ContentHeaderH1>
       <p>
         This is the complete header for the NRCS Design System website. It uses
         a HeaderNrcs with a NavbarNrcs
@@ -35,7 +35,7 @@ export const StoryHeaderNRCSDesignSystem = () => {
 export const StoryHeaderFPAC = () => {
   return (
     <div>
-      <ContentHeaderH2>Header - FPAC</ContentHeaderH2>
+      <ContentHeaderH1>Header - FPAC</ContentHeaderH1>
       <p>FPAC Header is uses secondary green and is responsive in sizing.</p>
       <HeaderFpac />
     </div>
@@ -45,7 +45,7 @@ export const StoryHeaderFPAC = () => {
 export const StoryHeaderCD = () => {
   return (
     <div>
-      <ContentHeaderH2>Header - CD</ContentHeaderH2>
+      <ContentHeaderH1>Header - CD</ContentHeaderH1>
       <p>
         CD Header is uses primary blue, smaller, and vertically centered items.
         It is also responsive in sizing.

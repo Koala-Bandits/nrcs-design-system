@@ -11,7 +11,7 @@ import {
   ListGroup,
   ListGroupItem
 } from "reactstrap";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Cards"
@@ -19,7 +19,7 @@ export default {
 
 export const CardDefault = () => (
   <div className="pb-4">
-    <ContentHeaderH2>Card - Default</ContentHeaderH2>
+    <ContentHeaderH1>Card</ContentHeaderH1>
     <p className="lead">
       Cards are a versatile container that we can use to frame or group a
       section of content, create blocks.

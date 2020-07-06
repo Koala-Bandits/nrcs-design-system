@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "@mdi/react";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { mdiCheckCircle } from "@mdi/js";
 import { AlertBanner } from "./AlertBanner";
 
@@ -10,7 +10,7 @@ export default {
 
 export const BannersDefault = () => (
   <div>
-    <ContentHeaderH2>Alert Banners - Default</ContentHeaderH2>
+    <ContentHeaderH1>Alert Banners - Default</ContentHeaderH1>
     <p className="lead">
       Alert banners are used under a ModalHeader or ContenHeader 100% width
       edge-to-edge when Growls are not practical.

@@ -70,6 +70,11 @@ label {
   font-weight: $font-weight-normal;
 }
 
+// small size <Label size="sm"/>
+label.col-form-label-sm {
+  padding-bottom: 0;
+}
+
 // .lead {
 //   @include font-size($lead-font-size);
 //   font-weight: $lead-font-weight;

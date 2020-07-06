@@ -1,6 +1,6 @@
 import React from "react";
 import { Label } from "./Label";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Feedback/Labels"
@@ -8,7 +8,7 @@ export default {
 
 export const LabelsDefault = () => (
   <div>
-    <ContentHeaderH2>Labels - Default</ContentHeaderH2>
+    <ContentHeaderH1>Labels - Default</ContentHeaderH1>
     <p className="lead">
       Labels are used to draw attention to new, updated, or important content
       within an application.

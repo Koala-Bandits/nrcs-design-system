@@ -12,7 +12,7 @@ import {
   DropdownItem,
   NavbarText
 } from "reactstrap";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { NavbarNrcs } from "./NavbarNrcs";
 import { NavbarFpac } from "./NavbarFpac";
 
@@ -27,7 +27,7 @@ export const StoryNavbarNRCS = () => {
 
   return (
     <div>
-      <ContentHeaderH2>Navbar - NRCS</ContentHeaderH2>
+      <ContentHeaderH1>Navbar - NRCS</ContentHeaderH1>
       <p>
         This is a basic navbar. This is used as the navigation (mobile menu) for
         page headers and main navigation.
@@ -70,7 +70,7 @@ export const StoryNavbarFPAC = () => {
 
   return (
     <div>
-      <ContentHeaderH2>Navbar - FPAC</ContentHeaderH2>
+      <ContentHeaderH1>Navbar - FPAC</ContentHeaderH1>
       <p>
         This is a basic navbar. This is used as the navigation (mobile menu) for
         page headers and main navigation.

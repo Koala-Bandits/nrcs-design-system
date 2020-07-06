@@ -5,12 +5,12 @@ import Icon from "@mdi/react";
 export const Breadcrumbs = ({ data, size, ...rest }) => {
   let cmp = (
     <Breadcrumb className={size === "sm" ? "breadcrumb-sm" : ""}>
-      {data.map(crumb => {
+      {data.map((crumb, index) => {
         let itm;
 
         if (crumb.active) {
           itm = (
-            <BreadcrumbItem active>
+            <BreadcrumbItem key={index} active>
               {crumb.icon ? (
                 <Icon
                   className="mdi"
@@ -25,7 +25,7 @@ export const Breadcrumbs = ({ data, size, ...rest }) => {
           );
         } else {
           itm = (
-            <BreadcrumbItem>
+            <BreadcrumbItem key={index}>
               <a href={crumb.href}>
                 {crumb.icon ? (
                   <Icon

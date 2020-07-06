@@ -1,6 +1,9 @@
 import React from "react";
 import { Breadcrumbs } from "./Breadcrumbs";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import {
+  ContentHeaderH1,
+  ContentHeaderH2
+} from "components/text/ContentHeader";
 import { mdiAccount, mdiHome, mdiFormatListBulleted } from "@mdi/js";
 
 export default {
@@ -17,7 +20,12 @@ export const BreadcrumbsDefault = () => {
 
   return (
     <div>
-      <ContentHeaderH2>Breadcrumbs</ContentHeaderH2>
+      <ContentHeaderH1
+        className="mt-0
+      "
+      >
+        Breadcrumbs
+      </ContentHeaderH1>
 
       <Breadcrumbs data={data} />
 

@@ -99,6 +99,7 @@ function KitchenSink() {
     <div className="container">
       <Row>
         <Col md="3" className="mb-3">
+          <h3>Components</h3>
           <Nav className="nav-fpac" vertical>
             <NavItem>
               <NavLink
@@ -111,7 +112,6 @@ function KitchenSink() {
                 Overview
               </NavLink>
             </NavItem>
-            <h3 className="mt-4">Components</h3>
             {cmpnts.map(cmpnt => {
               return (
                 <NavItem key={cmpnt}>
@@ -164,7 +164,7 @@ function KitchenSink() {
         <Col md="9" className="mb-3">
           <TabContent activeTab={activeTab}>
             <TabPane tabId="default">
-              <ContentHeaderH1>KitchenSink</ContentHeaderH1>
+              <ContentHeaderH1 className=" mt-0">KitchenSink</ContentHeaderH1>
               <p className="lead">
                 All our core components (Storybook stories) A-Z.
               </p>

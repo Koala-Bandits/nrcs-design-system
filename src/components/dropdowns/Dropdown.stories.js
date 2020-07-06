@@ -11,7 +11,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from "reactstrap";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 import Icon from "@mdi/react";
 import { mdiChevronDown, mdiDotsVertical } from "@mdi/js";
 
@@ -41,7 +41,7 @@ export const DropdownDefault = () => {
 
   return (
     <div>
-      <ContentHeaderH2>Dropdown - Default</ContentHeaderH2>
+      <ContentHeaderH1>Dropdown - Default</ContentHeaderH1>
 
       <Card>
         <CardBody>

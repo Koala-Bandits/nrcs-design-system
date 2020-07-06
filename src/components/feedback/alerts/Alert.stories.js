@@ -1,5 +1,5 @@
 import React from "react";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 import Icon from "@mdi/react";
 import { mdiCheckCircle } from "@mdi/js";
 import { Alert } from "./Alert";
@@ -10,7 +10,7 @@ export default {
 
 export const AlertsDefault = () => (
   <div>
-    <ContentHeaderH2>Alerts - Default</ContentHeaderH2>
+    <ContentHeaderH1>Alerts - Default</ContentHeaderH1>
     <p className="lead">
       Inine Alerts are used for drawing attention to a specific block of
       content.{" "}

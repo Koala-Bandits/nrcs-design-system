@@ -16,7 +16,7 @@ export default {
 
 export const ContentHeaderDefault = () => (
   <div>
-    <ContentHeaderH2>Content Header</ContentHeaderH2>
+    <ContentHeaderH1>Content Header</ContentHeaderH1>
 
     <p>
       Your basic HTML header tags with an underline and 100% width to expand
@@ -53,7 +53,7 @@ export const ContentHeaderDefault = () => (
 
 export const ContentHeaderIcons = () => (
   <div>
-    <ContentHeaderH2>Content Header</ContentHeaderH2>
+    <ContentHeaderH2>Content Header - with Icons</ContentHeaderH2>
 
     <p>
       Your basic HTML header tags with an underline and 100% width to expand

@@ -9,14 +9,14 @@ import {
   Row,
   Col
 } from "reactstrap";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 export default {
   title: "Components|Inputs/TimePicker"
 };
 
 export const TimePickerDefault = () => (
   <div>
-    <ContentHeaderH2>TimePicker - Default</ContentHeaderH2>
+    <ContentHeaderH1>TimePicker - Default</ContentHeaderH1>
 
     <Row>
       <Col xs="12" md="6">
@@ -31,13 +31,15 @@ export const TimePickerDefault = () => (
           />
         </FormGroup>
         <FormGroup>
-          <Label for="exampleTimePickerSmall">Time</Label>
+          <Label for="exampleTimePickerSmall" size="sm">
+            Time
+          </Label>
           <Input
             type="time"
             name="time"
             id="exampleTimePickerSmall"
             placeholder="time placeholder"
-            size="sm"
+            bsSize="sm"
           />
         </FormGroup>
 

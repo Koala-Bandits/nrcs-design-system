@@ -8,7 +8,7 @@ import {
   Label,
   CustomInput
 } from "reactstrap";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
   title: "Components|Inputs/File Browser"
@@ -16,7 +16,7 @@ export default {
 
 export const FileBrowserDefault = () => (
   <div>
-    <ContentHeaderH2>File Browser</ContentHeaderH2>
+    <ContentHeaderH1>File Browser</ContentHeaderH1>
 
     <Row>
       <Col xs="12" md="6">
@@ -68,7 +68,6 @@ export const FileBrowserDefault = () => (
             label="Yo, pick a file!"
             placeholder="sm"
             bsSize="sm"
-            size="sm"
           />
         </FormGroup>
 

@@ -9,14 +9,14 @@ import {
   Row,
   Col
 } from "reactstrap";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 export default {
   title: "Components|Inputs/DatePicker"
 };
 
 export const DatePickerDefault = () => (
   <div>
-    <ContentHeaderH2>DatePicker - Default</ContentHeaderH2>
+    <ContentHeaderH1>DatePicker - Default</ContentHeaderH1>
 
     <Row>
       <Col xs="12" md="6">
@@ -31,13 +31,15 @@ export const DatePickerDefault = () => (
           />
         </FormGroup>
         <FormGroup>
-          <Label for="exampleDatePickerSmall">Date</Label>
+          <Label for="exampleDatePickerSmall" size="sm">
+            Date
+          </Label>
           <Input
             type="date"
             name="date"
             id="exampleDatePickerSmall"
             placeholder="date placeholder"
-            size="sm"
+            bsSize="sm"
           />
         </FormGroup>
 

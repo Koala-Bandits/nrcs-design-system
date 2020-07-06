@@ -8,8 +8,11 @@ import React from "react";
 //   }
 // }
 
-export const ContentHeaderH1 = ({ size, children, ...rest }) => {
-  let classes = "border-bottom w-100 pb-1 mt-4 mb-3";
+export const ContentHeaderH1 = ({ size, children, className, ...rest }) => {
+  let classes = "border-bottom w-100 pb-1 mb-3";
+  if (className) {
+    classes = classes + " " + className;
+  }
   if (size === "sm") {
     classes = classes + " h1-sm";
   }

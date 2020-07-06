@@ -10,19 +10,20 @@ export const Checkbox = ({
   indeterminate,
   ...rest
 }) => {
-  // let initialState = checked ? 1 : 0;
-
-  // state variable, 0 = unchecked, 1 = checked, x = indeterminate
   const [checkState, setCheckState] = useState(checked);
-
-  // let ind = indeterminate;
 
   const setState = event => {
     if (indeterminate) {
       indeterminate = false;
     }
     setCheckState(!checkState);
+    console.log("checkState: " + checkState);
   };
+
+  // const hackState = event => {
+  //   document.getElementById(id).checked = false;
+  //   console.log("hello?");
+  // };
 
   // hack for now
   useEffect(() => {
@@ -41,7 +42,8 @@ export const Checkbox = ({
       checked={checkState}
       disabled={disabled}
       inline={inline}
-      onClick={() => setState}
+      // onChange={() => hackState}
+      {...rest}
     />
   );
 };

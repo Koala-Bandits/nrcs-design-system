@@ -1,5 +1,5 @@
 import React from "react";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { DataTable } from "./DataTable";
 
 export default {
@@ -99,7 +99,7 @@ export const DataTableDefault = () => {
 
   return (
     <div>
-      <ContentHeaderH2>DataTable - Default</ContentHeaderH2>
+      <ContentHeaderH1>DataTable - Default</ContentHeaderH1>
       <p className="lead">
         A DataTable that provides paging, sorting, single or mutliple selection,
         actions bar.

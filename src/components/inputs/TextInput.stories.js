@@ -9,14 +9,14 @@ import {
   Row,
   Col
 } from "reactstrap";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 export default {
   title: "Components|Inputs/Text Input"
 };
 
 export const RangeDefault = () => (
   <div>
-    <ContentHeaderH2>Text Inputs</ContentHeaderH2>
+    <ContentHeaderH1>Text Inputs</ContentHeaderH1>
 
     <Row>
       <Col xs="12" md="6">
@@ -31,7 +31,9 @@ export const RangeDefault = () => (
           />
         </FormGroup>
         <FormGroup>
-          <Label for="exampleSmallDefaultText">Small</Label>
+          <Label for="exampleSmallDefaultText" size="sm">
+            Small
+          </Label>
           <Input
             placeholder="sm"
             bsSize="sm"

@@ -14,7 +14,10 @@ import {
   ButtonSet,
   ButtonFooter
 } from "components/buttons/Buttons";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import {
+  ContentHeaderH1,
+  ContentHeaderH2
+} from "components/text/ContentHeader";
 import {
   mdiAccount,
   mdiChevronRight,
@@ -33,7 +36,7 @@ export default {
 
 export const ButtonsDefaultStory = () => (
   <div className="docs-btn">
-    <ContentHeaderH2>Buttons</ContentHeaderH2>
+    <ContentHeaderH1>Buttons</ContentHeaderH1>
     <p className="lead">
       Keeping things simple with 3 button types: Primary, Secondary, and Flat.
     </p>

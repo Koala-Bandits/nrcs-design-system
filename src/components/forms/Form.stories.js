@@ -11,7 +11,7 @@ import {
   Label,
   Input
 } from "reactstrap";
-import { ContentHeaderH2 } from "components/text/ContentHeader";
+import { ContentHeaderH1 } from "components/text/ContentHeader";
 import {
   PrimaryButton,
   SecondaryButton,
@@ -25,10 +25,11 @@ export default {
 
 export const FormDefaultStory = () => (
   <div>
-    <ContentHeaderH2>Form - Default</ContentHeaderH2>
-    <p>Typical single column form example...</p>
+    <ContentHeaderH1>Form - Basic</ContentHeaderH1>
+    <p className="lead">Typical single column form example.</p>
     <Row>
-      <Col sm="12" md="6">
+      <Col sm="12" md="6" className="mb-4">
+        <h3>Default</h3>
         <Card className="bg-transparent">
           <CardBody>
             <h3>Profile</h3>
@@ -141,13 +142,163 @@ export const FormDefaultStory = () => (
           </CardBody>
         </Card>
       </Col>
+
+      <Col sm="12" md="6">
+        <h3>Small</h3>
+        <Card className="bg-transparent">
+          <CardBody>
+            <h3>Profile</h3>
+            <Form>
+              <FormGroup>
+                <Label for="exampleName" size="sm">
+                  Name
+                </Label>
+                <Input
+                  type="text"
+                  name="name"
+                  id="exampleNameSm"
+                  placeholder="Danger Dan"
+                  bsSize="sm"
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="examplePower" size="sm">
+                  Super Power
+                </Label>
+                <Input
+                  type="text"
+                  name="power"
+                  id="examplePowerSm"
+                  placeholder="Duels with dragons"
+                  bsSize="sm"
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="examplePlainText" size="sm">
+                  Agent Level
+                </Label>
+                <Input
+                  plaintext
+                  value="SUPER BAD"
+                  id="examplePlainTextSm"
+                  bsSize="sm"
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleSelect" size="sm">
+                  Theme Color
+                </Label>
+                <Input
+                  type="select"
+                  name="color"
+                  id="exampleSelectSm"
+                  bsSize="sm"
+                >
+                  <option>Charcoal</option>
+                  <option>Blue</option>
+                  <option>Red</option>
+                  <option>Green</option>
+                  <option>Pink</option>
+                  <option>Purple</option>
+                </Input>
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleSelectMulti" size="sm">
+                  Tools
+                </Label>
+                <Input
+                  type="select"
+                  name="selectMulti"
+                  id="exampleSelectMultiSm"
+                  bsSize="sm"
+                  multiple
+                >
+                  <option>Compass</option>
+                  <option>Rope</option>
+                  <option>Blaster</option>
+                  <option>Snackies</option>
+                  <option>Sunscreen</option>
+                </Input>
+                <FormText color="muted">
+                  This is some placeholder block-level help text for the above
+                  input. It's a bit lighter and easily wraps to a new line.
+                </FormText>
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleText" size="sm">
+                  Bio
+                </Label>
+                <Input
+                  type="textarea"
+                  name="text"
+                  id="exampleTextSm"
+                  placeholder="Likes cats..."
+                  bsSize="sm"
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleCustomFileBrowser" size="sm">
+                  Avatar Image
+                </Label>
+                <CustomInput
+                  type="file"
+                  id="exampleCustomFileBrowserSm"
+                  name="customFile"
+                  bsSize="sm"
+                />
+              </FormGroup>
+
+              <FormGroup>
+                <Label for="exampleCheckbox" size="sm">
+                  Options
+                </Label>
+                <CustomInput
+                  type="checkbox"
+                  id="exampleCustomCheckboxSm"
+                  label="Auto spidy-sense"
+                  bsSize="sm"
+                />
+                <CustomInput
+                  type="checkbox"
+                  id="exampleCustomCheckbox2Sm"
+                  label="Leave the light on"
+                  bsSize="sm"
+                />
+                <CustomInput
+                  type="checkbox"
+                  id="exampleCustomCheckbox3Sm"
+                  label="Extra bacon"
+                  bsSize="sm"
+                  checked
+                  disabled
+                />
+                <CustomInput
+                  type="checkbox"
+                  id="exampleCustomCheckbox4Sm"
+                  label="Extra bacon"
+                  htmlFor="exampleCustomCheckbox4_X"
+                  bsSize="sm"
+                  checked
+                  disabled
+                />
+              </FormGroup>
+              <ButtonFooter className="text-right">
+                <ButtonSet>
+                  <SecondaryButton>Cancel</SecondaryButton>
+                  <PrimaryButton>Save</PrimaryButton>
+                </ButtonSet>
+              </ButtonFooter>
+            </Form>
+          </CardBody>
+        </Card>
+      </Col>
     </Row>
   </div>
 );
 
 export const FormRowStory = () => (
   <div>
-    <ContentHeaderH2>Form - </ContentHeaderH2>
+    <ContentHeaderH1>Form - </ContentHeaderH1>
     <p className="lead">
       Use FormRow components for a mixed form with inline and vertical elements.
     </p>
@@ -233,27 +384,27 @@ export const FormRowStory = () => (
 
 export const FormHorizontalStory = () => (
   <div>
-    <ContentHeaderH2>Form - Horizontal</ContentHeaderH2>
+    <ContentHeaderH1>Form - Horizontal</ContentHeaderH1>
     To do... example horizontal layout form with left-aligned labels.
   </div>
 );
 
 export const FormInlineStory = () => (
   <div>
-    <ContentHeaderH2>Form - Inline</ContentHeaderH2>
+    <ContentHeaderH1>Form - Inline</ContentHeaderH1>
     To do... example horizontal layout form with left-aligned labels.
   </div>
 );
 
 export const FormInputGroupStory = () => (
   <div>
-    <ContentHeaderH2>Form - InputGroup</ContentHeaderH2>
+    <ContentHeaderH1>Form - InputGroup</ContentHeaderH1>
     To do... various input grouping examples.
   </div>
 );
 
 FormDefaultStory.story = {
-  name: "Form - Default"
+  name: "Form - Basic"
 };
 
 FormRowStory.story = {
