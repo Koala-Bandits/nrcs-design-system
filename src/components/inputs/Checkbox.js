@@ -1,49 +1,45 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { CustomInput } from "reactstrap";
 
 export const Checkbox = ({
   id,
-  label,
-  checked,
-  disabled,
-  inline,
-  indeterminate,
+  checked: checkedProp,
+  indeterminate: indeterminateProp,
   ...rest
 }) => {
-  const [checkState, setCheckState] = useState(checked);
+  const [checked, setChecked] = useState(!!checkedProp);
+  const [indeterminate, setIndeterminate] = useState(!!indeterminateProp);
 
-  const setState = event => {
+  const onChange = event => {
     if (indeterminate) {
-      indeterminate = false;
+      setIndeterminate(false);
     }
-    setCheckState(!checkState);
-    console.log("checkState: " + checkState);
+    setChecked(event.target.checked);
   };
 
-  // const hackState = event => {
-  //   document.getElementById(id).checked = false;
-  //   console.log("hello?");
-  // };
+  // const checkRef = useRef();
 
-  // hack for now
   useEffect(() => {
+    // if (!checkRef.current) return;
+
     // Similar to componentDidMount and componentDidUpdate:
     // Add indeterminate psuedo class
     if (indeterminate) {
+      // hack for now
       document.getElementById(id).indeterminate = true;
+      // checkRef.current.indeterminate = true;
     }
   });
 
   return (
     <CustomInput
-      type="checkbox"
       id={id}
-      label={label}
-      checked={checkState}
-      disabled={disabled}
-      inline={inline}
-      // onChange={() => hackState}
+      type="checkbox"
+      // ref={checkRef}
+      // ref={el => el && (el.indeterminate = indeterminate)}
       {...rest}
+      checked={checked}
+      onChange={onChange}
     />
   );
 };
