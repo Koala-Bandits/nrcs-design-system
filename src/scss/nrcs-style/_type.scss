@@ -61,6 +61,7 @@ h6,
 label {
   font-weight: $font-weight-bold;
   color: $gray-700; // same as table headers
+  // margin-bottom: 0;
 }
 // but not checkboxes and radios
 .custom-checkbox label,
@@ -69,8 +70,6 @@ label {
   color: $body-color;
   font-weight: $font-weight-normal;
 }
-
-// small size <Label size="sm"/>
 label.col-form-label-sm {
   padding-bottom: 0;
 }
