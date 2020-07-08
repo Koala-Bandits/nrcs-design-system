@@ -55,9 +55,15 @@ import {
 import { LinksDefault } from "components/links/Link.stories.js";
 import { ListGroupStory } from "components/listgroups/ListGroup.stories.js";
 import { ModalDefault } from "components/modal/Modal.stories.js";
+import { RadioDefault } from "components/inputs/Radio.stories";
+import { RangeDefault } from "components/inputs/Range.stories";
+import { SearchDefault } from "components/inputs/Search.stories";
+import { SelectDefault, SelectMulti } from "components/inputs/Select.stories";
+import { SwitchDefault } from "components/inputs/Switch.stories";
 import { TablesDefault, TablesAlt } from "components/tables/Table.stories.js";
 import { TabsStory } from "components/tabs/Tabs.stories.js";
 import { TimePickerDefault } from "components/inputs/TimePicker.stories";
+import { TextInputDefault } from "components/inputs/TextInput.stories";
 
 // hook for apllication wide Growls
 import useToast from "components/feedback/growls/useToast";
@@ -71,10 +77,12 @@ function KitchenSink() {
   };
 
   const cmpnts = [
+    "Accordion",
     "Breadcrumb",
     "Buttons",
     "Card",
     "ContentHeader",
+    "DataTable",
     "Dropdowns",
     "Expansions",
     "Links",
@@ -93,7 +101,18 @@ function KitchenSink() {
     "Label"
   ];
 
-  const inputs = ["Checkbox", "DatePicker", "FileBrowser", "TimePicker"];
+  const inputs = [
+    "Checkbox",
+    "DatePicker",
+    "FileBrowser",
+    "Radio",
+    "Range",
+    "Search",
+    "Select",
+    "Switch",
+    "TimePicker",
+    "TextInput"
+  ];
 
   return (
     <div className="container">
@@ -173,6 +192,10 @@ function KitchenSink() {
                 updates weekly.
               </Alert>
             </TabPane>
+            <TabPane tabId="Accordion">
+              <ContentHeaderH1>Accordion</ContentHeaderH1>
+              Coming soon...
+            </TabPane>
             <TabPane tabId="Alerts">
               <AlertsDefault />
               <AlertsNoIcon />
@@ -213,11 +236,19 @@ function KitchenSink() {
               <ContentHeaderDefault />
               <ContentHeaderIcons />
             </TabPane>
+            <TabPane tabId="DataTable">
+              <ContentHeaderH1>Data Table</ContentHeaderH1>
+              Coming soon...
+            </TabPane>
             <TabPane tabId="DatePicker">
               <DatePickerDefault />
             </TabPane>
             <TabPane tabId="Dropdowns">
               <DropdownDefault />
+            </TabPane>
+            <TabPane tabId="Expansions">
+              <ContentHeaderH1>Expansions</ContentHeaderH1>
+              Coming soon...
             </TabPane>
             <TabPane tabId="FileBrowser">
               <FileBrowserDefault />
@@ -238,6 +269,22 @@ function KitchenSink() {
             <TabPane tabId="Modal">
               <ModalDefault />
             </TabPane>
+            <TabPane tabId="Radio">
+              <RadioDefault />
+            </TabPane>
+            <TabPane tabId="Range">
+              <RangeDefault />
+            </TabPane>
+            <TabPane tabId="Search">
+              <SearchDefault />
+            </TabPane>
+            <TabPane tabId="Select">
+              <SelectDefault />
+              <SelectMulti />
+            </TabPane>
+            <TabPane tabId="Switch">
+              <SwitchDefault />
+            </TabPane>
             <TabPane tabId="Tables">
               <TablesDefault />
               <TablesAlt />
@@ -247,6 +294,9 @@ function KitchenSink() {
             </TabPane>
             <TabPane tabId="TimePicker">
               <TimePickerDefault />
+            </TabPane>
+            <TabPane tabId="TextInput">
+              <TextInputDefault />
             </TabPane>
           </TabContent>
         </Col>

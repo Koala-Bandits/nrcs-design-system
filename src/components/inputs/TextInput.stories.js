@@ -10,11 +10,12 @@ import {
   Col
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
+
 export default {
   title: "Components|Inputs/Text Input"
 };
 
-export const RangeDefault = () => (
+export const TextInputDefault = () => (
   <div>
     <ContentHeaderH1>Text Inputs</ContentHeaderH1>
 
@@ -204,13 +205,9 @@ export const RangeDefault = () => (
         </FormGroup>
       </Col>
     </Row>
-
-    <Row>
-      <Col xs="12" md="6"></Col>
-    </Row>
   </div>
 );
 
-RangeDefault.story = {
+TextInputDefault.story = {
   name: "Text Input - Default"
 };

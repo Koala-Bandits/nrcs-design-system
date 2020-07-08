@@ -23,7 +23,8 @@ export const SwitchDefault = () => (
         type="switch"
         id="exampleCustomSwitch2"
         name="customSwitch"
-        label="Or this one"
+        label="This was is already on"
+        checked
       />
       <CustomInput
         type="switch"

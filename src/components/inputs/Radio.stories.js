@@ -17,6 +17,7 @@ export const RadioDefault = () => (
         type="radio"
         id="exampleCustomRadio"
         label="Check this custom radio"
+        checked
       />
       <CustomInput type="radio" id="exampleCustomRadio2" label="Or this one" />
       <CustomInput
@@ -43,6 +44,7 @@ export const RadioDefault = () => (
           id="exampleCustomInline"
           label="An inline custom input"
           inline
+          checked
         />
         <CustomInput
           type="radio"

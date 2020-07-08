@@ -25,7 +25,7 @@ function Components() {
         covers implementations of most all FPAC components, a few others
         provided by Reactstrap, as well as some custom complex components.
       </p>
-      <p>View out Kitchen Sink for a quick overview of core components.</p>
+      <p>View our Kitchen Sink for a quick overview of core components.</p>
       <p>
         View our Storybook for a complete list of components with tools to view
         the code and test at multiple responsive breakpoints.
