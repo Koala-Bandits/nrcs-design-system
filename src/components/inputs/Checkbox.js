@@ -19,10 +19,10 @@ export const Checkbox = ({
 
   // const checkRef = useRef();
 
+  // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     // if (!checkRef.current) return;
 
-    // Similar to componentDidMount and componentDidUpdate:
     // Add indeterminate psuedo class
     if (indeterminate) {
       // hack for now

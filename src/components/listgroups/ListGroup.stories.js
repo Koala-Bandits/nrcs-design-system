@@ -1,15 +1,17 @@
 import React from "react";
 import { ListGroup, ListGroupItem } from "reactstrap";
-import { ContentHeaderH1 } from "components/text/ContentHeader";
+import {
+  ContentHeaderH1,
+  ContentHeaderH2
+} from "components/text/ContentHeader";
 
 export default {
   title: "Components|List Groups"
-  // component: PrimaryButton
 };
 
 export const ListGroupStory = () => (
   <div className="mb-4">
-    <ContentHeaderH1>List Group - Default (Card Style)</ContentHeaderH1>
+    <ContentHeaderH1>List Groups</ContentHeaderH1>
 
     <p>Used by itself as a card in layout for list or selection.</p>
 
@@ -23,7 +25,7 @@ export const ListGroupStory = () => (
       <ListGroupItem>Vestibulum at eros</ListGroupItem>
     </ListGroup>
 
-    <ContentHeaderH1>Flush</ContentHeaderH1>
+    <ContentHeaderH2>Flush</ContentHeaderH2>
 
     <p>
       A "flush" ListGroup could be used in a sidebar (left) for secondary app
@@ -40,7 +42,7 @@ export const ListGroupStory = () => (
       <ListGroupItem>Vestibulum at eros</ListGroupItem>
     </ListGroup>
 
-    <ContentHeaderH1>Borderless</ContentHeaderH1>
+    <ContentHeaderH2>Borderless</ContentHeaderH2>
 
     <p>
       Often used as a sidebar (right) for in-page sub-navigation via Scrollspy.
@@ -56,7 +58,9 @@ export const ListGroupStory = () => (
       <ListGroupItem>Vestibulum at eros</ListGroupItem>
     </ListGroup>
 
-    <ContentHeaderH1>Kitchen Sink</ContentHeaderH1>
+    <ContentHeaderH2>Kitchen Sink</ContentHeaderH2>
+
+    <p>Various things you can do with ListGroupItems</p>
 
     <ListGroup style={{ maxWidth: 500 }}>
       <ListGroupItem>Basic item</ListGroupItem>
@@ -81,7 +85,7 @@ export const ListGroupStory = () => (
       <ListGroupItem>Yet another basic item</ListGroupItem>
     </ListGroup>
 
-    <ContentHeaderH1>Flush with Links</ContentHeaderH1>
+    <ContentHeaderH2>Flush with Links</ContentHeaderH2>
 
     <p>
       Be sure to{" "}
@@ -109,7 +113,7 @@ export const ListGroupStory = () => (
       </ListGroupItem>
     </ListGroup>
 
-    <ContentHeaderH1>Borderless with Links</ContentHeaderH1>
+    <ContentHeaderH2>Borderless with Links</ContentHeaderH2>
 
     <p>
       Default use of in-page sidebar (right) navigation using Scrollspy. Similar
@@ -134,7 +138,10 @@ export const ListGroupStory = () => (
       </ListGroupItem>
     </ListGroup>
 
-    <ContentHeaderH1>Default with Buttons</ContentHeaderH1>
+    <ContentHeaderH2>Card Style with Buttons</ContentHeaderH2>
+
+    <p>This could be used to build an accordion or other nav component.</p>
+
     <ListGroup style={{ maxWidth: 500 }}>
       <ListGroupItem tag="button" action>
         Cras justo odio
