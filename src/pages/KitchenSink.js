@@ -46,6 +46,7 @@ import {
 } from "components/text/ContentHeader.stories.js";
 import { DatePickerDefault } from "components/inputs/DatePicker.stories";
 import { DropdownDefault } from "components/dropdowns/Dropdown.stories.js";
+import { ExpansionsDefaultStory } from "components/expansions/Expansion.stories.js";
 import { FileBrowserDefault } from "components/inputs/FileBrowser.stories.js";
 import { GrowlsStory } from "components/feedback/growls/Growl.stories.js";
 import {
@@ -247,8 +248,7 @@ function KitchenSink() {
               <DropdownDefault />
             </TabPane>
             <TabPane tabId="Expansions">
-              <ContentHeaderH1>Expansions</ContentHeaderH1>
-              Coming soon...
+              <ExpansionsDefaultStory />
             </TabPane>
             <TabPane tabId="FileBrowser">
               <FileBrowserDefault />

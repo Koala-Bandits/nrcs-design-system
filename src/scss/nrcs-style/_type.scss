@@ -58,7 +58,8 @@ h6,
 //
 
 // for form inputs and in general
-label {
+label,
+.label {
   font-weight: $font-weight-bold;
   color: $gray-700; // same as table headers
   // margin-bottom: 0;

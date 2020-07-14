@@ -8,4 +8,10 @@
 
 .card-header {
   background-color: $table-head-bg;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card-body {
+  padding: 1rem;
 }
