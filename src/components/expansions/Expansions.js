@@ -13,6 +13,7 @@ export const Expansion = ({ label, children, ...rest }) => {
         <Col xs="auto" className="pr-0">
           <FlatButton
             iconOnly={isOpen ? mdiChevronDown : mdiChevronRight}
+            aria-expanded={isOpen ? "true" : "false"}
             onClick={toggle}
           />
         </Col>
@@ -38,6 +39,7 @@ export const ExpansionCard = ({ label, children, ...rest }) => {
           <Col xs="auto" className="pr-0">
             <FlatButton
               iconOnly={isOpen ? mdiChevronDown : mdiChevronRight}
+              aria-expanded={isOpen ? "true" : "false"}
               onClick={toggle}
             />
           </Col>

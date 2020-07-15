@@ -6,3 +6,10 @@
 .dropdown-item:active {
   font-weight: $font-weight-bold;
 }
+
+.dropup,
+.dropright,
+.dropdown,
+.dropleft {
+  display: inline-block;
+}
