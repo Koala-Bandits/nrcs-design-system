@@ -39,7 +39,7 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
 
   const onSort = property => () => {
     let direction;
-    if (!sort || property !== sort.property) direction = "asc";
+    if (!sort || property !== sort.property) direction = "desc";
     else if (sort.direction === "asc") direction = "desc";
     else direction = "asc";
     const nextSort = { property, direction };
@@ -117,8 +117,8 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
     </tr>
   );
 
-  if (data.length > 0) {
-    rows = data.map((row, index) => {
+  if (adjustedData.length > 0) {
+    rows = adjustedData.map((row, index) => {
       let cells = columns.map((col, index) => (
         <td key={col.property}>{row[col.property]}</td>
       ));
