@@ -8,8 +8,11 @@ export default {
 
 export const DataTableDefault = () => {
   // Columns: array of objects
+  // primary = unique identifier for accessiblitly, if none, uses first column
+  // header = what's displayed
+  // align = left (default), right, or center
   let columns = [
-    { property: "id", header: "Id", visible: true, sort: true },
+    { property: "id", header: "Id", visible: true, sort: true, primary: true },
     { property: "name", header: "Name", visible: true, sort: true },
     { property: "power", header: "Super Power", visible: true, sort: true },
     { property: "notes", header: "Notes", visible: true, sort: true },
@@ -17,7 +20,7 @@ export const DataTableDefault = () => {
       property: "timestamp",
       header: "Last Updated",
       visible: true,
-      sort: false
+      sort: true
     },
     { property: "actions", header: "Actions", visible: true, sort: false }
   ];
@@ -97,9 +100,12 @@ export const DataTableDefault = () => {
     }
   ];
 
+  let noData = [];
+
   return (
     <div>
       <ContentHeaderH1>DataTable - Default</ContentHeaderH1>
+
       <p className="lead">
         A DataTable that provides paging, sorting, single or mutliple selection,
         actions bar.
@@ -107,6 +113,10 @@ export const DataTableDefault = () => {
       <p className="text-danger">Under construction...</p>
 
       <DataTable columns={columns} data={data} />
+
+      <h3 className="mt-4">No Data</h3>
+
+      <DataTable columns={columns} data={noData} />
     </div>
   );
 };

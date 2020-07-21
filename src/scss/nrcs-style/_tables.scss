@@ -4,6 +4,7 @@
 
 .table thead th {
   border-bottom: $border-width solid $table-border-color;
+  vertical-align: middle; // bs default is bottom
 }
 
 .table {
@@ -26,4 +27,16 @@
 
 .table-active {
   font-weight: $font-weight-bold;
+}
+
+// DateTable
+.datatable .btn {
+  padding: 0.375rem; // hmm
+}
+.th-sort .btn-link {
+  font-weight: $font-weight-bold;
+  color: $gray-700; // same as table headers
+}
+.th-sort .btn-link:hover {
+  color: $primary-dark;
 }
