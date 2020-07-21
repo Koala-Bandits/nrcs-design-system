@@ -5,9 +5,11 @@ import {
   Col,
   Pagination,
   PaginationItem,
-  PaginationLink
+  PaginationLink,
+  Input
 } from "reactstrap";
 import { FlatButton } from "components/buttons/Buttons";
+// import { Search } from "components/inputs/Search";
 import Icon from "@mdi/react";
 import {
   mdiChevronUp,
@@ -17,6 +19,7 @@ import {
   mdiFileExport,
   mdiViewColumn
 } from "@mdi/js";
+import FileBrowserStories from "components/inputs/FileBrowser.stories";
 
 export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
   //// props
@@ -35,7 +38,15 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
 
   // which column we are sorting on, with direction
   // { property: "string", direction: "asc/desc" }
-  const [sort, setSort] = useState({});
+  const [sort, setSort] = useState("");
+
+  // filterstring
+  const [filterString, setFilterString] = useState();
+
+  const onFilter = event => {
+    setFilterString(event.target.value.toLowerCase());
+    console.log("filter string: " + filterString);
+  };
 
   const onSort = property => () => {
     let direction;
@@ -47,11 +58,41 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
     console.log("sorting: " + property + " direction:" + direction);
   };
 
-  const filterAndSortData = (data, sort) => {
-    let result = data;
+  // get an array of column properties for filterable columns
+  // TO DO this probably needs to be a state var as we hide/show columns to update filterable columns
+  let filters = [];
+  columns.forEach(column => {
+    if (column.filter) {
+      filters.push(column.property);
+      // filters[column.property] = '';
+    }
+  });
 
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Escaping
+  const escapeRegExp = input => input.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+  const filterAndSortData = (data, filterString, sort) => {
+    let result = data;
+    console.log("filter and sort...");
     // filter first
-    // TO DO
+    if (filterString && filterString.length > 0) {
+      result = data.filter(rowdata => {
+        let match = false;
+        filters.forEach(filter => {
+          // console.log(
+          //   "filtering: " +
+          //     rowdata[filter].toLowerCase() +
+          //     " searching for: " +
+          //     filterString +
+          //     " included: " +
+          //     rowdata[filter].toLowerCase().includes(filterString)
+          // );
+          if (rowdata[filter].toLowerCase().includes(filterString))
+            match = true;
+        });
+        return match;
+      });
+    }
 
     // sort second
     if (sort) {
@@ -100,10 +141,10 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
 
   // TABLE ROWS via adjustedData
   // This causes updates to adjustedData via useMeme() which triggers based on changes to its dependencies (sort, filter, & page state changes)
-  const adjustedData = useMemo(() => filterAndSortData(data, sort), [
-    data,
-    sort
-  ]);
+  const adjustedData = useMemo(
+    () => filterAndSortData(data, filterString, sort),
+    [data, filterString, sort]
+  );
 
   let rows = (
     <tr>
@@ -133,6 +174,12 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
           <FlatButton iconLeft={mdiFileExport}>Export</FlatButton>
         </Col>
         <Col xs="12" sm="6" className="d-flex justify-content-end">
+          <Input
+            type="text"
+            name="filtertext"
+            placeholder="Filter..."
+            onChange={onFilter}
+          />
           <FlatButton iconOnly={mdiViewColumn}></FlatButton>
         </Col>
       </Row>

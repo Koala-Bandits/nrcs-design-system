@@ -12,17 +12,49 @@ export const DataTableDefault = () => {
   // header = what's displayed
   // align = left (default), right, or center
   let columns = [
-    { property: "id", header: "Id", visible: true, sort: true, primary: true },
-    { property: "name", header: "Name", visible: true, sort: true },
-    { property: "power", header: "Super Power", visible: true, sort: true },
-    { property: "notes", header: "Notes", visible: true, sort: true },
+    {
+      primary: true,
+      property: "id",
+      header: "Id",
+      visible: true,
+      sort: true,
+      filter: true
+    },
+    {
+      property: "name",
+      header: "Name",
+      visible: true,
+      sort: true,
+      filter: true
+    },
+    {
+      property: "power",
+      header: "Super Power",
+      visible: true,
+      sort: true,
+      filter: true
+    },
+    {
+      property: "notes",
+      header: "Notes",
+      visible: true,
+      sort: true,
+      filter: true
+    },
     {
       property: "timestamp",
       header: "Last Updated",
       visible: true,
-      sort: true
+      sort: true,
+      filter: true
     },
-    { property: "actions", header: "Actions", visible: true, sort: false }
+    {
+      property: "actions",
+      header: "Actions",
+      visible: true,
+      sort: false,
+      filter: false
+    }
   ];
 
   let data = [
@@ -55,14 +87,6 @@ export const DataTableDefault = () => {
       name: "Danger Man",
       power: "Does daring deeds every day",
       notes: "He's dramatic, doesn't have a dog, but duels with dragons!",
-      timestamp: "12/20/1922",
-      actions: "..."
-    },
-    {
-      id: "C",
-      name: "Captain Cloud",
-      power: "Calmly catches crookes",
-      notes: "He has a cape he's so cool.",
       timestamp: "12/20/1922",
       actions: "..."
     },
