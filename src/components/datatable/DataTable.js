@@ -34,7 +34,7 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
   // search filter example?
 
   // which column we are sorting on, with direction
-  //{property: "string", direction: "asc/desc" }
+  // { property: "string", direction: "asc/desc" }
   const [sort, setSort] = useState({});
 
   const onSort = property => () => {
@@ -51,6 +51,7 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
     let result = data;
 
     // filter first
+    // TO DO
 
     // sort second
     if (sort) {
@@ -68,21 +69,26 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
     return result;
   };
 
-  // row-actions = {} ?
-
-  // TABLE HEADER via COLUMNS
-  let cols = columns.map((col, index) => {
+  // TABLE HEADERS via COLUMNS
+  let cols = columns.map(col => {
     let cmp = <th key={col.property}>{col.header}</th>;
+    let classes = "th-sort p-0";
     if (col.sort) {
       let icon = mdiChevronDown;
       if (
         sort.direction &&
-        sort.direction === "asc" &&
+        sort.direction === "desc" &&
         sort.property === col.property
-      )
+      ) {
         icon = mdiChevronUp;
+      }
+
+      if (col.sort && sort.property === col.property) {
+        classes += " th-sort-active";
+      }
+
       cmp = (
-        <th className="th-sort p-0" key={col.property}>
+        <th className={classes} key={col.property}>
           <FlatButton iconRight={icon} onClick={onSort(col.property)}>
             {col.header}
           </FlatButton>
@@ -91,19 +97,9 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
     }
     return cmp;
   });
-  // for (let [index, col] of columns.entries()) {
-  // if selection
-  // if (!col.hasOwnProperty(visible) || col.visible) {
-  //   if (col.sort) {
-  //     cols.push(<th key={index}>{value} SORT</th>);
-  //   } else {
-  //     cols.push(<th key={index}>{value}</th>);
-  //   }
-  // }
-  // cols.push(<th key={index}>{col.header}</th>);
-  // }
 
   // TABLE ROWS via adjustedData
+  // This causes updates to adjustedData via useMeme() which triggers based on changes to its dependencies (sort, filter, & page state changes)
   const adjustedData = useMemo(() => filterAndSortData(data, sort), [
     data,
     sort
@@ -119,7 +115,7 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
 
   if (adjustedData.length > 0) {
     rows = adjustedData.map((row, index) => {
-      let cells = columns.map((col, index) => (
+      let cells = columns.map(col => (
         <td key={col.property}>{row[col.property]}</td>
       ));
 

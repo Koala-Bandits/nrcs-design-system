@@ -37,6 +37,7 @@
   font-weight: $font-weight-bold;
   color: $gray-700; // same as table headers
 }
-.th-sort .btn-link:hover {
+.th-sort .btn-link:hover,
+.th-sort-active .btn-link {
   color: $primary-dark;
 }
