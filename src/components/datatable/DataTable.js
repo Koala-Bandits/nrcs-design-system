@@ -21,7 +21,13 @@ import {
 } from "@mdi/js";
 import FileBrowserStories from "components/inputs/FileBrowser.stories";
 
-export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
+export const DataTable = ({
+  columns = [],
+  data = [],
+  size,
+  children,
+  ...rest
+}) => {
   //// props
   // data []
   // columns []
@@ -79,14 +85,6 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
       result = data.filter(rowdata => {
         let match = false;
         filters.forEach(filter => {
-          // console.log(
-          //   "filtering: " +
-          //     rowdata[filter].toLowerCase() +
-          //     " searching for: " +
-          //     filterString +
-          //     " included: " +
-          //     rowdata[filter].toLowerCase().includes(filterString)
-          // );
           if (rowdata[filter].toLowerCase().includes(filterString))
             match = true;
         });
@@ -112,9 +110,23 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
 
   // TABLE HEADERS via COLUMNS
   let cols = columns.map(col => {
-    let cmp = <th key={col.property}>{col.header}</th>;
-    let classes = "th-sort p-0";
+    let classes = "";
+
+    // header alignment
+    if (col.align && col.align === "center") {
+      classes += "text-center";
+    } else if (col.align && col.align === "right") {
+      classes += "text-right";
+    }
+
+    let cmp = (
+      <th className={classes} key={col.property}>
+        {col.header}
+      </th>
+    );
+
     if (col.sort) {
+      classes += " th-sort p-0";
       let icon = mdiChevronDown;
       if (
         sort.direction &&
@@ -156,9 +168,22 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
 
   if (adjustedData.length > 0) {
     rows = adjustedData.map((row, index) => {
-      let cells = columns.map(col => (
-        <td key={col.property}>{row[col.property]}</td>
-      ));
+      let cells = columns.map(col => {
+        let classes = "";
+
+        // alignment
+        if (col.align && col.align === "center") {
+          classes += "text-center";
+        } else if (col.align && col.align === "right") {
+          classes += "text-right";
+        }
+
+        return (
+          <td className={classes} key={col.property}>
+            {row[col.property]}
+          </td>
+        );
+      });
 
       return <tr key={index}>{cells}</tr>;
     });
@@ -183,7 +208,7 @@ export const DataTable = ({ columns = [], data = [], children, ...rest }) => {
           <FlatButton iconOnly={mdiViewColumn}></FlatButton>
         </Col>
       </Row>
-      <Table className="mb-0">
+      <Table className="mb-0" size={size && size === "sm" ? "sm" : ""}>
         <thead className="thead-light">
           <tr>{cols}</tr>
         </thead>

@@ -1,48 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { DataTable } from "./DataTable";
-import { FlatButton } from "components/buttons/Buttons";
-import Icon from "@mdi/react";
-import {
-  mdiChevronUp,
-  mdiChevronDown,
-  mdiPlusBox,
-  mdiTrashCan,
-  mdiCloseCircle,
-  mdiFileExport,
-  mdiViewColumn
-} from "@mdi/js";
 
 export default {
   title: "Components|DataTable"
 };
 
-export const DataTableDefault = () => {
-  // required to have a primaryProperty for accessibility
-  // tells which column to use for row actions and for accessibility aria labeling
-  const primaryProperty = "id";
-
-  // action functions
-  const onRemove = id => {
-    // remove row with primary property (id in this case)
-    // data.filter()? etc.
-    console.log("deleting " + id);
-
-    let result = data.filter(rowdata => rowdata[primaryProperty] !== id);
-
-    // update grid rows
-    setData(result);
-  };
-
-  const actions = id => (
-    <FlatButton
-      iconOnly={mdiCloseCircle}
-      onClick={() => {
-        onRemove(id);
-      }}
-    />
-  );
-
+export const DataTableSmall = () => {
   // Columns: array of objects
   // primary = unique identifier for accessiblitly, if none, uses first column
   // header = what's displayed
@@ -54,8 +18,7 @@ export const DataTableDefault = () => {
       header: "Id",
       visible: true,
       sort: true,
-      filter: true,
-      align: "center"
+      filter: true
     },
     {
       property: "name",
@@ -90,19 +53,18 @@ export const DataTableDefault = () => {
       header: "Actions",
       visible: true,
       sort: false,
-      filter: false,
-      align: "center"
+      filter: false
     }
   ];
 
-  let initData = [
+  let data = [
     {
       id: "A",
       name: "Astro-Man",
       power: "Is always alert for an alien attack",
       notes: "He has asthma!",
       timestamp: "12/20/1922",
-      actions: actions("A")
+      actions: "..."
     },
     {
       id: "B",
@@ -110,7 +72,7 @@ export const DataTableDefault = () => {
       power: "Blows big bubbles at bullies",
       notes: "He's a bad boy, is bald, and wears boots.",
       timestamp: "4/14/1937",
-      actions: actions("B")
+      actions: "..."
     },
     {
       id: "C",
@@ -118,7 +80,7 @@ export const DataTableDefault = () => {
       power: "Calmly catches crookes",
       notes: "He has a cape he's so cool.",
       timestamp: "12/20/1922",
-      actions: actions("C")
+      actions: "..."
     },
     {
       id: "D",
@@ -126,7 +88,7 @@ export const DataTableDefault = () => {
       power: "Does daring deeds every day",
       notes: "He's dramatic, doesn't have a dog, but duels with dragons!",
       timestamp: "12/20/1922",
-      actions: actions("D")
+      actions: "..."
     },
     {
       id: "E",
@@ -134,7 +96,7 @@ export const DataTableDefault = () => {
       power: "Easily eyes evildoers everwhere",
       notes: "He's exciting and other birds envy him.",
       timestamp: "12/20/1922",
-      actions: actions("E")
+      actions: "..."
     },
     {
       id: "F",
@@ -142,7 +104,7 @@ export const DataTableDefault = () => {
       power: "Fights felons in the forest",
       notes: "She doesn't need a flashlight, flies fast, and has fat feet.",
       timestamp: "12/20/1922",
-      actions: actions("F")
+      actions: "..."
     },
     {
       id: "G",
@@ -150,7 +112,7 @@ export const DataTableDefault = () => {
       power: "Shoots great gobs of goo",
       notes: "She wears goggles and gloves. She grins and giggles with glee.",
       timestamp: "12/20/1922",
-      actions: actions("G")
+      actions: "..."
     },
     {
       id: "H",
@@ -158,37 +120,25 @@ export const DataTableDefault = () => {
       power: "Is happy to help heros and never harms humans",
       notes: "He's not exactly handsome... even his hands are hairy!",
       timestamp: "12/20/1922",
-      actions: actions("H")
+      actions: "..."
     }
   ];
-
-  const [data, setData] = useState(initData);
 
   let noData = [];
 
   return (
     <div>
-      <ContentHeaderH1>DataTable - Default</ContentHeaderH1>
+      <h3 className="mt-4">Small</h3>
 
-      <p className="lead">
-        A DataTable that provides paging, sorting, single or mutliple selection,
-        actions bar.
-      </p>
-      <p className="text-danger">Under construction...</p>
-
-      <DataTable columns={columns} data={data} />
+      <DataTable columns={columns} data={data} size="sm" />
 
       <h3 className="mt-4">No Data</h3>
-
-      <DataTable columns={columns} data={noData} />
-
-      <h3 className="mt-4">Small</h3>
 
       <DataTable columns={columns} data={noData} size="sm" />
     </div>
   );
 };
 
-DataTableDefault.story = {
-  name: "DataTable - Default"
+DataTableSmall.story = {
+  name: "DataTable - Small"
 };
