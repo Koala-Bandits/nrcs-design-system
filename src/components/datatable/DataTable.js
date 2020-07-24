@@ -1,47 +1,29 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Table } from "reactstrap";
 import {
   Row,
   Col,
+  Label,
   Pagination,
   PaginationItem,
   PaginationLink,
   Input
 } from "reactstrap";
 import { FlatButton } from "components/buttons/Buttons";
-// import { Search } from "components/inputs/Search";
-import Icon from "@mdi/react";
-import {
-  mdiChevronUp,
-  mdiChevronDown,
-  mdiPlusBox,
-  mdiTrashCan,
-  mdiFileExport,
-  mdiViewColumn
-} from "@mdi/js";
-import FileBrowserStories from "components/inputs/FileBrowser.stories";
+import { mdiChevronUp, mdiChevronDown, mdiViewColumn } from "@mdi/js";
 
 export const DataTable = ({
+  actions,
+  caption = "",
   columns = [],
+  columnPicker,
   data = [],
+  paging,
   size,
+  summary = "",
   children,
   ...rest
 }) => {
-  //// props
-  // data []
-  // columns []
-  // -- sort (per column)?
-
-  // buttons [] ?
-  // selection = single/multiple
-  // page-size = 25 or ...
-  // column-picker
-  // caption
-
-  // actions-menu example?
-  // search filter example?
-
   // which column we are sorting on, with direction
   // { property: "string", direction: "asc/desc" }
   const [sort, setSort] = useState("");
@@ -190,63 +172,97 @@ export const DataTable = ({
   }
 
   return (
-    <div className="datatable">
+    <div className="datatable mb-2">
+      {filters.length > 0 ? (
+        <Row className="mb-4">
+          <Col xs="12" sm="6" md="4">
+            <Label>Filter</Label>
+            <Input
+              type="text"
+              name="filtertext"
+              placeholder="Start typing..."
+              onChange={onFilter}
+            />
+          </Col>
+        </Row>
+      ) : (
+        ""
+      )}
       <Row className="mb-1 align-items-center">
         <Col xs="12" sm="6">
-          <label className="mt-1 mr-1">Caption</label>
-          <FlatButton iconLeft={mdiPlusBox}>Add New</FlatButton>
-          <FlatButton iconLeft={mdiTrashCan}>Delete</FlatButton>
-          <FlatButton iconLeft={mdiFileExport}>Export</FlatButton>
+          <caption className="caption mr-1">{caption}</caption>
+          {actions}
         </Col>
-        <Col xs="12" sm="6" className="d-flex justify-content-end">
-          <Input
-            type="text"
-            name="filtertext"
-            placeholder="Filter..."
-            onChange={onFilter}
-          />
-          <FlatButton iconOnly={mdiViewColumn}></FlatButton>
-        </Col>
+        {/* {filters.length > 0 ? (
+          <Col xs="12" sm="6">
+            <Form inline>
+              <Label>Filter</Label>
+              <Input
+                type="text"
+                name="filtertext"
+                placeholder="Start typing..."
+                onChange={onFilter}
+              />
+            </Form>
+          </Col>
+        ) : (
+          ""
+        )} */}
+        {columnPicker ? (
+          <Col xs="12" sm="6" className="d-flex justify-content-end">
+            <FlatButton iconOnly={mdiViewColumn}></FlatButton>
+          </Col>
+        ) : (
+          ""
+        )}
       </Row>
-      <Table className="mb-0" size={size && size === "sm" ? "sm" : ""}>
+      <Table
+        className="mb-0"
+        size={size && size === "sm" ? "sm" : ""}
+        summary={summary}
+      >
         <thead className="thead-light">
           <tr>{cols}</tr>
         </thead>
         <tbody>{rows}</tbody>
       </Table>
-      <Row className="mt-1 align-items-center">
-        <Col xs="12" sm="6">
-          <span className="mt-1 mr-1">1-25 of 111</span>
-        </Col>
-        <Col xs="12" sm="6" className="d-flex justify-content-end">
-          <Pagination
-            className="datatable"
-            aria-label="Page navigation example"
-          >
-            <PaginationItem>
-              <PaginationLink first href="#" />
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink previous href="#" />
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">1</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">2</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">3</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink next href="#" />
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink last href="#" />
-            </PaginationItem>
-          </Pagination>
-        </Col>
-      </Row>
+      {paging ? (
+        <Row className="mt-1 align-items-center">
+          <Col xs="12" sm="6">
+            <span className="mt-1 mr-1">1-25 of 111</span>
+          </Col>
+          <Col xs="12" sm="6" className="d-flex justify-content-end">
+            <Pagination
+              className="datatable"
+              aria-label="Page navigation example"
+            >
+              <PaginationItem>
+                <PaginationLink first href="#" />
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink previous href="#" />
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href="#">1</PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href="#">2</PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href="#">3</PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink next href="#" />
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink last href="#" />
+              </PaginationItem>
+            </Pagination>
+          </Col>
+        </Row>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

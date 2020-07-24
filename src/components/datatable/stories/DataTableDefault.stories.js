@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
-import { DataTable } from "./DataTable";
+import { DataTable } from "../DataTable";
 import { FlatButton } from "components/buttons/Buttons";
-import Icon from "@mdi/react";
 import {
-  mdiChevronUp,
-  mdiChevronDown,
   mdiPlusBox,
+  mdiRefresh,
   mdiTrashCan,
   mdiCloseCircle,
-  mdiFileExport,
-  mdiViewColumn
+  mdiFileExport
 } from "@mdi/js";
 
 export default {
@@ -34,7 +31,15 @@ export const DataTableDefault = () => {
     setData(result);
   };
 
-  const actions = id => (
+  const actions = (
+    <div className="d-inline">
+      <FlatButton iconLeft={mdiRefresh}>Refresh</FlatButton>
+      <FlatButton iconLeft={mdiPlusBox}>Add New</FlatButton>
+      <FlatButton iconLeft={mdiFileExport}>Export</FlatButton>
+    </div>
+  );
+
+  const rowactions = id => (
     <FlatButton
       iconOnly={mdiCloseCircle}
       onClick={() => {
@@ -102,7 +107,7 @@ export const DataTableDefault = () => {
       power: "Is always alert for an alien attack",
       notes: "He has asthma!",
       timestamp: "12/20/1922",
-      actions: actions("A")
+      actions: rowactions("A")
     },
     {
       id: "B",
@@ -110,7 +115,7 @@ export const DataTableDefault = () => {
       power: "Blows big bubbles at bullies",
       notes: "He's a bad boy, is bald, and wears boots.",
       timestamp: "4/14/1937",
-      actions: actions("B")
+      actions: rowactions("B")
     },
     {
       id: "C",
@@ -118,7 +123,7 @@ export const DataTableDefault = () => {
       power: "Calmly catches crookes",
       notes: "He has a cape he's so cool.",
       timestamp: "12/20/1922",
-      actions: actions("C")
+      actions: rowactions("C")
     },
     {
       id: "D",
@@ -126,7 +131,7 @@ export const DataTableDefault = () => {
       power: "Does daring deeds every day",
       notes: "He's dramatic, doesn't have a dog, but duels with dragons!",
       timestamp: "12/20/1922",
-      actions: actions("D")
+      actions: rowactions("D")
     },
     {
       id: "E",
@@ -134,7 +139,7 @@ export const DataTableDefault = () => {
       power: "Easily eyes evildoers everwhere",
       notes: "He's exciting and other birds envy him.",
       timestamp: "12/20/1922",
-      actions: actions("E")
+      actions: rowactions("E")
     },
     {
       id: "F",
@@ -142,7 +147,7 @@ export const DataTableDefault = () => {
       power: "Fights felons in the forest",
       notes: "She doesn't need a flashlight, flies fast, and has fat feet.",
       timestamp: "12/20/1922",
-      actions: actions("F")
+      actions: rowactions("F")
     },
     {
       id: "G",
@@ -150,7 +155,7 @@ export const DataTableDefault = () => {
       power: "Shoots great gobs of goo",
       notes: "She wears goggles and gloves. She grins and giggles with glee.",
       timestamp: "12/20/1922",
-      actions: actions("G")
+      actions: rowactions("G")
     },
     {
       id: "H",
@@ -158,7 +163,7 @@ export const DataTableDefault = () => {
       power: "Is happy to help heros and never harms humans",
       notes: "He's not exactly handsome... even his hands are hairy!",
       timestamp: "12/20/1922",
-      actions: actions("H")
+      actions: rowactions("H")
     }
   ];
 
@@ -171,20 +176,25 @@ export const DataTableDefault = () => {
       <ContentHeaderH1>DataTable - Default</ContentHeaderH1>
 
       <p className="lead">
-        A DataTable that provides paging, sorting, single or mutliple selection,
-        actions bar.
+        A DataTable that provides accessible sorting, filtering, paging, with
+        single or mutliple selection. actions bar.
       </p>
+      <p>Configurable without being overally complex.</p>
+
       <p className="text-danger">Under construction...</p>
 
-      <DataTable columns={columns} data={data} />
+      <DataTable
+        actions={actions}
+        caption="Super Heros"
+        summary="A list of the most awesome super heros."
+        columns={columns}
+        data={data}
+        paging
+      />
 
       <h3 className="mt-4">No Data</h3>
 
-      <DataTable columns={columns} data={noData} />
-
-      <h3 className="mt-4">Small</h3>
-
-      <DataTable columns={columns} data={noData} size="sm" />
+      <DataTable caption="Super Heros" columns={columns} data={noData} />
     </div>
   );
 };

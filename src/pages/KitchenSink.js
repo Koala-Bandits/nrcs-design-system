@@ -44,6 +44,9 @@ import {
   ContentHeaderDefault,
   ContentHeaderIcons
 } from "components/text/ContentHeader.stories.js";
+import { DataTableDefault } from "components/datatable/stories/DataTableDefault.stories";
+import { DataTableBasic } from "components/datatable/stories/DataTableBasic.stories";
+import { DataTableSmall } from "components/datatable/stories/DataTableSmall.stories";
 import { DatePickerDefault } from "components/inputs/DatePicker.stories";
 import { DropdownDefault } from "components/dropdowns/Dropdown.stories.js";
 import { ExpansionsDefaultStory } from "components/expansions/Expansion.stories.js";
@@ -238,8 +241,9 @@ function KitchenSink() {
               <ContentHeaderIcons />
             </TabPane>
             <TabPane tabId="DataTable">
-              <ContentHeaderH1>Data Table</ContentHeaderH1>
-              Coming soon...
+              <DataTableDefault />
+              <DataTableBasic />
+              <DataTableSmall />
             </TabPane>
             <TabPane tabId="DatePicker">
               <DatePickerDefault />
