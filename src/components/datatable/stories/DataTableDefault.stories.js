@@ -179,9 +179,37 @@ export const DataTableDefault = () => {
         A DataTable that provides accessible sorting, filtering, paging, with
         single or mutliple selection. actions bar.
       </p>
+
       <p>Configurable without being overally complex.</p>
 
-      <p className="text-danger">Under construction...</p>
+      <h3>Props</h3>
+      <p>To Do</p>
+
+      <h3>Column Alignment</h3>
+      <ul>
+        <li>
+          <strong>left-align</strong> is the default, and is used for most
+          multi-word, sentence, or column with varying content. Also used for
+          single-word/phrase/elements (badges, labels) and can be used for
+          numbers (like time or date). In general is the safest for readability.
+          Numbers, used as an identifier in left most 1st column should be left
+          aligned. Columns with editable inputs are usually left aligned as
+          well.
+        </li>
+        <li>
+          <strong>right-align</strong> for numbers in general or currency to aid
+          in visual alignment and comparison/scanability.
+        </li>
+        <li>
+          <strong>center-align</strong> usually only for element items like an
+          action button/menu, selection checkbox, radio.
+        </li>
+        <li>In general, all text should be vertically aligned to the top.</li>
+        <li>
+          This can be subject to context and designers discretion for specific
+          use cases.
+        </li>
+      </ul>
 
       <DataTable
         actions={actions}
@@ -193,6 +221,12 @@ export const DataTableDefault = () => {
       />
 
       <h3 className="mt-4">No Data</h3>
+
+      <p>
+        It is preferrable to always show a DataTable even when empty. Hiding and
+        showing the table can be disruptive to the layout and can leave the
+        users confused if they are expecting or waiting for data to be shown.
+      </p>
 
       <DataTable caption="Super Heros" columns={columns} data={noData} />
     </div>
