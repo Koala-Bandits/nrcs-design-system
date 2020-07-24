@@ -20,7 +20,11 @@ export default {
 export const TablesDefault = () => (
   <div>
     <ContentHeaderH1>Tables</ContentHeaderH1>
-
+    <p className="lead">Baisc HTML Tables.</p>
+    <p>
+      Offering two styles and two sizes. If you need sorting, filtering or other
+      features, take a look at the DataTable component.
+    </p>
     <Table>
       <thead className="thead-light">
         <tr>
