@@ -1,14 +1,8 @@
-import React, { useState } from "react";
+import React, { useMemo, useEffect, useState } from "react";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { DataTable } from "../DataTable";
 import { FlatButton } from "components/buttons/Buttons";
-import {
-  mdiPlusBox,
-  mdiRefresh,
-  mdiTrashCan,
-  mdiCloseCircle,
-  mdiFileExport
-} from "@mdi/js";
+import { mdiPlusBox, mdiRefresh, mdiCloseCircle, mdiFileExport } from "@mdi/js";
 
 export default {
   title: "Components|DataTable"
@@ -24,12 +18,19 @@ export const DataTableDefault = () => {
     // remove row with primary property (id in this case)
     // data.filter()? etc.
     console.log("deleting " + id);
-
     let result = data.filter(rowdata => rowdata[primaryProperty] !== id);
+    data = result;
 
-    // update grid rows
-    setData(result);
+    // setData(data.filter(rowdata => rowdata[primaryProperty] !== id));
+    // let removed = data.splice(
+    //   data.findIndex(rowdata => rowdata[primaryProperty] === id),
+    //   1
+    // );
   };
+
+  // useEffect(() => {
+  //   setData(myData);
+  // });
 
   const actions = (
     <div className="d-inline">
@@ -100,7 +101,7 @@ export const DataTableDefault = () => {
     }
   ];
 
-  let initData = [
+  let data = [
     {
       id: "A",
       name: "Astro-Man",
@@ -167,7 +168,13 @@ export const DataTableDefault = () => {
     }
   ];
 
-  const [data, setData] = useState(initData);
+  // const [data, setData] = useState(initData);
+
+  const getData = () => {
+    return data;
+  };
+
+  const adjustedData = useMemo(() => getData(), [data]);
 
   let noData = [];
 
@@ -177,7 +184,7 @@ export const DataTableDefault = () => {
 
       <p className="lead">
         A DataTable that provides accessible sorting, filtering, paging, with
-        single or mutliple selection. actions bar.
+        single or mutliple selection.
       </p>
 
       <p>Configurable without being overally complex.</p>
@@ -202,11 +209,11 @@ export const DataTableDefault = () => {
         </li>
         <li>
           <strong>center-align</strong> usually only for element items like an
-          action button/menu, selection checkbox, radio.
+          action button/menu, selection checkbox or radio.
         </li>
         <li>In general, all text should be vertically aligned to the top.</li>
         <li>
-          This can be subject to context and designers discretion for specific
+          This can be subject to context and designer's discretion for specific
           use cases.
         </li>
       </ul>
@@ -216,7 +223,7 @@ export const DataTableDefault = () => {
         caption="Super Heros"
         summary="A list of the most awesome super heros."
         columns={columns}
-        data={data}
+        data={adjustedData}
         paging
       />
 

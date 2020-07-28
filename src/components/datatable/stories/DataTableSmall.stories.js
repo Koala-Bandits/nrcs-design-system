@@ -20,32 +20,35 @@ export const DataTableSmall = () => {
       property: "id",
       header: "Id",
       visible: true,
+      filter: true,
       sort: true,
-
       align: "center"
     },
     {
       property: "name",
       header: "Name",
       visible: true,
+      filter: true,
       sort: true
     },
     {
       property: "power",
       header: "Super Power",
       visible: true,
+      filter: true,
       sort: true
     },
     {
       property: "notes",
       header: "Notes",
       visible: true,
-      sort: true
+      filter: true
     },
     {
       property: "timestamp",
       header: "Last Updated",
       visible: true,
+      filter: true,
       sort: true
     }
   ];

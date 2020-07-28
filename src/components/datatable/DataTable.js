@@ -124,7 +124,11 @@ export const DataTable = ({
 
       cmp = (
         <th className={classes} key={col.property}>
-          <FlatButton iconRight={icon} onClick={onSort(col.property)}>
+          <FlatButton
+            iconRight={icon}
+            onClick={onSort(col.property)}
+            size={size}
+          >
             {col.header}
           </FlatButton>
         </th>
@@ -172,7 +176,11 @@ export const DataTable = ({
   }
 
   return (
-    <div className="datatable mb-2">
+    <div
+      className={
+        size && size === "sm" ? "datatable mb-2 text-sm" : "datatable mb-2"
+      }
+    >
       {filters.length > 0 ? (
         <Row className="mb-4">
           <Col xs="12" sm="6" md="4">
@@ -182,6 +190,7 @@ export const DataTable = ({
               name="filtertext"
               placeholder="Start typing..."
               onChange={onFilter}
+              size={size}
             />
           </Col>
         </Row>
