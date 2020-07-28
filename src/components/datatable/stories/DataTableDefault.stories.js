@@ -119,6 +119,8 @@ let initData = [
   }
 ];
 
+let noData = [];
+
 export const DataTableDefault = () => {
   // required to have a primaryProperty for accessibility
   // tells which column to use for row actions and for accessibility aria labeling
@@ -169,8 +171,6 @@ export const DataTableDefault = () => {
   };
 
   const [data, setData] = useState(initState());
-
-  let noData = [];
 
   return (
     <div>
