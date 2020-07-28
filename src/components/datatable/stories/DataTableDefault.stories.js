@@ -127,9 +127,6 @@ export const DataTableDefault = () => {
   // action functions
   const onRemove = id => {
     // remove row with primary property (id in this case)
-    // data.filter()? etc.
-    console.log("deleting " + id);
-
     let result = data.filter(rowdata => rowdata[primaryProperty] !== id);
 
     // update grid rows
@@ -138,7 +135,14 @@ export const DataTableDefault = () => {
 
   const actions = (
     <div className="d-inline">
-      <FlatButton iconLeft={mdiRefresh}>Refresh</FlatButton>
+      <FlatButton
+        iconLeft={mdiRefresh}
+        onClick={() => {
+          onReset();
+        }}
+      >
+        Refresh
+      </FlatButton>
       <FlatButton iconLeft={mdiPlusBox}>Add New</FlatButton>
       <FlatButton iconLeft={mdiFileExport}>Export</FlatButton>
     </div>
@@ -153,13 +157,18 @@ export const DataTableDefault = () => {
     />
   );
 
-  const [data, setData] = useState(
-    initData.map((row, index) => {
-      // debugger;
+  const initState = () => {
+    return initData.map((row, index) => {
       row["actions"] = rowactions(row.id); // todo primaryprop
       return row;
-    })
-  );
+    });
+  };
+
+  const onReset = () => {
+    setData(initState());
+  };
+
+  const [data, setData] = useState(initState());
 
   let noData = [];
 
