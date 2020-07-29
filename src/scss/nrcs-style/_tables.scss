@@ -28,23 +28,3 @@
 .table-active {
   font-weight: $font-weight-bold;
 }
-
-// DateTable
-.caption {
-  padding: 0;
-  font-weight: $font-weight-bold;
-  color: $gray-700; // same as table headers
-  display: inline-block;
-}
-
-.datatable .btn {
-  padding: 0.375rem; // hmm
-}
-.th-sort .btn-link {
-  font-weight: $font-weight-bold;
-  color: $gray-700; // same as table headers
-}
-.th-sort .btn-link:hover,
-.th-sort-active .btn-link {
-  color: $primary-dark;
-}

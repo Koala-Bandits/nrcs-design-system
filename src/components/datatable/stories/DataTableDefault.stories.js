@@ -160,8 +160,8 @@ export const DataTableDefault = () => {
   );
 
   const initState = () => {
-    return initData.map((row, index) => {
-      row["actions"] = rowactions(row.id); // todo primaryprop
+    return initData.map(row => {
+      row["actions"] = rowactions(row[primaryProperty]);
       return row;
     });
   };

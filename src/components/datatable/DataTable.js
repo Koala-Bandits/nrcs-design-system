@@ -112,7 +112,7 @@ export const DataTable = ({
       let icon = mdiChevronDown;
       if (
         sort.direction &&
-        sort.direction === "desc" &&
+        sort.direction === "asc" &&
         sort.property === col.property
       ) {
         icon = mdiChevronUp;
