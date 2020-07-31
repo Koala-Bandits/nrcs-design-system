@@ -8,7 +8,7 @@ export default {
 
 export const BadgesDefault = () => (
   <div>
-    <ContentHeaderH1>Badges - Default</ContentHeaderH1>
+    <ContentHeaderH1>Badges</ContentHeaderH1>
     <p className="lead">
       Badges are used as indicators of an update or action items that have yet
       to be completed.
@@ -18,7 +18,7 @@ export const BadgesDefault = () => (
       count, or id.
     </p>
 
-    <h3 className="mt-4">Badges - Default</h3>
+    <h3 className="mt-4">Default</h3>
 
     <Badge color="primary">Primary</Badge>
     <Badge color="secondary">Secondary</Badge>
@@ -33,7 +33,7 @@ export const BadgesDefault = () => (
       There are <Badge color="danger">6</Badge> errors.
     </p>
 
-    <h3 className="mt-4">Badges - Alternate Style</h3>
+    <h3 className="mt-4">Alternate Style</h3>
 
     <Badge alt color="primary">
       Primary

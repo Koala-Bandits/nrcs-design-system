@@ -1,7 +1,7 @@
 import React from "react";
 import { Badge as RsBadge } from "reactstrap";
 
-export const Label = ({ color, alt, children, ...rest }) => {
+export const BadgeLabel = ({ color, alt, children, ...rest }) => {
   let cmp;
   if (alt) {
     cmp = (
