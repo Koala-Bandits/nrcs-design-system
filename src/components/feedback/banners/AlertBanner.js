@@ -11,6 +11,7 @@ import {
 export const AlertBanner = ({
   color,
   noIcon,
+  size,
   dismissable,
   children,
   ...rest
@@ -41,16 +42,20 @@ export const AlertBanner = ({
   if (icon) {
     cmp = (
       <RsAlert
-        className="alert-banner"
+        className={size === "sm" ? "alert-banner alert-sm" : "alert-banner"}
         color={color}
         isOpen={visible}
         toggle={dismissable ? onDismiss : undefined}
         {...rest}
       >
-        <Container className="m-0">
+        <Container fluid className="m-0">
           <Row>
             <Col xs="auto" className="p-0 pr-2">
-              <Icon className="mdi" path={icon} />
+              <Icon
+                className="mdi"
+                size={size === "sm" ? 0.8 : 1}
+                path={icon}
+              />
             </Col>
             <Col className="p-0">{children}</Col>
           </Row>
@@ -59,7 +64,11 @@ export const AlertBanner = ({
     );
   } else {
     cmp = (
-      <RsAlert className="alert-banner" color={color} {...rest}>
+      <RsAlert
+        className={size === "sm" ? "alert-banner alert-sm" : "alert-banner"}
+        color={color}
+        {...rest}
+      >
         {children}
       </RsAlert>
     );

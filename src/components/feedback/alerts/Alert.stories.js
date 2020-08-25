@@ -44,6 +44,11 @@ export const AlertsDefault = () => (
       </a>
       . Give it a click if you like.
     </Alert>
+
+    <h3 className="mt-4">Small</h3>
+    <Alert color="info" size="sm">
+      This is a SMALL <strong>info</strong> alert.
+    </Alert>
   </div>
 );
 

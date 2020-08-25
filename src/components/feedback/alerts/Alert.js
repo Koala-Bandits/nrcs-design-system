@@ -8,7 +8,14 @@ import {
   mdiCheckCircle
 } from "@mdi/js";
 
-export const Alert = ({ color, noIcon, dismissable, children, ...rest }) => {
+export const Alert = ({
+  color,
+  noIcon,
+  size,
+  dismissable,
+  children,
+  ...rest
+}) => {
   let icon;
   if (!noIcon) {
     switch (color) {
@@ -35,15 +42,20 @@ export const Alert = ({ color, noIcon, dismissable, children, ...rest }) => {
   if (icon) {
     cmp = (
       <RsAlert
+        className={size === "sm" ? "alert-sm" : ""}
         color={color}
         isOpen={visible}
         toggle={dismissable ? onDismiss : undefined}
         {...rest}
       >
-        <Container className="m-0">
+        <Container fluid>
           <Row>
             <Col xs="auto" className="p-0 pr-2">
-              <Icon className="mdi" path={icon} />
+              <Icon
+                className="mdi"
+                path={icon}
+                size={size === "sm" ? 0.8 : 1}
+              />
             </Col>
             <Col className="p-0">{children}</Col>
           </Row>
@@ -52,7 +64,11 @@ export const Alert = ({ color, noIcon, dismissable, children, ...rest }) => {
     );
   } else {
     cmp = (
-      <RsAlert color={color} {...rest}>
+      <RsAlert
+        className={size === "sm" ? "alert-sm" : ""}
+        color={color}
+        {...rest}
+      >
         {children}
       </RsAlert>
     );

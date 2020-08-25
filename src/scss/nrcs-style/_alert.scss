@@ -5,6 +5,8 @@
 // Make text darker and non-colorized for 508
 .alert {
   color: $body-color !important;
+  // padding: 1rem; // same as cards, 16px even all around
+  padding: 0.75rem 1rem; // same as breadcrumb
 }
 
 .alert-link {
@@ -19,6 +21,10 @@
   background-color: transparent !important;
   padding-left: 0;
   border-left: 0 !important;
+}
+
+.alert-sm {
+  font-size: $font-size-sm;
 }
 
 // 4px left, 1px rest...

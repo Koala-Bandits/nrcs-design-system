@@ -124,6 +124,22 @@ export const DropdownDefault = () => {
             </DropdownMenu>
           </ButtonDropdown>
 
+          <Dropdown>
+            <DropdownToggle className="btn-icon" color="link">
+              Dropdown
+              <Icon className="mdi ml-1" path={mdiChevronDown} />
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem header>Header</DropdownItem>
+              <DropdownItem>Some Action</DropdownItem>
+              <DropdownItem disabled>Action (disabled)</DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem>Foo Action</DropdownItem>
+              <DropdownItem>Bar Action</DropdownItem>
+              <DropdownItem>Quo Action</DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+
           <Dropdown isOpen={flatDropdownOpen} toggle={toggleFlat}>
             <DropdownToggle className="btn-icon" color="link">
               <Icon className="mdi" path={mdiDotsVertical} />
@@ -175,6 +191,13 @@ export const DropdownDefault = () => {
             </DropdownToggle>
           </ButtonDropdown>
 
+          <Dropdown>
+            <DropdownToggle className="btn-icon" color="link">
+              Dropdown
+              <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
+            </DropdownToggle>
+          </Dropdown>
+
           <Dropdown size="sm">
             <DropdownToggle className="btn-icon" color="link">
               <Icon className="mdi" path={mdiDotsVertical} size={0.8} />
@@ -223,6 +246,13 @@ export const DropdownDefault = () => {
               <Icon className="mdi" path={mdiChevronDown} size={0.8} />
             </DropdownToggle>
           </ButtonDropdown>
+
+          <Dropdown>
+            <DropdownToggle className="btn-icon" color="link" disabled>
+              Dropdown
+              <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
+            </DropdownToggle>
+          </Dropdown>
 
           <Dropdown>
             <DropdownToggle className="btn-icon" color="link" disabled>

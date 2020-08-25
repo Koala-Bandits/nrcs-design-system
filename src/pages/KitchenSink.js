@@ -25,6 +25,10 @@ import {
   BannersContent
 } from "components/feedback/banners/AlertBanner.stories.js";
 import { BadgesDefault } from "components/feedback/badges/Badge.stories.js";
+import {
+  BadgeLabelsDefault,
+  BadgeLabelsHeadings
+} from "components/feedback/badgelabels/BadgeLabel.stories.js";
 import { MessagesDefault } from "components/feedback/messages/AlertMessage.stories.js";
 import {
   BreadcrumbsDefault,
@@ -52,10 +56,6 @@ import { DropdownDefault } from "components/dropdowns/Dropdown.stories.js";
 import { ExpansionsDefaultStory } from "components/expansions/Expansion.stories.js";
 import { FileBrowserDefault } from "components/inputs/FileBrowser.stories.js";
 import { GrowlsStory } from "components/feedback/growls/Growl.stories.js";
-import {
-  LabelsDefault,
-  LabelsHeadings
-} from "components/feedback/labels/Label.stories.js";
 import { LinksDefault } from "components/links/Link.stories.js";
 import { ListGroupStory } from "components/listgroups/ListGroup.stories.js";
 import { ModalDefault } from "components/modal/Modal.stories.js";
@@ -101,8 +101,8 @@ function KitchenSink() {
     "AlertBanners",
     "AlertMessages",
     "Badge",
-    "Growls",
-    "Label"
+    "BadgeLabel",
+    "Growls"
   ];
 
   const inputs = [
@@ -218,6 +218,10 @@ function KitchenSink() {
             <TabPane tabId="Badge">
               <BadgesDefault />
             </TabPane>
+            <TabPane tabId="BadgeLabel">
+              <BadgeLabelsDefault />
+              <BadgeLabelsHeadings />
+            </TabPane>
             <TabPane tabId="Breadcrumb">
               <BreadcrumbsDefault />
               <BreadcrumbsIcons />
@@ -259,10 +263,6 @@ function KitchenSink() {
             </TabPane>
             <TabPane tabId="Growls">
               <GrowlsStory />
-            </TabPane>
-            <TabPane tabId="Label">
-              <LabelsDefault />
-              <LabelsHeadings />
             </TabPane>
             <TabPane tabId="Links">
               <LinksDefault />

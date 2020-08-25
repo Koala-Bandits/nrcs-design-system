@@ -1,10 +1,22 @@
 import React from "react";
+// import {
+//   Breadcrumb,
+//   BreadcrumbItem,
+//   Dropdown,
+//   DropdownToggle
+// } from "reactstrap";
 import { Breadcrumbs } from "./Breadcrumbs";
 import {
   ContentHeaderH1,
   ContentHeaderH2
 } from "components/text/ContentHeader";
-import { mdiAccount, mdiHome, mdiFormatListBulleted } from "@mdi/js";
+// import Icon from "@mdi/react";
+import {
+  mdiAccount,
+  // mdiChevronDown,
+  mdiHome,
+  mdiFormatListBulleted
+} from "@mdi/js";
 
 export default {
   title: "Components|Breadcrumbs"
@@ -62,6 +74,29 @@ export const BreadcrumbsIcons = () => {
   );
 };
 
+// export const BreadcrumbsCustom = () => {
+//   return (
+//     <div>
+//       <Breadcrumb>
+//         <BreadcrumbItem>
+//           <a href="#">Home</a>
+//         </BreadcrumbItem>
+//         <BreadcrumbItem>
+//           <a href="#">Library</a>
+//         </BreadcrumbItem>
+//         <BreadcrumbItem>
+//           <Dropdown>
+//             <DropdownToggle className="btn-icon pt-0 pb-0" color="link">
+//               Dropdown
+//               <Icon className="mdi ml-1" path={mdiChevronDown} size={0.8} />
+//             </DropdownToggle>
+//           </Dropdown>
+//         </BreadcrumbItem>
+//       </Breadcrumb>
+//     </div>
+//   );
+// };
+
 BreadcrumbsDefault.story = {
   name: "Breadcrumbs - Default"
 };
@@ -69,3 +104,7 @@ BreadcrumbsDefault.story = {
 BreadcrumbsIcons.story = {
   name: "Breadcrumbs - with Icons"
 };
+
+// BreadcrumbsCustom.story = {
+//   name: "Breadcrumbs - Custom"
+// };

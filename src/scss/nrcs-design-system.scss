@@ -188,6 +188,9 @@
 .focus {
   outline: 3px auto $input-btn-focus-color;
 }
+#main-content:focus {
+  outline: 0;
+}
 // a:focus {
 //   outline-offset: 3px;
 // }

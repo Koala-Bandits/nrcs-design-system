@@ -44,6 +44,11 @@ export const BannersDefault = () => (
       </a>
       . Give it a click if you like.
     </AlertBanner>
+
+    <h3 className="mt-4">Small</h3>
+    <AlertBanner color="info" size="sm">
+      This is a SMALL <strong>info</strong> banner.
+    </AlertBanner>
   </div>
 );
 

@@ -6,7 +6,7 @@ export default {
   title: "Components|Feedback/BadgeLabels"
 };
 
-export const LabelsDefault = () => (
+export const BadgeLabelsDefault = () => (
   <div>
     <ContentHeaderH1>BadgeLabels</ContentHeaderH1>
     <p className="lead">
@@ -64,7 +64,7 @@ export const LabelsDefault = () => (
   </div>
 );
 
-export const LabelsHeadings = () => (
+export const BadgeLabelsHeadings = () => (
   <div>
     <h3 className="mt-4">BadgeLabels - Headings</h3>
 
@@ -128,10 +128,10 @@ export const LabelsHeadings = () => (
   </div>
 );
 
-LabelsDefault.story = {
+BadgeLabelsDefault.story = {
   name: "BadgeLabels - Default"
 };
 
-LabelsHeadings.story = {
+BadgeLabelsHeadings.story = {
   name: "BadgeLabels - Headings"
 };

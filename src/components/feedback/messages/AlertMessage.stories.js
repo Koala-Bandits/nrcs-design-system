@@ -42,7 +42,14 @@ export const MessagesDefault = () => (
       </a>
       . Give it a click if you like.
     </AlertMessage>
+
+    <h3 className="mt-4">Small</h3>
+    <AlertMessage color="info" size="sm">
+      This is a SMALL <strong>info</strong> message.
+    </AlertMessage>
+
     <hr />
+
     <AlertMessage color="warning">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
