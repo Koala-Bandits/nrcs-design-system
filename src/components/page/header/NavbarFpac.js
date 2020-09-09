@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Navbar } from "reactstrap";
+import { Container, Navbar } from "reactstrap";
 
 export const NavbarFpac = ({ ...rest }) => (
   <Container fluid className="bg-secondary p-0">

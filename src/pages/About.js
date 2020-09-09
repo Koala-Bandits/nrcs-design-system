@@ -6,10 +6,6 @@ import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { Alert } from "components/feedback/alerts/Alert";
 
 class About extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="container">
@@ -26,7 +22,7 @@ class About extends React.Component {
             <a
               href="http://usda-fsa.github.io/fsa-design-system/"
               target="_blank"
-              rel="nopener noreferrer"
+              rel="noopener noreferrer"
             >
               FPAC Design System
             </a>
@@ -36,7 +32,7 @@ class About extends React.Component {
             <a
               href="https://designsystem.digital.gov/"
               target="_blank"
-              rel="nopener noreferrer"
+              rel="noopener noreferrer"
             >
               U.S. Web Design System.
             </a>
@@ -85,7 +81,7 @@ class About extends React.Component {
               <a
                 href="https://reactstrap.github.io/"
                 target="_blank"
-                rel="nopener noreferrer"
+                rel="noopener noreferrer"
               >
                 ReactStrap
               </a>
@@ -95,7 +91,7 @@ class About extends React.Component {
               <a
                 href="https://github.com/Koala-Bandits/nrcs-design-system"
                 target="_blank"
-                rel="nopener noreferrer"
+                rel="noopener noreferrer"
               >
                 source
               </a>

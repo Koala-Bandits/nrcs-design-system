@@ -5,10 +5,6 @@ import Icon from "@mdi/react";
 import { mdiHuman, mdiGrid, mdiHammerWrench } from "@mdi/js";
 
 class Guides extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="container">

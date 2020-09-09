@@ -1,17 +1,7 @@
-import React, { useState } from "react";
-import {
-  InputGroup,
-  InputGroupAddon,
-  InputGroupButtonDropdown,
-  Input,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Row,
-  Col
-} from "reactstrap";
+import React from "react";
+import { InputGroup, InputGroupAddon, Input } from "reactstrap";
 
-import { PrimaryButton, FlatButton } from "components/buttons/Buttons";
+import { PrimaryButton } from "components/buttons/Buttons";
 
 // import Icon from "@mdi/react";
 // import {

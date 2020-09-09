@@ -39,7 +39,7 @@ class GridAndLayout extends React.Component {
             <a
               href="https://reactstrap.github.io/components/layout/"
               target="_blank"
-              rel="nopener noreferrer"
+              rel="noopener noreferrer"
             >
               <Card>
                 <CardBody className="mb-0">
@@ -66,7 +66,7 @@ class GridAndLayout extends React.Component {
             <a
               href="https://getbootstrap.com/docs/4.4/layout/grid/"
               target="_blank"
-              rel="nopener noreferrer"
+              rel="noopener noreferrer"
             >
               <Card>
                 <CardBody className="mb-0">

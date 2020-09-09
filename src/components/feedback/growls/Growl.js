@@ -1,13 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import {
-  Alert,
-  Toast,
-  ToastBody,
-  ToastHeader,
-  Container,
-  Row,
-  Col
-} from "reactstrap";
+import { Alert, Toast, Container, Row, Col } from "reactstrap";
 import Icon from "@mdi/react";
 import {
   mdiInformation,

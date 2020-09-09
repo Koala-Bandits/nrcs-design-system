@@ -8,10 +8,6 @@ import Icon from "@mdi/react";
 import { mdiOpenInNew } from "@mdi/js";
 
 class Typography extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="container">
@@ -28,7 +24,7 @@ class Typography extends React.Component {
             <a
               href="https://fonts.google.com/specimen/Roboto?selection.family=Roboto"
               target="_blank"
-              rel="nopener noreferrer"
+              rel="noopener noreferrer"
             >
               Roboto
             </a>
@@ -222,7 +218,7 @@ class Typography extends React.Component {
               renders.
             </p>
             <p>
-              <a href="#">
+              <a href="https://www.spacetelescope.org/images/archive/top100/">
                 This is an external link{" "}
                 <Icon className="mdi" path={mdiOpenInNew} size={0.8} />
               </a>
@@ -319,7 +315,7 @@ class Typography extends React.Component {
               renders.
             </p>
             <p className="p-sm">
-              <a href="#">
+              <a href="https://www.spacetelescope.org/images/archive/top100/">
                 This is an external link{" "}
                 <Icon className="mdi" path={mdiOpenInNew} size={0.8} />
               </a>

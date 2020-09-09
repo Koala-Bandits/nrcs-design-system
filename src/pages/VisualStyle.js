@@ -6,10 +6,6 @@ import { mdiPalette, mdiFormatText, mdiVectorSquare } from "@mdi/js";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 class VisualStyle extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="container">

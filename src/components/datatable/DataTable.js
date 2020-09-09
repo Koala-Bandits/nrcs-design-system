@@ -57,7 +57,7 @@ export const DataTable = ({
   });
 
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Escaping
-  const escapeRegExp = input => input.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  // const escapeRegExp = input => input.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
   const filterAndSortData = (data, filterString, sort) => {
     let result = data;

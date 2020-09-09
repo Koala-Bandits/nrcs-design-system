@@ -5,10 +5,6 @@ import {
 } from "components/text/ContentHeader";
 
 class Color extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="container docs-color">

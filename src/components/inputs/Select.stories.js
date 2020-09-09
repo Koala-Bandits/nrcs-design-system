@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Row,
-  Col,
-  Form,
-  FormGroup,
-  Label,
-  CustomInput,
-  Input
-} from "reactstrap";
+import { Row, Col, FormGroup, Label, CustomInput } from "reactstrap";
 import {
   ContentHeaderH1,
   ContentHeaderH2

@@ -4,17 +4,16 @@ import {
   ContentHeaderH1,
   ContentHeaderH2
 } from "components/text/ContentHeader";
-import { PrimaryButton } from "components/buttons/Buttons";
 import Icon from "@mdi/react";
 import { mdiOpenInNew, mdiBootstrap, mdiPuzzle, mdiReact } from "@mdi/js";
 
 // hook for apllication wide Growls
-import useToast from "components/feedback/growls/useToast";
+// import useToast from "components/feedback/growls/useToast";
 
 function Components() {
-  const toast = useToast();
-  const showWarningToast = () => toast.add("warning", "Warning Growl: test!");
-  const showErrorToast = () => toast.add("danger", "Error Growl: oh noes!");
+  // const toast = useToast();
+  // const showWarningToast = () => toast.add("warning", "Warning Growl: test!");
+  // const showErrorToast = () => toast.add("danger", "Error Growl: oh noes!");
 
   return (
     <div className="container">
@@ -49,7 +48,7 @@ function Components() {
             className="btn btn-link d-block text-left p-0"
             href="https://koala-bandits.github.io/nrcs-design-system-storybook"
             target="_blank"
-            rel="nopener noreferrer"
+            rel="noopener noreferrer"
           >
             <Card>
               <CardBody className="mb-0">
@@ -91,7 +90,7 @@ function Components() {
             className="btn btn-link d-block text-left p-0"
             href="https://reactstrap.github.io/components/"
             target="_blank"
-            rel="nopener noreferrer"
+            rel="noopener noreferrer"
           >
             <Card>
               <CardBody className="mb-0">
@@ -119,7 +118,7 @@ function Components() {
             className="btn btn-link d-block text-left p-0"
             href="https://getbootstrap.com/docs/4.4/components/"
             target="_blank"
-            rel="nopener noreferrer"
+            rel="noopener noreferrer"
           >
             <Card>
               <CardBody className="h5 mb-0">

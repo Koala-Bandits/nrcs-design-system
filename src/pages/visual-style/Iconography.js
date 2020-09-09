@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "@mdi/react";
-import { Row, Col, Card, CardBody, Table } from "reactstrap";
+import { Row, Col, Table } from "reactstrap";
 import {
   ContentHeaderH1,
   ContentHeaderH2
@@ -75,37 +75,33 @@ import {
 } from "@mdi/js";
 
 class Iconography extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const iconExampleText = '<Icon className="mdi" path={mdiInformation} />';
 
-    function IconCard(props) {
-      return (
-        <Col>
-          <Card className="mb-3">
-            <Row className="no-gutters">
-              <Col
-                sm="4"
-                className="d-flex align-items-center justify-content-center p-4"
-              >
-                <Icon className="mdi" path={props.icon} size={1.3} />
-                <Icon className="mdi" path={props.icon} size={1} />
-                <Icon className="mdi" path={props.icon} size={0.8} />
-              </Col>
-              <Col sm="8">
-                <CardBody>
-                  <h6 className="card-title">{props.name}</h6>
-                  <p className="card-text">{props.text}</p>
-                </CardBody>
-              </Col>
-            </Row>
-          </Card>
-        </Col>
-      );
-    }
+    // function IconCard(props) {
+    //   return (
+    //     <Col>
+    //       <Card className="mb-3">
+    //         <Row className="no-gutters">
+    //           <Col
+    //             sm="4"
+    //             className="d-flex align-items-center justify-content-center p-4"
+    //           >
+    //             <Icon className="mdi" path={props.icon} size={1.3} />
+    //             <Icon className="mdi" path={props.icon} size={1} />
+    //             <Icon className="mdi" path={props.icon} size={0.8} />
+    //           </Col>
+    //           <Col sm="8">
+    //             <CardBody>
+    //               <h6 className="card-title">{props.name}</h6>
+    //               <p className="card-text">{props.text}</p>
+    //             </CardBody>
+    //           </Col>
+    //         </Row>
+    //       </Card>
+    //     </Col>
+    //   );
+    // }
 
     function IconRow(props) {
       return (
@@ -131,7 +127,7 @@ class Iconography extends React.Component {
             <a
               href="https://materialdesignicons.com/"
               target="_blank"
-              rel="nopener noreferrer"
+              rel="noopener noreferrer"
             >
               Materia Design (Community) Icons
             </a>
@@ -157,7 +153,7 @@ class Iconography extends React.Component {
             <a
               href="https://dev.materialdesignicons.com/getting-started"
               target="_blank"
-              rel="nopener noreferrer"
+              rel="noopener noreferrer"
             >
               MDI Getting Started documentation.
             </a>

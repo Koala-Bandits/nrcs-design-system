@@ -68,7 +68,7 @@ export const ContentHeaderIcons = () => (
     <ContentHeaderH1>
       h1. Content Header
       <span className="float-right">
-        <Icon className="mdi" className="mdi" path={mdiHuman} />
+        <Icon className="mdi" path={mdiHuman} />
         <Icon className="mdi" path={mdiHelpCircle} />
         <Icon className="mdi" path={mdiCloseCircle} />
       </span>
@@ -77,7 +77,7 @@ export const ContentHeaderIcons = () => (
     <ContentHeaderH2>
       h2. Content Header
       <span className="float-right">
-        <Icon className="mdi" className="mdi" path={mdiHuman} />
+        <Icon className="mdi" path={mdiHuman} />
         <Icon className="mdi" path={mdiHelpCircle} />
         <Icon className="mdi" path={mdiCloseCircle} />
       </span>
@@ -86,7 +86,7 @@ export const ContentHeaderIcons = () => (
     <ContentHeaderH3>
       h3. Content Header
       <span className="float-right">
-        <Icon className="mdi" className="mdi" path={mdiHuman} />
+        <Icon className="mdi" path={mdiHuman} />
         <Icon className="mdi" path={mdiHelpCircle} />
         <Icon className="mdi" path={mdiCloseCircle} />
       </span>
