@@ -5,8 +5,10 @@ import {
   mdiInformation,
   mdiAlert,
   mdiAlertCircle,
-  mdiCheckCircle
+  mdiCheckCircle,
+  mdiClose
 } from "@mdi/js";
+import { FlatButton } from "components/buttons/Buttons";
 
 export const Alert = ({
   color,
@@ -45,7 +47,7 @@ export const Alert = ({
         className={size === "sm" ? "alert-sm" : ""}
         color={color}
         isOpen={visible}
-        toggle={dismissable ? onDismiss : undefined}
+        // toggle={dismissable ? onDismiss : undefined}
         {...rest}
       >
         <Container fluid>
@@ -58,6 +60,18 @@ export const Alert = ({
               />
             </Col>
             <Col className="p-0">{children}</Col>
+            {dismissable ? (
+              <Col className="pr-0" xs="auto">
+                <FlatButton
+                  className="close"
+                  size="sm"
+                  iconOnly={mdiClose}
+                  onClick={onDismiss}
+                />
+              </Col>
+            ) : (
+              ""
+            )}
           </Row>
         </Container>
       </RsAlert>

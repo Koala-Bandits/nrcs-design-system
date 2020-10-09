@@ -1,12 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import { Alert, Toast, Container, Row, Col } from "reactstrap";
-import Icon from "@mdi/react";
-import {
-  mdiInformation,
-  mdiAlert,
-  mdiAlertCircle,
-  mdiCheckCircle
-} from "@mdi/js";
+import { Toast, Container, Row, Col } from "reactstrap";
+import { mdiClose } from "@mdi/js";
+import { Alert } from "components/feedback/alerts/Alert";
+import { FlatButton } from "components/buttons/Buttons";
 
 function Growl({ isOpen, toggle, color, children, remove }) {
   const removeRef = useRef();
@@ -23,38 +19,24 @@ function Growl({ isOpen, toggle, color, children, remove }) {
     return () => clearTimeout(id);
   }, []);
 
-  let icon;
-  switch (color) {
-    case "info":
-      icon = mdiInformation;
-      break;
-    case "success":
-      icon = mdiCheckCircle;
-      break;
-    case "warning":
-      icon = mdiAlert;
-      break;
-    case "danger":
-      icon = mdiAlertCircle;
-      break;
-    default:
-      icon = mdiInformation;
-  }
-
   return (
     <Toast isOpen={isOpen}>
       <Alert
-        className="alert-fpac"
         color={color}
         isOpen={true}
-        toggle={remove ? remove : toggle}
+        // toggle={remove ? remove : toggle}
       >
         <Container className="m-0">
           <Row>
-            <Col xs="auto" className="p-0 pr-2">
-              <Icon className="mdi" path={icon} />
-            </Col>
             <Col className="p-0">{children}</Col>
+            <Col className="pr-0" xs="auto">
+              <FlatButton
+                className="close"
+                size="sm"
+                iconOnly={mdiClose}
+                onClick={remove ? remove : toggle}
+              />
+            </Col>
           </Row>
         </Container>
       </Alert>
