@@ -5,8 +5,10 @@ import {
   mdiInformation,
   mdiAlert,
   mdiAlertCircle,
-  mdiCheckCircle
+  mdiCheckCircle,
+  mdiClose
 } from "@mdi/js";
+import { FlatButton } from "components/buttons/Buttons";
 
 export const AlertBanner = ({
   color,
@@ -45,10 +47,10 @@ export const AlertBanner = ({
         className={size === "sm" ? "alert-banner alert-sm" : "alert-banner"}
         color={color}
         isOpen={visible}
-        toggle={dismissable ? onDismiss : undefined}
+        // toggle={dismissable ? onDismiss : undefined}
         {...rest}
       >
-        <Container fluid className="m-0">
+        <Container fluid>
           <Row>
             <Col xs="auto" className="p-0 pr-2">
               <Icon
@@ -58,6 +60,18 @@ export const AlertBanner = ({
               />
             </Col>
             <Col className="p-0">{children}</Col>
+            {dismissable ? (
+              <Col className="pr-0" xs="auto">
+                <FlatButton
+                  className="close"
+                  size="sm"
+                  iconOnly={mdiClose}
+                  onClick={onDismiss}
+                />
+              </Col>
+            ) : (
+              ""
+            )}
           </Row>
         </Container>
       </RsAlert>

@@ -96,8 +96,8 @@ class About extends React.Component {
                 source
               </a>
             </strong>{" "}
-            for this project can serve as an example implementation and
-            application skeleton.
+            for this project can serve as an example implementation of
+            components and styles, as well as a rough application skeleton.
           </li>
         </ul>
 
