@@ -63,6 +63,7 @@ import { RadioDefault } from "components/inputs/Radio.stories";
 import { RangeDefault } from "components/inputs/Range.stories";
 import { SearchDefault } from "components/inputs/Search.stories";
 import { SelectDefault, SelectMulti } from "components/inputs/Select.stories";
+import { SpinnerMessagesDefault } from "components/feedback/spinner/SpinnerMessage.stories";
 import { SwitchDefault } from "components/inputs/Switch.stories";
 import { TablesDefault, TablesAlt } from "components/tables/Table.stories.js";
 import { TabsStory } from "components/tabs/Tabs.stories.js";
@@ -102,7 +103,8 @@ function KitchenSink() {
     "AlertMessages",
     "Badge",
     "BadgeLabel",
-    "Growls"
+    "Growls",
+    "Spinner"
   ];
 
   const inputs = [
@@ -285,6 +287,9 @@ function KitchenSink() {
             <TabPane tabId="Select">
               <SelectDefault />
               <SelectMulti />
+            </TabPane>
+            <TabPane tabId="Spinner">
+              <SpinnerMessagesDefault />
             </TabPane>
             <TabPane tabId="Switch">
               <SwitchDefault />
