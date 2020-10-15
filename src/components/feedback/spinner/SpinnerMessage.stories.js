@@ -1,6 +1,15 @@
-import React from "react";
-import { ContentHeaderH1 } from "components/text/ContentHeader";
-import { SpinnerMessage } from "./SpinnerMessage";
+import React, { useState } from "react";
+import { Modal, ModalBody } from "reactstrap";
+import {
+  ContentHeaderH1,
+  ContentHeaderH2
+} from "components/text/ContentHeader";
+import { PrimaryButton } from "components/buttons/Buttons";
+import {
+  SpinnerMessage,
+  SpinnerCenteredMessage,
+  SpinnerOverlayMessage
+} from "./SpinnerMessages";
 // import { DataTable } from "components/datatable/DataTable";
 
 export default {
@@ -8,46 +17,8 @@ export default {
 };
 
 export const SpinnerMessagesDefault = () => {
-  //   let columns = [
-  //     {
-  //       primary: true,
-  //       property: "id",
-  //       header: "Id",
-  //       visible: true,
-  //       filter: true,
-  //       sort: true,
-  //       align: "center"
-  //     },
-  //     {
-  //       property: "name",
-  //       header: "Name",
-  //       visible: true,
-  //       filter: true,
-  //       sort: true
-  //     },
-  //     {
-  //       property: "power",
-  //       header: "Super Power",
-  //       visible: true,
-  //       filter: true,
-  //       sort: true
-  //     },
-  //     {
-  //       property: "notes",
-  //       header: "Notes",
-  //       visible: true,
-  //       filter: true
-  //     },
-  //     {
-  //       property: "timestamp",
-  //       header: "Last Updated",
-  //       visible: true,
-  //       filter: true,
-  //       sort: true
-  //     }
-  //   ];
-
-  //   let noData = [];
+  const [spinModal, setSpinModal] = useState(false);
+  const toggleSpinModal = () => setSpinModal(!spinModal);
 
   return (
     <div>
@@ -64,7 +35,23 @@ export const SpinnerMessagesDefault = () => {
       <SpinnerMessage>Loading...</SpinnerMessage>
       <h3 className="mt-4">Small</h3>
       <SpinnerMessage size="sm">Small Loading...</SpinnerMessage>
-      <h3 className="mt-4">Example in DataTable</h3>
+      <h3 className="mt-4">Centered</h3>
+      <SpinnerCenteredMessage>Loading...</SpinnerCenteredMessage>
+      <h3 className="mt-4">Static Overlay</h3>
+      <PrimaryButton
+        className="btn-main"
+        color="primary"
+        onClick={toggleSpinModal}
+      >
+        Static Overlay Spinner
+      </PrimaryButton>
+      <Modal isOpen={spinModal} toggle={toggleSpinModal} size="sm">
+        <ModalBody className="justify-content-center">
+          <SpinnerOverlayMessage>Loading...</SpinnerOverlayMessage>
+        </ModalBody>
+      </Modal>
+      <ContentHeaderH2 className="mt-4">Examples</ContentHeaderH2>
+      <h3>DataTable</h3>
       Coming soon...
       {/* <DataTable
         caption="Super Heros"
