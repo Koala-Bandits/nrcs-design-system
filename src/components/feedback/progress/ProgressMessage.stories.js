@@ -5,7 +5,7 @@ import { PrimaryButton } from "components/buttons/Buttons";
 import { ProgressMessage } from "./ProgressMessage";
 
 export default {
-  title: "Components|Feedback/ProgressMessage"
+  title: "Components|Feedback/Progress Message"
 };
 
 export const ProgressMessageDefault = () => {
@@ -16,7 +16,7 @@ export const ProgressMessageDefault = () => {
     <div className="mb-4">
       <ContentHeaderH1>Progress Messages</ContentHeaderH1>
       <p className="lead">
-        Show progress via a progress bar, typically in an overlay with our
+        Show progress via a progress bar, typically in an overlay with or
         without messaging.
       </p>
 
