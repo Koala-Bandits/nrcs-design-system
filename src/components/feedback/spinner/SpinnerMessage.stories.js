@@ -21,8 +21,8 @@ export const SpinnerMessagesDefault = () => {
   const toggleSpinModal = () => setSpinModal(!spinModal);
 
   return (
-    <div>
-      <ContentHeaderH1>Alert Messages</ContentHeaderH1>
+    <div className="mb-4">
+      <ContentHeaderH1>Spinner Messages</ContentHeaderH1>
       <p className="lead">
         Show progress via a spinner for inline loading of content.
       </p>
@@ -38,6 +38,10 @@ export const SpinnerMessagesDefault = () => {
       <h3 className="mt-4">Centered</h3>
       <SpinnerCenteredMessage>Loading...</SpinnerCenteredMessage>
       <h3 className="mt-4">Static Overlay</h3>
+      <p>
+        Note: this example uses a regular (dismissable) modal, but in practice
+        this would be 'static' to handle dismissal programmatically.
+      </p>
       <PrimaryButton
         className="btn-main"
         color="primary"

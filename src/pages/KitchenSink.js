@@ -59,6 +59,7 @@ import { GrowlsStory } from "components/feedback/growls/Growl.stories.js";
 import { LinksDefault } from "components/links/Link.stories.js";
 import { ListGroupStory } from "components/listgroups/ListGroup.stories.js";
 import { ModalDefault } from "components/modal/Modal.stories.js";
+import { ProgressMessageDefault } from "components/feedback/progress/ProgressMessage.stories";
 import { RadioDefault } from "components/inputs/Radio.stories";
 import { RangeDefault } from "components/inputs/Range.stories";
 import { SearchDefault } from "components/inputs/Search.stories";
@@ -69,6 +70,7 @@ import { TablesDefault, TablesAlt } from "components/tables/Table.stories.js";
 import { TabsStory } from "components/tabs/Tabs.stories.js";
 import { TimePickerDefault } from "components/inputs/TimePicker.stories";
 import { TextInputDefault } from "components/inputs/TextInput.stories";
+import { ProgressMessage } from "components/feedback/progress/ProgressMessage";
 
 // hook for apllication wide Growls
 // import useToast from "components/feedback/growls/useToast";
@@ -104,6 +106,7 @@ function KitchenSink() {
     "Badge",
     "BadgeLabel",
     "Growls",
+    "Progress",
     "Spinner"
   ];
 
@@ -274,6 +277,9 @@ function KitchenSink() {
             </TabPane>
             <TabPane tabId="Modal">
               <ModalDefault />
+            </TabPane>
+            <TabPane tabId="Progress">
+              <ProgressMessageDefault />
             </TabPane>
             <TabPane tabId="Radio">
               <RadioDefault />

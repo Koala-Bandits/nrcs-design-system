@@ -12,7 +12,7 @@ export const SpinnerMessage = ({ size, children, ...rest }) => {
       <Container fluid className="m-0">
         <Row>
           <Col xs="auto" className="p-0 pr-2">
-            <Spinner size="sm" color="primary" />
+            <Spinner size="sm" color="info" />
           </Col>
           <Col className="p-0">{children}</Col>
         </Row>
@@ -30,7 +30,7 @@ export const SpinnerOverlayMessage = ({ size, children, ...rest }) => {
     <Container {...rest}>
       <Row className="justify-content-center">
         <Col xs="auto" className="mt-4 mb-4 text-center">
-          <Spinner color="primary" />
+          <Spinner color="info" />
           <br />
           {children}
         </Col>
@@ -48,7 +48,7 @@ export const SpinnerCenteredMessage = ({ size, children, ...rest }) => {
     <Container {...rest}>
       <Row>
         <Col xs="auto" className="mt-4 mb-4 text-center">
-          <Spinner color="primary" />
+          <Spinner color="info" />
           <br />
           {children}
         </Col>
