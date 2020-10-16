@@ -49,7 +49,7 @@ export const ProgressMessageDefault = () => {
 
       <Modal isOpen={progressModal} toggle={toggleProgressModal} size="sm">
         <ModalBody className="justify-content-center">
-          <ProgressMessage message="Loading..." value="25" />
+          <ProgressMessage message="Loading..." value="100" />
         </ModalBody>
       </Modal>
     </div>
