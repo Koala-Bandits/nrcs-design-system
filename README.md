@@ -12,7 +12,7 @@ If you are working on a project with FPAC or its related agencies, it is suggest
 * Provides color, typography, iconography, components and examples with documentation for how to use them.
 * The intent is to provide a solution for our development teams to converge upon for consistent implementation in design and style.
 * The NRCS Design System is based on a custom Bootstrap theme. Therefore all users can refer to Bootstrap documentation for component styles, layouts, and utilities. It's recommended that all styles are done through Bootstrap clasess and keep hand-written CSS to a minimum.
-* This site is built with React, StoryBook, using ReactStrap. The source for this project can serve as an example implementation and start to components.
+* This site is built with React, StoryBook, using ReactStrap. The source for this project can serve as an example implementation of components and styles, as well as a rough application skeleton.
 
 ## Quick Start Guide
 
