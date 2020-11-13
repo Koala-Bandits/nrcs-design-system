@@ -52,6 +52,7 @@ import {
   mdiHome,
   mdiInformation,
   mdiLayers,
+  mdiLink,
   mdiLock,
   mdiLockOpenOutline,
   mdiLogin,
@@ -104,12 +105,31 @@ class Iconography extends React.Component {
     // }
 
     function IconRow(props) {
+      let mdiclass;
+
+      switch (props.color) {
+        case "warning":
+          mdiclass = "mdi-warning";
+          break;
+        case "danger":
+          mdiclass = "mdi-danger";
+          break;
+        case "success":
+          mdiclass = "mdi-success";
+          break;
+        case "info":
+          mdiclass = "mdi-info";
+          break;
+        default:
+          mdiclass = "mdi";
+      }
+
       return (
         <tr>
           <td>
-            <Icon className="mdi" path={props.icon} size={1.33} />
-            <Icon className="mdi" path={props.icon} size={1} />
-            <Icon className="mdi" path={props.icon} size={0.75} />
+            <Icon className={mdiclass} path={props.icon} size={1.33} />
+            <Icon className={mdiclass} path={props.icon} size={1} />
+            <Icon className={mdiclass} path={props.icon} size={0.75} />
           </td>
           <td>{props.name}</td>
           <td>{props.text}</td>
@@ -141,11 +161,18 @@ class Iconography extends React.Component {
             <code>size={"{0.8}"}</code> gives 19px, and{" "}
             <code>size={"{1.3}"}</code> for a large ~31px icon.
           </li>
-          <li>Default icon color: $gray-800 gray</li>
-          <li>Action/Clickable icon color: $primary blue</li>
           <li>
-            To get these defaults, use of icons should include the "mdi" CSS
-            class
+            Default icon color: gray (<code>$gray-800</code> via use of{" "}
+            <code>mdi</code> CSS class)
+          </li>
+          <li>
+            Use NRCS Design System <i>accent</i> colors for feedback components
+            and staus scenarios with individual icons (<code>mdi-info</code>,{" "}
+            <code>mdi-success</code>, <code>mdi-warning</code>,{" "}
+            <code>mdi-danger</code> CSS classes are available)
+          </li>
+          <li>
+            Action/Clickable icon color: <code>$primary blue</code>
           </li>
           <li>
             For more information on properties, ways of importing and using them
@@ -203,22 +230,46 @@ class Iconography extends React.Component {
                 <IconRow
                   icon={mdiAlert}
                   name="mdiAlert"
-                  text="Warning alerts (growls, messaging), caution"
+                  text="Warning alerts (growls, messaging), use to expresses warning or caution"
+                />
+                <IconRow
+                  icon={mdiAlert}
+                  name="mdiAlert"
+                  text="Warning alert with warning accent color"
+                  color="warning"
                 />
                 <IconRow
                   icon={mdiAlertOutline}
                   name="mdiAlertOutline"
-                  text="Alternate Warning alerts (subdued), caution"
+                  text="Alternate warning alerts (subdued)"
+                />
+                <IconRow
+                  icon={mdiAlertOutline}
+                  name="mdiAlertOutline"
+                  text="Alternate warning alerts (subdued) with warning accent color"
+                  color="warning"
                 />
                 <IconRow
                   icon={mdiAlertCircle}
                   name="mdiAlertCircle"
-                  text="Error alerts (growls, messaging, validation), danger"
+                  text="Error alerts (growls, messaging, validation), use to express error or danger"
+                />
+                <IconRow
+                  icon={mdiAlertCircle}
+                  name="mdiAlertCircle"
+                  text="Error alerts with warning accent color"
+                  color="danger"
                 />
                 <IconRow
                   icon={mdiAlertCircleOutline}
                   name="mdiAlertCircleOutline"
-                  text="Alternate (subdued) Error alerts, danger"
+                  text="Alternate (subdued) error alerts"
+                />
+                <IconRow
+                  icon={mdiAlertCircleOutline}
+                  name="mdiAlertCircleOutline"
+                  text="Alternate (subdued) error alerts with danger accent color"
+                  color="danger"
                 />
                 <IconRow
                   icon={mdiBell}
@@ -251,9 +302,21 @@ class Iconography extends React.Component {
                   text="Success alerts and status, complete"
                 />
                 <IconRow
+                  icon={mdiCheckCircle}
+                  name="mdiCheckCircle"
+                  text="Success alerts and status, complete with success accent color"
+                  color="success"
+                />
+                <IconRow
                   icon={mdiCheckCircleOutline}
                   name="mdiCheckCircleOutline"
                   text="Success, complete, status alternate"
+                />
+                <IconRow
+                  icon={mdiCheckCircleOutline}
+                  name="mdiCheckCircleOutline"
+                  text="Success, complete, status alternate with success accent color"
+                  color="success"
                 />
                 <IconRow
                   icon={mdiCheckboxMarked}
@@ -381,7 +444,18 @@ class Iconography extends React.Component {
                   name="mdiInformation"
                   text="Information alerts (growls and messaging)"
                 />
+                <IconRow
+                  icon={mdiInformation}
+                  name="mdiInformation"
+                  text="Information alerts (growls and messaging) with information accent color"
+                  color="info"
+                />
                 <IconRow icon={mdiLayers} name="mdiLayers" text="Layers" />
+                <IconRow
+                  icon={mdiLink}
+                  name="mdiLink"
+                  text="Link (hyperlink/anchor)"
+                />
                 <IconRow icon={mdiLock} name="mdiLock" text="Locked" />
                 <IconRow
                   icon={mdiLockOpenOutline}

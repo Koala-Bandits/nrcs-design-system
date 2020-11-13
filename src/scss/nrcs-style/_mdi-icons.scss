@@ -13,6 +13,18 @@ $icon-default-color: $gray-800;
   width: 1.5rem; // 24x24
   fill: $icon-default-color; // default color
 }
+.mdi-info {
+  fill: $info;
+}
+.mdi-success {
+  fill: $success;
+}
+.mdi-warning {
+  fill: $warning;
+}
+.mdi-danger {
+  fill: $danger;
+}
 
 // For <Stack className="custom-class">
 // svg.custom-class {
