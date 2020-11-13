@@ -149,7 +149,7 @@ class Iconography extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Materia Design (Community) Icons
+              Material Design (Community) Icons
             </a>
           </strong>{" "}
           which is a superset of the Google Material Icons.
@@ -167,7 +167,7 @@ class Iconography extends React.Component {
           </li>
           <li>
             Use NRCS Design System <i>accent</i> colors for feedback components
-            and staus scenarios with individual icons (<code>mdi-info</code>,{" "}
+            and status scenarios with individual icons (<code>mdi-info</code>,{" "}
             <code>mdi-success</code>, <code>mdi-warning</code>,{" "}
             <code>mdi-danger</code> CSS classes are available)
           </li>
@@ -363,6 +363,12 @@ class Iconography extends React.Component {
                   icon={mdiClockOutline}
                   name="mdiClockOutline"
                   text="Clock, time, in-progress status"
+                />
+                <IconRow
+                  icon={mdiClockOutline}
+                  name="mdiClockOutline"
+                  text="Clock, time, in-progress status with accent color"
+                  color="info"
                 />
                 {/* <IconRow icon={mdiCog} name="mdiCog" text="" /> */}
                 <IconRow
