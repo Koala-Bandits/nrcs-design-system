@@ -197,8 +197,8 @@ function KitchenSink() {
                 All our core components (Storybook stories) A-Z.
               </p>
               <Alert color="warning">
-                Warning: several components are still under development with
-                updates weekly.
+                Warning: several components are still under development and
+                incomplete.
               </Alert>
             </TabPane>
             <TabPane tabId="Accordion">
