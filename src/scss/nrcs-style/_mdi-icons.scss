@@ -26,18 +26,6 @@ $icon-default-color: $gray-800;
   fill: $danger;
 }
 
-// For <Stack className="custom-class">
-// svg.custom-class {
-//     // First layer (behind)
-//     path:nth-child(1) {
-//       fill: blue;
-//     }
-//     // Second layer (infront)
-//     path:nth-child(2) {
-//       fill: red;
-//     }
-//   }
-
 // Buttons with Icons
 .btn svg,
 .breadcrumb svg {
@@ -65,14 +53,9 @@ $icon-default-color: $gray-800;
 // }
 
 // Alerts with Icons
-// .alert svg {
-//   vertical-align: top;
-//   // margin-top: -0.25rem;
-// }
-.alert-heading svg {
-  top: -0.125rem;
-  position: relative;
-  margin-right: 0.25rem;
+.alert svg {
+  vertical-align: top;
+  // margin-top: -0.25rem;
 }
 
 // Tabs with icons via Nav
