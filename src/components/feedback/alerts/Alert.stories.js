@@ -49,6 +49,22 @@ export const AlertsDefault = () => (
     <Alert color="info" size="sm">
       This is a SMALL <strong>info</strong> alert.
     </Alert>
+
+    <h3 className="mt-4">Multiline</h3>
+    <p>
+      We always advocate for short and concise messaging. However, note that the
+      message text wraps in its own column (not under the icon) as in the
+      following example.
+    </p>
+    <Alert color="warning">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </Alert>
   </div>
 );
 

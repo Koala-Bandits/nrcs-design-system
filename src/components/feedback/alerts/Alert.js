@@ -56,7 +56,7 @@ export const Alert = ({
               <Icon
                 className="mdi"
                 path={icon}
-                size={size === "sm" ? 0.8 : 1}
+                size={size === "sm" ? 0.9 : 1}
               />
             </Col>
             <Col className="p-0">{children}</Col>

@@ -13,9 +13,7 @@ class About extends React.Component {
         <p className="lead">
           <strong>A design system produced for our partners at NRCS.</strong>
         </p>
-        <Alert color="warning">
-          Warning: currently under development and incomplete.
-        </Alert>
+
         <p>
           An adaptation of the{" "}
           <strong>
@@ -74,30 +72,6 @@ class About extends React.Component {
             out-of-the-box. It covers implementations of most all FPAC
             components, a few others provided by Reactstrap, as well as some
             custom complex components.
-          </li>
-          <li>
-            This site is built with React, StoryBook, using{" "}
-            <strong>
-              <a
-                href="https://reactstrap.github.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ReactStrap
-              </a>
-            </strong>
-            . The{" "}
-            <strong>
-              <a
-                href="https://github.com/Koala-Bandits/nrcs-design-system"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                source
-              </a>
-            </strong>{" "}
-            for this project can serve as an example implementation of
-            components and styles, as well as a rough application skeleton.
           </li>
         </ul>
 
@@ -167,6 +141,45 @@ class About extends React.Component {
             </a>
           </Col>
         </Row>
+        <p>
+          This site is built with React (via Create React App), StoryBook, using{" "}
+          <strong>
+            <a
+              href="https://reactstrap.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ReactStrap
+            </a>
+          </strong>
+          , and a custom{" "}
+          <a
+            href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Bootstrap</strong>
+          </a>{" "}
+          theme. The{" "}
+          <strong>
+            <a
+              href="https://github.com/Koala-Bandits/nrcs-design-system"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              source
+            </a>
+          </strong>{" "}
+          for this project can serve as an example implementation of NRCS Design
+          System components and styles as well as a rough application skeleton.
+          However...
+          <p></p>
+          <Alert color="warning">
+            Warning: the javascript used to build this website is not approved
+            for production use, it's role is intended for demonstration purposes
+            only.
+          </Alert>
+        </p>
       </div>
     );
   }

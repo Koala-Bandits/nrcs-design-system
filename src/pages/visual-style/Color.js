@@ -152,7 +152,7 @@ class Color extends React.Component {
               Warning #fdb81e
             </div>
             <div className="p-3 alert alert-banner alert-warning">
-              Danger Background #fff1d2
+              Warning Background #fff1d2
             </div>
           </div>
 
