@@ -15,7 +15,7 @@ export const Breadcrumbs = ({ data, size, ...rest }) => {
                 <Icon
                   className="mdi"
                   path={crumb.icon}
-                  size={size === "sm" ? 0.8 : 1}
+                  size={size === "sm" ? 0.9 : 1}
                 />
               ) : (
                 ""
@@ -31,7 +31,7 @@ export const Breadcrumbs = ({ data, size, ...rest }) => {
                   <Icon
                     className="mdi"
                     path={crumb.icon}
-                    size={size === "sm" ? 0.8 : 1}
+                    size={size === "sm" ? 0.9 : 1}
                   />
                 ) : (
                   ""
