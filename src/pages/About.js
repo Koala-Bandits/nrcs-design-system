@@ -153,7 +153,11 @@ class About extends React.Component {
             </a>
           </strong>
           , and a custom{" "}
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <strong>Bootstrap</strong>
           </a>{" "}
           theme. The{" "}
