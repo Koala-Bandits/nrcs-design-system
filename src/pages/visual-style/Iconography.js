@@ -127,9 +127,9 @@ class Iconography extends React.Component {
       return (
         <tr>
           <td>
-            <Icon className={mdiclass} path={props.icon} size={1.33} />
+            <Icon className={mdiclass} path={props.icon} size={1.3} />
             <Icon className={mdiclass} path={props.icon} size={1} />
-            <Icon className={mdiclass} path={props.icon} size={0.75} />
+            <Icon className={mdiclass} path={props.icon} size={0.8} />
           </td>
           <td>{props.name}</td>
           <td>{props.text}</td>

@@ -55,7 +55,7 @@ export const AlertBanner = ({
             <Col xs="auto" className="p-0 pr-2">
               <Icon
                 className="mdi"
-                size={size === "sm" ? 0.8 : 1}
+                size={size === "sm" ? 0.9 : 1}
                 path={icon}
               />
             </Col>
