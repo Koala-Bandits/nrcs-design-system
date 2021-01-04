@@ -12,7 +12,7 @@ import {
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
-  title: "Components|Inputs/TimePicker"
+  title: 'Components/Inputs/TimePicker'
 };
 
 export const TimePickerDefault = () => (

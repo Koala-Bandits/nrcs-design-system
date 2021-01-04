@@ -15,7 +15,7 @@ import {
 import classnames from "classnames";
 
 export default {
-  title: "Components|Tabs (Nav)"
+  title: 'Components/Tabs (Nav)'
 };
 
 export const TabsStory = () => {

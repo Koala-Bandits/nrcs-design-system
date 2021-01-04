@@ -6,7 +6,7 @@ import {
 } from "components/text/ContentHeader";
 
 export default {
-  title: "Components|List Groups"
+  title: 'Components/List Groups'
 };
 
 export const ListGroupStory = () => (

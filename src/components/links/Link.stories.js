@@ -4,7 +4,7 @@ import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { mdiOpenInNew } from "@mdi/js";
 
 export default {
-  title: "Components|Links (anchors)"
+  title: 'Components/Links (anchors)'
 };
 
 export const LinksDefault = () => (

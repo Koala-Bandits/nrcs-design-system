@@ -3,7 +3,7 @@ import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { AlertMessage } from "./AlertMessage";
 
 export default {
-  title: "Components|Feedback/Alert Messages"
+  title: 'Components/Feedback/Alert Messages'
 };
 
 export const MessagesDefault = () => (

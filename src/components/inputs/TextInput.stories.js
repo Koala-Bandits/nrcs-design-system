@@ -12,7 +12,7 @@ import {
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
-  title: "Components|Inputs/Text Input"
+  title: 'Components/Inputs/Text Input'
 };
 
 export const TextInputDefault = () => (

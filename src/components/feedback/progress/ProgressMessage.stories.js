@@ -5,7 +5,7 @@ import { PrimaryButton } from "components/buttons/Buttons";
 import { ProgressMessage } from "./ProgressMessage";
 
 export default {
-  title: "Components|Feedback/Progress Message"
+  title: 'Components/Feedback/Progress Message'
 };
 
 export const ProgressMessageDefault = () => {

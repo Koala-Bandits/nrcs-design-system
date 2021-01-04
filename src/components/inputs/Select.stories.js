@@ -6,7 +6,7 @@ import {
 } from "components/text/ContentHeader";
 
 export default {
-  title: "Components|Inputs/Select"
+  title: 'Components/Inputs/Select'
 };
 
 export const SelectDefault = () => (

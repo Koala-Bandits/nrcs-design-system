@@ -19,7 +19,7 @@ import {
 } from "@mdi/js";
 
 export default {
-  title: "Components|Breadcrumbs"
+  title: 'Components/Breadcrumbs'
 };
 
 export const BreadcrumbsDefault = () => {

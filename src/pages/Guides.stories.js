@@ -2,7 +2,7 @@ import React from "react";
 import Guides from "./Guides";
 
 export default {
-  title: "Design System|Guides"
+  title: 'Design System/Guides'
 };
 
 export const GuidesStory = () => (

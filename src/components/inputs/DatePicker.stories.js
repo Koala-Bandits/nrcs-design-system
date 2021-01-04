@@ -11,7 +11,7 @@ import {
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 export default {
-  title: "Components|Inputs/DatePicker"
+  title: 'Components/Inputs/DatePicker'
 };
 
 export const DatePickerDefault = () => (

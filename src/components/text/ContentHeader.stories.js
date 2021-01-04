@@ -11,7 +11,7 @@ import Icon from "@mdi/react";
 import { mdiHelpCircle, mdiCloseCircle, mdiHuman } from "@mdi/js";
 
 export default {
-  title: "Components|Content Header"
+  title: 'Components/Content Header'
 };
 
 export const ContentHeaderDefault = () => (

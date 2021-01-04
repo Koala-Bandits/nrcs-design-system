@@ -14,7 +14,7 @@ import {
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
-  title: "Components|Cards"
+  title: 'Components/Cards'
 };
 
 export const CardDefault = () => (

@@ -2,7 +2,7 @@ import React from "react";
 import About from "./About";
 
 export default {
-  title: "Design System|About"
+  title: 'Design System/About'
 };
 
 export const AboutStory = () => (

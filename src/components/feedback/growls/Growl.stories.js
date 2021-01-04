@@ -8,7 +8,7 @@ import Growl from "components/feedback/growls/Growl";
 import useToast from "components/feedback/growls/useToast";
 
 export default {
-  title: "Components|Feedback/Growls"
+  title: 'Components/Feedback/Growls'
 };
 
 function UseGrowlsExample() {

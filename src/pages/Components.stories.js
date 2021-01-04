@@ -2,7 +2,7 @@ import React from "react";
 import Components from "./Components";
 
 export default {
-  title: "Design System|Components"
+  title: 'Design System/Components'
 };
 
 export const ComponentsStory = () => (

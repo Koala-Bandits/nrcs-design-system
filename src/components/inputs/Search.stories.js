@@ -17,7 +17,7 @@ import Icon from "@mdi/react";
 import { mdiMagnify } from "@mdi/js";
 
 export default {
-  title: "Components|Inputs/Search"
+  title: 'Components/Inputs/Search'
 };
 
 export const SearchDefault = () => {

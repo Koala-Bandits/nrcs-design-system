@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "./Typography";
 
 export default {
-  title: "Design System|Visual Style/Typography"
+  title: 'Design System/Visual Style/Typography'
 };
 
 export const TypographyStory = () => (

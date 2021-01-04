@@ -2,7 +2,7 @@ import React from "react";
 import { DataTable } from "../DataTable";
 
 export default {
-  title: "Components|DataTable"
+  title: 'Components/DataTable'
 };
 
 export const DataTableSmall = () => {
