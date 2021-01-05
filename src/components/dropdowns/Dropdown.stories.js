@@ -17,7 +17,7 @@ import Icon from "@mdi/react";
 import { mdiChevronDown, mdiDotsVertical } from "@mdi/js";
 
 export default {
-  title: "Components|Dropdowns"
+  title: 'Components/Dropdowns'
 };
 
 export const DropdownDefault = () => {

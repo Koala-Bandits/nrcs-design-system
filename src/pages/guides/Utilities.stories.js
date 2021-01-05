@@ -2,7 +2,7 @@ import React from "react";
 import GridAndLayout from "./GridAndLayout";
 
 export default {
-  title: "Design System|Guides/Grid and Layout"
+  title: 'Design System/Guides/Grid and Layout'
 };
 
 export const GridAndLayoutStory = () => (

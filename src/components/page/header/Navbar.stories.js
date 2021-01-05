@@ -17,7 +17,7 @@ import { NavbarNrcs } from "./NavbarNrcs";
 import { NavbarFpac } from "./NavbarFpac";
 
 export default {
-  title: "Page Components|Header"
+  title: 'Page Components/Header'
 };
 
 export const StoryNavbarNRCS = () => {

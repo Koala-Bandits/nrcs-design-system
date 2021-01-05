@@ -11,7 +11,7 @@ import {
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
-  title: "Components|Inputs/Range"
+  title: 'Components/Inputs/Range'
 };
 
 export const RangeDefault = () => (

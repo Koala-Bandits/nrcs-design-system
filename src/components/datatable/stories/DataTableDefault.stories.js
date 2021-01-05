@@ -5,7 +5,7 @@ import { FlatButton } from "components/buttons/Buttons";
 import { mdiPlusBox, mdiRefresh, mdiCloseCircle, mdiFileExport } from "@mdi/js";
 
 export default {
-  title: "Components|DataTable"
+  title: 'Components/DataTable'
 };
 
 // Columns: array of objects

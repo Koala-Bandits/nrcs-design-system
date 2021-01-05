@@ -13,7 +13,7 @@ import {
 // import { DataTable } from "components/datatable/DataTable";
 
 export default {
-  title: "Components|Feedback/Spinner Messages"
+  title: 'Components/Feedback/Spinner Messages'
 };
 
 export const SpinnerMessagesDefault = () => {

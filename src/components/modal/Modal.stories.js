@@ -15,7 +15,7 @@ import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { PrimaryButton, ButtonSet } from "components/buttons/Buttons";
 
 export default {
-  title: "Components|Modal"
+  title: 'Components/Modal'
 };
 
 export const ModalDefault = () => {

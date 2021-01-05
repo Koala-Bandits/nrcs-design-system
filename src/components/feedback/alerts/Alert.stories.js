@@ -5,7 +5,7 @@ import { mdiCheckCircle } from "@mdi/js";
 import { Alert } from "./Alert";
 
 export default {
-  title: "Components|Feedback/Alerts"
+  title: 'Components/Feedback/Alerts'
 };
 
 export const AlertsDefault = () => (

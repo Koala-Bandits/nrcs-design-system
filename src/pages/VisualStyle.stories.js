@@ -2,7 +2,7 @@ import React from "react";
 import VisualStyle from "./VisualStyle";
 
 export default {
-  title: "Design System|Visual Style"
+  title: 'Design System/Visual Style'
 };
 
 export const VisualStyleStory = () => (

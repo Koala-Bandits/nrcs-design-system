@@ -1,4 +1,14 @@
 import React, { useState } from "react";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useLocation,
+  useParams,
+  useRouteMatch
+} from "react-router-dom";
+
 import {
   Row,
   Col,
@@ -71,17 +81,198 @@ import { TabsStory } from "components/tabs/Tabs.stories.js";
 import { TimePickerDefault } from "components/inputs/TimePicker.stories";
 import { TextInputDefault } from "components/inputs/TextInput.stories";
 import { ProgressMessage } from "components/feedback/progress/ProgressMessage";
+import { mdiLightbulbMultipleOffOutline } from "@mdi/js";
 
 // hook for apllication wide Growls
 // import useToast from "components/feedback/growls/useToast";
 
-function KitchenSink() {
-  const [activeTab, setActiveTab] = useState("default");
+function RenderCmpnt() {
+  // The <Route> that rendered this component has a
+  // path of `/kitchen-sink/:cmpnt`. The `:cmpnt` portion
+  // of the URL indicates a placeholder that we can
+  // get from `useParams()`.
+  let { cmpnt } = useParams();
 
-  const toggle = tab => {
-    if (activeTab !== tab) setActiveTab(tab);
-    console.log(activeTab);
-  };
+  let thecmpnt;
+
+  switch (cmpnt) {
+    case "accordion":
+      thecmpnt = (
+        <div>
+          <ContentHeaderH1>Accordion</ContentHeaderH1>
+          Coming soon...
+        </div>
+      );
+      break;
+    case "alerts":
+      thecmpnt = (
+        <div>
+          <AlertsDefault />
+          <AlertsNoIcon />
+          <AlertsDismissable />
+          <AlertsContent />
+        </div>
+      );
+      break;
+    case "alertbanners":
+      thecmpnt = (
+        <div>
+          <BannersDefault />
+          <BannersNoIcon />
+          <BannersDismissable />
+          <BannersContent />
+        </div>
+      );
+      break;
+    case "alertmessages":
+      thecmpnt = <MessagesDefault />;
+      break;
+
+    case "badge":
+      thecmpnt = <BadgesDefault />;
+      break;
+    case "badgelabel":
+      thecmpnt = (
+        <div>
+          <BadgeLabelsDefault />
+          <BadgeLabelsHeadings />
+        </div>
+      );
+      break;
+    case "breadcrumb":
+      thecmpnt = (
+        <div>
+          <BreadcrumbsDefault />
+          <BreadcrumbsIcons />
+        </div>
+      );
+      break;
+    case "buttons":
+      thecmpnt = (
+        <div>
+          <ButtonsDefaultStory />
+          <ButtonsWithIconsStory />
+          <ButtonSetStory />
+          <ButtonGroupStory />
+          <ButtonFooterStory />
+          <ButtonsPositionStory />
+        </div>
+      );
+      break;
+    case "card":
+      thecmpnt = <CardDefault />;
+      break;
+    case "checkbox":
+      thecmpnt = <CheckboxDefault />;
+      break;
+    case "contentHeader":
+      thecmpnt = (
+        <div>
+          <ContentHeaderDefault />
+          <ContentHeaderIcons />
+        </div>
+      );
+      break;
+    case "datatable":
+      thecmpnt = (
+        <div>
+          <DataTableDefault />
+          <DataTableBasic />
+          <DataTableSmall />
+        </div>
+      );
+      break;
+    case "datepicker":
+      thecmpnt = <DatePickerDefault />;
+      break;
+    case "dropdowns":
+      thecmpnt = <DropdownDefault />;
+      break;
+    case "expansions":
+      thecmpnt = <ExpansionsDefaultStory />;
+      break;
+    case "filebrowser":
+      thecmpnt = <FileBrowserDefault />;
+      break;
+    case "growls":
+      thecmpnt = <GrowlsStory />;
+      break;
+    case "links":
+      thecmpnt = <LinksDefault />;
+      break;
+    case "listgroup":
+      thecmpnt = <ListGroupStory />;
+      break;
+    case "modal":
+      thecmpnt = <ModalDefault />;
+      break;
+    case "progress":
+      thecmpnt = <ProgressMessageDefault />;
+      break;
+    case "radio":
+      thecmpnt = <RadioDefault />;
+      break;
+    case "range":
+      thecmpnt = <RangeDefault />;
+      break;
+    case "search":
+      thecmpnt = <SearchDefault />;
+      break;
+    case "select":
+      thecmpnt = (
+        <div>
+          <SelectDefault />
+          <SelectMulti />
+        </div>
+      );
+      break;
+    case "spinner":
+      thecmpnt = <SpinnerMessagesDefault />;
+      break;
+    case "switch":
+      thecmpnt = <SwitchDefault />;
+      break;
+    case "tables":
+      thecmpnt = (
+        <div>
+          <TablesDefault />
+          <TablesAlt />
+        </div>
+      );
+      break;
+    case "tabs":
+      thecmpnt = <TabsStory />;
+      break;
+    case "timepicker":
+      thecmpnt = <TimePickerDefault />;
+      break;
+    case "textinput":
+      thecmpnt = <TextInputDefault />;
+      break;
+
+    default:
+      thecmpnt = (
+        <div>
+          <ContentHeaderH1 className=" mt-0">KitchenSink</ContentHeaderH1>
+          <p className="lead">
+            All our core components (Storybook stories) A-Z.
+          </p>
+          <Alert color="warning">
+            Warning: several components are still under development and
+            incomplete.
+          </Alert>
+        </div>
+      );
+  }
+
+  return thecmpnt;
+}
+
+function KitchenSink() {
+  // The `path` lets us build <Route> paths that are
+  // relative to the parent route ~/components/kitchensink, while the `url` lets
+  // us build relative links.
+  let { path, url } = useRouteMatch();
 
   const cmpnts = [
     "Accordion",
@@ -123,6 +314,10 @@ function KitchenSink() {
     "TextInput"
   ];
 
+  //meh hack for now?
+  const locationPath = useLocation().pathname;
+  const lastSeg = locationPath.substring(locationPath.lastIndexOf("/") + 1);
+
   return (
     <div className="container">
       <Row>
@@ -131,11 +326,8 @@ function KitchenSink() {
           <Nav className="nav-fpac" vertical>
             <NavItem>
               <NavLink
-                className={activeTab === "default" ? "active" : ""}
-                href="#"
-                onClick={() => {
-                  toggle("default");
-                }}
+                className={lastSeg === "kitchen-sink" ? "active" : ""}
+                href={`${url}`}
               >
                 Overview
               </NavLink>
@@ -144,11 +336,8 @@ function KitchenSink() {
               return (
                 <NavItem key={cmpnt}>
                   <NavLink
-                    className={activeTab === cmpnt ? "active" : ""}
-                    href="#"
-                    onClick={() => {
-                      toggle(cmpnt);
-                    }}
+                    className={lastSeg === cmpnt.toLowerCase() ? "active" : ""}
+                    href={`${url}/${cmpnt.toLowerCase()}`}
                   >
                     {cmpnt}
                   </NavLink>
@@ -160,11 +349,8 @@ function KitchenSink() {
               return (
                 <NavItem key={cmpnt}>
                   <NavLink
-                    className={activeTab === cmpnt ? "active" : ""}
-                    href="#"
-                    onClick={() => {
-                      toggle(cmpnt);
-                    }}
+                    className={lastSeg === cmpnt.toLowerCase() ? "active" : ""}
+                    href={`${url}/${cmpnt.toLowerCase()}`}
                   >
                     {cmpnt}
                   </NavLink>
@@ -176,11 +362,8 @@ function KitchenSink() {
               return (
                 <NavItem key={cmpnt}>
                   <NavLink
-                    className={activeTab === cmpnt ? "active" : ""}
-                    href="#"
-                    onClick={() => {
-                      toggle(cmpnt);
-                    }}
+                    className={lastSeg === cmpnt.toLowerCase() ? "active" : ""}
+                    href={`${url}/${cmpnt.toLowerCase()}`}
                   >
                     {cmpnt}
                   </NavLink>
@@ -190,130 +373,14 @@ function KitchenSink() {
           </Nav>
         </Col>
         <Col md="9" className="mb-3">
-          <TabContent activeTab={activeTab}>
-            <TabPane tabId="default">
-              <ContentHeaderH1 className=" mt-0">KitchenSink</ContentHeaderH1>
-              <p className="lead">
-                All our core components (Storybook stories) A-Z.
-              </p>
-              <Alert color="warning">
-                Warning: several components are still under development and
-                incomplete.
-              </Alert>
-            </TabPane>
-            <TabPane tabId="Accordion">
-              <ContentHeaderH1>Accordion</ContentHeaderH1>
-              Coming soon...
-            </TabPane>
-            <TabPane tabId="Alerts">
-              <AlertsDefault />
-              <AlertsNoIcon />
-              <AlertsDismissable />
-              <AlertsContent />
-            </TabPane>
-            <TabPane tabId="AlertBanners">
-              <BannersDefault />
-              <BannersNoIcon />
-              <BannersDismissable />
-              <BannersContent />
-            </TabPane>
-            <TabPane tabId="AlertMessages">
-              <MessagesDefault />
-            </TabPane>
-            <TabPane tabId="Badge">
-              <BadgesDefault />
-            </TabPane>
-            <TabPane tabId="BadgeLabel">
-              <BadgeLabelsDefault />
-              <BadgeLabelsHeadings />
-            </TabPane>
-            <TabPane tabId="Breadcrumb">
-              <BreadcrumbsDefault />
-              <BreadcrumbsIcons />
-            </TabPane>
-            <TabPane tabId="Buttons">
-              <ButtonsDefaultStory />
-              <ButtonsWithIconsStory />
-              <ButtonSetStory />
-              <ButtonGroupStory />
-              <ButtonFooterStory />
-              <ButtonsPositionStory />
-            </TabPane>
-            <TabPane tabId="Card">
-              <CardDefault />
-            </TabPane>
-            <TabPane tabId="Checkbox">
-              <CheckboxDefault />
-            </TabPane>
-            <TabPane tabId="ContentHeader">
-              <ContentHeaderDefault />
-              <ContentHeaderIcons />
-            </TabPane>
-            <TabPane tabId="DataTable">
-              <DataTableDefault />
-              <DataTableBasic />
-              <DataTableSmall />
-            </TabPane>
-            <TabPane tabId="DatePicker">
-              <DatePickerDefault />
-            </TabPane>
-            <TabPane tabId="Dropdowns">
-              <DropdownDefault />
-            </TabPane>
-            <TabPane tabId="Expansions">
-              <ExpansionsDefaultStory />
-            </TabPane>
-            <TabPane tabId="FileBrowser">
-              <FileBrowserDefault />
-            </TabPane>
-            <TabPane tabId="Growls">
-              <GrowlsStory />
-            </TabPane>
-            <TabPane tabId="Links">
-              <LinksDefault />
-            </TabPane>
-            <TabPane tabId="ListGroup">
-              <ListGroupStory />
-            </TabPane>
-            <TabPane tabId="Modal">
-              <ModalDefault />
-            </TabPane>
-            <TabPane tabId="Progress">
-              <ProgressMessageDefault />
-            </TabPane>
-            <TabPane tabId="Radio">
-              <RadioDefault />
-            </TabPane>
-            <TabPane tabId="Range">
-              <RangeDefault />
-            </TabPane>
-            <TabPane tabId="Search">
-              <SearchDefault />
-            </TabPane>
-            <TabPane tabId="Select">
-              <SelectDefault />
-              <SelectMulti />
-            </TabPane>
-            <TabPane tabId="Spinner">
-              <SpinnerMessagesDefault />
-            </TabPane>
-            <TabPane tabId="Switch">
-              <SwitchDefault />
-            </TabPane>
-            <TabPane tabId="Tables">
-              <TablesDefault />
-              <TablesAlt />
-            </TabPane>
-            <TabPane tabId="Tabs">
-              <TabsStory />
-            </TabPane>
-            <TabPane tabId="TimePicker">
-              <TimePickerDefault />
-            </TabPane>
-            <TabPane tabId="TextInput">
-              <TextInputDefault />
-            </TabPane>
-          </TabContent>
+          <Switch>
+            <Route exact path={path}>
+              <RenderCmpnt />
+            </Route>
+            <Route path={`${path}/:cmpnt`}>
+              <RenderCmpnt />
+            </Route>
+          </Switch>
         </Col>
       </Row>
     </div>

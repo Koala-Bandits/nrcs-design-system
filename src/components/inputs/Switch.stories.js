@@ -3,7 +3,7 @@ import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
-  title: "Components|Inputs/Switch"
+  title: 'Components/Inputs/Switch'
 };
 
 export const SwitchDefault = () => (

@@ -6,7 +6,7 @@ import { HeaderFpac } from "./HeaderFpac";
 import { HeaderCD } from "./HeaderCD";
 
 export default {
-  title: "Page Components|Header"
+  title: 'Page Components/Header'
 };
 
 export const StoryHeaderNRCS = () => {

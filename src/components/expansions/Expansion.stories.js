@@ -15,7 +15,7 @@ import {
 } from "components/text/ContentHeader";
 
 export default {
-  title: "Components|Expansions"
+  title: 'Components/Expansions'
 };
 
 export const ExpansionsDefaultStory = () => {

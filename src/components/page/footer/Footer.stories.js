@@ -4,7 +4,7 @@ import { Footer } from "./Footer.js";
 import { FooterNrcsDesignSystem } from "./FooterNrcsDesignSystem.js";
 
 export default {
-  title: "Page Components|Footer"
+  title: 'Page Components/Footer'
 };
 
 export const StoryFooter = () => {

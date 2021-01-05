@@ -3,7 +3,7 @@ import { BadgeLabel } from "./BadgeLabel";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
-  title: "Components|Feedback/BadgeLabels"
+  title: 'Components/Feedback/BadgeLabels'
 };
 
 export const BadgeLabelsDefault = () => (

@@ -14,7 +14,7 @@ import {
 // } from "@mdi/js";
 
 export default {
-  title: "Components|Tables"
+  title: 'Components/Tables'
 };
 
 export const TablesDefault = () => (

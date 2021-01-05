@@ -20,7 +20,7 @@ import {
 } from "components/buttons/Buttons";
 
 export default {
-  title: "Components|Forms/Form Examples"
+  title: 'Components/Forms/Form Examples'
 };
 
 export const FormDefaultStory = () => (

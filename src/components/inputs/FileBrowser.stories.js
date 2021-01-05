@@ -11,7 +11,7 @@ import {
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
-  title: "Components|Inputs/File Browser"
+  title: 'Components/Inputs/File Browser'
 };
 
 export const FileBrowserDefault = () => (

@@ -5,7 +5,7 @@ import { mdiCheckCircle } from "@mdi/js";
 import { AlertBanner } from "./AlertBanner";
 
 export default {
-  title: "Components|Feedback/Alert Banners"
+  title: 'Components/Feedback/Alert Banners'
 };
 
 export const BannersDefault = () => (

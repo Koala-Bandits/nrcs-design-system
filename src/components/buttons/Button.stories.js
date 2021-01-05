@@ -31,7 +31,7 @@ import {
 } from "@mdi/js";
 
 export default {
-  title: "Components|Buttons"
+  title: 'Components/Buttons'
 };
 
 export const ButtonsDefaultStory = () => (

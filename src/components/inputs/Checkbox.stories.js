@@ -4,7 +4,7 @@ import { Checkbox } from "components/inputs/Checkbox";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
 export default {
-  title: "Components|Inputs/Checkbox"
+  title: 'Components/Inputs/Checkbox'
 };
 
 export const CheckboxDefault = () => {
