@@ -1,9 +1,6 @@
 // Polyfills for IE11
 import "react-app-polyfill/ie11";
 import "react-app-polyfill/stable";
-// not sure if we should use core-js or react-app-polyfill, need to test
-import "core-js/stable";
-
 // Global Styles
 
 // NRCS Bootstrap
