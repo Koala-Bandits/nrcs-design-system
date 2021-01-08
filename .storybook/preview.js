@@ -38,7 +38,7 @@ const loadStories = () => {
     require("../src/pages/guides/GridAndLayout.stories.js"),
     require("../src/pages/guides/Utilities.stories.js")
   ];
-  const req = require.context("../src/components", true, /\.stories\.js$/);
+  const req = require.context("../src/components", true, /\.stories\.(js|tsx)$/);
   req.keys().forEach(fname => allExports.push(req(fname)));
   return allExports;
 };

@@ -2,7 +2,19 @@ import React from "react";
 import { Breadcrumb, BreadcrumbItem } from "reactstrap";
 import Icon from "@mdi/react";
 
-export const Breadcrumbs = ({ data, size, ...rest }) => {
+export interface IBreadcrumbData {
+  icon?: string;
+  active: boolean;
+  text: string;
+  href: string;
+}
+
+export interface IBreadcrumbsProps {
+  data: IBreadcrumbData[];
+  size?: "sm";
+}
+
+export const Breadcrumbs = ({ data, size } : IBreadcrumbsProps) => {
   let cmp = (
     <Breadcrumb className={size === "sm" ? "breadcrumb-sm" : ""}>
       {data.map((crumb, index) => {

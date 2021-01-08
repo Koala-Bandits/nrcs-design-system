@@ -7,7 +7,7 @@ import {
   Pagination,
   PaginationItem,
   PaginationLink,
-  Input
+  Input,
 } from "reactstrap";
 import { FlatButton } from "components/buttons/Buttons";
 import { mdiChevronUp, mdiChevronDown, mdiViewColumn } from "@mdi/js";
@@ -31,12 +31,12 @@ export const DataTable = ({
   // filterstring
   const [filterString, setFilterString] = useState();
 
-  const onFilter = event => {
+  const onFilter = (event) => {
     setFilterString(event.target.value.toLowerCase());
     console.log("filter string: " + filterString);
   };
 
-  const onSort = property => () => {
+  const onSort = (property) => () => {
     let direction;
     if (!sort || property !== sort.property) direction = "desc";
     else if (sort.direction === "asc") direction = "desc";
@@ -49,7 +49,7 @@ export const DataTable = ({
   // get an array of column properties for filterable columns
   // TO DO this probably needs to be a state var as we hide/show columns to update filterable columns
   let filters = [];
-  columns.forEach(column => {
+  columns.forEach((column) => {
     if (column.filter) {
       filters.push(column.property);
       // filters[column.property] = '';
@@ -64,9 +64,9 @@ export const DataTable = ({
     console.log("filter and sort...");
     // filter first
     if (filterString && filterString.length > 0) {
-      result = data.filter(rowdata => {
+      result = data.filter((rowdata) => {
         let match = false;
-        filters.forEach(filter => {
+        filters.forEach((filter) => {
           if (rowdata[filter].toLowerCase().includes(filterString))
             match = true;
         });
@@ -91,7 +91,7 @@ export const DataTable = ({
   };
 
   // TABLE HEADERS via COLUMNS
-  let cols = columns.map(col => {
+  let cols = columns.map((col) => {
     let classes = "";
 
     // header alignment
@@ -154,7 +154,7 @@ export const DataTable = ({
 
   if (adjustedData.length > 0) {
     rows = adjustedData.map((row, index) => {
-      let cells = columns.map(col => {
+      let cells = columns.map((col) => {
         let classes = "";
 
         // alignment

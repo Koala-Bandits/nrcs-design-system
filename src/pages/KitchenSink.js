@@ -43,7 +43,7 @@ import { MessagesDefault } from "components/feedback/messages/AlertMessage.stori
 import {
   BreadcrumbsDefault,
   BreadcrumbsIcons
-} from "components/breadcrumbs/Breadcrumbs.stories.js";
+} from "components/breadcrumbs/Breadcrumbs.stories";
 import {
   ButtonsDefaultStory,
   ButtonsWithIconsStory,

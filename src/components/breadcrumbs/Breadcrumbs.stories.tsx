@@ -8,18 +8,19 @@ import React from "react";
 import { Breadcrumbs } from "./Breadcrumbs";
 import {
   ContentHeaderH1,
-  ContentHeaderH2
+  ContentHeaderH2,
 } from "components/text/ContentHeader";
 // import Icon from "@mdi/react";
 import {
   mdiAccount,
   // mdiChevronDown,
   mdiHome,
-  mdiFormatListBulleted
+  mdiFormatListBulleted,
 } from "@mdi/js";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Breadcrumbs'
+  title: "Components/Breadcrumbs",
 };
 
 export const BreadcrumbsDefault = () => {
@@ -27,15 +28,12 @@ export const BreadcrumbsDefault = () => {
     { text: "Home", href: "#", active: false },
     { text: "Library", href: "#", active: false },
     { text: "Science Fiction", href: "#", active: false },
-    { text: "Isaac Asimov", href: "#", active: true }
+    { text: "Isaac Asimov", href: "#", active: true },
   ];
 
   return (
     <div>
-      <ContentHeaderH1
-        className="mt-0
-      "
-      >
+      <ContentHeaderH1 size={undefined} className="mt-0">
         Breadcrumbs
       </ContentHeaderH1>
 
@@ -56,14 +54,16 @@ export const BreadcrumbsIcons = () => {
       text: "Science Fiction",
       href: "#",
       icon: mdiFormatListBulleted,
-      active: false
+      active: false,
     },
-    { text: "Isaac Asimov", href: "#", icon: mdiAccount, active: true }
+    { text: "Isaac Asimov", href: "#", icon: mdiAccount, active: true },
   ];
 
   return (
     <div>
-      <ContentHeaderH2>Breadcrumbs - with Icons</ContentHeaderH2>
+      <ContentHeaderH2 size={undefined}>
+        Breadcrumbs - with Icons
+      </ContentHeaderH2>
 
       <Breadcrumbs data={dataWithIcons} />
 
@@ -98,11 +98,11 @@ export const BreadcrumbsIcons = () => {
 // };
 
 BreadcrumbsDefault.story = {
-  name: "Breadcrumbs - Default"
+  name: "Breadcrumbs - Default",
 };
 
 BreadcrumbsIcons.story = {
-  name: "Breadcrumbs - with Icons"
+  name: "Breadcrumbs - with Icons",
 };
 
 // BreadcrumbsCustom.story = {
