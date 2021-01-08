@@ -45,6 +45,6 @@
   }
 
   .alert-message.alert-#{$color} svg {
-    fill: theme-color($color);
+    color: theme-color($color);
   }
 }
