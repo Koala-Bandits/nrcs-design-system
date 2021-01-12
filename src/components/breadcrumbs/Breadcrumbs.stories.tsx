@@ -33,9 +33,7 @@ export const BreadcrumbsDefault = () => {
 
   return (
     <div>
-      <ContentHeaderH1 size={undefined} className="mt-0">
-        Breadcrumbs
-      </ContentHeaderH1>
+      <ContentHeaderH1 className="mt-0">Breadcrumbs</ContentHeaderH1>
 
       <Breadcrumbs data={data} />
 
@@ -61,9 +59,7 @@ export const BreadcrumbsIcons = () => {
 
   return (
     <div>
-      <ContentHeaderH2 size={undefined}>
-        Breadcrumbs - with Icons
-      </ContentHeaderH2>
+      <ContentHeaderH2>Breadcrumbs - with Icons</ContentHeaderH2>
 
       <Breadcrumbs data={dataWithIcons} />
 

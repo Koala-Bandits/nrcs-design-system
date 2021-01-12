@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { Table } from "reactstrap";
+import { Table, TableProps } from "reactstrap";
 import {
   Row,
   Col,
@@ -12,6 +12,24 @@ import {
 import { FlatButton } from "components/buttons/Buttons";
 import { mdiChevronUp, mdiChevronDown, mdiViewColumn } from "@mdi/js";
 
+interface IProps extends TableProps {
+  actions: any;
+  caption?: string | undefined;
+  columns?: any[] | undefined;
+  columnPicker: any;
+  data?: any[] | undefined;
+  paging: any;
+  size: any;
+  summary?: string | undefined;
+  children: any;
+}
+
+type DirectionType = "asc" | "desc";
+interface ISort {
+  property: string;
+  direction: DirectionType;
+}
+
 export const DataTable = ({
   actions,
   caption = "",
@@ -23,32 +41,32 @@ export const DataTable = ({
   summary = "",
   children,
   ...rest
-}) => {
+}: IProps) => {
   // which column we are sorting on, with direction
   // { property: "string", direction: "asc/desc" }
-  const [sort, setSort] = useState("");
+  const [sort, setSort] = useState<ISort | undefined>();
 
   // filterstring
-  const [filterString, setFilterString] = useState();
+  const [filterString, setFilterString] = useState<string>("");
 
-  const onFilter = (event) => {
+  const onFilter = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFilterString(event.target.value.toLowerCase());
     console.log("filter string: " + filterString);
   };
 
-  const onSort = (property) => () => {
-    let direction;
+  const onSort = (property: string) => () => {
+    let direction: DirectionType;
     if (!sort || property !== sort.property) direction = "desc";
     else if (sort.direction === "asc") direction = "desc";
     else direction = "asc";
-    const nextSort = { property, direction };
+    const nextSort: ISort = { property, direction };
     setSort(nextSort);
     console.log("sorting: " + property + " direction:" + direction);
   };
 
   // get an array of column properties for filterable columns
   // TO DO this probably needs to be a state var as we hide/show columns to update filterable columns
-  let filters = [];
+  let filters: string[] = [];
   columns.forEach((column) => {
     if (column.filter) {
       filters.push(column.property);
@@ -59,12 +77,12 @@ export const DataTable = ({
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Escaping
   // const escapeRegExp = input => input.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-  const filterAndSortData = (data, filterString, sort) => {
+  const filterAndSortData = (data: any, filterString: string, sort?: ISort) => {
     let result = data;
     console.log("filter and sort...");
     // filter first
     if (filterString && filterString.length > 0) {
-      result = data.filter((rowdata) => {
+      result = data.filter((rowdata: any) => {
         let match = false;
         filters.forEach((filter) => {
           if (rowdata[filter].toLowerCase().includes(filterString))
@@ -80,7 +98,7 @@ export const DataTable = ({
       result = result === data ? [...data] : result; // don't sort caller's data
       const before = direction === "asc" ? 1 : -1;
       const after = direction === "asc" ? -1 : 1;
-      result.sort((d1, d2) => {
+      result.sort((d1: any, d2: any) => {
         if (d1[property] > d2[property]) return before;
         if (d1[property] < d2[property]) return after;
         return 0;
@@ -110,15 +128,11 @@ export const DataTable = ({
     if (col.sort) {
       classes += " th-sort p-0";
       let icon = mdiChevronDown;
-      if (
-        sort.direction &&
-        sort.direction === "asc" &&
-        sort.property === col.property
-      ) {
+      if (sort && sort.direction === "asc" && sort.property === col.property) {
         icon = mdiChevronUp;
       }
 
-      if (col.sort && sort.property === col.property) {
+      if (col.sort && sort && sort.property === col.property) {
         classes += " th-sort-active";
       }
 
@@ -141,6 +155,7 @@ export const DataTable = ({
   // This causes updates to adjustedData via useMeme() which triggers based on changes to its dependencies (sort, filter, & page state changes)
   const adjustedData = useMemo(
     () => filterAndSortData(data, filterString, sort),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [data, filterString, sort]
   );
 
@@ -153,7 +168,7 @@ export const DataTable = ({
   );
 
   if (adjustedData.length > 0) {
-    rows = adjustedData.map((row, index) => {
+    rows = adjustedData.map((row: any, index: number) => {
       let cells = columns.map((col) => {
         let classes = "";
 

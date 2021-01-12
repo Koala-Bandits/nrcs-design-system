@@ -5,18 +5,18 @@ import {
   Row,
   Col,
   Card,
-  CardBody
+  CardBody,
 } from "reactstrap";
 import {
   PrimaryButton,
   SecondaryButton,
   FlatButton,
   ButtonSet,
-  ButtonFooter
+  ButtonFooter,
 } from "components/buttons/Buttons";
 import {
   ContentHeaderH1,
-  ContentHeaderH2
+  ContentHeaderH2,
 } from "components/text/ContentHeader";
 import {
   mdiAccount,
@@ -27,11 +27,12 @@ import {
   mdiPencil,
   mdiContentCopy,
   mdiContentPaste,
-  mdiDelete
+  mdiDelete,
 } from "@mdi/js";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Buttons'
+  title: "Components/Buttons",
 };
 
 export const ButtonsDefaultStory = () => (
@@ -420,25 +421,25 @@ export const ButtonsPositionStory = () => (
 );
 
 ButtonsDefaultStory.story = {
-  name: "Buttons"
+  name: "Buttons",
 };
 
 ButtonsWithIconsStory.story = {
-  name: "Buttons - with Icons"
+  name: "Buttons - with Icons",
 };
 
 ButtonSetStory.story = {
-  name: "ButtonSet"
+  name: "ButtonSet",
 };
 
 ButtonGroupStory.story = {
-  name: "Button Groups"
+  name: "Button Groups",
 };
 
 ButtonFooterStory.story = {
-  name: "ButtonFooter"
+  name: "ButtonFooter",
 };
 
 ButtonsPositionStory.story = {
-  name: "Button Positioning"
+  name: "Button Positioning",
 };

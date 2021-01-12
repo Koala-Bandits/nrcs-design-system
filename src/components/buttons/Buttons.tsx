@@ -1,6 +1,13 @@
 import React from "react";
-import { Button } from "reactstrap";
+import { Button, ButtonProps } from "reactstrap";
 import Icon from "@mdi/react";
+import { div } from "../HTMLTypes";
+
+interface IProps extends ButtonProps {
+  iconLeft?: any;
+  iconRight?: any;
+  iconOnly?: any;
+}
 
 export const PrimaryButton = ({
   size,
@@ -9,7 +16,7 @@ export const PrimaryButton = ({
   iconOnly,
   children,
   ...rest
-}) => {
+}: IProps) => {
   let cmp;
 
   if (iconLeft) {
@@ -58,7 +65,7 @@ export const SecondaryButton = ({
   iconOnly,
   children,
   ...rest
-}) => {
+}: IProps) => {
   let cmp;
 
   if (iconLeft) {
@@ -131,7 +138,7 @@ export const FlatButton = ({
   iconOnly,
   children,
   ...rest
-}) => {
+}: IProps) => {
   let cmp;
 
   if (iconLeft) {
@@ -173,12 +180,16 @@ export const FlatButton = ({
   return cmp;
 };
 
-export class ButtonSet extends React.Component {
-  render() {
-    return <div className="btn-set" {...this.props}></div>;
-  }
-}
+export const ButtonSet = (props: div) => {
+  return <div className="btn-set" {...props}></div>;
+};
 
-export const ButtonFooter = ({ className, children }) => (
-  <div className={`pt-3 mt-3 border-top ${className}`}>{children}</div>
+interface IButtonFooterProps {
+  className?: string;
+}
+export const ButtonFooter = ({
+  className,
+  children,
+}: React.PropsWithChildren<IButtonFooterProps>) => (
+  <div className={`pt-3 mt-3 border-top ${className || ""}`}>{children}</div>
 );

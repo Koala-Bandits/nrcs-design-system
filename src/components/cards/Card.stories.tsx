@@ -9,12 +9,13 @@ import {
   CardSubtitle,
   CardLink,
   ListGroup,
-  ListGroupItem
+  ListGroupItem,
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: "Components/Cards"
+  title: "Components/Cards",
 };
 
 export const CardDefault = () => (
@@ -81,5 +82,5 @@ export const CardDefault = () => (
 );
 
 CardDefault.story = {
-  name: "Cards - Default"
+  name: "Cards - Default",
 };

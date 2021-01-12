@@ -5,17 +5,19 @@ import {
   ContentHeaderH3,
   ContentHeaderH4,
   ContentHeaderH5,
-  ContentHeaderH6
+  ContentHeaderH6,
 } from "./ContentHeader";
 import Icon from "@mdi/react";
 import { mdiHelpCircle, mdiCloseCircle, mdiHuman } from "@mdi/js";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Content Header'
+  title: "Components/Content Header",
 };
 
 export const ContentHeaderDefault = () => (
   <div>
+    <ContentHeaderH1 />
     <ContentHeaderH1>Content Header</ContentHeaderH1>
 
     <p>
@@ -95,9 +97,9 @@ export const ContentHeaderIcons = () => (
 );
 
 ContentHeaderDefault.story = {
-  name: "Content Header"
+  name: "Content Header",
 };
 
 ContentHeaderIcons.story = {
-  name: "Content Header - with Icons"
+  name: "Content Header - with Icons",
 };
