@@ -1,7 +1,14 @@
 import React from "react";
-import { Alert as RsAlert, Container, Row, Col, Spinner } from "reactstrap";
+import {
+  Alert as RsAlert,
+  Container,
+  Row,
+  Col,
+  Spinner,
+  SpinnerProps,
+} from "reactstrap";
 
-export const SpinnerMessage = ({ size, children, ...rest }) => {
+export const SpinnerMessage = ({ size, children, ...rest }: SpinnerProps) => {
   let cmp;
 
   cmp = (
@@ -23,7 +30,11 @@ export const SpinnerMessage = ({ size, children, ...rest }) => {
   return cmp;
 };
 
-export const SpinnerOverlayMessage = ({ size, children, ...rest }) => {
+export const SpinnerOverlayMessage = ({
+  size,
+  children,
+  ...rest
+}: SpinnerProps) => {
   let cmp;
 
   cmp = (
@@ -41,7 +52,11 @@ export const SpinnerOverlayMessage = ({ size, children, ...rest }) => {
   return cmp;
 };
 
-export const SpinnerCenteredMessage = ({ size, children, ...rest }) => {
+export const SpinnerCenteredMessage = ({
+  size,
+  children,
+  ...rest
+}: SpinnerProps) => {
   let cmp;
 
   cmp = (

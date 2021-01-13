@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import { InputGroup, InputGroupAddon, Input } from "reactstrap";
 
 import { PrimaryButton } from "components/buttons/Buttons";
@@ -11,7 +11,18 @@ import { PrimaryButton } from "components/buttons/Buttons";
 //   mdiCheckCircle
 // } from "@mdi/js";
 
-function Search({ size, filter, icon, children }) {
+interface ISearchProps {
+  size?: string;
+  filter?: string;
+  icon?: string;
+}
+
+function Search({
+  size,
+  filter,
+  icon,
+  children,
+}: PropsWithChildren<ISearchProps>) {
   //   const removeRef = useRef();
   //   removeRef.current = remove;
 

@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { CustomInput } from "reactstrap";
+import { CustomInput, CustomInputProps } from "reactstrap";
 
 export const Checkbox = ({
   id,
   checked: checkedProp,
   indeterminate: indeterminateProp,
+  type,
   ...rest
-}) => {
+}: CustomInputProps) => {
   const [checked, setChecked] = useState(!!checkedProp);
   const [indeterminate, setIndeterminate] = useState(!!indeterminateProp);
 
-  const onChange = event => {
+  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (indeterminate) {
       setIndeterminate(false);
     }
@@ -26,7 +27,10 @@ export const Checkbox = ({
     // Add indeterminate psuedo class
     if (indeterminate) {
       // hack for now
-      document.getElementById(id).indeterminate = true;
+      const el = document.getElementById(id as string) as HTMLInputElement;
+      if (el) {
+        el.indeterminate = true;
+      }
       // checkRef.current.indeterminate = true;
     }
   });

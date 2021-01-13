@@ -1,14 +1,19 @@
 import React from "react";
-import { Alert as RsAlert, Container, Row, Col } from "reactstrap";
+import { Alert as RsAlert, AlertProps, Container, Row, Col } from "reactstrap";
 import Icon from "@mdi/react";
 import {
   mdiInformation,
   mdiAlert,
   mdiAlertCircle,
-  mdiCheckCircle
+  mdiCheckCircle,
 } from "@mdi/js";
 
-export const AlertMessage = ({ color, size, children, ...rest }) => {
+export const AlertMessage = ({
+  color,
+  size,
+  children,
+  ...rest
+}: AlertProps) => {
   let icon;
 
   switch (color) {

@@ -2,8 +2,9 @@ import React from "react";
 import { Form, FormGroup, Label, CustomInput, Input } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Inputs/Radio'
+  title: "Components/Inputs/Radio",
 };
 
 export const RadioDefault = () => (
@@ -58,5 +59,5 @@ export const RadioDefault = () => (
 );
 
 RadioDefault.story = {
-  name: "Radio - Default"
+  name: "Radio - Default",
 };

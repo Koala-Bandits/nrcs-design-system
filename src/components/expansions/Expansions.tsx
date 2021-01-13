@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { PropsWithChildren, useState } from "react";
 import { Card, CardBody, Collapse, Row, Col } from "reactstrap";
 import { FlatButton } from "components/buttons/Buttons";
 import { mdiChevronRight, mdiChevronDown } from "@mdi/js";
 
-export const Expansion = ({ label, children, ...rest }) => {
+interface IExpansionProps {
+  label: string;
+}
+
+export const Expansion = ({
+  label,
+  children,
+}: PropsWithChildren<IExpansionProps>) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -28,7 +35,10 @@ export const Expansion = ({ label, children, ...rest }) => {
   );
 };
 
-export const ExpansionCard = ({ label, children, ...rest }) => {
+export const ExpansionCard = ({
+  label,
+  children,
+}: PropsWithChildren<IExpansionProps>) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 

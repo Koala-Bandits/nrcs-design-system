@@ -9,15 +9,16 @@ import {
   Dropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { ButtonSet } from "components/buttons/Buttons";
 import Icon from "@mdi/react";
 import { mdiChevronDown, mdiDotsVertical } from "@mdi/js";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Dropdowns'
+  title: "Components/Dropdowns",
 };
 
 export const DropdownDefault = () => {
@@ -31,14 +32,14 @@ export const DropdownDefault = () => {
   );
   const [flatDropdownOpen, setFlatDropdownOpen] = useState(false);
 
-  const togglePrimary = () => setPrimaryDropdownOpen(prevState => !prevState);
+  const togglePrimary = () => setPrimaryDropdownOpen((prevState) => !prevState);
   const togglePrimarySplit = () =>
-    setPrimarySplitDropdownOpen(prevState => !prevState);
+    setPrimarySplitDropdownOpen((prevState) => !prevState);
   const toggleSecondarySplit = () =>
-    setSecondarySplitDropdownOpen(prevState => !prevState);
+    setSecondarySplitDropdownOpen((prevState) => !prevState);
   const toggleSecondary = () =>
-    setSecondaryDropdownOpen(prevState => !prevState);
-  const toggleFlat = () => setFlatDropdownOpen(prevState => !prevState);
+    setSecondaryDropdownOpen((prevState) => !prevState);
+  const toggleFlat = () => setFlatDropdownOpen((prevState) => !prevState);
 
   return (
     <div>
@@ -266,5 +267,5 @@ export const DropdownDefault = () => {
 };
 
 DropdownDefault.story = {
-  name: "Dropdown - Default"
+  name: "Dropdown - Default",
 };

@@ -2,18 +2,19 @@ import React, { useState } from "react";
 import { Modal, ModalBody } from "reactstrap";
 import {
   ContentHeaderH1,
-  ContentHeaderH2
+  ContentHeaderH2,
 } from "components/text/ContentHeader";
 import { PrimaryButton } from "components/buttons/Buttons";
 import {
   SpinnerMessage,
   SpinnerCenteredMessage,
-  SpinnerOverlayMessage
+  SpinnerOverlayMessage,
 } from "./SpinnerMessages";
 // import { DataTable } from "components/datatable/DataTable";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Feedback/Spinner Messages'
+  title: "Components/Feedback/Spinner Messages",
 };
 
 export const SpinnerMessagesDefault = () => {
@@ -68,5 +69,5 @@ export const SpinnerMessagesDefault = () => {
 };
 
 SpinnerMessagesDefault.story = {
-  name: "Spinner Message"
+  name: "Spinner Message",
 };

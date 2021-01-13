@@ -3,8 +3,9 @@ import Icon from "@mdi/react";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { mdiOpenInNew } from "@mdi/js";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Links (anchors)'
+  title: "Components/Links (anchors)",
 };
 
 export const LinksDefault = () => (
@@ -22,5 +23,5 @@ export const LinksDefault = () => (
 );
 
 LinksDefault.story = {
-  name: "Links - Default"
+  name: "Links - Default",
 };

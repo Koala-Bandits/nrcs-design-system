@@ -7,12 +7,13 @@ import {
   Label,
   Input,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Inputs/TimePicker'
+  title: "Components/Inputs/TimePicker",
 };
 
 export const TimePickerDefault = () => (
@@ -92,5 +93,5 @@ export const TimePickerDefault = () => (
 );
 
 TimePickerDefault.story = {
-  name: "Time Picker - Default"
+  name: "Time Picker - Default",
 };

@@ -5,8 +5,9 @@ import { HeaderNrcsDesignSystem } from "./HeaderNrcsDesignSystem";
 import { HeaderFpac } from "./HeaderFpac";
 import { HeaderCD } from "./HeaderCD";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Page Components/Header'
+  title: "Page Components/Header",
 };
 
 export const StoryHeaderNRCS = () => {
@@ -56,17 +57,17 @@ export const StoryHeaderCD = () => {
 };
 
 StoryHeaderNRCS.story = {
-  name: "Header - NRCS"
+  name: "Header - NRCS",
 };
 
 StoryHeaderNRCSDesignSystem.story = {
-  name: "Header - NRCS Design System"
+  name: "Header - NRCS Design System",
 };
 
 StoryHeaderFPAC.story = {
-  name: "Header - FPAC"
+  name: "Header - FPAC",
 };
 
 StoryHeaderCD.story = {
-  name: "Header - CD"
+  name: "Header - CD",
 };

@@ -2,11 +2,12 @@ import React from "react";
 import { Row, Col, FormGroup, Label, CustomInput } from "reactstrap";
 import {
   ContentHeaderH1,
-  ContentHeaderH2
+  ContentHeaderH2,
 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Inputs/Select'
+  title: "Components/Inputs/Select",
 };
 
 export const SelectDefault = () => (
@@ -106,9 +107,9 @@ export const SelectMulti = () => (
 );
 
 SelectDefault.story = {
-  name: "Select - Default"
+  name: "Select - Default",
 };
 
 SelectMulti.story = {
-  name: "Multiple Select"
+  name: "Multiple Select",
 };

@@ -3,8 +3,9 @@ import { FormGroup, Label } from "reactstrap";
 import { Checkbox } from "components/inputs/Checkbox";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Inputs/Checkbox'
+  title: "Components/Inputs/Checkbox",
 };
 
 export const CheckboxDefault = () => {
@@ -64,5 +65,5 @@ export const CheckboxDefault = () => {
 };
 
 CheckboxDefault.story = {
-  name: "Checkbox - Default"
+  name: "Checkbox - Default",
 };

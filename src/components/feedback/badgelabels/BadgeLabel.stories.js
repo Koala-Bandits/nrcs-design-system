@@ -2,8 +2,9 @@ import React from "react";
 import { BadgeLabel } from "./BadgeLabel";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Feedback/BadgeLabels'
+  title: "Components/Feedback/BadgeLabels",
 };
 
 export const BadgeLabelsDefault = () => (
@@ -129,9 +130,9 @@ export const BadgeLabelsHeadings = () => (
 );
 
 BadgeLabelsDefault.story = {
-  name: "BadgeLabels - Default"
+  name: "BadgeLabels - Default",
 };
 
 BadgeLabelsHeadings.story = {
-  name: "BadgeLabels - Headings"
+  name: "BadgeLabels - Headings",
 };

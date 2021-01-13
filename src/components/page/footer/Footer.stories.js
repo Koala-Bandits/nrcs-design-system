@@ -3,8 +3,9 @@ import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { Footer } from "./Footer.js";
 import { FooterNrcsDesignSystem } from "./FooterNrcsDesignSystem.js";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Page Components/Footer'
+  title: "Page Components/Footer",
 };
 
 export const StoryFooter = () => {
@@ -34,9 +35,9 @@ export const StoryFooterNrcsDesignSystem = () => {
 };
 
 StoryFooter.story = {
-  name: "Footer"
+  name: "Footer",
 };
 
 StoryFooterNrcsDesignSystem.story = {
-  name: "Footer - NRCS Design System"
+  name: "Footer - NRCS Design System",
 };

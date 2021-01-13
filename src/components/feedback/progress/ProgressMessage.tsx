@@ -1,7 +1,12 @@
 import React from "react";
-import { Container, Row, Col, Progress } from "reactstrap";
+import { Progress, ProgressProps } from "reactstrap";
 
-export const ProgressMessage = ({ message, value, children, ...rest }) => {
+export const ProgressMessage = ({
+  message,
+  value,
+  children,
+  ...rest
+}: ProgressProps) => {
   let cmp;
 
   cmp = (

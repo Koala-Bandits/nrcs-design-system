@@ -6,12 +6,13 @@ import {
   FormText,
   FormFeedback,
   Label,
-  CustomInput
+  CustomInput,
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Inputs/File Browser'
+  title: "Components/Inputs/File Browser",
 };
 
 export const FileBrowserDefault = () => (
@@ -118,5 +119,5 @@ export const FileBrowserDefault = () => (
 );
 
 FileBrowserDefault.story = {
-  name: "File Browser - Default"
+  name: "File Browser - Default",
 };

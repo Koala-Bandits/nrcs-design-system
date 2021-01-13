@@ -2,8 +2,9 @@ import React from "react";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { AlertMessage } from "./AlertMessage";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Feedback/Alert Messages'
+  title: "Components/Feedback/Alert Messages",
 };
 
 export const MessagesDefault = () => (
@@ -63,5 +64,5 @@ export const MessagesDefault = () => (
 );
 
 MessagesDefault.story = {
-  name: "Alert Messages"
+  name: "Alert Messages",
 };

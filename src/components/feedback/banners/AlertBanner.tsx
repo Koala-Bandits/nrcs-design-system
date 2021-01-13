@@ -1,23 +1,23 @@
 import React, { useState } from "react";
-import { Alert as RsAlert, Container, Row, Col } from "reactstrap";
+import { Alert as RsAlert, AlertProps, Container, Row, Col } from "reactstrap";
 import Icon from "@mdi/react";
 import {
   mdiInformation,
   mdiAlert,
   mdiAlertCircle,
   mdiCheckCircle,
-  mdiClose
+  mdiClose,
 } from "@mdi/js";
 import { FlatButton } from "components/buttons/Buttons";
 
-export const Alert = ({
+export const AlertBanner = ({
   color,
   noIcon,
   size,
   dismissable,
   children,
   ...rest
-}) => {
+}: AlertProps) => {
   let icon;
   if (!noIcon) {
     switch (color) {
@@ -44,7 +44,7 @@ export const Alert = ({
   if (icon) {
     cmp = (
       <RsAlert
-        className={size === "sm" ? "alert-sm" : ""}
+        className={size === "sm" ? "alert-banner alert-sm" : "alert-banner"}
         color={color}
         isOpen={visible}
         // toggle={dismissable ? onDismiss : undefined}
@@ -55,8 +55,8 @@ export const Alert = ({
             <Col xs="auto" className="p-0 pr-2">
               <Icon
                 className="mdi"
-                path={icon}
                 size={size === "sm" ? 0.9 : 1}
+                path={icon}
               />
             </Col>
             <Col className="p-0">{children}</Col>
@@ -79,7 +79,7 @@ export const Alert = ({
   } else {
     cmp = (
       <RsAlert
-        className={size === "sm" ? "alert-sm" : ""}
+        className={size === "sm" ? "alert-banner alert-sm" : "alert-banner"}
         color={color}
         {...rest}
       >

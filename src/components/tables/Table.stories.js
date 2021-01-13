@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Table } from "reactstrap";
 import {
   ContentHeaderH1,
-  ContentHeaderH2
+  ContentHeaderH2,
 } from "components/text/ContentHeader";
 // import { Alert, Container, Row, Col } from "reactstrap";
 // import Icon from "@mdi/react";
@@ -13,8 +13,9 @@ import {
 //   mdiCheckCircle
 // } from "@mdi/js";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Tables'
+  title: "Components/Tables",
 };
 
 export const TablesDefault = () => (
@@ -162,9 +163,9 @@ export const TablesAlt = () => (
 );
 
 TablesDefault.story = {
-  name: "Tables - Default"
+  name: "Tables - Default",
 };
 
 TablesAlt.story = {
-  name: "Tables - Alternate"
+  name: "Tables - Alternate",
 };

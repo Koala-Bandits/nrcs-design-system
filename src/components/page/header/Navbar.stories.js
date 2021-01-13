@@ -10,14 +10,15 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
+  NavbarText,
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { NavbarNrcs } from "./NavbarNrcs";
 import { NavbarFpac } from "./NavbarFpac";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Page Components/Header'
+  title: "Page Components/Header",
 };
 
 export const StoryNavbarNRCS = () => {
@@ -107,9 +108,9 @@ export const StoryNavbarFPAC = () => {
 };
 
 StoryNavbarNRCS.story = {
-  name: "Navbar - NRCS"
+  name: "Navbar - NRCS",
 };
 
 StoryNavbarFPAC.story = {
-  name: "Navbar - FPAC"
+  name: "Navbar - FPAC",
 };

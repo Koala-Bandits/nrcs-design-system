@@ -1,12 +1,24 @@
-import React, { useEffect, useRef } from "react";
+import React, { PropsWithChildren, useEffect, useRef } from "react";
 import { Toast, Container, Row, Col } from "reactstrap";
 import { mdiClose } from "@mdi/js";
 import { Alert } from "components/feedback/alerts/Alert";
 import { FlatButton } from "components/buttons/Buttons";
 
-function Growl({ isOpen, toggle, color, children, remove }) {
-  const removeRef = useRef();
-  removeRef.current = remove;
+interface IGrowlProps {
+  color?: string;
+  isOpen?: boolean;
+  remove?: () => void;
+  toggle?: () => void;
+}
+
+function Growl({
+  isOpen,
+  toggle,
+  color,
+  children,
+  remove,
+}: PropsWithChildren<IGrowlProps>) {
+  const removeRef = useRef(remove);
 
   useEffect(() => {
     const duration = 5000; // 5secs

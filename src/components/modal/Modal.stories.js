@@ -9,13 +9,14 @@ import {
   Col,
   Card,
   CardBody,
-  CustomInput
+  CustomInput,
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { PrimaryButton, ButtonSet } from "components/buttons/Buttons";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Modal'
+  title: "Components/Modal",
 };
 
 export const ModalDefault = () => {
@@ -347,5 +348,5 @@ export const ModalDefault = () => {
 };
 
 ModalDefault.story = {
-  name: "Modal - Default"
+  name: "Modal - Default",
 };
