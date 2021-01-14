@@ -1,9 +1,9 @@
 import React from "react";
-import Icon from "@mdi/react";
+import { Icon } from "components";
 import { Row, Col, Table } from "reactstrap";
 import {
   ContentHeaderH1,
-  ContentHeaderH2
+  ContentHeaderH2,
 } from "components/text/ContentHeader";
 import {
   mdiAccount,
@@ -72,7 +72,7 @@ import {
   mdiPlus,
   mdiPlusBox,
   mdiRefresh,
-  mdiWrench
+  mdiWrench,
 } from "@mdi/js";
 
 class Iconography extends React.Component {

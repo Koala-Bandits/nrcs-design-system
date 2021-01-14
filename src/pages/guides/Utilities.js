@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardBody, Row, Col } from "reactstrap";
 import {
   ContentHeaderH1,
-  ContentHeaderH2
+  ContentHeaderH2,
 } from "components/text/ContentHeader";
 import Icon from "@mdi/react";
 import { mdiOpenInNew, mdiBootstrap, mdiReact } from "@mdi/js";

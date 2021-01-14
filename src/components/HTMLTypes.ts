@@ -1,5 +1,6 @@
 import R from "react";
 
+/*
 export type a = R.DetailedHTMLProps<
   R.AnchorHTMLAttributes<HTMLAnchorElement>,
   HTMLAnchorElement
@@ -282,7 +283,7 @@ export type noscript = R.DetailedHTMLProps<
   HTMLElement
 >;
 
-/** HTML OBJECT */
+/** HTML OBJECT * /
 export type obj = R.DetailedHTMLProps<
   R.ObjectHTMLAttributes<HTMLObjectElement>,
   HTMLObjectElement
@@ -447,7 +448,7 @@ export type ul = R.DetailedHTMLProps<
   HTMLUListElement
 >;
 
-/** HTML VAR */
+/** HTML VAR * /
 export type vr = R.DetailedHTMLProps<
   R.HTMLAttributes<HTMLElement>,
   HTMLElement
@@ -465,3 +466,4 @@ export type webview = R.DetailedHTMLProps<
   R.WebViewHTMLAttributes<HTMLWebViewElement>,
   HTMLWebViewElement
 >;
+*/

@@ -9,9 +9,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prebuild-esm": "(if exist npmdist rmdir /q /s npmdist)",
-    "build-esm": "npm run build-types&&node scripts/build-esm",
-    "build-types": "tsc -d --emitDeclarationOnly --outDir npmdist/types",
+    "prebuild-npm": "rimraf npmdist",
+    "build-npm": "node scripts/build-esm",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },

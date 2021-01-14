@@ -14,7 +14,7 @@ export interface IBreadcrumbsProps {
   size?: "sm";
 }
 
-export const Breadcrumbs = ({ data, size } : IBreadcrumbsProps) => {
+export const Breadcrumbs = ({ data, size }: IBreadcrumbsProps) => {
   let cmp = (
     <Breadcrumb className={size === "sm" ? "breadcrumb-sm" : ""}>
       {data.map((crumb, index) => {

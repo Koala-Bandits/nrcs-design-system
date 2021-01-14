@@ -37,7 +37,6 @@ export const TextInputDefault = () => (
             Small
           </Label>
           <Input
-            placeholder="sm"
             bsSize="sm"
             type="text"
             name="text"

@@ -1,5 +1,4 @@
 import React from "react";
-import { heading } from "../HTMLTypes";
 
 // export class ContentHeaderH1 extends React.Component {
 //   render() {
@@ -9,7 +8,12 @@ import { heading } from "../HTMLTypes";
 //   }
 // }
 
-interface IProps extends React.PropsWithChildren<heading> {
+type HTMLHeadingProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLHeadingElement>,
+  HTMLHeadingElement
+>;
+
+interface IProps extends React.PropsWithChildren<HTMLHeadingProps> {
   className?: string;
   size?: "sm";
 }

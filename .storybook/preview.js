@@ -13,9 +13,9 @@ import "!style-loader!css-loader!sass-loader!../src/scss/nrcs-design-system.scss
 // Global decorator
 import React from "react";
 import { addDecorator } from "@storybook/react";
-import { ToastProvider } from "components/feedback/growls/toastProvider.js";
+import { ToastProvider } from "components/feedback/growls/toastProvider";
 
-addDecorator(storyFn => (
+addDecorator((storyFn) => (
   <ToastProvider>
     <div className="container-fluid pt-2">{storyFn()}</div>
   </ToastProvider>
@@ -36,10 +36,14 @@ const loadStories = () => {
     require("../src/pages/Guides.stories.js"),
     require("../src/pages/guides/Accessibility.stories.js"),
     require("../src/pages/guides/GridAndLayout.stories.js"),
-    require("../src/pages/guides/Utilities.stories.js")
+    require("../src/pages/guides/Utilities.stories.js"),
   ];
-  const req = require.context("../src/components", true, /\.stories\.(js|tsx)$/);
-  req.keys().forEach(fname => allExports.push(req(fname)));
+  const req = require.context(
+    "../src/components",
+    true,
+    /\.stories\.(js|tsx)$/
+  );
+  req.keys().forEach((fname) => allExports.push(req(fname)));
   return allExports;
 };
 

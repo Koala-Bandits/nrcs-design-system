@@ -1,7 +1,11 @@
 import React from "react";
 import { Button, ButtonProps } from "reactstrap";
 import Icon from "@mdi/react";
-import { div } from "../HTMLTypes";
+
+type HTMLDivProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+>;
 
 interface IProps extends ButtonProps {
   iconLeft?: any;
@@ -180,7 +184,7 @@ export const FlatButton = ({
   return cmp;
 };
 
-export const ButtonSet = (props: div) => {
+export const ButtonSet = (props: HTMLDivProps) => {
   return <div className="btn-set" {...props}></div>;
 };
 

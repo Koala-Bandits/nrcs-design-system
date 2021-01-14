@@ -24,7 +24,7 @@ export default {
 };
 
 export const BreadcrumbsDefault = () => {
-  let data = [
+  const data = [
     { text: "Home", href: "#", active: false },
     { text: "Library", href: "#", active: false },
     { text: "Science Fiction", href: "#", active: false },
@@ -45,7 +45,7 @@ export const BreadcrumbsDefault = () => {
 };
 
 export const BreadcrumbsIcons = () => {
-  let dataWithIcons = [
+  const dataWithIcons = [
     { text: "Home", href: "#", icon: mdiHome, active: false },
     { text: "Library", href: "#", icon: mdiAccount, active: false },
     {

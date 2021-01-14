@@ -11,7 +11,7 @@ import { HeaderNrcsDesignSystem } from "components/page/header/HeaderNrcsDesignS
 import { FooterNrcsDesignSystem } from "components/page/footer/FooterNrcsDesignSystem";
 
 // Application Modal and Growl global components
-import { ToastProvider } from "components/feedback/growls/toastProvider.js";
+import { ToastProvider } from "components/feedback/growls/toastProvider";
 
 // Application Pages
 import About from "./pages/About";

@@ -47,6 +47,7 @@ export const AlertMessage = ({
                 className="mdi"
                 size={size === "sm" ? 0.9 : 1}
                 path={icon}
+                color={null}
               />
             </Col>
             <Col className="p-0">{children}</Col>
