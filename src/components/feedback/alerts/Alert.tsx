@@ -1,18 +1,12 @@
 import React, { useState } from "react";
-<<<<<<< HEAD:src/components/feedback/alerts/Alert.tsx
 import { Alert as RsAlert, AlertProps, Container, Row, Col } from "reactstrap";
-=======
-import { Alert as RsAlert, Container, Row, Col, Button } from "reactstrap";
->>>>>>> master:src/components/feedback/alerts/Alert.js
 import Icon from "@mdi/react";
 import {
   mdiInformation,
   mdiAlert,
   mdiAlertCircle,
   mdiCheckCircle,
-  mdiClose,
 } from "@mdi/js";
-import { FlatButton } from "components/buttons/Buttons";
 
 export const Alert = ({
   color,
@@ -68,7 +62,7 @@ export const Alert = ({
               <Col className="pr-0" xs="auto">
                 <button
                   type="button"
-                  class="close btn pl-1 pr-1"
+                  className="close btn pl-1 pr-1"
                   data-dismiss="alert"
                   aria-label="Close"
                   onClick={onDismiss}

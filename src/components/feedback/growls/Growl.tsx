@@ -44,7 +44,7 @@ function Growl({
             <Col className="pr-0" xs="auto">
               <button
                 type="button"
-                class="close btn pl-1 pr-1"
+                className="close btn pl-1 pr-1"
                 data-dismiss="alert"
                 aria-label="Close"
                 onClick={remove ? remove : toggle}
