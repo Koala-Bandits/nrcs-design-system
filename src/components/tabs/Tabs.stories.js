@@ -6,22 +6,23 @@ import {
   NavItem,
   NavLink,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 import {
   ContentHeaderH1,
-  ContentHeaderH2
+  ContentHeaderH2,
 } from "components/text/ContentHeader";
 import classnames from "classnames";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Tabs (Nav)'
+  title: "Components/Tabs (Nav)",
 };
 
 export const TabsStory = () => {
   const [activeTab, setActiveTab] = useState("1");
 
-  const toggle = tab => {
+  const toggle = (tab) => {
     if (activeTab !== tab) setActiveTab(tab);
   };
 
@@ -413,5 +414,5 @@ export const TabsStory = () => {
 };
 
 TabsStory.story = {
-  name: "Tabs - Default"
+  name: "Tabs - Default",
 };

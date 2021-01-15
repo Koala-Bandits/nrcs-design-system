@@ -10,6 +10,8 @@
 
 # production
 /build
+/dist
+/npmdist
 
 # storybook static site, we deploy this to our github pages separately
 /storybook-static

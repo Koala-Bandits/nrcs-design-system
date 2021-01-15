@@ -7,11 +7,13 @@ import {
   Label,
   Input,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
+
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Inputs/DatePicker'
+  title: "Components/Inputs/DatePicker",
 };
 
 export const DatePickerDefault = () => (
@@ -91,5 +93,5 @@ export const DatePickerDefault = () => (
 );
 
 DatePickerDefault.story = {
-  name: "Date Picker - Default"
+  name: "Date Picker - Default",
 };

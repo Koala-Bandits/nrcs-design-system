@@ -7,8 +7,9 @@ import Growl from "components/feedback/growls/Growl";
 // hook for application growls
 import useToast from "components/feedback/growls/useToast";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Feedback/Growls'
+  title: "Components/Feedback/Growls",
 };
 
 function UseGrowlsExample() {
@@ -130,5 +131,5 @@ export const GrowlsStory = () => {
 };
 
 GrowlsStory.story = {
-  name: "Growls"
+  name: "Growls",
 };

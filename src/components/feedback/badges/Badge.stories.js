@@ -2,8 +2,9 @@ import React from "react";
 import { Badge } from "./Badge";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Feedback/Badges'
+  title: "Components/Feedback/Badges",
 };
 
 export const BadgesDefault = () => (
@@ -63,5 +64,5 @@ export const BadgesDefault = () => (
 );
 
 BadgesDefault.story = {
-  name: "Badges - Default"
+  name: "Badges - Default",
 };

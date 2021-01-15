@@ -9,18 +9,19 @@ import {
   FormGroup,
   FormText,
   Label,
-  Input
+  Input,
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import {
   PrimaryButton,
   SecondaryButton,
   ButtonSet,
-  ButtonFooter
+  ButtonFooter,
 } from "components/buttons/Buttons";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Forms/Form Examples'
+  title: "Components/Forms/Form Examples",
 };
 
 export const FormDefaultStory = () => (
@@ -404,21 +405,21 @@ export const FormInputGroupStory = () => (
 );
 
 FormDefaultStory.story = {
-  name: "Form - Basic"
+  name: "Form - Basic",
 };
 
 FormRowStory.story = {
-  name: "Form - FormRow"
+  name: "Form - FormRow",
 };
 
 FormHorizontalStory.story = {
-  name: "Form - Horizontal"
+  name: "Form - Horizontal",
 };
 
 FormInlineStory.story = {
-  name: "Form - Inline"
+  name: "Form - Inline",
 };
 
 FormInputGroupStory.story = {
-  name: "Form - Input Group"
+  name: "Form - Input Group",
 };

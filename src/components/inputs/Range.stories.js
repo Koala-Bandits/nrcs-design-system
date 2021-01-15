@@ -6,12 +6,13 @@ import {
   FormGroup,
   Label,
   CustomInput,
-  Input
+  Input,
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Inputs/Range'
+  title: "Components/Inputs/Range",
 };
 
 export const RangeDefault = () => (
@@ -47,5 +48,5 @@ export const RangeDefault = () => (
 );
 
 RangeDefault.story = {
-  name: "Range - Default"
+  name: "Range - Default",
 };

@@ -4,8 +4,9 @@ import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { PrimaryButton } from "components/buttons/Buttons";
 import { ProgressMessage } from "./ProgressMessage";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Feedback/Progress Message'
+  title: "Components/Feedback/Progress Message",
 };
 
 export const ProgressMessageDefault = () => {
@@ -57,5 +58,5 @@ export const ProgressMessageDefault = () => {
 };
 
 ProgressMessageDefault.story = {
-  name: "Progress Message"
+  name: "Progress Message",
 };

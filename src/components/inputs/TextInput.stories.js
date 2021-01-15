@@ -7,12 +7,13 @@ import {
   Label,
   Input,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Inputs/Text Input'
+  title: "Components/Inputs/Text Input",
 };
 
 export const TextInputDefault = () => (
@@ -36,7 +37,6 @@ export const TextInputDefault = () => (
             Small
           </Label>
           <Input
-            placeholder="sm"
             bsSize="sm"
             type="text"
             name="text"
@@ -209,5 +209,5 @@ export const TextInputDefault = () => (
 );
 
 TextInputDefault.story = {
-  name: "Text Input - Default"
+  name: "Text Input - Default",
 };

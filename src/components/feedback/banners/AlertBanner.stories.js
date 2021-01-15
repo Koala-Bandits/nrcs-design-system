@@ -4,8 +4,9 @@ import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { mdiCheckCircle } from "@mdi/js";
 import { AlertBanner } from "./AlertBanner";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Feedback/Alert Banners'
+  title: "Components/Feedback/Alert Banners",
 };
 
 export const BannersDefault = () => (
@@ -119,17 +120,17 @@ export const BannersContent = () => (
 );
 
 BannersDefault.story = {
-  name: "Alert Banners - Default"
+  name: "Alert Banners - Default",
 };
 
 BannersNoIcon.story = {
-  name: "Alert Banners - No Icon"
+  name: "Alert Banners - No Icon",
 };
 
 BannersDismissable.story = {
-  name: "Alert Banners - Dismissable"
+  name: "Alert Banners - Dismissable",
 };
 
 BannersContent.story = {
-  name: "Alert Banners - with Content"
+  name: "Alert Banners - with Content",
 };

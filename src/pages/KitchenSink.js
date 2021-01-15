@@ -6,7 +6,7 @@ import {
   Route,
   useLocation,
   useParams,
-  useRouteMatch
+  useRouteMatch,
 } from "react-router-dom";
 
 import {
@@ -16,7 +16,7 @@ import {
   NavItem,
   NavLink,
   TabContent,
-  TabPane
+  TabPane,
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { Alert } from "components/feedback/alerts/Alert";
@@ -26,49 +26,49 @@ import {
   AlertsDefault,
   AlertsNoIcon,
   AlertsDismissable,
-  AlertsContent
-} from "components/feedback/alerts/Alert.stories.js";
+  AlertsContent,
+} from "components/feedback/alerts/Alert.stories";
 import {
   BannersDefault,
   BannersNoIcon,
   BannersDismissable,
-  BannersContent
-} from "components/feedback/banners/AlertBanner.stories.js";
-import { BadgesDefault } from "components/feedback/badges/Badge.stories.js";
+  BannersContent,
+} from "components/feedback/banners/AlertBanner.stories";
+import { BadgesDefault } from "components/feedback/badges/Badge.stories";
 import {
   BadgeLabelsDefault,
-  BadgeLabelsHeadings
-} from "components/feedback/badgelabels/BadgeLabel.stories.js";
-import { MessagesDefault } from "components/feedback/messages/AlertMessage.stories.js";
+  BadgeLabelsHeadings,
+} from "components/feedback/badgelabels/BadgeLabel.stories";
+import { MessagesDefault } from "components/feedback/messages/AlertMessage.stories";
 import {
   BreadcrumbsDefault,
-  BreadcrumbsIcons
-} from "components/breadcrumbs/Breadcrumbs.stories.js";
+  BreadcrumbsIcons,
+} from "components/breadcrumbs/Breadcrumbs.stories";
 import {
   ButtonsDefaultStory,
   ButtonsWithIconsStory,
   ButtonSetStory,
   ButtonGroupStory,
   ButtonFooterStory,
-  ButtonsPositionStory
-} from "components/buttons/Button.stories.js";
-import { CardDefault } from "components/cards/Card.stories.js";
-import { CheckboxDefault } from "components/inputs/Checkbox.stories.js";
+  ButtonsPositionStory,
+} from "components/buttons/Button.stories";
+import { CardDefault } from "components/cards/Card.stories";
+import { CheckboxDefault } from "components/inputs/Checkbox.stories";
 import {
   ContentHeaderDefault,
-  ContentHeaderIcons
-} from "components/text/ContentHeader.stories.js";
+  ContentHeaderIcons,
+} from "components/text/ContentHeader.stories";
 import { DataTableDefault } from "components/datatable/stories/DataTableDefault.stories";
 import { DataTableBasic } from "components/datatable/stories/DataTableBasic.stories";
 import { DataTableSmall } from "components/datatable/stories/DataTableSmall.stories";
 import { DatePickerDefault } from "components/inputs/DatePicker.stories";
-import { DropdownDefault } from "components/dropdowns/Dropdown.stories.js";
-import { ExpansionsDefaultStory } from "components/expansions/Expansion.stories.js";
-import { FileBrowserDefault } from "components/inputs/FileBrowser.stories.js";
-import { GrowlsStory } from "components/feedback/growls/Growl.stories.js";
-import { LinksDefault } from "components/links/Link.stories.js";
-import { ListGroupStory } from "components/listgroups/ListGroup.stories.js";
-import { ModalDefault } from "components/modal/Modal.stories.js";
+import { DropdownDefault } from "components/dropdowns/Dropdown.stories";
+import { ExpansionsDefaultStory } from "components/expansions/Expansion.stories";
+import { FileBrowserDefault } from "components/inputs/FileBrowser.stories";
+import { GrowlsStory } from "components/feedback/growls/Growl.stories";
+import { LinksDefault } from "components/links/Link.stories";
+import { ListGroupStory } from "components/listgroups/ListGroup.stories";
+import { ModalDefault } from "components/modal/Modal.stories";
 import { ProgressMessageDefault } from "components/feedback/progress/ProgressMessage.stories";
 import { RadioDefault } from "components/inputs/Radio.stories";
 import { RangeDefault } from "components/inputs/Range.stories";
@@ -76,8 +76,8 @@ import { SearchDefault } from "components/inputs/Search.stories";
 import { SelectDefault, SelectMulti } from "components/inputs/Select.stories";
 import { SpinnerMessagesDefault } from "components/feedback/spinner/SpinnerMessage.stories";
 import { SwitchDefault } from "components/inputs/Switch.stories";
-import { TablesDefault, TablesAlt } from "components/tables/Table.stories.js";
-import { TabsStory } from "components/tabs/Tabs.stories.js";
+import { TablesDefault, TablesAlt } from "components/tables/Table.stories";
+import { TabsStory } from "components/tabs/Tabs.stories";
 import { TimePickerDefault } from "components/inputs/TimePicker.stories";
 import { TextInputDefault } from "components/inputs/TextInput.stories";
 import { ProgressMessage } from "components/feedback/progress/ProgressMessage";
@@ -291,7 +291,7 @@ function KitchenSink() {
     "ListGroup",
     "Modal",
     "Tables",
-    "Tabs"
+    "Tabs",
   ];
 
   const feedback = [
@@ -302,7 +302,7 @@ function KitchenSink() {
     "BadgeLabel",
     "Growls",
     "Progress",
-    "Spinner"
+    "Spinner",
   ];
 
   const inputs = [
@@ -315,7 +315,7 @@ function KitchenSink() {
     "Select",
     "Switch",
     "TimePicker",
-    "TextInput"
+    "TextInput",
   ];
 
   //meh hack for now?
@@ -336,7 +336,7 @@ function KitchenSink() {
                 Overview
               </NavLink>
             </NavItem>
-            {cmpnts.map(cmpnt => {
+            {cmpnts.map((cmpnt) => {
               return (
                 <NavItem key={cmpnt}>
                   <NavLink
@@ -349,7 +349,7 @@ function KitchenSink() {
               );
             })}
             <h3 className="mt-4">Feedback</h3>
-            {feedback.map(cmpnt => {
+            {feedback.map((cmpnt) => {
               return (
                 <NavItem key={cmpnt}>
                   <NavLink
@@ -362,7 +362,7 @@ function KitchenSink() {
               );
             })}
             <h3 className="mt-4">Inputs</h3>
-            {inputs.map(cmpnt => {
+            {inputs.map((cmpnt) => {
               return (
                 <NavItem key={cmpnt}>
                   <NavLink

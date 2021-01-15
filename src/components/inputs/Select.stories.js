@@ -5,6 +5,7 @@ import {
   ContentHeaderH2,
 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   title: "Components/Inputs/Select",
 };

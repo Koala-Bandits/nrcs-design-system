@@ -8,7 +8,7 @@ import {
   DropdownMenu,
   DropdownItem,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { PrimaryButton, FlatButton } from "components/buttons/Buttons";
@@ -16,8 +16,9 @@ import Search from "components/inputs/Search";
 import Icon from "@mdi/react";
 import { mdiMagnify } from "@mdi/js";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Inputs/Search'
+  title: "Components/Inputs/Search",
 };
 
 export const SearchDefault = () => {
@@ -103,5 +104,5 @@ export const SearchDefault = () => {
 };
 
 SearchDefault.story = {
-  name: "Search - Default"
+  name: "Search - Default",
 };

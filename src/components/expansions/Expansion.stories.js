@@ -5,17 +5,18 @@ import {
   Row,
   Col,
   Card,
-  CardBody
+  CardBody,
 } from "reactstrap";
 import { Expansion, ExpansionCard } from "components/expansions/Expansions";
 
 import {
   ContentHeaderH1,
-  ContentHeaderH2
+  ContentHeaderH2,
 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Expansions'
+  title: "Components/Expansions",
 };
 
 export const ExpansionsDefaultStory = () => {
@@ -52,5 +53,5 @@ export const ExpansionsDefaultStory = () => {
 };
 
 ExpansionsDefaultStory.story = {
-  name: "Expansions"
+  name: "Expansions",
 };

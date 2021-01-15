@@ -2,11 +2,12 @@ import React from "react";
 import { ListGroup, ListGroupItem } from "reactstrap";
 import {
   ContentHeaderH1,
-  ContentHeaderH2
+  ContentHeaderH2,
 } from "components/text/ContentHeader";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/List Groups'
+  title: "Components/List Groups",
 };
 
 export const ListGroupStory = () => (
@@ -163,5 +164,5 @@ export const ListGroupStory = () => (
 );
 
 ListGroupStory.story = {
-  name: "List Group"
+  name: "List Group",
 };

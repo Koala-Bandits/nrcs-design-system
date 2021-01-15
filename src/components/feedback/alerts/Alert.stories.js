@@ -4,8 +4,9 @@ import Icon from "@mdi/react";
 import { mdiCheckCircle } from "@mdi/js";
 import { Alert } from "./Alert";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/Feedback/Alerts'
+  title: "Components/Feedback/Alerts",
 };
 
 export const AlertsDefault = () => (
@@ -138,17 +139,17 @@ export const AlertsContent = () => (
 );
 
 AlertsDefault.story = {
-  name: "Alerts - Default"
+  name: "Alerts - Default",
 };
 
 AlertsNoIcon.story = {
-  name: "Alerts - No Icon"
+  name: "Alerts - No Icon",
 };
 
 AlertsDismissable.story = {
-  name: "Alerts - Dismissable"
+  name: "Alerts - Dismissable",
 };
 
 AlertsContent.story = {
-  name: "Alerts - with Content"
+  name: "Alerts - with Content",
 };

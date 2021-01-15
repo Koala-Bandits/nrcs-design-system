@@ -4,8 +4,9 @@ import { DataTable } from "../DataTable";
 import { FlatButton } from "components/buttons/Buttons";
 import { mdiPlusBox, mdiRefresh, mdiCloseCircle, mdiFileExport } from "@mdi/js";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: 'Components/DataTable'
+  title: "Components/DataTable",
 };
 
 // Columns: array of objects
@@ -20,35 +21,35 @@ let columns = [
     visible: true,
     sort: true,
     filter: true,
-    align: "center"
+    align: "center",
   },
   {
     property: "name",
     header: "Name",
     visible: true,
     sort: true,
-    filter: true
+    filter: true,
   },
   {
     property: "power",
     header: "Super Power",
     visible: true,
     sort: true,
-    filter: true
+    filter: true,
   },
   {
     property: "notes",
     header: "Notes",
     visible: true,
     sort: true,
-    filter: true
+    filter: true,
   },
   {
     property: "timestamp",
     header: "Last Updated",
     visible: true,
     sort: true,
-    filter: true
+    filter: true,
   },
   {
     property: "actions",
@@ -56,8 +57,8 @@ let columns = [
     visible: true,
     sort: false,
     filter: false,
-    align: "center"
-  }
+    align: "center",
+  },
 ];
 
 let initData = [
@@ -66,57 +67,57 @@ let initData = [
     name: "Astro-Man",
     power: "Is always alert for an alien attack",
     notes: "He has asthma!",
-    timestamp: "12/20/1922"
+    timestamp: "12/20/1922",
   },
   {
     id: "B",
     name: "Bubble-Man",
     power: "Blows big bubbles at bullies",
     notes: "He's a bad boy, is bald, and wears boots.",
-    timestamp: "4/14/1937"
+    timestamp: "4/14/1937",
   },
   {
     id: "C",
     name: "Captain Cloud",
     power: "Calmly catches crookes",
     notes: "He has a cape he's so cool.",
-    timestamp: "12/20/1922"
+    timestamp: "12/20/1922",
   },
   {
     id: "D",
     name: "Danger Man",
     power: "Does daring deeds every day",
     notes: "He's dramatic, doesn't have a dog, but duels with dragons!",
-    timestamp: "12/20/1922"
+    timestamp: "12/20/1922",
   },
   {
     id: "E",
     name: "The Eagle",
     power: "Easily eyes evildoers everwhere",
     notes: "He's exciting and other birds envy him.",
-    timestamp: "12/20/1922"
+    timestamp: "12/20/1922",
   },
   {
     id: "F",
     name: "The Firefly",
     power: "Fights felons in the forest",
     notes: "She doesn't need a flashlight, flies fast, and has fat feet.",
-    timestamp: "12/20/1922"
+    timestamp: "12/20/1922",
   },
   {
     id: "G",
     name: "Goo Girl",
     power: "Shoots great gobs of goo",
     notes: "She wears goggles and gloves. She grins and giggles with glee.",
-    timestamp: "12/20/1922"
+    timestamp: "12/20/1922",
   },
   {
     id: "H",
     name: "Huge Man",
     power: "Is happy to help heros and never harms humans",
     notes: "He's not exactly handsome... even his hands are hairy!",
-    timestamp: "12/20/1922"
-  }
+    timestamp: "12/20/1922",
+  },
 ];
 
 let noData = [];
@@ -127,9 +128,9 @@ export const DataTableDefault = () => {
   const primaryProperty = "id";
 
   // action functions
-  const onRemove = id => {
+  const onRemove = (id) => {
     // remove row with primary property (id in this case)
-    let result = data.filter(rowdata => rowdata[primaryProperty] !== id);
+    let result = data.filter((rowdata) => rowdata[primaryProperty] !== id);
 
     // update grid rows
     setData(result);
@@ -150,7 +151,7 @@ export const DataTableDefault = () => {
     </div>
   );
 
-  const rowactions = id => (
+  const rowactions = (id) => (
     <FlatButton
       iconOnly={mdiCloseCircle}
       onClick={() => {
@@ -160,7 +161,7 @@ export const DataTableDefault = () => {
   );
 
   const initState = () => {
-    return initData.map(row => {
+    return initData.map((row) => {
       row["actions"] = rowactions(row[primaryProperty]);
       return row;
     });
@@ -235,5 +236,5 @@ export const DataTableDefault = () => {
 };
 
 DataTableDefault.story = {
-  name: "DataTable - Default"
+  name: "DataTable - Default",
 };
