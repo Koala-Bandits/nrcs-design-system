@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Alert as RsAlert, Container, Row, Col } from "reactstrap";
+import { Alert as RsAlert, Container, Row, Col, Button } from "reactstrap";
 import Icon from "@mdi/react";
 import {
   mdiInformation,
   mdiAlert,
   mdiAlertCircle,
   mdiCheckCircle,
-  mdiClose
+  mdiClose,
 } from "@mdi/js";
 import { FlatButton } from "components/buttons/Buttons";
 
@@ -62,12 +62,15 @@ export const Alert = ({
             <Col className="p-0">{children}</Col>
             {dismissable ? (
               <Col className="pr-0" xs="auto">
-                <FlatButton
-                  className="close"
-                  size="sm"
-                  iconOnly={mdiClose}
+                <button
+                  type="button"
+                  class="close btn pl-1 pr-1"
+                  data-dismiss="alert"
+                  aria-label="Close"
                   onClick={onDismiss}
-                />
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </Col>
             ) : (
               ""
