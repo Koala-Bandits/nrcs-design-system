@@ -8,22 +8,22 @@
 // size={1.3} ~= 32x32
 // size={0.8} ~= 19x19
 $icon-default-color: $gray-800;
-.mdi {
+svg.mdi {
   height: 1.5rem; // 24x24
   width: 1.5rem; // 24x24
-  fill: $icon-default-color; // default color
+  color: $icon-default-color; // default color
 }
-.mdi-info {
-  fill: $info;
+svg.mdi-info {
+  color: $info;
 }
-.mdi-success {
-  fill: $success;
+svg.mdi-success {
+  color: $success;
 }
-.mdi-warning {
-  fill: $warning;
+svg.mdi-warning {
+  color: $warning;
 }
-.mdi-danger {
-  fill: $danger;
+svg.mdi-danger {
+  color: $danger;
 }
 
 // Buttons with Icons
@@ -35,22 +35,22 @@ $icon-default-color: $gray-800;
 
 .btn-primary svg,
 .btn-outline-primary:active svg {
-  fill: #fff !important;
+  color: $white;
 }
 
 .btn-outline-primary:hover svg,
 .btn-link:hover svg {
-  fill: $primary-dark;
+  color: $primary-dark;
 }
 
 .btn-outline-primary svg,
 .btn-link svg {
-  fill: $primary;
+  color: $primary;
 }
 
-// .btn-icon svg {
-//   vertical-align: middle;
-// }
+.btn-icon svg {
+  vertical-align: middle;
+}
 
 // Alerts with Icons
 .alert svg {
@@ -84,8 +84,8 @@ $icon-default-color: $gray-800;
 // Links (anchors) with Icons
 a svg,
 a .mdi {
-  fill: $link-color;
+  color: $link-color;
 }
 a:hover svg {
-  fill: $link-hover-color;
+  color: $link-hover-color;
 }

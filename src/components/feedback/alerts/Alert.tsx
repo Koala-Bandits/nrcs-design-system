@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+<<<<<<< HEAD:src/components/feedback/alerts/Alert.tsx
 import { Alert as RsAlert, AlertProps, Container, Row, Col } from "reactstrap";
+=======
+import { Alert as RsAlert, Container, Row, Col, Button } from "reactstrap";
+>>>>>>> master:src/components/feedback/alerts/Alert.js
 import Icon from "@mdi/react";
 import {
   mdiInformation,
@@ -62,12 +66,15 @@ export const Alert = ({
             <Col className="p-0">{children}</Col>
             {dismissable ? (
               <Col className="pr-0" xs="auto">
-                <FlatButton
-                  className="close"
-                  size="sm"
-                  iconOnly={mdiClose}
+                <button
+                  type="button"
+                  class="close btn pl-1 pr-1"
+                  data-dismiss="alert"
+                  aria-label="Close"
                   onClick={onDismiss}
-                />
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </Col>
             ) : (
               ""

@@ -165,7 +165,7 @@ function RenderCmpnt() {
     case "checkbox":
       thecmpnt = <CheckboxDefault />;
       break;
-    case "contentHeader":
+    case "contentheader":
       thecmpnt = (
         <div>
           <ContentHeaderDefault />
@@ -274,6 +274,10 @@ function KitchenSink() {
   // us build relative links.
   let { path, url } = useRouteMatch();
 
+  // workaround for defect: https://github.com/ReactTraining/react-router/issues/7033
+  let fullUrl = "/nrcs-design-system" + url;
+  let fullPath = "/nrcs-design-system" + path;
+
   const cmpnts = [
     "Accordion",
     "Breadcrumb",
@@ -327,7 +331,7 @@ function KitchenSink() {
             <NavItem>
               <NavLink
                 className={lastSeg === "kitchen-sink" ? "active" : ""}
-                href={`${url}`}
+                href={`${fullUrl}`}
               >
                 Overview
               </NavLink>
@@ -337,7 +341,7 @@ function KitchenSink() {
                 <NavItem key={cmpnt}>
                   <NavLink
                     className={lastSeg === cmpnt.toLowerCase() ? "active" : ""}
-                    href={`${url}/${cmpnt.toLowerCase()}`}
+                    href={`${fullUrl}/${cmpnt.toLowerCase()}`}
                   >
                     {cmpnt}
                   </NavLink>
@@ -350,7 +354,7 @@ function KitchenSink() {
                 <NavItem key={cmpnt}>
                   <NavLink
                     className={lastSeg === cmpnt.toLowerCase() ? "active" : ""}
-                    href={`${url}/${cmpnt.toLowerCase()}`}
+                    href={`${fullUrl}/${cmpnt.toLowerCase()}`}
                   >
                     {cmpnt}
                   </NavLink>
@@ -363,7 +367,7 @@ function KitchenSink() {
                 <NavItem key={cmpnt}>
                   <NavLink
                     className={lastSeg === cmpnt.toLowerCase() ? "active" : ""}
-                    href={`${url}/${cmpnt.toLowerCase()}`}
+                    href={`${fullUrl}/${cmpnt.toLowerCase()}`}
                   >
                     {cmpnt}
                   </NavLink>
@@ -373,14 +377,16 @@ function KitchenSink() {
           </Nav>
         </Col>
         <Col md="9" className="mb-3">
-          <Switch>
-            <Route exact path={path}>
-              <RenderCmpnt />
-            </Route>
-            <Route path={`${path}/:cmpnt`}>
-              <RenderCmpnt />
-            </Route>
-          </Switch>
+          <Router>
+            <Switch>
+              <Route exact path={fullPath}>
+                <RenderCmpnt />
+              </Route>
+              <Route path={`${fullPath}/:cmpnt`}>
+                <RenderCmpnt />
+              </Route>
+            </Switch>
+          </Router>
         </Col>
       </Row>
     </div>
