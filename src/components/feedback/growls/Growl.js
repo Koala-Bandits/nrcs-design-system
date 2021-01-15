@@ -30,12 +30,15 @@ function Growl({ isOpen, toggle, color, children, remove }) {
           <Row>
             <Col className="p-0">{children}</Col>
             <Col className="pr-0" xs="auto">
-              <FlatButton
-                className="close"
-                size="sm"
-                iconOnly={mdiClose}
+              <button
+                type="button"
+                class="close btn pl-1 pr-1"
+                data-dismiss="alert"
+                aria-label="Close"
                 onClick={remove ? remove : toggle}
-              />
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
             </Col>
           </Row>
         </Container>
