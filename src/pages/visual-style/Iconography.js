@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "components";
+import { Icon } from "@mdi/react";
 import { Row, Col, Table } from "reactstrap";
 import {
   ContentHeaderH1,
@@ -31,7 +31,6 @@ import {
   mdiCloseCircle,
   mdiCloseCircleOutline,
   mdiClockOutline,
-  // mdiCog,
   mdiContentCopy,
   mdiContentCut,
   mdiContentPaste,
@@ -72,12 +71,17 @@ import {
   mdiPlus,
   mdiPlusBox,
   mdiRefresh,
+  mdiSettings,
   mdiWrench,
 } from "@mdi/js";
 
 class Iconography extends React.Component {
   render() {
     const iconExampleText = '<Icon className="mdi" path={mdiInformation} />';
+    const iconExampleTextColor =
+      '<Icon className="mdi mdi-success" path={mdiInformation} size={0.8} />';
+    const iconExampleTextMisc =
+      '<Icon className="mdi" path={mdiInformation} color="#800080" />';
 
     // function IconCard(props) {
     //   return (
@@ -172,24 +176,33 @@ class Iconography extends React.Component {
             <code>mdi-danger</code> CSS classes are available)
           </li>
           <li>
-            Action/Clickable icon color: <code>$primary blue</code>
+            Action/Clickable icon color is{" "}
+            <span className="text-primary">primary blue</span> (see buttons with
+            icons component)
           </li>
           <li>
-            For more information on properties, ways of importing and using them
-            as SVGs or webfonts, see the{" "}
+            For more information on properties and usage, see the{" "}
             <a
-              href="https://dev.materialdesignicons.com/getting-started"
+              href="https://dev.materialdesignicons.com/getting-started/react"
               target="_blank"
               rel="noopener noreferrer"
             >
-              MDI Getting Started documentation.
+              MDI Getting Started documentation for React.
             </a>
           </li>
         </ul>
 
         <h2 className="h4">Example Usage</h2>
 
-        <code>{iconExampleText}</code>
+        <p>
+          <code>{iconExampleText}</code>
+        </p>
+        <p>
+          <code>{iconExampleTextColor}</code>
+        </p>
+        <p>
+          <code>{iconExampleTextMisc}</code>
+        </p>
 
         <ContentHeaderH2>Legend (most commonly used)</ContentHeaderH2>
         <p>
@@ -348,16 +361,20 @@ class Iconography extends React.Component {
                   name="mdiChevronDoubleUp"
                   text="Collapse-all"
                 />
-                <IconRow icon={mdiClose} name="mdiClose" text="Close" />
+                <IconRow
+                  icon={mdiClose}
+                  name="mdiClose"
+                  text="Close (preferred)"
+                />
                 <IconRow
                   icon={mdiCloseCircle}
                   name="mdiCloseCircle"
-                  text="Remove from list (non-permanent)"
+                  text="Close"
                 />
                 <IconRow
                   icon={mdiCloseCircleOutline}
                   name="mdiCloseCircleOutline"
-                  text="Remove alternate"
+                  text="Close"
                 />
                 <IconRow
                   icon={mdiClockOutline}
@@ -370,7 +387,6 @@ class Iconography extends React.Component {
                   text="Clock, time, in-progress status with accent color"
                   color="info"
                 />
-                {/* <IconRow icon={mdiCog} name="mdiCog" text="" /> */}
                 <IconRow
                   icon={mdiContentCopy}
                   name="mdiContentCopy"
@@ -504,12 +520,12 @@ class Iconography extends React.Component {
                 <IconRow
                   icon={mdiMinusCircle}
                   name="mdiMinusCircle"
-                  text="Not started, unavailable"
+                  text="Remove, not started, unavailable"
                 />
                 <IconRow
                   icon={mdiMinusCircleOutline}
                   name="mdiMinusCircleOutline"
-                  text="Not started, unavailable"
+                  text="Remove, not started, unavailable"
                 />
                 <IconRow
                   icon={mdiOpenInNew}
@@ -524,6 +540,11 @@ class Iconography extends React.Component {
                   icon={mdiRefresh}
                   name="mdiRefresh"
                   text="Refresh, reload"
+                />
+                <IconRow
+                  icon={mdiSettings}
+                  name="mdiSettings"
+                  text="Settings"
                 />
                 <IconRow
                   icon={mdiWrench}
