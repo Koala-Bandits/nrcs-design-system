@@ -120,8 +120,8 @@ export const AlertsContent = () => (
     </p>
 
     <Alert color="success" noIcon>
-      <h4 className="alert-heading">
-        <Icon className="mdi" path={mdiCheckCircle} size={1.3} />
+      <h4>
+        <Icon className="mdi mr-2" path={mdiCheckCircle} size={1.1} />
         Well done!
       </h4>
       <p>

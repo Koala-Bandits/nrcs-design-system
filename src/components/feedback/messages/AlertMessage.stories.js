@@ -49,7 +49,12 @@ export const MessagesDefault = () => (
       This is a SMALL <strong>info</strong> message.
     </AlertMessage>
 
-    <hr />
+    <h3 className="mt-4">Multiline</h3>
+    <p>
+      We always advocate for short and concise messaging. However, note that the
+      message text wraps in its own column (not under the icon) as in the
+      following example.
+    </p>
 
     <AlertMessage color="warning">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
