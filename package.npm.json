@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "homepage": "https://koala-bandits.github.io/nrcs-design-system",
   "main": "./index.js",
-  "types": "./types/components/index.d.ts",
+  "types": "./index.d.ts",
   "dependencies": {
     "@mdi/js": "^4.9.95",
     "@mdi/react": "^1.2.1",
