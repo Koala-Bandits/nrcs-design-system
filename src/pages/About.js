@@ -37,6 +37,11 @@ class About extends React.Component {
           </strong>
         </p>
 
+        <p>
+          If you are working on a project with FPAC or its related agencies, it
+          is suggested you consider starting with the FPAC Design System first.
+        </p>
+
         <h3>NRCS Adaptation</h3>
         <p>
           Several of our projects are large GIS applications or complex process
@@ -53,25 +58,22 @@ class About extends React.Component {
         <ul>
           <li>
             Designed with clean simple styles, high color contrast, and
-            accessible components for accessibilty.
+            accessible components.
           </li>
           <li>
-            Provides color, typography, iconography, components and examples
-            with documentation for how to use them.
-          </li>
-          <li>
-            Provides solutions for the gammut of small websites to large scale
-            applications.
+            Provides color, typography, iconography, and components in two
+            sizing scales with examples and documentation for how to use them.
           </li>
           <li>
             The intent is to provide a solution for our development teams to
             converge upon for consistent implementation in design and style.
           </li>
           <li>
-            Provides a scalable UI component library with two typography scales
-            out-of-the-box. It covers implementations of most all FPAC
-            components, a few others provided by Reactstrap, as well as some
-            custom complex components.
+            Provides a React UI component library in two sizes, Default and
+            Small out-of-the-box for use with different use cases (website vs
+            compact data application). It covers implementations of most FPAC
+            components, a handful of custom complex components, and some use of
+            Reactstrap components for layout and forms.
           </li>
         </ul>
 
@@ -141,8 +143,33 @@ class About extends React.Component {
             </a>
           </Col>
         </Row>
+
+        <h3 className="mt-2">Install & Use via NPM</h3>
+
         <p>
-          This site is built with React (via Create React App), StoryBook, using{" "}
+          The NRCS Design System styles and React components can be installed
+          and used via NPM:
+          <br />
+          <code>npm install nrcs-design-system</code>
+        </p>
+
+        <p>
+          Then import the styles:
+          <br />
+          <code>import "nrcs-design-system/scss/nrcs-design-system.scss</code>
+        </p>
+
+        <p>
+          Then start using the components:
+          <br />
+          <code>{'import { PrimaryButton } from "nrcs-design-system"'}</code>
+        </p>
+
+        <h3>Development</h3>
+
+        <p>
+          The NRCS Design System and this website is built with React (via
+          Create React App), StoryBook, using{" "}
           <strong>
             <a
               href="https://reactstrap.github.io/"
@@ -152,7 +179,7 @@ class About extends React.Component {
               ReactStrap
             </a>
           </strong>
-          , and a custom{" "}
+          , and based on a custom{" "}
           <a
             href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"
             target="_blank"

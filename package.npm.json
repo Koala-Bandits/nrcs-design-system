@@ -2,6 +2,19 @@
   "name": "nrcs-design-system",
   "version": "0.1.1",
   "homepage": "https://koala-bandits.github.io/nrcs-design-system",
+  "description": "React UI components for the NRCS Design System based on Reactstrap/Bootstrap 4",
+  "keywords": [
+    "nrcs",
+    "usda",
+    "nrcs-design-system",
+    "reactstrap",
+    "bootstrap",
+    "components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Koala-Bandits/nrcs-design-system.git"
+  },
   "main": "./index.js",
   "types": "./index.d.ts",
   "dependencies": {
