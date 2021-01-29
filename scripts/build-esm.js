@@ -36,9 +36,11 @@ function deleteStoryTypes(dir) {
 
 async function emitTypes() {
   tsConfig.compilerOptions.noEmit = false;
+  //  tsConfig.include = ["src/components/**/*.tsx", "src/components/**/*.ts"];
   await fs.writeJSON(paths.appTsConfig, tsConfig, { spaces: 2 });
   await shell(`tsc -d --emitDeclarationOnly --outDir npmdist/types`);
   tsConfig.compilerOptions.noEmit = true;
+  //tsConfig.include = ["src"];
   await fs.writeJSON(paths.appTsConfig, tsConfig, { spaces: 2 });
 
   deleteStoryTypes("./npmdist");
@@ -54,12 +56,22 @@ const babel = (envName) =>
 
 const buildEsm = async () => {
   await emitTypes();
-
   await babel("esm");
 
   fs.copy(`${paths.appSrc}/scss`, `${npmPackageBuildDir}/scss`, (err) =>
     err ? console.error(err) : console.log("copy scss folder successful")
   );
+
+  fs.copyFile(
+    `${paths.appPath}/package.esm.json`,
+    `${npmPackageBuildDir}/package.json`
+  );
+
+  /*
+  fs.move(`${npmPackageBuildDir}/types`, `${npmPackageBuildDir}`, (err) =>
+    err ? console.error(err) : console.log("copy types successful")
+  );
+  */
 };
 
 buildEsm();

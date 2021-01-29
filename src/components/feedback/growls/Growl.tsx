@@ -1,8 +1,8 @@
 import React, { PropsWithChildren, useEffect, useRef } from "react";
 import { Toast, Container, Row, Col } from "reactstrap";
 import { mdiClose } from "@mdi/js";
-import { Alert } from "components/feedback/alerts/Alert";
-import { FlatButton } from "components/buttons/Buttons";
+import { Alert } from "../../feedback/alerts/Alert";
+import { FlatButton } from "../../buttons/Buttons";
 
 interface IGrowlProps {
   color?: string;

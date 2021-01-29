@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import { InputGroup, InputGroupAddon, Input } from "reactstrap";
 
-import { PrimaryButton } from "components/buttons/Buttons";
+import { PrimaryButton } from "../buttons/Buttons";
 
 // import Icon from "@mdi/react";
 // import {

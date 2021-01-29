@@ -9,7 +9,7 @@ import {
   PaginationLink,
   Input,
 } from "reactstrap";
-import { FlatButton } from "components/buttons/Buttons";
+import { FlatButton } from "../buttons/Buttons";
 import { mdiChevronUp, mdiChevronDown, mdiViewColumn } from "@mdi/js";
 
 interface IProps extends TableProps {

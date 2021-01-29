@@ -8,7 +8,7 @@ import {
   mdiCheckCircle,
   mdiClose,
 } from "@mdi/js";
-import { FlatButton } from "components/buttons/Buttons";
+import { FlatButton } from "../../buttons/Buttons";
 
 export const AlertBanner = ({
   color,

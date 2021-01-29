@@ -1,6 +1,6 @@
 import React, { PropsWithChildren, useState } from "react";
 import { Card, CardBody, Collapse, Row, Col } from "reactstrap";
-import { FlatButton } from "components/buttons/Buttons";
+import { FlatButton } from "../buttons/Buttons";
 import { mdiChevronRight, mdiChevronDown } from "@mdi/js";
 
 interface IExpansionProps {
