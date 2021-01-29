@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { DataTable } from "../DataTable";
+import { Alert } from "components/feedback/alerts/Alert";
 import { FlatButton } from "components/buttons/Buttons";
 import { mdiPlusBox, mdiRefresh, mdiCloseCircle, mdiFileExport } from "@mdi/js";
 
@@ -183,6 +184,10 @@ export const DataTableDefault = () => {
       </p>
 
       <p>Configurable without being overally complex.</p>
+
+      <Alert color="warning">
+        Warning: this component is under development and incomplete.
+      </Alert>
 
       <h3>Props</h3>
       <p>To Do</p>
