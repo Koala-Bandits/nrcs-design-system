@@ -2,6 +2,7 @@ const execa = require("execa");
 const fs = require("fs-extra");
 const path = require("path");
 const paths = require("react-scripts/config/paths");
+const semver = require("semver");
 
 const npmPackageBuildDir = path.resolve(paths.appPath, "npmdist");
 
@@ -23,12 +24,11 @@ const babel = async (envName) =>
   );
 
 const updateVersion = async () => {
-  await shell("npm version patch");
-
   const packageJson = require(packageJsonPath);
   const packageNpmJson = require(packageNpmJsonPath);
-
+  packageJson.version = semver.inc(packageJson.version, "patch");
   packageNpmJson.version = packageJson.version;
+  await fs.writeJSON(packageJsonPath, packageJson, { spaces: 2 });
   await fs.writeJSON(packageNpmJsonPath, packageNpmJson, { spaces: 2 });
 };
 
