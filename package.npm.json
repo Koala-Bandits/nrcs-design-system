@@ -25,16 +25,11 @@
     "reactstrap": "^8.4.1"
   },
   "peerDependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all",
-      "ie 11"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all", "ie 11"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
