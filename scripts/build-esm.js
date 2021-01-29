@@ -63,9 +63,11 @@ const buildEsm = async () => {
   );
 
   fs.copyFile(
-    `${paths.appPath}/package.esm.json`,
+    `${paths.appPath}/package.npm.json`,
     `${npmPackageBuildDir}/package.json`
   );
+
+  fs.copyFile(`${paths.appPath}/README.md`, `${npmPackageBuildDir}/README.md`);
 
   /*
   fs.move(`${npmPackageBuildDir}/types`, `${npmPackageBuildDir}`, (err) =>
