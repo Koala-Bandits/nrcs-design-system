@@ -2,6 +2,7 @@
   "name": "nrcs-design-system",
   "version": "0.1.1",
   "homepage": "https://koala-bandits.github.io/nrcs-design-system",
+  "description": "Documentation and website for the NRCS Design System",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
