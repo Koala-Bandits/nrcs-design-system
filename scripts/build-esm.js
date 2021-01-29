@@ -6,7 +6,7 @@ const paths = require("react-scripts/config/paths");
 const npmPackageBuildDir = path.resolve(paths.appPath, "npmdist");
 
 const packageJsonPath = path.resolve(paths.appPath, "package.json");
-const packageNpmJsonPath = path.resolve(paths.appPath, "packageh.npm.json");
+const packageNpmJsonPath = path.resolve(paths.appPath, "package.npm.json");
 
 const shell = (cmd) =>
   execa(cmd, { stdio: ["pipe", "pipe", "inherit"], shell: true });
