@@ -13,8 +13,7 @@
     "prebuild-npm": "rimraf npmdist",
     "build-npm": "node scripts/build-esm",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "types": "tsc -d --emitDeclarationOnly --outDir tstypes --project tsconfig.types.json"
+    "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
     "@mdi/js": "^4.9.95",
