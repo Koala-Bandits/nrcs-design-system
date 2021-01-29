@@ -143,6 +143,30 @@ class About extends React.Component {
             </a>
           </Col>
         </Row>
+
+        <h3 className="mt-2">Install & Use via NPM</h3>
+
+        <p>
+          The NRCS Design System styles and React components can be installed
+          and used via NPM:
+          <br />
+          <code>npm install nrcs-design-system</code>
+        </p>
+
+        <p>
+          Then import the styles:
+          <br />
+          <code>import "nrcs-design-system/scss/nrcs-design-system.scss</code>
+        </p>
+
+        <p>
+          Then start using the components:
+          <br />
+          <code>{'import { PrimaryButton } from "nrcs-design-system"'}</code>
+        </p>
+
+        <h3>Development</h3>
+
         <p>
           The NRCS Design System and this website is built with React (via
           Create React App), StoryBook, using{" "}
