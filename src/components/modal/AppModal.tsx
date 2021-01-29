@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-import { PrimaryButton, ButtonSet } from "components/buttons/Buttons";
+import { PrimaryButton, ButtonSet } from "../buttons/Buttons";
 
 export class AppModal extends React.Component {
   render() {

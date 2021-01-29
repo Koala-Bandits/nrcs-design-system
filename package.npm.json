@@ -1,0 +1,27 @@
+{
+  "name": "nrcs-design-system",
+  "version": "0.1.1",
+  "homepage": "https://koala-bandits.github.io/nrcs-design-system",
+  "main": "./index.js",
+  "types": "./types/components/index.d.ts",
+  "dependencies": {
+    "@mdi/js": "^4.9.95",
+    "@mdi/react": "^1.2.1",
+    "bootstrap": "^4.4.1",
+    "node-sass": "^4.13.1",
+    "reactstrap": "^8.4.1"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all", "ie 11"],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
+  }
+}
