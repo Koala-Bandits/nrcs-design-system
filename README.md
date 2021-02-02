@@ -15,7 +15,17 @@ If you are working on a project with FPAC or its related agencies, it is suggest
 - Provides a React UI component library in two sizes, Default and Small out-of-the-box for use with different use cases (website vs compact data application). It covers implementations of most FPAC components, a handful of custom complex components, and some use of Reactstrap components for layout and forms.
 - The NRCS Design System and this website is built with React (via Create React App), Storybook, using [Reactstrap](https://reactstrap.github.io/), and based on a custom [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) theme. The source for this project can serve as an example implementation of the NRCS Design System components and styles as well as a rough application skeleton.
 
-## Quick Start Guide
+## Install & Use NRCS Design System via NPM
+
+### `npm install nrcs-design-system`
+
+Then to use in your React app, import the styles (in index.js):
+### `import "nrcs-design-system/scss/nrcs-design-system.scss"`
+
+And start using components, for example:
+### `import { PrimaryButton } from "nrcs-design-system"`
+
+## NRCS Design System Development
 
 ### `git clone https://github.com/Koala-Bandits/nrcs-design-system.git`
 

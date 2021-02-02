@@ -2,57 +2,35 @@ const execa = require("execa");
 const fs = require("fs-extra");
 const path = require("path");
 const paths = require("react-scripts/config/paths");
+const semver = require("semver");
 
 const npmPackageBuildDir = path.resolve(paths.appPath, "npmdist");
-const tsConfig = require(paths.appTsConfig);
 
-function deleteStoryTypes(dir) {
-  for (const dirent of fs.readdirSync(dir, { withFileTypes: true })) {
-    const p = path.resolve(dir, dirent.name);
-    if (dirent.isDirectory()) {
-      // exclude pages
-      if (p.endsWith("types\\pages")) {
-        fs.removeSync(p);
-      } else {
-        deleteStoryTypes(p);
-      }
-    } else {
-      // exclude story typings
-      if (p.endsWith(".stories.d.ts")) {
-        fs.removeSync(p);
-      }
-
-      // only include component typings, and exclude some specific files
-      if (
-        p.indexOf("types\\components") === -1 ||
-        p.indexOf("CmpntTemplate.d.ts") >= 0 ||
-        p.indexOf("HTMLTypes.d.ts") >= 0
-      ) {
-        fs.removeSync(p);
-      }
-    }
-  }
-}
-
-async function emitTypes() {
-  tsConfig.compilerOptions.noEmit = false;
-  //  tsConfig.include = ["src/components/**/*.tsx", "src/components/**/*.ts"];
-  await fs.writeJSON(paths.appTsConfig, tsConfig, { spaces: 2 });
-  await shell(`tsc -d --emitDeclarationOnly --outDir npmdist/types`);
-  tsConfig.compilerOptions.noEmit = true;
-  //tsConfig.include = ["src"];
-  await fs.writeJSON(paths.appTsConfig, tsConfig, { spaces: 2 });
-
-  deleteStoryTypes("./npmdist");
-}
+const packageJsonPath = path.resolve(paths.appPath, "package.json");
+const packageNpmJsonPath = path.resolve(paths.appPath, "package.npm.json");
 
 const shell = (cmd) =>
   execa(cmd, { stdio: ["pipe", "pipe", "inherit"], shell: true });
 
-const babel = (envName) =>
-  shell(
+const emitTypes = async () => {
+  await shell(
+    `tsc -d --emitDeclarationOnly --outDir npmdist --project tsconfig.types.json`
+  );
+};
+
+const babel = async (envName) =>
+  await shell(
     `babel ${paths.appSrc}/components -x .es6,.js,.es,.jsx,.mjs,.ts,.tsx --ignore  "**/*.stories.js","**/*.stories.tsx" --out-dir ${npmPackageBuildDir} --env-name "${envName}"`
   );
+
+const updateVersion = async () => {
+  const packageJson = require(packageJsonPath);
+  const packageNpmJson = require(packageNpmJsonPath);
+  packageJson.version = semver.inc(packageJson.version, "patch");
+  packageNpmJson.version = packageJson.version;
+  await fs.writeJSON(packageJsonPath, packageJson, { spaces: 2 });
+  await fs.writeJSON(packageNpmJsonPath, packageNpmJson, { spaces: 2 });
+};
 
 const buildEsm = async () => {
   await emitTypes();
@@ -62,16 +40,17 @@ const buildEsm = async () => {
     err ? console.error(err) : console.log("copy scss folder successful")
   );
 
-  fs.copyFile(
-    `${paths.appPath}/package.esm.json`,
+  await updateVersion();
+
+  await fs.copyFile(
+    `${paths.appPath}/package.npm.json`,
     `${npmPackageBuildDir}/package.json`
   );
 
-  /*
-  fs.move(`${npmPackageBuildDir}/types`, `${npmPackageBuildDir}`, (err) =>
-    err ? console.error(err) : console.log("copy types successful")
+  await fs.copyFile(
+    `${paths.appPath}/README.md`,
+    `${npmPackageBuildDir}/README.md`
   );
-  */
 };
 
 buildEsm();
