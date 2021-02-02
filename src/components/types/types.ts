@@ -1,6 +1,6 @@
 import { CSSModule } from "reactstrap";
 
-export interface NrcsCustomInputProps
+export interface INrcsCustomInputProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "id"> {
   [key: string]: any;
   id: string | number;
