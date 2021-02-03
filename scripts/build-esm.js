@@ -48,7 +48,7 @@ const buildEsm = async () => {
   );
 
   await fs.copyFile(
-    `${paths.appPath}/README.md`,
+    `${paths.appPath}/README.npm.md`,
     `${npmPackageBuildDir}/README.md`
   );
 };
