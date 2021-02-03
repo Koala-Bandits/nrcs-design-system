@@ -7,7 +7,7 @@ type HTMLDivProps = React.DetailedHTMLProps<
   HTMLDivElement
 >;
 
-interface IProps extends ButtonProps {
+export interface IButtonProps extends ButtonProps {
   iconLeft?: any;
   iconRight?: any;
   iconOnly?: any;
@@ -20,7 +20,7 @@ export const PrimaryButton = ({
   iconOnly,
   children,
   ...rest
-}: IProps) => {
+}: IButtonProps) => {
   let cmp;
 
   if (iconLeft) {
@@ -69,7 +69,7 @@ export const SecondaryButton = ({
   iconOnly,
   children,
   ...rest
-}: IProps) => {
+}: IButtonProps) => {
   let cmp;
 
   if (iconLeft) {
@@ -142,7 +142,7 @@ export const FlatButton = ({
   iconOnly,
   children,
   ...rest
-}: IProps) => {
+}: IButtonProps) => {
   let cmp;
 
   if (iconLeft) {
