@@ -1,4 +1,4 @@
-import { INrcsCustomInputProps } from "components/types/types";
+import { INrcsCustomInputProps } from "../types/types";
 import React, { useRef, useEffect } from "react";
 import { CustomInput } from "reactstrap";
 
