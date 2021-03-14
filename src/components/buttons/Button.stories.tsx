@@ -54,10 +54,10 @@ export const ButtonsDefaultStory = () => (
     </p>
 
     <h3 className="mt-4">Default</h3>
-    <ButtonSet>
-      <PrimaryButton>Primary</PrimaryButton>
-      <SecondaryButton>Secondary</SecondaryButton>
-      <FlatButton>Flat</FlatButton>
+    <ButtonSet className="test-buttonset">
+      <PrimaryButton className="test-primary">Primary</PrimaryButton>
+      <SecondaryButton className="test-secondary">Secondary</SecondaryButton>
+      <FlatButton className="test-flat">Flat</FlatButton>
     </ButtonSet>
 
     <h3 className="mt-4">Small</h3>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, ButtonProps } from "reactstrap";
 import Icon from "@mdi/react";
+import { getClassName } from "utils/utils";
 
 type HTMLDivProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
@@ -19,13 +20,19 @@ export const PrimaryButton = ({
   iconRight,
   iconOnly,
   children,
+  className,
   ...rest
 }: IButtonProps) => {
   let cmp;
 
   if (iconLeft) {
     cmp = (
-      <Button className="btn-main" color="primary" size={size} {...rest}>
+      <Button
+        className={getClassName("btn-main", className)}
+        color="primary"
+        size={size}
+        {...rest}
+      >
         <Icon
           className="mdi mr-1"
           path={iconLeft}
@@ -36,7 +43,12 @@ export const PrimaryButton = ({
     );
   } else if (iconRight) {
     cmp = (
-      <Button className="btn-main" color="primary" size={size} {...rest}>
+      <Button
+        className={getClassName("btn-main", className)}
+        color="primary"
+        size={size}
+        {...rest}
+      >
         {children}
         <Icon
           className="mdi ml-1"
@@ -47,13 +59,23 @@ export const PrimaryButton = ({
     );
   } else if (iconOnly) {
     cmp = (
-      <Button className="btn-icon" color="primary" size={size} {...rest}>
+      <Button
+        className={getClassName("btn-icon", className)}
+        color="primary"
+        size={size}
+        {...rest}
+      >
         <Icon className="mdi" path={iconOnly} size={size === "sm" ? 0.8 : 1} />
       </Button>
     );
   } else {
     cmp = (
-      <Button className="btn-main" color="primary" size={size} {...rest}>
+      <Button
+        className={getClassName("btn-main", className)}
+        color="primary"
+        size={size}
+        {...rest}
+      >
         {children}
       </Button>
     );
@@ -68,6 +90,7 @@ export const SecondaryButton = ({
   iconRight,
   iconOnly,
   children,
+  className,
   ...rest
 }: IButtonProps) => {
   let cmp;
@@ -75,7 +98,7 @@ export const SecondaryButton = ({
   if (iconLeft) {
     cmp = (
       <Button
-        className="btn-main"
+        className={getClassName("btn-main", className)}
         outline
         color="primary"
         size={size}
@@ -92,7 +115,7 @@ export const SecondaryButton = ({
   } else if (iconRight) {
     cmp = (
       <Button
-        className="btn-main"
+        className={getClassName("btn-main", className)}
         outline
         color="primary"
         size={size}
@@ -109,7 +132,7 @@ export const SecondaryButton = ({
   } else if (iconOnly) {
     cmp = (
       <Button
-        className="btn-icon"
+        className={getClassName("btn-icon", className)}
         outline
         color="primary"
         size={size}
@@ -121,7 +144,7 @@ export const SecondaryButton = ({
   } else {
     cmp = (
       <Button
-        className="btn-main"
+        className={getClassName("btn-main", className)}
         outline
         color="primary"
         size={size}
@@ -141,13 +164,19 @@ export const FlatButton = ({
   iconRight,
   iconOnly,
   children,
+  className,
   ...rest
 }: IButtonProps) => {
   let cmp;
 
   if (iconLeft) {
     cmp = (
-      <Button className="btn-main" color="link" size={size} {...rest}>
+      <Button
+        className={getClassName("btn-main", className)}
+        color="link"
+        size={size}
+        {...rest}
+      >
         <Icon
           className="mdi mr-1"
           path={iconLeft}
@@ -158,7 +187,12 @@ export const FlatButton = ({
     );
   } else if (iconRight) {
     cmp = (
-      <Button className="btn-main" color="link" size={size} {...rest}>
+      <Button
+        className={getClassName("btn-main", className)}
+        color="link"
+        size={size}
+        {...rest}
+      >
         {children}
         <Icon
           className="mdi ml-1"
@@ -169,13 +203,23 @@ export const FlatButton = ({
     );
   } else if (iconOnly) {
     cmp = (
-      <Button className="btn-icon" color="link" size={size} {...rest}>
+      <Button
+        className={getClassName("btn-icon", className)}
+        color="link"
+        size={size}
+        {...rest}
+      >
         <Icon className="mdi" path={iconOnly} size={size === "sm" ? 0.8 : 1} />
       </Button>
     );
   } else {
     cmp = (
-      <Button className="btn-main" color="link" size={size} {...rest}>
+      <Button
+        className={getClassName("btn-main", className)}
+        color="link"
+        size={size}
+        {...rest}
+      >
         {children}
       </Button>
     );
@@ -184,8 +228,8 @@ export const FlatButton = ({
   return cmp;
 };
 
-export const ButtonSet = (props: HTMLDivProps) => {
-  return <div className="btn-set" {...props}></div>;
+export const ButtonSet = ({ className, ...props }: HTMLDivProps) => {
+  return <div className={getClassName("btn-set", className)} {...props}></div>;
 };
 
 interface IButtonFooterProps {
