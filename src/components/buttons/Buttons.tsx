@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, ButtonProps } from "reactstrap";
 import Icon from "@mdi/react";
-import { getClassName } from "utils/utils";
+import { getClassName } from "../../utils/utils";
 
 type HTMLDivProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
