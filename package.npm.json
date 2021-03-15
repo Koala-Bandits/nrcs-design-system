@@ -1,6 +1,6 @@
 {
   "name": "nrcs-design-system",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "homepage": "https://koala-bandits.github.io/nrcs-design-system",
   "description": "React UI components for the NRCS Design System based on Reactstrap/Bootstrap 4",
   "keywords": [
