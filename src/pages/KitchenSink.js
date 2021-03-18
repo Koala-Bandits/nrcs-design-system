@@ -69,6 +69,7 @@ import { GrowlsStory } from "components/feedback/growls/Growl.stories";
 import { LinksDefault } from "components/links/Link.stories";
 import { ListGroupStory } from "components/listgroups/ListGroup.stories";
 import { ModalDefault } from "components/modal/Modal.stories";
+import { PopoverStory } from "components/feedback/popover/Popover.stories";
 import { ProgressMessageDefault } from "components/feedback/progress/ProgressMessage.stories";
 import { RadioDefault } from "components/inputs/Radio.stories";
 import { RangeDefault } from "components/inputs/Range.stories";
@@ -80,6 +81,7 @@ import { TablesDefault, TablesAlt } from "components/tables/Table.stories";
 import { TabsStory } from "components/tabs/Tabs.stories";
 import { TimePickerDefault } from "components/inputs/TimePicker.stories";
 import { TextInputDefault } from "components/inputs/TextInput.stories";
+import { TooltipDefault } from "components/feedback/tooltip/Tooltip.stories";
 import { ProgressMessage } from "components/feedback/progress/ProgressMessage";
 import { mdiLightbulbMultipleOffOutline } from "@mdi/js";
 
@@ -206,6 +208,9 @@ function RenderCmpnt() {
     case "modal":
       thecmpnt = <ModalDefault />;
       break;
+    case "popover":
+      thecmpnt = <PopoverStory />;
+      break;
     case "progress":
       thecmpnt = <ProgressMessageDefault />;
       break;
@@ -248,6 +253,9 @@ function RenderCmpnt() {
       break;
     case "textinput":
       thecmpnt = <TextInputDefault />;
+      break;
+    case "tooltip":
+      thecmpnt = <TooltipDefault />;
       break;
 
     default:
@@ -301,8 +309,10 @@ function KitchenSink() {
     "Badge",
     "BadgeLabel",
     "Growls",
+    "Popover",
     "Progress",
     "Spinner",
+    "Tooltip",
   ];
 
   const inputs = [
