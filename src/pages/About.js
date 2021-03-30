@@ -144,27 +144,6 @@ class About extends React.Component {
           </Col>
         </Row>
 
-        <h3 className="mt-2">Install & Use via NPM</h3>
-
-        <p>
-          The NRCS Design System styles and React components can be installed
-          and used via NPM:
-          <br />
-          <code>npm install nrcs-design-system</code>
-        </p>
-
-        <p>
-          Then import the styles:
-          <br />
-          <code>import "nrcs-design-system/scss/nrcs-design-system.scss</code>
-        </p>
-
-        <p>
-          Then start using the components:
-          <br />
-          <code>{'import { PrimaryButton } from "nrcs-design-system"'}</code>
-        </p>
-
         <h3>Development</h3>
 
         <p>
@@ -207,6 +186,34 @@ class About extends React.Component {
             only.
           </Alert>
         </p>
+
+        <h4 className="mt-2">Install & Use via NPM</h4>
+
+        <p>
+          The NRCS Design System styles and React components can be installed
+          and used via NPM:
+          <br />
+          <code>npm install nrcs-design-system</code>
+        </p>
+
+        <p>
+          Then import the styles:
+          <br />
+          <code>import "nrcs-design-system/scss/nrcs-design-system.scss</code>
+        </p>
+
+        <p>
+          Then start using the components:
+          <br />
+          <code>{'import { PrimaryButton } from "nrcs-design-system"'}</code>
+        </p>
+
+        <Alert color="info">
+          Installing the NPM gives you custom components plus the
+          Boostrap/Reactstrap theme, which along with the dependancy on
+          Reacstrap for the rest of base components makes up the NRCS Design
+          System.
+        </Alert>
       </div>
     );
   }

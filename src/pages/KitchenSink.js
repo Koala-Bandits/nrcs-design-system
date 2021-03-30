@@ -9,15 +9,7 @@ import {
   useRouteMatch,
 } from "react-router-dom";
 
-import {
-  Row,
-  Col,
-  Nav,
-  NavItem,
-  NavLink,
-  TabContent,
-  TabPane,
-} from "reactstrap";
+import { Row, Col, Nav, NavItem, NavLink } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { Alert } from "components/feedback/alerts/Alert";
 
@@ -77,7 +69,11 @@ import { SearchDefault } from "components/inputs/Search.stories";
 import { SelectDefault, SelectMulti } from "components/inputs/Select.stories";
 import { SpinnerMessagesDefault } from "components/feedback/spinner/SpinnerMessage.stories";
 import { SwitchDefault } from "components/inputs/Switch.stories";
-import { TablesDefault, TablesAlt } from "components/tables/Table.stories";
+import {
+  TablesDefault,
+  TablesAlt,
+  TablesUsage,
+} from "components/tables/Table.stories";
 import { TabsStory } from "components/tabs/Tabs.stories";
 import { TimePickerDefault } from "components/inputs/TimePicker.stories";
 import { TextInputDefault } from "components/inputs/TextInput.stories";
@@ -181,6 +177,7 @@ function RenderCmpnt() {
           <DataTableDefault />
           <DataTableBasic />
           <DataTableSmall />
+          <TablesUsage />
         </div>
       );
       break;
@@ -242,6 +239,7 @@ function RenderCmpnt() {
         <div>
           <TablesDefault />
           <TablesAlt />
+          <TablesUsage />
         </div>
       );
       break;
