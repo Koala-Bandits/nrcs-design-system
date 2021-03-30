@@ -177,47 +177,54 @@ export const DataTableDefault = () => {
   return (
     <div>
       <ContentHeaderH1>DataTable - Default</ContentHeaderH1>
-
       <p className="lead">
         A DataTable that provides accessible sorting, filtering, paging, with
         single or mutliple selection.
       </p>
-
       <p>Configurable without being overally complex.</p>
-
       <Alert color="warning">
         Warning: this component is under development and incomplete.
       </Alert>
-
       <h3>Props</h3>
       <p>To Do</p>
-
-      <h3>Column Alignment</h3>
+      <h3>Caption Label, Actions, Paging and Filtering</h3>
+      To keep a consistent workflow and patter for DataTables we suggest the
+      following:
       <ul>
         <li>
-          <strong>left-align</strong> is the default, and is used for most
-          multi-word, sentence, or column with varying content. Also used for
-          single-word/phrase/elements (badges, labels) and can be used for
-          numbers (like time or date). In general is the safest for readability.
-          Numbers, used as an identifier in left most 1st column should be left
-          aligned. Columns with editable inputs are usually left aligned as
-          well.
+          <strong>Caption</strong> - A HTML <code>caption</code> is used to
+          commuicate what and how many records are displayed, in this format:{" "}
+          <strong>"Things"</strong>. Which and how many things can also be
+          included in the caption <strong>"Things XX-XX of XX"</strong>, or
+          otherwise this is bottom of the DataTable inline LEFT-justified (to go
+          along with paging controls that are bottom RIGHT-justified)
         </li>
         <li>
-          <strong>right-align</strong> for numbers in general or currency to aid
-          in visual alignment and comparison/scanability.
+          <strong>Paging</strong> - Typically placed bottom right of DataTable,
+          but in some cases can appear top right as well for some legacy
+          applications or to aid in acessibility.
         </li>
         <li>
-          <strong>center-align</strong> usually only for element items like an
-          action button/menu, selection checkbox or radio.
+          <strong>Actions (bulk)</strong> - Bulk actions inline after caption,
+          typically in this order for consistency: REFRESH, ADD, EDIT, DELETE,
+          OTHER, EXPORT etc. Then in same inline RIGHT-justifed, are actions for
+          amending the records with column-picker or number of records per page.
+          NOTE: we are planning to move the column-picker and number of records
+          controls at the bottom of the DataTable inline with paging or a part
+          of the "XX-XX of XX" labeling.
         </li>
-        <li>In general, all text should be vertically aligned to the top.</li>
         <li>
-          This can be subject to context and designer's discretion for specific
-          use cases.
+          <strong>Actions (row)</strong> - Row actions should be the right most
+          column for consistency. Individual icons can be used for 3 or less
+          actions otherwise a dropdown "..." menu is suggested to limit
+          complexity.
+        </li>
+        <li>
+          <strong>Selection</strong> - If enabled, a selection column either
+          single-selection with radio buttons or multiple-selection with
+          checkboxes, should always be the first column.
         </li>
       </ul>
-
       <DataTable
         actions={actions}
         caption="Super Heros"
@@ -226,15 +233,12 @@ export const DataTableDefault = () => {
         data={data}
         paging
       />
-
       <h3 className="mt-4">No Data</h3>
-
       <p>
         It is preferrable to always show a DataTable even when empty. Hiding and
         showing the table can be disruptive to the layout and can leave the
         users confused if they are expecting or waiting for data to be shown.
       </p>
-
       <DataTable caption="Super Heros" columns={columns} data={noData} />
     </div>
   );
