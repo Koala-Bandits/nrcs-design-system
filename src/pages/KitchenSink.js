@@ -14,6 +14,7 @@ import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { Alert } from "components/feedback/alerts/Alert";
 
 // core components
+import { AccordionDefault } from "components/accordion/Accordion.stories";
 import {
   AlertsDefault,
   AlertsNoIcon,
@@ -97,8 +98,7 @@ function RenderCmpnt() {
     case "accordion":
       thecmpnt = (
         <div>
-          <ContentHeaderH1>Accordion</ContentHeaderH1>
-          Coming soon...
+          <AccordionDefault />
         </div>
       );
       break;
