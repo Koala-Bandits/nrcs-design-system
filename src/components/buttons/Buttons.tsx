@@ -1,5 +1,8 @@
 import React from "react";
-import { Button, ButtonProps } from "reactstrap";
+import {
+  ButtonBase as Button,
+  IButtonBaseProps as ButtonProps,
+} from "./ButtonBase";
 import Icon from "@mdi/react";
 import { getClassName } from "../utils/utils";
 
