@@ -90,15 +90,16 @@ export const ButtonsDefaultStory = () => (
 
     <h3 className="mt-4">Disabled</h3>
     <ButtonSet>
-      <PrimaryButton aria-disabled="true" disabled>
-        Primary
-      </PrimaryButton>
-      <SecondaryButton aria-disabled="true" disabled>
-        Secondary
-      </SecondaryButton>
-      <FlatButton aria-disabled="true" disabled>
-        Flat
-      </FlatButton>
+      <PrimaryButton disabled>Primary</PrimaryButton>
+      <SecondaryButton disabled>Secondary</SecondaryButton>
+      <FlatButton disabled>Flat</FlatButton>
+    </ButtonSet>
+
+    <h3 className="mt-4">Read Only (508 Compliant)</h3>
+    <ButtonSet>
+      <PrimaryButton readonly={true}>Primary</PrimaryButton>
+      <SecondaryButton readonly={true}>Secondary</SecondaryButton>
+      <FlatButton readonly={true}>Flat</FlatButton>
     </ButtonSet>
   </div>
 );
