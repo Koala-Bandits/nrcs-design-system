@@ -202,3 +202,45 @@
 .elevate-on-focus:focus {
   z-index: 10;
 }
+
+// 508 disabled state styles
+
+.disabled {
+  pointer-events: none;
+
+  &.custom-checkbox {
+    .custom-control-input:indeterminate ~ .custom-control-label::before,
+    .custom-control-input:checked ~ .custom-control-label::before {
+      background-color: $fpac-blue;
+      opacity: 0.5;
+    }
+    .custom-control-label::before {
+      border-radius: 0.25rem;
+      background-color: $gray-200;
+    }
+  }
+
+  &.custom-select {
+    color: $gray-700;
+    background-color: $gray-100;
+  }
+
+  &.form-control {
+    background-color: $gray-200;
+    opacity: 1;
+  }
+
+  .custom-control-input ~ .custom-control-label::before {
+    background-color: $gray-200;
+  }
+
+  &.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: $fpac-blue;
+    opacity: 0.5;
+  }
+
+  .custom-select {
+    color: $gray-700;
+    background-color: $gray-200;
+  }
+}

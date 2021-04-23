@@ -13,3 +13,7 @@ export interface INrcsCustomInputProps
   cssModule?: CSSModule;
   innerRef?: React.Ref<HTMLElement>;
 }
+
+export interface INrcsReadOnly {
+  readOnly?: boolean;
+}

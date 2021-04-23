@@ -46,7 +46,7 @@ import {
   ButtonsPositionStory,
 } from "components/buttons/Button.stories";
 import { CardDefault } from "components/cards/Card.stories";
-import { CheckboxDefault } from "components/inputs/Checkbox.stories";
+import { CheckboxDefault } from "components/inputs/Checkbox/Checkbox.stories";
 import {
   ContentHeaderDefault,
   ContentHeaderIcons,
