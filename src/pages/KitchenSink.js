@@ -64,10 +64,13 @@ import { ListGroupStory } from "components/listgroups/ListGroup.stories";
 import { ModalDefault } from "components/modal/Modal.stories";
 import { PopoverStory } from "components/feedback/popover/Popover.stories";
 import { ProgressMessageDefault } from "components/feedback/progress/ProgressMessage.stories";
-import { RadioDefault } from "components/inputs/Radio.stories";
+import { RadioDefault } from "components/inputs/Radio/Radio.stories";
 import { RangeDefault } from "components/inputs/Range.stories";
 import { SearchDefault } from "components/inputs/Search.stories";
-import { SelectDefault, SelectMulti } from "components/inputs/Select.stories";
+import {
+  SelectDefault,
+  SelectMulti,
+} from "components/inputs/Select/Select.stories";
 import { SpinnerMessagesDefault } from "components/feedback/spinner/SpinnerMessage.stories";
 import { SwitchDefault } from "components/inputs/Switch.stories";
 import {
