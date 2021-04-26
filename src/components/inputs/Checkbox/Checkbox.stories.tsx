@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { FormGroup, Label } from "reactstrap";
 import { Checkbox } from "components/inputs/Checkbox";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
+import { PrimaryButton } from "components/buttons";
+import { CustomInput } from "reactstrap";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -9,6 +11,8 @@ export default {
 };
 
 export const CheckboxDefault = () => {
+  const [isReadOnly, setIsReadOnly] = useState(true);
+
   return (
     <div>
       <ContentHeaderH1>Checkboxes</ContentHeaderH1>
@@ -32,6 +36,29 @@ export const CheckboxDefault = () => {
           label="Can't click this label to check!"
           disabled
         />
+      </FormGroup>
+
+      <h3 className="mt-4">Read Only (508 Compliant)</h3>
+      <FormGroup>
+        <Label for="exampleCheckbox">Checkbox Label</Label>
+        <Checkbox
+          id="exampleCustomCheckbox5"
+          label="Focusable, not clickable when disabled"
+          readOnly={isReadOnly}
+          checked
+        />
+        <Checkbox
+          id="exampleCustomCheckbox6"
+          label="Focusable, not clickable when disabled"
+          readOnly={isReadOnly}
+        />
+        <PrimaryButton
+          onClick={() => {
+            setIsReadOnly(!isReadOnly);
+          }}
+        >
+          Toggle Disablement
+        </PrimaryButton>
       </FormGroup>
 
       <h3 className="mt-4">Inline Custom</h3>

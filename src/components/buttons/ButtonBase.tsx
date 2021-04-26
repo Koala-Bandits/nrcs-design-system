@@ -1,33 +1,28 @@
+import { INrcsReadOnly } from "components/types/types";
 import React from "react";
 import { Button as RSButton, ButtonProps } from "reactstrap";
+import { useReadOnlyConfig } from "hooks";
 
-export interface IButtonBaseProps extends ButtonProps {
-  readonly?: boolean;
-}
+export interface IButtonBaseProps extends ButtonProps, INrcsReadOnly {}
 
 export const ButtonBase: React.FC<IButtonBaseProps> = ({
-  readonly,
+  readOnly,
   onClick,
   className,
   ...props
 }) => {
-  readonly = !!readonly;
-
-  const clickHandler = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    if (!readonly && onClick) {
-      onClick(e);
-    }
-  };
-
-  className = className || "";
-  const classNames = readonly ? `disabled ${className}` : className;
+  const { composedClassNames, handler } = useReadOnlyConfig({
+    readOnly,
+    handlerCallBack: onClick,
+    className,
+  });
 
   return (
     <RSButton
       {...props}
-      aria-disabled={readonly}
-      className={classNames}
-      onClick={clickHandler}
+      aria-disabled={readOnly}
+      className={composedClassNames}
+      onClick={handler}
     />
   );
 };
