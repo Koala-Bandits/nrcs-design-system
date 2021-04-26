@@ -1,11 +1,10 @@
 import { INrcsCustomInputProps, INrcsReadOnly } from "../../types/types";
-import React, { useRef, useEffect } from "react";
 import { CustomInput } from "reactstrap";
 import { useReadOnlyConfig } from "hooks";
 
-export interface ICheckboxProps extends INrcsCustomInputProps, INrcsReadOnly {}
+export interface IRadioProps extends INrcsCustomInputProps, INrcsReadOnly {}
 
-export const Checkbox = ({
+export const Radio = ({
   indeterminate,
   type,
   readOnly,
@@ -13,13 +12,7 @@ export const Checkbox = ({
   onChange,
   onKeyDown,
   ...rest
-}: ICheckboxProps) => {
-  const checkboxRef = useRef(null);
-  useEffect(() => {
-    if (checkboxRef.current) {
-      (checkboxRef.current as any).indeterminate = indeterminate;
-    }
-  }, [indeterminate]);
+}: IRadioProps) => {
   const { composedClassNames, handler, keyDownHandler } = useReadOnlyConfig({
     readOnly,
     handlerCallBack: onChange,
@@ -32,10 +25,9 @@ export const Checkbox = ({
       {...rest}
       onChange={handler}
       className={composedClassNames}
-      innerRef={checkboxRef}
       onKeyDown={keyDownHandler}
       aria-disabled={readOnly}
-      type="checkbox"
+      type="radio"
     />
   );
 };
