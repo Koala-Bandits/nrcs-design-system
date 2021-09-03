@@ -13,7 +13,7 @@ import {
 } from "reactstrap";
 import { ContentHeaderH1 } from "components/text/ContentHeader";
 import { PrimaryButton, ButtonSet } from "components/buttons/Buttons";
-
+import { AppModal } from "./AppModal";
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   title: "Components/Modal",
@@ -110,48 +110,24 @@ export const ModalDefault = () => {
       </Row>
 
       {/* Small */}
-      <Modal isOpen={modalSm} toggle={toggleSm} size="sm">
-        <ModalHeader toggle={toggleSm}>Small Modal</ModalHeader>
-        <ModalBody>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </ModalBody>
-        <ModalFooter>
-          <Button outline color="primary" onClick={toggleSm}>
-            Cancel
-          </Button>
-          <Button color="primary" onClick={toggleSm}>
-            Action
-          </Button>
-        </ModalFooter>
-      </Modal>
+      <AppModal
+        modalHeader={"Small Modal"}
+        modalBody={" Lorem ipsum dolor sit amet, consectetur adipisicing elit"}
+        toggle={toggleSm}
+        modalType="sm"
+        isOpen={modalSm}
+        modalFooterButtonText={["Cancel", "Action"]}
+      ></AppModal>
 
       {/* Default */}
-      <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader toggle={toggle}>Default Modal</ModalHeader>
-        <ModalBody>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </ModalBody>
-        <ModalFooter>
-          <Button outline color="primary" onClick={toggle}>
-            Cancel
-          </Button>
-          <Button color="primary" onClick={toggle}>
-            Action
-          </Button>
-        </ModalFooter>
-      </Modal>
+      <AppModal
+        modalHeader={"Default Modal"}
+        modalBody={" Lorem ipsum dolor sit amet, consectetur adipisicing elit"}
+        toggle={toggle}
+        // modalType="sm"
+        isOpen={modal}
+        modalFooterButtonText={["Cancel", "Action"]}
+      ></AppModal>
 
       {/* Large */}
       <Modal isOpen={modalLg} toggle={toggleLg} size="lg">
@@ -199,26 +175,14 @@ export const ModalDefault = () => {
       </Modal>
 
       {/* X-Large */}
-      <Modal isOpen={modalXl} toggle={toggleXl} size="xl">
-        <ModalHeader toggle={toggleXl}>X-Large Modal</ModalHeader>
-        <ModalBody>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </ModalBody>
-        <ModalFooter>
-          <Button outline color="primary" onClick={toggleXl}>
-            Cancel
-          </Button>
-          <Button color="primary" onClick={toggleXl}>
-            Action
-          </Button>
-        </ModalFooter>
-      </Modal>
+      <AppModal
+        modalHeader={"X-Large Modal"}
+        modalBody={" Lorem ipsum dolor sit amet, consectetur adipisicing elit"}
+        toggle={toggleXl}
+        modalType="xl"
+        isOpen={modalXl}
+        modalFooterButtonText={["Cancel", "Action"]}
+      ></AppModal>
 
       {/* Scroll */}
       <Modal isOpen={modalScroll} toggle={toggleScroll}>
