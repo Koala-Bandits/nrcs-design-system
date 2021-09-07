@@ -1,7 +1,7 @@
 import { INrcsCustomInputProps, INrcsReadOnly } from "../../types/types";
 import React, { useRef, useEffect } from "react";
 import { CustomInput } from "reactstrap";
-import { useReadOnlyConfig } from "hooks";
+import { useReadOnlyConfig } from "../../hooks";
 
 export interface ICheckboxProps extends INrcsCustomInputProps, INrcsReadOnly {}
 

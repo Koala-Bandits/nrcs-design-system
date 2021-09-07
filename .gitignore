@@ -12,6 +12,7 @@
 /build
 /dist
 /npmdist
+/npmdist-types
 
 # storybook static site, we deploy this to our github pages separately
 /storybook-static

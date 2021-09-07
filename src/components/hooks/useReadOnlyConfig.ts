@@ -3,7 +3,7 @@ import {
   appendDisabledCssClass,
   getActionHandler,
   getKeyDownHandler,
-} from "utils/accessibleReadonly";
+} from "../utils/accessibleReadonly";
 
 export interface IReadOnlyConfigProps<
   TEventHandler extends React.EventHandler<React.SyntheticEvent>

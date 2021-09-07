@@ -1,7 +1,7 @@
-import { INrcsReadOnly } from "components/types/types";
+import { INrcsReadOnly } from "../types/types";
 import React from "react";
 import { Button as RSButton, ButtonProps } from "reactstrap";
-import { useReadOnlyConfig } from "hooks";
+import { useReadOnlyConfig } from "../hooks";
 
 export interface IButtonBaseProps extends ButtonProps, INrcsReadOnly {}
 

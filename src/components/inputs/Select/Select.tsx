@@ -1,6 +1,6 @@
 import { INrcsCustomInputProps, INrcsReadOnly } from "../../types/types";
 import { CustomInput } from "reactstrap";
-import { useReadOnlyConfig } from "hooks";
+import { useReadOnlyConfig } from "../../hooks";
 
 export interface ISelectProps extends INrcsCustomInputProps, INrcsReadOnly {}
 
