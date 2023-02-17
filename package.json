@@ -46,7 +46,7 @@
     "@types/react-dom": "^16.9.10",
     "css-loader": "^3.4.2",
     "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prettier": "^2.2.1",
     "react-app-polyfill": "^2.0.0",
     "react-router-dom": "^5.2.0",
