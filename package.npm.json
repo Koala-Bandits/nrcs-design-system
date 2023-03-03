@@ -1,6 +1,6 @@
 {
   "name": "nrcs-design-system",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "homepage": "https://koala-bandits.github.io/nrcs-design-system",
   "description": "React UI components for the NRCS Design System based on Reactstrap/Bootstrap 4",
   "keywords": [
@@ -21,7 +21,6 @@
     "@mdi/js": "^4.9.95",
     "@mdi/react": "^1.2.1",
     "bootstrap": "^4.4.1",
-    "node-sass": "^4.13.1",
     "reactstrap": "^8.4.1"
   },
   "peerDependencies": {
